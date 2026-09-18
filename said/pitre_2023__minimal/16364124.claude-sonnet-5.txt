@@ -1,0 +1,83 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 16364124
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0 Tool
+## Outcome: Visual assessment for erythema and dryness (key symptoms of irritant contact dermatitis)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** 
+- Sequence generation: The article states "Randomization was performed via randomly permuted blocks of fixed size using validated software RANCODE 3.6." This indicates a random component was used → **Yes** to signalling question 1.1.
+- Allocation concealment: This is a within-person, split-body design (left/right cubital fossa), and the study states: "Allocation of the test products (coded as A and B) to the left and right cubital fossa was conducted according to a randomization scheme prepared at the Department of Statistics and Data Management at proDERM." "Blinding codes were kept sealed until closure of final database." This suggests adequate allocation concealment; however, insufficient detail is given about the specific mechanism used to conceal the sequence from those applying the product (e.g., no description of sequentially numbered/sealed containers or a similar mechanism), so this is judged as **Probably yes**, not a definitive "Yes."
+- Baseline imbalance: Because this is a split-body/within-participant design, systemic baseline comparability between "groups" is inherently controlled (each participant contributes both arms), making differential prognostic imbalance between "groups" unlikely. No evidence of imbalance is reported.
+- Because allocation concealment is not described with full detail (no explicit method such as sequentially numbered opaque sealed envelopes/containers for arm assignment, though blinding codes were "sealed"), and given the "no information" on details of concealment implementation, this leads to a judgement of **Some concerns** rather than "Low," per the algorithm (Table 4: NI on concealment + no imbalance information → "Some concerns").
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to interventions at baseline): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Blinding of participants: This is a double-blind trial: "double-blind trial" is stated explicitly in the title and methods. Both preparations were coded (A/B) and applied by a study nurse, and "All applications were performed by a study nurse," suggesting participants themselves were not necessarily administering it themselves, reducing the chance for them to identify the treatment. Products were similar in base composition (both propanol-based, containing 45% propan-2-ol, 30% propan-1-ol, 0.2% mecetronium etilsulfate), differing only in emollient content (0.81% w/w), making it plausible that participants could not distinguish between products by look/feel → **Probably no** to signalling Q2.1 (participants aware).
+- Blinding of personnel/carers: "Blinding codes were kept sealed until closure of final database," and the outcome assessor (dermatologist) was blinded: "All evaluations were conducted blindly by the same investigator" → **Probably no** to Q2.2.
+- No deviations from intended intervention are reported that arose because of trial context (e.g., no non-protocol interventions, no switching of formulations). The 3 protocol violations noted (antiphlogistic intake, disinfection of fossa cubitalis) were unrelated to trial context/awareness of assignment and were handled by using ITT population as primary analysis with LOCF imputation.
+- Analysis: The results are presented for the "intention-to-treat (ITT) population," which includes all 35 randomized subjects, with missing values (in 3 participants) replaced using LOCF. This is consistent with an appropriate analysis for estimating the effect of assignment to intervention → **Yes** to Q2.6.
+- Overall: Blinding of participants, carers, and outcome assessors was successfully implemented, no important trial-context deviations occurred, and an appropriate (ITT) analysis was used.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The ITT population (n=35, all randomized participants) was analyzed for the primary outcome, with missing data for 3 participants handled via Last Observation Carried Forward (LOCF): "Missing values in 3 participants were replaced by the method of Last Observation Carried Forward (LOCF)." This suggests outcome data were available (with imputation) for essentially all randomized participants (35/35) → **Yes/Probably yes** to Q3.1 ("nearly all" participants had data available).
+- While LOCF is not always considered an unbiased approach to handling missing data, in this instance only 3 of 35 subjects (~8.6%) required imputation, and the reasons for their exclusion from full follow-up (protocol violations: antiphlogistic intake in 1 panellist, disinfection of fossa cubitalis in 2 panellists) were clearly documented and appear unrelated to the true value of the erythema/dryness outcome (i.e., not related to worsening or improving skin condition) — rather, they reflect procedural contamination issues.
+- Because the amount of missing data is small and reasons for missingness are not plausibly related to the true outcome value, this is judged as unlikely to bias the result.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Method of outcome measurement: Visual assessment using a standardized, validated scale modified from Fitzpatrick et al. for erythema (0 to 4) and a similar ordinal scale for dryness (0 to 3) — an appropriate and established method for this outcome → **No** to Q4.1 (method not inappropriate).
+- Consistency of measurement across groups: Both formulations were assessed identically, at the same time points, using the same procedure and scale, applied to homogeneous body sites (cubital fossa) on the same participants → **No** to Q4.2 (measurement did not differ between groups).
+- Blinding of outcome assessor: "The treated skin was assessed visually for erythema and dryness... by a dermatologist. All evaluations were conducted blindly by the same investigator." This indicates the outcome assessor was blinded to intervention assignment → **No** to Q4.3 (assessor not aware of intervention received).
+- Since the assessor was blinded and using standardized objective/semi-objective visual scoring criteria, the assessment is very unlikely to have been influenced by knowledge of intervention assignment.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial registration (linked doc_id) and methods section specify the outcome as "the sum score of dryness and erythema over all assessment times" as the pre-specified primary outcome parameter, matching what is reported in the Results and Table 1.
+- Sample size calculation was performed prospectively and explicitly linked to "the sum score" as the pre-specified primary analysis metric: "A sample size of 30 was considered adequate... with respect to the sum score."
+- Both erythema and dryness sub-scores, as well as the combined sum score, are reported fully and consistently in Table 1 for both the ITT and PP populations, with separate atopic/non-atopic breakdowns as pre-specified secondary analyses ("Secondary analyses included comparison of atopic and non-atopic panellists...").
+- There is no evidence of selective reporting of only favorable timepoints, subscales, or alternative statistical analyses — the full time-course data are shown graphically (Figures 2 and 3) for all assessment days, and the statistical method (Fieller's method for non-inferiority, confirmed with Wilcoxon signed-rank test) appears pre-specified and consistently applied and reported in accordance with the stated statistical plan.
+
+---
+
+## Overall Risk-of-Bias Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended intervention | Low risk |
+| 3. Missing outcome data | Low risk |
+| 4. Measurement of the outcome | Low risk |
+| 5. Selective reporting | Low risk |
+| **OVERALL** | **Some concerns** |
+
+**Overall justification:** Per Table 1 of the RoB 2.0 framework, because there are "some concerns" raised in the randomization domain (specifically regarding lack of detailed description of the allocation concealment mechanism) but no domain was judged "High risk," the overall risk-of-bias judgement for this outcome is **"Some concerns."**

@@ -1,0 +1,140 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 11571068
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## Scope of this RoB 2 assessment
+
+- **Design:** Individually randomized, three-arm parallel-group trial.
+- **Result assessed:** The effect of **assignment to alcohol-focused couples therapy (AFCT)** versus **supportive counselling** on the woman’s **Relative Stress Scale (RSS)** score at **6-month follow-up**. This outcome is reported in Table 1 and analysed within the treatment-condition-by-time repeated-measures ANOVA.
+- **Effect of interest:** Effect of **assignment to intervention** (intention-to-treat effect), since women were randomized to treatment conditions. Importantly, men’s participation in AFCT was not required for women to remain in the assigned AFCT arm; when men refused participation, women received stress management components according to the treatment description.
+- **Sources available:** The journal article only. No trial protocol, statistical analysis plan, or trial-registry record is provided.
+
+---
+
+### 1. Bias arising from the randomization process  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **1.1 Was the allocation sequence random? — Yes.**  
+  The article explicitly states that: *“Women were assigned randomly via random number tables to one of the three treatment conditions.”* Use of random number tables includes a random component and is an adequate method of sequence generation.
+
+- **1.2 Was the allocation sequence concealed until participants were enrolled and assigned to interventions? — No information.**  
+  The report does not describe who generated the allocation sequence, who enrolled participants, whether the sequence was held independently, or any allocation-concealment mechanism (e.g., central randomization or sequentially numbered opaque sealed envelopes). Random sequence generation does not itself demonstrate concealment.
+
+- **1.3 Did baseline differences between intervention groups suggest a problem with the randomization process? — Probably no.**  
+  The authors report no statistically significant pre-treatment differences across conditions for demographics, women’s distress and burden measures, male drinking measures, relationship satisfaction, marital dissolution potential, or physical aggression. The article does not provide a complete baseline table by randomized group, but it reports no evident imbalance suggesting that randomization failed.
+
+**Motivation for judgement**
+
+The random allocation sequence was adequately generated, and the reported baseline comparisons do not identify a problem with randomization. However, allocation concealment was not reported. Under RoB 2, absence of information on concealment prevents a low-risk judgement where otherwise relevant baseline information is available. Therefore, this domain raises **some concerns**.
+
+---
+
+### 2. Bias due to deviations from intended interventions  
+**Judgement: High risk of bias**
+
+**Signalling questions**
+
+- **2.1 Were participants aware of their assigned intervention during the trial? — Yes.**  
+  The interventions were visibly and substantively different: supportive non-directive counselling, stress-management training with cognitive restructuring, behavioural strategies and homework, and AFCT involving attempts to engage the husband in conjoint alcohol-focused treatment. Participants could not realistically be unaware of the assigned approach.
+
+- **2.2 Were carers and people delivering the interventions aware of participants’ assigned intervention during the trial? — Yes.**  
+  Therapists delivered distinct manualized interventions and therefore necessarily knew treatment assignment. The study reports that therapists were assigned clients in each treatment condition and that treatment sessions were reviewed to ensure adherence to each treatment protocol.
+
+- **2.3 Were there deviations from intended intervention that arose because of the trial context? — Probably no.**  
+  In the AFCT condition, if the man refused to participate, *“the woman received the stress management treatment.”* This was explicitly specified as part of the AFCT intervention strategy, rather than being reported as an unintended departure from protocol. The low male engagement rate—only six of 21 husbands assigned to AFCT engaged in treatment—therefore reflects the intended intervention strategy as described, not a documented trial-context deviation.
+
+- **2.6 Was an appropriate analysis used to estimate the effect of assignment to intervention? — No.**  
+  The analysis did not include all 61 randomized women. The article states that 61 women were randomized, 47 completed treatment, and 44 provided 6-month follow-up data. For RSS, the reported repeated-measures analysis was \(F(2,39)\), indicating analysis of approximately 42 women with complete repeated RSS data, rather than all randomized women. Table 1 similarly presents RSS data for only 44 women across the three arms (17 supportive counselling, 14 stress management, and 13 AFCT), compared with 61 randomized women.  
+  Thus, the reported analysis was a complete-case repeated-measures analysis, not a full intention-to-treat analysis including all randomized participants.
+
+- **2.7 Was there potential for a substantial impact of failure to analyse participants in the groups to which they were randomized? — Yes.**  
+  At least 17 of 61 randomized women did not provide 6-month follow-up data, and the RSS repeated-measures analysis appears to include fewer still. This is a substantial proportion of the randomized sample. Exclusion of this number of participants can materially affect the comparison between assigned treatment groups.
+
+**Motivation for judgement**
+
+Participants and therapists were aware of intervention allocation, but the article does not document trial-context deviations that would independently bias the effect of assignment. The decisive issue is the analysis: the reported RSS comparison excluded a substantial number of randomized women because of missing follow-up information. Since the effect of interest is assignment to intervention, an analysis restricted to participants with observed repeated outcome data is not an appropriate analysis of all randomized participants. The potential impact is substantial given the degree of exclusion. This domain is therefore at **high risk of bias**.
+
+---
+
+### 3. Bias due to missing outcome data  
+**Judgement: High risk of bias**
+
+**Signalling questions**
+
+- **3.1 Were data for RSS available for all, or nearly all, participants randomized? — No.**  
+  Sixty-one women were randomized. Only 47 completed treatment and 44 provided 6-month follow-up assessment data. The RSS repeated-measures ANOVA, with an error degrees of freedom of 39, appears to have included approximately 42 participants. Therefore, RSS data were not available for all or nearly all randomized women.
+
+- **3.2 Is there evidence that the result was not biased by missing outcome data? — No.**  
+  The article does not report an analysis that accounts for missing data, such as a justified multiple-imputation model, inverse-probability weighting, mixed-model analysis using all available repeated observations under stated assumptions, or sensitivity analyses examining plausible outcomes for missing participants. No sensitivity analysis is reported.
+
+- **3.3 Could missingness in RSS depend on its true value? — Yes.**  
+  RSS measures women’s burden and distress arising from living with a severely drinking partner. The authors state that most women who dropped out reported having left their partners shortly after entering the programme. Leaving the relationship is directly related to the circumstances that RSS was intended to assess and could be associated with the woman’s level and trajectory of burden and distress.
+
+- **3.4 Is it likely that missingness in RSS depended on its true value? — Yes.**  
+  The reported reason for most treatment dropouts—leaving a long-standing, severely distressed relationship with a heavily drinking and often violent partner—provides direct reason to consider missing RSS outcomes likely related to the underlying burden and distress being measured. The authors acknowledge that they could not assess the subsequent mental health and quality of life of women who left and declined further assessment. The consequences of attrition for RSS are therefore unknown and plausibly outcome-related.
+
+**Motivation for judgement**
+
+Outcome data were missing for a substantial proportion of randomized women, particularly at the 6-month outcome assessment. The reported circumstances of missingness were clinically related to the outcome domain: women who left their partners may have had different stress and burden outcomes from women who remained and completed follow-up. No analysis or sensitivity analysis demonstrates robustness to this missingness. Consequently, the RSS result is at **high risk of bias due to missing outcome data**.
+
+---
+
+### 4. Bias in measurement of the outcome  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **4.1 Was the method of measuring RSS inappropriate? — No.**  
+  The RSS is a defined 15-item scale for burden in family members living with a person with a severe disorder. The article reports published test–retest reliability of \(r=0.85\). Nothing in the report indicates that the RSS was unsuitable for measuring women’s burden and stress in this study.
+
+- **4.2 Could measurement or ascertainment of RSS have differed between intervention groups? — Probably no.**  
+  RSS was administered at the same scheduled time points—pre-treatment, post-treatment, and 6-month follow-up—across treatment conditions. The report does not identify differing data-collection methods or thresholds between groups.
+
+- **4.3 Were outcome assessors aware of the intervention received? — Yes.**  
+  RSS is a participant-reported outcome: the women themselves were the outcome assessors. As they received materially different therapeutic interventions, they were aware of their assigned treatment.
+
+- **4.4 Could assessment of RSS have been influenced by knowledge of intervention received? — Yes.**  
+  RSS measures personal distress, life disruption, and negative feelings toward the drinking partner. Such self-reported outcomes can be influenced by participants’ awareness of the treatment they received, including expectations about whether stress-management or couples therapy should reduce burden.
+
+- **4.5 Is it likely that assessment of RSS was influenced by knowledge of intervention received? — Probably no.**  
+  The report establishes that women were unblinded and that RSS is subjective, but it does not provide evidence that participants’ assessments were actually influenced by treatment expectations, therapist involvement in outcome assessment, differential outcome prompting, or strong differential beliefs favouring one treatment. All three groups received active therapeutic contact of similar intended duration. The available report therefore supports the possibility, but not a definitive conclusion, of differential measurement bias.
+
+**Motivation for judgement**
+
+RSS was measured with the same established participant-reported instrument at the same time points across groups. However, participants were aware of their allocated intervention and RSS is a subjective self-reported measure that could be affected by expectations or perceived treatment credibility. The article does not supply evidence sufficient to establish that such influence was likely. This domain therefore raises **some concerns**, rather than high risk of bias.
+
+---
+
+### 5. Bias in selection of the reported result  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **5.1 Were the data that produced this result analysed in accordance with a pre-specified analysis plan finalized before unblinded outcome data were available? — No information.**  
+  No protocol, statistical analysis plan, trial registration record, or dated pre-specified analysis document is available in the material provided. The article describes its analyses but does not establish that they were finalized before outcome data were available.
+
+- **5.2 Is the RSS result likely to have been selected from multiple eligible outcome measurements within the outcome domain? — Probably no.**  
+  The RSS was measured at pre-treatment, post-treatment, and 6-month follow-up, and Table 1 reports RSS results at all three time points for each treatment condition. The article therefore does not appear to selectively report only one RSS measurement time point. No alternative RSS scale or alternative stress measure is reported as having been measured and omitted for this specific RSS result.
+
+- **5.3 Is the RSS result likely to have been selected from multiple eligible analyses of the data? — No information.**  
+  The article reports a repeated-measures treatment-condition-by-time ANOVA for RSS. However, without a protocol or statistical analysis plan, it is not possible to determine whether alternative eligible analyses—for example, adjusted analyses, alternative approaches to missing data, different time-point contrasts, or alternative modelling strategies—were planned or performed and selectively not reported.
+
+**Motivation for judgement**
+
+There is no direct evidence that the reported RSS result was selected on the basis of its magnitude, direction, or statistical significance. However, the absence of a dated pre-specified analysis plan means that selective choice among possible analyses cannot be excluded. Under RoB 2, this lack of information produces **some concerns**.
+
+---
+
+### 6. Overall risk-of-bias judgement  
+**Judgement: High risk of bias**
+
+The result for women’s RSS stress/burden at 6-month follow-up is at **high risk of bias overall** because:
+
+1. **Bias due to deviations from intended interventions is high risk:** the reported analysis excluded a substantial proportion of randomized women and was not an appropriate analysis of the effect of assignment to intervention; and  
+2. **Bias due to missing outcome data is high risk:** follow-up RSS data were missing for a substantial proportion of randomized women, dropout was commonly associated with leaving the relationship, and no analysis or sensitivity analysis demonstrates that the RSS result is robust to this likely outcome-related missingness.
+
+The randomization domain, outcome-measurement domain, and selective-reporting domain additionally raise **some concerns**. Under the specified RoB 2 overall-judgement rules, high risk of bias in at least one domain requires an overall judgement of **high risk of bias**.

@@ -1,0 +1,70 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 26329534
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Response Rate Outcome
+## Randomized Trial of Survey Delivery Methods in Pharmacists
+
+**Effect of interest assessed:** Effect of assignment to intervention (delivery method/questionnaire length/item placement/gender), not effect of adherence.
+
+---
+
+## 1. Bias due to Randomization Process: **High risk of bias**
+
+**a. Judgement:** High risk of bias. The study does not provide evidence that a truly random allocation sequence was used to assign pharmacists to the delivery-method conditions, and the sampling frames differed systematically between arms, which — combined with striking baseline imbalances — strongly suggests the "randomization" process did not achieve comparable groups.
+
+**b. Rationale:**
+- The methods state: "The sample was stratified by delivery method, questionnaire length, item placement, and gender of respondent for a total of 300 observations within each subgroup." This describes a stratified quota-sampling design rather than a described random sequence generation process for assignment to delivery method. No signalling information (e.g., computer-generated allocation, sealed envelopes) is reported.
+- Critically, "A random sample of 7200 pharmacists practicing throughout the U.S., provided by the Medical Marketing Service (for the postal mail and hybrid groups) and Statlistics (for the email group), was used." Using **different sampling frames/databases for different intervention arms** is a fundamental threat to exchangeability between groups — this is not consistent with a single random allocation from one sampling frame.
+- Baseline imbalances (Table 1) are large and implausible by chance: Non-Hispanic White 86.3% (postal) vs. 68.7% (email) vs. 74.0% (hybrid); Black pharmacists 3.2% (postal) vs. 26.4% (email) vs. 19.2% (hybrid). Differences of this magnitude in a key prognostic/demographic variable (very unlikely to arise from chance with n=2400/arm) indicate a problem with the allocation process, plausibly explained by the use of different vendor databases per arm.
+- No information is provided about allocation concealment, but this is moot given the demonstrated failure of exchangeability.
+
+Per RoB2 criteria (Table 3), imbalance suggesting a problem with randomization, combined with no assurance of a random sequence, defaults to **High risk of bias**.
+
+---
+
+## 2. Deviations from the Intended Intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. Blinding of participants/personnel to delivery method is inherently impossible (the delivery method is the exposure itself), but there is no evidence that this awareness led to deviations from the intended intervention protocol that biased the estimate, and the analysis is consistent with an intention-to-treat approach within the trial context.
+
+**b. Rationale:**
+- Participants were necessarily aware of which delivery method they received (postal, email, hybrid); this is intrinsic to the exposure being tested, not a source of performance bias in the traditional sense (there is no separate "co-intervention" to contaminate).
+- Each arm's procedures were implemented as pre-specified: "Pharmacists who were randomized to the postal mail group were sent an envelope containing a cover letter... If a response was not received within two weeks... another questionnaire was sent." Similar structured, protocol-consistent follow-up procedures are described for email and hybrid groups, with no evidence of cross-over between delivery arms.
+- The number of completed responses was analyzed according to the arm to which pharmacists were assigned (denominator = net delivered per arm), consistent with an appropriate assignment-based analysis for this outcome.
+- No evidence indicates deviations arising from the trial context (e.g., contamination between arms) that would differentially affect the response-rate outcome.
+
+---
+
+## 3. Missing Outcome Data: **High risk of bias**
+
+**a. Judgement:** High risk of bias. The proportions and reasons for missing/unusable outcome data (undeliverable questionnaires, incomplete responses) differed substantially and non-randomly between the delivery-method arms, and no analysis was presented to demonstrate the result is robust to this differential missingness.
+
+**b. Rationale:**
+- Denominators were adjusted asymmetrically across arms because of non-delivery: "Out of the original 7200 intended respondents... 233 of them did not receive the questionnaires, which yielded a net of 6967 delivered questionnaires." Per the flow diagram, undeliverable rates differed markedly by arm: postal 139/2400 (5.8%), hybrid 94/2400 (3.9%), email 0/2400 (guaranteed delivery per vendor). This is a differential rate of "missingness" in ability to even receive the exposure, which mechanically affects the response-rate denominator and is not addressed analytically.
+- Additionally, completed (no missing data) questionnaires were distinguished from returned-but-incomplete questionnaires, with "a high prevalence (9.9%) of responses dropped because of incomplete data" for postal and "a similar prevalence (9.4%)" for email — these were excluded from the numerator without sensitivity analysis of how their inclusion/exclusion might alter comparative response rates.
+- No evidence (e.g., sensitivity analyses, imputation, comparison of characteristics of non-respondents) was presented to show that the missingness (undelivered or incomplete surveys) was unrelated to the true likelihood of responding.
+- Reasons for missingness plausibly relate to the outcome itself (e.g., an outdated postal address may correlate with disengagement from professional communications, inflating apparent "response rate" once undeliverable individuals are excluded from the denominator), and differ structurally between arms because different vendors/databases were used.
+
+---
+
+## 4. Measurement of the Outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. The outcome (response rate, defined as return of a fully completed questionnaire) is an objective, mechanically ascertained count rather than a judgment-based or subjectively interpreted measure, minimizing the potential for differential measurement bias due to awareness of intervention assignment.
+
+**b. Rationale:**
+- The outcome was defined operationally and objectively: "The response rate was defined as the percentage of eligible respondents that returned completed questionnaires, with no missing data for any questions." This is an observer-reported outcome not involving subjective judgment (akin to counting an event), and is unlikely to be influenced by preconceptions about which method "should" perform better.
+- Ascertainment for postal (manual review of returned paper forms) versus email/hybrid (automatic database recording) does differ mechanically between arms, which is a minor methodological artifact of the different delivery modes; however, both use consistent, pre-specified, objective criteria for "no missing data," limiting risk of differential bias driven by assessor expectation.
+- There is no indication that outcome assessors selectively coded completion status differently based on expectations about which method would perform best.
+
+---
+
+## 5. Selective Reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. The reported results correspond fully to the pre-specified 2×3×2×2 factorial design and outcomes described in the Methods section, with no evidence of selective reporting of favorable comparisons or omission of pre-specified analyses.
+
+**b. Rationale:**
+- The Methods explicitly define three outcomes of interest a priori (response rate, response time, economic cost) and four classification variables (delivery method, questionnaire length, item placement, gender), each tested via a defined statistical method: "Chi-square tests were applied to determine if significant differences existed in response rates, and F tests were applied to determine if significant differences existed in average response times, among delivery methods, between questionnaire length versions, between item placement locations, and between genders of respondents."
+- Results are reported comprehensively for all combinations of these classifications in Table 2, and all four classification comparisons (not just the significant one) are reported in the text and Discussion, including non-significant findings for questionnaire length, item placement, and gender — this argues against selective suppression of non-significant results.
+- No trial registration content was available/reviewed in detail to cross-check for undisclosed outcomes or changes to the analysis plan; in the absence of evidence of discrepancy between a prospectively registered protocol and the reported analyses, and given the internally consistent and complete reporting of all pre-specified comparisons, a judgement of low risk is warranted. (If registry documentation were found to specify additional outcomes/analyses not reported, this judgement should be revisited.)

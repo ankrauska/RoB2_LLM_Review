@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21216670
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Chollet, 2011
+**Outcome Name**: Progression in the Fugl-Meyer Motor Scale
+**Registration number**: NCT00657163
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+*Reason*: The article explicitly states "Randomisation was balanced by centre, with an allocation sequence based on a block size of four, generated with a computer random-number generator by the pharmacist at the coordinating centre." This clearly describes an adequate computer-generated randomization method.
+
+**1.2**: Y (95%)
+*Reason*: The article explicitly states "Allocation was concealed by use of sequentially numbered opaque envelopes." Fluoxetine and placebo capsules were identical in appearance and packaging, further supporting adequate concealment.
+
+**1.3**: Y (90%)
+*Reason*: Table 2 shows notable baseline imbalances: mean age was higher in fluoxetine group (66.4 vs 62.9), previous stroke history was more frequent (17% vs 7%), and critically, the **baseline FMMS score itself** (the outcome variable) was higher in the fluoxetine group (17.1 vs 13.4 total score) at inclusion. The authors themselves acknowledge this imbalance and had to statistically adjust for it in their primary analysis, indicating this is an important prognostic factor/baseline outcome measure difference.
+
+**Result of Domain 1**: Some concerns (90%)
+*Reason*: Since 1.2 = Y, 1.1 = Y, and 1.3 = Y, per the decision rules, this leads to a "Some concerns" classification for Domain 1, driven by the baseline imbalance in the outcome variable itself (FMMS score at inclusion).
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (95%)
+*Reason*: The article states "Participants, carers, and physicians assessing the outcome were masked to group assignment." No placebo-related side effects are reported as unblinding participants.
+
+**2.2**: N (95%)
+*Reason*: "Patients, carers, all site study staff, and investigators were masked to treatment assignment." The blinding code was not broken during the study.
+
+**2.3**: Y (80%)
+*Reason*: A pre-specified balanced non-protocol procedure existed: if depression occurred, open-label fluoxetine (20 mg) was added to both groups equally (making placebo group receive 20 mg total, fluoxetine group 40 mg total), applied symmetrically according to protocol. This was a pre-planned, balanced procedure, not an imbalanced non-protocol intervention.
+
+**2.4**: N (95%)
+*Reason*: Out of 118 randomized, only 2 died and 3 withdrew (5/118 = 4.2%), well below the 10% threshold. Implementation was successful for the vast majority.
+
+**2.5**: N (90%)
+*Reason*: "Treatment compliance was similar in the two groups" with mean relative dose intensity of 94.8% (fluoxetine) and 94.0% (placebo), both well above 90% adherence, indicating minimal non-adherence.
+
+**2.6**: N (90%)
+*Reason*: The primary analysis was based on the "full analysis set" (all patients with available data), which is equivalent to an ITT-type analysis, not an appropriate method for estimating adherence effects (per specified rules, ITT-type analysis = N for 2.6).
+
+**Result of Domain 2**: Low risk (90%)
+*Reason*: 2.1=N, 2.2=N, 2.4=N, 2.5=N — this satisfies the first rule for "Low risk" regardless of 2.3/2.6, since the direct blinding conditions (2.1, 2.2) are both N and implementation/adherence failures (2.4, 2.5) are both N.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95%)
+*Reason*: 113 of 118 randomized patients (95.8%) had complete outcome data for the primary FMMS outcome at day 90 (continuous variable), meeting the ≥95% threshold.
+
+**Result of Domain 3**: Low risk (95%)
+*Reason*: Since 3.1 = Y, per the decision rule, Domain 3 is directly rated "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95%)
+*Reason*: FMMS "is an index that is widely used for assessment of motor recovery after stroke and has excellent intra-rater and inter-rater reliability and validity" (with citation). This is an appropriate, validated, reliable measurement tool.
+
+**4.2**: N (90%)
+*Reason*: "All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment" — identical assessment schedule and method for both groups.
+
+**4.3**: N (90%)
+*Reason*: FMMS is not patient-reported; it is assessed by a physiotherapist. "Participants, carers, and physicians assessing the outcome were masked to group assignment," and blinding was maintained throughout ("the blinding code was not broken"). Therefore outcome assessors were unaware of allocation.
+
+**4.4**: Y (75%)
+*Reason*: Although FMMS is a validated clinical scale, its administration involves clinician judgment/rating of movement performance (partly/fully performed), making it a subjective measure assessed by an outcome assessor (physiotherapist), rather than a purely objective measure like mortality.
+
+**4.5**: N (85%)
+*Reason*: No clear evidence suggests that knowledge of intervention status influenced outcome assessment. Blinding of assessors was maintained rigorously throughout the trial, with no indication of unblinding events specifically affecting the physiotherapists conducting FMMS assessments.
+
+**Result of Domain 4**: Low risk (90%)
+*Reason*: Since 4.1=N, 4.2=N, and 4.3=N, per the first decision rule, Domain 4 is rated "Low risk" regardless of subsequent answers.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (90%)
+*Reason*: The trial was prospectively registered (NCT00657163) with the primary outcome "Progression in the Fugl-Meyer Motor Scale" at M3, matching exactly what is reported in the Methods and Results sections of the article (change in FMMS score between day 0 and day 90, analyzed via linear regression adjusted for pre-specified covariates).
+
+**5.2**: N (90%)
+*Reason*: The FMMS total score (plus upper/lower limb subscores) was the single pre-specified outcome measurement, consistently reported as the primary outcome in both the trial registration and the published results without evidence of selective reporting from multiple scales/timepoints for the primary endpoint.
+
+**5.3**: N (85%)
+*Reason*: A single pre-specified analysis method (multiple linear regression adjusting for centre and baseline factors showing imbalance) was used and reported consistently; sensitivity analyses (adjusting for depression, subgroup without thrombolysis) were reported transparently and supported the same conclusion, not suggesting selective reporting.
+
+**Result of Domain 5**: Low risk (90%)
+*Reason*: Since 5.2=N, 5.3=N, and 5.1=Y, per the decision rule, Domain 5 is rated "Low risk."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: Some concerns (90%)
+
+*Reason*: Domain 1 was rated "Some concerns" due to baseline imbalance in the primary outcome variable (FMMS score) itself at inclusion, raising questions about the randomization process. Domains 2, 3, 4, and 5 were all rated "Low risk." Per the decision rules, when one domain is "Some concerns," no domain is "High risk," and at least two domains are "Low risk," the overall assessment is "Some concerns."

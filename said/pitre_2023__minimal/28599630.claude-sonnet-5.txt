@@ -1,0 +1,80 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 28599630
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Prevalence of depressive symptoms (EPDS score ≥11)
+## Effect of interest: Assignment to intervention (ITT)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** 
+The allocation sequence appears to have used a random component: "The randomization was performed by a researcher not involved in the data collection using the participant identification (subject ID) after stratification for EPDS score and previous history of depression." This supports "Probably yes" for sequence randomness (signalling Q1.1).
+
+However, there is no description of the allocation concealment mechanism (e.g., sealed envelopes, central allocation system). The paper does not describe how the stratified randomization list was concealed from those enrolling participants. This leads to "No information" for Q1.2.
+
+Regarding baseline imbalance (Q1.3): Table 1 shows a notable difference in skin color between groups (White: 40.6% fish oil vs. 17.9% control, non-white: 59.4% vs 82.1%, p=0.055), which is borderline significant and unlikely to be due to chance alone given it is close to threshold. Additionally, parity differed (p=0.138) though not significant. Skin color is plausibly linked to socioeconomic status and could be a prognostic factor for depression in this population, though the p-value (0.055) is just above the conventional 0.05 threshold, so this is likely compatible with chance, though borderline.
+
+Given (i) no information on allocation concealment and (ii) a borderline imbalance in a potentially prognostic variable (skin color) that does not clearly indicate a problem but raises some concern, the domain-level judgement is "Some concerns" per the algorithm (No information on concealment + baseline imbalances compatible with chance → Some concerns).
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+This was a double-blind trial: "randomized, placebo-controlled, double blind trial." Capsules were "identical regarding color, shape, size and packing," and "Participants and all research assistants and technicians responsible for running both the cohort study and the RCT were blinded to the study allocation." This supports "No" to Q2.1 and Q2.2 (participants, carers, and personnel were unaware of assigned intervention), which would normally support a "Low" risk for Part 1 of this domain.
+
+However, for Part 2 (analysis), the paper states: "All analyses were performed using both the pre-protocol and intention-to-treat (ITT) procedures. The ITT population included all women randomized, regardless of whether or not they dropped out or fully adhered to the intervention." This description is consistent with an appropriate ITT analysis (Q2.6 = Yes).
+
+The complication arises from the flow of participants: many randomized women (6 in fish oil, 4 in placebo) never received any intervention due to post-randomization events (transfers, miscarriage, exceeding gestational window) before the intervention began, and this occurred *before* T1 (trial baseline for supplementation). The ITT dataset described in Table 1/Table 3/Table 4 appears to be based on those who had at least the T1 assessment (n=32 fish oil, n=28 control) — i.e., not the full originally randomized 60 (32 vs 28, total 60, but flow chart indicates additional dropouts before supplementation started). It is unclear from the text whether the "ITT" analysis reported truly includes all 60 originally randomized women or only those retained after early exclusions, which could represent an inappropriate exclusion of randomized participants inconsistent with strict ITT principles. This creates ambiguity regarding correct application of ITT principles (partial concern for Q2.6/Q2.7).
+
+Given blinding was well implemented (favoring Low for Part 1) but there is ambiguity/lack of full clarity about whether the "ITT" analysis is a true full ITT analysis (with potential post-randomization exclusions before intervention start), the overall judgement is "Some concerns" rather than "Low," reflecting the some concerns for Part 2 in the algorithm.
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**
+Outcome data were not available for all, or nearly all, randomized participants. Of 60 randomized women, only 32 completed the trial through to the postpartum outcome assessment (T3): "A total of 32 women completed the trial." For the primary outcome (EPDS≥11 at T3, postpartum), the ITT analysis in Table 3 shows n=28 control and n=32 fish oil at T0, but the postpartum (T3) outcome shows the fish oil group data based on only those with available T3 data (with an additional 2 women in the fish oil group missing postpartum: "At the postpartum visit, 2 women in the fish oil group missed the appointment").
+
+This represents substantial attrition (about 47% of randomized participants did not complete to T3), well above the 20% threshold often used as a marker of concern, and there is no evidence provided of correction via appropriate methods (e.g., multiple imputation or sensitivity analyses) for the primary EPDS≥11 outcome specifically. The paper does not report sensitivity analyses testing robustness of the primary categorical outcome (EPDS≥11) to plausible values of the missing data (Q3.2 = No).
+
+Reasons for missingness include miscarriage, stillbirth, transfer of care, pre-eclampsia, lost capsules, and missed appointments—several of which (miscarriage, stillbirth, pre-eclampsia) could plausibly be related to underlying health/psychological status and thus to the true value of the depression outcome (Q3.3 = Yes, could depend on true value).
+
+Reasons for dropout differed somewhat between groups (e.g., stillbirth occurred in one fish oil participant pre-intervention and one control participant post-randomization; pre-eclampsia in control), and the proportion of missing data, while roughly similar between groups in raw counts, is substantial enough that even similar proportions could still bias the result if related to true depression status differentially by group. Given the extent of dropout, the plausible relationship between reasons for dropout (miscarriage, stillbirth, pre-eclampsia) and the true depressive symptom status, and lack of formal sensitivity analysis addressing this for the ≥11 threshold outcome specifically, this domain is judged as **High risk of bias** (Q3.4 = Likely, given the biologically plausible reasons for dropout related to underlying pregnancy/health complications).
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+The method of measuring the outcome (EPDS ≥11) was appropriate and validated for this population: "The Portuguese version of the EPDS was validated in a sample of mothers from Pelotas, southern Brazil… At the study end-point, for screening of moderate and severe cases of PPD, the cutoff point of ≥11 (83.8% of sensitivity and 74.7% of specificity) was used." This is not an inappropriate method (Q4.1 = No).
+
+Measurement of the outcome did not differ between intervention groups — the same self-report EPDS instrument was administered to all participants at the same time points regardless of group assignment (Q4.2 = No).
+
+Since this is a participant-reported outcome, the "outcome assessor" is the participant herself. Given that the trial was double-blind and placebo capsules were identical in appearance ("identical regarding color, shape, size and packing"), and compliance/side-effect profiles were similar between groups (nausea/vomiting reported similarly in both groups: "4 at the fish oil and 4 at the control group"), it is unlikely participants could deduce their allocation based on side effects. Thus, outcome assessors (participants) were likely unaware of their intervention assignment (Q4.3 = No), supporting a low risk judgement.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+The trial registration (NCT01660165) lists the primary outcome as "Major depressive episode," while secondary outcomes listed are "Gestational weight gain" and "Birth weight," with "Serum fatty acids composition" as an other outcome. The registration record appears to describe the parent observational cohort rather than being fully specific to the RCT sub-study, and the registration was made retrospectively ("Retrospectively registered on 24 May 2012"), which limits the ability to verify a pre-specified analysis plan finalized before unblinded data were available (Q5.1 = No information/Probably no, given retrospective registration).
+
+However, examining the published article itself, the EPDS ≥11 prevalence outcome and the continuous EPDS score are both reported consistently and fully across all time points (T0, T1, T2, T3) and for both ITT and per-protocol populations in Tables 3 and 4, with no evidence of selective omission of time points, scales, or subgroups. The measurement instrument (EPDS) and cutoffs (≥9 for trial entry, ≥11 for outcome) are pre-specified and consistently applied, and multiple pre-specified statistical models (random-intercept logistic regression, LME) are reported transparently for both categorical and continuous versions of the outcome, including analyses in the full sample and the subgroup with prior depression history. There is no indication that only favorable results were selectively reported — indeed, the main finding was null for the primary prevalence outcome, and this null result was still reported and discussed at length, which argues against selective outcome reporting bias.
+
+Given the retrospective trial registration limits certainty regarding a fully pre-specified plan, but there is no clear evidence of selection from multiple eligible measurements or analyses for this specific outcome (EPDS≥11), the judgement is **Low risk of bias**, though this relies partly on the completeness and internal consistency of reporting within the publication itself rather than confirmation against a prospectively registered detailed analysis plan.

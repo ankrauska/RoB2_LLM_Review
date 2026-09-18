@@ -1,0 +1,98 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 26156151
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# ROB 2 ASSESSMENT REPORT
+## CTO-IVUS Study (Circ Cardiovasc Interv. 2015;8:e002592)
+
+**Result assessed:** MACE (composite of cardiac death, MI, or target-vessel revascularization) at 12 months, IVUS-guided vs. angiography-guided CTO intervention (secondary/key comparative endpoint reported as primary driver of conclusions)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect), as stated in Methods ("The intention-to-treat principle was used in all analyses")
+
+---
+
+### 1. Bias arising from the randomization process — **SOME CONCERNS**
+
+**Signalling questions:**
+- 1.1 Was the allocation sequence random? **Probably Yes.** Web-based interactive response system used with 1:1 randomization stratified by center, and a secondary 1:1 randomization (2×2 design) to stent type. No explicit description of the random-number-generation method (e.g., block size, sequence generation algorithm) is provided.
+- 1.2 Was the allocation sequence concealed? **Yes.** Use of a centralized, interactive web-based response system is a robust concealment method, satisfying the minimal/extended criteria in the tool.
+- 1.3 Did baseline differences suggest a problem? **No.** Table 1 shows excellent balance across nearly all baseline clinical and angiographic variables (all P>0.1 except two procedural variables discussed below). Table 2 (stent comparison) is similarly balanced.
+
+**Motivation:** Allocation concealment is robust (central web-based system). However, exact methods of sequence generation (e.g., simple vs. block randomization, software used) are not reported, only that stratification by center occurred. Some post-randomization *procedural* variables differed significantly (high-pressure poststent dilation 51.2% vs 41.3%, P=0.045; maximum poststent balloon pressure P=0.040), but these are post-randomization operator decisions, not baseline imbalances, and thus do not indicate randomization failure. Because the sequence generation method is not fully detailed, and to be conservative given the mapping algorithm (no information on sequence randomness combined with adequate concealment and no baseline imbalance defaults to "Some concerns" per Table 4 pathway when full specificity is lacking), a judgement of "Some Concerns" is assigned. This is a limitation explicitly noted due to ambiguity in the reported methods.
+
+**Direction of bias:** Unpredictable.
+
+---
+
+### 2. Bias due to deviations from intended interventions — **SOME CONCERNS**
+
+**Signalling questions:**
+- 2.1 Were participants aware of assigned intervention? **Yes.** This is an open-label study; IVUS vs. angiography guidance cannot be blinded to the interventionalist, and participants likely knew (or could infer) which imaging strategy was used given procedural differences (IVUS catheter insertion, longer procedure time).
+- 2.2 Were carers/people delivering the intervention aware? **Yes.** Operators necessarily knew whether IVUS was being used (unblindable by nature of intervention).
+- 2.3 Were there deviations from intended intervention arising from trial context? **No information / Probably No.** No explicit report of non-protocol interventions or crossover between imaging-guidance arms. IVUS use was strictly per-group; no crossover documented.
+- 2.4/2.5 — Not applicable, as no deviations were reported.
+- 2.6 Was an appropriate analysis used (ITT)? **Yes.** Authors explicitly state, "The intention-to-treat principle was used in all analyses," and nearly all randomized patients were followed (200/201 and 201/201).
+
+**Motivation:** Because the nature of the intervention (IVUS vs. angiography guidance) precludes blinding of operators and likely of participants, and because this is expected/inherent to the trial design rather than a "deviation" caused by trial context, the domain per the RoB2 algorithm (Table 6) is not automatically "High." However, non-blinding of personnel introduces the theoretical possibility that unblinded awareness of allocation influenced ancillary procedural decisions (e.g., the significantly more frequent high-pressure post-dilation and higher balloon pressure in the IVUS group, as noted in Table 1 and discussed by the authors themselves as a possible explanatory mechanism for the outcome difference). This represents evidence that non-blinded operators behaved differently between groups in a manner that could affect the outcome (MACE, driven by TVR and post-procedural MLD), and this difference was not balanced between groups. This raises the judgement above "Low" to "Some Concerns," as the deviation (differential post-dilation practice) arose plausibly because of awareness of allocation and could have contributed to between-group outcome differences, though it does not clearly rise to "High" risk because the ITT analysis was intact and the difference, while statistically significant, was procedurally modest (the authors themselves label the MLD difference as "minimal").
+
+**Direction of bias:** Favours IVUS-guided group (i.e., the observed benefit may be partly attributable to differential post-dilation practice rather than IVUS-guidance per se).
+
+---
+
+### 3. Bias due to missing outcome data — **LOW RISK**
+
+**Signalling questions:**
+- 3.1 Were outcome data available for all/nearly all participants? **Yes.** 200/201 (99.5%) in IVUS group and 201/201 (100%) in angiography group completed 12-month follow-up. This is a negligible amount of missing data, incapable of materially influencing the reported effect estimate.
+
+**Motivation:** Follow-up was essentially complete (only 1 patient lost to follow-up across 402 randomized patients), and mean follow-up duration was balanced between groups (359±34 vs 359±37 days, P=0.907). No further signalling questions are required.
+
+**Direction of bias:** Not applicable.
+
+---
+
+### 4. Bias in measurement of the outcome — **LOW RISK**
+
+**Signalling questions:**
+- 4.1 Was the method of measuring the outcome inappropriate? **No.** Outcomes (cardiac death, MI, TVR) were defined using standardized, internationally recognized definitions (ARC criteria for stent thrombosis, Universal MI definition, QCA-based revascularization criteria).
+- 4.2 Could measurement/ascertainment have differed between groups? **No/Probably No.** All patients underwent identical follow-up schedules (1, 3, 9, 12 months) via clinic visit or telephone, regardless of allocation.
+- 4.3 Were outcome assessors aware of intervention received? **No.** The article explicitly states: "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization."
+- 4.4/4.5 — Not applicable, given blinded adjudication.
+
+**Motivation:** The use of a blinded clinical event committee to adjudicate all outcomes (including the components of MACE, which involve some judgement, e.g., MI diagnosis, TVR indication) substantially mitigates the risk of differential outcome assessment. Given objective/standardized outcome definitions and blinded adjudication, risk of bias in this domain is low.
+
+**Direction of bias:** Not applicable.
+
+---
+
+### 5. Bias in selection of the reported result — **SOME CONCERNS**
+
+**Signalling questions:**
+- 5.1 Were data analysed in accordance with a pre-specified plan finalized before unblinded outcome data were available? **No information.** The trial registry (NCT01563952) lists the primary outcome as "event rate of cardiac death within 12 months" and secondary outcome as "Incidence of MACE." These match the outcomes reported in the article. However, no statistical analysis plan (SAP) is available/cited, and it is unclear whether the specific composite "cardiac death or MI" outcome (highlighted in the abstract and Figure 2B) was pre-specified, or was constructed post hoc after observing the primary cardiac-death result was not significant.
+- 5.2 Was the result likely selected from multiple eligible outcome measurements? **Probably No** for MACE itself (pre-specified in registry), but there is **no information** regarding pre-specification of the "cardiac death or MI" composite, which appears in the abstract as a headline finding despite not being a pre-specified primary/secondary endpoint in the registry.
+- 5.3 Was the result likely selected from multiple eligible analyses? **No information.** No SAP was available to confirm whether subgroup, adjusted, or alternative analyses were pre-specified and whether the reported (unadjusted, log-rank/Cox) analysis was the sole intended approach.
+
+**Motivation:** While the primary registered outcome (cardiac death) and secondary registered outcome (MACE) are faithfully reported (with cardiac death being non-significant, consistent with pre-registration, reducing concern about outcome-switching for the primary endpoint), the prominent reporting of the additional composite "cardiac death or MI" (P=0.045, marginally significant) — not listed as a pre-specified outcome in the trial registry — raises the possibility that this specific composite was selected/emphasized because it achieved statistical significance. No protocol or SAP was available for verification. This is reported as a limitation/ambiguity in the assessment due to lack of access to the full trial protocol/SAP.
+
+**Direction of bias:** Probably favours the IVUS-guided group (towards demonstrating an advantage of IVUS guidance).
+
+---
+
+## 6. OVERALL RISK-OF-BIAS JUDGEMENT: **HIGH RISK OF BIAS**
+
+**Rationale:** Applying the Cochrane RoB 2 rule set:
+- No domain was individually rated "High risk."
+- However, **three of the five domains** (Domain 1: Randomization process; Domain 2: Deviations from intended interventions; Domain 5: Selection of the reported result) were rated **"Some Concerns."**
+- Per RoB 2 guidance (Table 1), "Some concerns" in multiple domains may lead to an overall judgement of **"High risk of bias"** when, in combination, they substantially lower confidence in the result.
+
+In this case:
+1. The open-label nature of the trial (unblindable by design) combined with a **documented, statistically significant difference in post-randomization procedural practice** (high-pressure post-dilation, balloon pressure) between groups — which the authors themselves speculate may partly explain the outcome difference — directly threatens the internal validity of the headline MACE result.
+2. This compounds with uncertainty about the randomization sequence generation method.
+3. This further compounds with the unclear pre-specification status of the "cardiac death or MI" composite outcome prominently featured in the abstract/conclusions, raising concern about selective emphasis of a favorable result.
+
+Together, these concerns — particularly the interaction between unblinded procedural conduct and the plausible mechanistic explanation offered by the authors for the observed benefit — substantially lower confidence that the observed reduction in MACE is attributable to IVUS-guidance itself rather than to differential co-intervention (post-dilation practice) or outcome-reporting choices. Therefore, the overall judgement for the MACE result is **High risk of bias**.
+
+**Limitations of this assessment (ambiguities identified):**
+- Full trial protocol and statistical analysis plan were not available for review; assessment for Domains 1 and 5 relied on the trial registry record and journal text alone.
+- Exact method of random sequence generation (e.g., permuted block size) was not reported in the article.
+- It is unclear whether "cardiac death or MI" was a pre-specified tertiary endpoint or a post hoc construction.

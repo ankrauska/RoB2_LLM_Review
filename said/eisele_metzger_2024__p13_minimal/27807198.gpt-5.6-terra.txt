@@ -1,0 +1,43 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 27807198
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Outcome assessed: survival time.**  
+This assessment concerns the randomised, double-blind placebo-controlled trial. The manuscript’s pooled estimate also incorporates a non-randomised compassionate-use/historical-control comparison; that observational component is intrinsically vulnerable to confounding and should not be treated as confirmatory randomised evidence.
+
+1. **Risk of bias arising from the randomization process: some concerns**  
+   - Participants were said to be randomly assigned 1:1 to doxycycline or placebo, and the randomisation list and study medication were administered by an external institution (Charité, Berlin). This is compatible with allocation concealment. The trial was described in both the registry and manuscript as double blind and placebo controlled.  
+   - However, the report does not state how the random sequence was generated (e.g., computer-generated sequence, permuted blocks, stratification). Therefore, genuinely random sequence generation cannot be verified.  
+   - Baseline differences are substantial, although the trial is extremely small: median age at onset was 58 years in the doxycycline group versus 72 years in the placebo group; median MMSE was 21 versus 16, respectively. Such imbalance can occur by chance with seven versus six participants, but age and cognitive status are important prognostic factors in CJD and the randomised survival analysis was apparently unadjusted for these differences.  
+   - Allocation concealment is plausible but not fully documented, and sequence generation is not reported.  
+
+2. **Risk of bias due to deviations from the intended interventions: some concerns**  
+   - The intended comparison was doxycycline 100 mg daily versus matching placebo in a double-blind design. Blinding of patients and personnel should, in principle, have limited differential co-interventions and behavioural deviations.  
+   - Nevertheless, four of seven participants allocated to doxycycline discontinued treatment, according to the flow diagram. Treatment duration was also short and variable (median 61 days in the doxycycline group and 34 days in the placebo group). The reasons for discontinuation, their timing, whether discontinuation was related to prognosis or adverse events, and whether treatment switching or unblinding occurred are not adequately reported.  
+   - Survival analyses appear to have included all seven doxycycline-assigned participants, irrespective of discontinuation, which is broadly consistent with an intention-to-treat approach for that arm. However, the corresponding handling of the placebo arm was not intention-to-treat because one of six randomised placebo participants was excluded from analysis.  
+   - There is insufficient information to determine whether deviations were balanced between groups or whether they materially biased survival estimates.  
+
+3. **Risk of bias due to missing outcome data: high risk**  
+   - Thirteen participants were randomised (seven doxycycline; six placebo), but only 12 were included in the reported survival analysis: all seven doxycycline participants and only five placebo participants.  
+   - The omitted placebo participant is described as having “dropped out”/being “lost,” but the reason, timing, vital status, and whether death information was sought from relatives, treating clinicians, registries, or other sources are not reported. For an all-cause survival endpoint in a national surveillance setting, ascertainment of vital status should ordinarily be feasible even after treatment withdrawal.  
+   - Missing outcome data were therefore differential by treatment group: 0/7 in doxycycline versus 1/6 (17%) in placebo. In a trial of only 13 participants, the outcome of one omitted control participant could substantially alter the hazard ratio and median survival comparison.  
+   - No sensitivity analysis explores plausible outcomes for the missing placebo participant. The reported analysis is consequently at high risk of bias from missing survival data.
+
+4. **Risk of bias in measurement of the outcome — survival time: low risk**  
+   - Death is an objective outcome and is not readily influenced by participants’ expectations, clinicians’ expectations, or assessor judgement.  
+   - The trial was described as double blind, providing additional protection against differential ascertainment or recording of deaths.  
+   - The manuscript does not give detailed procedures for ascertainment of date of death, but there is no persuasive indication that knowledge of intervention assignment influenced the measurement of death.  
+   - The reported randomised analysis defined follow-up from randomisation to death or study end. This differs from the registered primary endpoint definition—survival from symptom onset—but that is principally a problem of selection/definition of the reported analysis, rather than biased measurement of the date of death itself.  
+   - For the observational comparison, symptom-onset dates were based on relatives’ interviews. The investigator determining onset was reportedly blinded to treatment, which reduces differential measurement bias, though recalled onset dates remain inherently less precise than death dates.
+
+5. **Risk of bias in selection of the reported result: high risk**  
+   - The EudraCT record prespecified the primary endpoint as **survival time from onset of symptoms until death**. In contrast, the manuscript explicitly states that, in the randomised trial, survival follow-up began at **randomisation/first administration of study medication**. This is a material departure from the registered endpoint definition.  
+   - This altered time origin is especially problematic because time from symptom onset to treatment/randomisation differed appreciably between groups: median 95 days in the doxycycline group versus 152 days in the placebo group. Survival measured from randomisation is not equivalent to survival from onset and may produce a different effect estimate.  
+   - The article reports the null randomised comparison (HR 0.841, 95% CI 0.238–2.966), but then combines it with a non-randomised compassionate-use/historical-control analysis to obtain a nominally statistically significant pooled result (HR 0.633, 95% CI 0.402–0.999; p=0.049). There is no evidence in the registry information provided that this cross-design random-effects meta-analysis was prespecified.  
+   - The observational study has major design limitations: doxycycline use was initiated by family doctors, controls were historical/non-treated patients, treatment initiation occurred after disease onset, and adjustment was limited to propensity-score terciles based on selected variables. Residual confounding by disease severity, timing of diagnosis, access to care, and clinical decision-making is highly plausible.  
+   - Presenting the pooled randomised-plus-observational estimate as evidence of efficacy risks selecting an analysis that yields statistical significance after the randomised result itself was inconclusive and based on a different endpoint definition than registered.
+
+6. **Overall rating: high risk of bias**  
+   The overall risk of bias for the reported survival-time result is **high risk**. The principal reasons are differential, unexplained missing survival data in the placebo group and high risk of selective reporting/analysis: the registered primary endpoint was survival from symptom onset, whereas the randomised analysis used survival from randomisation, and the inconclusive randomised result was pooled with a vulnerable non-randomised historical-control analysis to generate a borderline significant result.

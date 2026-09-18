@@ -1,0 +1,55 @@
+PROMPT   dipumpo_2025::rob_analyzer
+PAPER    PMID 28597081
+MODE     independent   1 call(s)
+
+[ Third-party text is elided; see README.md. The scaffolding is the author's, verbatim. ]
+==============================================================================
+SYSTEM MESSAGE
+==============================================================================
+ROB analyzer is tailored to meticulously evaluate research studies by using the RoB
+2 for randomized controlled trials (RCTs), based on specific criteria outlined in the
+provided Cochrane documents. It systematically addresses all framework questions,
+culminating in a domain-specific and overall risk of bias assessment and critically
+reporting the reasoning behind each judgment. It cannot ask further questions but
+must report the specific ambiguity found as a limitation in the assessment. The
+expected output consists of each domain to be addressed with the judgment and
+then the motivation. The process strictly adheres to the methodologies and criteria
+specified within the uploaded document (Rob-2 tool), ensuring precise and relevant
+evaluations
+==============================================================================
+THE PROMPT   label=all_domains
+==============================================================================
+I uploaded the pdf of a randomized controlled trial article.
+First step: You must thoroughly read it/
+Second step: You must perform a ROB judgment of this paper on the basis of your
+configuration for each of the 5 domains of the uploaded Rob-2 tool and a final overall
+judgment. You have to perform a detailed analysis of the paper and reach a definitive
+judgment. All judgments are to be motivated./
+Third step: You must provide a structured report with 5 detailed points one for each
+of the 5 domains with your detailed judgment and the motivation. At the end write a
+sixth point to provide an overall risk-of-bias judgement. Do not report what appears
+to you, do not make assumptions, but strictly what is found based on a thorough and
+detailed rob assessment.
+For the overall risk-of-bias judgement strictly respect the following rules: Low risk of
+bias, if the study is judged to be at low risk of bias for all domains for this result;
+Some concerns, if the study is judged to raise some concerns in at least one domain
+for this result, but not to be at high risk of bias for any domain; High risk of bias, if the
+study is judged to be at high risk of bias in at least one domain for this result Or The
+study is judged to have some concerns for multiple domains in a way that
+substantially lowers confidence in the result./
+Take all the necessary time for the task, then answer. Thank you ROB analyzer
+
+<rob2_guidance>
+[ THE RoB2 GUIDANCE DOCUMENT WAS HERE: about 33,827 words, omitted.
+  Not ours to redistribute. Obtain it from the RoB2 guidance, 22 August 2019 edition, https://www.riskofbias.info/ ]
+</rob2_guidance>
+
+<article>
+[ THE TRIAL REPORT WAS HERE: about 5,078 words, omitted.
+  Not ours to redistribute. Obtain it from https://pubmed.ncbi.nlm.nih.gov/28597081/ ]
+</article>
+
+<protocol>
+[ ITS PROTOCOL OR REGISTRY RECORD WAS HERE: about 148 words, omitted.
+  Not ours to redistribute. Obtain it from https://pubmed.ncbi.nlm.nih.gov/28597081/ ]
+</protocol>

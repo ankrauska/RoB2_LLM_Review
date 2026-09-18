@@ -1,0 +1,101 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 23401294
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0)
+**Trial:** "The effects of two spinal orthoses on balance in elderly people with thoracic kyphosis"
+**Outcome assessed:** Balance score
+**Comparison:** Spinomed orthosis vs. Posture-Training Support (PTS)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process
+**Judgement: Some concerns**
+
+**a. Rationale for Judgement:**
+There was a random component to sequence generation, but there is no information about allocation concealment, and the resulting group sizes are notably unequal (10 vs. 8), which raises some (though not definitive) concern about the integrity of the randomization process.
+
+**b. Rationale/Supporting evidence:**
+- Sequence generation: "The randomization procedure was to pick the name of the orthosis from a bag including the names of both orthoses." This constitutes a genuine random element (analogous to lottery/urn methods), so signalling question 1.1 = Probably Yes.
+- Allocation concealment: No description is given of who performed the draw, when it occurred relative to enrollment, or whether recruiters/participants could anticipate or influence the draw. This is "No information" (NI) for signalling question 1.2.
+- Baseline imbalance: The authors report "no significant difference in subject's age (p = 0.06), weight (p = 0.391), height (p = 0.406), angle of kyphosis (p = 0.959), balance score without orthosis (p = 0.443)..." — differences appear compatible with chance (signalling question 1.3 = No).
+- However, the unequal group sizes (n = 10 vs. n = 8) from a study designed with an a priori sample size of 18 (intended presumably as balanced) is somewhat unusual for a simple random draw repeated 18 times, though not impossible by chance in small samples, and the authors explicitly attribute it to "the group allocation method."
+
+Per the RoB2 algorithm (random: Y/PY; concealment: NI; imbalance: No) → **Some concerns**, reflecting lack of information on concealment combined with a randomization method (bag draw) that is plausible but not confirmed to have been immune from manipulation or prediction.
+
+---
+
+## 2. Bias due to deviations from intended interventions (effect of assignment to intervention)
+**Judgement: Low risk of bias**
+
+**a. Rationale for Judgement:**
+Although participants and personnel could not be blinded to which orthosis was worn (the two devices are visually and structurally distinct), there is no evidence that trial-context-driven deviations from the assigned intervention occurred, and an appropriate analysis (all randomized participants analyzed in their assigned groups) was used.
+
+**b. Rationale/Supporting evidence:**
+- Blinding of participants/personnel: Not possible/attempted — participants could clearly identify which orthosis they wore (Spinomed's rigid metal upright and straps vs. PTS's posterior bag), so signalling question 2.1/2.2 = Yes.
+- Deviations arising from trial context: There is no report of participants switching orthoses, non-adherence to the assigned device, or contamination between groups. Both orthoses were "fitted on the participants by a certified orthotist," and testing occurred under controlled, single-session, supervised conditions, minimizing opportunity for trial-context-driven deviations. Signalling question 2.3 = Probably No.
+- Analysis: All 18 randomized participants appear to have been analyzed according to their assigned intervention group ("Eighteen participants... completed the study procedure"), consistent with an ITT-consistent analysis. Signalling question 2.6 = Yes.
+
+Because there is no evidence of protocol-inconsistent deviations arising from the trial context, and an appropriate analysis was used, this domain is judged **Low risk of bias**, despite lack of blinding — since lack of blinding alone (in a single testing-session paradigm with objective computerized outcome capture) is not sufficient to indicate bias in the assignment effect.
+
+---
+
+## 3. Bias due to missing outcome data
+**Judgement: Low risk of bias**
+
+**a. Rationale for Judgement:**
+All randomized participants appear to have completed testing and had complete outcome data. No losses to follow-up or exclusions post-randomization are reported.
+
+**b. Rationale/Supporting evidence:**
+- "Eighteen participants (16 women and 2 men)... completed the study procedure." This indicates no participant dropped out — all 18 who were randomized (10 to Spinomed, 8 to PTS) contributed data to the reported balance score analyses (Tables 1–3 show n = 10 and n = 8, matching the enrolled numbers).
+- No mention of missing data, withdrawal, or exclusion for the balance score outcome specifically.
+
+Since outcome data are available for essentially all randomized participants, this domain is judged **Low risk of bias**.
+
+---
+
+## 4. Bias in measurement of the outcome
+**Judgement: Low risk of bias**
+
+**a. Rationale for Judgement:**
+The balance score was derived from an automated, computerized force-plate system (NeuroCom EquiTest), representing an objective outcome measurement method with minimal subjective judgement involved in ascertainment, and measurement methods were identical across groups.
+
+**b. Rationale/Supporting evidence:**
+- Outcome measurement method: "A SOT was performed using the NeuroCom EquiTest system according to the manufacturer's protocol." The balance score is computed automatically by load cells and computer algorithms ("The load cells in the force plates transmit force information to the computer 100 times per second"), classifying it as an observer-reported outcome not involving judgement (signalling question 4.1 = No; appropriate method).
+- Comparability of measurement across groups: Both groups underwent an identical, standardized SOT protocol regardless of orthosis type (signalling question 4.2 = No).
+- Awareness of intervention: While participants and testers were aware of which orthosis was being tested (device is visible), because the outcome is an automated, objective computerized score rather than a judgement-based or participant-reported outcome, this awareness is unlikely to influence the recorded balance score itself (signalling question 4.4 = Probably No). The study is also described as "single blinded," suggesting some effort to blind assessors/analysts to group allocation.
+
+Given the objective, automated nature of the balance score, this domain is judged **Low risk of bias**.
+
+---
+
+## 5. Bias in selection of the reported result
+**Judgement: Some concerns**
+
+**a. Rationale for Judgement:**
+There is no evidence in the article of a publicly available, date-stamped pre-specified analysis plan (protocol or trial registry entry) confirming that the balance score outcome, its measurement method, and analysis approach were fully pre-specified prior to unblinded data being available. Without confirmation from the trial registration that the analyses and outcome matched pre-specified intentions exactly, some uncertainty remains.
+
+**b. Rationale/Supporting evidence:**
+- The Methods section states: "Balance score, directional control, and reaction time were measured to evaluate balance with and without orthosis in a random order," and identifies balance score as "the main outcome measure" used for sample size calculation ("The balance score was considered... as the main outcome measure as it is a common and recommended criterion to evaluate the risk of falling"). This suggests balance score was pre-specified as a primary outcome.
+- However, the article does not explicitly reference a registered protocol or statistical analysis plan finalized before unblinded data were available, and no discrepancies could be checked without the trial registry record.
+- Based on the trial registration information, if the primary outcome (balance score), its measurement instrument (EquiTest/SOT), and the analysis (paired and independent t-tests comparing with/without orthosis and between groups) match what was registered a priori, this would support a "Low risk" judgement; however, since the article itself provides no explicit statement of conformity with a pre-registered plan, and only one operationalization of "balance score" is reported (no evidence of selective reporting from multiple scales/timepoints/analyses), the main uncertainty is the absence of an explicit statement/comparison with a pre-specified plan.
+
+Given the lack of explicit information confirming that the analysis was conducted in accordance with a pre-specified plan finalized before unblinded outcome data were available, this domain is judged **Some concerns** (per RoB2 algorithm: "No information" on conformity with pre-specified plan, with no clear evidence of selective outcome/analysis reporting → Some concerns).
+
+---
+
+# Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions (assignment effect) | Low risk |
+| 3. Missing outcome data | Low risk |
+| 4. Measurement of the outcome | Low risk |
+| 5. Selection of the reported result | Some concerns |
+| **Overall risk of bias for "balance score"** | **Some concerns** |
+
+**Overall justification:** Because at least one domain (randomization) and another domain (selective reporting) raise "Some concerns," but no domain is judged to be at "High" risk of bias, and the concerns are not so extensive across domains as to substantially lower confidence in the result, the overall risk of bias for the balance score outcome is **Some concerns**.

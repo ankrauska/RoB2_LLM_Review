@@ -1,0 +1,61 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 26156151
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias 2.0 Assessment: CTO-IVUS Trial
+**Outcome: Occurrence of Cardiac Death**
+**Effect of interest: Assignment to intervention (ITT effect)**
+
+---
+
+## 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The trial used central, web-based randomization stratified by center: "Using an interactive web-based response system, study participants were randomly assigned and stratified by participating center." This is a robust method of both sequence generation and allocation concealment, as central web-based randomization prevents foreknowledge of assignment. There is no explicit statement of the random component (e.g., permuted blocks), but given the interactive web-based system and multicenter design, this is judged "Probably yes" for random sequence generation. Baseline characteristics (Table 1) show no significant differences between groups aside from post-procedural technical parameters (which occurred after randomization and reflect intervention delivery, not baseline imbalance) — e.g., age (P=0.74), sex (P=1.00), diabetes (P=0.83), CTO lesion characteristics (all P>0.4), and prior revascularization history (all P>0.4). The one significant difference (high-pressure poststent dilation, P=0.045) is a post-randomization procedural variable, not a baseline characteristic, and does not indicate a randomization problem. No evidence of problems with sequence generation or concealment.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** This was an open-label study — participants, carers, and people delivering the intervention (interventional cardiologists) were aware of group assignment (IVUS- vs. angiography-guided), since IVUS device use is directly observable during the procedure: "IVUS devices, pullback methods, use at poststenting and prestenting, and numbers of exams were all left to the discretion of physicians." This lack of blinding is inherent to comparing IVUS versus angiography guidance and cannot be avoided.
+
+There is some evidence that trial context may have influenced procedural conduct: "high-pressure poststent balloon dilation was more frequently performed with a greater maximal poststent balloon pressure in the IVUS-guided group than the angiography-guided group (51.2% versus 41.3%; P=0.045)." This could reflect operators' knowledge of IVUS findings appropriately guiding optimization (consistent with protocol-intended IVUS-guided care) rather than an inappropriate trial-context deviation. The authors themselves acknowledge uncertainty: "These improved outcomes for the IVUS-guided group could not be explained by a single predominant factor." There is no clear evidence that non-protocol interventions unrelated to the assigned strategy were introduced due to lack of blinding.
+
+Regarding analysis: "The intention-to-treat principle was used in all analyses," and follow-up was well-balanced (99.5% vs. 100% completing 12-month follow-up), consistent with an appropriate ITT analysis.
+
+Because of the unavoidable lack of blinding and the plausibility (though not certainty) that unblinded post-procedural management (e.g., differential balloon dilation practices) may represent context-driven co-intervention affecting the outcome, but with an appropriate ITT analysis and no definitive evidence of outcome-relevant, protocol-inconsistent deviations, this domain is rated "Some concerns" rather than "High risk."
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** Outcome data for cardiac death were available for essentially all randomized participants. The article states: "200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up." Only one patient overall was lost to follow-up, out of 402 total randomized. Given cardiac death events were rare (0 in IVUS group, 2 in angiography group), and only a single participant had missing data (from the IVUS arm, which had zero events), this negligible loss to follow-up could not have made an important difference to the effect estimate. The trial used a CONSORT-style flow chart (Figure 1) documenting enrollment and follow-up completeness, and clinical follow-up was performed systematically ("at 1, 3, 9, and 12 months...either by clinic visit or by telephone contact"), suggesting an ITT-consistent complete ascertainment.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** Cardiac death is an objective outcome with a standardized definition: "All deaths were considered cardiac death unless an unequivocal noncardiac cause could be established," based on Academic Research Consortium criteria. Importantly, outcome adjudication was blinded to intervention assignment: "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization." Because (1) the method of outcome measurement was appropriate and standardized across groups, (2) ascertainment did not differ between groups (identical follow-up schedule and methods for both arms), and (3) the outcome assessors (clinical event committee) were blinded to treatment allocation, there is low risk that assessment of cardiac death was influenced by knowledge of the intervention received — this is further supported by the fact that cardiac death is an objective, "hard" endpoint with little room for assessor judgement/bias.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The trial registry (NCT01563952) prospectively specified "event rate of cardiac death within 12 months" as the primary outcome and "Incidence of MACE after stent implantation" as a secondary outcome. The published article reports exactly these outcomes, with cardiac death as the prespecified primary endpoint: "The prespecified primary end point was the occurrence of cardiac death." The result for cardiac death is reported fully and transparently, including the exact numbers, Kaplan-Meier analysis, and P-value (0% vs. 1.0%, P=0.16), with no indication of selection from multiple definitions, timepoints, or alternative analytic approaches for this outcome. There is no evidence that this result was selected from multiple eligible analyses (e.g., multiple time points or composite definitions) on the basis of the results — the single prespecified 12-month cardiac death outcome is reported consistently with trial registration.
+
+---
+
+# Overall Risk of Bias for "Occurrence of Cardiac Death": **Some concerns**
+
+**Rationale:** All domains were judged as low risk of bias except "Deviations from intended interventions," which was judged as "Some concerns" due to the unavoidable lack of blinding inherent in comparing IVUS-guided versus angiography-guided strategies, combined with some evidence of differential post-randomization procedural practices (e.g., high-pressure balloon dilation) that could plausibly reflect trial-context-driven co-intervention. Per RoB 2 guidance, a judgement of "Some concerns" in any single domain, with no domain at "High risk," yields an overall judgement of "Some concerns" for this outcome.

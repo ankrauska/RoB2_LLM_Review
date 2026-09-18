@@ -1,0 +1,75 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 11772475
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Treatment Retention Outcome
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of information on allocation concealment, despite adequate random sequence generation.
+
+**b. Rationale:** The trial reports: "Patients completed the initial assessment battery and were stratified on the following variables: (1) any self-reported drug or alcohol use in the past 30-days; and (2) having negative urine drug screens for at least 2 years. They were then randomized into one of the three study conditions." This indicates a random component was used (stratified randomization), supporting a "Yes" to sequence generation being random.
+
+However, there is no information provided about the method of allocation concealment (e.g., use of central randomization, sealed envelopes, etc.). No information is given about who generated the sequence or whether it was concealed from those enrolling participants.
+
+Regarding baseline imbalance: baseline demographics (age, sex, race, marital status, employment) appear balanced across groups (73 patients: routine=21, clinic=27, office=25), and no imbalances are flagged as concerning by the study. There is a difference at baseline in marijuana use rates (Table 2: 16%, 21%, 0% across groups), which could suggest a chance imbalance, but this is a self-reported outcome variable rather than a core prognostic factor for retention, and stratification for this variable was part of the design.
+
+Because allocation concealment is not described (no information), and no baseline imbalance data raise strong concern, this domain is rated "Some concerns" per the algorithm (random sequence: Yes; concealment: No information; baseline imbalance: No/no strong evidence → Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. The study was unblinded (as is typical for this type of service-delivery intervention comparing take-home dosing schedules vs. routine clinic visits), but there is no evidence that deviations arising from the trial context affected treatment retention, and an appropriate intention-to-treat analysis was used.
+
+**b. Rationale:** Participants, clinic staff, and physicians were clearly aware of intervention assignment (impossible to blind given the nature of the intervention — frequency of clinic visits/take-home dosing). This is confirmed in the description of differential monitoring/counseling procedures by group.
+
+However, for the specific outcome of **treatment retention**, there is no indication that awareness of assignment led to deviations from intended intervention that were inconsistent with the protocol and driven by the trial context (e.g., no informal cross-over between groups, no contamination). The "stepped care" intensification process was a pre-specified, protocol-driven procedure applied consistently across groups (not a deviation): "The intensity of weekly counseling and monitoring was increased for patients who produced a drug positive urine specimen or failed a medication recall... This therapeutic model assured the rapid delivery of intensified care."
+
+The analysis is stated as intent-to-treat: "For the intent-to-treat sample (n=73), routine, clinic-based MMM and office-based MMM groups were compared on treatment retention using survival analysis." All 73 randomized patients were included in the retention analysis (Table 1 reports 6-month retention for n=21, 27, 25 — matching randomized numbers), consistent with ITT principles.
+
+Because there is no evidence of trial-context-driven deviations affecting retention, and an appropriate ITT analysis was used, this domain is rated low risk of bias.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. Retention data (a nearly complete-ascertainment outcome by design) were available for all randomized participants, and reasons for dropout are fully documented and do not suggest an outcome-dependent missingness mechanism related to bias.
+
+**b. Rationale:** Retention status is available for all 73 randomized patients by definition — retention (whether a patient remained in/completed the study period) is itself the outcome, so there is no "missingness" in the conventional sense; every patient's retention status (retained vs. dropped out) is known: "Of the 73 randomized patients who began the study, 90% (n=19/21) of the routine treatment, 89% (n=24/27) of the clinic-based MMM and 92% (n=23/25) of the physician office-based MMM finished 6-months of randomized care."
+
+The reasons for the seven dropouts are explicitly reported: "(1) dislike of the frequency of the recall procedure (n=3); (2) transfer to another clinic not participating in the study (n=1); (3) self-reported inability to manage a 28-day supply of medication (n=1); (4) abrupt departure from treatment for unknown reasons (n=1); (5) decision to taper off methadone during the first 6 months (n=1)." Formal statistical comparison of retention curves was performed using survival analysis (Wilcoxon–Gehan statistic=0.14, df=2, ns), which appropriately uses all randomized participants including time-to-dropout data.
+
+Since retention is the outcome itself and complete ascertainment was achieved for all randomized patients, this domain is at low risk of bias.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. Retention/dropout is an objective outcome that is unlikely to be influenced by lack of blinding, and the method of ascertainment (administrative record of program completion/dropout) did not differ between groups.
+
+**b. Rationale:** Treatment retention is an objective, observer-reported outcome not involving subjective judgement (similar to all-cause mortality in the RoB2 guidance's classification) — it is a factual determination of whether a patient remained enrolled in care, based on administrative/clinical records, not requiring interpretation. Reasons for the 7 dropouts are clearly documented and independently verifiable (transfer to another clinic, tapering, abrupt departure, etc.), reducing risk that ascertainment differed by arm.
+
+While outcome assessors (clinic staff) were not blinded to intervention assignment (as is inherent to the nature of this trial), this is unlikely to influence the objective determination of retention status. There is no indication that the method of measuring/ascertaining retention (i.e., presence/absence in treatment) differed systematically between the study arms; the same clinics and administrative tracking systems applied to all groups. Therefore, low risk of bias for this domain.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. Treatment retention was a pre-specified outcome, reported in a straightforward manner (survival analysis on the full intent-to-treat sample), with results presented regardless of statistical significance, and consistent with the described a priori hypothesis.
+
+**b. Rationale:** The Methods section explicitly pre-specifies this analysis: "For the intent-to-treat sample (n=73), routine, clinic-based MMM and office-based MMM groups were compared on treatment retention using survival analysis." This is the only analysis method reported for retention (Wilcoxon–Gehan statistic), and there is no indication of multiple alternative retention definitions, time points, or analytic approaches from which authors could have selectively chosen a favorable result. The result is reported plainly as null ("No between-group differences were observed in retention"), which is consistent with the authors' a priori stated expectation ("no group differences were expected on measures of drug use, retention or medication recall problems"), reducing suspicion of outcome/analysis selection based on results.
+
+While a trial registration document was referenced as available for review, no discrepancies between a pre-specified analysis plan and the reported retention analysis are evident from the information provided in the manuscript. There is only one outcome measurement (retention over 6 months) and one analytic method (survival/Wilcoxon-Gehan) reported for this outcome, with no evidence of selective reporting from multiple eligible analyses.
+
+---
+
+# Overall Risk of Bias for Treatment Retention: **Some concerns**
+
+**Rationale:** Per Table 1 of the RoB2 guidance, a judgement of "Some concerns" in one domain (randomization process, due to lack of information on allocation concealment), with no domain rated "High risk," results in an overall judgement of "Some concerns" for this outcome.

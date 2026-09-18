@@ -1,0 +1,280 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 26329534
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read the article by Hardigan et al. (based on the citation pattern and self-referencing style, this appears to be authored by researchers including Hardigan, who also authored reference #17 on a similar methodology for dentists). The article presents a randomized trial examining survey response rates, response times, and economic costs among practicing pharmacists across different delivery methods (postal mail, email, hybrid), questionnaire lengths, item placement, and gender.
+
+I've noted the key methodological details:
+
+- **Sample**: 7,200 U.S. pharmacists, stratified into 24 subgroups (3 delivery methods × 2 lengths × 2 item placements × 2 genders), 300 per subgroup
+- **Timeframe**: March–April 2012
+- **Key findings**: Delivery method was the only significant factor affecting response rate (χ²=400.8, p<0.01) and response time (F=152.6, p<0.01); postal mail had highest response rate (21.0%) but slowest response time (23.6 days); email was fastest (6.7 days) but lower response rate (6.8%); hybrid performed worst on both metrics (3.2% response rate, 12.9 days)
+- **Cost data**: Postal mail most cost-effective ($10.31/response) vs. email ($29.64) vs. hybrid ($47.10)
+- **Non-significant factors**: Questionnaire length, item placement, and gender showed no significant differences
+- **Limitations acknowledged**: Self-report reliance, unverified respondent identity, potential demographic skew (older sample, mean age 52.5), no incentives used, no non-response/missing-data analysis, sensitive topic content (job satisfaction, income/wages) possibly suppressing response
+
+I've also reviewed the supplementary Table 1 (demographic breakdowns by delivery method), Table 2 (detailed response rates/times across all 24 subgroups), and Figure 1 (CONSORT-style flow diagram showing attrition at each stage: enrollment→allocation→received→returned→completed).
+
+I'm ready to discuss specific aspects of this paper for your systematic review — whether that's methodological quality assessment, risk of bias evaluation (e.g., using Cochrane RoB tool or similar), extraction of specific effect sizes/statistics, comparison with other studies in your review, or synthesis of how this fits within broader literature on survey methodology in health professions research. Let me know what specific analysis or extraction you need.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I am ready to evaluate the first domain of the RoB 2 tool for the outcome **response rate**.
+
+Before I proceed, let me confirm my understanding of the task:
+
+- I will evaluate this RCT (Hardigan et al., survey of practicing pharmacists) using the **Revised Cochrane risk-of-bias tool for randomized trials (RoB 2)**.
+- The evaluation is focused solely on the outcome: **response rate**.
+- I will go through each of the 5 domains of RoB 2:
+  1. Risk of bias arising from the randomization process
+  2. Risk of bias due to deviations from intended interventions
+  3. Risk of bias due to missing outcome data
+  4. Risk of bias in measurement of the outcome
+  5. Risk of bias in selection of the reported result
+
+- For each domain, I will answer the signaling questions using the specified response scale (Yes / Probably yes / Probably no / No / No information), grounded strictly in facts reported in the article — no speculation or extrapolation.
+- I will maintain a critical, skeptical stance and will not default to positive judgments when evidence is absent from the text.
+- I will provide a domain-level judgment and overall risk-of-bias judgment at the end, following completion of all domains.
+
+Please go ahead and confirm if you'd like me to proceed directly with **Domain 1: Risk of bias arising from the randomization process**, or if you want me to wait for further instructions.
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+**Domain 1: Risk of bias arising from the randomization process**
+
+**1.1. Was the allocation sequence random?**
+
+- **Response: Probably yes**
+- **Reason:** The article states: "A random sample of 7200 pharmacists practicing throughout the U.S., provided by the Medical Marketing Service (for the postal mail and hybrid groups) and Statlistics (for the email group), was used... The sample was stratified by delivery method, questionnaire length, item placement, and gender of respondent for a total of 300 observations within each subgroup." This describes a structured, stratified randomization design with exactly balanced numbers (300) across 24 subgroups, suggesting a systematic, likely computerized allocation process. However, the specific mechanism used to generate the random sequence (e.g., computer-generated numbers, random number table) is not explicitly described. Given the detailed stratification and perfectly balanced group sizes, "Probably yes" is justified rather than "No information," but the lack of explicit methodological detail prevents a definitive "Yes."
+
+**1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?**
+
+- **Response: No information**
+- **Reason:** The article provides no information about whether the allocation sequence was concealed from the researchers or personnel responsible for enrolling/contacting participants. There is no mention of a centralized randomization service, sequentially numbered sealed envelopes, or any other concealment mechanism. Since this is a survey study with participants drawn from commercial databases (MMS and Statlistics), no details are given on how or when specific individuals were assigned to specific delivery methods, questionnaire lengths, item placements, or whether this assignment could have been manipulated or anticipated.
+
+**1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?**
+
+- **Response: Yes**
+- **Reason:** Critically, the postal mail and hybrid groups were sourced from a different database (Medical Marketing Service) than the email group (Statlistics). This means the three delivery-method arms were not drawn from a single unified sampling frame, undermining the core premise of simple/stratified randomization from one pool. This is corroborated by Table 1, which shows large demographic disparities across delivery-method arms in ethnic composition — Non-Hispanic White: 86.3% (postal) vs. 68.7% (email) vs. 74.0% (hybrid); Black: 3.2% (postal) vs. 26.4% (email) vs. 19.2% (hybrid) — differences far too large to be attributable to chance in a properly randomized single-frame allocation. Similarly, practice site (e.g., Hospital: 19.0% postal vs. 35.0% email vs. 13.7% hybrid) shows substantial divergence. These patterns strongly suggest that the use of two different sampling frames (not simple randomization from one pool) introduced systematic differences between arms, indicating a genuine problem with the randomization process rather than chance variation.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 1: High**
+
+**Justification:** Although the stratified design with balanced subgroup sizes (1.1) suggests probable use of a random allocation mechanism, the complete absence of information on allocation concealment (1.2) combined with clear evidence of a structural flaw in the randomization process (1.3) — namely, the use of two entirely different sampling frames/databases for different delivery-method arms — results in a "High risk of bias" judgement for this domain. Per the RoB 2 algorithm, a "Yes" response to signaling question 1.3 (baseline differences indicating a problem with randomization) is sufficient to drive the domain-level judgement to "High," since this reflects a substantive, non-chance-related flaw in how the study arms were constituted, likely to result in confounding between delivery method and pre-existing demographic characteristics of pharmacists — directly relevant to the response rate outcome, since response behavior is known to vary by demographic factors (e.g., age, ethnicity, practice setting).
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+**Domain 2: Risk of bias due to deviations from the intended interventions**
+
+**Note on approach:** For this trial, I am assessing the **effect of assignment to intervention** (rather than effect of adhering to intervention), as this is appropriate for a pragmatic trial comparing different survey delivery methods. The "intervention" here — postal mail, email, or hybrid delivery — is inherently unblindable (akin to an open-label trial design), and the outcome of interest (response rate) is a pragmatic, real-world outcome of policy/method assignment rather than a clinical outcome requiring strict protocol adherence.
+
+**2.1. Were participants aware of their assigned intervention during the trial?**
+
+- **Response: Yes**
+- **Reason:** By the very nature of the study design, participants necessarily knew which delivery method they received — postal mail (physical letter/questionnaire), email (electronic invitation with weblink), or hybrid (postcard directing to a web survey). This is an inherent, unblindable feature of the intervention itself; awareness of assignment is unavoidable and expected.
+
+**2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?**
+
+- **Response: Yes**
+- **Reason:** The research team administering the survey necessarily knew which delivery method (postal, email, hybrid) was being used for each participant, as they were responsible for sending the specific format of survey material (e.g., printing/mailing postal surveys vs. sending emails vs. mailing postcards). This is inherent to implementing the different delivery methods described in the Methods section (e.g., "Pharmacists who were randomized to the postal mail group were sent an envelope containing a cover letter...").
+
+**2.3. Were there deviations from the intended intervention that arose because of the trial context?**
+
+- **Response: No**
+- **Reason:** There is no evidence in the article suggesting that the trial context (e.g., the process of recruitment, informed consent procedures, or participant awareness of being in a study) led to any failure to implement the assigned delivery method or to implementation of a non-protocol delivery method. The procedures described (initial mailing, follow-up reminders at fixed intervals, refusal options) appear to have been implemented as intended and are consistent with what would happen in real-world survey administration outside of a trial context. There is no indication of crossover between delivery methods (e.g., a postal mail participant being switched to email) or contamination between groups.
+
+**2.4. Were these deviations likely to have affected the outcome?**
+
+- **Response: N/A (No information required)**
+- **Reason:** Since the response to 2.3 is "No," this question is not applicable per the RoB 2 algorithm.
+
+**2.5. Were these deviations from intended intervention balanced between groups?**
+
+- **Response: N/A (No information required)**
+- **Reason:** Since the response to 2.3 is "No," this question is not applicable per the RoB 2 algorithm.
+
+**2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?**
+
+- **Response: Yes**
+- **Reason:** The analysis appears consistent with an intention-to-treat-like approach appropriate for this pragmatic design. The response rate was calculated using the formula: "the 300 intended potential respondents within each...subgroup were adjusted to account for the questionnaires that could not be delivered (i.e., incorrect address, deceased person, etc.). The net number was then divided into the number of returned questionnaires completed, with no missing data." This exclusion of undeliverable questionnaires represents a legitimate post-randomization exclusion of *ineligible* participants (those who could not have received the assigned intervention due to reasons unrelated to intervention assignment, such as being deceased or having an incorrect address) — which is considered appropriate under RoB 2 guidance, as this ineligibility could not have been influenced by group assignment. All participants who were validly reached and randomized within each subgroup were retained in the analysis according to their assigned delivery method, with no evidence of post-hoc exclusion of eligible participants or improper "per-protocol" restriction based on behavior after assignment.
+
+**2.7. Was there potential for a substantial impact of the failure to analyse participants in the group to which they were randomized?**
+
+- **Response: N/A**
+- **Reason:** Since the response to 2.6 is "Yes" (appropriate analysis was used), this question is not applicable per the RoB 2 algorithm.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 2 (Effect of Assignment to Intervention): Low**
+
+**Justification:** Although participants and the delivery personnel were necessarily aware of the assigned intervention (2.1 and 2.2 = Yes), this is an unavoidable and expected feature of this type of pragmatic, open-label survey methodology trial and does not, by itself, introduce bias into the *effect of assignment* estimate. Critically, there is no evidence that this awareness led to deviations from the intended intervention arising from the trial context (2.3 = No). Furthermore, the analytic approach appropriately accounted for ineligible participants (undeliverable questionnaires) while retaining all eligible participants according to their original group assignment (2.6 = Yes), consistent with an intention-to-treat-like analysis. Therefore, per the RoB 2 algorithm, this domain is judged to be at **Low risk of bias** for the response rate outcome.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+**Outcome: Response Rate**
+
+**3.1. Were data for this outcome available for all, or nearly all, participants randomized?**
+
+- **Response: Yes**
+- **Reason:** The outcome of interest — response rate — is inherently defined as a status (responded with complete data vs. did not respond/incomplete) that is knowable for every participant who received the survey. The article reports: "Out of the original 7200 intended respondents..., 233 of them did not receive the questionnaires, which yielded a net of 6967 delivered questionnaires. Of these, 710 were returned with no missing data, for an effective response rate of 10.2%." This means the outcome status (responded/complete vs. not) is fully accounted for across the entire net sample of 6,967 delivered questionnaires — there is no category of "unknown response status." Every participant who received a questionnaire either did or did not return a complete survey, and this is precisely what is being measured as the outcome. The 233 participants who did not receive the questionnaire (due to incorrect address, deceased person, etc.) represent a legitimate exclusion of ineligible/unreachable participants — analogous to post-randomization exclusion of participants found to be ineligible for reasons unrelated to intervention assignment — and this exclusion is clearly documented and quantified (only 3.2% of the original sample). Therefore, outcome data (response status) is available for nearly all (99.99% of net delivered, and 96.8% of originally randomized) participants.
+
+**3.2. Is there evidence that the result was not biased by missing outcome data?**
+
+- **Response: N/A**
+- **Reason:** Since the response to 3.1 is "Yes," this question is not applicable per the RoB 2 algorithm.
+
+**3.3. Could missingness in the outcome depend on its true value?**
+
+- **Response: N/A**
+- **Reason:** Since the response to 3.1 is "Yes," this question is not applicable per the RoB 2 algorithm.
+
+**3.4. Is it likely that missingness in the outcome depended on its true value?**
+
+- **Response: N/A**
+- **Reason:** Since the response to 3.1 is "Yes," this question is not applicable per the RoB 2 algorithm.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 3: Low**
+
+**Justification:** For the specific outcome of response rate, the outcome itself is fully ascertainable for essentially all participants who successfully received the survey instrument (6,967 out of 7,200, or 96.8%), as the outcome is defined precisely as whether or not a complete response was returned — a status that is known for every delivered questionnaire (either it was returned complete, returned incomplete, or not returned at all; all these statuses are captured and reported, e.g., the 9.9% incomplete-data dropout rate for postal mail is explicitly reported in the Discussion). The exclusion of 233 undelivered questionnaires is a legitimate and well-documented exclusion of unreachable/ineligible participants, unrelated to the intervention effect on response behavion. There is no indication of unaccounted-for or unknown outcome status for any subgroup. Therefore, this domain is judged to be at **Low risk of bias** for the response rate outcome.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+**Outcome: Response Rate**
+
+**4.1. Was the method of measuring the outcome inappropriate?**
+
+- **Response: No**
+- **Reason:** The outcome (response rate) was measured using an objective, pre-specified, and consistent operational definition: "The response rate was defined as the percentage of eligible respondents that returned completed questionnaires, with no missing data for any questions." This is a straightforward count-based measure (number of complete returns / number of eligible/delivered questionnaires) that does not rely on subjective judgment, self-report of symptoms, or any instrument with validity concerns. This method is entirely appropriate and sensitive to detecting differences in the outcome across the four classifications examined (delivery method, questionnaire length, item placement, gender).
+
+**4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?**
+
+- **Response: No**
+- **Reason:** The same definition and threshold for "completed questionnaire, with no missing data" was applied uniformly across all delivery method groups (postal mail, email, hybrid), questionnaire length versions, item placement versions, and genders. While the physical mechanism of tracking returns differed by necessity (e.g., physical mail return vs. electronic database submission vs. postcard-directed web submission), the underlying criterion for what counts as a "completed" response (no missing data on any question) was applied consistently across all groups. There is no evidence that thresholds or criteria for counting a response as "complete" varied by group. Ascertainment of the number of questionnaires that could not be delivered (undeliverable) was likewise clearly and separately documented for postal mail (5.8%) and hybrid, while email was reported as having no undeliverable questionnaires because "electronic addresses were guaranteed to be operational" — this is an inherent feature of the delivery method rather than a differential measurement/ascertainment bias in defining or assessing the outcome itself.
+
+**4.3. Were outcome assessors aware of the intervention received by study participants?**
+
+- **Response: Yes**
+- **Reason:** Since the response to 4.1 and 4.2 are both "No," this question must be answered. The research team conducting the study and tallying the returned questionnaires were necessarily aware of which delivery method (and questionnaire length/item placement/gender stratum) each participant was assigned to, as they were responsible for administering the different delivery methods and compiling results into "a master database" separately by method. There is no mention of any blinding of the research/data-analysis team to group assignment when determining response counts.
+
+**4.4. Could assessment of the outcome have been influenced by knowledge of intervention received?**
+
+- **Response: No**
+- **Reason:** The outcome (whether a returned questionnaire had "no missing data for any questions") is an objective, mechanically verifiable criterion that does not require subjective judgment, clinical interpretation, or discretion on the part of the assessor. Determining whether a questionnaire is complete (all questions answered) is a factual, checklist-type determination not susceptible to influence by the assessor's awareness of which delivery method, length version, or item placement version was used. This is analogous to an objective outcome like all-cause mortality, which RoB 2 guidance notes is unlikely to be influenced by knowledge of intervention received, rather than a subjective or judgment-based outcome.
+
+**4.5. Is it likely that assessment of the outcome was influenced by knowledge of intervention received?**
+
+- **Response: N/A**
+- **Reason:** Since the response to 4.4 is "No," this question is not applicable per the RoB 2 algorithm.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 4: Low**
+
+**Justification:** The method of measuring response rate is objective, consistently defined, and applied uniformly across all intervention groups (4.1 = No, 4.2 = No). Although the research team was necessarily aware of group assignment when compiling response counts (4.3 = Yes), the outcome itself — a completed questionnaire with no missing data — is a mechanically verifiable, non-judgment-based determination that is highly unlikely to be influenced by assessor awareness of intervention assignment (4.4 = No). Therefore, this domain is judged to be at **Low risk of bias** for the response rate outcome.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+**Outcome: Response Rate**
+
+**5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?**
+
+- **Response: No information**
+- **Reason:** There is no mention anywhere in the article of a pre-specified analysis plan, trial protocol, or trial registration (e.g., no ClinicalTrials.gov registration number or similar registry identifier is provided). The Methods section describes the design, sample stratification, and statistical tests used (chi-square tests for response rates, F tests for response times), but there is no statement indicating that these analyses were specified in advance of data collection/analysis, nor is there any reference to a publicly available or reviewer-accessible protocol. Given the complete absence of any such information, "No information" is the appropriate response rather than assuming a pre-specified plan existed.
+
+**5.2. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements within the outcome domain?**
+
+- **Response: No**
+- **Reason:** The response rate is a single, clearly and consistently defined outcome measurement: "the percentage of eligible respondents that returned completed questionnaires, with no missing data for any questions." There is no evidence that response rate was operationalized or measured in multiple different ways (e.g., alternative definitions using partial completion, different completeness thresholds) with only a favorable version selectively reported. The article even transparently reports an alternative/complementary figure in the Discussion — the "combined response rate of questionnaires with no missing data plus some data missing (23.3%)" — showing that the authors did not hide alternative calculations; rather, they reported the primary definition consistently throughout and additionally disclosed a secondary calculation for context/comparison purposes. This transparency argues against selective outcome reporting.
+
+**5.3. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?**
+
+- **Response: No**
+- **Reason:** The statistical analysis for response rate (chi-square test comparing rates across delivery method, questionnaire length, item placement, and gender) is reported comprehensively and consistently for all four pre-defined classifications in Table 2, not merely for the classification that yielded a significant result. The authors explicitly report both the significant finding (delivery method: χ²=400.8, p<0.01) and the non-significant findings (questionnaire length, item placement, gender), with actual rates provided for all subgroups. This comprehensive and complete reporting of all pre-specified comparisons — rather than only the significant one — indicates no evidence of selective analysis reporting.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 5: Some concerns**
+
+**Justification:** While there is no evidence of selective outcome reporting or selective analysis reporting for the response rate outcome (5.2 = No, 5.3 = No), the complete absence of information regarding a pre-specified analysis plan or trial protocol (5.1 = No information) prevents a "Low risk of bias" judgement. Per RoB 2 guidance, in the absence of a registered protocol or pre-specified statistical analysis plan, even when the reported results appear complete and comprehensive (as they do here, with all subgroup comparisons transparently reported in Table 2), reviewers cannot fully rule out the possibility that some analytic or reporting choices were informed by knowledge of the data. Therefore, this domain is judged to be at **Some concerns**.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+**Overall Predicted Direction of Bias: Unpredictable**
+
+**Reason:** The primary source of bias identified in this assessment (Domain 1) stems from the use of two different sampling frames/databases (Medical Marketing Service for postal mail and hybrid groups vs. Statlistics for the email group), resulting in demonstrable demographic imbalances between arms (e.g., ethnic composition, practice site distribution, as shown in Table 1). While these imbalances are substantial, the relationship between these baseline demographic differences (ethnicity, practice setting, age) and survey response propensity is not clearly established or predictable in a single direction. It is not possible to determine, from the information provided, whether these imbalances would systematically inflate or deflate the response rate for postal mail relative to email/hybrid, or vice versa. Therefore, the direction of bias arising from this flawed randomization process is **unpredictable** rather than clearly favoring one delivery method over another.
+
+---
+
+**Overall Risk-of-Bias Judgement for Outcome "Response Rate": High**
+
+**Justification:** Per the RoB 2 algorithm, the overall risk-of-bias judgement for an outcome is driven to "High" if **any single domain** is judged to be at high risk of bias, regardless of the judgements in other domains. Summary of domain-level judgements:
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization process | **High** |
+| 2. Deviations from intended interventions | Low |
+| 3. Missing outcome data | Low |
+| 4. Measurement of the outcome | Low |
+| 5. Selection of the reported result | Some concerns |
+
+Despite low risk of bias in Domains 2, 3, and 4, and only "some concerns" in Domain 5, the **High risk of bias judgement in Domain 1** — driven by the use of two distinct, non-equivalent sampling frames (MMS vs. Statlistics) to constitute the delivery-method arms, resulting in substantial and non-chance-compatible baseline demographic imbalances (Table 1) — is sufficient on its own to classify the overall risk of bias for the response rate outcome as **High**. This structural flaw in how the comparison groups were formed represents a fundamental threat to the validity of the delivery-method comparison, which is the central comparison driving the study's key findings on response rate.
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Re-Evaluation of Risk of Bias Assessment
+## Outcome: Response Rate
+
+Upon careful re-examination of all evidence and reasoning, I have revisited each domain critically. My most significant revision concerns **Signaling Question 1.1**, where on reflection, the use of entirely different sampling databases (MMS vs. Statlistics) for different delivery-method arms raises serious doubt about whether a true random allocation *sequence* was applied to a single unified pool of participants across all three delivery-method arms, rather than delivery method being confounded with data-source availability. This strengthens (rather than merely coexists with) the Domain 1 "High" judgement. All other domain judgements remain as previously assessed upon re-verification against the text.
+
+---
+
+## Final Summary Table
+
+| Domain | Signaling Question | Response | Key Justification (from article text) |
+|---|---|---|---|
+| **1. Randomization process** | 1.1 Was allocation sequence random? | **Probably no** | MMS supplied postal mail/hybrid samples; Statlistics supplied the email sample — separate sampling frames per delivery method suggest delivery-method assignment may be confounded with data source, not generated from one randomized sequence across a single pool. |
+| | 1.2 Was allocation sequence concealed? | **No information** | No description of concealment mechanism (e.g., central allocation, sealed envelopes) is provided anywhere in the article. |
+| | 1.3 Did baseline imbalances suggest problems? | **Yes** | Table 1 shows large, non-chance-compatible differences across delivery-method arms (e.g., Non-Hispanic White: 86.3% postal vs. 68.7% email vs. 74.0% hybrid; Black: 3.2% vs. 26.4% vs. 19.2%; Hospital practice site: 19.0% vs. 35.0% vs. 13.7%). |
+| | **Domain 1 Judgement** | **High** | Use of two different sampling frames for different arms plus resulting substantial baseline demographic imbalances indicate a fundamental problem with the randomization/allocation process. |
+| **2. Deviations from intended interventions** (effect of assignment) | 2.1 Participants aware of assigned intervention? | **Yes** | Inherent/unblindable: participants necessarily knew whether they received postal mail, email, or hybrid postcard. |
+| | 2.2 Carers/deliverers aware of assignment? | **Yes** | Research team necessarily administered different materials per method (described in Methods). |
+| | 2.3 Deviations arising from trial context? | **No** | No evidence of protocol deviations, crossovers, or contamination between delivery-method arms reported. |
+| | 2.4 Deviations affected outcome? | N/A | Not applicable (2.3 = No). |
+| | 2.5 Deviations balanced between groups? | N/A | Not applicable (2.3 = No). |
+| | 2.6 Appropriate analysis used? | **Yes** | Undeliverable questionnaires (ineligible, e.g., incorrect address/deceased) appropriately excluded; all reachable participants analyzed per assigned group. |
+| | 2.7 Potential for substantial impact from misanalysis? | N/A | Not applicable (2.6 = Yes). |
+| | **Domain 2 Judgement** | **Low** | Awareness of assignment is an unavoidable, non-biasing feature of this open-label design; no context-driven deviations; appropriate analysis. |
+| **3. Missing outcome data** | 3.1 Outcome data available for all/nearly all randomized? | **Yes** | 6,967/7,200 (96.8%) net delivered; response status (complete/incomplete/no return) is fully documented and quantifiable for essentially all participants, including reported incomplete-data rates (~9.9% postal, ~9.4% email). |
+| | 3.2–3.4 | N/A | Not applicable (3.1 = Yes). |
+| | **Domain 3 Judgement** | **Low** | Outcome ascertainment is essentially complete across the sample. |
+| **4. Measurement of the outcome** | 4.1 Method of measuring outcome inappropriate? | **No** | Objective definition: % returning complete questionnaires (no missing data); appropriate and sensitive measure. |
+| | 4.2 Measurement differed between groups? | **No** | Same completeness criterion applied uniformly across all delivery methods, lengths, placements, genders. |
+| | 4.3 Outcome assessors aware of intervention? | **Yes** | Research team compiled results into method-specific databases, necessarily aware of group assignment. |
+| | 4.4 Assessment influenced by knowledge of intervention? | **No** | Completeness of a questionnaire is an objective, mechanically verifiable criterion, not subject to assessor judgment/bias. |
+| | 4.5 Likely influenced? | N/A | Not applicable (4.4 = No). |
+| | **Domain 4 Judgement** | **Low** | Objective, consistently applied outcome measurement unlikely to be influenced by assessor awareness. |
+| **5. Selection of the reported result** | 5.1 Pre-specified analysis plan? | **No information** | No protocol, registration number, or pre-specified analysis plan mentioned anywhere in the article. |
+| | 5.2 Selected from multiple eligible outcome measurements? | **No** | Single, consistent definition of response rate used and reported throughout; secondary "combined" rate (23.3%) transparently disclosed for context, not substituted. |
+| | 5.3 Selected from multiple eligible analyses? | **No** | All four pre-specified classifications (delivery method, length, placement, gender) fully reported in Table 2, including non-significant results. |
+| | **Domain 5 Judgement** | **Some concerns** | Absence of a registered/pre-specified protocol prevents ruling out undisclosed analytic flexibility, despite otherwise transparent and complete reporting. |
+
+---
+
+## Overall Assessment
+
+| | Judgement |
+|---|---|
+| **Domain 1: Randomization process** | High |
+| **Domain 2: Deviations from intended interventions** | Low |
+| **Domain 3: Missing outcome data** | Low |
+| **Domain 4: Measurement of the outcome** | Low |
+| **Domain 5: Selection of the reported result** | Some concerns |
+| **Predicted Direction of Bias** | **Unpredictable** — Baseline demographic imbalances (ethnicity, practice site) between delivery-method arms could plausibly affect response propensity, but no clear directional hypothesis can be established from the reported data. |
+| **OVERALL RISK-OF-BIAS JUDGEMENT** | **High** |
+
+**Final Justification:** Per the RoB 2 algorithm, a "High" judgement in any single domain results in an overall "High" risk-of-bias rating, irrespective of favorable judgements elsewhere. Here, **Domain 1 (randomization process)** is rated High because the postal-mail/hybrid arms and the email arm were drawn from two distinct, non-equivalent commercial sampling databases (MMS vs. Statlistics), raising serious doubt that delivery-method assignment was truly random across a single unified pool, and this is corroborated by substantial, non-chance-compatible baseline demographic imbalances across arms (Table 1). This structural flaw directly undermines confidence in the core comparison (response rate by delivery method) that constitutes the study's primary finding. Consequently, the overall risk of bias for the response rate outcome is judged **High**.

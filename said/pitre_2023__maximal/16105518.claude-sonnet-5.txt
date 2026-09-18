@@ -1,0 +1,79 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 16105518
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Change in Operation-Specific Checklist Scores
+
+**Study:** Bone-plating task practice schedules (Functional-order vs. Random vs. Blocked practice)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns, primarily due to lack of information about sequence generation/allocation concealment methods and no reporting of baseline characteristics.
+
+**b. Rationale:** The article states participants "performed the entire task during a pre-test, after which they were randomly assigned to three experimental groups." No further detail is provided regarding:
+- The method used to generate the random sequence (e.g., computer-generated, random number table)
+- Whether allocation was concealed prior to assignment
+- No baseline characteristics (e.g., prior experience, demographics) are reported for the three groups, precluding assessment of whether randomization achieved balance.
+
+Given the word "randomly assigned" is used but no elaboration is provided, and this is a small laboratory-based study (not necessarily run by an experienced trials unit), a response of "No information" is appropriate for sequence generation and allocation concealment. Per the algorithm (Table 4), when there is no information on sequence randomness/concealment AND no information on baseline imbalance, the default judgement is "Some concerns."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Awareness of intervention:** By the nature of this trial (different practice schedules), participants and the personnel delivering the intervention (faculty providing feedback) were necessarily aware of group assignment during the acquisition phase. This is unavoidable given the intervention type (practice schedule), similar to trials comparing surgical approaches.
+- **Deviations arising from trial context:** There is no evidence that awareness of group assignment led to deviations from the intended intervention protocol. All participants "practiced each skill 3 times for 2 minutes and 10 seconds," and the structured practice sessions (20-minute or 12-minute blocks) appear to have been implemented as designed. No cross-contamination between groups is described (e.g., a Blocked-practice participant practicing in random order).
+- **Effect on outcome:** Because there is no evidence of protocol deviations arising from the trial context (e.g., participants switching practice schedules, non-adherence to session structure), signalling question 2.3 can be answered "No" or "Probably no."
+- **Analysis:** All participants appear to have been analyzed according to their assigned group (Functional-order, Random, Blocked), consistent with an intention-to-treat approach. The study reports "difference scores were calculated by subtracting the pre-test score from each of the 2 post-tests scores" for all 28 participants with no indication of post-randomization exclusions or crossovers.
+
+Given no deviations from intended intervention arising from trial context and an appropriate (ITT-consistent) analysis, this domain is judged **low risk of bias**, despite lack of blinding (blinding is not feasible/expected for this type of intervention and does not by itself introduce bias to the ITT effect estimate here).
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The study states "informed consent was obtained from 28 first- and second-year medical students," and all analyses (checklists, final product analysis, global ratings, drilling times) are reported using mixed ANOVAs with a between-subject factor of 3 groups, implying data were available for all participants across the pre-test, immediate post-test, and delayed post-test. There is no mention of dropouts, withdrawals, or missing data at any test point. No CONSORT-style flow diagram is provided, but the narrative gives no indication that any of the 28 participants failed to complete the pre-test, immediate post-test, or delayed post-test. Therefore, outcome data appear available for all, or nearly all, randomized participants, satisfying the criterion for low risk of bias in this domain.
+
+---
+
+## 4. Measurement of the outcome: **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**
+- **Appropriateness of method:** The operation-specific checklist was developed by "a panel of 3 orthopedic surgeons" who "identified the actions necessary to perform the operative task effectively," which is an appropriate method in principle.
+- **Comparability of measurement across groups:** The same checklist and testing procedure was used for all groups, so this does not appear to differ between arms.
+- **Blinding of outcome assessors:** This is the critical issue. The checklist scoring was performed by "two experienced orthopedic surgeons," but the article gives **no indication that these assessors were blinded to group assignment**. This is an outcome that involves considerable judgement (an observer-reported outcome involving judgement, per RoB2 categorization), as the checklist requires evaluators to judge whether specific actions were performed correctly.
+- **Likelihood of influence:** Given (1) no blinding is mentioned, (2) the raters likely had access to information about which condition/session a participant was tested in or could infer group assignment from context (e.g., knowledge of the study design, familiarity with participants from having delivered feedback during acquisition), and (3) the study hypothesis (that functional-order practice would be superior) was clearly stated a priori, there is meaningful risk that assessment of checklist performance could have been influenced by knowledge of group assignment. The authors do not report any procedure (e.g., video recording with rater blinded to condition, blinded scoring) to mitigate this risk.
+
+Because outcome assessors were not stated to be blinded, and the checklist scoring involves subjective judgement that could plausibly be influenced by knowledge of intervention (particularly given the assessors were orthopedic faculty involved with the study and its hypotheses), and there is no information suggesting otherwise, this domain is judged **high risk of bias**.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** No trial registration or pre-specified statistical analysis plan was identified for this trial (search of trial registries yielded no protocol for this study, consistent with the era and nature of this small mechanistic/educational study — pre-registration of such laboratory-based educational studies was not standard practice at the time of publication). Therefore:
+- Signalling question 5.1 ("Were the data analysed in accordance with a pre-specified analysis plan finalized before unblinded outcome data were available?") cannot be answered — **No information**.
+- The study reports four separate outcome measures (checklists, final product analysis, global ratings, drilling times) and results are presented for all four, including non-significant findings (e.g., global ratings, drilling times during test). This full reporting of multiple outcomes, including null results, is reassuring and reduces suspicion of selective outcome reporting **among these four measures**.
+- However, within the checklist outcome itself, there is no protocol available to confirm whether the change scores (post-test minus pre-test) were the pre-specified primary analysis, versus alternative possible analyses (e.g., raw post-test scores, ANCOVA adjusting for pre-test, analysis of only the immediate post-test). The use of "difference scores" is explained but not clearly justified as the a priori planned analysis.
+- Without a protocol or SAP, it is not possible to rule out selective reporting of this particular analytic approach from among multiple analyses that could have been conducted (e.g., ANCOVA vs. change score, different post hoc comparisons).
+
+Given the absence of a pre-specified analysis plan and the inability to confirm the checklist result was reported as originally planned (though there is no strong signal of results-dependent selection either), this domain is judged as **Some concerns** rather than low or high risk.
+
+---
+
+## Overall Risk-of-Bias Judgement: **High risk of bias**
+
+**Rationale:** Per RoB 2.0 guidance (Table 1), a judgement of "High risk of bias" for any individual domain results in an overall "High risk of bias" judgement for the outcome. Because the domain "Measurement of the outcome" was judged as high risk of bias (due to lack of blinding of outcome assessors for a judgement-based outcome, in a study with a clearly stated directional hypothesis), the overall risk of bias for the outcome "change in operation-specific checklist scores" is **High**.

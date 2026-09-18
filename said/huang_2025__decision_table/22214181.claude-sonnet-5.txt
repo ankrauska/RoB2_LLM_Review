@@ -1,0 +1,102 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 22214181
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Harris & Carney, 2013
+**Outcome Name**: List of Attributions Task (LAT)
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% Certainty)
+*Reason*: The article explicitly states "a Microsoft Excel random number generator was used to randomize participants into the two conditions," which qualifies as a computer-generated random sequence.
+
+**1.2**: NI (95% Certainty)
+*Reason*: No mention of allocation concealment methods (e.g., central allocation, sealed envelopes) is provided anywhere in the article. There is no indication of how the randomization sequence was concealed from those enrolling participants.
+
+**1.3**: N (90% Certainty)
+*Reason*: The article states "No significant pre-intervention group differences were found on levels of insomnia, fatigue, depressed mood or dysfunctional beliefs about sleep. There were also no significant group differences on the LAT outcome measures at baseline," and groups had equal sample sizes (44/44).
+
+**Result of Domain 1**: Some concerns (90% Certainty)
+*Reason*: Since 1.2 = "NI" and 1.3 = "N," per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (85% Certainty)
+*Reason*: Participants directly received and read information sheets specific to their assigned condition (fatigue-causes information vs. generic sleep information); thus, participants were necessarily aware of which informational content they received.
+
+**2.2**: Y (90% Certainty)
+*Reason*: "The study investigator read the information sheet alongside each participant individually," indicating the person delivering the intervention necessarily knew the assigned condition.
+
+**2.3**: NI (70% Certainty)
+*Reason*: The article provides no information about non-protocol co-interventions received by participants during this single 1-hour session.
+
+**2.4**: N (75% Certainty)
+*Reason*: Only 5 of 93 initial participants (~5.4%) were excluded, and reasons (age <18, incomplete demographic/outcome data) were unrelated to intervention failure; this is <10%.
+
+**2.5**: N (65% Certainty)
+*Reason*: This was a single, investigator-supervised session with direct administration of the intervention (investigator read the material with each participant), making non-adherence unlikely; no non-adherence was reported.
+
+**2.6**: NI (70% Certainty)
+*Reason*: No explicit description of an ITT, per-protocol, or other analytic method addressing adherence was provided; only standard ANOVA analyses on the final completed sample were described.
+
+**Result of Domain 2**: High risk (80% Certainty)
+*Reason*: Since one of 2.1/2.2 = "Y," 2.3 = "NI," and 2.6 = "NI," this combination corresponds to "High risk" per the algorithm.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (90% Certainty)
+*Reason*: All 88 randomized/analyzed participants had complete pre- and post-intervention LAT data collected within the single-session design (100% completion for this continuous outcome); the 5 excluded participants were excluded prior to final randomization count for reasons unrelated to LAT completion.
+
+**Result of Domain 3**: Low risk (90% Certainty)
+*Reason*: Since 3.1 = "Y," per the algorithm the result is "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (75% Certainty)
+*Reason*: The LAT was purpose-built for this study but employed a systematic coding process with an independent blinded coder and a reconciliation step (agreement 98.6%: only 12/870 responses changed), suggesting adequate reliability for study purposes.
+
+**4.2**: N (85% Certainty)
+*Reason*: Both groups underwent identical assessment procedures at the same time points (pre- and post-intervention), with no reported differences in measurement frequency or method between groups.
+
+**4.3**: N (85% Certainty)
+*Reason*: The outcome (LAT categorization) was coded by "a laboratory volunteer... blind to the study hypotheses," and the investigator "reviewed the categories while being blind to participants' random assignment." Since the actual coding/assessment was performed by blinded raters (not solely patient self-report), the assessors were unaware of allocation.
+
+**Result of Domain 4**: Low risk (85% Certainty)
+*Reason*: Since 4.1 = "N," 4.2 = "N," and 4.3 = "N," per the algorithm the result is "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (90% Certainty)
+*Reason*: No trial registration or pre-specified/published analysis plan is mentioned anywhere in the article.
+
+**5.2**: N (80% Certainty)
+*Reason*: All three intended LAT outcome scores (NumberAttributionScore, FrequencyScore, ImportanceScore) that were defined in the Methods were fully reported in the Results with consistent definitions—no evidence of selective reporting among multiple eligible measurements.
+
+**5.3**: N (80% Certainty)
+*Reason*: A single, consistent analytic approach (mixed within-between ANOVA) was applied to each LAT score as pre-specified in the Methods, with no evidence of alternative analyses being conducted and selectively reported.
+
+**Result of Domain 5**: Some concerns (85% Certainty)
+*Reason*: Since 5.2 = "N," 5.3 = "N," and 5.1 = "NI," per the algorithm this yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: High Risk (85% Certainty)
+
+*Reason*: Domain 1 = Some concerns, Domain 2 = High risk, Domain 3 = Low risk, Domain 4 = Low risk, Domain 5 = Some concerns. Since at least one domain (Domain 2) was rated "High risk," the overall assessment for the article is "High Risk."

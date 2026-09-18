@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 23283838
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Rodebaugh, 2014 (A High-Throughput Clinical Assay for Testing Drug Facilitation of Exposure Therapy)
+**Outcome Name**: Between-session habituation
+**Registration number**: Not reported in the article
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (90% Certainty)
+The article states participants were "randomly assigned" but does not describe a specific method (e.g., computer-generated sequence, random number table, block randomization). No further detail is provided to upgrade this answer.
+
+**1.2**: Y (85% Certainty)
+"Participants were randomly assigned to 250mg of DCS or placebo in identical-appearing capsules by a data manager who had no interaction with participants." This describes a specific concealment mechanism (identical-appearing capsules allocated by an independent data manager), analogous to sequentially numbered, identical containers.
+
+**1.3**: Y (85% Certainty)
+A statistically significant baseline difference in age was found (p = .019; DCS ~49 years vs. placebo ~38 years). This is a notable and statistically significant baseline imbalance not explicitly attributed to random error by the authors (they instead statistically controlled for it post hoc).
+
+**Result of Domain 1**: Some concerns (85% Certainty)
+Because 1.2 = Y, 1.1 = NI, and 1.3 = Y, this pattern maps to "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (90% Certainty)
+Placebo (identical-appearing capsule) was used, and blinding was formally tested: "neither participants nor experimenters were able to discern assignment (ps > .15)."
+
+**2.2**: N (90% Certainty)
+Same rationale as above; care providers/experimenters were also blinded and unable to discern assignment.
+
+**2.3**: Y (75% Certainty)
+Medication use (antidepressants, benzodiazepines) was assessed and found not to differ significantly between groups; these were also examined as covariates with no substantive effect on results.
+
+**2.4**: Y (90% Certainty)
+4 of 34 randomized participants (11.8%) did not complete Visit 2, exceeding the 10% threshold for implementation failure.
+
+**2.5**: N (60% Certainty)
+No specific non-adherence to the single-dose ingestion protocol was reported for those who completed the study (single supervised dosing).
+
+**2.6**: N (90% Certainty)
+The study analyzed only completers ("Only those participants completing Visit 2 are analyzed"), which is a per-protocol/completer-only analysis — an inappropriate method per guidance, rather than an appropriate adjustment technique (e.g., IPW, instrumental variable).
+
+**Result of Domain 2**: Some concerns (75% Certainty)
+Although blinding was adequately achieved (2.1 = N, 2.2 = N), there was a meaningful implementation failure (>10% dropout, 2.4 = Y) and the analysis was restricted to completers without appropriate correction (2.6 = N), raising concern that the reported effect may not reflect the effect of assignment to intervention in all randomized participants.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (75% Certainty)
+The outcome (between-session habituation) is a binary/categorical variable. 30/34 (88.2%) participants had complete data. Response counts among completers (~12 DCS responders, ~5 placebo responders = ~17 events) are much greater than the missing cases (4), satisfying the "events >> missing" criterion for binary outcomes.
+
+**Result of Domain 3**: Low risk (80% Certainty)
+Since 3.1 = Y, Domain 3 is rated "Low risk" per the decision rule.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% Certainty)
+The SUDS is a standard, validated behavioral research scale with excellent internal consistency (Cronbach's α > .85) reported in this study.
+
+**4.2**: N (90% Certainty)
+The outcome was measured identically for both groups, at the same time points, using the same scale and thresholds.
+
+**4.3**: N (85% Certainty)
+The outcome (SUDS) is patient-reported, and participants were blinded to allocation (confirmed via post-hoc guess testing, ps > .15); thus assessors/participants were not aware of assignment.
+
+**4.4**: Y (90% Certainty)
+The outcome is a subjective, patient-reported measure (SUDS ratings of anxiety), which inherently carries potential for influence by knowledge of intervention.
+
+**4.5**: N (75% Certainty)
+No clear evidence indicates that outcome assessment was influenced by knowledge of allocation; blinding integrity was tested and confirmed successful.
+
+**Result of Domain 4**: Low risk (85% Certainty)
+4.1 = N, 4.2 = N, 4.3 = N maps directly to "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (80% Certainty)
+No trial registration number or pre-specified analysis plan document is referenced in the article.
+
+**5.2**: N (80% Certainty)
+The primary outcome (categorical response / between-session habituation, defined a priori as ≥5-point SUDS drop) was reported as specified; no evidence of selection among multiple competing definitions.
+
+**5.3**: N (80% Certainty)
+A single, pre-specified analytic method (chi-square test) was used for this categorical outcome, consistent with the Methods section; no evidence of multiple analyses being tried and selectively reported.
+
+**Result of Domain 5**: Some concerns (80% Certainty)
+5.2 = N, 5.3 = N, but 5.1 = NI (no registration/plan confirmed) maps to "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Domain Summary**:
+- Domain 1: Some concerns
+- Domain 2: Some concerns
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Some concerns
+
+**Overall Bias Risk for the Article**: **Some concerns** (80% Certainty)
+
+**Reasoning**: No domain was rated "High risk," and not all five domains were rated "Some concerns" (two domains — Domain 3 and Domain 4 — were rated "Low risk"). Per the overall rule structure, the presence of multiple "Some concerns" domains without any "High risk" domain, combined with at least two "Low risk" domains, results in an overall classification of "Some concerns." The main drivers of concern are: (1) an unclear randomization sequence generation method combined with a significant baseline age imbalance (Domain 1); (2) meaningful dropout (>10%) combined with a per-protocol/completer-only analytic approach without appropriate adjustment (Domain 2); and (3) lack of confirmed trial registration/pre-specified analysis plan (Domain 5).

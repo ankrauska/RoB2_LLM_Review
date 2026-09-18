@@ -1,0 +1,78 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 28840525
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias 2.0 Assessment: Laparoscopic Sleeve Gastrectomy vs Banded Roux-en-Y Gastric Bypass for T2D Remission (Four HbA1c Thresholds)
+
+**Effect of interest: Effect of assignment to intervention (intention-to-treat effect)**
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Sequence generation was adequate (computer-generated with minimization), and allocation concealment appears adequate (independent study member managed codes, disclosed after anaesthesia induction). However, there is a notable baseline imbalance in sex distribution between groups (59% female in SR-LRYGB vs 45% in LSG), and no statistical comparison of baseline characteristics was reported, making it difficult to fully rule out chance vs. a randomization problem. Given adequate concealment and randomization methods but unquantified baseline differences, "Some concerns" is appropriate.
+
+**b. Rationale:** 
+- "Randomisation was by computer-generated random number codes managed by an independent study member, and included minimization based on age... BMI... time since diagnosis of T2D... insulin treatment... and ethnicity."
+- "random number codes disclosed after anaesthesia induction" – suggests concealment was maintained until after induction, minimizing risk of selective enrollment.
+- Baseline table shows female sex 59% (SR-LRYGB) vs 45% (LSG) — a 14 percentage point difference not tested statistically in the report, and no p-values given for baseline comparisons in Table 1. Other variables (HbA1c, weight, BMI, age, ethnicity, insulin use, diabetes duration) appear reasonably balanced.
+- No evidence of manipulation of allocation ratio (56 vs 58, close to 1:1) or other signs of subversion.
+- Because the sex imbalance is not tested and its clinical relevance for T2D remission is unclear (though sex could be a modest prognostic factor), this raises some concern but does not clearly indicate a problem with the randomization process itself.
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Both participants and outcome assessors (though not surgeons) were blinded to intervention allocation, per protocol. Post-operative diabetes medication decisions were made by endocrinologists blinded to treatment allocation, following a standardized protocol, minimizing risk of deviations related to trial context. Analysis was on an intention-to-treat/modified ITT basis (participants analyzed according to randomized group, with those lost to follow-up excluded).
+
+**b. Rationale:**
+- "double-blind (patient and assessor) clinical trial" and per trial registry: masking included PARTICIPANT and OUTCOMES_ASSESSOR.
+- "Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation" — this directly addresses the key concern in this domain (differential co-intervention/medication management driving apparent remission), which is well controlled.
+- Surgical personnel (surgeons) could not be blinded given the nature of the interventions (different operations), but this is expected/unavoidable and the relevant blinding for outcome-influencing decisions (medication titration) was maintained.
+- Analysis: 56/56 SR-LRYGB and 53/58 LSG participants were analyzed (5 lost to follow-up in LSG, excluded) — this constitutes a modified ITT analysis, which is considered appropriate for assessing the effect of assignment to intervention (bias due to the exclusions is captured in the missing data domain, not here).
+- No evidence of non-protocol interventions arising from trial context that would differentially affect outcome ascertainment for the T2D remission outcome.
+- Overall, no deviations from intended intervention arising from awareness of allocation are apparent for this objective, protocol-driven outcome.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Outcome data were missing for 5/58 (8.6%) LSG participants and 0/56 SR-LRYGB participants at 1 year, an unequal pattern between groups. While the overall proportion missing is under conventional "small" thresholds, the differential loss between arms (all missingness occurring in one group) raises the possibility that missingness could be related to outcome, and reasons for the losses were not clearly reported.
+
+**b. Rationale:**
+- "Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively" — this constitutes a 100%/0% split of missing data between groups (8.6% in LSG vs 0% in SR-LRYGB).
+- No sensitivity analyses were reported to assess robustness of results to missing data assumptions.
+- The reason given ("failure to make contact and/or to attend appointments") does not clearly exclude a relationship with the outcome (e.g., patients doing poorly or well might be differentially likely to disengage from follow-up).
+- Given the outcome is dichotomous (achieving HbA1c threshold) and reported as odds/proportions, and the differential missingness (though modest in absolute numbers) is unexplained, this raises "Some concerns" rather than "Low risk," since it is not possible to confirm that missingness was unrelated to the true outcome value, but there is no strong evidence that it was in fact related to outcome (e.g., no indication that missingness differed for clinical/outcome-related reasons rather than logistical reasons).
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** HbA1c is an objective, laboratory-based, non-judgement-dependent measurement, unlikely to be influenced by knowledge of intervention assignment. Outcome assessors were blinded, and medication decisions (which could confound the "remission without medication" definition) were made by blinded endocrinologists following a standardized protocol. The method of measurement was appropriate and consistent between groups.
+
+**b. Rationale:**
+- "double-blind (patient and assessor) clinical trial" with outcomes assessors specifically blinded per registry information.
+- HbA1c is a standardized laboratory assay — an "observer-reported outcome not involving judgement," for which non-blinded assessment would be of low concern regardless, but blinding was nonetheless implemented.
+- Critically, the remission definitions require absence of glucose-lowering medication; decisions about medication cessation/titration were made by "endocrinologists blinded to treatment allocation" using "a standard medical review protocol," which prevents differential influence of surgical allocation knowledge on the achievement of medication-free status.
+- Measurement methods and thresholds were applied identically across both arms, with no evidence that ascertainment differed by group.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** The trial was prospectively registered (ACTRN12611000751976) prior to completion, with a detailed published protocol pre-specifying the four HbA1c thresholds used to define remission. The reported outcome matches the pre-specified primary/secondary outcome definitions, with no evidence of selective reporting from among multiple eligible analyses or measurements for this specific outcome.
+
+**b. Rationale:**
+- The published protocol paper (Murphy et al., BMJ Open 2016) pre-specified the double-blind design and outcome approach; the article states: "Primary outcome is the proportion of patients achieving HbA1c < 42 mmol/mol (< 6%) without glucose lowering therapy at 5 years... We report here the 1 year outcomes of the proportions achieving HbA1c thresholds ≤38... <42...<48...or <53 mmol/mol...without the need for any glucose lowering therapy, in order to allow direct comparison with previous studies" — indicating that reporting of these four thresholds was a deliberate, justified, and pre-specified (or transparently rationalized) analytic choice, not a selection from many unreported alternatives.
+- The trial registry (NCT01486680) lists "Remission of type 2 diabetes mellitus/ glycaemic control" as the primary outcome, consistent with what is reported.
+- All four pre-specified thresholds are reported with full data (proportions and p-values) for both groups in Table 2, with no evidence of omission of unfavourable results or additional unreported thresholds/analyses.
+- There is no indication of discrepancy between the registered outcome, the protocol paper, and the results paper regarding this specific outcome.
+
+---
+
+## Overall Risk of Bias for T2D Remission (all four HbA1c thresholds): **Some concerns**
+
+Per Table 1 criteria, since two domains (randomization process; missing outcome data) were judged as "Some concerns" and no domain was judged "High risk," while no domain reached "High risk of bias," the combination of "Some concerns" in two domains warrants consideration of whether this substantially lowers confidence in the result. Given that the concerns (a numerically imbalanced but untested baseline covariate, and modest but asymmetric missing data with unclear reasons) are relatively minor and unlikely to have materially biased this objective, protocol-driven outcome, the overall judgement is **"Some concerns"** rather than "High risk of bias."

@@ -1,0 +1,119 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 27807198
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk-of-Bias Assessment
+
+**Article ID**: Ladogana/Zerr (Note: based on content, likely Zerr et al.), 2017 (Doxycycline in early CJD)
+**Outcome Name**: survival time
+**Registration number**: EudraCT 2006-003934-14
+
+*Note: This assessment focuses on the randomized double-blind phase II trial component (n=13), as this is the RCT portion of the study.*
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+The article states "Patients were randomly assigned (ratio 1:1)" and that "the randomisation list and the study medication were administered by the Charité" but does not describe the specific method used to generate the allocation sequence (no mention of computer-generated numbers, block randomization, random tables, etc.).
+
+**1.2**: Y (80%)
+The randomisation list and study medication were centrally administered by an independent institution (Charité, Universitätsmedizin, Berlin), separate from the treating site (Göttingen) — this constitutes a specific method of central allocation concealment.
+
+**1.3**: Y (65%)
+Notable baseline differences exist between groups despite small sample size: age at onset (58.0 vs 72.0 years), MMSE (21 vs 16), Barthel index (slightly better in placebo), and codon 129 genotype distribution (0% MM in treatment vs 20% MM in placebo). These differences are not explicitly addressed as attributable to chance.
+
+**Result of the Domain 1**: Some concerns (75%)
+Since 1.2 = Y, 1.1 = NI, and 1.3 = Y, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from the intended interventions
+
+**2.1**: N (90%)
+Double-blind, placebo-controlled design; participants not aware of allocation.
+
+**2.2**: N (85%)
+Double-blind design with identical placebo capsules and centrally administered randomisation list; care providers were blinded.
+
+**2.3**: NI (70%)
+No specific information provided regarding non-protocol interventions.
+
+**2.4**: Y (85%)
+Per Figure 1, 4 of 7 (57%) patients in the doxycycline arm discontinued treatment during follow-up, and 1 of 6 placebo patients was lost — substantial failure in implementing the intervention (>10%).
+
+**2.5**: Y (85%)
+Mean treatment duration (89 days) was much shorter than potential follow-up duration, and the high discontinuation rate (57% in doxycycline arm) indicates substantial non-adherence to the assigned intervention regimen.
+
+**2.6**: N (80%)
+The Cox proportional hazard analysis was based on the randomized/assigned groups rather than accounting for adherence (analogous to an intention-to-treat approach), which is not an appropriate method to estimate the effect of adhering to intervention.
+
+**Result of the Domain 2**: High risk (70%)
+Given substantial deviations/non-adherence (2.4=Y, 2.5=Y) combined with an inappropriate analytic approach (2.6=N) despite maintained blinding, this pattern corresponds to a High risk classification.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (85%)
+Of 13 randomized patients, 12 (92%) were included in the survival analysis (only 1 placebo patient dropped out completely and was excluded).
+
+**3.2**: N (75%)
+No sensitivity analysis or bias-correction method (e.g., inverse probability weighting) was reported for the missing participant.
+
+**3.3**: NI (60%)
+No specific reason given for why the one placebo patient dropped out.
+
+**3.4**: NI (60%)
+No specific information on the relationship between the dropout and survival outcome.
+
+**Result of the Domain 3**: Low risk (85%)
+Since 3.1 = Y, the domain is rated Low risk regardless of subsequent answers.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95%)
+Survival time (based on date of death) is an objective, reliable, and predefined outcome measure.
+
+**4.2**: N (90%)
+Follow-up schedules (visits every 2 months, then every 3 months; biweekly telephone interviews) were identical for both groups.
+
+**4.3**: N (85%)
+Survival/date of death is not patient-reported; in a double-blind study, outcome assessors (recording date of death) were blinded to allocation.
+
+**4.4**: N (95%)
+Survival time (all-cause mortality/date of death) is an objective outcome not susceptible to assessor knowledge of intervention.
+
+**4.5**: N (90%)
+No evidence suggests that knowledge of intervention influenced assessment of this objective outcome.
+
+**Result of the Domain 4**: Low risk (90%)
+4.1=N, 4.2=N, 4.3=N → Low risk.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: N (65%)
+The registered protocol (EudraCT) specifies the primary endpoint as "survival time from symptom onset," but the article explicitly states that in the randomized trial, follow-up for survival started at randomization (not onset), a deviation from the pre-specified protocol definition. This change is not clearly justified as unrelated to the results.
+
+**5.2**: N (80%)
+Survival time was measured in a single, consistent way (time to death) — no evidence of multiple eligible measurements being selectively reported.
+
+**5.3**: N (75%)
+Only one primary analysis method (Cox proportional hazards) is reported and appears consistent with the general analytic plan described.
+
+**Result of the Domain 5**: Some concerns (70%)
+Since 5.2 = N, 5.3 = N, and 5.1 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (75%)
+
+**Reasoning**: Domain 1 = Some concerns, Domain 2 = High risk, Domain 3 = Low risk, Domain 4 = Low risk, Domain 5 = Some concerns. Since at least one domain (Domain 2) is rated "High risk," the overall risk-of-bias assessment for the survival time outcome is **High Risk**.

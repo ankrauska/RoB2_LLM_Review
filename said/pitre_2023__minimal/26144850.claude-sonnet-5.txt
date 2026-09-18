@@ -1,0 +1,87 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 26144850
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0) — Outcome: Cure Rate at 2 Years
+
+**Trial:** RCT comparing PB-MDT vs. ROM-6 in paucibacillary leprosy (Agra District, India)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process
+
+### Judgement: **Some concerns**
+
+**Rationale:**
+- **Sequence generation:** The trial used a genuinely random method: *"For allocation of patients to the two treatment groups, 268 three-digit random numbers from the table were written in the patient registers in advance. Patients with even numbers were given PB-MDT and those with odd numbers were given ROM."* This constitutes an adequate random component (Signalling Q1.1 = Yes).
+- **Allocation concealment:** No information is provided about how the pre-generated random number list was concealed from the recruiting personnel. The fact that numbers were "written in the patient registers in advance" raises concern that field workers/PMWs enrolling patients may have had access to, or could anticipate, the even/odd allocation before assignment was irreversibly confirmed. There is no description of a central randomization service, sequentially numbered sealed envelopes, or other concealment mechanism (Signalling Q1.2 = No information).
+- **Baseline balance:** Baseline characteristics (age, sex, disease duration, number of lesions, nerve involvement) were reasonably similar between groups (Table 2), with no differences reaching a level suggestive of subversion of randomization (age P = 0.059; duration P = 0.29) (Signalling Q1.3 = No).
+- Per the RoB2 algorithm, "No information" on concealment combined with no evidence of baseline imbalance problems maps to **"Some concerns."**
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention)
+
+### Judgement: **High risk of bias**
+
+**Rationale:**
+- **Blinding:** The study explicitly states *"Blinding to treatment was not undertaken."* Both participants and personnel/carers were aware of allocated intervention (Q2.1 and Q2.2 = Yes).
+- **Deviations from trial context:** There is no clear evidence that non-protocol interventions or contamination occurred due to trial-context effects (e.g., recruitment/engagement effects) that were unbalanced between arms (Q2.3 = No). This portion of the domain (Part 1) would default to "Low."
+- **Analysis approach:** However, the reported 2-year cure rate ("99% in ROM-6 and 97.0% in PB-MDT group") was calculated **only among patients who completed treatment and were followed up** (100/134 in MDT and 103/134 in ROM at 2 years), not among all randomized participants. This is not a proper intention-to-treat (ITT) or modified-ITT analysis, since substantial proportions of randomized patients (20.1% MDT vs 14.2% ROM defaulted; Table 1) were excluded from the numerator/denominator used to calculate this outcome (Q2.6 = No).
+- **Potential impact:** Given the differential default/dropout rates between arms (20.1% vs 14.2%, Table 1) and that defaulting reasons (e.g., "felt cured," toxicity) plausibly relate to underlying disease status, there is potential for a substantial impact on the reported treatment effect (Q2.7 = Probably yes).
+- Per the RoB2 algorithm, an inappropriate analysis (excluding randomized participants non-randomly) combined with potential for substantial impact results in **"High risk of bias"** for Part 2, and therefore for the domain overall.
+
+---
+
+## 3. Missing outcome data
+
+### Judgement: **High risk of bias**
+
+**Rationale:**
+- At 2 years, only 100/134 (74.6%) PB-MDT and 103/134 (76.9%) ROM-6 randomized participants had available data — this is not "all or nearly all" participants, and a substantial minority (~23–25%) have missing outcome data.
+- No sensitivity analyses were performed to assess the robustness of results to missing data assumptions (Q3.2 = No).
+- Reasons for missing data (default) were related to weakness/intolerance, vomiting/diarrhea, feeling cured, and stigma (Table 3): *"reasons for default or discontinuation of treatment as reported by patients included a feeling of weakness/intolerance following intake of drugs, swelling of feet, vomiting/diarrhea, feeling that they were cured..."* These reasons (particularly "felt cured") are plausibly related to the true value of the cure outcome, and toxicity-related defaults could differ systematically between drug regimens (Q3.3 = Yes).
+- Given that reasons for dropout are directly linked to perceived clinical status (a component of the "cure" outcome itself), and that dropout proportions differed between arms (20.1% vs 14.2%), it is likely that missingness depended on the true outcome value (Q3.4 = Yes).
+- This satisfies the criteria for **"High risk of bias"** in this domain.
+
+---
+
+## 4. Measurement of the outcome
+
+### Judgement: **Some concerns**
+
+**Rationale:**
+- The outcome ("cure," defined as *"complete resolution of the lesion or patch becoming flat, hypopigmented and with decrease in size of the lesion and/or regaining of sensation"*) is an **observer-reported outcome involving clinical judgement** (assessment of erythema, infiltration, lesion size, sensation) rather than an objective, easily verified endpoint (Q4.1 = No, appropriate measurement method; Q4.2 = No, ascertainment method the same in both groups).
+- Outcome assessors (paramedical workers/doctors) were not blinded, since *"Blinding to treatment was not undertaken"* and the same personnel delivered treatment and assessed outcome (Q4.3 = Yes, aware of intervention).
+- Because assessment of lesion healing/cure involves subjective judgement, knowledge of treatment allocation could plausibly influence outcome assessment (Q4.4 = Yes).
+- However, there is no strong evidence of a directional bias — both regimens (PB-MDT and ROM) were considered legitimate WHO-endorsed options without an obvious "vested interest" motivating differential assessment, and assessments were structured (lesion size, sensation, nerve thickening) rather than purely impressionistic. Thus, it is **plausible but not clearly likely** that assessment was influenced by knowledge of allocation (Q4.5 = Probably no).
+- This pattern (unblinded assessor, judgement-based outcome, but no strong evidence of differential influence) maps to **"Some concerns."**
+
+---
+
+## 5. Selective reporting
+
+### Judgement: **Some concerns**
+
+**Rationale:**
+- The trial was registered retrospectively: *"This study is now registered on Clinical Trial Registry of India vide REF/2013/11/005995 dated 22 November, 2013,"* while patient recruitment occurred from **2001–2004** and follow-up continued through **2010**. This means no pre-specified, date-stamped analysis plan was finalized before unblinded outcome data were available (Q5.1 = No/No information).
+- Cure/relapse outcomes were reported at multiple time points (RFT, 6, 12, 18, 24, 36, 48, 60, 61–96, >96 months; Table 5), and while the 2-year cure rate is reported here, there is no independently verifiable pre-specified statement that 2-year cure was designated the primary/key timepoint versus other follow-up points, raising some possibility that reported results/timepoints were chosen post hoc (Q5.2 = No information).
+- There is no clear evidence of alternate analyses (e.g., adjusted vs. unadjusted, different case definitions) being selectively suppressed for this specific outcome; the Cox regression for confounding was reported as null and not selectively hidden (*"Since no effect was found, these results are not presented"* — though this itself is a minor reporting gap, it does not appear outcome-selective) (Q5.3 = No information/Probably no).
+- Given the absence of a prospective protocol/SAP predating outcome ascertainment, but no overt evidence of blatant data-dredging or selective suppression of unfavorable results for this specific outcome, the judgement defaults to **"Some concerns"** rather than "High risk."
+
+---
+
+# Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Bias arising from the randomization process | Some concerns |
+| 2. Bias due to deviations from intended interventions (assignment effect) | High risk of bias |
+| 3. Bias due to missing outcome data | High risk of bias |
+| 4. Bias in measurement of the outcome | Some concerns |
+| 5. Bias in selection of the reported result | Some concerns |
+
+**Overall risk of bias for cure rate at 2 years: High risk of bias** (driven by high risk of bias in Domains 2 and 3).

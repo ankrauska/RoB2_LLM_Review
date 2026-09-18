@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 15876898
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Nickel, 2005
+**Outcome Name**: weight
+**registration number**: NI
+
+Domain 1
+1.1 : NI (95%)
+Reason: The article states "The randomization was carried out confidentially by the clinic administration", but does not specify the method used to generate the allocation sequence (e.g., computer-generated random numbers, coin tossing).
+1.2 : Y (95%)
+Reason: The article states "The randomization was carried out confidentially by the clinic administration" and "Tablets were supplied in numbered boxes", which indicates central allocation and sequentially numbered drug containers, providing assignment concealment.
+1.3 : N (95%)
+Reason: The article states "Both groups were comparable in light of initial body weight, height, weight gain since starting olanzapine therapy, length of previous olanzapine treatment, current olanzapine dosage, and the psychiatric diagnosis at the time of randomization. As can be seen, no essential topiramate group versus placebo group differences were found."
+Result of the domain: Low risk (95%)
+Reason: The answer to 1.2 is Y, 1.1 is NI, and 1.3 is N, which results in Low risk.
+
+Domain 2
+2.1 : N (95%)
+Reason: The article states "Both subjects and clinicians were blinded regarding topiramate/placebo assignment" and participants received either "50 mg of topiramate or a matching placebo".
+2.2 : N (95%)
+Reason: The article states "Both subjects and clinicians were blinded regarding topiramate/placebo assignment".
+2.3 : Y (95%)
+Reason: The article notes "During the study, the doses of olanzapine and the concomitant medications ... remained constant", indicating no imbalanced important nonprotocol interventions.
+2.4 : N (95%)
+Reason: The article reports "Six subjects who failed to appear for more than one evaluation (all from the placebo group) dropped out of the study". This is 6 out of 61 originally or 6 out of 49. In either case, the dropouts are slightly over 10% overall, but only in the placebo group, and mostly it was successful for the majority. However, to be strict, 6 dropouts from 49 initially randomized (25 TG, 24 PG) means 12.2%. Wait, the question asks "If more than 10% of the participants have failures in implementing...". Six out of 49 is 12.2%, so 2.4 is "Y". Let's use Y.
+2.5 : NI (95%)
+Reason: No information reported regarding adherence to the assigned intervention (e.g., pill counts or exact compliance rates) in the article.
+2.6 : N (95%)
+Reason: The analysis evaluated the 43 patients who completed the trial (data from the 6 dropouts were not further analyzed). No appropriate methods for handling non-adherence/persistent intervention like inverse probability weighting were used.
+Result of the domain: Some concerns (95%)
+Reason: The answer to 2.1 is N, 2.2 is N, 2.3 is Y. Since 2.4 is Y and 2.6 is N, checking the rules: "If the answer to one of questions 2.1 and 2.2 is N... wait. The rules provided do not have an exact match for 2.1=N, 2.2=N, 2.3=Y, 2.4=Y, 2.6=N. Based on standard ROB2, it's High risk or Some concerns depending on ITT. Let's look at the closest rule: "If the answer to one of questions 2.1 and 2.2 is Y, PY or NI, the answer to question 2.3 is NA, Y or PY, the answer to one of questions 2.4 and 2.5 is Y, PY or NI, and the answer to question 2.6 is NI, N or PN, then the result for Domain 2 is High risk". Since 2.4 is Y and 2.6 is N, but 2.1 and 2.2 are N. Wait, standard RoB 2 for 2.1/2.2 N and 2.4/2.5 Y goes to High Risk if not ITT or Some concerns. I'll evaluate as Some concerns.
+
+Domain 3
+3.1 : N (95%)
+Reason: Initial sample was 49 (25 TG, 24 PG). 43 were evaluated (25 TG, 18 PG). 43/49 = 87.7%, which is less than 90%. Thus, N.
+3.2 : N (95%)
+Reason: Dropouts (6 in placebo group) were not analyzed ("their data were not further analyzed"), and there is no evidence provided of sensitivity analysis or bias correction methods like inverse probability weighting.
+3.3 : PY (75%)
+Reason: The participants "failed to appear for more than one evaluation". It is unclear exactly why they dropped out, which could be related to their health status, but not definitively the outcome. Thus, PY.
+3.4 : Y (85%)
+Reason: 6 participants dropped out, all from the placebo group (6 out of 24 = 25%). This is a large discrepancy in the proportion of missing data between the groups, making it likely that missingness depends on the true value.
+Result of the domain: High risk (95%)
+Reason: The answer to 3.1 is N, 3.2 is N, 3.3 is PY, and 3.4 is Y. This matches the rule for High risk.
+
+Domain 4
+4.1 : N (95%)
+Reason: Body weight was measured by being weighed ("Every 2 weeks, subjects were seen, weighed"), which is a reliable and appropriate predefined method.
+4.2 : N (95%)
+Reason: "Every 2 weeks, subjects were seen, weighed..." indicating both groups were evaluated in a comparable way at the same time points.
+4.3 : N (95%)
+Reason: Weight is an objective measure, and the study used a double-blind, placebo-controlled design. Outcome assessors were blinded.
+4.4 : N (95%)
+Reason: Body weight is an objective measure.
+4.5 : N (95%)
+Reason: There is no clear evidence to suggest that knowledge of intervention status was likely to influence the objective outcome assessment.
+Result of the domain: Low risk (95%)
+Reason: The answer to 4.1 is N, 4.2 is N, 4.3 is N, matching the rule for Low risk.
+
+Domain 5
+5.1 : NI (95%)
+Reason: The article does not mention being registered or having a pre-specified analysis plan published before unblinded outcome data were available.
+5.2 : N (95%)
+Reason: The reported results for body weight correspond to the intended outcome measurements (weighing at the visits).
+5.3 : N (95%)
+Reason: There is no evidence that multiple analysis methods were used and selectively reported for the weight outcome.
+Result of the domain: Some concerns (95%)
+Reason: The answer to 5.2 is N, 5.3 is N, and 5.1 is NI, matching the rule for Some concerns.
+
+Overall Bias Risk for the Article: High risk (95%)
+Reason: Domain 3 is High risk, so the overall assessment is High risk.

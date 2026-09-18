@@ -1,0 +1,393 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 27993947
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read the article by Jouni et al. on the MI-GENES study examining shared decision-making (SDM) following disclosure of coronary heart disease genetic risk. Here's my understanding of the key elements for systematic review purposes:
+
+**Study Design & Population**
+- RCT (NCT01936675), Mayo Clinic Biobank-derived cohort
+- 216 enrolled, 207 randomized and completed second visit (103 CRS-only vs. 104 CRS+GRS)
+- Intermediate CHD risk patients, age 45-65, not on statins
+- Nested within the larger MI-GENES trial (primary outcome: LDL-C, published separately in Circulation 2016)
+
+**Intervention**
+- Modified Statin Choice decision aid, EHR-linked (via GDMS/Synthesis), incorporating a 28-SNP genetic risk score (GRS) into Framingham-based conventional risk score (CRS)
+- Two-step disclosure: genetic counselor (30 min) → physician visit for SDM regarding statin therapy
+
+**Outcomes/Measures**
+- SDM-Q (11-item, validated, self-report)
+- OPTION5 (observer-rated, video analysis of 80/187 recorded encounters, blinded rater TSM)
+- Physician visit satisfaction (6-item CAHPS-adapted survey)
+
+**Key Findings**
+- No significant between-group differences in SDM-Q total score (10.40 vs 10.61, p=0.09) or any individual item
+- No difference in OPTION5 scores (70.1 vs 72.7, p=0.13)
+- No difference in physician visit satisfaction (5.99 vs 5.97, p=0.32) or individual items
+- High ceiling effects evident across most measures (>95% "yes" responses on many items)
+
+**Methodological Notes Relevant to Risk-of-Bias Assessment**
+- Randomization: computer-generated, stratified (Pocock-Simon) by age, sex, family history — adequate
+- Allocation concealment: not explicitly detailed beyond investigator-generated sequence
+- Blinding: not blinded (open-label; masking = NONE per registry) — appropriate given nature of intervention, but self-report outcomes vulnerable to social desirability/ceiling effects
+- Outcome assessors for OPTION5: single rater (TSM), no inter-rater reliability reported — potential limitation
+- Missing data handling: non-responders on any item excluded from SDM-Q analysis; missing individual items imputed as "0" (conservative, could bias toward null or against detecting SDM)
+- Sample power: adequately powered a priori for LDL-C (primary outcome), but SDM/OPTION5/satisfaction were secondary outcomes with post-hoc calculated minimum detectable differences (0.69 points/11 for SDM-Q; 2.9/100 for OPTION5) — good transparency, though study not specifically powered for SDM as primary endpoint (risk of Type II error for subtler differences)
+- Generalizability: single-center, Olmsted County MN, higher education/SES sample — limits external validity
+
+**Points for Data Extraction Table**
+- Trial registration and dates align (submitted Sept 2013, recruitment Oct 2013–May 2014)
+- Video recording consent: 187/207 (90%) — subset of 80 analyzed for OPTION5 (40 matched pairs)
+- No competing interests declared; Mayo IRB approved
+
+**Potential Discussion Points for Synthesis**
+- This is one of few (possibly first) trials assessing genetic risk disclosure's effect on SDM specifically (not just knowledge/anxiety/behavior)
+- Findings support "no adverse effect" framing — relevant for reviews addressing whether genomic complexity undermines patient-centered care
+- Ceiling effects in both SDM-Q and CAHPS-based satisfaction measures are a recurring limitation across decision-aid literature — worth flagging in any risk-of-bias/quality-of-evidence assessment (e.g., GRADE) as this limits ability to detect true differences
+- Should be contrasted with other decision aid trials cited (Mann 2010, Weymiller 2007, Branda 2013) that also used Statin Choice but without genetic risk component, for comparative context in a review
+
+Let me know what specific aspect you'd like me to focus on further — e.g., risk of bias (Cochrane RoB 2.0), GRADE assessment, data extraction into a specific template, comparison against your other included studies, or PRISMA-related synthesis language.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I'm ready to evaluate the first domain.
+
+I have carefully reviewed the article's methodology (randomization procedure, allocation, recruitment personnel, baseline characteristics in Table 1) and understand the RoB 2 framework for **Domain 1: Bias arising from the randomization process**, which requires me to assess:
+
+1. Whether the allocation sequence was random
+2. Whether the allocation sequence was concealed until participants were enrolled and assigned
+3. Whether baseline imbalances between groups suggest a problem with the randomization process
+
+I will base my judgment strictly on the facts reported in the article (e.g., the Pocock-Simon stratified randomization method, the fact that investigator HJ both generated the allocation sequence *and* participated in recruitment, and the baseline characteristics reported in Table 1), without speculating beyond what is stated.
+
+Please confirm, or let me know if you'd like me to proceed directly with presenting Domain 1's evaluation in the requested format now.
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+# RoB 2 Evaluation — Domain 1: Bias arising from the randomization process
+
+**Outcome Name: shared decision making score**
+
+---
+
+## 1.1. Was the allocation sequence random?
+
+**Response: Yes**
+
+**Reason:** The article explicitly states: "Randomization was performed by means of a computer-generated random sequence with stratification for age, gender, and positive family history for CHD using the Pocock and Simon method." This is a clear, verifiable random component (computer-generated sequence) used to generate the allocation sequence, satisfying the criteria for "Yes."
+
+---
+
+## 1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?
+
+**Response: Probably No**
+
+**Reason:** The article states: "One of the investigators (HJ) generated the random allocation sequence and study arm assignment using the computer software described earlier." Critically, the Methods section also states: "EMB and HJ recruited participants for the MI-GENES clinical trial." This indicates that the same investigator (HJ) who generated the allocation sequence was also directly involved in recruiting participants. There is no mention of any independent, centrally administered randomization service (e.g., pharmacy, telephone/web-based system), nor any use of sealed opaque envelopes or an equivalent concealment mechanism. Given that the individual generating the sequence had direct contact with recruitment, there is a reasonable basis to suspect that allocation concealment may have been compromised, even though the timing described (randomization occurring after completion of the first visit and scheduling of the second) provides some mitigation. Because the concealment mechanism is not explicitly described and the overlap in personnel roles raises legitimate concern, "Probably No" is the appropriate judgment rather than "No information" or "Probably Yes."
+
+---
+
+## 1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?
+
+**Response: No**
+
+**Reason:** Table 1 reports baseline characteristics (age, gender, smoking status, family history of CHD, BMI, SBP, waist circumference, total cholesterol, LDL-C, HDL-C, triglycerides, education) for both groups, with all p-values ranging from 0.19 to 0.91 — none reaching statistical significance, and no pattern of excessive similarity or excessive imbalance. The groups appear well-balanced on all reported prognostic factors, consistent with what would be expected from a properly functioning randomization process operating by chance alone.
+
+---
+
+## Domain-Level Risk-of-Bias Judgement for Domain 1
+
+**Judgement: Some concerns**
+
+**Justification:** Signaling question 1.1 was answered "Yes" (random sequence generation clearly described and verifiable), and 1.3 was answered "No" (no baseline imbalances suggestive of randomization failure). However, 1.2 was answered "Probably No" because the same investigator who generated the allocation sequence also participated in participant recruitment, and no independent/concealed allocation mechanism (e.g., central allocation service, sealed envelopes) was described in the article. Per the RoB 2 algorithm, when the sequence generation is adequate (Y/PY) and baseline characteristics show no imbalance (N), but allocation concealment is inadequate or insufficiently described (N/PN), the domain-level judgment is "Some concerns" rather than "Low risk" or "High risk."
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+# RoB 2 Evaluation — Domain 2: Bias due to deviations from intended interventions
+
+**Outcome Name: shared decision making score**
+
+**Effect of Interest Selected: Effect of ASSIGNMENT to intervention**
+
+*Justification for selecting this effect:* This trial involves a single-encounter intervention (disclosure of CHD risk with or without genetic risk information, followed by one physician visit for SDM). There is no sustained treatment regimen, no possibility of crossover, and no post-baseline adherence issue in the traditional pharmacological sense. The "assignment" effect (i.e., the effect of being randomized to receive CRS vs. CRS+GRS disclosure, as actually implemented) is the clinically and scientifically relevant estimand for this study, and is consistent with how the trial was designed and analyzed (analysis based on group assignment, not on any measure of "adherence" to intervention content).
+
+---
+
+## 2.1. Were participants aware of their assigned intervention during the trial?
+
+**Response: Yes**
+
+**Reason:** By the very nature of the intervention, participants necessarily knew which information they received during the genetic counselor and physician visit — either conventional risk factors alone (CRS) or conventional risk factors plus genetic risk score (CRS*GRS). The trial design (masking = NONE, per registry) confirms this is an open-label trial; blinding of participants to the content of the risk disclosure they received is not feasible given the nature of the intervention.
+
+---
+
+## 2.2. Were carers/people delivering the interventions aware of participants' assigned intervention during the trial?
+
+**Response: Yes**
+
+**Reason:** The genetic counselors and physicians delivering the disclosure and facilitating SDM necessarily knew which arm the participant was randomized to, since the content of their disclosure differed by design (discussion of GRS effect on risk vs. discussion of family history only). This is confirmed by the trial's stated masking status of "NONE." There was no possibility of blinding personnel delivering this type of information-based intervention.
+
+---
+
+## 2.3. Were there deviations from the intended intervention that arose because of the trial context?
+
+**Response: No**
+
+**Reason:** The article describes a standardized, scripted disclosure process ("Out of 100 people like you…") using the modified Statin Choice decision aid uniformly applied in both arms. There is no reported evidence of participants seeking non-protocol interventions, crossing over, or trial personnel deviating from the protocol due to the trial context (e.g., no reports of participants requesting genetic testing outside protocol, no reports of counselors/physicians departing from the scripted disclosure). The intervention (a single disclosure session plus physician visit) was implemented as designed.
+
+*(Since the answer to 2.3 is "No," questions 2.4 and 2.5 are not applicable and are skipped, per the RoB 2 algorithm for the effect of assignment to intervention.)*
+
+---
+
+## 2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?
+
+**Response: Yes**
+
+**Reason:** All 207 randomized participants who completed the second study visit were included in the analysis according to their randomized group assignment. The SDM survey was completed by 206/207 participants (analyzed as randomized), and the physician visit satisfaction survey was completed by all 207 participants. This reflects an intention-to-treat/modified-ITT approach consistent with randomized group assignment, with no evidence of per-protocol or as-treated analysis, and no post-randomization exclusion of eligible participants based on intervention-related factors.
+
+---
+
+## 2.7. Was there potential for a substantial impact of failure to analyze participants in the group to which they were randomized?
+
+**Response: Not applicable**
+
+**Reason:** This question is only triggered if the answer to 2.6 is "No/Probably No." Since 2.6 was answered "Yes" (appropriate ITT-consistent analysis was used), this question does not need to be assessed.
+
+---
+
+## Domain-Level Risk-of-Bias Judgement for Domain 2 (Effect of Assignment to Intervention)
+
+**Judgement: Low**
+
+**Justification:** Although participants and trial personnel were necessarily aware of the assigned intervention (2.1 = Yes, 2.2 = Yes) — an inherent and unavoidable feature of this type of information-disclosure intervention — there is no evidence that this awareness led to deviations from the intended intervention arising from the trial context (2.3 = No). The intervention was implemented via a standardized, scripted decision aid in both arms, and the analysis appropriately included participants according to their randomized assignment with minimal and non-differential missing data (206/207 for SDM-Q; 207/207 for satisfaction survey). Per the RoB 2 guidance, this pattern of responses (awareness present, but no context-driven deviations, and appropriate analysis) is consistent with a "Low risk" judgment for the effect of assignment to intervention — this is precisely the scenario the RoB 2 tool is designed to accommodate for open-label trials where blinding is not feasible by design.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+# RoB 2 Evaluation — Domain 3: Bias due to missing outcome data
+
+**Outcome Name: shared decision making score**
+
+---
+
+## 3.1. Were data for this outcome available for all, or nearly all, participants randomized?
+
+**Response: Yes**
+
+**Reason:** The article states: "Of 216 enrolled participants... 207 were randomized and completed the second study visit including the genetic counselor and physician appointments" and "The SDM survey was completed by 206 study participants." This means 206 out of 207 randomized participants (99.5%) who completed the second visit had SDM outcome data available. This far exceeds the 95% threshold suggested for continuous outcomes (the SDM score is a continuous/ordinal composite score ranging 0-11). The single missing participant could not have made an important difference to the estimated effect of intervention, given this negligible proportion of missingness.
+
+*Note: While 9 of the 216 enrolled participants withdrew before randomization/second visit (216 → 207), these are pre-randomization exclusions and do not constitute "missing outcome data" in the RoB 2 sense, since the appropriate denominator for this domain is the randomized population (207), not the enrolled population (216).*
+
+---
+
+## 3.2. Is there evidence that the result was not biased by missing outcome data?
+
+**Response: Not applicable**
+
+**Reason:** This question is only triggered if the answer to 3.1 is "No/Probably No." Since 3.1 was answered "Yes," this question does not need to be assessed.
+
+---
+
+## 3.3. Could missingness in the outcome depend on its true value?
+
+**Response: Not applicable**
+
+**Reason:** This question is only triggered if the answer to 3.2 is "No/Probably No" (which itself is only reached if 3.1 = No/Probably No). Since the pathway terminated at 3.1 = "Yes," this question does not need to be assessed.
+
+---
+
+## 3.4. Is it likely that missingness in the outcome depended on its true value?
+
+**Response: Not applicable**
+
+**Reason:** This question is only triggered if the answer to 3.3 is "Yes/Probably Yes." Since the pathway terminated at 3.1 = "Yes," this question does not need to be assessed.
+
+---
+
+## Domain-Level Risk-of-Bias Judgement for Domain 3
+
+**Judgement: Low**
+
+**Justification:** Outcome data for the SDM score were available for 206 of 207 randomized participants who completed the study visit (99.5% completion rate), well above the threshold at which missing data could plausibly bias the estimated intervention effect. There is no indication of differential or informative missingness, and the single missing case represents a negligible proportion unlikely to have any meaningful impact on the results. Per the RoB 2 algorithm, when 3.1 is answered "Yes," the domain-level judgment is "Low risk" of bias due to missing outcome data.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+# RoB 2 Evaluation — Domain 4: Bias in measurement of the outcome
+
+**Outcome Name: shared decision making score**
+
+---
+
+## 4.1. Was the method of measuring the outcome inappropriate?
+
+**Response: No**
+
+**Reason:** The SDM score was measured using the SDM Questionnaire (SDM-Q), described in the article as "a validated 11-question survey that assesses patients' perception of the SDM process during clinical encounters," with a citation to its development and validation (Simon et al., 2006). This is a pre-specified, validated instrument appropriate for capturing patient-perceived SDM, and there is no indication that it is insensitive to plausible intervention effects or has demonstrated poor validity.
+
+---
+
+## 4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?
+
+**Response: No**
+
+**Reason:** The SDM-Q survey was administered identically to both groups, following the same sequence of events (genetic counselor visit followed by physician visit), at the same time point (immediately following the encounter, based on the study design), using the same 4-point Likert scale and scoring method (0-11) in both arms. There is no evidence of differential measurement procedures, timing, or thresholds between the CRS and CRS*GRS groups. Both groups underwent the same two-visit process with the only difference being the content of information disclosed (conventional risk only vs. conventional + genetic risk).
+
+---
+
+## 4.3. Were outcome assessors aware of the intervention received by study participants?
+
+**Response: Yes**
+
+**Reason:** The SDM score is a participant-reported outcome (self-report survey completed by the patient after the clinical encounter). Per RoB 2 guidance, "For participant-reported outcomes, the outcome assessor is the study participant." Since this is an open-label trial (masking = NONE) and participants necessarily knew which type of risk information they received (conventional risk factors alone vs. conventional risk factors plus genetic risk score, as explicitly disclosed to them during the counseling and physician visits), the outcome assessors (participants themselves) were unblinded and aware of their assigned intervention.
+
+---
+
+## 4.4. Could assessment of the outcome have been influenced by knowledge of intervention received?
+
+**Response: Yes**
+
+**Reason:** The SDM-Q is a subjective, self-reported measure of the patient's perception of the decision-making process, involving personal judgment (e.g., "My doctor and I weighed up the different treatment options thoroughly," "I felt included in the treatment decision"). Such subjective, judgment-based self-report outcomes are inherently susceptible to influence by participants' awareness of which study arm they were in — for example, patients receiving the novel genetic risk information might perceive the encounter as more thorough or personalized (or conversely, more confusing) simply because they knew they received additional/different information, independent of the actual quality of the SDM process.
+
+---
+
+## 4.5. Is it likely that assessment of the outcome was influenced by knowledge of intervention received?
+
+**Response: No**
+
+**Reason:** While knowledge of intervention *could* have influenced participants' self-reported perceptions (as noted in 4.4), there is no specific evidence in the article suggesting strong prior beliefs, expectations, or motivations that would likely have systematically biased responses in one particular direction. The trial's own hypothesis was exploratory/comparative (whether genetic risk disclosure affects SDM), rather than testing an intervention participants would strongly expect to be superior or inferior. There is no described mechanism (e.g., strong patient expectation that genetic information would improve or worsen their decision-making experience) that would suggest a *likely* systematic influence, as opposed to a theoretical possibility. Additionally, the high ceiling effects observed across nearly all SDM-Q items (>90% "yes" responses in both arms) suggest a general response pattern (possibly acquiescence/social desirability bias) affecting both groups similarly, rather than a differential, intervention-knowledge-driven bias favoring one arm. Therefore, this is judged as a situation where knowledge of intervention *could* have influenced assessment, but there is insufficient evidence that it *did* systematically bias the outcome in a particular direction.
+
+---
+
+## Domain-Level Risk-of-Bias Judgement for Domain 4
+
+**Judgement: Some concerns**
+
+**Justification:** The outcome measurement method itself was appropriate and validated (4.1 = No), and there was no differential ascertainment procedure between groups (4.2 = No). However, because the SDM score is a participant-reported, subjective/judgment-based outcome in an open-label trial, outcome assessors (participants) were necessarily aware of their intervention assignment (4.3 = Yes), and this awareness could plausibly have influenced their subjective self-report responses (4.4 = Yes). Since there is no strong evidence that this influence was *likely* to have systematically biased results in a particular direction (4.5 = No), but the theoretical potential for bias cannot be ruled out given the unblinded, self-report nature of the outcome, the domain-level judgment is "Some concerns" rather than "Low risk." This reflects the RoB 2 principle that self-reported outcomes in open-label trials involving subjective judgment are generally not eligible for a "Low risk" rating in this domain.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+# RoB 2 Evaluation — Domain 5: Bias in selection of the reported result
+
+**Outcome Name: shared decision making score**
+
+---
+
+## 5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?
+
+**Response: Probably Yes**
+
+**Reason:** The trial is registered at ClinicalTrials.gov (NCT01936675), and the article explicitly references a previously published study protocol/design paper: "The MI-GENES study protocol, design, and primary outcome have been previously published." The registry information provided also confirms that "Shared decision making (as assessed by survey)" and "Physician visit satisfaction (as assessed by survey)" were listed a priori as secondary outcomes in the trial registration, and the article itself states: "SDM and physician visit satisfaction reported in this manuscript are among the secondary outcomes of this clinical trial." This provides evidence of pre-specification via registration and a published protocol paper (ref 12), though the full detailed statistical analysis plan is not reproduced in this specific manuscript. Consistent with the guidance ("Select probably yes, if you see a registration number... and do not continue with some concerns because you can't see the full plan"), "Probably Yes" is appropriate.
+
+---
+
+## 5.2. Is the numerical result likely to have been selected from multiple eligible outcome measurements (e.g., scales, definitions, time points) within the outcome domain?
+
+**Response: No**
+
+**Reason:** The article reports SDM using two distinct, pre-specified measurement approaches — the participant self-reported SDM-Q (11-item validated survey) and the observer-rated OPTION5 scale (video analysis) — and **both** are fully reported in the manuscript, along with all 11 individual SDM-Q items in Table 2, not just a favorable subset. There is no evidence that any eligible measurement of SDM was measured but selectively withheld from the report. The consistent reporting of both overall scores and item-level detail, including a non-significant trend (p=0.09) that was not the "more favorable" result being hidden, supports the conclusion that reporting was comprehensive rather than selective.
+
+---
+
+## 5.3. Is the numerical result likely to have been selected from multiple eligible analyses of the data?
+
+**Response: No**
+
+**Reason:** There is no evidence of multiple alternative analytical approaches (e.g., different statistical models, subgroups, or transformations) being tried with only the most favorable being reported. The analysis method described (comparison of continuous SDM score between randomized groups using t-test/Wilcoxon rank-sum, as pre-specified in the statistical methods section) is applied consistently and matches the single, straightforward analytic approach described in the Methods section. Both the overall score and item-by-item breakdowns are reported without any indication of cherry-picking a particular time point, subgroup, or statistical model based on favorable results.
+
+---
+
+## Domain-Level Risk-of-Bias Judgement for Domain 5
+
+**Judgement: Low**
+
+**Justification:** There is evidence of pre-specification of the SDM outcome through trial registration and a previously published protocol paper (5.1 = Probably Yes). There is no evidence that the reported result was selected from multiple eligible outcome measurements — both the SDM-Q and OPTION5 scales were fully reported, along with all individual item-level data (5.2 = No). There is likewise no evidence of selection from multiple eligible analyses, as a single consistent analytic approach was applied and reported (5.3 = No). Per the RoB 2 algorithm, this pattern of responses corresponds to a "Low risk" of bias in selection of the reported result.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+# RoB 2 Overall Evaluation — shared decision making score
+
+## Summary of Domain-Level Judgements
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions | Low |
+| 3. Missing outcome data | Low |
+| 4. Measurement of the outcome | Some concerns |
+| 5. Selection of the reported result | Low |
+
+---
+
+## Predicted Direction of Bias
+
+**Response: Favours experimental (CRS+GRS group)**
+
+**Reason:** The primary mechanism of concern identified in this assessment is Domain 4 — the SDM-Q is a subjective, participant-reported outcome in an open-label trial, where participants were necessarily aware of whether they received the novel genetic risk information (CRS+GRS) or conventional risk information alone (CRS). It is plausible that participants receiving the novel, more "personalized" and technologically advanced genetic risk disclosure may have perceived their encounter as more thorough, engaging, or noteworthy, independent of the actual quality of shared decision-making that occurred — a form of novelty/expectation bias. This mechanism is directionally consistent with the observed (though non-significant) trend in the actual results, where the CRS+GRS group scored numerically higher on the SDM-Q (10.61 vs. 10.40, p=0.09) and on the OPTION5 scale (72.7 vs. 70.1, p=0.13). The Domain 1 concern (allocation concealment, given overlapping investigator roles in sequence generation and recruitment) does not have a clear directional mechanism and is judged less likely to be the dominant source of directional bias for this specific outcome. On balance, the self-report/unblinding mechanism in Domain 4 provides the most plausible and consistent directional signal, suggesting bias favoring the experimental (genetic risk) arm.
+
+---
+
+## Overall Risk-of-Bias Judgement
+
+**Response: Some concerns**
+
+**Reason:** Per the RoB 2 algorithm, an overall judgement of "High risk" requires either (a) at least one domain judged to be at high risk of bias, or (b) multiple domains judged to have "some concerns" that, in combination, substantially lower confidence in the result. In this assessment, no domain was judged "High" — three domains (2, 3, 5) were judged "Low," while two domains (1 and 4) were judged "Some concerns." 
+
+While two domains show "some concerns," these concerns arise from largely unavoidable and non-catastrophic features inherent to this type of trial design: (1) partial overlap in personnel roles for allocation sequence generation and recruitment (Domain 1), without evidence of actual baseline imbalance; and (2) the inherent unblindability of a self-reported outcome in a trial where the intervention itself is disclosure of information (Domain 4), a limitation common to nearly all SDM/decision-aid trials of this nature. Neither concern reflects a severe or clearly demonstrated flaw so much as a structural limitation with plausible but modest potential impact on the result. Per RoB 2 guidance, this pattern — no "High" domain, with two "Some concerns" domains reflecting inherent, non-fatal limitations rather than severe flaws — corresponds to an overall judgement of **"Some concerns"** rather than "High risk."
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# RoB 2 Final Risk-of-Bias Assessment (Re-evaluated)
+
+**Outcome Name: Shared decision making score**
+**Trial: MI-GENES (NCT01936675) — Jouni et al.**
+**Effect of interest: Effect of assignment to intervention**
+
+---
+
+## Domain-by-Domain Signaling Questions and Judgements
+
+| Domain | Signaling Question | Response | Key Justification |
+|---|---|---|---|
+| **1. Randomization process** | 1.1 Was allocation sequence random? | **Yes** | Computer-generated sequence, stratified by Pocock-Simon method for age, sex, family history |
+| | 1.2 Was allocation sequence concealed? | **Probably No** | Investigator HJ both generated the allocation sequence *and* recruited participants (with EMB); no independent/centralized concealment mechanism described |
+| | 1.3 Did baseline differences suggest randomization problems? | **No** | Table 1 shows no significant imbalances (all p=0.19–0.91) across age, sex, smoking, lipids, BMI, education |
+| | **Domain 1 Judgement** | **Some concerns** | Adequate sequence generation and balanced baseline characteristics, but concealment inadequate/unclear due to overlapping investigator roles |
+| **2. Deviations from intended interventions** | 2.1 Were participants aware of assigned intervention? | **Yes** | Open-label trial (masking=NONE); participants necessarily knew content of disclosure received |
+| | 2.2 Were carers/deliverers aware? | **Yes** | Genetic counselors/physicians necessarily knew group assignment to deliver differing content |
+| | 2.3 Deviations from intended intervention due to trial context? | **No** | Standardized, scripted decision aid used uniformly; no reported protocol deviations |
+| | 2.6 Appropriate analysis used? | **Yes** | Analysis included 206/207 (SDM-Q) and 207/207 (satisfaction) per randomized assignment; consistent with ITT |
+| | **Domain 2 Judgement** | **Low** | Awareness unavoidable given intervention type, but no context-driven deviations and appropriate ITT-consistent analysis |
+| **3. Missing outcome data** | 3.1 Data available for all/nearly all participants? | **Yes** | 206/207 (99.5%) randomized participants who completed visit 2 had SDM data; negligible missingness |
+| | **Domain 3 Judgement** | **Low** | Missingness minimal and unlikely to affect estimated effect |
+| **4. Measurement of the outcome** | 4.1 Was outcome measurement method inappropriate? | **No** | Validated instrument (SDM-Q, Simon et al. 2006) used appropriately |
+| | 4.2 Could measurement differ between groups? | **No** | Identical administration procedure, timing, and scoring in both arms |
+| | 4.3 Were outcome assessors aware of intervention? | **Yes** | Self-reported outcome; participant = assessor; unblinded by design |
+| | 4.4 Could assessment be influenced by knowledge of intervention? | **Yes** | Subjective, judgment-based self-report vulnerable to novelty/expectation effects |
+| | 4.5 Likely that assessment WAS influenced? | **No** | No strong evidence of differential expectation/motivation; both arms received symmetric, scripted disclosure; ceiling effects affected both groups similarly |
+| | **Domain 4 Judgement** | **Some concerns** | Appropriate instrument and symmetric procedure, but inherent unblinding of subjective self-report outcome cannot be fully excluded as a source of bias |
+| **5. Selection of the reported result** | 5.1 Analyzed per pre-specified plan? | **Probably Yes** | Registered trial (NCT01936675); protocol published previously (ref 12); SDM listed a priori as secondary outcome |
+| | 5.2 Selected from multiple eligible measurements? | **No** | Both SDM-Q and OPTION5 fully reported; all 11 individual SDM-Q items reported in Table 2 |
+| | 5.3 Selected from multiple eligible analyses? | **No** | Single, consistent analytic approach (t-test/Wilcoxon) applied and reported as pre-specified |
+| | **Domain 5 Judgement** | **Low** | No evidence of selective outcome/analysis reporting |
+
+---
+
+## Overall Assessment Summary
+
+| Domain | Final Judgement |
+|---|---|
+| 1. Bias arising from the randomization process | **Some concerns** |
+| 2. Bias due to deviations from intended interventions | **Low** |
+| 3. Bias due to missing outcome data | **Low** |
+| 4. Bias in measurement of the outcome | **Some concerns** |
+| 5. Bias in selection of the reported result | **Low** |
+
+---
+
+## Final Overall Judgement
+
+| Parameter | Result |
+|---|---|
+| **Predicted direction of bias** | **Favours experimental (CRS+GRS arm)** — plausible novelty/unblinding effect on self-report aligns with the observed (non-significant) numerical trend favoring the genetic-risk arm on both SDM-Q (10.61 vs 10.40) and OPTION5 (72.7 vs 70.1) |
+| **Overall Risk-of-Bias Judgement** | **Some concerns** |
+
+**Final Justification:** No domain was rated "High risk." Three domains (2, 3, 5) were rated "Low risk," reflecting appropriate handling of intervention delivery, missing data, and outcome reporting. Two domains (1 and 4) were rated "Some concerns," reflecting: (1) incomplete/unclear allocation concealment due to overlapping investigator roles in sequence generation and recruitment, without evidence this caused actual imbalance; and (2) inherent, unavoidable unblinding of a subjective, self-reported outcome in an open-label information-disclosure trial, without strong evidence of a substantial resulting bias. Per RoB 2 algorithm rules, this pattern — no "High" domain, two "Some concerns" domains reflecting structural/design limitations rather than demonstrated severe flaws — yields an overall judgement of **Some concerns**.

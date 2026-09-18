@@ -1,0 +1,56 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 26530748
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The report identifies PORTEC-2 as a randomized trial and states that “427 patients with stage I high-intermediate-risk EC were randomly allocated to EBRT or VBT.” However, this publication does not describe how the allocation sequence was generated or whether allocation was concealed until enrolment and assignment. It also does not provide arm-specific baseline data in the supplied text sufficient to assess whether there were imbalances suggestive of a problem with randomization.  
+   
+   Thus, there is no direct indication that randomization was flawed, but insufficient reporting of sequence generation and allocation concealment prevents a low-risk judgement.
+
+2. **Deviations from intended intervention: some concerns**
+
+   a. **Judgement:** Some concerns, for the effect of assignment to intervention.
+
+   b. **Rationale:** The comparison was between EBRT and vaginal brachytherapy (VBT), interventions for which blinding of participants and treating personnel would not realistically be feasible. Therefore, participants and care providers were probably aware of assigned treatment. The article refers to the parent trial as comparing the two radiotherapy approaches and cites it as an “open-label” randomized trial.
+
+   The analysis appears to compare groups according to randomized assignment: the linear mixed model included “random assignment” as a fixed effect. This is compatible with estimating the effect of assignment, rather than an as-treated or naïve per-protocol effect. There is no reported evidence that participants were analysed according to treatment actually received.
+
+   However, the article does not report whether deviations from protocol treatment, differential additional interventions, or other deviations arising from the trial context occurred and affected global health. Because this was an unblinded comparison involving a participant-reported outcome, and information on relevant deviations is limited, some concerns remain. There is no clear evidence that unbalanced trial-context deviations caused material bias; therefore, high risk is not justified in this domain.
+
+3. **Missing outcome data: high risk of bias**
+
+   a. **Judgement:** High risk of bias.
+
+   b. **Rationale:** Long-term availability of HRQL data was incomplete. The article states:
+
+   - “Baseline questionnaires and at least 1 follow-up questionnaire were received from 348 of 427 patients (81% of responders).”
+   - At 7 years, “Response rate … was 205 of 265 (77%).”
+   - At 10 years, “80 (67%) returned the questionnaire.”
+   - Of 282 evaluable long-term questionnaires, only “76.2% had completed all items of the QLQ-C30.”
+
+   Moreover, the long-term analysis was restricted to patients who were “previous responders and were alive and disease-free according to the trial database.” Patients with endometrial-cancer recurrence or a pelvic second cancer were excluded from longitudinal and symptom analyses. These restrictions mean that outcome data were unavailable or excluded for a substantial proportion of randomized participants.
+
+   For EORTC QLQ-C30 global health, missingness could plausibly depend on the unobserved outcome: poorer health-related quality of life, recurrent cancer, comorbidity, frailty, or treatment-related morbidity could all make questionnaire completion less likely. The selected long-term responders were also “slightly younger and had fewer comorbidities compared with the whole PORTEC-2 cohort.” No sensitivity analysis was reported showing that plausible missing global-health scores would not alter the result. Consequently, it is likely that missingness was related to true global-health status, creating a high risk of bias.
+
+4. **Measurement of the outcome: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** EORTC QLQ-C30 global health is a validated, appropriate patient-reported health-related quality-of-life measure. The article describes use of “the EORTC … Core questionnaire (QLQ-C30 v3.0)” and notes that higher global quality-of-life scores represent better functioning. There is no indication that the questionnaire or its scoring was inappropriate, or that the measurement schedule itself differed systematically between randomized groups.
+
+   However, the outcome assessor for global health is the participant. Because EBRT and VBT are visibly different treatments, participants were probably aware of their assigned intervention. Participant knowledge can influence subjective ratings of global health and quality of life. The report does not provide evidence that participants’ reporting was actually influenced by knowledge of treatment assignment, and both groups received active adjuvant radiotherapy. Therefore, there are some concerns rather than high risk of bias.
+
+5. **Selective reporting: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The article reports that QLQ-C30 questionnaires were collected repeatedly—at baseline, at 6-month intervals in the first 2 years, annually to 5 years, and at 7 and 10 years. It reports a longitudinal mixed-model analysis and states that “scores on the QLQ-C30 functioning and global health scales did not significantly differ between the 2 treatment groups.”
+
+   Nevertheless, the supplied materials do not provide a prospectively finalized statistical analysis plan specifying the precise global-health outcome measurement, time point(s), handling of missing data, and analysis model before unblinded outcome data were available. The trial registration information supplied only as a document identifier does not contain extractable details here that would allow confirmation of a pre-specified global-health analysis.
+
+   Since QLQ-C30 generates multiple scales, repeated time points, and potentially multiple analytic choices, there was scope for selective selection of an outcome measurement or analysis. There is no direct evidence that the reported global-health result was selected based on its findings, so high risk is not warranted. However, absence of a sufficiently detailed, prospectively finalized analysis plan means that low risk cannot be assigned.

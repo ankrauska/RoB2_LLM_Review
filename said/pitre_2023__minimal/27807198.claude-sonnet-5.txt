@@ -1,0 +1,87 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 27807198
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0) – Outcome: Survival Time
+## Trial: Double-blinded randomised phase II study of doxycycline in early sCJD (EudraCT 2006-003934-14)
+## Effect of interest: Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Sequence generation:** The article states "The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin" — an independent third party. No explicit description of the method used to generate the sequence (e.g., computer-generated random numbers) is given, but the involvement of an independent centre in a registered, ethics-approved academic trial supports a judgement of "Probably yes" for a random component.
+- **Allocation concealment:** "The randomisation list and the study medication were administered by the Charité..." independent of the enrolling site in Göttingen — this constitutes adequate, centrally-administered concealment (**Probably yes**).
+- **Baseline imbalance:** Despite adequate concealment, there are baseline imbalances in known key prognostic factors between the very small groups (n=7 vs n=5): MMSE 21 vs 16 (favouring doxycycline group), Barthel index similar, and codon 129 genotype markedly skewed (0% MM in doxycycline vs 20% MM in placebo; MM genotype is a well-established strong predictor of aggressive/short disease course, as the authors themselves note: "The influence of the codon 129 genotype... is well established"). No baseline p-values were reported, and with only 12 participants, such imbalances could arise from chance; however, given the small sample and known prognostic importance of MMSE and codon 129, this raises concern that randomization by chance produced non-comparable groups, undermining confidence that the ITT effect is unconfounded.
+
+Combining adequate concealment/sequence with a plausible baseline imbalance in an important prognostic factor (codon 129, MMSE) in a very small trial → **Some concerns**.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- The trial was double-blind, placebo-controlled: "randomised, single-centre, double-blind, placebo-controlled phase II trial." Both participants and treating/assessing personnel were intended to be unaware of assignment (2.1/2.2 = No/Probably No), which would normally support low risk for Part 1.
+- However, adverse event profiles differed somewhat between arms (AE rate 70% doxycycline vs 60% placebo), and doxycycline has recognisable side-effects (e.g., GI disturbance, photosensitivity) that could have partially unblinded participants/caregivers/clinicians in a small, single-centre trial — raising some possibility that blinding was imperfect, though not clearly documented as causing deviations arising from trial context.
+- Regarding analysis: "One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis" out of 13 randomized. This represents an exclusion of a randomized participant from the analysis, which is not a full ITT analysis. Given the very small total sample (n=13), this exclusion could have a non-trivial impact on the estimated effect (2.7 = potential for substantial impact, given N is so small). Additionally, 4/7 patients in the doxycycline arm "discontinued" per the flow diagram yet were retained in the "Analysis" set (n=7 analysed), suggesting reasonable ITT handling for that arm, but the placebo dropout exclusion is a deviation from strict ITT principles.
+
+The combination of borderline blinding integrity and an analysis that is not fully ITT (excluding 1 of 13 randomized patients, in a trial of only 12–13 people) supports **Some concerns** rather than Low risk, but insufficient evidence of trial-context-driven deviations that clearly biased results toward High risk.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- Outcome data (survival) were available for 12 of 13 randomized participants (92%); one patient randomised to placebo "dropped out" and was excluded from the survival analysis, with no information about vital status ascertainment for this individual after dropout.
+- No sensitivity analysis was performed to assess robustness of the survival result to this missing participant.
+- No explicit reasons for the dropout are provided, so it cannot be excluded that missingness was related to the patient's true prognosis (e.g., withdrawal due to rapid clinical deterioration or family decision related to disease severity — a plausible scenario in CJD trials). The very small sample size (1/13 missing, and analysis based on n=12) means this single participant's outcome, whatever it was, could plausibly have influenced the HR and CI given the wide confidence interval already observed (HR 0.841, 95% CI 0.238–2.966).
+- Because it cannot be confirmed that missingness was unrelated to the outcome, and there is no correction/sensitivity analysis, but there is also no strong signal that missingness clearly depended on true outcome value or differed systematically by reason between arms → **Some concerns** (not high, given only 1/13 missing and objective outcome of survival, but not low given absence of information and small sample).
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The outcome is survival time (all-cause mortality/date of death), an objective, observer-reported outcome not involving clinical judgement, which is inherently very difficult to influence by knowledge of intervention assignment.
+- The date of disease onset (used to anchor timing) was determined by an investigator explicitly **blinded to treatment**: "The investigator determining this date was blinded to treatment."
+- The trial was double-blind ("double-blinded randomised phase II study"), so ascertainment of survival status was not likely differentially influenced by intervention knowledge even if some unblinding occurred through side-effects, because death/survival status itself is not a judgement-based outcome.
+- No evidence that the method of ascertaining death/survival differed between the two groups.
+
+This supports a low risk of bias for measurement of this specific (objective) outcome.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- The EudraCT registration (2006-003934-14) pre-specifies the primary endpoint as: "Der primäre Zielparameter soll die Überlebenszeit der Patienten **von Symptombeginn an** sein" (survival time **from symptom onset**), evaluated "until death."
+- However, in the published article, for the double-blind RCT the authors state: "follow-up for survival starts with the **randomisation** (first application of study medication) and ends with date of death or end of the study" — a different time origin than the registered protocol (onset vs. randomization). The authors provide a post-hoc methodological rationale for this change (to align with observational study comparability), but this represents a deviation from the pre-registered primary endpoint definition that was decided by the trial team, not clearly pre-specified in an amendment with a date-stamp prior to unblinding.
+- Secondary endpoints (time to loss of feeding, sphincter control, akinetic mutism) reported in the paper match those pre-specified in the registry ("Zeit von der Randomisierung bis zum Verlust der selbständigen Nahrungsaufnahme... Sphinkter-Kontrolle... akinetischen Mutismus"), providing reassurance for those measures.
+- No statistical analysis plan was available for review, and it is unclear whether other outcome definitions/analyses (e.g., other cut-points, adjusted vs. unadjusted models) were tried and not reported for the RCT specifically (only one Cox HR is reported for survival in the RCT arm, unadjusted, likely due to small sample precluding adjustment).
+- Given the discrepancy in defining the start of follow-up for the primary outcome relative to the registered protocol, without clear evidence that this modification was pre-specified before unblinded data were available, there is a risk — though not strong evidence — of outcome-analysis selection tailored post hoc. This supports **Some concerns** rather than Low risk; there is insufficient evidence of deliberate results-based selection to warrant "High risk."
+
+---
+
+# Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended intervention (assignment effect) | Some concerns |
+| 3. Missing outcome data | Some concerns |
+| 4. Measurement of the outcome | Low risk |
+| 5. Selective reporting | Some concerns |
+| **Overall risk of bias for survival time outcome** | **High risk of bias** (multiple domains rated "Some concerns," which in combination substantially lowers confidence in the result — per RoB 2 guidance, "Some concerns" in multiple domains may warrant an overall "High risk" judgement, especially given the very small sample size (n=12–13) underlying this result) |

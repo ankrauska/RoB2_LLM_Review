@@ -1,0 +1,125 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26713821
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Horie, 2016
+**Outcome Name**: Neuropsychological test performance
+**Registration number**: NCT01286389
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+The article states this was a "prospective, 1:1, randomized study" but does not describe the specific method used to generate the allocation sequence (no mention of computer-generated numbers, block randomization, random tables, etc.).
+
+**1.2**: NI (90%)
+No information is provided regarding allocation concealment (no mention of central allocation, sequentially numbered containers, or sealed/opaque envelopes).
+
+**1.3**: N (95%)
+Table 1 shows no statistically significant differences between groups at baseline (all P>0.05), and the text explicitly states: "There were no significant differences between the groups at baseline for age, gender, education, comorbidities, genotype, measurements, or laboratory analysis."
+
+**Result of Domain 1**: **Some concerns** (85%)
+Since 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (90%)
+Participants clearly knew whether they were attending nutritional counseling group meetings (26–28 sessions) versus receiving conventional care only; no placebo/sham procedure was used for participants.
+
+**2.2**: Y (95%)
+Nutritionists delivering the group counseling intervention were necessarily aware of participant allocation, as this was an open-label behavioral intervention.
+
+**2.3**: Y (75%)
+Both groups received identical conventional medical care and physical activity advice; no evidence of imbalance in important non-protocol interventions.
+
+**2.4**: N (90%)
+Only 5/80 (6.25%) participants failed to complete follow-up (4 dropouts, 1 death) — below the 10% threshold.
+
+**2.5**: NI (70%)
+The article speculates in the Limitations section that "mobility difficulties... decreased adherence to group meetings," and notes the intensive group's BMI change was not significantly different from the conventional group, suggesting adherence issues, but no explicit adherence percentage is reported.
+
+**2.6**: N (85%)
+The analysis used a generalized estimating equation for group comparison, then pooled data and used BMI-as-continuous regression (an ITT-like, non-adherence-adjusted approach) — not IV analysis or IPW for adherence.
+
+**Result of Domain 2**: **High risk** (85%)
+2.1/2.2 = Y; 2.3 = Y; 2.5 = NI; 2.6 = N → matches the rule for "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: PN (85%)
+75/80 (93.75%) randomized participants had data at follow-up — falls within the 90–95% range for continuous outcomes.
+
+**3.2**: N (90%)
+No inverse probability weighting, sensitivity analysis, or other bias-correction method was reported for missing outcome data (ITT does not qualify).
+
+**3.3**: NI (65%)
+One participant died of pneumonia (unrelated to cognitive outcome), but reasons for the other 4 dropouts are not specified, making it unclear whether missingness relates to the true outcome value.
+
+**3.4**: NI (65%)
+No information is provided comparing dropout characteristics or reasons between groups; insufficient detail to determine if missingness likely depended on outcome.
+
+**Result of Domain 3**: **High risk** (80%)
+3.1 = PN, 3.2 = N, 3.3 = NI, 3.4 = NI → matches rule for "High risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+Validated, standard neuropsychological instruments were used (RAVLT, TMT, Digit Span, Verbal Fluency, Wisconsin Card Sorting Test, CAMCog, IQCODE) — reliable and appropriately predefined.
+
+**4.2**: N (90%)
+Both groups underwent identical testing at the same time points (baseline and 12 months) using the same battery and thresholds.
+
+**4.3**: N (80%)
+Per trial registration, masking was "SINGLE" with outcomes assessors specifically masked to allocation; these are assessor-administered (not purely patient-reported) tests.
+
+**4.4**: Y (70%)
+Despite blinding, these are subjective measures administered/scored by an assessor (per RoB2 rules, assessor-scored subjective outcomes default to "Y").
+
+**4.5**: N (75%)
+No clear evidence in the article suggests that assessment was actually influenced by knowledge of intervention status; outcome assessors were specified as masked per the trial registry.
+
+**Result of Domain 4**: **Low risk** (85%)
+4.1 = N, 4.2 = N, 4.3 = N → matches rule for "Low risk" directly.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: N (80%)
+The registered primary outcome analysis plan was not followed as originally intended. The authors explicitly state: "The weight loss difference between the groups was lower than expected, limiting the analyses by the initial study design... We therefore considered it most useful to make an exploratory analysis considering the decrease of BMI as a continuous variable" — a deviation directly related to the (null) results of the planned group comparison.
+
+**5.2**: N (75%)
+All major cognitive domains/tests planned appear to be reported in Table 2 and Table 3; no evidence of selective omission of specific test measurements.
+
+**5.3**: Y (80%)
+Multiple analytic approaches were used (GEE by group — non-significant; then post-hoc continuous BMI-change regression — significant), and the article explicitly justifies switching analysis strategy based on the pattern of results, indicating selective emphasis on the analysis yielding significant findings.
+
+**Result of Domain 5**: **High risk** (80%)
+5.3 = Y → matches rule for "High risk."
+
+---
+
+## Overall Bias Risk Assessment
+
+| Domain | Result |
+|--------|--------|
+| Domain 1 | Some concerns |
+| Domain 2 | High risk |
+| Domain 3 | High risk |
+| Domain 4 | Low risk |
+| Domain 5 | High risk |
+
+**Overall Bias Risk for the Article: High Risk (90%)**
+
+Rationale: Per the algorithm, if any domain is rated "High risk," the overall assessment is "High Risk." In this case, three domains (2, 3, and 5) were rated High risk, driven primarily by: (1) inadequate reporting of adherence data combined with inappropriate (ITT-like) analysis methods for estimating intervention effect (Domain 2); (2) incomplete outcome data (93.75%) without bias-correction methods and unclear reasons for dropout (Domain 3); and (3) a clear post-hoc deviation from the pre-specified analytic plan, with selective emphasis on the analysis that yielded significant findings after the primary planned comparison showed no group differences (Domain 5).

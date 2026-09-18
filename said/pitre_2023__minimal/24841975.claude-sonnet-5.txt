@@ -1,0 +1,85 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 24841975
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0): Overall Survival Outcome
+**Trial:** CLAVELA (CP4055-306) — International Randomized Phase III Study of Elacytarabine vs Investigator's Choice in Relapsed/Refractory AML
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias Arising from the Randomization Process
+### Judgement: **Low risk of bias**
+
+**a. Rationale for Judgement:**
+The trial used an adequate random sequence generation method with proper allocation concealment via a centralized system, and while one baseline characteristic differed statistically, this appears compatible with a chance finding among multiple comparisons rather than evidence of a flawed randomization process.
+
+**b. Supporting Evidence:**
+- Random sequence generation with restriction: *"A block size of four patients was used within each stratum"* and patients were *"stratified according to intensity of prior antileukemic therapy... and whether remission was ever attained."*
+- Allocation concealment was robust: *"Following assessment of eligibility, patients were randomly assigned in a 1:1 ratio via a centralized Interactive Web Response System (IWRS)."* This is a gold-standard method of concealment (central randomization), preventing foreknowledge of assignment by recruiters.
+- Baseline characteristics (Table 1) were well balanced for most variables (sex, race, ECOG PS, cytogenetics, prior therapy intensity, number of prior regimens), with P-values >0.05. Only age ≥70 years differed significantly (30% vs 18%, P=.007). This single significant difference among ~13 baseline comparisons is consistent with the expected false-positive rate from multiple testing and does not meet the more stringent threshold (P<.001) suggested in RoB2 guidance for indicating a randomization problem. Furthermore, the stratification factors were prior therapy intensity and remission status, not age, and adjustment for age barely changed the OS estimate (HR 0.98 vs unadjusted 0.97), suggesting the imbalance did not materially confound the result.
+- No evidence of manipulated allocation ratios or excessive similarity/dissimilarity suggestive of randomization failure.
+
+---
+
+## 2. Deviations from the Intended Intervention (Effect of Assignment to Intervention)
+### Judgement: **Low risk of bias**
+
+**a. Rationale for Judgement:**
+Although this was an open-label trial with no blinding of participants, carers, or investigators, overall survival is an objective, "hard" outcome (death) that is very unlikely to be influenced by knowledge of intervention assignment. Additionally, an appropriate intention-to-treat analysis was used, and deviations that did occur (e.g., transplant, off-protocol treatments) were balanced across arms.
+
+**b. Supporting Evidence:**
+- The study was explicitly *"an open-label, randomized phase III study,"* meaning participants and personnel were aware of assigned treatment. However, for **OS**, awareness of intervention is unlikely to influence the true occurrence of death (an objective outcome), unlike subjective symptom-based outcomes.
+- Non-protocol treatment deviations were minor and balanced: *"Six patients in the control arm received treatment that was not according to the prespecified investigator's choice"* — a very small number, unlikely to bias OS.
+- Stem-cell transplantation (a major post-randomization intervention) occurred in similar numbers in both arms: *"Overall, 41 patients underwent SCT, 20 patients in the elacytarabine arm and 21 in the control arm,"* and sensitivity analysis censoring these patients yielded a nearly identical result (HR 1.01 vs 0.97 uncensored), indicating this deviation did not materially bias the assignment effect.
+- The analysis followed correct ITT principles: *"The intention-to-treat population comprised 191 patients in the elacytarabine group and 190 in the control arm,"* and OS was analyzed in these groups regardless of treatment received or adherence.
+- No evidence that lack of blinding led to systematic non-protocol interventions specifically arising from trial context that would differentially affect mortality between arms.
+
+---
+
+## 3. Missing Outcome Data
+### Judgement: **Low risk of bias**
+
+**a. Rationale for Judgement:**
+Outcome data (vital status) were available for nearly all randomized participants, with very few patients lost to follow-up, and the small numbers missing could not have materially altered the survival comparison.
+
+**b. Supporting Evidence:**
+- Per Figure 2 (patient disposition), only **1 patient (1%)** in the elacytarabine arm and **4 patients (2%)** in the control arm were "lost to follow-up" — an extremely small proportion out of 191/190 randomized patients.
+- The vast majority of patients had documented events (death) or were confirmed alive at data cutoff: *"42 (22%) were alive at the end of the study, 148 (78%) had events"* (elacytarabine) and *"32 (17%) were alive... 154 (81%) had events"* (control).
+- The statistical methods specify a clear, pre-planned approach to censoring: *"For patients confirmed to be alive on the cutoff date, this date was used to censor for survival... For patients lost to follow-up before the cutoff date, censoring was done on the last date the patient was known to be alive."* This is an appropriate handling of time-to-event data, and the extremely low loss-to-follow-up rate makes informative censoring implausible as a source of important bias.
+
+---
+
+## 4. Measurement of the Outcome
+### Judgement: **Low risk of bias**
+
+**a. Rationale for Judgement:**
+Overall survival is an objective, unambiguous outcome (death) that does not require judgement or interpretation by an outcome assessor, and its ascertainment method did not differ between arms; therefore, lack of blinding is not expected to bias measurement of this outcome.
+
+**b. Supporting Evidence:**
+- OS was defined per standardized international criteria: *"End points were defined according to the International Working Group... The primary end point was overall survival (OS)."*
+- Death is an outcome that requires no clinical judgement or subjective assessment (falls into the RoB2 category of "observer-reported outcomes not involving judgement"), and as such, non-blinding of assessors is very unlikely to have influenced ascertainment of whether a patient died.
+- The method of ascertaining survival (patient follow-up/contact for vital status) was consistent and comparable across intervention arms, both being followed to a common data cutoff (300th/302nd event), with identical censoring rules applied to both study arms as described above.
+- There is no indication that survival ascertainment procedures (e.g., frequency of contact, sources of vital status information) differed systematically between the elacytarabine and control arms.
+
+---
+
+## 5. Selective Reporting
+### Judgement: **Low risk of bias**
+
+**a. Rationale for Judgement:**
+Overall survival was clearly pre-specified as the primary endpoint in both the trial registration and the statistical methods, with a single pre-specified analysis plan (Kaplan-Meier/log-rank/Cox regression) that was followed and reported in full, without evidence of selection among multiple eligible outcome definitions or analytic approaches.
+
+**b. Supporting Evidence:**
+- The manuscript explicitly states: *"The primary end point was overall survival (OS)"* — consistent with prospective registration (ClinicalTrials.gov NCT01147939), indicating no switching of primary endpoints.
+- A detailed, singular pre-specified statistical analysis plan is described: *"The study was designed to detect a hazard ratio (HR) of 0.70 in OS, with 87% power and P<.05. A total of 300 events was required... OS was evaluated using the Kaplan-Meier method and was compared using the log-rank test. Cox proportional hazards regression analysis was used to calculate the HR and 95% CI."* This indicates the analytic approach (single HR/CI, single test) was fixed in advance and matches what is reported (Table 2, Figure 3), with no evidence of multiple competing analyses being selectively reported.
+- Only one OS definition/measurement was used (time from randomization to death, censored per pre-specified rules), with no evidence of multiple candidate OS analyses (e.g., different cut-points, adjusted vs. unadjusted) being selectively favored — the adjusted analysis (age-adjusted HR) is reported transparently alongside the primary unadjusted result, both consistent in direction and magnitude (HR 0.97 vs 0.98), suggesting no selective reporting based on results.
+- Sensitivity analyses (e.g., censoring for SCT) are reported transparently and consistently support the primary finding, rather than being selectively omitted or emphasized.
+
+---
+
+# Overall Risk-of-Bias Judgement for Overall Survival: **Low risk of bias**
+
+All five domains were judged to be at low risk of bias for the overall survival outcome. The trial employed robust randomization and concealment procedures, used an appropriate intention-to-treat analysis for an objective outcome unlikely to be influenced by the open-label design, had minimal and balanced missing outcome data, measured an outcome (death) not subject to assessor judgement, and pre-specified and fully reported its primary survival analysis in accordance with trial registration. Per Table 1 guidance, since no domain was judged as "Some concerns" or "High risk of bias," the overall judgement is **Low risk of bias**.

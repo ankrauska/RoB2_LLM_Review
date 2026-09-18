@@ -1,0 +1,87 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 23963128
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# ROB 2 ASSESSMENT REPORT
+**Study:** Effects of Clinical Supervision on Resident Learning and Patient Care During Simulated ICU Scenarios (Crit Care Med 2013)
+**Design:** Individually randomized, parallel-group trial (three arms: distant, immediately available, direct supervision), simulation-based
+**Result assessed (primary comparative result):** Effect of assignment to level of supervision on (a) team checklist score during supervised scenario, (b) resident participation, and (c) resident independent performance (Ottawa GRS/individual checklist) during subsequent unsupervised scenario — intention-to-treat (assignment) effect.
+
+---
+
+## 1. Bias arising from the randomization process
+**Judgment: Some concerns**
+
+**Motivation:**
+- The article states only that "Residents were randomized to one of three levels of supervision." No description is provided of the method used to generate the allocation sequence (e.g., computer randomization, random number table) and no description of allocation concealment mechanisms (e.g., sealed envelopes, central randomization).
+- Baseline characteristics (Table 1) are reasonably similar across the three arms for age, gender, level of training, and confidence score. However, prior simulation experience differed noticeably (median 3 sessions [IQR 2–3] in the distant group vs. 1.5 [IQR 0–3] and 1.5 [IQR 0–4] in the other two groups), which could reflect chance imbalance but was not tested for statistical significance nor discussed by the authors as a potential confounder despite being directly relevant to performance during simulation-based outcomes.
+- Given the complete absence of information on sequence generation and allocation concealment, combined with a baseline difference in a prognostically relevant covariate (simulation experience) that was not adjusted for in primary comparisons (though later included as a covariate in exploratory regression models), the domain is judged as "Some concerns" rather than "Low risk," in line with RoB 2 guidance that absence of information on both randomization and allocation concealment, together with a plausible relevant baseline imbalance, precludes a "Low" judgment.
+- **Limitation/ambiguity to report:** No trial protocol, registration, or supplementary methodological detail on sequence generation/allocation concealment was available for review; this ambiguity limits certainty of the judgment.
+
+---
+
+## 2. Bias due to deviations from intended interventions (effect of assignment to intervention)
+**Judgment: Some concerns**
+
+**Motivation:**
+- By design, participants (residents) and personnel (fellows) could not be blinded to the assigned level of supervision (distant/immediately available/direct), since the intervention itself is defined by the supervisor's physical proximity — this is inherent to the intervention and expected.
+- The report explicitly documents deviations from the intended supervision protocol: in the "immediately available" arm, 2 residents never called their supervisor and 10 were eventually joined at the bedside (converging toward "direct" supervision), while in the "distant" arm all residents ultimately contacted their supervisor by phone, with wide variation in timing. This demonstrates that actual behavior did not consistently correspond to assigned condition, blurring distinctions between arms (particularly "immediately available" vs. "direct" and "distant").
+- These deviations plausibly arose from the trial context (i.e., resident decision-making about when to call for help, itself part of the phenomenon under study), and it is unclear whether they were balanced across groups or materially affected the outcome, since the boundary between "immediately available" and "direct" was operationally blurred for a substantial subset of participants.
+- The primary analyses used all randomized participants (n=53, distributed as reported in all outcome tables), consistent with an appropriate (ITT) analytic approach; no participants appear to have been excluded from analysis.
+- Because deviations from intended intervention did occur, could plausibly influence the estimated between-group contrasts (especially between the immediately-available and direct arms), but there is no clear evidence of an imbalance in their impact or that they materially biased the outcome, this domain is judged "Some concerns" rather than "Low" or "High."
+
+---
+
+## 3. Bias due to missing outcome data
+**Judgment: Low risk**
+
+**Motivation:**
+- All 53 randomized residents appear to be accounted for in every table (Table 1: 18+16+19=53; Tables 2–4 report identical group sizes for both supervised and unsupervised scenario outcomes).
+- No dropouts, missing checklist data, or missing Ottawa GRS ratings are reported. Interrater reliability data (ICC = 0.75) confirm that ratings were completed for the full videotaped sample, with discrepancies resolved by a third independent assessor rather than by data exclusion.
+- No indication of any missing data mechanism that could bias the intervention effect estimate.
+
+---
+
+## 4. Bias in measurement of the outcome
+**Judgment: Some concerns**
+
+**Motivation:**
+- The primary outcomes (team checklist score, resident participation, definitive management, duration of instability) for the **supervised scenario** were derived directly from observation, and the supervision level was inherently visible/known to any assessor (the presence or absence of the fellow at bedside is intrinsic to the intervention). Therefore, for these specific outcomes, assessors could not be blinded to intervention assignment, and these outcomes involve at least some judgment (e.g., whether an item was "completed," determination of the point of "stabilization"). This raises risk of differential assessment.
+- For the **unsupervised scenario** outcomes (Ottawa GRS, individual checklist) — arguably the key outcome addressing the study's central learning question — two independent raters scored videotapes; however, the report does not explicitly state whether these raters were blinded to the resident's prior (supervised-scenario) group assignment. Given that the unsupervised scenario itself does not reveal the supervision condition, blinding may have been feasible and plausible, but this is not explicitly confirmed ("No information").
+- The Ottawa GRS is a global rating scale requiring subjective judgment across five domains (leadership, problem-solving, situational awareness, resource utilization, communication) — an outcome type in which lack of confirmed assessor blinding is more concerning.
+- Discrepancies in checklist scoring were adjudicated by a third assessor, which mitigates but does not eliminate concern, since this method does not by itself confirm blinding to allocation.
+- Given (a) inherent lack of blinding for supervised-scenario outcomes (unavoidable due to nature of intervention) and (b) unconfirmed blinding status for the unsupervised (independent performance) outcome despite plausible blinding feasibility, and the involvement of subjective judgment in scoring, the domain is judged "Some concerns" rather than "Low."
+
+---
+
+## 5. Bias in selection of the reported result
+**Judgment: Some concerns**
+
+**Motivation:**
+- No trial registration, published protocol, or statistical analysis plan is cited or referenced in the article, so it is not possible to verify whether the reported outcomes/analyses were pre-specified before unblinded data were available.
+- Importantly, the authors explicitly describe a **data-driven model selection process** for the multivariable regression analyses of predictors of unsupervised performance: "We chose the final sets of predictors based on the model offering the best R-square in combination with a Cp statistic by Mallows… Because the model is chosen based on the data, the actual p-values would be larger than those presented." This is a direct acknowledgment by the authors that the reported regression models were selected in a way influenced by the observed results, which constitutes a recognized mechanism for selection of the reported result bias.
+- The primary ANOVA-based comparisons (team checklist score, resident participation, Ottawa GRS) appear consistent with the stated a priori research questions and the sample-size calculation (based on the Ottawa GRS), suggesting these specific primary comparisons are less likely to be selectively reported.
+- However, because (i) no protocol/registration was available to confirm the full pre-specified outcome set and analysis methods, and (ii) the exploratory regression models were explicitly result-informed, there is a genuine risk that the ancillary/predictor analyses (Table 4) were selected, at least in part, based on the pattern of results.
+- **Limitation/ambiguity to report:** Absence of a registered protocol/SAP is a substantial limitation for fully verifying non-selective reporting; this is reported as an ambiguity rather than an assumption of malfeasance.
+
+---
+
+## 6. Overall Risk-of-Bias Judgement
+**Overall judgment: High risk of bias**
+
+**Motivation:**
+Although no single domain was independently judged "High risk," the trial was judged to raise "Some concerns" in **four of the five domains** (randomization process, deviations from intended interventions, measurement of the outcome, and selection of the reported result), with only the missing-data domain judged as low risk. Per RoB 2 rules, "some concerns" in multiple domains can justify an overall "High risk of bias" judgement when, in combination, they substantially lower confidence in the result. In this study:
+- Lack of any reported detail on sequence generation/allocation concealment combined with a plausible baseline imbalance in simulation experience,
+- Documented protocol deviations that blurred the boundaries between supervision arms,
+- Unconfirmed blinding status of outcome assessors for a judgment-based scale (Ottawa GRS),
+- And an explicit acknowledgment of data-driven (post hoc) selection of regression models,
+
+collectively and substantially reduce confidence in the reliability and interpretability of the reported effect estimates — particularly for the study's central research question regarding the impact of supervision level on subsequent independent resident performance. Therefore, the overall risk-of-bias judgement for this result is **High risk of bias**.
+
+**Key limitations/ambiguities explicitly noted (not assumed):**
+1. No description of randomization sequence generation or allocation concealment methods was reported.
+2. No trial protocol or registration was cited, precluding confirmation of pre-specified outcomes/analyses.
+3. Blinding status of video raters for the unsupervised-scenario outcomes was not explicitly stated.
+4. The authors themselves acknowledge that regression predictor models were selected based on best statistical fit to the data rather than a pre-specified model, explicitly noting that reported p-values likely underestimate true uncertainty.

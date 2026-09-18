@@ -1,0 +1,80 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 21402724
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: WRAP Trial (Outcome: Brief Symptom Inventory - Psychiatric Symptom Severity)
+
+**Effect of interest: Effect of assignment to intervention (ITT)**
+
+---
+
+## 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Sequence concealment:** "Randomization was performed by SRL staff at the end of each interview using a random allocation sequence programmed into CAPI administration software that allowed for complete allocation concealment up to the point of assignment. Thus, both interviewers and respondents had no way of knowing each subject's study condition until after the assignment had occurred." This meets criteria for adequate central randomization with concealment.
+- **Sequence randomness:** The use of a computer-programmed random allocation sequence indicates a genuine random component was used (Y).
+- **Baseline imbalance:** "The success of randomization was confirmed by the absence of statistically significant differences by study condition at baseline on all characteristics." Table 1 shows no notable imbalances in demographics, diagnoses, or baseline service use between arms, consistent with successful randomization. No evidence of a problem.
+
+All three criteria (concealment, randomness, no baseline imbalance) support a low risk of bias judgement.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Awareness of assignment:** Participants and personnel (WRAP facilitators/participants) were necessarily aware of group assignment — this is a behavioral, peer-led group intervention with no plausible blinding of participants or those delivering the intervention. The paper only blinded telephone interviewers (outcome assessors), not participants or facilitators. (Y for 2.1/2.2)
+- **Deviations arising from trial context:** There is evidence of substantial contamination potentially arising from trial context: "Between T1 and T2, 41.9% of control subjects (n = 98) reported attending [peer-led support] groups, and between T2 and T3, 44.9% (n = 97) reported doing so." This reflects lack of equipoise/contamination but the authors explicitly controlled for this ("all models were rerun controlling for exposure to peer-led support groups" and results were robust), somewhat mitigating concern about this deviation affecting the reported result. Additionally, 16% of experimental participants did not receive the intervention at all, but ITT analysis appropriately retained them.
+- **Balance of deviations:** The exposure to peer support groups was similar in both study arms (~42–45% in controls; not explicitly quantified for experimental arm but likely also substantial), and sensitivity analyses adjusting for this covariate did not change the significance of results, suggesting deviations were reasonably balanced or at least did not bias the primary result substantially.
+- **Appropriate analysis:** The study used a genuine ITT analysis: "No other subjects were excluded from the analysis for any other reason given the 'intent-to-treat' design." All 519 randomized subjects with data were retained in the mixed-effects regression, consistent with ITT principles (question 2.6 = Yes).
+
+Because participants/personnel were aware of assignment, and there is some evidence of trial-context-related contamination (uncontrolled peer support group exposure among controls) that could plausibly affect self-reported symptom outcomes, but this was checked and did not change conclusions, this is judged as "Some concerns" rather than high risk.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Data availability:** "Of the 519 subjects who completed T1 assessments, 458 subjects (88.2%) completed T2 interviews, and 448 (86.3%) completed T3 interviews, for a combined attrition rate of 6.6%." This is a small proportion of missing data.
+- **Balance across arms:** "There were no statistically significant differences in follow-up rates between intervention and control conditions." At T2: 89.2% (intervention) vs 87.3% (control), χ²=0.49, P=.29; At T3: 87.6% vs 85.1%, χ²=0.39, P=.23. Rates of missingness were very similar and non-significant across arms.
+- Given the low overall attrition (~12-14%), similar rates between arms, and no indication that reasons for dropout (death, illness, moving, withdrawal) were related to the true value of the BSI outcome differentially by arm, it is unlikely that missingness depended on the true outcome value in a way that would bias the ITT effect estimate for BSI.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Appropriateness of method:** The BSI is a validated, widely used self-report instrument ("showing high concordance with clinician symptom assessment") — the method is appropriate (N to signalling question 4.1).
+- **Comparability of measurement between groups:** The same self-report instrument was administered identically to both groups via the same CAPI-based telephone interview procedures at the same time points; no evidence measurement differed between arms (N to 4.2).
+- **Outcome assessor awareness:** The outcome is a participant-reported outcome (BSI is self-report), meaning the "outcome assessor" is the participant, who is—by necessity—aware of their own treatment assignment (cannot be blinded to whether they attended WRAP classes). While interviewers administering the CAPI were blinded ("interviewers were blinded to respondents' study condition" and blinding integrity was violated in only ~4% of interviews), the participants themselves knew their treatment status.
+- **Potential for influence:** Because participants self-reported psychiatric symptoms and were aware of their intervention status, there is potential for their responses to be influenced by expectation, demand characteristics, or a desire to report improvement after investing time in an intervention (or disappointment from being in a wait-list condition). The authors themselves acknowledge this limitation: "the study relied on participant self-report data that were uncorroborated by clinicians or objective observers such as research staff... Future studies using external raters... will offer a more rigorous evaluation."
+- However, there is no strong indication (e.g., extreme placebo expectation effects typical of unproven complementary therapies) that this influence was severe or would necessarily favor one direction dramatically, and the study is not a trial comparing to a highly-hyped alternative therapy. This places the domain at "Some concerns" (assessment *could* have been influenced by knowledge of intervention, but it is not clearly *likely* to have been substantially influenced) rather than high risk.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Pre-specification:** "The study was registered at ClinicalTrials.gov under identifier NCT01024569, and all outcomes, hypotheses, and statistical analyses presented here were prespecified at the time the proposal was submitted to the federal government for funding consideration."
+- **Consistency with registry:** The trial registry (NCT01024569) lists "Psychiatric Symptoms Recovery Using the Brief Symptoms Inventory (BSI)" as a primary outcome, and the published article reports results for BSI Global Symptom Severity and Positive Symptom Total at the same three time points (baseline, post-intervention, 6-month follow-up) specified in the registry ("Study entry (pre-intervention), 8-weeks later (post-intervention), & 6-months after intervention").
+- **Multiple measures/analyses:** Although two related BSI outcomes (Global Symptom Severity Index and Positive Symptom Total) are reported, both are reported together (not selectively chosen based on results), and the registry's results section reports the Positive Symptom Total consistent with the published MIXREG analysis (paramValue -1.16, p=.027), matching Table 3 in the article exactly. This consistency between registry-posted results and the published article indicates no evidence of selective reporting from multiple candidate analyses.
+- The statistical method (MIXREG mixed-effects random regression controlling for study site) was applied consistently and is reported in both sources without evidence of alternative analyses being suppressed.
+
+Given the clear pre-specification and consistency between the trial registry and publication for this outcome, this domain is judged as low risk of bias.
+
+---
+
+# Overall Risk of Bias Judgement: **Some concerns**
+
+Per Table 1 of the RoB 2 guidance, since the domain "deviations from intended intervention" and "measurement of the outcome" are each judged as "Some concerns" (not high risk in any single domain), but concerns exist in multiple domains related to lack of blinding of participants/self-reported outcomes and potential contamination, the overall judgement for this result is **Some concerns**, reflecting reduced but not fundamentally undermined confidence in the BSI-based symptom severity result.

@@ -1,0 +1,71 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 21153417
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Muscle Damage Outcome
+
+**Study context:** This assessment focuses on Period B (the randomized comparison of allopurinol vs. placebo), as this is the only randomized comparison in the study relevant to RoB 2.0 (Period A had no randomization - crew were simply divided by job role). Outcome assessed: Muscle damage (CK and AST activity).
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns, primarily due to a complete lack of information about randomization methods and allocation concealment.
+
+**b. Rationale:** The paper states: "In period B, crew members were divided into two groups according to random numbers. Sailors were blind regarding the group assignment." No further detail is provided on:
+- How the random number sequence was generated (signalling question 1.1) – No information.
+- Whether allocation was concealed until assignment (signalling question 1.2) – No information.
+
+There is no reporting of baseline muscle damage values *before randomization* to check for imbalance (baseline values reported are only at the start of period B testing, not necessarily equivalent to a true randomization baseline). Note that groups were unequal in size (13 vs. 10) and in composition by work-intensity subgroup (Allopurinol: 8 HIW, 4 MIW, 1 LIW; Placebo: 2 HIW, 4 MIW, 4 LIW) — a striking imbalance in a known key prognostic factor (physical work intensity, which the authors themselves show is strongly associated with CK levels: "CK mean values reached 505.5 U/L for sailors performing heavy physical work versus 261.4 U/L… for sailors with moderate-low physical work"). This imbalance in a critical prognostic factor raises concern that randomization (with a small sample size, n=23) failed to balance groups on a factor highly predictive of the outcome, even though a formal random process was reportedly used. Given no information on sequence generation/concealment, combined with a substantial imbalance in a key prognostic covariate, this is judged as "Some concerns" rather than "Low risk," but not "High risk" since the imbalance is plausible due to chance in a small trial and there is no clear evidence of subversion of allocation.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns, due to lack of information on blinding of personnel/outcome-relevant care providers and absence of detail on co-interventions.
+
+**b. Rationale:** The article states participants ("Sailors were blind regarding the group assignment") were blinded, consistent with a placebo-controlled design ("One group... received 300 mg/day of allopurinol... The other ten members received placebo"). However:
+- There is no explicit statement about blinding of those administering the intervention/carers, or whether the placebo was identical in appearance (signalling question 2.2) – No information.
+- No mention of whether training/racing loads, other supplements, or medical interventions were monitored/balanced between groups during Period B.
+- The analysis appears to include all randomized participants who completed the study (with 4 sailors declining before intervention, i.e., pre-randomization dropouts), and there is no indication that ITT principles were violated for those analyzed.
+
+Because of the lack of explicit detail on blinding of care providers/personnel and potential trial-context deviations, but no clear evidence of a problem, this is judged as "Some concerns."
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns, because of unclear reporting of the exact number of participants with outcome data (CK/AST) in Period B, and unexplained exclusion of one outlier participant in Period A analyses (though this affects a different period), which raises general concern about handling of extreme/missing values.
+
+**b. Rationale:** For Period B, the text states: "Four sailors finally declined to take part in this phase of the study," resulting in 13 allopurinol and 10 placebo participants (23 total from an original 27). This is described as occurring before treatment allocation ("crew members were divided into two groups... Four sailors finally declined"), so these are likely pre-randomization exclusions rather than missing outcome data post-randomization. However, the paper does not explicitly confirm that CK/AST data were available for **all** 23 analyzed participants at both pre- and post-race time points, nor does it provide a flow diagram. Additionally, in Period A, one extreme outlier (a bowman with CK of 3500–7705 U/L) was explicitly excluded from calculations ("this subject was not included in the calculations"), demonstrating that post-hoc exclusion of inconvenient data occurred in this research group's practice, raising some concern about analogous handling of data in Period B, though not explicitly reported. Given the absence of a clear accounting of outcome data completeness (e.g., no CONSORT-style flow diagram) for the randomized comparison, "Some concerns" is appropriate rather than "Low risk."
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as the outcome measures (CK, AST) are objective, standardized laboratory assays unlikely to be influenced by knowledge of intervention assignment, and the blinding of sailors (and implied blinding of assay personnel) further protects against differential measurement error.
+
+**b. Rationale:** CK and AST were measured using "an automatic random access analyser" with a validated spectrophotometric method: "serum CK, and AST activities were spectrophotometrically measured using commercially available reagents on an automatic random access analyser (Autolab 18, Boehringer, Mannheim, Germany)," with reported intra-assay coefficients of variation (4.5% and 4.2%). This is an objective, automated, laboratory-based measurement method not requiring subjective judgement (classified as "observer-reported outcome not involving judgement"), and thus is very unlikely to be influenced by knowledge of intervention assignment, even if laboratory personnel were not explicitly stated to be blinded. Measurement methods were identical across both groups (same lab, same timing relative to racing). No indication that ascertainment differed between groups. This supports a "Low risk" judgement.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns, as no trial registration or pre-specified statistical analysis plan could be located/referenced to confirm that the reported CK/AST results (and specific comparisons) were not selectively reported from multiple possible analyses.
+
+**b. Rationale:** The trial registry document (doc_id: 4dab5cab-2b44-42f8-8559-2dd9073b18b5) was referenced as available for review; however, based on the information provided in the article itself, there is no explicit statement referring to a trial registration number, a published protocol, or a pre-specified statistical analysis plan for this study. The study reports multiple outcome measures (CK, AST, MDA) and multiple subgroup analyses (HIW vs MIW/LIW, participants vs non-participants), and it is unclear whether all pre-planned comparisons and outcomes were reported or whether some were selected based on results (e.g., the subgroup composition differences between allopurinol/placebo groups by work-intensity were not adjusted for or discussed in relation to a pre-specified plan). Without access to a protocol/registration confirming that CK and AST (with these exact time points and analysis methods) were the pre-specified primary muscle-damage outcomes and analyses, it is not possible to rule out selective reporting. This leads to a judgement of "Some concerns" rather than "Low risk."
+
+---
+
+## Overall Risk of Bias Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization | Some concerns |
+| 2. Deviations from intended intervention | Some concerns |
+| 3. Missing outcome data | Some concerns |
+| 4. Measurement of outcome | Low risk |
+| 5. Selective reporting | Some concerns |
+| **Overall** | **High risk of bias** (multiple "Some concerns" domains substantially lower confidence in the result, per RoB2 guidance section 1.2.3) |

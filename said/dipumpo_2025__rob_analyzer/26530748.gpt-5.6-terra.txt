@@ -1,0 +1,93 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 26530748
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## RoB 2 assessment
+
+**Study/result assessed:** PORTEC-2 individually randomized parallel-group trial; **external beam radiation therapy (EBRT)** versus **vaginal brachytherapy (VBT)**.  
+**Outcome/result assessed:** patient-reported *limitations in daily activities due to bowel symptoms* at 7 years after randomization: **10.5% with EBRT versus 1.8% with VBT; P=.001**.  
+**Effect of interest:** effect of **assignment** to EBRT versus VBT (intention-to-treat effect).  
+**Sources available for this assessment:** the supplied long-term HRQL article and its reported results only. The original trial protocol, statistical analysis plan, trial registry, and original randomization report were not supplied for direct assessment.
+
+### 1. Bias arising from the randomization process  
+**Judgment: Some concerns**
+
+**Signalling-question assessment**
+- **1.1 Was the allocation sequence random? — No information.** The article states that 427 patients “were randomized” or “randomly allocated,” but does not describe how the allocation sequence was generated (for example, computer-generated random numbers, random-number table, random blocks, or minimization).
+- **1.2 Was allocation concealed until participants were enrolled and assigned? — No information.** No information is provided on central randomization, pharmacy-controlled allocation, sequential opaque envelopes, or another allocation-concealment procedure.
+- **1.3 Did baseline differences suggest a problem with randomization? — No information.** The supplied text refers to patient characteristics in Table 1, but the arm-specific baseline table itself is not available in the supplied material. The narrative does not report a baseline imbalance between EBRT and VBT that would indicate failure of randomization.
+
+**Motivation:**  
+The report identifies the study as randomized, but this alone is insufficient under RoB 2 to establish either genuinely random sequence generation or allocation concealment. There is also no usable arm-level baseline table in the material provided to determine whether baseline differences indicate a problem. In accordance with RoB 2, absence of information on allocation concealment produces **some concerns**, rather than low risk, when no baseline information is available to rule out a problem.
+
+---
+
+### 2. Bias due to deviations from intended interventions  
+**Judgment: High risk of bias**
+
+**Signalling-question assessment**
+- **2.1 Were participants aware of their assigned intervention during the trial? — Yes.** The PORTEC-2 comparison is described as an “open-label” randomized trial in the cited original trial title. EBRT and VBT are also inherently distinct treatment procedures.
+- **2.2 Were carers and people delivering the interventions aware of assigned intervention? — Yes.** The treatment modalities require different radiation-delivery procedures; therefore, treating personnel necessarily knew which treatment was delivered.
+- **2.3 Were there deviations from intended interventions arising because of the trial context? — No information.** The present report does not describe non-protocol co-interventions, contamination, implementation failures, or deviations attributable to the trial context.
+- **2.6 Was an appropriate analysis used to estimate the effect of assignment to intervention? — No.** The long-term analysis was not conducted in all 427 randomized patients. Eligibility for the present analysis required being a previous questionnaire responder, alive, and disease-free according to the trial database. In addition, patients with endometrial-cancer recurrence or a second pelvic cancer were excluded from longitudinal and symptom analyses.
+- **2.7 Was there potential for a substantial impact of failure to analyse participants in their randomized groups? — Yes.** The 7-year symptom analysis was based on 202 evaluable 7-year questionnaires, compared with 427 randomized patients. The analysis therefore represents a selected subset defined partly by post-randomization survival, disease status, prior questionnaire response, and subsequent cancer status. These exclusions are substantial in number and could materially alter a comparison of assignment to EBRT versus VBT.
+
+**Motivation:**  
+For the effect of assignment to treatment, RoB 2 requires analysis of randomized participants in their assigned groups, irrespective of post-randomization events. This report explicitly restricts long-term symptom analyses to patients who were alive, disease-free, and prior responders, and further excludes patients with recurrence or a second pelvic cancer. These are post-randomization exclusions. The article does not report an analysis including all randomized participants or an appropriate method that preserves the randomized comparison for the target effect. Because the selected analytic sample is much smaller than the randomized cohort and selection depends on post-randomization status, there is potential for a substantial effect on the estimate. This results in **high risk of bias** in this domain.
+
+---
+
+### 3. Bias due to missing outcome data  
+**Judgment: High risk of bias**
+
+**Signalling-question assessment**
+- **3.1 Were data available for all, or nearly all, randomized participants? — No.** Of 427 randomized patients, baseline and at least one follow-up questionnaire were available for 348 patients. At 7 years, 202 evaluable questionnaires were available; 205 of 265 eligible patients responded, but three returned only the comment page and were not evaluable. Thus, the 7-year bowel-symptom result is not based on all or nearly all randomized participants.
+- **3.2 Is there evidence that the result was not biased by missing outcome data? — No.** No sensitivity analysis addressing plausible missing outcomes, no inverse-probability weighting analysis, and no other analysis demonstrating robustness to missing data are reported.
+- **3.3 Could missingness in the outcome depend on its true value? — Probably yes.** Long-term eligibility and response depended on survival, disease-free status, prior questionnaire response, current address, and questionnaire return. These factors may be related to health status and HRQL symptoms. The investigators themselves acknowledge “inherent selection of responders at long-term analysis,” and report that long-term responders were slightly younger and had fewer comorbidities than the complete PORTEC-2 cohort.
+- **3.4 Is it likely that missingness in the outcome depended on its true value? — Probably yes.** Patients with recurrence or pelvic second cancer were excluded from symptom analyses specifically because symptoms could be caused by recurrence or second cancer. Survival, recurrence, comorbidity, and ability or willingness to complete a questionnaire are all directly related to health status and may be related to bowel symptoms and their impact on daily life. No analysis is reported that addresses this outcome-dependent missingness.
+
+**Motivation:**  
+The outcome data at 7 years were available for fewer than half of randomized participants (202 of 427), and the available data arose after several stages of selection: initial HRQL participation, survival, disease-free status, correct contact information, and questionnaire completion. The report provides no evidence that missing data could not bias the result and no sensitivity analysis showing robustness. Moreover, the stated reasons for exclusion and the observed differences between responders and the full cohort make it likely that missingness is associated with health status and therefore potentially with the true bowel-symptom outcome. This meets RoB 2 criteria for **high risk of bias** due to missing outcome data.
+
+---
+
+### 4. Bias in measurement of the outcome  
+**Judgment: Some concerns**
+
+**Signalling-question assessment**
+- **4.1 Was the method of measuring the outcome inappropriate? — Probably no.** Bowel symptoms and limitations in daily activities were collected using structured HRQL questionnaires, including EORTC QLQ-C30 and bowel/bladder/sexual symptom subscales constructed from EORTC modules. The article does not provide evidence that the measurement method was unsuitable for assessing patient-reported bowel symptoms.
+- **4.2 Could measurement or ascertainment have differed between intervention groups? — Probably no.** The article describes the same HRQL questionnaire schedule and scoring procedures for trial patients. It does not report different questionnaire methods, timing, thresholds, or ascertainment procedures by allocated treatment group.
+- **4.3 Were outcome assessors aware of the intervention received? — Yes.** This is a patient-reported outcome; therefore, the participant is the outcome assessor. Patients were aware of whether they had received EBRT or VBT.
+- **4.4 Could assessment of the outcome have been influenced by knowledge of intervention received? — Yes.** “Limitations in daily activities due to bowel symptoms” is a subjective, patient-reported outcome. Participants’ knowledge of their allocated radiation treatment could influence reporting.
+- **4.5 Is it likely that assessment was influenced by knowledge of intervention received? — Probably no.** The report does not provide direct evidence that patients’ symptom reporting was influenced by treatment knowledge, nor does it document expectation effects or differential outcome-reporting behaviour. However, absence of such information does not remove the potential for influence.
+
+**Motivation:**  
+The outcome is assessed through patient self-report and neither patients nor treating personnel were blinded. The outcome is subjective and could therefore be affected by knowledge of the treatment received. The study does not provide evidence that this influence occurred or that it was likely to have occurred. Under RoB 2, this supports **some concerns**, rather than high risk, because the outcome could be influenced by knowledge of intervention but likelihood of actual influence is not established from the report.
+
+---
+
+### 5. Bias in selection of the reported result  
+**Judgment: Some concerns**
+
+**Signalling-question assessment**
+- **5.1 Were the data analysed according to a pre-specified analysis plan finalized before unblinded outcome data were available? — No information.** The article describes statistical methods but does not provide a dated protocol or statistical analysis plan specifying the 7-year bowel-symptom analysis before unblinded data were available.
+- **5.2 Is the result likely to have been selected from multiple eligible outcome measurements within the outcome domain? — No information.** The study collected repeated HRQL data at baseline, every 6 months during the first 2 years, annually to 5 years, and again at 7 and 10 years. It assessed multiple bowel symptoms and related daily-activity limitations. The report does not provide a pre-specified hierarchy or sufficiently detailed prospective plan showing why this specific bowel outcome and 7-year time point were selected for emphasis. There is no direct evidence that selection occurred on the basis of the result.
+- **5.3 Is the result likely to have been selected from multiple eligible analyses? — No information.** The report uses linear mixed models, ordinal logistic regression with random effects, single-time-point comparisons, and longitudinal analyses. No pre-specified analysis plan is available to verify that the reported analysis was selected before examination of unblinded data. There is no direct evidence that the reported analysis was selected because of its direction, magnitude, or statistical significance.
+
+**Motivation:**  
+The report contains multiple symptom outcomes, multiple measurement occasions, and more than one analytical approach. Neither a protocol nor a dated statistical analysis plan was available in the supplied material to confirm that the specific reported 7-year result was selected according to pre-specified intentions. The article does not provide positive evidence of result-driven selective reporting; therefore, a high-risk judgment is not justified. Nevertheless, the lack of pre-specified analysis information and the presence of multiple eligible outcome measurements and analyses lead to **some concerns**.
+
+---
+
+### 6. Overall risk-of-bias judgment  
+**Judgment: High risk of bias**
+
+**Motivation:**  
+The result is at **high risk of bias** because at least one domain is judged high risk—specifically:
+
+1. **Bias due to deviations from intended interventions:** the long-term analysis excludes large numbers of randomized participants on the basis of post-randomization survival, disease-free status, prior response, and recurrence/second-cancer status; and  
+2. **Bias due to missing outcome data:** 7-year outcome data are unavailable for a large proportion of randomized participants, and missingness is likely related to health status and potentially to the true HRQL outcome.
+
+There are also **some concerns** regarding the randomization process, outcome measurement, and selection of the reported result. The main limitation of this assessment is that the supplied material does not include the original PORTEC-2 protocol, allocation procedures, trial registry record, or statistical analysis plan. However, the high-risk overall judgment is definitive on the basis of the long-term analysis population and missing-data handling reported in this article.

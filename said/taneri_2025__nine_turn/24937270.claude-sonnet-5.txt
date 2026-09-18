@@ -1,0 +1,324 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 24937270
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read the article by the authors on transcranial pulsed current stimulation (tPCS) and its effects on QEEG-indexed frontal connectivity. I've reviewed all sections including the introduction, methods (subject recruitment, tPCS parameters, EEG recording/analysis, statistical approach), results (coherence analysis, power analysis, behavioral/adverse effects, blinding validation), discussion, and conclusions, as well as the accompanying table and figure.
+
+I'm ready to assist with your systematic review. I can help with tasks such as:
+
+- Extracting specific data points for a data extraction table (e.g., sample size, intervention parameters, outcomes, effect sizes)
+- Assessing risk of bias (e.g., using Cochrane RoB tool, given this is a randomized, double-blinded, sham-controlled trial)
+- Summarizing key findings in relation to your review's research question
+- Comparing this study's methodology/findings with other studies in your review
+- Identifying limitations (e.g., small sample size, single-session design, healthy volunteers only, exploratory nature of analyses)
+- Extracting PICO elements
+- Drafting a synthesis paragraph or evidence table entry
+- Evaluating the certainty of evidence (e.g., GRADE) for specific outcomes like theta/low-alpha coherence changes
+
+Please let me know what specific output or analysis you need for your systematic review.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I am ready to evaluate the first domain.
+
+I have thoroughly reviewed the article's methodology, particularly the sections on randomization (2.3 Experiment), blinding procedures (double-blinded design, block randomization), the statistical analysis plan (2.9), and the results pertaining to interhemispheric coherence (3.2 and Figure 1).
+
+I understand that I will be evaluating the outcome **"Interhemispheric functional connectivity"** across the five RoB 2 domains:
+
+1. **Domain 1**: Risk of bias arising from the randomization process
+2. **Domain 2**: Risk of bias due to deviations from intended interventions
+3. **Domain 3**: Risk of bias due to missing outcome data
+4. **Domain 4**: Risk of bias in measurement of the outcome
+5. **Domain 5**: Risk of bias in selection of the reported result
+
+I will base all judgments strictly on facts explicitly reported in the article text, tables, and figures — without speculating or extrapolating beyond what is stated. Where the article does not provide sufficient information for a specific signaling question, I will select "No information" rather than defaulting to a positive assumption, and I will critically consider whether this absence of information should elevate the risk-of-bias judgment for that domain.
+
+Please proceed, or let me know if you'd like me to start with Domain 1 (Randomization process) now.
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+# Domain 1: Risk of bias arising from the randomization process
+
+**1.1. Was the allocation sequence random?**
+
+- **Response: Probably yes**
+- **Reason:** The article states, "Randomization was completed using blocks of four" (Section 2.3). This indicates a structured randomization procedure was used, rather than a simple statement of "randomized" without detail. Block randomization inherently involves a random component in the allocation sequence generation (e.g., random selection of block orderings). However, the authors do not explicitly describe the specific method used to generate the random sequence (e.g., computer-generated random numbers, random number table), so I cannot select "Yes" with full confidence. Given the explicit mention of block randomization (which goes beyond a bare statement of "randomized"), "Probably yes" is justified rather than "No information."
+
+**1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?**
+
+- **Response: No information**
+- **Reason:** The article does not provide any details on the allocation concealment mechanism. There is no mention of sequentially numbered, opaque, sealed envelopes, a centralized/independent randomization service, or any other method used to conceal the allocation sequence from the enrolling investigator prior to assignment. While the study states it is "double-blinded," this pertains to blinding of participants and outcome assessors post-allocation, not to concealment of the sequence during the enrollment process itself. No information is provided.
+
+**1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?**
+
+- **Response: No**
+- **Reason:** The article explicitly states, "There were no significant differences in demographic characteristics between groups (Table 1)." Reviewing Table 1, demographic characteristics (age, sex, MMSE) and behavioral baseline measures (Stroop task, word memory task) appear broadly comparable across the four groups, and no statistically significant baseline imbalances are reported. Group sizes (9, 9, 9, 11) are also reasonably similar and consistent with the intended randomization scheme (blocks of four), without substantial deviation. There is no baseline EEG coherence value reported in Table 1 specifically for the interhemispheric connectivity outcome; however, the analysis method used (mixed model ANOVA on pre-post differences) inherently accounts for individual baseline levels. Based on the available information, there is no clear indication of a problem with the randomization process.
+
+---
+
+## Domain-Level Judgement for Items 1.1, 1.2, and 1.3: **Some concerns**
+
+**Justification:** Item 1.1 was judged "Probably yes" and Item 1.3 was judged "No," which would be compatible with a "Low risk" judgment if concealment were adequately confirmed. However, Item 1.2 ("Was the allocation sequence concealed?") was judged as "No information" because the article provides no details about the concealment mechanism used during participant enrollment and assignment. Per the RoB 2 algorithm, the absence of information on allocation concealment — even in the presence of a described random sequence generation method and no evidence of baseline imbalance — prevents a "Low risk" judgment for this domain. Therefore, the domain-level judgment is **"Some concerns"** rather than "Low risk" or "High risk."
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+# Domain 2: Risk of bias due to deviations from the intended interventions
+
+**Note on approach:** I am assessing the **effect of assignment to intervention** (rather than effect of adhering to intervention), as this is the more appropriate estimand for this study. The tPCS intervention was a single-session, fixed-parameter (20-minute) stimulation administered once under controlled conditions, making an intention-to-treat-style estimand (effect of assignment) the relevant and standard choice for this type of trial, rather than an "effect of adhering to intervention" analysis, which is typically used for sustained/multi-session interventions where non-adherence over time is a concern.
+
+---
+
+## Effect of Assignment to Intervention
+
+**2.1. Were participants aware of their assigned intervention during the trial?**
+
+- **Response: Probably no**
+- **Reason:** The article states, "Both the investigator assessing the outcomes and the subjects were blinded to the intervention" (Section 2.3). Furthermore, blinding was formally validated: "Subjects did not guess correctly the stimulation group to which they were assigned beyond chance (p = 0.679)" (Section 3.5). This empirical validation supports that participants were successfully blinded. Additionally, sham stimulation was designed to mimic active stimulation (applied for 30 seconds before automatically turning off), further supporting adequate participant blinding.
+
+**2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?**
+
+- **Response: No information**
+- **Reason:** The article states the "investigator assessing the outcomes" was blinded, but does not explicitly clarify whether the person administering/delivering the tPCS stimulation (setting the device parameters, e.g., frequency) was also blinded. Given that the device required specific frequency settings (1 Hz, 100 Hz, random 1–5 Hz, or sham), it is unclear whether the person operating the device was blinded to condition or whether this was managed via a pre-programmed/coded device system. No explicit information is provided on this point.
+
+**2.3. Were there deviations from the intended intervention that arose because of the trial context?**
+
+- **Response: No information**
+- **Reason:** Not directly addressed to 2.1 (Probably no) and given no information for 2.2, there is no reported evidence in the article of protocol deviations arising from trial context (e.g., participants seeking alternative treatment due to unblinding, or trial personnel deviating from protocol delivery). No information is provided on this topic, and there is no indication in the text suggesting such deviations occurred. Given the successful blinding validation (p = 0.679), the likelihood of context-driven deviations is low, but the article provides no explicit statement.
+
+**2.4. Were these deviations likely to have affected the outcome?**
+
+- **Response: No information**
+- **Reason:** Not applicable, as no deviations were identified/reported in 2.3.
+
+**2.5. Were these deviations from intended intervention balanced between groups?**
+
+- **Response: No information**
+- **Reason:** Not applicable, as no deviations were identified/reported in 2.3.
+
+**2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?**
+
+- **Response: Probably yes**
+- **Reason:** Of the 40 recruited subjects, 38 completed the single stimulation session ("Two subjects signed the consent form and decided not to participate before stimulation was given"), and these two were excluded prior to randomized intervention delivery (not post-randomization dropouts affected by group assignment). One additional subject in the Random Frequency group was excluded post-hoc "due to excessive artifacts in the EEG recording" — this is a data-quality-driven exclusion rather than an exclusion based on treatment response or non-adherence, and is generally considered acceptable practice for EEG-based outcomes (modified ITT excluding those with missing/unusable outcome data is considered appropriate per RoB 2 guidance). All remaining randomized participants who received their assigned single-session intervention appear to have been analyzed in their assigned groups, consistent with the reported group sizes (9, 9, 9, 10 after exclusion).
+
+**2.7. Was there potential for a substantial impact of the failure to analyze participants in the group to which they were randomized?**
+
+- **Response: Not applicable (N/A)**
+- **Reason:** Since 2.6 was answered "Probably yes" (appropriate analysis was used), this question does not apply.
+
+---
+
+## Domain-Level Judgement for Effect of Assignment to Intervention: **Low risk**
+
+**Justification:** Participants were blinded to their intervention assignment, and this blinding was empirically validated as effective (p = 0.679, no better than chance guessing). No deviations from the intended intervention arising from trial context were reported. The exclusions from analysis (2 pre-stimulation withdrawals and 1 post-hoc EEG artifact exclusion) were not related to treatment assignment or adherence issues, and the analysis appropriately included all participants who received their assigned single-session intervention and had usable outcome data. While there is no information regarding blinding of the person delivering the intervention (Item 2.2), given that this was a single fixed 20-minute session controlled by a pre-set investigational device, and the participant-level blinding was robust and validated, this gap does not appear to introduce a meaningful risk of bias for this domain. Therefore, the overall judgement is **Low risk**.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+# Domain 3: Risk of bias due to missing outcome data
+
+**Outcome: Interhemispheric functional connectivity**
+
+**3.1. Were data for this outcome available for all, or nearly all, participants randomized?**
+
+- **Response: Probably yes**
+- **Reason:** Of the 40 subjects recruited, 38 completed the single stimulation session; two subjects "signed the consent form and decided not to participate before stimulation was given" (Section 3.1). It is not entirely explicit in the article whether these two individuals had already been formally randomized to a study arm at the point of withdrawal, or whether they withdrew during the consent/pre-randomization phase. Additionally, "One subject in the Random Frequency group was removed from the analysis due to excessive artifacts in the EEG recording," reducing the analyzed sample for coherence outcomes to 37 (final group sizes: sham=9, 1 Hz=9, 100 Hz=9, random=10). This represents a small proportion of missing outcome data (approximately 5–7.5%, depending on whether the denominator is 38 or 40), which is reasonably close to the "nearly all" threshold typically applied to continuous outcomes (~95%). Given the documented and plausible reasons for exclusion (technical EEG artifact, voluntary pre-intervention withdrawal), and the small absolute number of participants involved, "Probably yes" is justified rather than "No" or "No information."
+
+**3.2. Is there evidence that the result was not biased by missing outcome data?**
+
+- **Response: N/A**
+- **Reason:** Not applicable, as 3.1 was answered "Probably yes."
+
+**3.3. Could missingness in the outcome depend on its true value?**
+
+- **Response: N/A**
+- **Reason:** Not applicable, as 3.1 was answered "Probably yes." (For context: the reasons provided for missing data — "excessive artifacts in the EEG recording" and voluntary withdrawal "before stimulation was given" — are documented, plausible, and unrelated to the true value of the interhemispheric coherence outcome itself, e.g., not related to participants experiencing particularly high or low connectivity levels. This further supports low concern even if this question were formally triggered.)
+
+**3.4. Is it likely that missingness in the outcome depended on its true value?**
+
+- **Response: N/A**
+- **Reason:** Not applicable, as 3.1 was answered "Probably yes."
+
+---
+
+## Domain-Level Judgement: **Low risk**
+
+**Justification:** The amount of missing outcome data for the interhemispheric functional connectivity outcome was small (1–3 participants out of 38–40 total, i.e., approximately 2.6–7.5%). The reasons for missingness were explicitly documented and plausible: (1) two participants withdrew consent prior to receiving any stimulation (unrelated to outcome value, as no intervention/outcome data collection had yet occurred), and (2) one participant's EEG data were excluded due to "excessive artifacts," a technical/data-quality issue unrelated to the true underlying coherence value. There is no indication that missingness was related to the participants' true connectivity levels or to differential dropout patterns systematically related to the outcome. While the single exclusion occurred in the Random Frequency group (the group later showing the significant effect), this was attributed to a specific, documented technical/methodological reason (EEG artifact) rather than an outcome-related cause, minimizing concern about differential/informative missingness. Overall, the risk of bias due to missing outcome data is judged to be **Low**.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+# Domain 4: Risk of bias in measurement of the outcome
+
+**Outcome: Interhemispheric functional connectivity**
+
+**4.1. Was the method of measuring the outcome inappropriate?**
+
+- **Response: No**
+- **Reason:** The outcome was measured using magnitude square coherence via a 64-channel EGI EEG device, applying the Welch's averaged modified periodogram method to compute coherence between homologous electrode pairs (Section 2.7). This is a well-established, quantitative, objective, and standard neurophysiological method for measuring interhemispheric functional connectivity, referenced to prior literature ("See [7] for relevant mathematical equations"). This method is sensitive to detecting the plausible range of coherence values (0 to 1) and is appropriate for the stated construct being measured. There is no indication that the measurement method was insensitive to plausible intervention effects or had demonstrated poor validity.
+
+**4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?**
+
+- **Response: No**
+- **Reason:** The same EEG recording protocol (64-channel EGI device, sampled at 256 Hz, bandpass filtered 0.3–70 Hz) and the same pre/post assessment timing structure (12-minute recording with eyes open/closed conditions, conducted before and after the experimental condition) were applied identically across all four groups (sham, 1 Hz, 100 Hz, random frequency), as described in Section 2.5. There is no evidence of differential outcome ascertainment procedures, additional visits, or differing thresholds/methods of measurement between groups. The measurement method and timing were standardized across the trial.
+
+**4.3. Were outcome assessors aware of the intervention received by study participants?**
+
+- **Response: No**
+- **Reason:** The article explicitly states, "Both the investigator assessing the outcomes and the subjects were blinded to the intervention" (Section 2.3). This directly indicates that the personnel responsible for outcome assessment were blinded to group allocation. Additionally, EEG coherence analysis is a quantitative, computerized/algorithmic measure (Welch's periodogram-based coherence calculation) with minimal subjective judgment involved in the core measurement process, further reducing the potential for assessment bias even beyond the stated blinding.
+
+**4.4. Could assessment of the outcome have been influenced by knowledge of intervention received?**
+
+- **Response: N/A**
+- **Reason:** Not applicable, as 4.3 was answered "No" (outcome assessors were blinded).
+
+**4.5. Is it likely that assessment of the outcome was influenced by knowledge of intervention received?**
+
+- **Response: N/A**
+- **Reason:** Not applicable, as 4.3 was answered "No."
+
+---
+
+## Domain-Level Judgement: **Low risk**
+
+**Justification:** The method used to measure interhemispheric functional connectivity (EEG magnitude square coherence via Welch's method) is an appropriate, objective, and validated quantitative technique for this outcome. Measurement procedures were standardized and identical across all intervention groups, with no differences in ascertainment methods or timing. Critically, the article explicitly confirms that the investigator assessing the outcomes was blinded to intervention allocation, and this is further supported by the largely automated/algorithmic nature of coherence computation, which minimizes subjective judgment. Based on these factors, the risk of bias in measurement of the outcome is judged to be **Low**.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+# Domain 5: Risk of bias in selection of the reported result
+
+**Outcome: Interhemispheric functional connectivity**
+
+**5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?**
+
+- **Response: No information**
+- **Reason:** The article does not mention any trial registration number (e.g., ClinicalTrials.gov), nor does it reference a published or publicly available protocol or pre-specified statistical analysis plan. While Section 2.9 describes the statistical methods used (mixed model ANOVA, post-hoc t-tests with "a-priori specifications" for three planned comparisons: random vs. sham, 1 Hz vs. sham, 100 Hz vs. sham), there is no evidence that this plan was registered or finalized *before* unblinded outcome data were available. No protocol document or registration number is cited anywhere in the article.
+
+**5.2. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements within the outcome domain?**
+
+- **Response: Probably yes**
+- **Reason:** The study explicitly measured interhemispheric coherence across multiple bands and sub-bands: alpha, theta, low-alpha (8–10 Hz), high-alpha (10–12 Hz), low-beta (12–20 Hz), and high-beta (20–30 Hz) — six distinct measurements within the single "functional connectivity" domain (Section 2.7). The authors themselves describe this as "an exploratory analysis to detect changes" (Abstract). Of these six measures, only theta and low-alpha showed significant/trend-level results and were emphasized as the "main finding" in the abstract, discussion, and title-adjacent highlights, while high-alpha, low-beta, and high-beta (all non-significant) received comparatively minimal discussion. This pattern—testing multiple sub-bands and prominently reporting/interpreting only the significant ones as the key result—raises concern that the reported/emphasized result was influenced by the pattern of findings.
+
+**5.3. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?**
+
+- **Response: Probably yes**
+- **Reason:** While three post-hoc comparisons (random vs. sham, 1 Hz vs. sham, 100 Hz vs. sham) were described as "a-priori specifications" (Section 2.9), the Results section reports additional comparisons that appear to go beyond this original plan: "Further exploratory analysis showed that the theta interhemispheric coherence was significantly higher for the random frequency group compared to 1 Hz (p = 0.038) and 100 Hz stimulation (p = 0.0013)" (Section 3.2). These additional pairwise comparisons (random vs. 1 Hz; random vs. 100 Hz) were explicitly labeled "further exploratory analysis," indicating they were not part of the original a-priori plan and were conducted after observing the initial significant result, likely to further support/strengthen the significant finding. This is a form of post-hoc, results-driven analysis selection.
+
+---
+
+## Domain-Level Judgement: **High risk**
+
+**Justification:** There is no evidence of a pre-registered protocol or pre-specified statistical analysis plan finalized prior to unblinded data analysis (No information for 5.1), which alone would typically prompt "Some concerns." Compounding this, the outcome domain (interhemispheric connectivity) was assessed across six different frequency bands/sub-bands, with selective emphasis placed on the two bands (theta and low-alpha) that yielded significant or near-significant results, while the explicit framing as "exploratory analysis" suggests a hypothesis-generating rather than hypothesis-confirming design. Furthermore, additional post-hoc pairwise comparisons (random vs. 1 Hz, random vs. 100 Hz) were conducted and reported after the initial significant finding was observed, explicitly labeled as "further exploratory analysis" — a hallmark of results-driven analytic selection. The combination of no pre-specified/registered plan, multiple outcome measurements with selective emphasis on significant ones, and additional non-pre-specified post-hoc analyses conducted after seeing results collectively indicates a **High risk** of bias in selection of the reported result for this domain.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+# Final Assessment: Interhemispheric Functional Connectivity
+
+## Summary of Domain-Level Judgements:
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions | Low |
+| 3. Missing outcome data | Low |
+| 4. Measurement of the outcome | Low |
+| 5. Selection of the reported result | **High** |
+
+---
+
+## Overall Predicted Direction of Bias: **Favours experimental**
+
+**Reasoning:** The primary concern driving the overall risk-of-bias judgment arises from Domain 5, where multiple outcome sub-bands (alpha, theta, low-alpha, high-alpha, low-beta, high-beta) were tested, and additional non-pre-specified post-hoc comparisons (random vs. 1 Hz; random vs. 100 Hz) were conducted after observing significant results. This selective analytical and reporting pattern specifically emphasized findings that supported the experimental hypothesis — namely, that the random frequency tPCS condition increases theta and low-alpha interhemispheric coherence compared to sham and other active conditions. Since the selective reporting/analysis consistently worked to highlight and reinforce a *positive/significant effect of the experimental (random frequency) intervention*, the likely direction of bias introduced is toward **favoring the experimental intervention** (i.e., inflating the apparent effect of tPCS on connectivity), rather than being a symmetric or unpredictable distortion.
+
+---
+
+## Overall Risk-of-Bias Judgement: **High**
+
+**Justification:** Per the Cochrane RoB 2 algorithm, the overall risk-of-bias judgement for an outcome is driven by the highest risk-of-bias rating across the five domains — an outcome cannot be rated better than "High risk" overall if any individual domain is judged "High risk." Domain 5 (Selection of the reported result) was judged **High risk** due to: (1) absence of a pre-registered protocol or pre-specified analysis plan, (2) selective emphasis on 2 of 6 measured frequency sub-bands (theta and low-alpha) that yielded significant/near-significant findings, and (3) additional post-hoc pairwise comparisons explicitly labeled as "further exploratory analysis," conducted after the primary significant result was observed. Combined with "Some concerns" in Domain 1 (incomplete information on allocation concealment), these issues are sufficient to warrant an overall judgement of **High risk of bias** for the interhemispheric functional connectivity outcome, despite the trial's strong performance in Domains 2, 3, and 4 (effective blinding, minimal missing data, and appropriate/objective outcome measurement).
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Final Risk-of-Bias Assessment (RoB 2): Interhemispheric Functional Connectivity
+
+I have re-evaluated each domain and signaling question against the explicit text of the article, re-checking consistency, evidentiary basis, and alignment with RoB 2 algorithmic rules. My judgments remain consistent upon re-evaluation, as detailed below.
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+| Signaling Question | Judgement | Key Evidence |
+|---|---|---|
+| 1.1 Was the allocation sequence random? | Probably yes | "Randomization was completed using blocks of four" (2.3) — block randomization implies a random component, but exact sequence-generation method (e.g., software) not specified |
+| 1.2 Was the allocation sequence concealed until enrollment? | No information | No description of concealment mechanism (e.g., sealed envelopes, central allocation) provided anywhere in the article |
+| 1.3 Did baseline differences suggest a problem? | No | "There were no significant differences in demographic characteristics between groups (Table 1)" |
+| **Domain 1 Judgement** | **Some concerns** | Lack of information on concealment (1.2) prevents a "Low" rating despite plausible randomization and no baseline imbalance |
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions (Effect of assignment to intervention)
+
+| Signaling Question | Judgement | Key Evidence |
+|---|---|---|
+| 2.1 Were participants aware of assigned intervention? | Probably no | "Both the investigator...and the subjects were blinded" (2.3); blinding validated: "Subjects did not guess correctly...beyond chance (p=0.679)" (3.5) |
+| 2.2 Were carers/intervention deliverers aware? | No information | No statement on blinding status of personnel operating/setting the tPCS device |
+| 2.3 Deviations arising from trial context? | No information | No evidence of protocol deviations reported |
+| 2.4 Did deviations affect outcome? | N/A | Not triggered |
+| 2.5 Deviations balanced between groups? | N/A | Not triggered |
+| 2.6 Appropriate analysis used? | Probably yes | 38/40 analyzed; 2 withdrew pre-stimulation (not outcome-related), 1 excluded for EEG artifact (data-quality reason); groups analyzed as randomized |
+| 2.7 Potential for substantial impact of misanalysis? | N/A | Not triggered (2.6 = Probably yes) |
+| **Domain 2 Judgement** | **Low** | Effective, validated blinding; no reported context-driven deviations; appropriate analysis of as-randomized groups |
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+| Signaling Question | Judgement | Key Evidence |
+|---|---|---|
+| 3.1 Data available for all/nearly all randomized? | Probably yes | 38/40 completed; 1 further excluded for "excessive artifacts in EEG recording" (Random group); final analyzed n=37 (~92.5% of enrolled, ~97% of those who received stimulation) |
+| 3.2 Evidence result not biased by missing data? | N/A | Not triggered |
+| 3.3 Could missingness depend on true value? | N/A | Not triggered |
+| 3.4 Likely missingness depended on true value? | N/A | Not triggered |
+| **Domain 3 Judgement** | **Low** | Small, documented, plausible, outcome-unrelated reasons for exclusion (pre-treatment withdrawal; technical EEG artifact) |
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+| Signaling Question | Judgement | Key Evidence |
+|---|---|---|
+| 4.1 Was measurement method inappropriate? | No | Magnitude square coherence via validated Welch's periodogram method (2.7) — standard, objective, sensitive quantitative technique |
+| 4.2 Could measurement differ between groups? | No | Identical EEG protocol, timing, and conditions (eyes open/closed) applied uniformly across all 4 groups (2.5) |
+| 4.3 Were outcome assessors aware of intervention? | No | "The investigator assessing the outcomes...[was] blinded to the intervention" (2.3); coherence computation is algorithmic/objective |
+| 4.4 Could assessment be influenced by knowledge? | N/A | Not triggered |
+| 4.5 Likely influenced by knowledge? | N/A | Not triggered |
+| **Domain 4 Judgement** | **Low** | Objective, standardized measurement method; blinded outcome assessor |
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+| Signaling Question | Judgement | Key Evidence |
+|---|---|---|
+| 5.1 Pre-specified analysis plan finalized before unblinded data available? | No information | No trial registration number or protocol/SAP referenced anywhere in the article |
+| 5.2 Result selected from multiple eligible outcome measurements? | Probably yes | 6 bands/sub-bands tested (alpha, theta, low-alpha, high-alpha, low-beta, high-beta); study self-described as "exploratory"; only significant theta/low-alpha findings emphasized in abstract/discussion/highlights |
+| 5.3 Result selected from multiple eligible analyses? | Probably yes | Additional pairwise comparisons (random vs. 1 Hz, random vs. 100 Hz) explicitly labeled "further exploratory analysis" (3.2), conducted after primary significant finding observed; beyond the 3 pre-specified sham comparisons |
+| **Domain 5 Judgement** | **High** | No registered/pre-specified plan; multiple outcome measures with selective emphasis on significant ones; post-hoc exploratory analyses added after seeing results |
+
+---
+
+## FINAL SUMMARY TABLE
+
+| **Domain** | **Risk-of-Bias Judgement** |
+|---|---|
+| Domain 1: Randomization process | Some concerns |
+| Domain 2: Deviations from intended interventions | Low |
+| Domain 3: Missing outcome data | Low |
+| Domain 4: Measurement of the outcome | Low |
+| Domain 5: Selection of the reported result | **High** |
+| **OVERALL RISK OF BIAS** | **High** |
+| **Predicted Direction of Bias** | **Favours experimental** |
+
+---
+
+### Overall Justification
+
+Per the RoB 2 algorithm, the overall judgement for an outcome is determined by the **highest risk-of-bias rating across domains**; a single "High risk" domain necessitates an overall "High risk" judgement, regardless of favorable ratings elsewhere. Domain 5 was rated **High risk** because: (1) no pre-registered protocol or statistical analysis plan was referenced; (2) six frequency bands/sub-bands were tested within the connectivity domain, but only the two yielding significant/near-significant results (theta, low-alpha) were emphasized as key findings; and (3) additional pairwise comparisons were explicitly conducted post-hoc ("further exploratory analysis") after the primary significant effect was already observed. This pattern indicates the reported result was likely influenced by the observed findings, and the selective emphasis consistently favored the experimental (random-frequency tPCS) condition — hence the predicted direction of bias is **"Favours experimental."** Despite strong performance in Domains 2–4 (effective blinding, minimal/well-explained missing data, objective standardized measurement), these strengths cannot offset the High-risk rating in Domain 5, resulting in an **overall High risk of bias** for this outcome.

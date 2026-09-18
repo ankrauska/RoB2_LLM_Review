@@ -1,0 +1,91 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 24937270
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Interhemispheric Functional Connectivity
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns arise primarily from lack of reported allocation concealment methods, despite adequate randomization and no evidence of baseline imbalance problems.
+
+**b. Rationale:**
+- **Random sequence generation:** The trial states "Randomization was completed using blocks of four," which indicates a random component was used. This supports a "Yes" response to whether the allocation sequence was random.
+- **Allocation concealment:** There is no information provided about how the allocation sequence was concealed from those enrolling participants. The article does not describe use of central randomization, sequentially numbered opaque envelopes, or any other concealment mechanism. This leads to "No information" for concealment.
+- **Baseline imbalance:** Table 1 shows no statistically significant differences in demographic characteristics (age, sex distribution, MMSE) or baseline behavioral task performance between groups. The text explicitly states: "There were no significant differences in demographic characteristics between groups." This suggests no problem with randomization based on observed baseline data.
+
+Applying the RoB 2 algorithm: Random sequence = Yes/Probably yes; Allocation concealment = No information; Baseline imbalance = No. This combination (Y/PY for randomness, NI for concealment, N for imbalance) maps to "Some concerns" per Table 4.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as blinding of participants and personnel was successfully implemented and verified, and appropriate analysis was used.
+
+**b. Rationale:**
+- **Blinding of participants:** The study was double-blinded: "Both the investigator assessing the outcomes and the subjects were blinded to the intervention." For sham stimulation, "stimulation was applied for 30 s and then turned off automatically," mimicking the sensory experience (tingling) of active stimulation to maintain blinding.
+- **Blinding validation:** The study formally tested blinding integrity: "Subjects did not guess correctly the stimulation group to which they were assigned beyond chance (p = 0.679)." This provides strong evidence that blinding was successful.
+- **Deviations from trial context:** Given successful blinding, it is unlikely that deviations from intended intervention arose because of the trial context (e.g., participants seeking non-protocol interventions due to awareness of assignment).
+- **Appropriate analysis:** The analysis appears consistent with intention-to-treat principles for the randomized groups, comparing pre-specified groups using a mixed-model ANOVA with post-hoc comparisons as planned ("According to a-priori specifications, we used t-test for post-hoc comparison...").
+- One participant was excluded due to "excessive artifacts in the EEG recording" — this is a technical/data quality issue rather than a deviation from intended intervention, and is more appropriately considered under missing outcome data.
+
+Given blinding was maintained and validated, and analysis followed pre-specified comparisons of randomized groups, this domain is judged as low risk.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as outcome data were available for nearly all randomized participants, and the single exclusion was for a documented, outcome-unrelated technical reason.
+
+**b. Rationale:**
+- Of 40 recruited, 38 completed the single stimulation session (2 withdrew consent before stimulation, unrelated to outcome).
+- Of these 38, one participant "in the Random Frequency group was removed from the analysis due to excessive artifacts in the EEG recording." This is a technical failure of the measurement equipment/process, not related to the true value of the interhemispheric coherence outcome.
+- This exclusion represents only 1 of 38 participants (~2.6%), a very small proportion. The reason (excessive EEG artifact) is unlikely to be related to the true underlying coherence value—it reflects a technical recording issue rather than participant-driven or outcome-driven missingness.
+- No other missing data patterns are reported for the EEG coherence outcome; the final group sizes were reported (9 sham, 9 at 1Hz, 9 at 100Hz, 10 in random frequency group after exclusion) and analyzed accordingly.
+
+Given the very small amount of missing data and a plausible non-outcome-related reason for the single exclusion, missingness is unlikely to bias the result.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. The outcome measurement method was appropriate, consistent across intervention groups, and outcome assessors were blinded with no plausible mechanism for bias given the objective, computerized nature of the measurement.
+
+**b. Rationale:**
+- **Appropriateness of method:** Interhemispheric coherence was measured using an objective, quantitative method: "We used magnitude square coherence as a pair-wise connectivity measure. This estimate uses the Welch's averaged modified periodogram method..." This is a standard, validated method for assessing EEG functional connectivity, appropriate for the outcome domain of interest.
+- **Consistency of measurement across groups:** The same 64-channel EEG system, electrode pairs (19–57 and 14–57), recording protocol (12 min, eyes open/eyes closed, before and after stimulation), and analytic pipeline were applied identically across all four study arms. There is no indication that measurement or ascertainment differed by group.
+- **Blinding of outcome assessors:** The study explicitly states "the investigator assessing the outcomes ... [was] blinded to the intervention." Additionally, the outcome itself (EEG coherence, a quantitative/computed signal-processing measure) is an "observer-reported outcome not involving judgment"—similar to an automated test—since it is calculated algorithmically from raw EEG signals rather than being subject to assessor interpretation.
+- Because the outcome is objectively computed (via a mathematical coherence algorithm) rather than subjectively rated, and the assessor was blinded, there is minimal risk that knowledge of intervention assignment could have influenced the outcome measurement.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns, due to the absence of an accessible pre-registered protocol or statistical analysis plan to confirm that the reported coherence outcomes (and specific sub-bands/comparisons) were the only ones planned, and due to some indication of exploratory, non-prespecified analyses.
+
+**b. Rationale:**
+- The trial registration document (referenced but not detailed with specific outcome pre-specification information in the excerpts provided) does not clearly establish a fully detailed, date-stamped pre-specified analysis plan for the specific coherence bands, sub-bands, and electrode pairs reported.
+- The manuscript itself signals exploratory elements: "We conducted an exploratory analysis to detect changes in mean power for theta, alpha and beta, and interhemispheric coherence for alpha and theta and four different sub-bands." The explicit use of the word "exploratory" raises concern that multiple bands/sub-bands (alpha, theta, low-alpha, high-alpha, low-beta, high-beta) were tested, and results are selectively highlighted (theta and low-alpha reached significance; other sub-bands did not).
+- Multiple post-hoc comparisons were conducted (random vs. sham, 1Hz vs. sham, 100Hz vs. sham, and additional comparisons like random vs. 1Hz and random vs. 100Hz), some of which appear to go beyond the initially stated primary comparisons ("According to a-priori specifications, we used t-test for post-hoc comparison to assess the differences between (1) random frequency group and sham, (2) 1 Hz and sham, (3) 100 Hz and sham"). The additional comparisons (random vs. 1Hz, random vs. 100Hz) are described as arising from "further exploratory analysis," suggesting these were not pre-specified and were reported because they achieved statistical significance.
+- Without access to a clearly date-stamped, detailed pre-registered analysis plan specifying exactly which bands, sub-bands, comparisons, and electrode pairs would be analyzed and reported, it is difficult to rule out selective reporting of the specific significant findings (theta and low-alpha coherence) from among the multiple bands/sub-bands and comparisons tested.
+
+Given the explicit exploratory nature of some analyses and lack of clear confirmation of a fully pre-specified plan matching exactly what was reported, "Some concerns" is the appropriate judgement rather than "Low risk."
+
+---
+
+# Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Bias arising from randomization | Some concerns |
+| 2. Deviations from intended interventions | Low risk |
+| 3. Missing outcome data | Low risk |
+| 4. Measurement of the outcome | Low risk |
+| 5. Selective reporting | Some concerns |
+| **Overall Risk of Bias** | **Some concerns** |
+
+**Overall justification:** Per RoB 2 guidance (Table 1), since this trial raises "some concerns" in at least one domain (in this case, two domains: randomization and selective reporting) but is not judged to be at high risk of bias in any single domain, the overall risk-of-bias judgement for the outcome of interhemispheric functional connectivity is **"Some concerns."**

@@ -1,0 +1,137 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 11772475
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## RoB 2 assessment
+
+**Study design:** Individually randomized, three-arm, parallel-group trial.  
+**Result assessed:** **Treatment satisfaction at 6 months**, comparing **office-based methadone medical maintenance (MMM)** (experimental intervention) with **routine clinic care** (comparator), measured by the Client Satisfaction Questionnaire (CSQ; range 8–32). The reported comparison found greater satisfaction in office-based MMM than routine care (post-hoc comparison, *P*<0.05).
+
+**Effect of interest:** Effect of **assignment to intervention** (intention-to-treat effect).
+
+**Sources available for this assessment:** The published article and its tables/figure only. No trial protocol, statistical analysis plan, trial registry record, or other prespecified analysis document was available in the supplied material.
+
+---
+
+### 1. Bias arising from the randomization process  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **1.1 Was the allocation sequence random? — No information.**  
+  The article states that participants “were then randomized into one of the three study conditions” and that they were stratified according to self-reported substance use in the past 30 days and duration of negative urine screens. However, it does not describe how the allocation sequence was generated. There is no report of computer-generated random numbers, random-number tables, random permuted blocks, or another method containing a random component.
+
+- **1.2 Was the allocation sequence concealed until participants were enrolled and assigned to interventions? — No information.**  
+  No allocation-concealment mechanism is reported. In particular, the article does not describe central randomization, an independent pharmacy, sequentially numbered opaque sealed envelopes, or another procedure preventing recruiters or participants from knowing the next allocation before enrolment.
+
+- **1.3 Did baseline differences between intervention groups suggest a problem with the randomization process? — No information.**  
+  The article provides aggregate baseline characteristics for the enrolled sample but does not provide a baseline table separately for the three randomized groups. Therefore, comparability of the groups at baseline cannot be assessed. The report also states that five patients withdrew immediately after assignment—four assigned to routine care and one assigned to office-based MMM—but this post-assignment withdrawal pattern is not itself a reported baseline imbalance and cannot establish that the randomization process was compromised.
+
+**Motivation for judgement:**  
+The study is described as randomized, but the published report provides no information on either sequence generation or allocation concealment. It also does not provide group-specific baseline characteristics with which to evaluate whether randomization produced plausibly comparable groups. Under RoB 2, lack of information on allocation concealment leads to **some concerns** when there is no documented baseline imbalance suggesting a definite failure of randomization.
+
+---
+
+### 2. Bias due to deviations from intended interventions  
+**Judgement: Low risk of bias**
+
+**Signalling questions**
+
+- **2.1 Were participants aware of their assigned intervention during the trial? — Yes.**  
+  Participants necessarily knew whether they attended routine clinic treatment once or twice weekly, clinic-based MMM once monthly, or physician-office MMM once monthly. The care setting and reporting schedules were visibly different.
+
+- **2.2 Were carers and people delivering the interventions aware of participants’ assigned intervention during the trial? — Yes.**  
+  The intervention delivery differed by setting and provider. Routine-care patients were seen by their clinic counsellor; clinic-based MMM participants were seen by a clinic physician or senior nurse; office-based MMM participants were seen by a physician or nurse practitioner in an office. Therefore, treatment personnel were aware of allocated intervention.
+
+- **2.3 Were there deviations from the intended intervention that arose because of the trial context? — Probably no.**  
+  The stepped-care escalation protocol was explicitly part of the planned intervention strategy: participants with drug-positive urine specimens or failed medication recalls received intensified care and could return to their assigned study condition after restabilization. This was therefore protocol-specified management rather than an unplanned deviation. The article does not report non-protocol co-interventions or differential departures from the assigned strategy caused by knowledge of treatment allocation.
+
+- **2.6 Was an appropriate analysis used to estimate the effect of assignment to intervention? — Probably yes.**  
+  For treatment satisfaction, the article reports analyses among the 66 participants who remained in randomized treatment throughout six months and states that multilevel modelling with maximum-likelihood methods was used “to compensate for missing questionnaire data.” Participants appear to have been analysed according to their allocated treatment groups, not according to a treatment received analysis or a naïve per-protocol comparison based on adherence. Exclusion due to unavailable six-month outcome data is assessed in Domain 3.
+
+**Motivation for judgement:**  
+Although participants and personnel were unblinded, the article does not report deviations from intended treatment that arose because of the trial context and were likely to affect the satisfaction result. The stepped-care procedure was built into the intervention protocol and was applied in response to predefined events. The reported analysis retained randomized group assignment and did not use an as-treated analysis. Therefore, for the effect of assignment to office-based MMM versus routine care, this domain is judged at **low risk of bias**.
+
+---
+
+### 3. Bias due to missing outcome data  
+**Judgement: High risk of bias**
+
+**Signalling questions**
+
+- **3.1 Were data for this outcome available for all, or nearly all, participants randomized? — No.**  
+  A total of 78 participants were randomized, but five withdrew upon assignment before beginning the study. Of the 73 participants who began the study, 66 remained in randomized treatment at six months. The satisfaction analysis in Table 2 includes 19 routine-care, 24 clinic-based MMM, and 23 office-based MMM participants: 66 participants in total. Thus, six-month satisfaction data were not reported for 12 of 78 randomized participants (15.4%), including six of 25 participants originally assigned to routine care, three of 27 assigned to clinic-based MMM, and three of 26 assigned to office-based MMM.
+
+- **3.2 Is there evidence that the result was not biased by missing outcome data? — No.**  
+  The article states that multilevel modelling with maximum-likelihood methods was used “to compensate for missing questionnaire data,” but it does not provide the missing-data model, variables included in that model, assumptions supporting it, sensitivity analyses, or analyses demonstrating that plausible missing outcomes would not change the result. Therefore, the report does not provide evidence that missing outcome data did not bias the satisfaction comparison.
+
+- **3.3 Could missingness in the outcome depend on its true value? — Yes.**  
+  The reported reasons for leaving randomized treatment include dislike of the medication recall frequency, self-reported inability to manage a 28-day medication supply, transfer to another clinic, abrupt departure for unknown reasons, and a decision to taper off methadone. At least some of these reasons could be related to participants’ experience of or satisfaction with the assigned treatment strategy.
+
+- **3.4 Is it likely that missingness in the outcome depended on its true value? — Yes.**  
+  “Dislike of the frequency of the recall procedure” was reported as a reason for dropout for three participants. This reason directly indicates an unfavourable response to a trial requirement relevant to treatment experience and could be related to the CSQ satisfaction outcome. In addition, six-month satisfaction data were missing more often in the routine-care group (6/25 originally randomized; 24%) than in the office-based MMM group (3/26; 11.5%). The report does not give outcome data or detailed missingness reasons by randomized group for all missing participants.
+
+**Motivation for judgement:**  
+The satisfaction result was based on 66 of 78 randomized participants, with outcome data unavailable for approximately 15% of the randomized sample. The attrition included reasons that can plausibly, and in the case of dislike of the recall procedure likely do, relate to treatment satisfaction. The published report does not present a sensitivity analysis or sufficient details to establish that the maximum-likelihood analysis adequately removed this risk. Consequently, missing outcome data are likely to have biased the reported six-month satisfaction result.
+
+---
+
+### 4. Bias in measurement of the outcome  
+**Judgement: High risk of bias**
+
+**Signalling questions**
+
+- **4.1 Was the method of measuring the outcome inappropriate? — Probably no.**  
+  Treatment satisfaction was measured using the eight-item self-administered Client Satisfaction Questionnaire. The article describes the CSQ as an empirically derived instrument with good internal consistency, using a defined score range of 8 to 32. Nothing in the report indicates that this measure was unsuitable for measuring treatment satisfaction.
+
+- **4.2 Could measurement or ascertainment of the outcome have differed between intervention groups? — Probably no.**  
+  The same self-administered CSQ was used across groups at intake and at the six-month assessment. The article does not report different questionnaires, scoring rules, thresholds, or assessment schedules by group.
+
+- **4.3 Were outcome assessors aware of the intervention received by study participants? — Yes.**  
+  For a self-administered treatment-satisfaction questionnaire, the participant is the outcome assessor. Participants knew whether they were receiving routine clinic care or monthly physician-office MMM.
+
+- **4.4 Could assessment of the outcome have been influenced by knowledge of intervention received? — Yes.**  
+  Satisfaction is a participant-reported, subjective outcome. Participants’ ratings of whether care met their needs, whether the amount of help was adequate, and whether they would recommend the programme could be influenced by knowing they had been allocated to a substantially less frequent and more convenient office-based care arrangement rather than routine clinic attendance.
+
+- **4.5 Is it likely that assessment of the outcome was influenced by knowledge of intervention received? — Yes.**  
+  The interventions differed in salient features that are directly relevant to satisfaction: location of care, frequency of attendance, and the amount of time required for treatment-related activities. The study reports that office- and clinic-based MMM substantially reduced self-reported treatment time, while office-based MMM produced higher satisfaction than routine care. Since participants were unblinded and the measured outcome explicitly concerns satisfaction with the received service, knowledge of allocation was likely to influence outcome assessment.
+
+**Motivation for judgement:**  
+The CSQ itself is not reported to be inappropriate, and it was administered comparably across groups. However, treatment satisfaction is a subjective participant-reported outcome, and participants necessarily knew which treatment setting and reporting schedule they received. The intervention’s practical advantages—especially reduced treatment attendance burden—are inseparable from participants’ satisfaction ratings. The unblinded measurement is therefore likely to have influenced the reported satisfaction result. This domain is at **high risk of bias**.
+
+---
+
+### 5. Bias in selection of the reported result  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **5.1 Were the data that produced this result analysed in accordance with a pre-specified analysis plan finalized before unblinded outcome data were available? — No information.**  
+  The supplied article does not provide a protocol, statistical analysis plan, registry entry, or dated prespecified analysis document. Although the article states that MMM participants were expected to report greater satisfaction than routine-care participants, this does not establish that the precise CSQ analysis, analysis population, handling of missing data, time point, and pairwise comparisons were prespecified before outcome data were available.
+
+- **5.2 Is the result likely to have been selected, on the basis of the results, from multiple eligible outcome measurements within the outcome domain? — No information.**  
+  The article identifies the CSQ as its satisfaction measure and reports the CSQ total score at intake and six months. However, without a protocol or analysis plan, it cannot be determined whether other satisfaction measures, CSQ items, alternative time points, or other eligible measures were collected and analysed but not fully reported.
+
+- **5.3 Is the result likely to have been selected, on the basis of the results, from multiple eligible analyses of the data? — No information.**  
+  The result is derived from multilevel modelling of baseline and six-month CSQ data, with Tukey post-hoc comparisons. No prespecified analysis plan is available to establish whether this analysis, the handling of missing data, the selected comparison, or adjustment strategy was finalized before unblinded data were available. The article does not provide evidence that the reported analysis was selected based on its results, but it also does not provide sufficient information to exclude that possibility.
+
+**Motivation for judgement:**  
+There is no evidence in the supplied report of a prospectively finalized analysis plan. No direct evidence demonstrates selective reporting; therefore, a high-risk judgement is not justified. However, the absence of a protocol, registry record, or statistical analysis plan prevents confirmation that the reported six-month CSQ comparison and analysis were prespecified. This leads to **some concerns**.
+
+---
+
+### 6. Overall risk-of-bias judgement  
+**Judgement: High risk of bias**
+
+**Motivation for overall judgement:**  
+The six-month treatment-satisfaction result is judged at:
+
+- **Some concerns** for bias arising from the randomization process;
+- **Low risk of bias** for deviations from intended interventions;
+- **High risk of bias** due to missing outcome data;
+- **High risk of bias** in measurement of the outcome; and
+- **Some concerns** for selection of the reported result.
+
+Under RoB 2, an overall judgement of **high risk of bias** is required when at least one domain is at high risk of bias. Here, two domains are at high risk: missing outcome data and measurement of the subjective, participant-reported satisfaction outcome in an unblinded comparison. The reported superiority of office-based MMM over routine care for six-month treatment satisfaction should therefore be interpreted as being at **high risk of bias**.

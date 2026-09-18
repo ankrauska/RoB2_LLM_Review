@@ -1,0 +1,218 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 28840525
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"Randomisation was by computer-generated random number codes managed by an independent study member, and included minimization based on age... body mass index... time since diagnosis of T2D... insulin treatment... and ethnicity"
+"randomised 1:1 to LSG (n = 58) or SR-LRYGB (n = 56) using random number codes disclosed after anaesthesia induction"
+
+Analysis: The article explicitly states that randomization was performed using computer-generated random number codes, which is a clearly defined random component for sequence generation. Additionally, minimization was incorporated, which by convention (per the explanation given) is generally considered random when balanced with a random element. This provides clear, direct evidence of a truly random allocation sequence generation process, rather than an ambiguous statement of "randomization" alone.
+
+Correct answer: Yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"Randomisation was by computer-generated random number codes managed by an independent study member" and "randomised 1:1 to LSG (n = 58) or SR-LRYGB (n = 56) using random number codes disclosed after anaesthesia induction."
+
+Analysis: The randomization sequence was computer-generated and managed by an independent study member who was not part of the enrollment or surgical team. Allocation codes were only disclosed after anaesthesia induction, meaning the sequence remained concealed until after the participant was irrevocably committed to the study and could not be altered based on knowledge of upcoming assignment. This indicates a centrally managed, independent allocation process consistent with adequate concealment, since neither the enrolling investigator nor the participant could have foreseen or influenced the allocation before enrollment was finalized (surgery had already begun under anaesthesia). This meets the criteria for using an independent unit to control the allocation process, satisfying the requirement for allocation concealment.
+
+Correct answer: Yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"Randomisation was by computer-generated random number codes managed by an independent study member, and included minimization based on age, body mass index, time since diagnosis of T2D, insulin treatment, and ethnicity."
+Table 1 baseline characteristics (age, sex, ethnicity, diabetes duration, insulin use, HbA1c, weight, BMI) show similar distributions between groups.
+"There were significantly greater baseline anxiety scores in patients randomised to LSG than SR-RYGB (6.36 ± 4.66 vs 4.79 ± 3.53, p = 0.05)."
+
+Analysis: The randomization used minimization, which by design balances key prognostic factors (age, BMI, diabetes duration, insulin use, ethnicity), and Table 1 confirms these are well-balanced between groups. Group sizes (56 vs 58) are consistent with intended 1:1 allocation given the loss-to-follow-up pattern reported. There is one statistically significant baseline difference noted (anxiety score, p=0.05), but this is a single isolated finding among many baseline variables compared, and a single marginally significant difference (at the threshold) among numerous comparisons is consistent with chance rather than indicating a flawed randomization process. No other prognostic factors or outcome-related baseline measures show meaningful imbalance that would suggest problems with random allocation. Therefore, the baseline differences are compatible with chance and do not suggest a problem with the randomization process.
+
+Correct answer: No
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+- "Prospective, randomised, parallel, 2-arm, blinded clinical trial"
+- "double-blind (patient and assessor) clinical trial"
+- "randomised 1:1 to LSG (n = 58) or SR-LRYGB (n = 56) using random number codes disclosed after anaesthesia induction"
+- "Gastrointestinal complications were more frequent after SR-LRYGB (including 3 ulcers, 1 anastomotic leak, 1 abdominal bleeding)"
+- "removal of silastic ring for vomiting (n = 1)"
+- Weight loss was significantly greater following SR-LRYGB than LSG (Table 2, p<0.001)
+
+Analysis: The trial was explicitly designed as double-blind with participants blinded to allocation (surgery type concealed by identical port placements and standardized procedures), and randomisation codes were only disclosed after anaesthesia induction, indicating an attempt to maintain participant blinding throughout surgery and recovery. However, the two interventions (LSG vs SR-LRYGB) have distinct anatomical and physiological consequences that could become apparent to participants over time. Specifically, SR-LRYGB is associated with a physical silastic ring that can cause specific symptoms such as vomiting (leading to ring removal in one patient), and distinct complications (ulcers, anastomotic leak) that are specific to the bypass procedure and not possible with sleeve gastrectomy. Additionally, the significantly greater weight loss, changes in eating patterns/food tolerance, and specific gastrointestinal symptoms (vomiting, dumping syndrome, stricture symptoms) associated with RYGB versus sleeve gastrectomy could reveal to participants which procedure they received, especially as time progressed post-surgery. Despite blinding efforts, the nature of these surgical procedures makes complete participant blinding difficult to sustain for the full follow-up period, as physiological differences and specific complications may unblind participants to their treatment allocation.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences: "Randomisation was by computer-generated random number codes managed by an independent study member... randomised 1:1 to LSG or SR-LRYGB using random number codes disclosed after anaesthesia induction." "Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation." The trial is described as "double-blind (patient and assessor)" but surgeons performing the operations would necessarily know which procedure they were performing, and no mention is made of blinding of surgical/ward staff to the intervention.
+
+Analysis: The trial was described as double-blind with patient and outcome assessor blinding explicitly stated, and endocrinologists managing post-operative diabetes medication were blinded to allocation. However, the surgeons and operating theatre staff performing the interventions (LSG vs SR-LRYGB) could not have been blinded, as the two procedures are anatomically and technically distinct and allocation was only concealed until after anaesthesia induction — at which point the surgical team delivering the intervention would become aware of the assigned procedure in order to perform it. Thus, while broader clinical/ward staff and assessors were blinded, the people actually delivering the intervention (surgeons) were necessarily aware of the assigned intervention. There is no explicit statement addressing whether other carers (e.g., nursing staff, dietitians involved in intraoperative or immediate postoperative care) were blinded, but given the physical differences between the procedures and visible surgical incisions/ports, it is highly likely that carers involved in immediate postoperative care could infer or know the allocated intervention.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+- "All pharmacological agents for diabetes were discontinued following surgery subject to endocrinologist review prior to discharge. Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation."
+- "Five patients in the SR-LRYGB group required additional surgical intervention within the first 1 year... removal of silastic ring for vomiting (n = 1)... Three patients in the LSG group required additional surgical intervention: ...revision to SR-LRYGB for sleeve stricture (n = 1)..."
+- The study was double-blind (patient and assessor), with standardized surgical protocols, port placements, and a blinded medication adjustment algorithm.
+
+Analysis:
+The trial was double-blinded (participants and outcome assessors), with strict protocol-driven surgical techniques and a standardized, blinded post-operative medication management algorithm. Deviations that occurred (e.g., ring removal for vomiting, revision surgery for stricture) were complications-driven reoperations consistent with protocol-allowed management of surgical complications, not changes arising from trial context (e.g., participant dissatisfaction with allocation, contamination, or performance bias from unblinding). There is no evidence that recruitment/consent processes or trial engagement led participants or personnel to deviate from assigned intervention protocols in ways that would not occur in usual clinical practice. Blinding of both participants and assessors minimizes the likelihood of trial-context-driven deviations (e.g., participants seeking additional treatment because they felt "unlucky" about allocation, or clinicians treating differently based on knowledge of allocation). The medication protocol was applied uniformly by blinded endocrinologists, further reducing risk of context-driven deviation. No information suggests co-interventions or non-protocol behaviors driven by trial participation itself.
+
+Correct answer: No
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences: "Three patients in the LSG group required additional surgical intervention: a laparoscopic cholecystectomy (n = 1), revision to SR-LRYGB for sleeve stricture (n = 1) and wound debridement for infection (n = 1)." "Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively." No other statements in the Methods, Results, or Discussion describe deviations from the assigned intervention protocol (e.g., unplanned co-interventions, non-adherence to allocated surgery, unblinding, or changes in the delivered intervention itself) beyond routine post-surgical adverse event management, which was pre-specified as a secondary outcome (adverse events, reoperation) rather than a deviation from the intended intervention.
+
+Analysis: The article does not report any deviations from the assigned interventions that arose because of the trial context (e.g., participants receiving the other group's surgery instead of their allocated one, protocol violations in medication management, or unplanned changes to the surgical procedure itself). The one crossover case (revision to SR-LRYGB for sleeve stricture) was a post-operative complication management procedure, not a deviation from the intended intervention delivered at randomization, and it is reported as an adverse event/reoperation outcome rather than a protocol deviation. Loss to follow-up was handled as missing outcome data, not as a deviation affecting the intervention received. The trial's post-operative medical management protocol (medication algorithm, blinded endocrinologist review) was followed as pre-specified for both arms. Since there is no evidence in the article that deviations from intended interventions occurred that would be inconsistent with the trial protocol and likely to affect the outcome, this domain area is not indicated as a source of concern based on available information. Given the domain risk and analysis are noted as "not yet assessed" and no deviations are described in the text, there is insufficient information to conclude that outcome-affecting deviations occurred.
+
+Correct answer: No information
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+"There were significantly greater baseline anxiety scores in patients randomised to LSG than SR-RYGB (6.36 ± 4.66 vs 4.79 ± 3.53, p = 0.05)."; "All pharmacological agents for diabetes were discontinued following surgery subject to endocrinologist review prior to discharge. Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation"; "Five patients in the SR-LRYGB group required additional surgical intervention within the first 1 year... Three patients in the LSG group required additional surgical intervention"; Loss to follow-up occurred only in the LSG group (5 participants), none in SR-LRYGB.
+
+Analysis: There is no explicit mention of protocol deviations (i.e., changes from assigned intervention inconsistent with the protocol) in either group. The medication management, follow-up procedures, and blinding of endocrinologists appear symmetric and standardized across both arms, applied identically regardless of allocation. The differential loss to follow-up and differential complication/reoperation rates reflect study conduct and treatment-related events rather than "deviations from intended intervention" (i.e., non-protocol co-interventions or implementation deviations). No evidence suggests that any deviations from the assigned intervention protocol occurred differentially between groups; the same standardized post-operative medical review protocol was applied to both groups equally. Given the rigorous blinding of assessors and blinded endocrinologist-led medication management, it is likely that any incidental deviations were minimal and balanced between groups, though this is not explicitly reported.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+"A total of 114 patients were randomised at time of surgery, 56 to SR-LRYGB and 58 to LSG. Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively (Fig. 1)." Table 2 shows analyses performed at 12 months with n=56 (SR-LRYGB) and n=53 (LSG), consistent with all randomized participants minus those lost to follow-up (missing outcome data). No participants were excluded post-randomization for reasons other than missing outcome data, and no per-protocol or as-treated analysis was described.
+
+Analysis:
+The trial randomized 114 participants (56 SR-LRYGB, 58 LSG). All randomized participants were included in the analysis except for 5 participants lost to follow-up in the LSG group (analyzed n=53), with no additional exclusions reported. This corresponds to a modified intention-to-treat (mITT) analysis, excluding only those with missing outcome data, which is considered an appropriate method for estimating the effect of assignment to intervention according to the domain guidance. There is no evidence of per-protocol or as-treated analysis, nor of post-randomization exclusion of eligible participants for other reasons.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively (Fig. 1)." 
+"A total of 114 patients were randomised at time of surgery, 56 to SR-LRYGB and 58 to LSG." 
+Analysis performed at 1 year: SR-LRYGB n=56 (0 lost), LSG n=53 (5 lost).
+
+Analysis: The analysis appears to have been performed according to the intention-to-treat principle with participants analyzed in their randomized groups (no crossover or wrong-group analysis reported). The only deviation is loss to follow-up (5/58 in LSG group, ~8.6%), which is a missing outcome data issue rather than a failure to analyze participants in their randomized group. Since all participants were analyzed according to their original allocation (SR-LRYGB vs LSG), and there is no mention of analyzing participants in the wrong group or excluding participants from the intervention groups they were randomized to, this specific concern about "failure to analyze in randomized group" does not appear applicable at a level that would substantially impact results.
+
+Correct answer: No
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"A total of 114 patients were randomised at time of surgery, 56 to SR-LRYGB and 58 to LSG. Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively."
+"Proportions achieving HbA1c ≤38 mmol/mol (5.6%)... in LSG vs SR-LRYGB were 43 vs 38%... (Table 2)" with denominators (n=56) SR-LRYGB and (n=53) LSG.
+
+Analysis: Of 114 randomized participants (56 SR-LRYGB, 58 LSG), outcome data for the primary glycaemic outcome at 1 year were available for 56/56 (100%) in the SR-LRYGB group and 53/58 (91%) in the LSG group, with 5 participants lost to follow-up in the LSG arm. Overall, 109/114 (95.6%) had data available. This is close to but slightly exceeds the general 95% threshold for continuous data, and for this dichotomous outcome, missing data (5/58, ~9% in one arm) could plausibly influence the observed proportions achieving remission (which ranged 38-80%), since the events are not overwhelmingly common/rare in a way that would clearly buffer against bias from 5 missing participants. However, the number missing is small and evenly limited to one arm with a clear, non-outcome-related reason (loss of contact), and the overall proportion is very close to the "nearly all" standard. This supports a judgement of "Probably yes" rather than a clear "Yes," given the marginal shortfall below full ascertainment and no sensitivity analysis addressing the missing data's potential impact.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+"Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively (Fig. 1)." "53 in the LSG group and 56 in the SR-LRYGB group were analyzed at 1 year." No sensitivity analyses or imputation methods addressing missing outcome data were reported in the Statistical Analysis section.
+
+Analysis: Only 5/114 (4.4%) participants were lost to follow-up, all from the LSG arm, with none from the SR-LRYGB arm. This is a relatively small and plausibly non-influential amount of missing data given the overall sample size and effect sizes observed. However, the study does not explicitly report any analysis method that corrects for missing data bias (e.g., multiple imputation across both variables, inverse probability weighting) nor any sensitivity analysis testing a range of assumptions about the missing outcomes. The statistical methods section describes only standard comparative tests (t-test, Mann-Whitney, Fisher's exact, mixed models) without addressing missingness specifically. Although the missingness is low and unlikely to have importantly biased results, there is no explicit evidence provided (via analysis or sensitivity testing) that the result was not biased by missing data — this must be inferred rather than directly demonstrated.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences: "Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively (Fig. 1)."
+
+Analysis: The missing outcome data (5 participants lost to follow-up in the LSG group) were explicitly attributed to a documented, non-health-related reason—failure to make contact and/or attend appointments—rather than to any indication related to their diabetes/weight outcomes. There is no evidence suggesting these losses were related to participants' HbA1c levels, weight status, or clinical deterioration. Since the reason for missingness is clearly unrelated to the true outcome value, this suggests missingness is unlikely to depend on the true outcome value.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+"Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively" — 5/58 (8.6%) missing in LSG vs 0/56 (0%) missing in SR-LRYGB; reason given is failure to make contact/attend appointments, unrelated to glycaemic outcome value.
+
+Analysis: There is a difference in missing outcome data between groups (5 in LSG vs 0 in SR-LRYGB), which raises "some concerns." However, the reason reported for missingness (failure to make contact/attend appointments) does not provide evidence that missingness depended on the true outcome value (e.g., no indication that those lost had worse or better glycaemic control), nor is there a plausible clinical mechanism (unlike e.g. psychiatric relapse driving dropout) suggesting an outcome-dependent mechanism. There is no reported differential reason between groups suggesting outcome-related dropout, and this is not a scenario (like schizophrenia trials) where missingness is inherently linked to the outcome. Thus, while missingness could depend on the outcome (some concern), there is insufficient evidence to conclude it is *likely* that missingness depended on the true value.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences: "Primary outcome is the proportion of patients achieving HbA1c < 42 mmol/mol (< 6%) without glucose lowering therapy at 5 years... We report here the 1 year outcomes of the proportions achieving HbA1c thresholds ≤38 mmol/mol (5.6%), < 42 mmol/mol (6.0%), < 48 mmol/mol (6.5%), or < 53 mmol/mol (7.0%) without the need for any glucose lowering therapy"; "Other secondary outcomes at 1 year included weight loss, blood pressure, lipid levels, metabolic medication use, quality of life, anxiety and depressive symptoms (assessed using the RAND 36-item health survey (SF-36) and the Hospital Anxiety and Depression Scale (HADS))"; HbA1c and weight were measured objectively via medical records; QoL/anxiety/depression measured with validated standardized instruments (SF-36, HADS).
+
+Analysis: The primary outcome (HbA1c thresholds for diabetes remission) was measured using objective, validated laboratory testing (HbA1c), which is a standard, appropriate, and clinically validated method for assessing glycemic control and diabetes remission—well suited to detect plausible intervention effects given the biological range of HbA1c values. Secondary outcomes included weight/BMI (objectively measured), lipid profiles (standard laboratory assays), blood pressure (standard clinical measurement), and quality of life/anxiety/depression assessed via well-established, validated psychometric instruments (SF-36 and HADS), both of which have been extensively validated in prior literature and are commonly used in bariatric surgery research. Adverse events and complications were captured via medical record review, a standard method for outcome ascertainment in surgical trials. There is no indication in the article that any outcome measurement method was insensitive to expected treatment effects or of demonstrated poor validity. All methods used align with standard practice for these outcome types.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"This was a single-centre, prospective, randomised, parallel 2-arm, double-blind (patient and assessor) clinical trial..."
+"Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation."
+"All clinical data were extracted by medical records review."
+"Primary outcome is the proportion of patients achieving HbA1c < 42 mmol/mol (< 6%) without glucose lowering therapy at 5 years."
+
+Analysis: The trial was explicitly double-blind, with both participants and outcome assessors (endocrinologists managing medication adjustments) blinded to treatment allocation. Outcome measurement (HbA1c thresholds, weight, quality of life, adverse events) was based on standardized objective measures and protocol-driven medication review, applied identically across both study arms, with data extracted uniformly from medical records at the same pre-specified time points (3, 6, 9, 12 months). There is no indication of differential surveillance, additional visits, or different diagnostic thresholds between groups that could introduce detection bias. Given the double-blind design and standardized outcome assessment protocol, it is unlikely that measurement or ascertainment of the outcome differed between intervention groups.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences:
+"this was a single-centre, prospective, randomised, parallel 2-arm, double-blind (patient and assessor) clinical trial"
+"Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation"
+Protocol maskingInfo: "masking": "DOUBLE", "whoMasked": ["PARTICIPANT", "OUTCOMES_ASSESSOR"]
+
+Analysis: The trial explicitly describes itself as double-blind, with both patients and outcome assessors (including endocrinologists managing diabetes medication decisions) blinded to treatment allocation. This is corroborated by the trial registry information specifying outcomes assessors were masked. Given the primary outcome (HbA1c thresholds without medication) relies on endocrinologist-driven medication withdrawal decisions, and these clinicians were explicitly blinded, this supports that outcome assessors were unaware of intervention received. However, since the surgical approach itself may leave subtle differences potentially detectable (e.g., through medical records or physical findings), and this is not explicitly addressed in detail, there remains some residual uncertainty, though the explicit statements strongly support blinding.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"this was a single-centre, prospective, randomised, parallel 2-arm, double-blind (patient and assessor) clinical trial"; "Randomisation was by computer-generated random number codes... All pharmacological agents for diabetes were discontinued following surgery subject to endocrinologist review prior to discharge. Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation"; "Primary outcome is the proportion of patients achieving HbA1c... without glucose lowering therapy"; "port placements were identical for both procedures."
+
+Analysis: The outcome assessment (HbA1c thresholds, weight, QoL, HADS) relies on objective laboratory measures (HbA1c, weight, BMI, lipids) and validated self-report/observer instruments (SF-36, HADS), and importantly the trial explicitly implemented blinding of participants and outcome assessors, with identical port placements to preserve blinding, and endocrinologists making medication decisions while blinded to allocation. This design directly addresses the risk that knowledge of intervention could influence outcome assessment, particularly for judgement-based outcomes (QoL, anxiety/depression, decisions on medication withdrawal) and even for HbA1c-based remission assessment where medication decisions (a key driver of "remission" status) were made by blinded clinicians. Given explicit blinding of patients and assessors, and blinded medication management, it is unlikely that assessment was influenced by knowledge of allocation.
+
+Correct answer: No
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"This was a single-centre, prospective, randomised, parallel 2-arm, double-blind (patient and assessor) clinical trial..."
+"Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation."
+"Primary outcome is the proportion of patients achieving HbA1c... without glucose lowering therapy" (objective lab measure).
+"All clinical data were extracted by medical records review."
+Secondary outcomes included quality of life, anxiety/depression assessed via self-administered validated questionnaires (SF-36, HADS) completed by participants themselves (who were also blinded).
+
+Analysis: The primary outcome (HbA1c-based remission) is an objective laboratory measurement, minimizing the risk that assessor knowledge of allocation influenced the outcome. Medication titration was performed by blinded endocrinologists following a standardized protocol, further reducing potential for detection bias. Secondary patient-reported outcomes (quality of life, anxiety, depression) were also collected via validated self-report instruments completed by blinded participants themselves, rather than by unblinded assessors. Both participants and outcome assessors were blinded per the protocol, and there is no indication in the results or discussion that assessors were aware of allocation or that this awareness affected assessment. Given the objective nature of the primary outcome and the described blinding of both participants and assessors/endocrinologists, it is unlikely that outcome assessment was influenced by knowledge of intervention received.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences: "Primary outcome is the proportion of patients achieving HbA1c < 42 mmol/mol (< 6%) without glucose lowering therapy at 5 years [24]. We report here the 1 year outcomes of the proportions achieving HbA1c thresholds ≤38 mmol/mol (5.6%), < 42 mmol/mol (6.0%), < 48 mmol/mol (6.5%), or < 53 mmol/mol (7.0%) without the need for any glucose lowering therapy, in order to allow direct comparison with previous studies." Also: "The rationale and protocol for this double-blind study has previously been reported [23]." Statistical Analysis section details pre-specified methods (Fisher's exact test, repeated-measures mixed model, etc.) consistent with protocol.
+
+Analysis: The published protocol (Murphy et al., 2016, ref 23) and trial registration were finalized before unblinding, and the statistical analysis plan described matches the pre-specified outcomes (multiple HbA1c thresholds, weight loss, QoL, HADS, adverse events) as registered. The 1-year outcomes reported here, while not the ultimate 5-year primary outcome, were explicitly pre-specified as secondary/interim analyses in the protocol paper published in 2016, prior to unblinding of 1-year outcome data. The statistical methods (Fisher's exact test, mixed models, t-test/Mann-Whitney) are standard pre-specified methods consistent with the protocol, with no indication of post hoc changes or selective reporting based on results. This supports a low risk of bias in this domain.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences: "We report here the 1 year outcomes of the proportions achieving HbA1c thresholds ≤38 mmol/mol (5.6%), < 42 mmol/mol (6.0%), < 48 mmol/mol (6.5%), or < 53 mmol/mol (7.0%) without the need for any glucose lowering therapy, in order to allow direct comparison with previous studies." "Proportions achieving HbA1c ≤38 mmol/mol (5.6%), < 42 mmol/mol (6.0%), < 48 mmol/mol (6.5%), or < 53 mmol/mol (7.0%) without the use of pharmacological therapy in LSG vs SR-LRYGB were 43 vs 38% (p = 0.56), 49 vs 52% (p = 0.85), 72 vs. 75% (p = 0.83), and 77 vs 80% (p = 0.82), respectively (Table 2)."
+
+Analysis: The methods section explicitly pre-specifies that four HbA1c thresholds would be used to define diabetes remission, and clarifies this was intended a priori to enable comparison with other trials — not chosen post hoc based on results. All four thresholds are then fully and consistently reported in the Results (Table 2) with corresponding p-values, with no thresholds omitted or selectively emphasized. There is no evidence of additional undisclosed measurements of the diabetes remission domain (e.g., other scales or unreported time points) that were omitted based on favorable/unfavorable results. The reporting is complete and matches the pre-specified analysis plan (also consistent with the trial protocol/registration), indicating no selective outcome reporting bias for this domain.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences: "We report here the 1 year outcomes of the proportions achieving HbA1c thresholds ≤38 mmol/mol (5.6%), < 42 mmol/mol (6.0%), < 48 mmol/mol (6.5%), or < 53 mmol/mol (7.0%) without the need for any glucose lowering therapy, in order to allow direct comparison with previous studies." "This was to enable direct comparison of our results with other studies, which have used these thresholds to define T2D remission." "The rationale and protocol for this double-blind study has previously been reported [23]." Table 2 reports all four thresholds with corresponding p-values (0.56, 0.85, 0.83, 0.82) for both treatment arms, consistent with the methods section's pre-specified plan.
+
+Analysis: The trial's methods and previously published protocol explicitly pre-specify analysis of T2D remission using four distinct HbA1c thresholds (≤38, <42, <48, <53 mmol/mol), stated to allow comparison with prior literature. All four thresholds are fully reported in Table 2 for both treatment arms, with no selective omission of any of the pre-specified analyses. There is no indication that additional analyses (e.g., different adjustment models, alternative statistical approaches) were conducted but not reported. The consistency between the stated a priori analysis plan (four thresholds) and the fully reported results (all four thresholds reported) indicates that the reported result was not selected from multiple eligible analyses based on the significance or direction of findings. This corresponds to the criteria for "No" - there is clear evidence that all eligible pre-specified analyses correspond to what was reported, leaving no opportunity for results-based selection.
+
+Correct answer: No

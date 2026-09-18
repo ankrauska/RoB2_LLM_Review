@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26505104
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Kulasegaram, 2015 (Academic Medicine – "Cause and Effect: Testing a Mechanism and Method for the Cognitive Integration of Basic Science")
+**Outcome Name**: delayed diagnostic performance (delayed diagnostic test score)
+**Registration number**: Not reported / no registration number provided
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (Moderate certainty, 85%)
+Reason: The article states "Participants were randomly allocated to one of four study conditions" but does not specify the method used to generate the random sequence (no mention of computer-generated numbers, block randomization, random number tables, etc.).
+
+**1.2**: NI (High certainty, 90%)
+Reason: No information is provided regarding allocation concealment (no mention of central allocation, sequentially numbered containers, or opaque envelopes).
+
+**1.3**: N (Low-Moderate certainty, 65%)
+Reason: The article reports comparable group sizes (25, 21, 24, 25) and comparable composition of professional groups (nursing/PA students) across arms, with no significant differences reported. No formal statistical comparison of baseline characteristics was presented, but available descriptive data suggest balance.
+
+**Result of Domain 1**: Some concerns (Moderate certainty, 80%)
+Reason: Since 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (Moderate certainty, 80%)
+Reason: This is an educational/cognitive intervention delivered via distinct learning materials; participants inherently see and are aware of the content/format they receive (no blinding possible in this type of educational study).
+
+**2.2**: N (Low-Moderate certainty, 60%)
+Reason: The intervention was delivered via a "custom-designed computer program" without human intervention providers during the learning phase, minimizing awareness bias from carers/deliverers.
+
+**2.3**: NI (Moderate certainty, 75%)
+Reason: No information is provided about any non-protocol interventions received by participants.
+
+**2.4**: N (Moderate certainty, 85%)
+Reason: Only 5 of ~99 enrolled participants (~5%) failed to complete the delayed session, which is below the 10% threshold.
+
+**2.5**: N (Moderate certainty, 75%)
+Reason: No evidence of non-adherence, crossover, or switching between assigned educational conditions; participants completed assigned materials as designed.
+
+**2.6**: N (Moderate certainty, 70%)
+Reason: The analysis (mixed ANCOVA) used a complete-case dataset after excluding non-completers/outliers, functioning similarly to a per-protocol/complete-case analysis rather than an appropriate method (e.g., IPW) for estimating adherence effects.
+
+**Result of Domain 2**: High risk (Moderate certainty, 80%)
+Reason: 2.1 = Y (satisfies "one of 2.1/2.2 is Y/PY/NI"), 2.3 = NI (satisfies "NI/N/PN"), and 2.6 = N (satisfies "NI/N/PN") → matches the rule for High risk.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: PN (Moderate certainty, 80%)
+Reason: Continuous outcome; 94/99 enrolled participants (~94.9%) had complete delayed diagnostic data, falling within the 90–95% range.
+
+**3.2**: N (High certainty, 90%)
+Reason: No sensitivity analysis, inverse probability weighting, or other bias-correction method was reported for missing data.
+
+**3.3**: NI (Moderate certainty, 70%)
+Reason: The reasons for the 5 dropouts (failure to complete delayed session) are not specified in relation to health status or outcome-related factors.
+
+**3.4**: NI (Moderate certainty, 65%)
+Reason: Dropouts were not evenly distributed (3 from CB, 2 from BC, none reported from SC/FL), which could suggest a differential pattern, but no explicit reasons are provided to confirm a relationship with the true outcome value.
+
+**Result of Domain 3**: High risk (Moderate certainty, 75%)
+Reason: 3.1 = PN, 3.2 = N, 3.3 = NI, 3.4 = NI → matches the rule for High risk (3.1 N/PN/NI, 3.2 N/PN, 3.3 Y/PY/NI, 3.4 Y/PY/NI).
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (High certainty, 90%)
+Reason: The diagnostic test was created by an expert clinician, validated by an independent clinical expert, and had been used and validated in three prior studies with adequate measurement properties.
+
+**4.2**: N (High certainty, 90%)
+Reason: All groups underwent the identical diagnostic test format, administered via the same computer program, at the same time points (immediate and one-week delay).
+
+**4.3**: N (Moderate certainty, 80%)
+Reason: The diagnostic outcome is objectively scored (correct/incorrect diagnosis via computer program), not patient-reported; scoring is not subject to assessor awareness of group assignment since it is automated and answer-key based.
+
+**4.4**: N (Moderate certainty, 85%)
+Reason: The outcome (diagnostic accuracy, scored against a predetermined correct answer) is an objective measure.
+
+**4.5**: N (Moderate certainty, 80%)
+Reason: No evidence suggests that knowledge of intervention condition influenced the objective scoring of diagnostic accuracy.
+
+**Result of Domain 4**: Low risk (High certainty, 85%)
+Reason: 4.1 = N, 4.2 = N, 4.3 = N → matches the rule for Low risk.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (Moderate certainty, 75%)
+Reason: No trial registration number or pre-specified/published analysis plan is mentioned in the article.
+
+**5.2**: N (Moderate certainty, 80%)
+Reason: Only one diagnostic test outcome (12-vignette test, percentage correct) was used and reported consistently at both immediate and delayed time points; no evidence of multiple competing outcome measures being selectively reported.
+
+**5.3**: N (Moderate certainty, 75%)
+Reason: A single pre-specified analytic approach (mixed repeated-measures ANCOVA) was used and reported consistently; no evidence of multiple analyses being conducted with selective reporting.
+
+**Result of Domain 5**: Some concerns (Moderate certainty, 78%)
+Reason: 5.2 = N, 5.3 = N, and 5.1 = NI → matches the rule for "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Overall Result**: High Risk (Moderate-High certainty, 82%)
+
+Reason: Domain 2 (Deviations from intended interventions) and Domain 3 (Missing outcome data) were both assessed as "High risk." According to the overall assessment algorithm, the presence of at least one domain rated as "High risk" results in an overall "High Risk" classification for the article regarding the outcome of delayed diagnostic performance.

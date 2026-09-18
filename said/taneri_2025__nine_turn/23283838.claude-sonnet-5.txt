@@ -1,0 +1,326 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 23283838
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read the article by Rodebaugh, Levinson, and colleagues on the high-throughput clinical assay for testing D-cycloserine (DCS) facilitation of exposure therapy in social anxiety disorder. I've reviewed the full text including the introduction, methods, results, and discussion sections, as well as the four figures depicting the study flow chart and outcome measures.
+
+Key elements I've noted from this study include:
+
+1. **Study design**: A two-visit protocol testing DCS (250mg single dose) vs. placebo prior to a standardized public speaking exposure, with a follow-up speech ~1 week later
+
+2. **Sample**: 34 participants with social anxiety disorder (30 completers analyzed), randomized to DCS (n=18) or placebo (n=16)
+
+3. **Primary outcome**: Between-session habituation via SUDS ratings, with categorical response (≥5-point SUDS decrease) and continuous measures analyzed via MANCOVA
+
+4. **Key findings**:
+   - Categorical response rate: 75% (DCS) vs. 36% (placebo), χ²(1)=4.69, p=.030
+   - Significant multivariate group×time interaction (Wilk's Λ=.78, p=.038, d=1.06)
+   - Social Phobia Scale showed significant interaction (p=.023)
+   - SUDS showed same direction but non-significant interaction (p=.14)
+
+5. **Theoretical framework**: Positions the study within the "quick win, fast fail" drug development paradigm, drawing parallels to brief two-session exposure augmentation studies in the behavioral literature
+
+6. **Limitations acknowledged by authors**: Small sample size, only two participants per condition lost to follow-up, need for replication in larger samples, and the unproven assumption that early response predicts longer-term treatment response
+
+7. **Notable methodological features**: Personalized exposure calibration (targeting peak SUDS of 75), immediate pre-exposure dosing (unusual timing compared to most prior DCS trials), and rigorous blinding checks
+
+I'm ready to discuss any specific aspect of this paper in more depth—whether that's the statistical methods, the theoretical rationale for the clinical assay approach, comparison with prior DCS trials (Guastella, Hofmann, Ressler et al.), limitations for your systematic review, risk of bias assessment, or how this study might fit into your broader review's inclusion/exclusion criteria and data extraction framework. Let me know what specific information or analysis you need.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I am ready to evaluate the first domain of the Cochrane RoB 2 tool for the outcome **between-session habituation**.
+
+Before I proceed, let me confirm my understanding of the task:
+
+- I will evaluate this RCT (Rodebaugh et al., DCS clinical assay study) using the **RoB 2 tool** across its five domains:
+  1. Bias arising from the randomization process
+  2. Bias due to deviations from intended interventions
+  3. Bias due to missing outcome data
+  4. Bias in measurement of the outcome
+  5. Bias in selection of the reported result
+
+- The outcome under evaluation is **between-session habituation** (defined in the article as categorical response: a drop of at least 5 points in average SUDS across the exposure across visits, assessed via chi-square test).
+
+- I will base all judgments strictly on information explicitly stated in the article, using the response options: Yes / Probably yes / Probably no / No / No information.
+
+- I will not speculate positively when information is missing, and will apply a critical, skeptical lens consistent with your instructions.
+
+Please confirm, or provide the specific signaling questions for Domain 1 (Bias arising from the randomization process) that you'd like me to follow, and I will proceed with my evaluation.
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+**Domain 1: Risk of bias arising from the randomization process**
+
+**1.1. Was the allocation sequence random?**
+
+- **Response: No information**
+- **Reason:** The article states, "Participants were randomly assigned to 250mg of DCS or placebo in identical-appearing capsules by a data manager who had no interaction with participants." This statement confirms that randomization occurred but provides no detail on the actual method used to generate the allocation sequence (e.g., computer-generated random numbers, random number table, or other randomization software/procedure). Per the RoB 2 guidance, when the only information provided is that the study was "randomized" without describing the sequence generation mechanism, the appropriate response is "No information."
+
+**1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?**
+
+- **Response: Probably yes**
+- **Reason:** The article specifies that assignment was performed "by a data manager who had no interaction with participants," and capsules were described as "identical-appearing." This indicates that the individuals enrolling participants and administering the intervention did not have access to or control over the allocation sequence, and the blinding of capsule appearance further supports concealment. However, no explicit details are given about the specific concealment mechanism (e.g., sequentially numbered containers, sealed envelopes, or a centralized/remote system), which prevents a definitive "Yes" judgment.
+
+**1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?**
+
+- **Response: No**
+- **Reason:** The article reports that groups did not differ significantly on gender, ethnicity, medication use, antidepressant use, LSAS scores at Visit 1, average SUDS for the speech at Visit 1, or Social Phobia Scale ratings at Visit 1 (all ps > .16). While a statistically significant difference in age was found (p = .019, DCS group ~49 years vs. placebo ~38 years), this represents a single isolated difference among many baseline variables tested, which per RoB 2 guidance is "usually considered to be compatible with chance" in the context of a small sample (N=30). Additionally, the authors explicitly tested age as a covariate and reported that "these group differences were examined below to test whether they could explain any group effects; they could not," and later confirmed that "including age as a covariate" did not alter the large DCS effect. This suggests the age imbalance did not introduce meaningful bias into the effect estimate for between-session habituation.
+
+---
+
+**Domain-Level Risk-of-Bias Judgement for Domain 1: Some concerns**
+
+**Justification:** Although allocation concealment appears reasonably robust (1.2 = Probably yes) and baseline imbalances do not suggest a substantive problem with randomization (1.3 = No), the complete absence of information regarding how the randomization sequence itself was generated (1.1 = No information) prevents a "Low risk" judgment. Per the RoB 2 algorithm, a domain can only be rated "Low risk" if there is sufficient evidence that the sequence was both randomly generated **and** concealed. Since 1.1 lacks sufficient detail to confirm proper random sequence generation, the domain is elevated to "Some concerns" rather than "Low risk."
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+**Domain 2: Risk of bias due to deviations from the intended interventions**
+
+**Note on effect of interest:** Given that this trial involves a **single-dose intervention** (one capsule of DCS or placebo administered once prior to the first exposure session), the concept of "adherence" (e.g., partial compliance, crossover, discontinuation) is not applicable in the way it would be for a sustained treatment regimen. Therefore, I will assess this domain based on the **effect of assignment to intervention**, which is the appropriate and standard framework for a single-administration pharmacological trial.
+
+---
+
+**2.1. Were participants aware of their assigned intervention during the trial?**
+
+- **Response: Probably no**
+- **Reason:** The article explicitly states, "Adequacy of the blind was assessed by having both participants and experimenters guess treatment assignment based on Visit 1 of the study; neither participants nor experimenters were able to discern assignment (ps > .15)." This indicates that participants could not reliably distinguish between DCS and placebo, supporting successful blinding. Additionally, only one participant (in the placebo group) reported a side effect (head tingling), and this was not reported by anyone in the DCS group, so there is no evidence that side effects broke the blind in a way that would differentially reveal assignment.
+
+**2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?**
+
+- **Response: Probably no**
+- **Reason:** The same blinding check applied to experimenters ("experimenters guess treatment assignment... were not able to discern assignment, ps > .15"), and capsules were described as "identical-appearing," with assignment handled by "a data manager who had no interaction with participants." This supports that the people delivering/administering the intervention (i.e., the experimenters conducting the exposure) were also successfully blinded.
+
+**2.3. If yes/probably yes to 2.1 or 2.2: Were there deviations from the intended intervention that arose because of the trial context?**
+
+- **Response: Not applicable / No information**
+- **Reason:** Since 2.1 and 2.2 were answered "Probably no" (blinding was successful), this question is not triggered under the RoB 2 algorithm. There is no reported evidence of trial-context-driven deviations (e.g., participants seeking additional treatment due to disappointment over allocation).
+
+**2.4. If yes/probably yes to 2.3: Were these deviations likely to have affected the outcome?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, as 2.3 was not answered "Yes/Probably yes."
+
+**2.5. If yes/probably yes to 2.4: Were these deviations from intended intervention balanced between groups?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, as prior questions did not indicate deviations.
+
+**2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?**
+
+- **Response: Yes**
+- **Reason:** The article states, "Only those participants completing Visit 2 are analyzed because the intent is to assess the sensitivity of the clinical assay... It is also unclear what the meaning of an intent to treat analysis would be when no participants who dropped out provided any ratings after receiving any amount of treatment." This is a modified ITT-type analysis (excluding participants with entirely missing outcome data, 4/34, evenly split 2 DCS/2 placebo), which is considered appropriate per RoB 2 guidance for estimating the effect of assignment to intervention. There is no evidence of per-protocol or as-treated analysis, and no eligible participants were excluded post-randomization for reasons related to intervention.
+
+**2.7. If no/probably no to 2.6: Was there potential for a substantial impact of the failure to analyze participants in the group to which they were randomized?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, as 2.6 was answered "Yes."
+
+---
+
+**Domain-Level Risk-of-Bias Judgement for Domain 2 (Effect of Assignment to Intervention): Low**
+
+**Justification:** Blinding of both participants and those delivering the intervention was explicitly tested and confirmed to be successful (non-significant guess accuracy, ps > .15), and the single-dose nature of the intervention minimizes the possibility of adherence-related deviations or trial-context-driven behavioral changes. The analysis approach (excluding only those with fully missing outcome data, balanced 2/2 across groups) is appropriate for estimating the effect of assignment to intervention. No deviations from intended intervention were reported. Based on the information provided, this domain is judged as **Low risk of bias**.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+**Domain 3: Risk of bias due to missing outcome data**
+
+**3.1. Were data for this outcome available for all, or nearly all, participants randomized?**
+
+- **Response: Probably no**
+- **Reason:** Of the 34 participants randomized (18 DCS, 16 placebo), 4 participants (2 DCS, 2 placebo) did not return for Visit 2 and were excluded from all analyses, leaving 30/34 (88.2%) with outcome data. This falls below the ~95% threshold often considered sufficient for continuous outcomes. For the dichotomous "between-session habituation" outcome (categorical response defined as ≥5-point SUDS drop), given the relatively small overall sample size (N=30 analyzed) and a meaningful observed group difference (75% vs. 36%), the missing data from 4 participants (2 per group) could plausibly have made some difference to the estimated effect if their outcomes had differed systematically from those retained.
+
+**3.2. If No/probably no to 3.1: Is there evidence that the result was not biased by missing outcome data?**
+
+- **Response: No**
+- **Reason:** The article states that only completers were analyzed and does not report any sensitivity analyses, imputation methods, or statistical corrections (e.g., inverse probability weighting) to account for the missing outcome data. The authors explicitly justify their choice to exclude non-completers ("It is also unclear what the meaning of an intent to treat analysis would be when no participants who dropped out provided any ratings after receiving any amount of treatment"), but this is a rationale for their approach rather than evidence that the result is unbiased by the missingness.
+
+**3.3. If No/probably no to 3.2: Could missingness in the outcome depend on its true value?**
+
+- **Response: Probably yes**
+- **Reason:** The reasons for missingness were: 2 participants became unreachable ("change in or loss of phone number": 1 DCS, 1 placebo) and 2 participants "stated that they preferred not to continue in the study" (1 DCS, 1 placebo). While loss of phone number seems unrelated to outcome, the reason "preferred not to continue" is plausible to be related to the participant's underlying anxiety/distress level (e.g., high residual anxiety or aversion to repeating a distressing speech task could drive both non-completion and poor outcome, or conversely low motivation to return after limited benefit). Because this reason is ambiguous and could plausibly relate to the true value of the outcome (level of habituation/distress), we cannot rule out a dependency.
+
+**3.4. If Yes/probably yes to 3.3: Is it likely that missingness in the outcome depended on its true value?**
+
+- **Response: No**
+- **Reason:** Critically, the missing data were **evenly balanced across groups** (1 DCS/1 placebo for each of the two reasons: unreachable and preferred not to continue), meaning there was no differential attrition between the DCS and placebo arms. The reported reasons (loss of phone number, general preference to discontinue) are generic and do not differ between intervention groups, nor do they specifically suggest that dropouts were concentrated among participants with poor treatment response in one arm versus the other. There is no indication in the article that dropout was tied to specific anxiety severity or treatment failure in a way that would differentially bias the group comparison. Given the balance and non-specific nature of the reasons, it is not likely that missingness meaningfully depended on the true outcome value in a way that would bias the between-group effect estimate.
+
+---
+
+**Domain-Level Risk-of-Bias Judgement for Domain 3: Some concerns**
+
+**Justification:** Although the overall proportion of missing data (11.8%) is relatively modest and balanced evenly between groups (2 dropouts per arm, with matched reasons), the authors did not employ any formal statistical method (e.g., imputation, sensitivity analysis) to demonstrate that the result was robust to this missingness (3.2 = No). Because one of the two reported reasons for dropout ("preferred not to continue") could plausibly be related to the participant's underlying anxiety/outcome status (3.3 = Probably yes), some uncertainty is introduced. However, since the missingness was balanced across groups and reasons were not differentially reported by arm (3.4 = No), the risk does not rise to "High." Per the RoB 2 algorithm, this pattern of responses (3.1 = Probably no → 3.2 = No → 3.3 = Probably yes → 3.4 = No) maps to a domain-level judgment of **Some concerns**.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+**Domain 4: Risk of bias in measurement of the outcome**
+
+**4.1. Was the method of measuring the outcome inappropriate?**
+
+- **Response: No**
+- **Reason:** The outcome (between-session habituation) was measured using the Subjective Units of Distress Scale (SUDS), described in the article as "a standard scale in behavioral research [25] that is typically used to estimate degree of between-session change." The scale ranges from 0–100 and was assessed at multiple time points (2 minutes before, immediately before, every 2 minutes during, and at the end of the speaking task), with reported "excellent internal consistency" (Cronbach's αs > .85). This is a well-established, validated method commonly used in exposure-based anxiety research and is appropriately sensitive to detect change in subjective distress across sessions. There is no indication that this method is insensitive to plausible intervention effects or has poor validity.
+
+**4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?**
+
+- **Response: No**
+- **Reason:** The SUDS was administered identically across both groups, at the same time points, using the same protocol during both Visit 1 and Visit 2 speech exposures ("The SUDS was assessed two minutes prior to the speaking task, immediately before the speaking task, every two minutes during the speaking task, and at the end of the speaking task"). There is no evidence that DCS and placebo groups underwent different measurement procedures, schedules, or thresholds. The standardized exposure protocol (tailored to produce a peak SUDS of 75 for all participants) further supports comparable ascertainment conditions across groups.
+
+**4.3. If No/probably no to 4.1 and 4.2: Were outcome assessors aware of the intervention received by study participants?**
+
+- **Response: No**
+- **Reason:** For this outcome, since SUDS is a participant-reported measure, the "outcome assessor" is the participant themselves (per RoB 2 guidance: "For participant-reported outcomes, the outcome assessor is the study participant"). The article explicitly reports that blinding was checked and successful: "Adequacy of the blind was assessed by having both participants and experimenters guess treatment assignment based on Visit 1 of the study; neither participants nor experimenters were able to discern assignment (ps > .15)." This indicates participants were not aware of their assigned intervention, supporting a judgment of "No" for this item.
+
+**4.4. If yes/probably yes to 4.3: Could assessment of the outcome have been influenced by knowledge of intervention received?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, as 4.3 was answered "No" (participants/assessors were blinded).
+
+**4.5. If yes/probably yes to 4.4: Is it likely that assessment of the outcome was influenced by knowledge of intervention received?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, as prior questions indicate successful blinding.
+
+---
+
+**Domain-Level Risk-of-Bias Judgement for Domain 4: Low**
+
+**Justification:** The outcome measurement method (SUDS) is a well-validated, standard instrument appropriate for detecting the intervention effect of interest, and it was administered identically across both groups using a standardized protocol. Critically, the empirically tested and confirmed blinding of participants (who serve as the outcome assessors for this self-reported measure) rules out the possibility that knowledge of treatment assignment influenced outcome reporting. Based on these responses (4.1 = No, 4.2 = No, 4.3 = No), this domain is judged as **Low risk of bias**.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+**Domain 5: Risk of bias in selection of the reported result**
+
+**5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?**
+
+- **Response: No information**
+- **Reason:** The article does not mention a trial registration number (e.g., ClinicalTrials.gov), nor does it reference a pre-specified analysis plan or protocol. There is no statement indicating that the analysis plan for the "between-session habituation" outcome (categorical response defined as ≥5-point SUDS decrease) was finalized prior to unblinded data being available. Without any reference to a registered protocol or pre-specified statistical analysis plan, this must be judged as "No information."
+
+**5.2. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements within the outcome domain?**
+
+- **Response: Probably no**
+- **Reason:** The article defines and reports outcome measurement transparently: "Subjective anxiety was assessed both in terms of categorical response and overall change. Categorical response was defined as a drop of at least 5 points in average SUDS across the exposure across visits. Overall change was assessed using the average SUDS across the exposure." Both the categorical outcome (chi-square, p=.030) and the continuous outcome (ANCOVA follow-up on SUDS, p=.14, non-significant) were fully reported in the Results section, including the non-significant finding. This transparency—reporting both a significant and a non-significant result within the same outcome domain—suggests there is no evidence of selective reporting based on favorable results for this specific outcome domain.
+
+**5.3. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?**
+
+- **Response: Probably no**
+- **Reason:** The categorical response result (chi-square test) is a single, clearly pre-defined and reported analysis with only one plausible analytic approach (chi-square for a binary outcome). There is no indication that alternative statistical approaches were tried and discarded before arriving at the reported chi-square result. Additionally, the authors report multiple supplementary/robustness analyses transparently (e.g., "including medication or antidepressant use as an additional factor," "including age as a covariate," "including participant and experimenter guess...as covariates"), stating that "None of the following additional or alternative analyses altered the large effect seen for DCS by group." This suggests a transparent reporting approach rather than selective analysis reporting.
+
+---
+
+**Domain-Level Risk-of-Bias Judgement for Domain 5: Some concerns**
+
+**Justification:** Although there is no direct evidence of selective outcome or analysis reporting (5.2 = Probably no, 5.3 = Probably no)—supported by the transparent reporting of both significant and non-significant results, as well as multiple sensitivity analyses—the complete absence of a pre-specified, registered analysis plan or trial protocol (5.1 = No information) prevents a judgment of "Low risk." Per the RoB 2 algorithm, without documented evidence of pre-registration, it is not possible to fully rule out the possibility that outcome or analysis choices could have been influenced by knowledge of results. Therefore, this domain is judged as **Some concerns**.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+**Overall Predicted Direction of Bias: Unpredictable**
+
+**Reason:** Across the five domains, the identified concerns do not point toward a consistent, systematic mechanism that would clearly inflate or deflate the observed effect in a specific direction:
+- Domain 1 (randomization): Lack of detail on sequence generation is a reporting gap, not evidence of a specific directional bias.
+- Domain 3 (missing data): Dropouts were balanced (2 DCS/2 placebo) with non-specific reasons, making a systematic direction of bias implausible.
+- Domain 5 (selective reporting): No registered protocol was found, but the authors transparently reported both significant and non-significant results, reducing the likelihood of directional selective reporting.
+
+Given that no domain provides clear mechanistic evidence for how the result would be pushed toward the null, away from the null, or toward either treatment arm, the direction of any residual bias cannot be reliably predicted from the information provided in the article.
+
+---
+
+## **Overall Risk-of-Bias Judgement: Some concerns**
+
+**Justification:**
+
+Summary of domain-level judgments for the outcome **between-session habituation**:
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions | Low |
+| 3. Missing outcome data | Some concerns |
+| 4. Measurement of the outcome | Low |
+| 5. Selection of the reported result | Some concerns |
+
+Per the RoB 2 algorithm:
+- **No domain was judged "High risk,"** which rules out an overall "High risk" judgement based on a single dominant flaw.
+- **Three domains (1, 3, and 5) were judged "Some concerns,"** each stemming primarily from **incomplete reporting** (e.g., no description of random sequence generation, no pre-registered analysis plan) rather than from clear, demonstrated methodological flaws or evidence of actual bias (e.g., no evidence of improper concealment, no evidence of outcome-dependent missingness, no evidence of selective outcome reporting given transparent presentation of both significant and non-significant findings).
+- Since multiple domains raised "Some concerns" but none reached the threshold of "High" (i.e., there was no clear, substantial flaw that would seriously undermine confidence in the result, such as unconcealed allocation, differential/high attrition tied to outcome, unblinded outcome assessment, or clear selective reporting), the cumulative concerns do not warrant escalation to "High risk."
+
+Therefore, the overall risk-of-bias judgement for the outcome **between-session habituation** is **Some concerns**, reflecting a study with a reasonably rigorous design (particularly strong blinding and appropriate outcome measurement) but with insufficient methodological reporting detail (e.g., lack of randomization sequence description and absence of a pre-registered protocol) to rule out risk of bias with full confidence.
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Final Risk-of-Bias Assessment (RoB 2): Between-Session Habituation
+
+After re-evaluating all signaling questions and domain-level judgments against the article's reported information, I confirm my assessments below. Each judgment is based strictly on explicit statements in the article, with no positive speculation where information was absent.
+
+## Domain 1: Bias arising from the randomization process
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 1.1 Was the allocation sequence random? | No information | Only stated "randomly assigned"; no method (e.g., computer-generated, random number table) described |
+| 1.2 Was the allocation sequence concealed? | Probably yes | Assigned by "a data manager who had no interaction with participants"; capsules "identical-appearing" |
+| 1.3 Did baseline differences suggest randomization problems? | No | Only age differed (p=.019); tested as covariate, "could not" explain effects; single imbalance among many variables compatible with chance |
+| **Domain 1 Judgement** | **Some concerns** | Driven by lack of detail on sequence generation |
+
+## Domain 2: Bias due to deviations from intended interventions (Effect of Assignment to Intervention)
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 2.1 Were participants aware of assigned intervention? | Probably no | Blind check: "neither participants nor experimenters were able to discern assignment (ps > .15)" |
+| 2.2 Were carers/deliverers aware of assigned intervention? | Probably no | Same blinding check applied to experimenters |
+| 2.3 Deviations due to trial context? | NA | Not triggered (2.1/2.2 = Probably no) |
+| 2.4 Deviations affected outcome? | NA | Not triggered |
+| 2.5 Deviations balanced between groups? | NA | Not triggered |
+| 2.6 Appropriate analysis used? | Yes | Modified ITT; only 4/34 excluded (fully missing data), balanced 2 DCS/2 placebo |
+| 2.7 Potential for substantial impact of misanalysis? | NA | Not triggered (2.6 = Yes) |
+| **Domain 2 Judgement** | **Low** | Successful blinding + appropriate analysis for single-dose intervention |
+
+## Domain 3: Bias due to missing outcome data
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 3.1 Data available for all/nearly all randomized? | Probably no | 30/34 (88.2%) analyzed; below ~95% threshold, small N |
+| 3.2 Evidence result not biased by missing data? | No | No sensitivity analysis or imputation correction reported |
+| 3.3 Could missingness depend on true value? | Probably yes | "Preferred not to continue" (1 DCS/1 placebo) plausibly related to distress/outcome |
+| 3.4 Likely missingness depended on true value? | No | Reasons balanced across groups (1:1 for both reasons); no differential attrition pattern |
+| **Domain 3 Judgement** | **Some concerns** | Balanced but unaccounted-for missingness |
+
+## Domain 4: Bias in measurement of the outcome
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 4.1 Was measurement method inappropriate? | No | SUDS is "a standard scale in behavioral research," α > .85 |
+| 4.2 Could measurement differ between groups? | No | Identical protocol/timing across groups and visits |
+| 4.3 Were outcome assessors aware of intervention? | No | Participant-reported outcome; blinding confirmed (ps > .15) |
+| 4.4 Could assessment be influenced by knowledge? | NA | Not triggered |
+| 4.5 Likely influenced by knowledge? | NA | Not triggered |
+| **Domain 4 Judgement** | **Low** | Validated measure + confirmed blinding |
+
+## Domain 5: Bias in selection of the reported result
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 5.1 Analyzed per pre-specified plan finalized before unblinded data available? | No information | No protocol, registration number, or SAP mentioned |
+| 5.2 Result selected from multiple eligible outcome measurements? | Probably no | Both categorical (p=.030) and continuous (p=.14, ns) results transparently reported |
+| 5.3 Result selected from multiple eligible analyses? | Probably no | Single pre-defined chi-square test; multiple sensitivity analyses reported transparently, all consistent |
+| **Domain 5 Judgement** | **Some concerns** | Absence of pre-registration despite otherwise transparent reporting |
+
+---
+
+## SUMMARY TABLE
+
+| Domain | Risk-of-Bias Judgement |
+|---|---|
+| 1. Randomization process | **Some concerns** |
+| 2. Deviations from intended interventions | **Low** |
+| 3. Missing outcome data | **Some concerns** |
+| 4. Measurement of the outcome | **Low** |
+| 5. Selection of the reported result | **Some concerns** |
+| **Predicted Direction of Bias** | **Unpredictable** |
+| **OVERALL RISK-OF-BIAS JUDGEMENT** | **Some concerns** |
+
+---
+
+### Final Justification
+
+No domain reached "High risk"—all identified concerns stem from **incomplete methodological reporting** (undisclosed randomization sequence generation, absence of a registered protocol/SAP) rather than from **demonstrated methodological flaws** (e.g., there is no evidence of unconcealed allocation, unblinded assessment, differential attrition, or results-driven selective reporting; on the contrary, blinding was empirically verified and both significant and non-significant findings were transparently reported). Given that three domains show "Some concerns" driven primarily by reporting gaps rather than substantive bias mechanisms, and no single domain independently undermines confidence in the result, the overall judgement remains **Some concerns** rather than escalating to "High risk."

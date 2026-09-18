@@ -1,0 +1,34 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 23963128
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+## Endpoint: Effects of supervision on patient care, measured by team checklist score
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+
+Justification: The manuscript states residents "were randomized to one of three levels of supervision" but provides no details on the randomization method (e.g., computer-generated sequence, random number table), no description of allocation concealment mechanism, and no information on who generated the allocation sequence versus who enrolled participants. Baseline characteristics in Table 1 show some imbalances (e.g., simulation experience: median 3 sessions in distant group vs 1.5 in direct/immediately available groups; ICU experience also slightly imbalanced) that raise questions about whether randomization was adequately concealed and implemented. By the nature of the intervention (physical proximity of supervisor), blinding of participants and supervisors to allocated group was impossible, but this is inherent to the intervention rather than a flaw in the randomization process itself. However, the lack of reported allocation concealment procedure is the key concern here.
+
+**2. Risk of bias due to deviations from the intended interventions: Some concerns**
+
+Justification: There were documented deviations from assigned supervision protocols. In the "immediately available" arm, some residents never called their supervisor while others received bedside assistance in a manner similar to direct supervision. In the "distant" arm, all residents eventually called their supervisor, but timing varied enormously (from immediately to only after completing their management plan), suggesting substantial heterogeneity in the actual level of supervision received rather than the intended fixed separation between groups. This within-group variability in the "immediately available" and "distant" arms means the actual received intervention deviated from the assigned intervention for some participants. There is no clear indication of an appropriate analytical approach (e.g., per-protocol vs intention-to-treat) to account for this variation, which could bias the estimate of the effect of supervision on the team checklist score.
+
+**3. Risk of bias due to missing outcome data: Low risk**
+
+Justification: All 53 randomized residents appear to have completed both scenarios, and Table 2 reports team checklist scores for the full sample in each group (18 direct, 16 immediately available, 19 distant), consistent with the original allocation numbers. There is no mention of dropouts, exclusions, or missing data for this specific outcome. The checklist score was derived from video review by independent raters with a clear process to resolve discrepancies (via third rater), suggesting complete data capture for this outcome.
+
+**4. Risk of bias in measurement of the outcome: Some concerns**
+
+Justification: The team checklist score is an objective, third-party assessed measure (not participant-reported), scored from video review by independent raters, which reduces concern related to participant-reported subjective outcomes. However, several issues raise concern: (a) The checklist itself is non-validated—the authors themselves acknowledge in the Discussion that "we recognize the limitations associated with the use of a nonvalidated assessment tool" and that construct validity was not assessed; (b) the raters, while independent, were not described as blinded to the level of supervision—given that supervisors were physically present in the room for "direct" supervision and this would be visually obvious on video, true blinding of the outcome assessors to group allocation was not feasible for this outcome, and it is unclear whether raters were explicitly blinded to hypothesis or study aims; (c) discrepancies were resolved by a third assessor also presumably viewing the same video (with visible level of supervision), which does not mitigate the fundamental lack of blinding possible for this outcome. Given the checklist is inherently linked to observable supervisor presence, detection bias cannot be excluded despite reasonable inter-rater methodology.
+
+**5. Risk of bias in selection of the reported result: Low risk**
+
+Justification: The team checklist score is one of three pre-specified outcomes for patient care during supervised scenarios (team checklist score, time to stabilization, definitive management), as explicitly outlined in the Methods section under "Patient Care During Supervised Scenarios." All three pre-specified outcomes are reported in the Results and Table 2, regardless of significance (checklist score significant, other two non-significant), suggesting no selective reporting for this particular endpoint. The statistical analysis plan (one-way ANOVA) was pre-specified in the Methods and matches what is reported in Results. No trial registration or protocol was cited/available to cross-check further, which limits certainty, but internal consistency between Methods and Results is reassuring.
+
+---
+
+## 6. Overall Rating: **Some concerns**
+
+Justification: While missing outcome data and selective reporting show low risk, there are legitimate "some concerns" in three domains: (1) randomization process lacks detail on allocation concealment and shows some baseline imbalance, (2) documented deviations from intended supervision protocols (especially in the "immediately available" and "distant" arms) introduce heterogeneity not accounted for analytically, and (4) the outcome assessment, while performed by independent raters, could not be meaningfully blinded to the study's key variable (physical presence of supervisor) and relies on a non-validated instrument. These concerns, particularly numbers 1, 2, and 4 in combination, are not judged severe enough individually to constitute "high risk," but collectively they meaningfully reduce confidence in the robustness of the causal inference for this specific outcome. This warrants an overall rating of "some concerns" rather than "low risk."

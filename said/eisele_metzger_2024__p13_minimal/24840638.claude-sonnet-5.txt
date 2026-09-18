@@ -1,0 +1,34 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 24840638
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Percentile vs. Fixed Criterion Schedules Study
+## Outcome: Smoking abstinence by breath CO sample < 3 ppm (first abstinent sample)
+
+**1. Risk of bias arising from the randomization process: SOME CONCERNS**
+
+Justification: Participants were assigned using a fixed block procedure — "2 to percentile, 2 to fixed criterion, and 1 to random incentives from each group of 5 participants completing intake," further stratified by medication intent and order of study entry. This is a permuted block design of a small, constant block size (5), which is inherently predictable — research staff enrolling/measuring participants could anticipate the next allocation, particularly for the final participant in each block. There is no description of an allocation concealment mechanism (e.g., sequentially numbered opaque envelopes, central randomization) to prevent foreknowledge of assignment. Additionally, this is an unblinded behavioral CM trial, so the intervention allocation was known to both participants and staff immediately upon assignment. Table 1 shows a significant baseline imbalance between groups in vocational/technical education attainment (χ²=8.46, p<0.01), raising some question about whether the randomization safeguarded comparability, though this could be a chance finding given the number of comparisons made. Collectively, the predictable block structure and lack of stated concealment procedure justify "some concerns."
+
+**2. Risk of bias due to deviations from the intended interventions: SOME CONCERNS**
+
+Justification: This is an open-label behavioral intervention; by design, participants and staff were aware of group assignment, and this is unavoidable given the nature of the manipulation (this alone does not constitute a "deviation"). However, the manuscript notes no formalized check of whether participants understood their assigned contingency ("we did not include any systematic way of measuring whether or not participants fully comprehended the incentive contingency"), raising the possibility that intervention delivery/receipt was inconsistent across arms in a way that was not assessed. The primary abstinence-initiation outcome (proportion delivering ≥1 CO<3ppm sample) appears to have been analyzed on all randomized participants (36/40/18, summing to 94), consistent with an intention-to-treat approach for this specific outcome, which is reassuring. However, subsequent analyses (time-to-first-abstinence, consecutive abstinent samples) restrict the sample to only "responders" (23/36, 25/40, 8/18) — a legitimate a priori conditional analysis, but this creates a quasi-per-protocol subset for secondary endpoints rather than affecting the primary endpoint under review here. For the specific outcome (any CO<3ppm sample), risk is moderate rather than high.
+
+**3. Risk of bias due to missing outcome data: SOME CONCERNS**
+
+Justification: Attendance (opportunities to provide a breath sample) differed significantly between groups (average samples delivered out of 60: 42, 40, and 52 for percentile, fixed criterion, and random groups; H=8.57, p<0.02). Differential visit non-attendance directly affects the opportunity to ever achieve a CO<3ppm sample, and no imputation or sensitivity analysis addressing missing visits is reported. While the study attempted to have participants attend daily, no clear accounting is given for reasons for absence or how these were distributed by prognosis (e.g., dropout due to relapse vs. logistical reasons). This differential and unexplained pattern of missingness, without imputation or explicit handling, raises some concern that missing visits may not be missing completely at random and could bias comparisons of the primary abstinence-initiation measure.
+
+**4. Risk of bias in measurement of the outcome (breath CO < 3ppm): LOW RISK**
+
+Justification: The outcome (breath CO < 3 ppm) is an objective, biochemically verified measure using a calibrated device (Vitalograph CO monitor) with a pre-specified, previously validated cutoff (Javors et al., 2005). Because this is an objective physiological measurement rather than a participant-reported outcome, the absence of blinding of participants/staff to allocation is unlikely to distort the measurement itself (unlike a self-reported outcome such as craving or satisfaction). There is no indication that CO assessment procedures differed by group, or that assessors had discretion in interpreting results. Risk of measurement bias for this specific endpoint is therefore low, notwithstanding the unblinded trial design.
+
+**5. Risk of bias in selection of the reported result: SOME CONCERNS**
+
+Justification: No trial registration number, registered protocol, or pre-specified statistical analysis plan is cited in the manuscript. Multiple outcomes and subgroup/covariate analyses (sex as covariate, several secondary metrics: time-to-first-abstinence, total criterion samples, earnings, consecutive abstinence) are presented without clear indication of which were pre-specified as primary versus exploratory. The primary abstinence-initiation outcome corresponds reasonably well to the study's stated hypothesis, but the absence of a public protocol or registry entry (e.g., ClinicalTrials.gov) makes it impossible to confirm that the reported outcome and analysis approach (Kruskal-Wallis/Mann-Whitney nonparametric tests, chosen post hoc rationale "because data were not assumed normally distributed") were specified prior to data inspection, rather than selected based on the results obtained. This lack of verifiable pre-registration is sufficient to raise "some concerns."
+
+---
+
+## 6. Overall Rating: **HIGH RISK**
+
+Justification: While the measurement of the specific outcome (CO<3ppm) itself is low risk due to its objective biochemical nature, there are "some concerns" flagged in four separate domains (randomization process, deviations from intended intervention, missing outcome data, and selection of the reported result). Per the stated rules, when there are "some concerns" for multiple domains in a way that substantially lowers confidence in the result — here, the combination of a predictable block-randomization scheme without described concealment, differential attendance/missing data between arms, unverified pre-specification of the analysis plan, and lack of a registered protocol — the cumulative effect elevates the overall judgment to **high risk** of bias for this outcome.

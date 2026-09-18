@@ -1,0 +1,81 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 28840525
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias 2.0 Assessment: Laparoscopic Sleeve Gastrectomy vs Banded Roux-en-Y Gastric Bypass Trial
+**Outcome assessed:** T2D remission using four different HbA1c thresholds (≤38, <42, <48, <53 mmol/mol) without diabetes medication at 1 year
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- *Sequence generation:* "Randomisation was by computer-generated random number codes managed by an independent study member, and included minimization based on age... body mass index... time since diagnosis of T2D... insulin treatment... and ethnicity." This constitutes a random sequence with an appropriate random component (minimization).
+- *Allocation concealment:* Codes were managed by an independent study member, and allocation was "disclosed after anaesthesia induction" — i.e., after irreversible enrolment and induction of anaesthesia, which is a robust concealment mechanism preventing foreknowledge by recruiters/participants.
+- *Baseline imbalance:* Table 1 shows generally similar baseline characteristics (age, HbA1c, BMI, duration of diabetes, insulin use, ethnicity) between groups, consistent with successful randomization. Minor differences (e.g., sex distribution, baseline anxiety scores) are compatible with chance given the minimization variables did not include sex, and no imbalance is extreme enough (e.g., p<0.001) to suggest a randomization process failure.
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial was explicitly double-blind: "double-blind (patient and assessor)... All patients provided written informed consent." Patients were blinded to which operation they received (identical port placements, blinded methylene blue leak test procedure for both groups), minimizing risk that trial-context-driven behaviour (e.g., differential care-seeking) differed by assignment.
+- Although surgeons/operating personnel could not be blinded (as is unavoidable in surgical trials), post-operative medication management — the key modifiable co-intervention affecting the primary outcome (HbA1c/remission) — was explicitly protected from bias: "Metabolic medications were commenced post-operatively according to a standard medical review protocol, by endocrinologists blinded to treatment allocation." This directly addresses the main channel through which awareness of allocation could differentially affect the outcome (diabetes medication titration).
+- No evidence of non-protocol co-interventions or trial-context-driven deviations that were unbalanced between groups and likely to bias the HbA1c-based outcome.
+- Analysis: Outcome data were analysed according to group allocated (56 SR-LRYGB, 53 of 58 LSG, i.e., those with available 1-year data), consistent with a modified ITT approach appropriate for assessing the effect of assignment (exclusions due to missing data are addressed in the missing-data domain rather than here). No naïve per-protocol or as-treated analysis was substituted for the primary comparison.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- Outcome data were available for 56/56 (100%) SR-LRYGB participants but only 53/58 (91%) LSG participants — "Loss to follow-up of 5 participants occurred from the LSG group due to failure to make contact and/or to attend appointments beyond 3 months post-operatively." This represents a difference in missingness between intervention arms (0% vs ~9%), which is a signal for potential bias per RoB2 guidance (section 6.1.4.1).
+- No sensitivity analyses (e.g., worst-case/best-case imputation) were reported to demonstrate that the result is robust to plausible values of the missing outcomes.
+- However, the stated reasons ("failure to make contact and/or to attend appointments") do not obviously relate to the participants' true glycaemic outcome (i.e., there is no indication that non-attendance was driven by poor or good glycaemic control), and the absolute number missing (5/114, ~4.4%) is modest relative to the large effect sizes and event proportions observed (e.g., 70–80% achieving remission thresholds), making it unlikely — though not certain — that this could materially change the conclusions.
+- Because missingness differed between arms and no analysis was provided demonstrating the result is not biased by missing data, but there is no strong or specific reason to believe missingness depended on outcome values, this is judged as "Some concerns" rather than "High risk."
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The outcome (HbA1c) was measured using standard laboratory assay — an objective, appropriate method for classifying glycaemic remission that does not involve subjective judgement (an "observer-reported outcome not involving judgement" per RoB2 categorisation, analogous to a biochemical test).
+- Measurement method did not differ between groups: "All clinical data were extracted by medical records review," using the same laboratory assay and thresholds for both arms.
+- The determination of "remission" additionally required confirmation of absence of glucose-lowering therapy; medication decisions were made by "endocrinologists blinded to treatment allocation," minimizing potential for differential, allocation-influenced changes to medication status (which could otherwise indirectly bias remission classification).
+- Given the objective nature of the HbA1c assay and blinding of both patients and the endocrinologists managing medication, knowledge of allocation is very unlikely to have influenced the outcome measurement or classification.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial registry (ACTRN12611000751976, prospectively registered; NCT01486680) and the previously published trial protocol (Murphy et al., BMJ Open 2016) pre-specified assessment of "Remission of type 2 diabetes mellitus/glycaemic control" as the primary outcome domain.
+- The published protocol explicitly pre-specified use of the four HbA1c thresholds reported in this paper: "We report here the 1 year outcomes of the proportions achieving HbA1c thresholds ≤38 mmol/mol (5.6%), <42 mmol/mol (6.0%), <48 mmol/mol (6.5%), or <53 mmol/mol (7.0%) without the need for any glucose lowering therapy, in order to allow direct comparison with previous studies." All four pre-specified thresholds are fully reported in Table 2, with no indication that other thresholds or timepoints were measured but omitted.
+- There is no evidence that the reported result was selected from multiple eligible outcome measurements or analyses based on the direction/significance of findings — the analysis approach (Fisher's exact test comparing proportions) is consistent, straightforward and applied uniformly across all four thresholds, including both statistically significant and non-significant comparisons (all four thresholds were non-significant, and all four are reported, consistent with full/faithful reporting rather than selective reporting).
+- Author acknowledges that the study's ultimate primary outcome (5-year HbA1c <42 mmol/mol) is not yet reported ("Further analysis of outcomes at 5 years is planned"), but this is a pre-specified longer-term outcome/timepoint, not evidence of selective non-reporting of the 1-year result being assessed here.
+
+---
+
+## Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Bias arising from randomization | Low risk |
+| 2. Bias due to deviations from intended intervention (assignment effect) | Low risk |
+| 3. Bias due to missing outcome data | Some concerns |
+| 4. Bias in measurement of the outcome | Low risk |
+| 5. Bias in selection of the reported result | Low risk |
+| **Overall risk of bias** | **Some concerns** (driven by Domain 3) |

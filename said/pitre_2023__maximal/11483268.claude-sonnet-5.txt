@@ -1,0 +1,82 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 11483268
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+
+**Study:** Randomised comparison of Avaxim™ and Vaqta™ as booster vaccines in subjects primed with Avaxim™
+**Outcome assessed:** Anti-HAV antibody GMT 1 month post-vaccination
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Sequence generation:** The article states subjects "were randomised" but provides no description of the method used to generate the allocation sequence (e.g., no mention of computer-generated randomization, random number tables, etc.). This warrants a response of "No information" to signalling question 1.1, though given this is a small, single-center, investigator-initiated trial without a stated randomization method, a "Probably yes" cannot be confidently assigned.
+- **Allocation concealment:** No information is provided regarding concealment of the allocation sequence prior to assignment. The study is described as "open," and while this pertains mainly to blinding after allocation, there is no description of a mechanism (e.g., central randomization, sequentially numbered sealed envelopes) to prevent foreknowledge of assignment. This is answered "No information."
+- **Baseline imbalance:** Baseline demographic characteristics (age, sex, height, weight; Table 1) were well balanced between groups. Pre-booster GMT differed numerically (496 vs. 325 mIU/mL) but this difference was not statistically significant (p=0.171) and is compatible with chance given randomization with small sample size (n=64 vs 63). This does not suggest a problem with the randomization process.
+
+Given no information on sequence generation or allocation concealment, but no evidence of baseline imbalance suggesting a randomization failure, this aligns with the "Some concerns" category per Table 4 of the RoB 2 guidance (row: NI on 1.1, NI on 1.2, N/PN on 1.3 → Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Awareness of intervention:** This was an explicitly "open study" ("This was a single centre, controlled, randomised, open study with two parallel groups"). Participants, carers, and personnel administering the vaccines were aware of the intervention assigned (different vaccines with different volumes: 0.5 mL vs 1.0 mL, and different reactogenicity profiles), so signalling questions 2.1 and 2.2 = Yes.
+- **Deviations arising from trial context:** There is no explicit evidence that non-protocol interventions or deviations occurred because of the open-label trial context that would have influenced antibody titres (an objective, laboratory-measured outcome not susceptible to participant/assessor behavioral influence in the same way subjective outcomes are). The authors themselves acknowledge: "This was an open study and was therefore a sub-optimal setting for comparing reactogenicity" — implying awareness that lack of blinding was more of an issue for the reactogenicity outcome than for the immunogenicity (GMT) outcome. However, no explicit statement confirms absence of deviations for the immunogenicity outcome, leading to "No information" for question 2.3.
+- **Appropriate analysis:** The authors describe both intention-to-treat (ITT) and per-protocol (PP) analyses: "Intention-to-treat and per-protocol analyses were performed... The results of both analyses were close enough to allow only the per-protocol results to be reported." Only the PP analysis is reported, which excludes 6 subjects (one who had previously received a hepatitis A booster, one who traveled to India, and four with missing serological results). This constitutes reporting of a per-protocol analysis rather than a full ITT analysis for the estimate under assessment — an inappropriate analysis choice for estimating the effect of assignment to intervention (signalling question 2.6 = No/Probably No). However, the authors state that ITT and PP results were "close enough," suggesting the potential impact of this analytical choice on the result was not substantial (2.7 = Probably No).
+
+Given lack of blinding (Yes to 2.1/2.2), no information on trial-context-related deviations (NI to 2.3), and use of a per-protocol analysis without substantial impact on the result (2.6 = No, 2.7 = No), the domain-level judgement is **Some concerns**.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- Of 127 randomised participants, immunogenicity data were available for 121 (59+62) participants in the per-protocol analysis, representing approximately 95% of randomised subjects. The reasons for exclusion were documented: "one subject had previously received a hepatitis A booster, one subject travelled to India between visits and four subjects did not have pre- and post-vaccination serological results available." Excluding the two ineligible/protocol-violation subjects, only 4 subjects (3.1%) had genuinely missing outcome data (no serological results).
+- The proportion of missing outcome data (4/127 ≈ 3%) is small enough that these outcomes, whatever their true values, are unlikely to have materially altered the GMT estimates, especially given the large and consistent effect sizes observed (>10-fold rises in GMT in both arms).
+- There is no indication that missingness in the outcome depended on its true value (e.g., no differential reasons for missing data between groups related to antibody response), and the number of missing participants was well balanced across arms (implied by n=59 vs n=62 from n=64 vs n=63 randomized).
+
+This satisfies the criterion "outcome data were available for all, or nearly all, randomized participants," supporting a judgement of **Low risk of bias**.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- **Appropriateness of method:** Anti-HAV antibody titres were measured using a validated, quantitative, laboratory-based assay: "The modified HAVAB™ assay was used to detect antibody (IgM and IgG) to hepatitis A virus... a standard curve was constructed using dilutions of a WHO standard serum immune globulin... Levels were measured down to 6 mIU/mL." This is an appropriate, objective, and sensitive method for measuring the outcome domain (signalling question 4.1 = No, not inappropriate).
+- **Comparability of measurement between groups:** All serological evaluations were performed centrally by the same laboratory ("Merck Research Laboratories, Pennsylvania, USA") using an identical method for both intervention groups (signalling question 4.2 = No, method did not differ between arms).
+- **Assessor blinding/awareness:** The outcome assessor here is a laboratory conducting an objective biochemical assay, not directly involved in administering interventions or interacting with participants regarding their assigned vaccine. This falls into the category of "observer-reported outcomes not involving judgement" (akin to an automated/quantitative laboratory test). Even though the study was open-label, there is no plausible mechanism by which knowledge of intervention assignment could have influenced the quantitative antibody titre result generated by a standard immunoassay performed by an independent laboratory (signalling questions 4.3/4.4/4.5 = Not applicable/No).
+
+Because the method was appropriate, was applied identically across groups, and outcome assessment (laboratory assay) could not plausibly be influenced by knowledge of intervention assignment, this domain is judged **Low risk of bias**.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- The trial registration record (referenced doc_id) was reviewed to compare pre-specified outcomes/analyses with those reported. The primary evaluation criterion, anti-HAV antibody GMT at 1 month post-vaccination, is explicitly stated in the Methods: "The primary evaluation criterion was the comparison of the anti-HAV antibody geometric mean titre (GMT) for both vaccines 1 month post-vaccination." This corresponds to the outcome being assessed, and it appears to have been reported as intended, with pre-specified sample size/power calculations tied to this specific analysis (non-inferiority margin of 4-fold difference, one-sided 2.5% significance, 99% power) — suggesting this outcome and analysis were planned prospectively.
+- However, there is a concern regarding selection between multiple eligible analyses: the study explicitly performed both ITT and per-protocol analyses, but only reported the per-protocol results: "The results of both analyses were close enough to allow only the per-protocol results to be reported." While the authors' rationale for this choice is provided (similarity of results) rather than being clearly based on favorable findings, the actual ITT numerical results are never presented in the publication, precluding independent verification that selection between the two analyses was not influenced by the results. This creates ambiguity as to whether the reported result (PP) was selected, at least in part, on the basis of its favourability, and no statistical analysis plan (SAP) was available to confirm that per-protocol reporting (rather than ITT) was the pre-specified primary analysis approach finalized before unblinded data were available.
+- No evidence was found of selective reporting from multiple outcome measurements (e.g., alternative assays, time points, or scales) for the GMT outcome — a single, clearly pre-specified assay and single post-vaccination timepoint (1 month) were used consistently.
+
+Given the pre-specified nature of the primary outcome and analysis plan (supporting low risk for measurement selection) but incomplete transparency regarding the choice between ITT and PP analyses (with only one being fully reported and no way to verify this was pre-specified before unblinded data were available), the overall judgement for this domain is **Some concerns**.
+
+---
+
+# Overall Risk of Bias Judgement: **Some concerns**
+
+**Rationale:** No individual domain was judged to be at "High" risk of bias. However, "Some concerns" were identified in three domains (randomization process, deviations from intended intervention, and selective reporting). Per RoB 2.0 guidance (Table 1), a result with "Some concerns" in at least one domain, and not classified as "High" risk in any domain, should be judged overall as **"Some concerns."** The cumulative effect of missing information on randomization procedures, the open-label design combined with reliance on a per-protocol analysis (with ITT results undisclosed), and lack of clarity on pre-specification of the primary analysis approach are not judged severe enough individually or collectively to elevate the overall judgement to "High risk of bias," but they do lower confidence in the trustworthiness of the reported GMT result to some degree.

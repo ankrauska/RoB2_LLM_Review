@@ -1,0 +1,121 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 17377048
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Outcome assessed:** Agatston coronary artery calcium score, for the randomized comparison of scanner collimation protocols (group A: 64 × 0.6 mm; group B: 20 × 1.2 mm). The assessment addresses the effect of assignment to the intervention at baseline.
+
+### 1. Bias due to randomization: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The report states that “*patients were assigned to two groups at random, each with 20 patients*,” but it does not describe how the allocation sequence was generated. Thus, it is not possible to verify that a genuinely random sequence was used.
+
+More importantly, allocation concealment is not reported. There is no statement that randomization was centrally administered, computer-controlled, performed by an independent party, or implemented using appropriately prepared sequentially numbered opaque sealed envelopes. Consequently, it is unclear whether the forthcoming assignment could have been anticipated by enrolling personnel.
+
+Baseline information is limited. The authors state that “*the age between both groups was not significantly different*,” but do not provide a comprehensive baseline table by randomized group, including relevant clinical characteristics and baseline calcium burden. There is no evident major imbalance, but the available information is insufficient to exclude one.
+
+Therefore:
+- Random sequence: **no information**;
+- Allocation concealment: **no information**;
+- Baseline imbalances suggesting a problem: **probably no**, based on the limited age comparison, but insufficiently assessed.
+
+Under RoB 2, lack of information about allocation concealment, without clear evidence of baseline imbalance, leads to **some concerns** rather than high risk.
+
+---
+
+### 2. Deviations from intended intervention: **high risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**  
+Participants and CT personnel were probably aware of the assigned scanning protocol, because the interventions were different technical CT acquisition protocols: group A used “*64 × 0.6 mm*” collimation and group B used “*20 × 1.2 mm*” collimation. Blinding of personnel implementing scanner settings would not realistically have been possible, and participant blinding is not reported.
+
+There is no direct evidence that non-protocol cointerventions or scanning deviations arose specifically because of the trial context. The more important issue for the effect of assignment is the analysis population. Although 40 patients were randomized, the authors report:
+
+> “*Four patients had to be excluded from the study because no CAC was detected in any of the reconstructions.*”
+
+Thus, analysis of Agatston scores was restricted to 36 patients (18 per group), excluding 10% of randomized participants after randomization. These exclusions were based directly on the outcome—absence of detectable coronary calcium—and not on pre-randomization ineligibility. A zero Agatston score is a valid outcome value, rather than a reason for outcome data to be unavailable.
+
+The report does not present a full intention-to-treat analysis including all 40 randomized patients with zero scores assigned where no calcium was detected. Excluding participants on the basis of post-randomization outcome status is inappropriate for estimating the effect of assignment to the collimation protocol. Given that:
+- 4/40 randomized participants were excluded;
+- the exclusions were related directly to the outcome;
+- low and zero calcium scores are particularly relevant to the study’s stated concern with detecting small calcified lesions; and
+- the exclusions could affect group means, variability, and detection-related conclusions,
+
+there was potential for a substantial impact on the result.
+
+Accordingly, the domain is judged at **high risk of bias** because the reported Agatston-score analysis did not follow intention-to-treat principles.
+
+---
+
+### 3. Missing outcome data: **low risk of bias**
+
+**c. Judgement:** Low risk of bias.
+
+**d. Rationale:**  
+The study appears to have obtained CT data for all 40 randomized participants. The four excluded participants were not missing outcome measurements: the investigators explicitly determined that “*no CAC was detected in any of the reconstructions*.” This corresponds to an observed Agatston score of zero, rather than unavailable outcome data.
+
+The exclusion of those participants is a post-randomization analytic exclusion and is addressed under deviations from intended intervention, not as missing outcome data under RoB 2.
+
+For the remaining participants, the study reports reconstruction and calcium-scoring results across the prespecified reconstructions. There is no report of patients being lost to follow-up, failing to undergo scanning, having unusable scans, or missing Agatston-score measurements. Since this was an immediate imaging outcome evaluated during the CT examination, loss to follow-up was not an important issue.
+
+Therefore:
+- Outcome data were apparently available for all randomized participants;
+- there is no indication that missingness depended on the true Agatston score; and
+- no imputation or missing-data method was required.
+
+The risk of bias due to **missing outcome data** is therefore **low**. This judgement does not remove the concern arising from the inappropriate exclusion of observed zero-score participants.
+
+---
+
+### 4. Measurement of the outcome: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The method used to measure coronary calcium was generally appropriate. Agatston scoring was based on standardized CT criteria:
+
+> “*CAC was defined as the presence of more than two contiguous pixels with Hounsfield units greater than 130.*”
+
+Images were analyzed on a dedicated workstation, and calcified lesions were “*automatically identified and marked in color by the workstation*.” These features support use of an appropriate and objective measurement method.
+
+Measurement procedures also appear to have been applied similarly to both randomized groups: both groups underwent retrospectively ECG-gated 64-MDCT and used the same reconstructed slice thickness, field of view, matrix, scoring workstation, calcium definition, and reconstruction intervals. Thus, there is no clear evidence that the basic Agatston-scoring method differed between groups.
+
+However, the report states:
+
+> “*In a second step, a radiologist with 4 years of experience with coronary artery CT and a cardiologist with 11 years of experience with coronary artery CT differentiated between calcium and noise by placing regions of interest around the CAC.*”
+
+This component involves observer judgement. Blinding of these assessors to allocated collimation protocol, reconstruction increment, or reconstruction interval is not reported. Given the visible technical differences between image reconstructions, assessors may plausibly have known which reconstruction or protocol they were reviewing.
+
+Although Agatston scoring is relatively standardized and computer-assisted, the manual differentiation of calcium from noise and placement of regions of interest provide some opportunity for knowledge of reconstruction settings to affect measurement, especially for small or borderline calcified lesions—the specific setting in which the authors report that lesions were detected only with 1.5-mm increments.
+
+There is no evidence that assessors actually altered measurements in a direction favoring either randomized collimation group. Therefore, high risk is not justified, but the absence of reported assessor blinding and the manual component of scoring lead to **some concerns**.
+
+---
+
+### 5. Selective reporting: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The publication reports several Agatston-score results, including group-specific means for both reconstruction increments, coefficients of variation across the five diastolic reconstruction intervals, ranges, risk-category classifications, and selected findings concerning maximum scores at particular intervals. This is reasonably detailed reporting.
+
+However, there is no publicly available protocol, dated statistical analysis plan, or sufficiently detailed trial-registration information in the provided materials demonstrating that the reported Agatston-score analyses were specified before unblinded data were available. In particular, the study involved multiple potential outcome measurements and analyses:
+- five reconstruction intervals (50%, 55%, 60%, 65%, and 70% of the R–R interval);
+- two reconstruction increments (3.0 and 1.5 mm);
+- two scanner collimation groups;
+- several possible summaries, including mean score, range, coefficient of variation, maximum-score timing, lesion detection, and risk-stratum classification.
+
+The report does not clearly specify a single prespecified primary Agatston-score analysis. It is therefore not possible to determine whether the reported numerical results were selected from multiple eligible time points, reconstruction settings, or analytic approaches on the basis of their magnitude, direction, or statistical significance.
+
+There is also no direct evidence that the authors selectively reported a favorable Agatston-score result. The issue is principally the absence of a prospective analysis plan allowing this possibility to be excluded.
+
+Therefore:
+- Analysis according to a prospectively finalized analysis plan: **no information**;
+- Selection from multiple eligible Agatston outcome measurements: **no information**;
+- Selection from multiple eligible analyses: **no information**.
+
+This warrants **some concerns** for bias in selection of the reported result.

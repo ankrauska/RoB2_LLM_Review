@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21401585
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Sakzewski, 2011
+**Outcome Name**: quality of movement of the impaired upper limb by MUUL
+**registration number**: None
+
+Domain 1
+1.1 : Y (100%)
+The article states: "randomized to pairs using a computer generated list of random numbers".
+1.2 : Y (100%)
+The article states: "concealed envelopes opened by non-study personnel."
+1.3 : N (100%)
+The article states: "After matching and concealed random allocation within pairs, there were no differences between groups on demographic or baseline measures".
+Result of the domain (100%)
+Low risk
+The answer to question 1.2 is "Y", the answer to question 1.1 is "Y", and the answer to question 1.3 is "N".
+
+Domain 2
+2.1 : N (95%)
+The interventions are behavioral (CIMT and BIM) and by nature participants would be aware, but the trial is comparing two active interventions and neither side is considered a sham/placebo in a standard sense, wait, the rule says "If participants were aware of their allocation, the answer to this question is "Y"". So they are aware. Wait, the rule says "If participants were aware of their allocation, the answer to this question is 'Y'". But this is an open-label behavioral intervention where blinding participants is impossible. So 2.1 is Y. Let's check rule: "If the article states that this is a non blind or open label experiment, the answer to this question is "N";". The article states "The INCITE study is a single-blind, matched-pairs randomized clinical trial". Single-blind usually refers to outcome assessors. So participants are not blind. Thus 2.1 is "N".
+2.2 : N (95%)
+The rule says "If the article states that this is a non blind or open label experiment, the answer to this question is "N"". Providers are not blinded, so N.
+2.3 : Y (95%)
+The article states "At 3 and 26 weeks, there were no changes to pre-existing therapy for all children with the exception of one child (CIMT group) who received upper limb BoNT-A injections between the 3- and 26-week follow-ups." This is balanced/minimal.
+2.4 : N (100%)
+The article states: "Compliance was 100% for CIMT, and 97% with BIM training... There was one dropout...". Less than 10%.
+2.5 : N (100%)
+Compliance was 100% and 97%.
+2.6 : NI (100%)
+There is no mention of instrumental variable analyses or inverse probability weighting. It uses "intention-to-treat basis". The rule says: "If 2.6 is NI or Y, you need to double check if the analysis method of the article report is Intention to treat (ITT) analysis... If so, then 2.6 is N".
+Result of the domain (95%)
+Low risk
+The answer to question 2.1 is "N", 2.2 is "N", 2.4 is "N", and 2.5 is "N".
+
+Domain 3
+3.1 : Y (100%)
+The flow chart and text say 64 were randomized and 62 received intervention. 62/64 = 96.8%. 
+3.2 : Y (80%)
+Wait, the outcome is continuous, missing data is <5%. The answer to 3.1 is Y.
+3.3 : N (95%)
+The dropout was "because of pre-existing emotional and behavioural difficulties", unrelated to upper limb function.
+3.4 : N (100%)
+Only one dropout.
+Result of the domain (100%)
+Low risk
+The answer to question 3.1 is "Y".
+
+Domain 4
+4.1 : N (100%)
+The MUUL is a reliable and predefined measure.
+4.2 : N (100%)
+Both groups measured at the same time points (baseline, 3 and 26 weeks) using the same method.
+4.3 : N (100%)
+The article states: "The primary outcome measures were videotaped and scored in random order by trained occupational therapists masked to group allocation." Assessors were blinded.
+4.4 : N (100%)
+Assessors were blinded.
+4.5 : N (100%)
+No clear evidence.
+Result of the domain (100%)
+Low risk
+The answer to 4.1 is "N", 4.2 is "N", and 4.3 is "N".
+
+Domain 5
+5.1 : NI (100%)
+There is no registration number or published protocol mentioned.
+5.2 : N (100%)
+All results for MUUL are reported.
+5.3 : N (100%)
+Analyses were performed as intended.
+Result of the domain (100%)
+Some concerns
+The answer to 5.2 is N, 5.3 is N, and 5.1 is NI.
+
+Overall Bias Risk for the Article (100%)
+Some concerns
+One domain is "Some concerns" and the rest are "Low risk".

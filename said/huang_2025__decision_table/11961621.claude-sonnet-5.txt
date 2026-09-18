@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 11961621
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Schneider, 2000 (LAVH vs AH for uterus >200g)
+**Outcome Name**: Length of hospital stay
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (95% Certainty)
+Reason: The article explicitly states "Procedure type was assigned by a computer-generated randomization list."
+
+**1.2**: **Y** (90% Certainty)
+Reason: The article states "concealment of randomization was done by telephone inquiry," which describes a specific central allocation method.
+
+**1.3**: **N** (85% Certainty)
+Reason: The text explicitly states "The two groups were similar in terms of age, gravidity, parity, Quetelet Index, and preoperatively estimated uterine weight (Table 1)." Although there was a significant difference in surgeon experience/status (attending vs. resident, p<0.05), this pertains to intervention delivery rather than a baseline prognostic characteristic for the outcome of hospital stay.
+
+**Result of Domain 1**: **Low risk** (90% Certainty)
+Reason: 1.2 = Y, 1.1 = Y, 1.3 = N, which satisfies the criteria for low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **Y** (95% Certainty)
+Reason: The article explicitly states "patients could not be blinded to type of surgical treatment."
+
+**2.2**: **Y** (95% Certainty)
+Reason: Surgeons/carers performing LAVH vs. AH obviously knew which procedure they performed; this is an inherent feature of surgical trials.
+
+**2.3**: **Y** (85% Certainty)
+Reason: Antibiotic use (35.7% vs 40%, NS) and additional procedures (5 vs 3, NS) were balanced between groups; no evidence of significant imbalanced non-protocol interventions.
+
+**2.4**: **N** (90% Certainty)
+Reason: No conversions from LAVH to AH occurred, and no withdrawal/failure of implementation exceeding 10% is reported.
+
+**2.5**: **N** (85% Certainty)
+Reason: No crossovers or non-adherence reported; all patients received their assigned intervention as planned.
+
+**2.6**: **NI** (60% Certainty)
+Reason: No explicit description of the analytic approach (ITT, per-protocol, etc.) for handling adherence; all randomized patients appear to have been analyzed as allocated.
+
+**Result of Domain 2**: **Low risk** (85% Certainty)
+Reason: 2.1/2.2 = Y, 2.3 = Y, 2.4 = N, 2.5 = N, satisfying the criteria for low risk regardless of 2.6.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **Y** (90% Certainty)
+Reason: Length of hospital stay is a continuous variable measured during hospitalization for all 48 randomized patients (28 LAVH, 20 AH); no missing data or dropouts prior to discharge are reported.
+
+**Result of Domain 3**: **Low risk** (90% Certainty)
+Reason: 3.1 = Y is sufficient for low risk designation.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (85% Certainty)
+Reason: Length of hospital stay (discharge date) is a standard, reliable measurement method predefined as the primary outcome.
+
+**4.2**: **N** (80% Certainty)
+Reason: The same discharge criterion/measurement method (patient self-determined readiness) applied equally to both groups; no differential measurement protocol between groups.
+
+**4.3**: **Y** (90% Certainty)
+Reason: Although not strictly "patient-reported," the outcome relies on patient decision-making ("Each patient decided for herself when she was ready to be discharged from hospital"), and patients were aware of their group assignment given the unblinded nature of surgery.
+
+**4.4**: **Y** (80% Certainty)
+Reason: Because discharge timing was self-determined by the patient rather than by strict objective clinical criteria, this outcome carries a subjective component susceptible to patient expectations/awareness of intervention type.
+
+**4.5**: **Y** (80% Certainty)
+Reason: The authors explicitly acknowledge in the Discussion that "patients could not be blinded to type of surgical treatment; thus, their expectations may have influenced the duration of their recuperation," a rationale that also plausibly extends to patient-determined hospital discharge, given the same self-report mechanism.
+
+**Result of Domain 4**: **High risk** (85% Certainty)
+Reason: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, 4.5 = Y — this combination meets the criteria for high risk of bias in outcome measurement.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **NI** (70% Certainty)
+Reason: No trial registration number is provided, and there is no indication of a pre-specified, publicly archived analysis plan; however, the Methods section pre-specifies hospital stay as the primary outcome with a priori sample-size calculation, and this is consistently reported in Results.
+
+**5.2**: **N** (85% Certainty)
+Reason: Only one measurement of hospital stay (in days) is used and reported consistently between Methods and Results; no evidence of multiple eligible outcome measures.
+
+**5.3**: **N** (80% Certainty)
+Reason: Only one analytic approach (median with IQR comparison) is apparent for this outcome; no evidence of multiple eligible analyses being conducted with selective reporting.
+
+**Result of Domain 5**: **Some concerns** (75% Certainty)
+Reason: 5.2 = N, 5.3 = N, but 5.1 = NI (no registration/pre-specified plan confirmed), which corresponds to "Some concerns" per the algorithm.
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Overall Risk of Bias: High Risk** (85% Certainty)
+
+Reason: Domain 4 (Measurement of the Outcome) was rated as **High risk** due to the outcome (length of hospital stay) being determined by patient self-decision regarding discharge readiness, combined with the inherent lack of blinding in this surgical trial (LAVH vs. AH), creating clear potential for differential assessment based on knowledge of intervention received. Per the overall assessment rules, the presence of any single "High Risk" domain results in an overall "High Risk" rating for the article, regardless of the other domains being rated "Low risk" (Domains 1–3) or "Some concerns" (Domain 5).

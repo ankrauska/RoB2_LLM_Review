@@ -1,0 +1,86 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 21401585
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Quality of Movement of the Impaired Upper Limb (MUUL)
+## Trial: INCITE Study (Sakzewski et al., 2011) — CIMT vs. BIM training
+## Effect of Interest: Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+### 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** The allocation sequence was random and adequately concealed, and there is no evidence of baseline imbalance suggestive of a problem with randomization.
+
+**b. Rationale:**
+- *Sequence generation:* "Once matched, children were randomized to pairs using a computer generated list of random numbers..." — a clearly random process (Signalling Q1.1 = Yes).
+- *Allocation concealment:* "...and concealed envelopes opened by non-study personnel." This meets the minimal criteria for concealment (independent, non-study personnel controlling allocation) (Signalling Q1.2 = Yes).
+- *Baseline imbalance:* The trial used a matched-pairs design (age, sex, side of hemiplegia, MUUL score within 10%) prior to randomization, which is a strong safeguard against imbalance. Table I shows the groups were closely comparable on demographic, clinical, and baseline MUUL/AHA scores (e.g., MUUL 67.1 vs 70.8, overlapping 95% CIs), and the authors explicitly state "there were no differences between groups on demographic or baseline measures" (Signalling Q1.3 = No). The only minor imbalance (side of hemiplegia, due to matching constraints) was not associated with a key prognostic factor for the outcome and was adjusted for as a covariate in the regression models.
+
+All criteria for "Low risk of bias" are met: allocation concealed, sequence random, no baseline imbalance indicating a randomization problem.
+
+---
+
+### 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Participants, carers, and personnel were unavoidably aware of intervention allocation (due to the visible constraint glove and different activity content), but there is no direct evidence that trial-context-driven deviations (non-protocol co-interventions) meaningfully influenced the MUUL outcome; however, appropriateness of analysis is not fully clear for all deviations.
+
+**b. Rationale:**
+- *Awareness:* Both participants and treating personnel were aware of group assignment — CIMT participants wore a visible glove/constraint ("Participants in the CIMT group wore a tailor-made glove on their unimpaired limb..."), and BIM used different instructional strategies. Therefore, blinding of participants/personnel was not possible (Signalling Q2.1/2.2 = Yes).
+- *Deviations arising from trial context:* The interventions were delivered as structured day-camps with high fidelity: "Compliance was 100% for CIMT, and 97% with BIM training." Both groups received similar amounts of intervention (58% received full 60 hours; remainder received 54 hours due to public holidays/illness, balanced across groups). There is no reported evidence of cross-contamination (e.g., CIMT children practicing bimanual tasks, or BIM children being restrained) or of co-interventions differing systematically between groups: "At 3 and 26 weeks, there were no changes to pre-existing therapy for all children with the exception of one child (CIMT group) who received... BoNT-A injections." This isolated event is unlikely to bias the group-level MUUL result (Signalling Q2.3 = Probably No).
+- *Analysis approach:* "Analyses were on an intention-to-treat basis according to CONSORT guidelines," which is appropriate for estimating the effect of assignment (Signalling Q2.6 = Yes). However, the paper does not explicitly clarify whether all 64 randomized participants (including the one early dropout) were retained in the ITT model at every timepoint, nor how GEE handled the dropout, introducing some uncertainty.
+- Given the necessary unblinding of participants/personnel (an inherent feature of these physical interventions), combined with generally well-balanced, high-fidelity delivery and appropriate ITT analysis, but incomplete reporting on the handling of the single dropout in the ITT model, the domain is rated "Some concerns" rather than "Low risk."
+
+---
+
+### 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Outcome data were available for nearly all randomized participants, and there is no indication that missingness depended on the true MUUL value.
+
+**b. Rationale:**
+- Of 64 randomized children, only one dropout occurred, on day 2 of the BIM camp, "because of pre-existing emotional and behavioural difficulties" (Signalling Q3.1: nearly all data available; reason unrelated to outcome).
+- Compliance during the intervention period was very high (100% CIMT, 97% BIM), and the trial profile (Fig. 1) followed CONSORT with clear reporting of participant flow.
+- The one exclusion had a documented reason unrelated to the true value of the MUUL outcome (behavioural issue, not related to hand function), so missingness is unlikely to depend on the outcome (Signalling Q3.3 = No).
+- With only 1/64 participants missing, and this occurring for reasons plausibly unrelated to the outcome, the potential for bias due to missing MUUL data is minimal.
+
+---
+
+### 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** The MUUL was measured using an appropriate, validated method, applied identically across groups, and outcome assessors were blinded to group allocation with no plausible route for unblinding to influence scores.
+
+**b. Rationale:**
+- *Appropriateness of method:* The MUUL is a well-established, validated measure of unimanual upper-limb movement quality, with the authors establishing high intrarater reliability for their own rater (ICC = 0.93, 95% CI 0.84–0.97) (Signalling Q4.1 = No).
+- *Comparability of measurement across groups:* The same standardized MUUL protocol and video-taping procedure were used identically for both CIMT and BIM groups, at the same assessment timepoints (baseline, 3, 26 weeks) (Signalling Q4.2 = No).
+- *Blinding of assessors:* "The primary outcome measures were videotaped and scored in random order by trained occupational therapists masked to group allocation." This is a robust blinding procedure, as video scoring in random order strongly limits the possibility that assessors could infer group allocation from contextual cues (Signalling Q4.3 = No).
+- Because assessors were blinded and unlikely to be able to deduce group assignment from the videotaped unimanual task performance (which does not inherently reveal whether the child underwent CIMT or BIM), the assessment of the outcome was not likely influenced by knowledge of intervention (Signalling Q4.4/4.5 = Not applicable/No).
+
+---
+
+### 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** The result reported for MUUL corresponds to the pre-specified primary outcome and analysis plan; no evidence of selective outcome or analysis reporting was identified.
+
+**b. Rationale:**
+- The trial protocol was published in advance (Boyd R, Sakzewski L, Ziviani J, et al. "INCITE: a randomised trial comparing constraint induced movement therapy and bimanual training in children with congenital hemiplegia." BMC Neurol 2010) and pre-specifies the MUUL as a primary activity outcome measuring "quality of movement of the impaired upper limb," consistent with the outcome and analysis presented in this results paper.
+- The statistical analysis approach (GEE modelling with matching covariates: age, sex, side of hemiplegia; measured at baseline, 3, and 26 weeks) is reported in full, is consistent with sample size and hypothesis planning described in the methods, and matches the pre-specified design in the protocol paper (Signalling Q5.1 = Yes).
+- There is no evidence that the MUUL result was selected from multiple alternative outcome measurements (e.g., alternate scales or time points) or multiple alternative analyses (e.g., alternative covariate adjustments or subgroup-only analyses) — a single, consistent MUUL scoring and analysis method is reported throughout (Signalling Q5.2/5.3 = No).
+- The consistency between the a priori registered protocol/hypotheses (specificity-of-practice hypothheses regarding CIMT and unimanual capacity) and the reported result further supports a low risk of selective reporting for this outcome.
+
+---
+
+## Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Bias arising from the randomization process | **Low risk** |
+| 2. Bias due to deviations from intended interventions (assignment effect) | **Some concerns** |
+| 3. Bias due to missing outcome data | **Low risk** |
+| 4. Bias in measurement of the outcome | **Low risk** |
+| 5. Bias in selection of the reported result | **Low risk** |
+| **Overall risk of bias for MUUL outcome** | **Some concerns** |
+
+**Overall justification:** Per RoB 2.0 guidance, a judgement of "Some concerns" in a single domain (here, Domain 2, due to the inherent unblinding of participants/personnel to a physical, visible intervention and some residual uncertainty about handling of the single dropout within the ITT analysis) without any domain rated "High risk" results in an overall study-level judgement of **"Some concerns"** for the MUUL outcome.

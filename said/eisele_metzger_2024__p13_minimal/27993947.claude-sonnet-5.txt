@@ -1,0 +1,46 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 27993947
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Shared Decision Making Score
+## MI-GENES Trial (Kullo et al.)
+
+---
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+
+Justification: Randomization was computer-generated using the Pocock and Simon minimization method, stratified by age, gender, and family history of CHD. This is an acceptable method for sequence generation. However, allocation concealment is questionable: the same investigator (HJ) both "generated the random allocation sequence and study arm assignment" - this lack of separation between sequence generator and the person enrolling/assigning participants raises concern about potential foreknowledge of assignment prior to enrollment. There is no explicit description of a concealed allocation mechanism (e.g., sequentially numbered opaque envelopes, centralized randomization system independent of investigator). Baseline characteristics (Table 1) are well balanced across groups, which is reassuring, but does not fully offset the concealment concern. Given this was an open-label trial (masking: NONE per protocol), the lack of robust allocation concealment before assignment is a meaningful residual concern for this subjective outcome.
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: Low risk**
+
+Justification: This was designed as an open-label trial (per protocol, masking = NONE), and both patients and providers were intentionally aware of group assignment as this was necessary for delivery of the intervention (genetic risk disclosure vs. conventional risk disclosure) — this is unavoidable given the nature of the intervention and does not constitute a "deviation." The decision aid was standardized and used consistently in both arms to disclose risk and facilitate SDM. There is no evidence of cross-over, non-protocol interventions, or differential co-interventions between arms that would affect the SDM outcome. Analysis was based on the assigned groups (consistent with intention-to-treat for this outcome).
+
+---
+
+**3. Risk of bias due to missing outcome data: Low risk**
+
+Justification: Of 207 randomized participants, the SDM survey was completed by 206 (99.5%), with only 1 participant missing outcome data. This is a very low, non-differential rate of attrition, unlikely to introduce bias. The video-recorded OPTION5 subset (80 of 187 consented, from 207 total) was a pre-specified random sample (40 age/sex-matched pairs per arm), not an issue of missingness due to attrition but rather deliberate sampling for feasibility — the matching process reduces risk of selective inclusion. No differential dropout by arm is reported.
+
+---
+
+**4. Risk of bias in measurement of the outcome — SDM Score: High risk**
+
+Justification: This is a critical concern. The SDM score is a participant-reported outcome (self-administered SDM-Q survey) measuring a subjective construct (perception of shared decision-making quality). Crucially, patients were **not blinded** to their treatment assignment — they were fully aware of whether they received genetic risk information or conventional risk information alone, as this was central to the visit itself. Because the study intervention was inherently unblindable and the outcome relies entirely on participant self-report of a subjective experience, there is substantial risk that patients' awareness of receiving "novel" genetic information could differentially influence their perception/rating of the decision-making process (e.g., novelty effect, demand characteristics, or Hawthorne-type effects favoring the genetic arm, consistent with the observed trend toward higher SDM scores in the CRS*GRS group, p=0.09). This lack of blinding for a subjective, self-reported outcome is precisely the scenario that generates high risk of bias in outcome measurement, per standard RoB2 guidance for patient-reported outcomes in unblinded trials.
+
+*(Note: The video-recorded OPTION5 analysis by a single rater, while more objective, was still conducted with the rater aware of group assignment via the recorded conversation content, and only one rater — TSM — scored the videos with no mention of blinding of the assessor to allocation or of inter-rater reliability/blinded second scorer. This adds further concern for that co-outcome.)*
+
+---
+
+**5. Risk of bias in selection of the reported result: Low risk**
+
+Justification: The SDM outcome (via survey) was pre-specified as a named secondary outcome in the trial registration ("Shared decision making (as assessed by survey)"), matching the reported outcome in the manuscript. The composite SDM score, all 11 individual item responses, and the video-based OPTION5 score are all reported in full (Table 2), with no evidence of selective reporting of favorable items or suppression of unfavorable results. Both scales (survey and OPTION5) are pre-specified and validated instruments referenced in the published trial protocol (ref 12), supporting that the analysis was not opportunistically chosen post hoc. No discrepancy is apparent between the protocol/registry entry and what is reported in the manuscript for this outcome.
+
+---
+
+## 6. Overall Rating: **High risk**
+
+**Justification:** While randomization sequence generation was appropriate and missing data was minimal, there are two compounding concerns: (a) allocation concealment is inadequately described and handled by a single unblinded investigator, and (b) most critically, the primary SDM outcome is a self-reported, subjective measure collected in an open-label trial where patients were fully aware of their allocation. This directly threatens the validity of the SDM score outcome, as awareness of receiving novel genetic risk information could plausibly and asymmetrically inflate perceived quality of the decision-making encounter. This measurement domain concern is sufficient on its own to warrant a "high risk" rating for this specific outcome, and is compounded by the randomization concern, further lowering confidence in the null finding reported by the authors.

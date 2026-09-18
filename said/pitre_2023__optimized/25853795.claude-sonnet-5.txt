@@ -1,0 +1,78 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 25853795
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Total Duration of Treatment
+
+**Trial:** Multi-center RCT comparing self-ligating (SmartClip) vs conventional (Victory) bracket systems
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** The randomization sequence generation and allocation concealment were adequate. However, there is no reported baseline comparison testing (e.g., statistical tests) for imbalance, and there are notable numerical differences in malocclusion type and age distribution between groups that raise some concern about whether these are compatible with chance, though not definitively indicative of a randomization failure.
+
+**b. Rationale:** 
+- Sequence generation: "using a block randomization determined by a computer-generated random number table, with stratification for operator and center" — **Yes**, random.
+- Allocation concealment: "The appliance type was placed in a sealed, opaque, sequentially numbered envelope that was opened after the patient was accepted onto the trial. The generator of the randomization did not participate in patient allocation." — **Yes**, adequately concealed.
+- Baseline imbalance: Table 2 shows imbalances in malocclusion classification (e.g., Class I: 12 vs 23; Class II division 1: 37 vs 31) and age range (SmartClip max age 29 vs Victory max age 56), with no statistical testing reported to determine whether these differences exceed what would be expected by chance. No information is provided to confirm these are compatible with chance, generating some uncertainty.
+- Per the algorithm: sequence random (Yes) + concealment adequate (Yes) + baseline imbalance information ambiguous/no formal comparison provided → leans toward **Some concerns** rather than clear-cut low risk, primarily due to the age range discrepancy (56 years max in Victory group is unusual for what appears to be a predominantly adolescent population) and lack of a formal chance-compatibility assessment.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Although participants and personnel could not be blinded to bracket type (an inherent feature of the intervention), this domain assesses whether trial-context-driven deviations from intended intervention affected the outcome, and there is no evidence of such deviations. An appropriate intention-to-treat/per-protocol-by-necessity analysis was used, and dropout was minimal.
+
+**b. Rationale:**
+- Participants and personnel awareness: "it was not possible to blind the clinician or patient to the type of bracket system being used" — **Yes**, aware.
+- Deviations arising from trial context: There is no evidence that awareness of allocation led to non-protocol interventions, contamination, or systematic behavior differences related to the trial context itself. The archwire sequence protocol was standardized and followed "as far as possible," with "any exceptions to this...recorded during data collection," suggesting deviations were monitored and not systematically related to trial-context effects. Both operators were trained and followed the same standardized bonding protocol across all subjects.
+- The authors note limitations regarding blinding but do not report differential engagement/recruitment effects driving deviations: "Although it was not possible to blind either clinician or subject to the bracket type, the appliance type was not recorded on the data collection sheets in an attempt to minimize bias during data entry and analysis."
+- Analysis: 135/138 (97.8%) subjects were analyzed; "Due to the low number of dropouts, analysis was undertaken on a per protocol basis" — with only 3 exclusions (1 refusal, 2 non-completions) out of 138, this is essentially equivalent to an ITT analysis with negligible exclusions, satisfying appropriate-analysis criteria.
+- No evidence of switching between bracket-system arms (unlike drug cross-over trials); the intervention (bracket type) is fixed at placement and not something participants could self-switch.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Outcome data (treatment duration) were available for nearly all randomized participants (135/138, 97.8%), and the small number of dropouts is very unlikely to have materially biased the result.
+
+**b. Rationale:**
+- "One hundred thirty-eight subjects were recruited...Overall, 135 subjects (97.8%) completed the study; one subject who refused fixed appliance treatment following allocation and two subjects who failed to complete treatment were omitted from the analysis."
+- The CONSORT flow diagram (Figure 2) confirms: 71 allocated to Victory (70 analyzed), 67 allocated to SmartClip (65 analyzed) — dropout is balanced and minimal (1 from Victory, 2 from SmartClip, roughly proportionate).
+- With such a small and balanced proportion of missing data (2.2% overall), it is implausible that the true values of missing outcomes (had they been observed) could have materially changed the treatment effect estimate on treatment duration.
+- No evidence of differential reasons for dropout related to bracket type or outcome value.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** The outcome (total duration of treatment, i.e., time from appliance placement to debond) is an objective, calendar-based measurement not generally requiring subjective judgement; however, the decision of when to debond a patient could plausibly be influenced by the treating clinician's (unblinded) awareness of bracket type, particularly given prior expectations/hunches about self-ligating brackets being "faster." This introduces a "some concerns" level of risk because assessors (i.e., the treating clinicians who decide on debond timing) were not blinded and could have been influenced by beliefs about the bracket systems.
+
+**b. Rationale:**
+- Outcome measurement method appropriate: treatment duration is a clearly defined date-based outcome, not inherently problematic — "No" to inappropriate measurement method.
+- Measurement method comparable between groups: same criteria and protocol used to judge treatment completion for both groups — "No" to differential ascertainment methods.
+- Outcome assessors aware of intervention: The decision to debond is essentially made by the treating clinician (an "intervention provider decision" outcome per the guidance's outcome categories), and these clinicians were not blinded: "it was not possible to blind the clinician or patient to the type of bracket system being used." The paper does note: "data analysis was carried out at the end of the study with examiner blinding" — but this pertains to statistical analysis, not to the clinical decision of when to stop active treatment, which occurred during the trial by unblinded clinicians.
+- Could assessment be influenced by knowledge of intervention received: Given literature reviewed by the authors suggesting self-ligating systems are marketed/believed to reduce treatment time, and specialist registrars received manufacturer training on SmartClip specifically, there is a plausible mechanism (conscious or unconscious expectation) by which the timing of debond decisions could be influenced by bracket type awareness. This is an "intervention provider decision" outcome type per RoB2 guidance, which states such outcomes are "usually likely to be influenced by knowledge of intervention received" when the provider is aware.
+- However, there is no direct evidence that this influence occurred, and debond decisions in orthodontics are typically governed by fairly objective clinical endpoints (occlusal/alignment criteria) rather than pure clinical impression, which somewhat mitigates the risk. This supports "Some concerns" rather than "High risk."
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** The outcomes reported (treatment duration, number of visits, bond failure rate) correspond to the pre-specified primary outcomes described in the methods, with a single, clearly defined analysis reported for each, and no evidence of selective reporting from multiple candidate analyses or measurements.
+
+**b. Rationale:**
+- The trial registration record (doc_id: 4dab5cab-2b44-42f8-8559-2dd9073b18b5) and the methods section pre-specify the outcome "total duration of treatment (months) from fixed appliance placement to debond" as one of three named efficiency outcomes, consistent with what is reported in the Results (Table 3) and Discussion.
+- There is no indication of multiple alternative definitions or time points for "treatment duration" being tested, nor multiple alternative analytic models (e.g., adjusted vs. unadjusted) being selectively reported — a single Welch two-sample t-test comparing means with 95% CI is reported, consistent throughout methods and results.
+- Sample size calculation was pre-specified and referenced a clinically significant difference of 3 months, consistent with the analysis presented — "A sample size calculation was undertaken based on data from a previous study investigating time taken to complete treatment. Fifty-three patients per group (106 in total) were calculated as necessary..."
+- No discrepancy is evident between the described analysis plan and the reported result for this outcome.
+
+---
+
+# Overall Risk-of-Bias Judgement: **Some concerns**
+
+**Rationale:** No domain was judged at high risk of bias, but two domains ("bias arising from the randomization process" and "measurement of the outcome") raised some concerns. Per RoB 2 guidance, a result with "some concerns" in at least one domain (and no high risk in any domain) should be judged overall as **"Some concerns."**

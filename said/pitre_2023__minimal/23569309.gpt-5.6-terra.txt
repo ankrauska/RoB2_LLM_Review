@@ -1,0 +1,45 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 23569309
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **bias due to randomization: low risk of bias**  
+   a. **Judgement:** Low risk of bias.  
+   b. **Rationale:** The publication describes a genuinely random, centrally coordinated allocation process: “*Registration and random assignment were coordinated centrally at the KCSG data center. The random permutation method was used for random assignment.*” Randomization was 1:1 and stratified by clinically relevant factors (visceral disease, prior adjuvant taxane therapy, response to induction therapy, and hormone-receptor status). Central coordination provides reasonable assurance that allocation was concealed until assignment.  
+   
+   Baseline characteristics were generally similar. There was an imbalance in lung hematogenous metastases (31.9% versus 16.5%; P=.029), but this was one difference among numerous baseline comparisons and is not, by itself, compelling evidence that randomization failed. There was no major imbalance in group size (116 versus 115) or a pattern of extreme imbalance in key prognostic factors.  
+
+2. **deviations from intended intervention: low risk of bias**  
+   a. **Judgement:** Low risk of bias for the effect of assignment to maintenance PG chemotherapy versus observation at baseline.  
+   b. **Rationale:** This was an open-label trial: the registry specifies “*Masking: NONE*,” and participants and treating clinicians were therefore aware of allocated treatment. However, for the requested effect of assignment to intervention, lack of blinding alone does not establish bias. The relevant question is whether deviations that arose *because of the trial context*, were inconsistent with protocol, differed between groups, and affected PFS.  
+   
+   The intended strategies were clearly specified: maintenance PG was continued until progression, unacceptable toxicity, or withdrawal of consent; observation participants received no treatment until progression. The report states that hormonal therapy was “*not allowed in either group of patients after random assignment before disease progression*.” There was no crossover to maintenance PG in the observation group: “*PG combination chemotherapy was not given to any patient in the observation group after progression, which means that there was no crossover.*”  
+   
+   Some maintenance-arm participants discontinued chemotherapy without documented progression, including 33 discontinuations at physician discretion. However, the report states that these patients “*did not receive further anticancer treatment, including endocrine therapy, until disease progression was documented.*” Thus, discontinuation of PG did not result in switching to the comparator strategy plus an unplanned alternative anticancer therapy. More importantly, there is no evidence that these changes arose because of trial-specific recruitment, engagement, or differential protocol implementation rather than ordinary clinical decisions regarding toxicity or treatment burden.  
+   
+   Finally, “*All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle*,” which is appropriate for estimating the effect of assignment at baseline. Any potential implications of censoring or incomplete PFS follow-up are considered under missing outcome data.
+
+3. **missing outcome data: high risk of bias**  
+   a. **Judgement:** High risk of bias.  
+   b. **Rationale:** The PFS analysis was time-to-event based, with observations censored “*at the last clinical contact if patients were lost to follow-up or at the cutoff date for the analysis*.” However, the publication does not report the number of participants censored for loss to follow-up, the number censored administratively at the data cutoff, censoring by randomized group, or reasons for censoring separately by group. It therefore cannot be established that PFS data were available for all or nearly all randomized participants, nor that censoring was non-informative.  
+   
+   This is particularly important because many patients discontinued protocol participation or assigned treatment before documented progression. In the maintenance group, discontinuations included patient withdrawal (n=14), adverse events (n=13), physician discretion (n=33), and other reasons (n=9); corresponding observation-arm figures included patient withdrawal (n=13), physician discretion (n=6), local treatment (n=4), switch to chemotherapy (n=2), and other reasons (n=6). Although the authors state that maintenance patients who stopped treatment at physician discretion received no further anticancer treatment until progression, the report does not establish that progression was subsequently ascertained in all such participants.  
+   
+   For PFS, censoring related to toxicity, withdrawal, treatment decisions, clinical deterioration, or access to follow-up may be related to the underlying risk or timing of progression. The absence of information on the amount, balance, and reasons for PFS censoring prevents confidence that missingness was unrelated to the true progression time. No sensitivity analysis addressing informative censoring was reported.
+
+4. **measurement of the outcome: high risk of bias**  
+   a. **Judgement:** High risk of bias.  
+   b. **Rationale:** PFS was assessed by unblinded local investigators. The report explicitly states: “*PFS and the duration of response were assessed by investigators*,” while the registry states that the study had no masking. Although radiographic studies were planned every 6 weeks and response/progression was assessed using RECIST version 1.0, determination of radiographic progression and its documented date can involve judgement, particularly regarding interpretation of imaging, non-target lesions, clinical deterioration, timing of assessments, and whether findings constitute progression.  
+   
+   There is no report of blinded independent central radiology review or of blinded adjudication of progression events. Because treating investigators knew whether patients were continuing active PG chemotherapy or were under observation, knowledge of treatment assignment could plausibly influence progression assessment or its timing. In an open-label maintenance-versus-observation cancer trial, this is likely to have influenced an investigator-assessed PFS outcome.  
+   
+   The scheduled imaging interval was the same in both groups, which reduces concern about explicitly different measurement schedules, but it does not remove the substantial risk from unblinded investigator assessment of progression.
+
+5. **selective reporting: some concerns**  
+   a. **Judgement:** Some concerns.  
+   b. **Rationale:** The trial registry (NCT00561119) prospectively identifies “*Progression free survival*” as the primary outcome, and the publication also identifies PFS after randomization as the primary end point. The principal PFS comparison was reported, including a hazard ratio, 95% confidence interval, P value, median PFS, and 6-month PFS: hazard ratio 0.73 (95% CI 0.55–0.97), median 7.5 versus 3.8 months, and 6-month PFS 59.7% versus 36.0%. Thus, there is no direct evidence that the PFS outcome itself was omitted.  
+   
+   Nevertheless, the registry is not sufficiently detailed to establish a prespecified analysis plan finalized before unblinded data were available. It specifies only PFS with an approximate four-year timeframe; it does not define the PFS analysis population, censoring rules, planned covariate adjustment, primary analysis method, or specific analysis time point. The publication reports both Kaplan–Meier/log-rank analyses and covariate-adjusted Cox analyses, but does not provide a dated statistical analysis plan or enough information to determine whether the reported PFS estimate was selected from multiple eligible analyses.  
+   
+   There is therefore no clear evidence of selective reporting, but insufficient pre-specified analytic detail to support a low-risk judgement.

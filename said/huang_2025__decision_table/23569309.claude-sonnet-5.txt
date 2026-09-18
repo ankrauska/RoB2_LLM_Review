@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 23569309
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Park, 2013
+**Outcome Name**: Progression-free survival
+**Registration number**: NCT00561119
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+The article states "The random permutation method was used for random assignment," which is an explicitly described adequate method of sequence generation.
+
+**1.2**: Y (95%)
+The article states "Registration and random assignment were coordinated centrally at the KCSG data center," which is a specific method of allocation concealment (central allocation).
+
+**1.3**: N (90%)
+Table 1 shows no statistically significant differences in baseline characteristics between the maintenance and observation groups (age, ECOG PS, menopausal status, HR status, metastatic sites, prior therapies), with all p-values > 0.05 except for a few individual metastatic site subcategories, which is expected by chance across many comparisons.
+
+**Result of Domain 1**: Low risk (95%)
+Since 1.2 = Y, 1.1 = Y, and 1.3 = N, this meets the criteria for "Low risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (95%)
+The study is explicitly an open-label trial (per protocol: masking = NONE). Participants were aware of their treatment assignment (maintenance chemotherapy vs. observation), as these are clearly distinguishable interventions.
+
+**2.2**: Y (95%)
+As an open-label study with no blinding, care providers were aware of participants' assigned intervention.
+
+**2.3**: Y (85%)
+Non-protocol interventions (hormonal therapy, subsequent chemotherapy) were prohibited until progression and were balanced between groups (Table 3 shows similar subsequent treatments, p=0.933 for number of regimens).
+
+**2.4**: Y (90%)
+In the maintenance arm, 33/116 (28.4%) patients stopped treatment at physician's discretion without progression, and 13 discontinued due to adverse events — well above the 10% threshold for implementation failures.
+
+**2.5**: Y (90%)
+Non-adherence was substantial: dose-intensity was reduced (86.6-94.7% of expected dose), and 69/116 (59.5%) patients in the maintenance arm discontinued treatment for reasons other than progression (physician discretion, AEs, withdrawal, other) — exceeding the 10% threshold.
+
+**2.6**: N (95%)
+The article explicitly states "All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle." Per instructions, ITT analysis is classified as "N" (inappropriate method for estimating effect of adherence).
+
+**Result of Domain 2**: High risk (90%)
+Since 2.1/2.2 = Y, 2.3 = Y, one of 2.4/2.5 = Y, and 2.6 = N, this meets the criteria for "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95%)
+All 231 randomized patients (116 maintenance, 115 observation) were included in the PFS analysis per the intention-to-treat principle. This is a time-to-event outcome, and the number of observed events (progression events documented in Table 2: 40 in maintenance, 80 in observation) is substantial relative to randomized participants; no meaningful missing data for the primary analysis.
+
+**Result of Domain 3**: Low risk (95%)
+Since 3.1 = Y, this meets the criteria for "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+PFS was assessed using RECIST (version 1.0), a validated and widely accepted, reliable measurement tool for tumor response/progression.
+
+**4.2**: N (85%)
+Radiographic studies were performed every 6 weeks in both groups; the measurement method and timing were consistent between groups.
+
+**4.3**: Y (85%)
+PFS is not patient-reported; it was assessed by investigators ("PFS and the duration of response were assessed by investigators"). Since this is an open-label trial with no blinding of outcome assessors mentioned, investigators were aware of participants' group assignments.
+
+**4.4**: Y (80%)
+PFS assessment via RECIST involves investigator interpretation of radiographic images and clinical judgment regarding progression, which contains a subjective component, and it was assessed by an unblinded outcome assessor (the treating investigator).
+
+**4.5**: Y (75%)
+Given the open-label design and that investigators (who knew treatment assignment) assessed disease progression, there is a plausible risk that knowledge of intervention could have influenced timing/interpretation of progression assessment, particularly given the unblinded, subjective nature of RECIST assessment in an open-label trial.
+
+**Result of Domain 4**: High risk (85%)
+Since 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, and 4.5 = Y, this meets the criteria for "High risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (85%)
+The trial was registered (NCT00561119) with PFS as the pre-specified primary endpoint. The statistical methods (Kaplan-Meier, log-rank test, Cox proportional hazards model) described in the Methods section match those reported in the Results section, and PFS results are fully reported as planned.
+
+**5.2**: N (85%)
+There is only one PFS measurement definition used throughout (from date of random assignment to documented disease progression per RECIST), with no evidence of multiple eligible outcome measurements being selectively reported.
+
+**5.3**: N (85%)
+The analysis method (Kaplan-Meier method, log-rank test, and Cox proportional hazards model with pre-specified stratification factors) is consistent between Methods and Results sections, with no evidence of selective reporting from multiple analyses.
+
+**Result of Domain 5**: Low risk (85%)
+Since 5.2 = N, 5.3 = N, and 5.1 = Y, this meets the criteria for "Low risk."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result: High Risk (90%)**
+
+**Reasoning**: Domain 2 (High risk) and Domain 4 (High risk) both indicate high risk of bias. According to the overall assessment rule, if one or more domains are rated "High Risk," the overall assessment for the article is "High Risk." This is primarily driven by the open-label design (lack of blinding of participants, care providers, and outcome assessors) combined with substantial rates of non-adherence/treatment discontinuation not addressed through appropriate analytic methods (ITT was used, which does not correct for these issues), as well as the subjective, unblinded assessment of the primary outcome (PFS via RECIST).

@@ -1,0 +1,119 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 22677231
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Moritz, 2012
+**Outcome Name**: Beck Depression Inventory (total score) post intervention
+**Registration number**: NCT01401296
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85% Moderate-High Certainty)
+The article states "Participants...were randomly allocated to the treatment or wait-list group in consecutive order. No stratification was applied." No specific method (computer-generated sequence, block randomization, coin toss, etc.) is described, only that allocation was "random" and "consecutive."
+
+**1.2**: NI (90% Moderate Certainty)
+No mention is made of any allocation concealment mechanism (central allocation, sequentially numbered opaque envelopes, etc.). The article describes what participants were told about the study design but does not describe how the sequence was concealed from personnel enrolling participants.
+
+**1.3**: N (95% High Certainty)
+Table 1 shows no significant differences in age, gender, education, medication, treatment status, or baseline BDI score between groups. The article explicitly states "Randomization was successful: significant differences emerged neither for any of the background nor psychopathological variables."
+
+**Result of Domain 1**: Some concerns (90% Moderate Certainty)
+*Reasoning*: 1.2 = NI and 1.3 = N → per algorithm, this combination yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (90% Moderate Certainty)
+Participants were explicitly informed of their allocation ("Those in the wait-list group received notice that they were allocated to the control group..."). This is an open-label, unblinded design for participants.
+
+**2.2**: Y (85% Moderate Certainty)
+Study personnel/administrators necessarily knew participant allocation (sent instructions/vouchers accordingly); no blinding of those delivering the intervention was possible or described.
+
+**2.3**: Y (80% Moderate Certainty)
+Table 1 shows treatment status (in psychotherapy/medication) was statistically balanced across groups (p>.1), and this was accounted for as a covariate/moderator in analysis.
+
+**2.4**: Y (85% Moderate Certainty)
+Completion rates were 85.7% (wait-list) and 78.1% (Deprexis), corresponding to >10% failure to complete/implement the intervention in the treatment arm.
+
+**2.5**: Y (75% Moderate Certainty)
+Only 84.5% reported regularly performing exercises; PP analysis required only ≥1 session, and dropout/non-usage exceeded 10%.
+
+**2.6**: N (85% Moderate Certainty)
+The article used standard ITT (with multiple imputation) and per-protocol analyses — both classified as inappropriate methods for estimating adherence-related effects per the specified criteria.
+
+**Result of Domain 2**: High risk (85% Moderate Certainty)
+*Reasoning*: 2.1/2.2 = Y, 2.3 = Y, 2.4/2.5 = Y, and 2.6 = N → per algorithm, this yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: N (90% Moderate Certainty)
+210 randomized (105/105); PP analysis had only 90 (wait-list) and 80 (Deprexis) = 170/210 = 81% with complete data — below the 90% threshold for continuous outcomes.
+
+**3.2**: Y (80% Moderate Certainty)
+ITT analysis employed multiple imputation via SAS PROC MI (100 imputed datasets, stratified by treatment, 5000 iterations) — a statistically appropriate method for addressing missing data bias (distinct from simple ITT/LOCF).
+
+**Result of Domain 3**: Low risk (80% Moderate Certainty)
+*Reasoning*: 3.1 = N and 3.2 = Y → per algorithm, "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95% High Certainty)
+BDI is a well-validated, reliable, widely used measure of depression severity (correlation with HDRS r=.73, internal consistency >.8), appropriate for this outcome.
+
+**4.2**: N (90% Moderate Certainty)
+Both groups completed identical assessments (same questionnaire, same timepoints, same online platform).
+
+**4.3**: Y (95% High Certainty)
+BDI is a self-report (patient-reported) measure, and participants were aware of their group assignment (open-label wait-list design).
+
+**4.4**: Y (95% High Certainty)
+BDI is a subjective, patient-reported outcome measure.
+
+**4.5**: Y (85% Moderate Certainty)
+Given participants' explicit knowledge of allocation combined with baseline expectancy differences (only 37.8% expected benefit) and self-report nature of the outcome, there is clear evidence that knowledge of intervention status could influence self-reported symptom ratings (e.g., expectancy/placebo effects, demand characteristics in unblinded wait-list designs).
+
+**Result of Domain 4**: High risk (90% Moderate Certainty)
+*Reasoning*: 4.1=N, 4.2=N, 4.3=Y, 4.4=Y, 4.5=Y → per algorithm, "High risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (85% Moderate Certainty)
+The registered protocol (NCT01401296) specifies BDI as the primary outcome; the Methods section pre-specifies PP and ITT ANCOVA analyses, both of which are fully reported in Results, consistent with the plan.
+
+**5.2**: N (90% Moderate Certainty)
+Only one BDI total score measurement is reported, consistent with the single pre-specified primary outcome; no evidence of selective reporting from multiple scales/timepoints for this outcome.
+
+**5.3**: N (85% Moderate Certainty)
+Both pre-specified analyses (PP and ITT) were fully reported for the BDI total score, with no evidence of selective reporting among analysis methods.
+
+**Result of Domain 5**: Low risk (85% Moderate Certainty)
+*Reasoning*: 5.2=N, 5.3=N, 5.1=Y → per algorithm, "Low risk."
+
+---
+
+## Overall Bias Risk Assessment
+
+| Domain | Result |
+|--------|--------|
+| Domain 1 | Some concerns |
+| Domain 2 | High risk |
+| Domain 3 | Low risk |
+| Domain 4 | High risk |
+| Domain 5 | Low risk |
+
+**Overall Bias Risk for the Article**: **High Risk** (90% Moderate Certainty)
+
+*Reasoning*: Per the algorithm, if any domain is rated "High Risk," the overall assessment is "High Risk." Domains 2 (deviations from intended interventions) and 4 (measurement of outcome) were both rated High Risk, driven primarily by the open-label, unblinded wait-list design with a subjective, patient-reported primary outcome (BDI), substantial non-adherence/attrition (>10%), and use of ITT/per-protocol analyses to estimate intervention effects.

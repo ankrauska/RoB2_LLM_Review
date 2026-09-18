@@ -1,0 +1,47 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 27807198
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: low risk of bias**  
+   a. **Judgement:** Low risk of bias. Allocation concealment was probably adequate because the randomization list and study medication were managed by an institution separate from the recruiting study site. Although the exact method used to generate the random sequence was not reported, there is no clear evidence of a non-random method or of manipulation of allocation. Baseline differences, while notable in this very small trial, are plausibly compatible with chance.  
+   b. **Rationale:**  
+   - The trial was described as randomized, double-blind, placebo-controlled, with 1:1 allocation: “Patients were randomly assigned (ratio 1:1) to receive either doxycycline or placebo.”  
+   - “The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany,” whereas recruitment was undertaken through the National Reference Center in Göttingen. This provides reasonable reassurance that allocation was concealed from enrolment personnel.  
+   - The report does not state how the randomization sequence was generated (e.g., computer-generated sequence or random-number table), so this item is **no information** rather than definitively low risk. However, RoB 2 permits a low-risk judgement where concealment was adequate, baseline differences do not clearly indicate a flawed process, and sequence-generation information is unavailable.  
+   - There were baseline differences in age (median 58 versus 72 years) and MMSE score (21 versus 16) between doxycycline and placebo groups. Given that only 12 participants were analysed (7 versus 5), these differences could reasonably have arisen by chance; there is no evidence that allocation was manipulated.
+
+2. **Deviations from intended intervention: low risk of bias**  
+   a. **Judgement:** Low risk of bias for the effect of assignment to doxycycline versus placebo at baseline. The study was double blinded and placebo controlled, and the survival analysis retained all seven randomized doxycycline participants and all placebo participants except one with unavailable outcome data. Exclusion due to missing outcome data is addressed in the missing-outcome-data domain rather than here.  
+   b. **Rationale:**  
+   - The registered design was double blind and placebo controlled, and the article describes a “randomised, single-centre, double-blind, placebo-controlled phase II trial.” Thus, participants, carers, and treatment providers were probably unaware of assigned intervention.  
+   - No evidence is provided of trial-context deviations—such as differential use of non-protocol interventions, differential implementation of treatment, or cross-over—that would be expected to affect survival.  
+   - Four doxycycline participants discontinued treatment, but discontinuation itself does not bias the effect of assignment to intervention, provided participants remain analysed in their randomized groups. All seven doxycycline-assigned participants were included in the survival analysis.  
+   - The report states that one placebo participant “dropped out, so that 12 patients with sCJD were included in the reported survival analysis.” This is an exclusion due to missing survival information and is considered under domain 3. The resulting analysis is consistent with a modified intention-to-treat analysis for available survival data, rather than an as-treated or naïve per-protocol analysis.
+
+3. **Missing outcome data: some concerns**  
+   a. **Judgement:** Some concerns. One of 13 randomized participants (a placebo-group participant) was excluded after dropping out, and the reason for dropout and subsequent survival status were not reported. In such a very small survival trial, one missing participant could meaningfully affect the estimated hazard ratio. However, there is insufficient evidence that missingness was likely related to the unobserved survival time.  
+   b. **Rationale:**  
+   - The participant flow shows that six patients were allocated to placebo, but one was “lost” during follow-up; only five placebo participants were analysed. The article similarly states: “One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis.”  
+   - The report does not give the reason for dropout, date of withdrawal, vital status, or whether survival information was sought through relatives, treating clinicians, or records.  
+   - Survival was the primary outcome, and participants lost during follow-up in a time-to-event analysis should be regarded as having missing outcome data if their subsequent death status is unknown.  
+   - Because the trial included only 13 randomized participants, the missing survival outcome for one participant cannot confidently be considered too small to affect the result.  
+   - Nonetheless, there is no reported evidence that dropout was due to prognosis, adverse events, or treatment-related reasons. Therefore, it is not established that missingness was likely dependent on the true survival time; this supports **some concerns**, rather than high risk of bias.
+
+4. **Measurement of the outcome: low risk of bias**  
+   a. **Judgement:** Low risk of bias. Survival/death is an objective outcome, measured comparably between groups, and is not plausibly influenced by knowledge of treatment assignment.  
+   b. **Rationale:**  
+   - The primary outcome was survival time. The article specifies that follow-up in the randomized study “ends with date of death or end of the study, whichever occurs first.”  
+   - Death is an observer-reported outcome that does not require subjective clinical judgement. Knowledge of doxycycline or placebo assignment cannot influence whether death occurred.  
+   - The trial was double blinded, further reducing any possibility that ascertainment or recording of death differed systematically between groups.  
+   - No indication is given that survival was measured using different sources, definitions, or follow-up procedures in the doxycycline and placebo groups.
+
+5. **Selective reporting: some concerns**  
+   a. **Judgement:** Some concerns. The prespecified primary endpoint in the trial registration was survival from symptom onset until death, whereas the publication’s randomized-trial analysis used survival from randomization/first study-medication administration. This unexplained discrepancy raises concern that the reported survival result may have been selected from more than one eligible survival-time definition. There is, however, insufficient evidence to conclude that selection was based on the results.  
+   b. **Rationale:**  
+   - The EudraCT registration prespecified: “Der primäre Zielparameter soll die Überlebenszeit der Patienten von Symptombeginn an sein” (“The primary endpoint is intended to be patients’ survival time from symptom onset”). Evaluation was specified as “until death.”  
+   - In contrast, the publication states: “In the double-blinded randomised study, follow-up for survival starts with the randomisation (first application of study medication) and ends with date of death or end of the study, whichever occurs first.”  
+   - The article therefore reports a different survival-time origin from the one prespecified in the registry. Both survival from symptom onset and survival from randomization are potentially eligible analyses of the survival outcome, and the change is not explained.  
+   - The registry does not provide a sufficiently detailed, time-stamped statistical analysis plan specifying the intended survival-analysis method, censoring rules, covariate adjustment, or handling of missing survival data.  
+   - There is no direct evidence that the published time origin or analysis was selected because it produced a more favourable result. Consequently, this issue warrants **some concerns**, rather than high risk of bias.

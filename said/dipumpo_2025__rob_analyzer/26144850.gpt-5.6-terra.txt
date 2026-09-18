@@ -1,0 +1,134 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 26144850
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## RoB 2 assessment
+
+**Study design:** Individually randomized, parallel-group field trial.  
+**Comparison:** Monthly rifampicin–ofloxacin–minocycline for 6 months (ROM-6) versus WHO paucibacillary multidrug therapy for 6 months (PB-MDT).  
+**Result assessed:** Long-term **relapse rate** (ROM-6: 3 relapses/688.1 person-years, 0.436 per 100 person-years; PB-MDT: 7 relapses/636.4 person-years, 1.10 per 100 person-years; Mantel–Haenszel χ²=3.76, *P*=0.053).  
+**Effect of interest:** Effect of **assignment** to ROM-6 versus PB-MDT (intention-to-treat effect).  
+**Sources available for this assessment:** The article and its tables. The reported trial registry entry was dated 22 November 2013, whereas recruitment occurred from 2001–2004 and follow-up ended in November 2010. No contemporaneous protocol or statistical analysis plan was available in the supplied material.
+
+### 1. Bias arising from the randomization process — **Some concerns**
+
+**Signalling questions**
+
+- **1.1 Was the allocation sequence random?** **Yes.**  
+  The article states that “268 three-digit random numbers from the table were written in the patient registers in advance.” Allocation was determined by the parity of these randomly selected numbers: even numbers received PB-MDT and odd numbers ROM-6. This constitutes a random component in sequence generation.
+
+- **1.2 Was the allocation sequence concealed until participants were enrolled and assigned to interventions?** **No information.**  
+  The random numbers were “written in the patient registers in advance.” The report does not state who had access to these registers, whether allocation was revealed only after irreversible enrolment, or whether safeguards prevented recruiters or clinical staff from knowing upcoming assignments. There was no central allocation system, independent allocator, or sequentially numbered opaque sealed-envelope procedure reported.
+
+- **1.3 Did baseline differences between intervention groups suggest a problem with the randomization process?** **Probably no.**  
+  The two groups were equal in size at randomization (134 each). Reported baseline distributions of lesion number and nerve thickening were broadly similar. Mean age was 36.4 years in PB-MDT and 40.2 years in ROM-6 (*P*=0.059), and mean disease duration was 35.8 versus 32.0 months (*P*=0.29). These reported differences do not by themselves demonstrate an imbalance unlikely to have arisen by chance. The article notes a numerical difference in disease duration below 12 months (31.3% PB-MDT versus 40.6% ROM-6), but does not establish that this difference was statistically or clinically incompatible with chance.
+
+**Judgment and motivation**
+
+The allocation sequence was generated using random-number tables, and the reported baseline data do not show a clear indication that randomization failed. However, allocation concealment was not reported. Since pre-written allocation numbers in patient registers could potentially have been accessible before enrolment, but the report provides no direct evidence that they were accessible or manipulated, this domain is judged as **some concerns**, rather than high risk of bias.
+
+---
+
+### 2. Bias due to deviations from intended interventions — **High risk of bias**
+
+**Signalling questions**
+
+- **2.1 Were participants aware of their assigned intervention during the trial?** **Yes.**  
+  The article explicitly states: “Blinding to treatment was not undertaken.” In addition, the regimens were materially different: ROM-6 was administered monthly under supervision, whereas PB-MDT included supervised monthly rifampicin/dapsone plus self-administered daily dapsone.
+
+- **2.2 Were carers and people delivering the interventions aware of participants’ assigned intervention during the trial?** **Yes.**  
+  Treatment was administered and monitored by paramedical workers and doctors, and blinding was not undertaken. Personnel necessarily knew which regimen was given.
+
+- **2.3 Were there deviations from intended intervention that arose because of the trial context?** **No information.**  
+  The study reports treatment discontinuation/default in 46 of 268 randomized patients: 27/134 (20.1%) in PB-MDT and 19/134 (14.2%) in ROM-6. Reasons included weakness/intolerance, swelling of feet, vomiting/diarrhea, feeling cured, stigma, pregnancy, and loss to treatment. However, the article does not establish whether these deviations arose specifically because of the trial context, as opposed to occurring in routine care.
+
+- **2.6 Was an appropriate analysis used to estimate the effect of assignment to intervention?** **No.**  
+  The principal relapse-rate analysis included 212 patients (104 PB-MDT and 108 ROM-6), whereas 268 patients were randomized. Thus, 56 randomized participants were not included in the reported relapse analysis. The analysis also excluded patients who defaulted from treatment or who were lost following treatment. The article’s stated relapse results therefore do not include all randomized participants in their assigned treatment groups.
+
+- **2.7 Was there potential for a substantial impact on the result of failure to analyse participants in the groups to which they were randomized?** **Yes.**  
+  Exclusion from the relapse analysis involved 56/268 randomized participants (20.9%). Moreover, treatment discontinuation differed numerically between groups (20.1% PB-MDT versus 14.2% ROM-6), and discontinuation was related to treatment experience and clinical circumstances. The outcome was relapse over long follow-up; excluding over one-fifth of randomized participants has clear potential to materially alter the relapse comparison.
+
+**Judgment and motivation**
+
+The result was not based on an intention-to-treat analysis including all randomized participants. The long-term relapse-rate analysis excluded a substantial proportion of the randomized cohort, including treatment defaulters and those lost to follow-up. The exclusion is particularly important because the analysis is intended to compare outcomes following assignment to the two regimens, and treatment completion/default was part of the post-randomization experience. The potential impact is substantial, given that 56 of 268 randomized patients were excluded. Therefore, this domain is judged at **high risk of bias**.
+
+---
+
+### 3. Bias due to missing outcome data — **High risk of bias**
+
+**Signalling questions**
+
+- **3.1 Were data for relapse available for all, or nearly all, randomized participants?** **No.**  
+  Relapse rates were reported for 212 participants (104 PB-MDT and 108 ROM-6) rather than for all 268 randomized participants. At eight years, only 67 PB-MDT and 73 ROM-6 participants remained under follow-up. The report states that 88 and 90 patients, respectively, could be followed at five years. Therefore, long-term outcome data were not available for all or nearly all randomized patients.
+
+- **3.2 Is there evidence that the result was not biased by missing outcome data?** **No.**  
+  No analysis was reported that appropriately addressed the missing data, such as sensitivity analyses under plausible missing-data assumptions, inverse-probability weighting, or another method demonstrating robustness of the relapse comparison. The reported person-years analysis does not establish that censoring/loss to follow-up was non-informative.
+
+- **3.3 Could missingness in relapse outcome data depend on the true relapse status?** **Yes.**  
+  Relapse was determined by clinical follow-up. Participants who could not be traced or did not remain under follow-up could have had undetected relapse, active disease, reactions, or cure. The authors themselves acknowledge: “A good number of patients were lost to follow up after release from treatment and thus actual number of relapses in the study could not be assessed.”
+
+- **3.4 Is it likely that missingness in relapse outcome data depended on its true value?** **No information.**  
+  The report does not provide adequate reasons for long-term post-treatment losses, separately by treatment group and by subsequent disease status. It is therefore not possible to determine directly whether missingness was related to relapse status. Nevertheless, the authors’ explicit acknowledgement that the actual number of relapses could not be assessed confirms that missing follow-up could materially affect ascertainment of relapse.
+
+**Judgment and motivation**
+
+Long-term relapse data were missing for a substantial proportion of randomized participants. The principal relapse analysis excluded 56 randomized participants, and retention fell markedly over time. There was no reported sensitivity analysis or justified method to show that missingness did not bias the comparison. Since relapse can only be detected through follow-up and the authors state that the true number of relapses could not be assessed because of losses to follow-up, the result is at **high risk of bias due to missing outcome data**.
+
+---
+
+### 4. Bias in measurement of the outcome — **Some concerns**
+
+**Signalling questions**
+
+- **4.1 Was the method of measuring relapse inappropriate?** **Probably no.**  
+  Relapse was prospectively defined clinically as new lesion(s), definite enlargement of lesions, or new nerve thickening. Apparent inflammatory reactions were treated with corticosteroids and considered relapse if inflammation did not improve after four weeks. These are stated clinical definitions relevant to the disease outcome. Although diagnosis was “purely clinical” and histology was unavailable, the report does not demonstrate that the specified clinical assessment method was invalid or unsuitable for detecting relapse.
+
+- **4.2 Could measurement or ascertainment of relapse have differed between intervention groups?** **Probably no.**  
+  The same stated clinical follow-up procedures and relapse definition were applied to both groups. Formal assessments were scheduled every six months after treatment. The article does not report different clinical thresholds, follow-up schedules, or diagnostic procedures by treatment group.
+
+- **4.3 Were outcome assessors aware of the intervention received?** **Yes.**  
+  No treatment blinding was undertaken. Follow-up involved trained paramedical workers and doctors who administered or monitored treatment and assessed clinical status; therefore, assessors were likely aware of assigned treatment.
+
+- **4.4 Could assessment of relapse have been influenced by knowledge of intervention received?** **Yes.**  
+  Relapse determination included clinical judgments concerning lesion enlargement, new lesions, nerve thickening, differentiation of reactions from relapse, and response after corticosteroid treatment. These assessments involve judgment and could be influenced by knowledge of treatment assignment.
+
+- **4.5 Is it likely that assessment of relapse was influenced by knowledge of intervention received?** **Probably no.**  
+  The article does not report evidence that assessors used different criteria between groups or that their assessment was demonstrably influenced by treatment knowledge. Both treatments were active anti-leprosy regimens, rather than one being no treatment or placebo. However, because the clinical outcome assessment was unblinded and judgment-based, the possibility of influence cannot be excluded.
+
+**Judgment and motivation**
+
+Relapse was assessed using stated clinical criteria and apparently comparable procedures in both groups. However, outcome assessors were unblinded, and clinical identification of relapse and distinction from reaction required judgment. The report provides no blinded adjudication, histological confirmation, or other independent verification. There is insufficient evidence that assessment was actually influenced by knowledge of assignment, but the potential remains. This domain is judged as raising **some concerns**.
+
+---
+
+### 5. Bias in selection of the reported result — **Some concerns**
+
+**Signalling questions**
+
+- **5.1 Were the data that produced the relapse-rate result analysed in accordance with a pre-specified analysis plan finalized before unblinded outcome data were available?** **No.**  
+  No prospective protocol or statistical analysis plan is provided. The trial registry reference is dated 22 November 2013, after recruitment had ended in 2004 and after the study follow-up period ended in November 2010. The supplied report therefore does not provide evidence of a pre-specified analysis plan finalized before unblinded outcome data became available.
+
+- **5.2 Is the relapse-rate result likely to have been selected from multiple eligible outcome measurements within the relapse outcome domain?** **No information.**  
+  Relapse and cure were assessed at multiple follow-up time points: release from treatment, 6, 12, 18, 24, 36, 48, and 60 months, 61–96 months, and beyond 96 months. The report presents several follow-up summaries and a cumulative person-years relapse-rate analysis. Without a prospective analysis plan, it cannot be determined whether the reported long-term relapse-rate comparison was selected from multiple possible time-point-specific or cumulative relapse results on the basis of the findings.
+
+- **5.3 Is the relapse-rate result likely to have been selected from multiple eligible analyses?** **No information.**  
+  The article reports several forms of presentation: relapse counts over different time periods, cure proportions at various time points, cumulative relapse rates per person-year, χ²/Mantel–Haenszel comparisons, and a Cox regression said not to be presented because no effect of covariates was found. Without a pre-specified analysis plan, it is not possible to establish whether the selected person-years relapse analysis was chosen from multiple analyses based on the results.
+
+**Judgment and motivation**
+
+The report does not provide a prospectively finalized protocol or statistical analysis plan. The registry entry was retrospective relative to recruitment and follow-up. There were multiple follow-up times and potential methods of reporting the clinical outcomes, but the available information does not prove selective reporting on the basis of results. In accordance with RoB 2, this is judged as **some concerns**, rather than high risk of bias.
+
+---
+
+### 6. Overall risk-of-bias judgment — **High risk of bias**
+
+The overall judgment is **high risk of bias** for the long-term relapse-rate result.
+
+This follows directly from the RoB 2 rules because the study is at **high risk of bias in at least one domain**:
+
+1. **Bias due to deviations from intended interventions:** high risk, because the principal relapse comparison excluded 56 of 268 randomized participants and was not an analysis of all participants according to randomized assignment.  
+2. **Bias due to missing outcome data:** high risk, because long-term relapse ascertainment was incomplete, losses to follow-up were substantial, no adequate analysis addressed missing data, and the authors acknowledge that the actual number of relapses could not be assessed.
+
+There are also **some concerns** regarding allocation concealment, unblinded clinical assessment of relapse, and absence of a prospectively finalized analysis plan. Consequently, the reported relapse-rate comparison does not provide a low-risk-of-bias estimate of the effect of assignment to ROM-6 versus PB-MDT.

@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26144850
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Kumar, 2015 (Note: The first author's last name is Kumar based on the references and author initials "AK", published around 2015 based on the text "Global leprosy-an update on 2012 situation. 2013", etc.) Let's use Kumar, 2015.
+**Outcome Name**: cure rate at 2 years
+**registration number**: REF/2013/11/005995
+
+Domain 1
+1.1 : Y (100%)
+The article explicitly states that patients were allocated "using random number tables".
+1.2 : N (100%)
+The allocation sequence was not concealed. The article states, "268 three-digit random numbers from the table were written in the patient registers in advance. Patients with even numbers were given PB-MDT and those with odd numbers were given ROM. Blinding to treatment was not undertaken." This describes an open random allocation schedule.
+1.3 : N (100%)
+There were no significant differences in baseline characteristics between the intervention and control groups, as shown in Table 2 and stated in the text (e.g., age P=0.059, disease duration P=0.29).
+Result of the domain: High risk (100%)
+The answer to question 1.2 is "N", which automatically results in a "High risk" for Domain 1.
+
+Domain 2
+2.1 : Y (100%)
+The article clearly states that "Blinding to treatment was not undertaken", meaning participants were aware of their assigned intervention.
+2.2 : Y (100%)
+Since blinding was not undertaken, the carers and people delivering the interventions were aware of the participants' assigned intervention.
+2.3 : NI (100%)
+The article does not provide information regarding important non-protocol interventions and whether they were balanced across groups.
+2.4 : Y (100%)
+There were significant failures in implementing the intervention, as the default rate was 20.1% in the PB-MDT group and 14.2% in the ROM-6 group, both of which are greater than 10%.
+2.5 : Y (100%)
+More than 10% of the participants did not adhere to the assigned intervention (defaulted/discontinued treatment).
+2.6 : N (100%)
+The article evaluated the cure rate based on "those who completed treatment" (a per-protocol analysis), which is an inappropriate analytical method to evaluate the true effectiveness of the assigned interventions compared to appropriate methods like inverse probability weighting.
+Result of the domain: High risk (100%)
+Since the answers to 2.1 and 2.2 are "Y", 2.3 is "NI", 2.4 and 2.5 are "Y", and 2.6 is "N", the assessment result for Domain 2 is "High risk".
+
+Domain 3
+3.1 : N (95%)
+The outcome is a binary variable (cured vs. not cured). At 2 years, 100 out of 134 in PB-MDT and 103 out of 134 in ROM-6 were followed up, meaning about 25% were missing. Although there were many observed events (cured), the number of non-events was very small compared to the number of missing outcomes, leading to a substantial proportion of missing data.
+3.2 : N (100%)
+There is no evidence that the analysis used methods like inverse probability weighting to correct for bias due to missing data.
+3.3 : PY (95%)
+Participants dropped out due to health statuses such as "weakness/intolerance", "swelling of feet", and "vomiting/diarrhea", which could be indirectly related to the disease or treatment tolerance.
+3.4 : Y (90%)
+Missingness due to drug toxicity, side effects, and patient perceived clinical status ("felt cured") indicates that missingness in the outcome was likely related to its true value.
+Result of the domain: High risk (95%)
+Since 3.1 is "N", 3.2 is "N", 3.3 is "PY", and 3.4 is "Y", the assessment result for Domain 3 is "High risk".
+
+Domain 4
+4.1 : N (100%)
+The outcome was measured using predefined clinical assessments ("complete resolution of the lesion...").
+4.2 : N (100%)
+The outcome was measured at comparable time points (every 6 months) for both groups using the same clinical evaluation methods.
+4.3 : Y (100%)
+The outcome measurement was assessed by clinicians, and blinding was not undertaken, so outcome assessors were aware of the interventions.
+4.4 : Y (100%)
+The outcome is a subjective measure (clinical assessment of lesion healing, erythema, infiltration) assessed by an unblinded outcome assessor.
+4.5 : N (90%)
+There is no clear evidence to suggest that knowledge of the intervention status was likely to actively influence the outcome assessment by the medical professionals.
+Result of the domain: Some concerns (95%)
+Since 4.1 is "N", 4.2 is "N", 4.3 is "Y", 4.4 is "Y", and 4.5 is "N", the assessment result for Domain 4 is "Some concerns".
+
+Domain 5
+5.1 : NI (100%)
+The trial was registered retrospectively (in 2013, whereas patient recruitment started in 2001). Therefore, it cannot be confirmed if the data were analyzed in accordance with a pre-specified plan finalized before unblinded data were available.
+5.2 : N (100%)
+There is no clear evidence that the reported result was selected from multiple eligible outcome measurements; the definition of cure was standard and consistently reported.
+5.3 : N (100%)
+There is no evidence that the reported result was selected from multiple eligible analyses of the data.
+Result of the domain: Some concerns (100%)
+Since 5.2 is "N", 5.3 is "N", and 5.1 is "NI", the assessment result for Domain 5 is "Some concerns".
+
+Overall Bias Risk for the Article: High risk (100%)
+Because at least one domain (Domains 1, 2, and 3) has an assessment result of "High risk", the overall assessment result for the article is "High risk".

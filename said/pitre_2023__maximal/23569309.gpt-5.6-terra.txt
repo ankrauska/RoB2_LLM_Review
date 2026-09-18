@@ -1,0 +1,123 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 23569309
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Outcome assessed:** progression-free survival (PFS) after random assignment; maintenance paclitaxel/gemcitabine (PG) versus observation.  
+**Effect of interest:** effect of assignment to the interventions at baseline (intention-to-treat effect).
+
+### 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**  
+The trial used a random allocation method, and randomization/registration were centrally coordinated. Although the report does not explicitly describe the technical mechanism used to conceal the sequence (e.g., web-based system or sequentially numbered opaque envelopes), centralized coordination at the Korean Cancer Study Group data center provides reasonable assurance that allocation was concealed from recruiting clinicians.
+
+The report states:
+
+- “**Registration and random assignment were coordinated centrally at the KCSG data center.**”
+- “**The random permutation method was used for random assignment.**”
+- Patients were assigned “**in a 1:1 ratio**,” with stratification for visceral disease, prior taxane therapy, response to induction PG, and hormone-receptor status.
+
+Baseline characteristics were generally comparable. There was one nominal difference in lung hematogenous metastases (31.9% versus 16.5%; *P* = .029), but this occurred among numerous baseline comparisons and does not constitute a pattern of major imbalance or a clearly implausible imbalance in a key prognostic characteristic. Group sizes were also as expected for 1:1 randomization (116 versus 115).
+
+Thus, the sequence was random, allocation was probably concealed through central assignment, and baseline data do not indicate a material failure of randomization.
+
+---
+
+### 2. Deviations from intended intervention: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias for the effect of assignment to maintenance PG versus observation.
+
+**b. Rationale:**  
+This was an unblinded trial. The registry specifies “Masking: NONE,” and participants and treating personnel would necessarily have known whether maintenance chemotherapy was administered. However, for the assignment effect, lack of blinding is problematic only when deviations from protocol arose because of the trial context, affected PFS, and were unbalanced between groups.
+
+The protocol-defined strategies were maintenance PG until progression/toxicity/withdrawal versus observation until progression/withdrawal. The publication states:
+
+- “**The patients randomly assigned to the maintenance arm continued with PG chemotherapy until disease progression, development of unacceptable toxicity, or withdrawal of consent.**”
+- “**The patients randomly assigned to observation were observed without any treatment until disease progression or withdrawal of consent.**”
+- “**Hormonal therapy was not allowed in either group of patients after random assignment before disease progression.**”
+
+The restriction on hormonal therapy reduced the likelihood of differential anticancer cointerventions before progression. Importantly, the analysis was conducted according to randomized assignment:
+
+- “**All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle.**”
+
+There were treatment discontinuations in the maintenance group, including discontinuation at physician discretion and for adverse events. These are relevant to adherence but do not by themselves bias the effect of assignment when participants remain analysed in their randomized groups. The report does not provide evidence that differential, non-protocol anticancer treatment before progression arose specifically from trial-context effects. In particular, it states that patients stopping maintenance treatment at physician discretion “**did not receive further anticancer treatment, including endocrine therapy, until disease progression was documented.**”
+
+Therefore, despite open-label treatment and differential treatment discontinuation, the ITT analysis appropriately estimates the effect of assignment and there is no clear evidence of trial-context deviations likely to bias PFS.
+
+---
+
+### 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+PFS was analysed as a time-to-event outcome and patients without documented progression were censored at last clinical contact or at the analysis cutoff:
+
+- “**Observations were censored at the last clinical contact if patients were lost to follow-up or at the cutoff date for the analysis (October 31, 2011).**”
+- “PFS was calculated from the date of random assignment to the documented date of disease progression or the last visit date.”
+
+The paper reports progression events (40/116 in the maintenance group and 80/115 in the observation group) but does not clearly report:
+
+1. the number censored specifically because of loss to follow-up or withdrawal;
+2. censoring distributions by randomized group;
+3. reasons for censoring by group; or
+4. sensitivity analyses addressing informative censoring.
+
+The discontinuation table documents patient withdrawal in both groups (14 versus 13), and other treatment/study discontinuations. Although the numbers of withdrawals were broadly balanced, it is not fully clear whether, and for how long, all such participants continued radiographic PFS follow-up after treatment discontinuation. This matters because in a PFS analysis, censoring can be informative if it is associated with an individual’s underlying risk of progression.
+
+The study scheduled imaging every 6 weeks, which supports systematic follow-up:
+
+- “**Radiographic studies were performed every 6 weeks.**”
+
+However, without explicit reporting of loss-to-follow-up and censoring details, it cannot be established that missingness/censoring was unrelated to the true progression time. There is insufficient evidence for high risk, but the incomplete information prevents a low-risk judgement.
+
+---
+
+### 4. Measurement of the outcome: **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**  
+PFS was measured using scheduled radiographic assessment and RECIST criteria, which are appropriate methods for evaluating tumour progression:
+
+- “**Radiographic studies were performed every 6 weeks.**”
+- “**Disease response was assessed according to RECIST (version 1.0).**”
+
+However, the study was open label and PFS was assessed by local investigators rather than a blinded independent central review:
+
+- The registry specifies “**Masking: NONE**.”
+- “**PFS and the duration of response were assessed by investigators.**”
+
+Progression determination using RECIST imaging involves judgement, including lesion selection, measurement, interpretation of new lesions, and the documented date of progression. In an unblinded comparison of active maintenance chemotherapy with observation, investigators’ knowledge of treatment assignment could plausibly affect the assessment or timing of progression, even though imaging was scheduled at regular intervals.
+
+No blinded independent radiology review or blinded adjudication committee is reported. Because outcome assessors were aware of treatment assignment and knowledge of assignment was likely capable of influencing investigator-assessed PFS, the result is at high risk of bias in outcome measurement.
+
+---
+
+### 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+PFS was prospectively registered as the primary outcome in the supplied trial registry (NCT00561119):
+
+- Registry primary outcome: “**Progression free survival**,” with a timeframe of approximately 4 years.
+- Publication: “**The primary endpoint was PFS after random assignment.**”
+
+The published result is consistent with the stated primary outcome and reports a conventional time-to-event analysis:
+
+- Hazard ratio for PFS: **0.73 (95% CI 0.55 to 0.97; *P* = .026)**.
+- Median PFS: **7.5 months versus 3.8 months**.
+
+Nevertheless, neither the registry record nor the publication provides a sufficiently detailed, date-stamped statistical analysis plan finalized before unblinded outcome data were available. The registry does not pre-specify important analytic details, such as the exact primary PFS analysis model, covariate adjustment approach, handling of censoring, or whether unadjusted versus adjusted analyses would be primary.
+
+The publication states that analyses were adjusted using a multivariable Cox model with covariates “selected before the analysis,” but no prespecified SAP is available to verify this:
+
+- “**Analyses of treatment effects were adjusted for covariates selected before the analysis using a multivariate Cox proportional hazards model**…”
+
+There is no direct evidence that the reported PFS result was selected from multiple analyses or time points on the basis of favourability. However, multiple eligible analytical approaches were possible, and the absence of a publicly available, prospectively finalized detailed analysis plan raises some concern.
+
+Therefore, the selective-reporting domain is judged as having some concerns rather than low risk.

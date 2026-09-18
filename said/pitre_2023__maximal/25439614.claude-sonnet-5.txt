@@ -1,0 +1,55 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 25439614
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Intravitreal Ranibizumab with Prompt vs. Deferred Laser for DME (5-Year Results) — Outcome: Visual Acuity
+
+**Effect of Interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** This is a large, NIH-funded, multicenter trial conducted by the DRCR.net, an experienced clinical trials network with a publicly available, detailed protocol (www.drcr.net). The manuscript states "randomization of the two treatment groups at baseline to try to minimize confounding and bias" was a stated design strength, and the network is well known to use centralized, web-based/telephone randomization with concealed allocation (standard practice replicated across all DRCR.net protocols). No baseline imbalance data comparing the two randomized arms as originally allocated are presented that suggest problems with randomization (only completer vs. non-completer comparisons are shown in Table 1, which is a missing-data issue, not a randomization issue). Given the pedigree of the trial network and lack of any signal of baseline imbalance or non-random allocation, a judgement of "Probably yes" is applied to sequence generation and concealment, yielding an overall **Low risk of bias**.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** Participants and treating personnel could not be masked to laser assignment status (prompt vs. deferred/none), since laser treatment is an overt procedure — "Some patients... prior treatment for DME," and by 5 years "44% of the eyes in the ranibizumab plus deferred laser treatment group had received at least one session of focal/grid laser." This lack of blinding to laser assignment creates potential for deviations arising from trial context. Notably, non-protocol interventions were unbalanced: "Other treatment for DME... was received by 9 (7%) of the completers in the prompt laser group... and none in the deferred laser group." While most of these (7/9) were per-protocol futility/failure criteria, 2 were not, indicating some non-protocol crossover unbalanced between groups. The analysis approach (longitudinal models using "all available visit data," consistent with modified ITT principles) is generally appropriate for estimating the assignment effect. However, the imbalance in non-protocol interventions and the unblinded nature of the laser assignment (potentially affecting behaviors, retreatment decisions, or ancillary care) introduce some uncertainty about whether all deviations were adequately accounted for. This does not rise to "high risk" because such deviations were relatively infrequent and the study explicitly accounted for treatment patterns, but the imbalance and lack of blinding to laser status warrant **Some concerns**.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** A substantial proportion of originally randomized eyes did not have 5-year visual acuity data: "the 5-year completion rate was 76%... prompt laser group and 74%... deferred laser group" (excluding deaths), meaning roughly a quarter of participants in each arm lacked outcome data — well above the threshold typically considered "small." The authors acknowledge this limitation: "participants without complete follow-up such that the 5-year data is absent on about a quarter... of all randomized eyes mostly due to participants who chose not to continue in the extension phase." Table 1 shows meaningful baseline differences between completers and non-completers (age, prior PRP, lens status, DR severity level), raising concern that missingness could be related to prognostic factors that in turn correlate with the outcome (visual acuity). The proportions of missing data were similar between the two groups (24% vs. 26%), which is reassuring, and the authors performed longitudinal models incorporating all available visit data and adjusted analyses controlling for identified prognostic differences between completers and non-completers as a form of sensitivity analysis: "These potential confounding variables were included in the adjusted longitudinal models to try to adjust for the observed differences." Because these adjustments cannot fully rule out bias from unmeasured factors driving both dropout and outcome, and the extent of missingness is substantial, this domain is judged as **Some concerns** rather than low risk.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** Visual acuity was measured using a standardized, validated protocol (electronic ETDRS visual acuity testing), an appropriate and objective-ish (though participant-reported/performance-based) method used identically in both arms; there is no indication that measurement methods differed by group. Critically, the authors explicitly state a study strength was "masking of the visual acuity examiners and OCT technicians," indicating that outcome assessors were blinded to treatment assignment (including laser status). Because assessors were blinded, and the method for measuring visual acuity was standardized and applied identically across groups, there is low risk that knowledge of intervention influenced outcome assessment. This supports a judgement of **Low risk of bias**.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** This report is a pre-planned long-term (5-year) extension of a registered, protocol-driven trial (protocol publicly available at www.drcr.net), with visual acuity as a consistently pre-specified primary outcome reported at 1, 2, 3, and now 5 years using the same metrics and consistent methodology (mean letter score change, proportions with ≥10/≥15 letter gains/losses) across all prior publications (references 1–3). The statistical analysis approach (longitudinal mixed models adjusting for baseline VA, prespecified subgroup analyses) appears consistent with prior reports from the same trial, and multiple pre-specified acuity-related outcomes are reported comprehensively (mean change, categorical thresholds, subgroup analyses) rather than a single selectively favorable result. There is no evidence of selective reporting of outcome measurements or analyses based on results. This supports **Low risk of bias**.
+
+---
+
+## Overall Risk of Bias for Visual Acuity Outcome: **Some concerns**
+
+Per RoB 2.0 guidance, because two domains (deviations from intended intervention and missing outcome data) are judged as "Some concerns," and neither is judged "High risk," but concerns exist across multiple domains that could plausibly and jointly affect confidence in the result (particularly given the ~25% missing data rate coupled with unblinded laser assignment and some unbalanced non-protocol treatment), the overall risk of bias for the visual acuity outcome at 5 years is **Some concerns**.

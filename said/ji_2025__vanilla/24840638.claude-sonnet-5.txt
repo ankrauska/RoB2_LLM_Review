@@ -1,0 +1,232 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 24840638
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"Immediately after the 5-visit abstinence trial, HTT participants were randomly assigned to one of three groups: percentile, fixed criterion, or random incentives. Random assignment to one of the three groups was accomplished by randomly assigning 2 participants to the percentile group, 2 to the fixed criterion group and 1 to the random incentives group from each group of 5 participants completing intake... Randomization was stratified by intent to use medication to help them stop smoking, and by order of study entry."
+
+Analysis:
+The description indicates a block randomization procedure (blocks of 5, with fixed proportions assigned to each group), stratified by two variables. Although the specific mechanism for generating the sequence within each block (e.g., computer-generated random numbers) is not explicitly detailed, the term "randomly assigning" combined with the systematic block structure strongly implies that a random process was used to determine the order/allocation within each block of 5 participants, rather than a deterministic or predictable method. This is consistent with standard blocked randomization procedures, which inherently include a random component (e.g., random permutation of block members) to prevent predictability. There is no indication of alternation, date-based assignment, or other non-random systematic methods. Given the explicit statement of "random assignment" and the structured stratified block design typical of rigorously conducted RCTs, it is reasonable to conclude that a genuine random component was used, even though the exact tool (e.g., computer algorithm, random number table) is not specified.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"Random assignment to one of the three groups was accomplished by randomly assigning 2 participants to the percentile group, 2 to the fixed criterion group and 1 to the random incentives group from each group of 5 participants completing intake." "Randomization was stratified by intent to use medication to help them stop smoking, and by order of study entry."
+
+Analysis: The article describes the sequence generation method (block randomization with stratification) but provides no information about how the allocation sequence was concealed from the enrolling investigator or participants prior to assignment. There is no mention of centralized randomization, sequentially numbered sealed opaque envelopes, pharmacy-controlled allocation, or any other concealment mechanism. Given that the allocation ratio (2:2:1) and block structure are described in a way that could be predictable by study personnel, and no concealment procedure is reported, there is insufficient information to determine whether the sequence was adequately concealed until assignment.
+
+Correct answer: No information
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"Participants in the three groups were statistically similar on all intake measures, as judged by t and probability tests, except for the proportion of participants attending Vocational/Technical School/Community College. A higher proportion of percentile incentive participants achieved this level of education, relative to fixed criterion participants (χ2 = 8.46, p < 0.01)."
+"Randomization was stratified by intent to use medication to help them stop smoking, and by order of study entry."
+Group sizes: Percentile N=36, Fixed Criterion N=40, Random N=18 (intended ratio 2:2:1, which is roughly consistent).
+
+Analysis: The authors report that groups were statistically similar on essentially all baseline/demographic variables except one (education level: Vocational/Technical/Community College attendance), which reached statistical significance (p<0.01). With numerous baseline characteristics compared (demographics, smoking history, income, etc.), finding one significant difference among many comparisons is consistent with chance (multiple comparisons issue) rather than indicating a flawed randomization process. This is a single isolated significant difference, not a substantial excess of imbalances, and education level is not typically a strong prognostic factor for smoking abstinence outcomes in this context (compared to smoking-related variables like cigarettes/day, CO levels, quit attempts, which were balanced). Group sizes (36/40/18) are roughly consistent with the intended 2:2:1 allocation ratio, showing no substantial deviation. There is no other indication of randomization failure such as excessive similarity. Therefore, this isolated imbalance appears compatible with chance given the many characteristics tested.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+"Percentile incentive participants were told that the value of the breath CO changed to help them smoke less. Fixed criterion incentive participants were told that they could only earn incentives for not smoking. Random incentive participants were told that they would receive incentives only for attendance; incentives were independent of amount smoked."
+"we did not include any systematic way of measuring whether or not participants fully comprehended the incentive contingency that they were randomized into."
+No placebo, sham, or blinding procedures for participants are described anywhere in the methods; participants were explicitly informed of their assigned contingency schedule.
+
+Analysis: Participants were explicitly told which incentive schedule they were assigned to (percentile, fixed criterion, or random), with distinct explanations of how each contingency worked. There was no placebo or sham condition, and no blinding procedure was implemented for participants. Since the differences between conditions were behaviorally salient (different contingency rules, different incentive amounts, different explanations given directly to participants), participants were clearly aware of their assigned intervention. This aligns with the domain analysis being "not yet assessed" but the study design itself provides clear evidence of lack of blinding.
+
+Correct answer: Yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+"Participants were also told what their breath CO criterion was for their next visit." "Immediately after randomization all participants were given a brief description of the incentive contingency that they were randomized into after the 5-visit abstinence trial. Percentile incentive participants were told that the value of the breath CO changed to help them smoke less. Fixed criterion incentive participants were told that they could only earn incentives for not smoking. Random incentive participants were told that they would receive incentives only for attendance; incentives were independent of amount smoked."
+
+Analysis: The intervention involved staff at the research site administering breath CO tests, informing participants of their criterion for the next visit, and delivering payments according to the assigned schedule (percentile, fixed criterion, or random). Because the incentive schedule itself required staff to calculate and communicate criteria and payments that differed by condition (e.g., percentile calculations vs. fixed <3ppm criterion vs. random probability), the personnel delivering the intervention necessarily knew which condition each participant was in — this is inherent to the nature of the intervention and cannot be blinded. There is no mention of any blinding procedure for staff administering the incentives, and by the nature of the trial design, blinding of intervention deliverers is not feasible.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+"Participants were paid $1.00 for each visit, regardless of breath CO level." "Immediately after randomization all participants were given a brief description of the incentive contingency that they were randomized into." "During each visit participants completed a form inquiring about medication use to aid in smoking cessation... Participants returned these forms after receiving any earned payments, and were told that their answers to these questions did not affect earned payments." No mention of participants seeking alternative interventions, crossing over between groups, unblinding effects influencing behavior, or trial personnel deviating from protocol delivery due to recruitment/engagement processes.
+
+Analysis: The study is a behavioral contingency management trial with three clearly defined incentive schedules (percentile, fixed criterion, random) delivered per protocol. The differences observed between groups (e.g., fixed criterion participants maintaining abstinence longer) are treated as intervention effects rather than deviations from protocol. There is no evidence that trial personnel administered interventions inconsistently with the protocol, nor evidence that participants sought non-protocol interventions or additional treatments because of trial recruitment/consent processes. The described "deviations" (e.g., participants earning incentives for non-abstinent samples in the percentile group, or fluctuating smoking behavior) are consequences of the assigned intervention schedules themselves, not contamination or contextual effects arising from trial engagement. The paper does not discuss participant awareness of group assignment influencing motivation differentially, nor co-intervention contamination, nor switching between arms. There is no reporting on whether participants sought smoking cessation aids outside the protocol differentially by group, though medication use was recorded as a stratification variable, suggesting the investigators controlled for this a priori rather than treating it as a deviation. Overall, no information is provided indicating that trial context (recruitment, consent process disappointment, engagement effects) caused failure to implement the protocol or unauthorized intervention use.
+
+Correct answer: No information
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+"Participants in the three groups were statistically similar on all intake measures, as judged by t and probability tests, except for the proportion of participants attending Vocational/Technical School/Community College. A higher proportion of percentile incentive participants achieved this level of education, relative to fixed criterion participants (χ2 = 8.46, p < 0.01)."
+No other deviations from the assigned intervention protocol (e.g., non-adherence, crossovers, or use of non-protocol interventions during the trial) were reported in the Methods or Results sections. The procedures for percentile, fixed criterion, and random incentive groups were implemented as designed, with no described protocol deviations during intervention delivery.
+
+Analysis:
+The domain risk and analysis state that risk of bias due to deviations from intended interventions has "not yet assessed," indicating no prior identification of deviations from the trial protocol arising from trial context. Reviewing the article, there is no mention of participants failing to receive their assigned intervention, cross-contamination between groups, non-protocol co-interventions, or other implementation deviations. The only imbalance noted (education level) is a baseline characteristic difference, not a deviation from intended intervention delivery during the trial. Since no deviations from intended interventions were identified or described in the trial, there is no basis to conclude that such deviations affected the outcome. Without documented deviations, it is not possible to assess their impact on the outcome.
+
+Correct answer: No information
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+"Participants in the three groups were statistically similar on all intake measures, as judged by t and probability tests, except for the proportion of participants attending Vocational/Technical School/Community College. A higher proportion of percentile incentive participants achieved this level of education, relative to fixed criterion participants (χ2 = 8.46, p < 0.01)."
+
+Additionally, the article describes differences in behavior post-randomization (e.g., proportion of visits resulting in incentive earned, amount earned) between groups, but these reflect intervention effects rather than protocol deviations. No explicit mention is made of deviations from the intended intervention protocol (e.g., non-adherence to assigned incentive schedule, contamination, co-interventions) occurring differentially between groups.
+
+Analysis: The domain risk assessment for "Risk of bias due to deviations from the intended interventions" is marked as "not yet assessed," indicating no specific deviations from intended intervention were identified or evaluated in the material provided. The trial procedures (percentile, fixed criterion, random incentive schedules) appear to have been implemented as designed for each group, with incentive delivery, breath CO testing, and payment procedures following the protocol. The baseline imbalance noted (education level) is not a "deviation from intended intervention" per se, but a baseline characteristic difference. There is no information in the text describing any participants failing to receive their assigned intervention, switching conditions, or protocol violations that would need to be balanced between groups. Given the domain risk and analysis were not yet assessed, and no explicit deviation-related information is provided in the article, there is insufficient information to determine whether deviations were balanced between groups.
+
+Correct answer: No information
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+- "Ninety-four participants completed intake, were classified as HTT based on their performance during the 5-visit abstinence trial, and were randomized to one of the three incentive groups."
+- "Approximately 40 participants were assigned to the percentile and fixed criterion groups, and 20 participants were assigned to the random incentives group."
+- Table 1 shows N = 36 (percentile), 40 (fixed criterion), 18 (random) = 94 total.
+- All subsequent results (e.g., "64% (23 of 36) and 63% (25 of 40) of percentile and fixed criterion incentive participants submitted at least one abstinent breath CO sample") report outcomes for all randomized participants in each group, with no mention of post-randomization exclusions.
+- No description of per-protocol or as-treated analysis; all participants retained in their randomly assigned group for analysis.
+
+Analysis: The article indicates that all 94 randomized participants were retained in their assigned groups (percentile, fixed criterion, random) throughout the reporting of results, based on group sizes matching the original randomization (36, 40, 18). There is no evidence of post-randomization exclusion of eligible participants, no per-protocol analysis, and no "as-treated" regrouping based on received intervention. The analyses (Kruskal-Wallis, Mann-Whitney, chi-square tests) were performed on participants as originally assigned to their intervention group, consistent with an intention-to-treat approach. There is no explicit statement labeling the analysis as "ITT," but the structure and reporting (same N as randomized) support that assignment-based analysis was used throughout, satisfying the criteria for an appropriate analysis.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"Ninety-four participants completed intake, were classified as HTT based on their performance during the 5-visit abstinence trial, and were randomized to one of the three incentive groups." "Table 1 shows demographic information for all 94 participants randomized by group." "Approximately 40 participants were assigned to the percentile and fixed criterion groups, and 20 participants were assigned to the random incentives group." (Table 1: N = 36 percentile, 40 fixed criterion, 18 random = 94 total)
+
+Analysis: The study randomized 94 participants into three groups. Table 1 reports demographic data for all 94 participants by their randomized group (36 percentile, 40 fixed criterion, 18 random), and the abstract states 93 participants (a discrepancy of only 1 participant from 94, likely a reporting inconsistency rather than an analysis deviation). All subsequent analyses (Kruskal-Wallis, Mann-Whitney, chi-square tests) appear to be conducted using the groups as randomized, with no indication that participants were analyzed in a different group than assigned or excluded from analysis based on post-randomization events. There is no mention of crossover, exclusion due to protocol deviations, or analysis according to actual treatment received rather than assigned treatment. The minor discrepancy in participant numbers (93 vs 94) does not appear related to analysis-group misclassification, and no evidence suggests exclusions were related to prognostic factors or occurred in a way that could bias the CO abstinence outcomes substantially.
+
+Correct answer: No
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"Ninety-four participants completed intake, were classified as HTT based on their performance during the 5-visit abstinence trial, and were randomized to one of the three incentive groups." Table 1 shows N = 36 (percentile), 40 (fixed criterion), 18 (random) = 94 total.
+
+"During the 60-visit treatment phase 64% (23 of 36) and 63% (25 of 40) of percentile and fixed criterion incentive participants submitted at least one abstinent breath CO sample (< 3 ppm), respectively. Forty-four percent (8 of 18) of random incentive participants submitted at least one abstinence breath CO sample."
+
+"The average number of delivered breath CO samples per participant (out of 60) was 42 (SD = 22), 40 (24), and 52 (19) for the percentile, fixed criterion and random incentive groups, respectively."
+
+Figure 1 (event records) show attendance/missed visits (white cells) for all participants across all three groups throughout the 60 visits.
+
+Analysis:
+The abstract states 93 participants were randomized, but the methods and Table 1 clarify that 94 participants were randomized (36+40+18=94). The outcome data (breath CO samples across 60 visits) appear to be available for all 94 randomized participants, as Figure 1 displays event records for every participant in each group, including missed visits (shown as white cells) as part of the outcome data itself—missed visits are treated as part of the primary outcome measures (e.g., number of delivered breath CO samples, ability to maintain abstinence) rather than as missing data requiring imputation. The paper explicitly reports outcomes for all randomized participants in each analysis (e.g., 36 percentile, 40 fixed criterion, 18 random for the primary "at least one abstinent sample" analysis), and subsequent analyses (number of criterion samples, maintenance of abstinence) are appropriately conditioned subgroups analyses reported with full participant counts. There is no indication of participants being excluded from the primary intention-to-treat analyses or of unaccounted missing outcome data—attendance/missed visits are explicitly recorded and reported as part of the outcome (visit-level breath CO data), not treated as missing.
+
+Therefore, outcome data appear available for all randomized participants (94/94), satisfying the "nearly all" criterion.
+
+Correct answer: Yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+"Ninety-four participants completed intake, were classified as HTT... and were randomized to one of the three incentive groups." "During the 60-visit treatment phase 64% (23 of 36) and 63% (25 of 40) of percentile and fixed criterion incentive participants submitted at least one abstinent breath CO sample..." "The average number of delivered breath CO samples per participant (out of 60) was 42 (SD = 22), 40 (24), and 52 (19)..." No mention of any analysis method correcting for missing data (e.g., ITT with imputation, sensitivity analyses, mixed models handling missingness) is provided; analyses appear based on completers/available data (e.g., "For those participants who were able to meet the breath CO criterion at least once...").
+
+Analysis:
+The study has substantial missing data due to missed visits (evident from attendance rates averaging only 40-52 out of 60 visits, i.e., 13-33% missing data per group) and dropout is likely differential given the nature of the intervention (participants failing to achieve abstinence may be more likely to miss visits). The analyses conducted (Kruskal-Wallis, Mann-Whitney, chi-square tests) do not appear to use any method specifically designed to correct for bias due to missing data, nor do the authors report any sensitivity analyses examining how results might change under different assumptions about missingness. Outcome measures like "number of visits to first abstinent sample" and "total criterion samples" are calculated only among those who achieved abstinence at least once, and delivered samples analyses do not address the potential informative nature of missingness relative to smoking status. There is no evidence of imputation methods, worst-case/best-case sensitivity analyses, or statistical models accounting for missing data mechanisms. Therefore, there is no evidence provided that the result was not biased by missing outcome data.
+
+Correct answer: No
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences: "The average number of delivered breath CO samples per participant (out of 60) was 42 (SD = 22), 40 (24), and 52 (19) for the percentile, fixed criterion and random incentive groups, respectively. The number of delivered breath CO samples was different between groups (H = 8.57, df (2), p < 0.02)." "White areas represent missed visits" (Figure 1). No explanation is provided anywhere in the manuscript regarding the specific reasons why participants missed visits/samples (e.g., equipment failure, logistic reasons); missed visits are simply reported as attendance gaps.
+
+Analysis: The outcome of interest is breath CO level, an indicator of smoking/abstinence status, and participants were required to attend visits to provide this measurement. Missing outcome data occurred whenever participants missed a scheduled visit, and the study explicitly shows substantial and differential missingness across groups (means of 42, 40, and 52 out of 60 visits with delivered samples), yet provides no documented, outcome-unrelated reason for these missed visits (e.g., equipment malfunction, administrative interruption). In smoking cessation research, missed visits are frequently associated with relapse or failure to maintain abstinence — i.e., participants who are smoking (or who feel they will test positive) are more likely to skip visits, whereas abstinent participants continue attending to collect incentives. Since no alternative, outcome-independent explanation for missingness is provided in the article, and the missingness pattern plausibly tracks the participants' true smoking status, there is meaningful risk that missingness in the outcome depended on its true (unobserved) value.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+- "The average number of delivered breath CO samples per participant (out of 60) was 42 (SD = 22), 40 (24), and 52 (19) for the percentile, fixed criterion and random incentive groups, respectively. The number of delivered breath CO samples was different between groups (H = 8.57, df (2), p < 0.02). However, there was no difference in the number of delivered breath CO samples between percentile and fixed criterion incentive participants (z = −0.10, p = 0.92)."
+- Figure 1 legend: "White areas represent missed visits" and description noting the "Fixed Criterion" and "Percentile" grids show attendance/missing patterns differing somewhat, "Random" grid more scattered.
+- No explicit reported reasons for missing visits (e.g., dropout due to relapse) are given in the text.
+
+Analysis:
+The outcome here is breath CO abstinence status across visits, and missing data occurs when participants fail to attend a visit. There is a statistically significant difference in the number of delivered (non-missing) breath CO samples across the three groups (H=8.57, p<0.02), indicating differential missingness by intervention arm. However, when comparing the two groups most relevant to the hypothesis (percentile vs. fixed criterion), there is no significant difference in missingness (z=-0.10, p=0.92), suggesting missingness is not clearly driven by outcome value between these two arms. The random incentive group, which had the highest attendance, also had the lowest abstinence success (44% vs 63-64%), which is somewhat inconsistent with the idea that non-attendance is driven by smoking status (if anything, more missingness might be expected to correlate with poor abstinence, but here the group with best attendance had lower abstinence). The paper provides no explicit information about specific reasons for missed visits (e.g., due to relapse, dropout, or discouragement), and there is no evidence that missingness reasons differed systematically according to outcome value. Given the context of smoking cessation trials, it is plausible that non-attendance could relate to continued smoking (similar to the schizophrenia example in the guidance), but the study does not report reasons for missing visits, nor strong differential patterns between the two key groups. Thus, while there are some concerns raised by the group-level difference in attendance, there isn't strong direct evidence that missingness depended on the true value of the outcome in a way that would clearly bias comparisons between percentile and fixed criterion groups.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences:
+"Abstinence is verified by an objective test, such as breath carbon monoxide (CO)."
+"Breath CO levels increase with increasing cigarette consumption and decline with abstention (Henningfield, Stitzer & Griffiths, 1980)."
+"We used an abstinence breath CO criterion of < 3 ppm based on our previous smoking cessation studies (Javors, Hatch & Lamb, 2005)."
+
+Analysis: The outcome measurement method used in this study is breath carbon monoxide (CO) level, an objective, validated biochemical marker of smoking abstinence. This method is well-established in the smoking cessation literature, has documented sensitivity to changes in smoking behavior (levels rise with consumption and decline with abstinence), and the specific abstinence threshold (<3 ppm) was based on prior validated research. There is no indication that this measurement method is insensitive to plausible intervention effects or that it has demonstrated poor validity. Breath CO monitoring is a standard, appropriate, and objective method for measuring smoking abstinence in this type of trial, and it was applied consistently across all groups.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"Breath CO samples ≥ 3 ppm did not earn an incentive... Abstinence is verified by an objective test, such as breath carbon monoxide (CO)." "Vitalograph CO monitors were used to take breath CO samples... We used an abstinence breath CO criterion of < 3 ppm based on our previous smoking cessation studies." "Percentile incentive participants were told that the value of the breath CO changed to help them smoke less. Fixed criterion incentive participants were told that they could only earn incentives for not smoking. Random incentive participants were told that they would receive incentives only for attendance."
+
+Analysis: The outcome (breath CO level, an objective biochemical measure) was assessed identically across all three groups using the same Vitalograph CO monitor procedure, the same abstinence threshold (<3 ppm), and the same visit schedule (every workday for 60 visits). There is no indication that the frequency, method, or timing of outcome ascertainment differed between the percentile, fixed criterion, and random incentive groups—only the incentive contingencies differed, not the measurement procedure itself. Because the outcome measure is objective (breath CO ppm via calibrated device) and administered identically across arms with the same visit schedule, there is minimal risk that measurement or ascertainment methods differed between intervention groups. This supports a low risk of differential outcome assessment.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences: "Abstinence is verified by an objective test, such as breath carbon monoxide (CO)." "Vitalograph CO monitors...were used to take breath CO samples." "Immediately after randomization all participants were given a brief description of the incentive contingency that they were randomized into." "Percentile incentive participants were told that the value of the breath CO changed to help them smoke less. Fixed criterion incentive participants were told that they could only earn incentives for not smoking."
+
+Analysis: The outcome (breath CO level, used to determine abstinence) is an objective biochemical measure verified by a device (Vitalograph CO monitor), not a subjective judgment by an assessor who could be influenced by knowledge of group assignment. However, participants themselves (who deliver the breath sample) were clearly aware of their intervention condition, as they were explicitly informed about the specific incentive contingency (percentile, fixed criterion, or random) they were randomized to. Since breath CO is an objective, participant-independent measurement, but participants (who could be considered assessors in the sense of behavior toward the test, e.g., timing of quitting/smoking behavior) knew their allocation, there is no blinding of outcome assessment on the behavioral side. The article does not mention independent blinded raters interpreting breath CO readings, and the participants (who directly influence the outcome through their smoking behavior and are informed of their group) were unblinded. Therefore, outcome assessors (participants themselves, given the objective breath test is self-administered and self-reported behavior underlies the outcome) were aware of their intervention status.
+
+Correct answer: Yes
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"Abstinence is verified by an objective test, such as breath carbon monoxide (CO)."
+"We used an abstinence breath CO criterion of < 3 ppm based on our previous smoking cessation studies."
+"Immediately after randomization all participants were given a brief description of the incentive contingency that they were randomized into after the 5-visit abstinence trial. Percentile incentive participants were told that the value of the breath CO changed to help them smoke less. Fixed criterion incentive participants were told that they could only earn incentives for not smoking. Random incentive participants were told that they would receive incentives only for attendance."
+
+Analysis: The primary outcome (breath CO level, used to determine abstinence status) is measured using an objective biochemical test (Vitalograph CO monitor) with a fixed numerical cutoff (<3 ppm). This is an objective, mechanically-read measurement that does not require subjective judgement by an assessor, and participants/staff had no ability to manipulate the machine's reading based on knowledge of group assignment. Although participants and study personnel were aware of intervention allocation (no blinding was implemented, as different instructions were given per group), the outcome itself (breath CO ppm reading) is not susceptible to influence by that knowledge, since it is an objective physiological measurement analogous to an objective lab test. Therefore, knowledge of intervention assignment is unlikely to have influenced the measurement of the outcome.
+
+Correct answer: No
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"Abstinence is verified by an objective test, such as breath carbon monoxide (CO)." "Vitalograph CO monitors (Vitalograph Inc. Lenexa, KS) were used to take breath CO samples... The peak breath CO reading was taken as the participant's breath CO level."
+
+Analysis: The primary outcome (breath CO level, used to determine abstinence) is measured using an objective biochemical instrument (Vitalograph CO monitor) that provides a quantitative, machine-generated reading. This outcome assessment does not rely on subjective judgment by an assessor who could be influenced by knowledge of which incentive condition (percentile, fixed criterion, or random) the participant was assigned to. Since the measurement is objective and automated, knowledge of intervention allocation is unlikely to influence the recorded breath CO value itself, even though participants and staff were aware of group assignment (necessary for delivering the differing incentive contingencies). There is no indication of any subjective interpretation or manual override in outcome recording.
+
+Correct answer: No
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+"Data Analysis" section describes the statistical tests used (Kruskal-Wallis, Mann-Whitney, chi-square) and rationale (non-normal distribution due to enrollment criteria), but there is no mention of a pre-registered protocol, trial registration number, or a pre-specified statistical analysis plan finalized before unblinding of outcome data.
+
+Analysis: The article provides a description of the analytic methods used after data collection, including justification for non-parametric tests based on the nature of the sample. However, there is no reference to a study protocol, trial registration, or a pre-specified analysis plan document that was finalized prior to data collection or before outcome data were unblinded. Without such information, it is not possible to verify whether the analyses reported were pre-specified or were determined post hoc after seeing the data. This lack of information about a prospective analysis plan means the risk of selective reporting cannot be excluded or confirmed based on the text provided.
+
+Correct answer: No information
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+"Data Analysis" section describes pre-specified outcomes: proportion achieving abstinence, time to first abstinent sample, total criterion samples, maintenance of abstinence, number of delivered samples, and earnings—each analyzed with Kruskal-Wallis/Mann-Whitney/chi-square tests. The Results section reports all of these outcomes systematically (proportion abstinent, time to first abstinence, total criterion samples, maintenance duration, attendance, earnings, proportion of visits earning incentive), with no indication that only favorable subsets were selected. There is no mention of a trial protocol or statistical analysis plan (SAP) being referenced, but the reported outcomes appear comprehensive and consistent with the stated hypothesis-driven analysis plan described in the Methods/Data Analysis section.
+
+Analysis:
+The article's Data Analysis section pre-specifies the outcome domains and comparisons (percentile vs. fixed criterion vs. random, using Kruskal-Wallis and Mann-Whitney tests) before presenting results. The Results section reports all of these pre-specified outcomes fully, including non-significant ones (e.g., total number of criterion samples p=0.053, earnings difference p=0.055), suggesting no selective reporting based on statistical significance. There is no explicit mention of a registered protocol or SAP, but the outcome measurements described (abstinence initiation, time-to-event, maintenance, attendance, earnings) appear to be measured in a single, consistent way for each domain (i.e., one measure per domain, not multiple competing scales or time points), and all pre-specified comparisons are reported regardless of significance. This reduces the likelihood of outcome-reporting bias due to selection from multiple eligible measures within a domain.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences:
+"Therefore, we used Kruskal-Wallis non-parametric tests to estimate differences between the three groups... we still preformed Mann-Whitney tests for differences between participants in the percentile and fixed criterion incentive groups. We used chi-square tests for all proportional differences between groups. We included sex as a covariate in all analyses."
+No mention of a trial protocol or statistical analysis plan being examined; no indication of multiple alternative analytic approaches (e.g., different covariate sets, different cut-points, adjusted vs unadjusted) being conducted and only a subset reported based on results.
+
+Analysis:
+The Data Analysis section describes a single, pre-specified analytic approach applied consistently across outcomes (Kruskal-Wallis, Mann-Whitney, chi-square tests, with sex as covariate). There is no evidence of a protocol or statistical analysis plan being referenced, nor evidence that multiple alternative analyses (e.g., different adjustment sets, different outcome definitions, unadjusted vs adjusted models) were conducted and selectively reported based on results. The methods appear consistently applied across all outcomes without apparent post-hoc selection. However, since no protocol/SAP is available for verification, and there could in principle be alternative ways the outcomes might have been analyzed (e.g., different covariates, different transformations), we cannot fully confirm that the reported analysis corresponds to all intended analyses.
+
+Correct answer: No information

@@ -1,0 +1,80 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 16954409
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0): Clinical Pregnancy Rate
+
+**Study design:** Individually-randomized parallel-group trial (3 arms: rFSH, uFSH, hMG)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- Sequence generation: The article states patients were "prospectively randomized using computer-generated random numbers," which satisfies the criterion for a random sequence. Signalling question 1.1 → Yes.
+- Allocation concealment: The report states "Women were allocated randomly to Group I, Group II or Group III on the day of the 2nd or 3rd day of menstruation with sealed envelopes by specialist nurse." However, there is no information on whether the envelopes were sequentially numbered, opaque, or tamper-proof, nor whether they were opened sequentially only after participant enrolment. This is insufficient detail to confirm adequate concealment; sealed (but not confirmed opaque/sequentially numbered) envelopes are a method susceptible to manipulation. Signalling question 1.2 → No information/Probably no.
+- Baseline imbalance: Table I shows no significant differences between groups in age, duration of infertility, BMI, or BMI category distribution, consistent with successful randomization (Signalling question 1.3 → No).
+
+Since allocation concealment cannot be confirmed as adequate (only "sealed envelopes" mentioned without further detail on safeguards), but there is no evidence of baseline imbalance or non-random sequence generation, this maps to "Some concerns" per the algorithm (adequate/random sequence with unclear concealment and no baseline imbalance evidence = some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention)
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- Participants and personnel awareness: This trial compared three different active gonadotrophin preparations (rFSH, uFSH, hMG) administered by injection, monitored by ultrasound and hormone levels. There is no mention of blinding, and given differing formulations/vials, it is likely participants and treating clinicians were aware of assigned intervention. Signalling question 2.1/2.2 → Probably yes.
+- However, because the interventions are all active gonadotrophin treatments administered according to a structured, protocol-driven stimulation and monitoring algorithm ("Stimulation of the cycles was monitored by serum estradiol (E2) level and transvaginal sonography, and gonadotrophin doses were adjusted individually" using pre-specified triggers for hCG administration and cycle cancellation), there is no clear evidence that deviations from intended intervention arose specifically *because of trial context* (e.g., no evidence of differential non-protocol cointerventions, crossover, or recruitment/engagement effects unique to trial participation). The protocol-driven triggers (E2 levels, follicle number/size) applied identically across groups. Signalling question 2.3 → No/Probably no.
+- Analysis: "Only one cycle per patient was performed" and the CONSORT flow diagram indicates all 241 randomized patients were analysed (81, 80, 80) with no post-randomization exclusions reported. This is consistent with an appropriate (ITT-consistent) analysis. Signalling question 2.6 → Yes.
+
+Given no blinding but no evidence that trial-context-related deviations occurred and an appropriate analysis was used, this is judged as low risk of bias for the effect of assignment to intervention.
+
+---
+
+## 3. Missing outcome data
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- The CONSORT flow diagram indicates that all 241 randomized participants (81, 80, 80 per group) were analysed, with no loss to follow-up reported for the primary outcome (clinical pregnancy, ascertained by ultrasound 6 weeks after IUI: "Clinical pregnancy was documented by TV-US, 6 weeks after the IUI"). Table II reports outcome data for the full sample sizes in each group (n=81, 80, 80), matching the numbers randomized.
+- There is no indication of exclusions, dropouts, or missing data for the pregnancy outcome. Signalling question 3.1 → Yes (data available for all/nearly all randomized participants).
+
+This supports a low risk of bias judgement.
+
+---
+
+## 4. Measurement of the outcome
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- Method of measurement: Clinical pregnancy was assessed by transvaginal ultrasound ("Clinical pregnancy was documented by TV-US, 6 weeks after the IUI"), an objective and appropriate method (not inappropriate). Signalling question 4.1 → No.
+- Comparability of measurement: The same method and timing were applied across all three groups, so there is no indication that ascertainment differed between intervention groups. Signalling question 4.2 → No.
+- Awareness of outcome assessors: There is no mention of blinding of the ultrasound assessor/clinician to intervention assignment. Given that participants and clinicians were aware of the assigned gonadotrophin preparation (open-label design implied throughout — different drugs, vials, and dosing/cost profiles), it is likely that the ultrasound assessor was also aware of group assignment, particularly if the treating physician performed the pregnancy scan. Signalling question 4.3 → Probably yes.
+- Influence of knowledge on assessment: Clinical pregnancy determined by ultrasound (visualization of gestational sac) is a relatively objective outcome with limited room for subjective judgement, reducing (but not eliminating) the likelihood that knowledge of allocation influenced the assessment. Signalling question 4.4 → Probably no/could have been influenced only minimally; Signalling question 4.5 → Unlikely to have been influenced.
+
+Because outcome assessors were probably not blinded, but the outcome (ultrasound-confirmed clinical pregnancy) involves little judgement and is not obviously susceptible to assessor bias, but there is no explicit statement addressing blinding of the assessor, this domain is judged as "Some concerns" rather than "Low," reflecting absence of information on blinding of outcome assessment.
+
+---
+
+## 5. Selective reporting
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- No trial registration entry could be identified for this study with a pre-specified statistical analysis plan (SAP) date-stamped prior to unblinding of outcome data; the article itself states that the primary outcome (clinical pregnancy rate) and pre-specified secondary outcomes (duration of stimulation, total gonadotrophin dose, number of dominant follicles, multiple pregnancy, miscarriage rate, OHSS rate) were defined in the Methods section, and all of these outcomes are reported in the Results/Table II, consistent with the stated pre-specified outcome set. Signalling question 5.1 → No information (no protocol/SAP available, as this trial pre-dates or is not linked to a registry with such documentation in the sources provided).
+- There is no evidence of selective reporting of alternative pregnancy definitions, time points, or multiple statistical analyses (e.g., only one analysis - clinical pregnancy rate by chi-square/Fisher's exact test - is presented, with no evidence of selection from multiple eligible analyses). Signalling questions 5.2/5.3 → No/Probably no, but based on limited available documentation.
+
+Given the absence of a publicly available trial registry entry or protocol/SAP against which to verify that the reported result (clinical pregnancy rate) was not selected from multiple outcome definitions or analyses, and no information provided by the trial registration document referenced, a judgement of "Some concerns" is most appropriate (per Table 13: no information on whether the result was selected from multiple eligible outcomes/analyses maps to "Some concerns").
+
+---
+
+## Overall Risk of Bias Judgement: **Some concerns**
+
+The trial has "Some concerns" for randomization (due to unclear allocation concealment procedures), measurement of the outcome (unclear blinding of outcome assessors), and selective reporting (absence of verifiable pre-specified analysis plan). No domain was judged at high risk of bias, but the presence of "some concerns" across multiple domains supports an overall judgement of "Some concerns" for the clinical pregnancy rate outcome.

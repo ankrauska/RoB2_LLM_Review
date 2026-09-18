@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 16954409
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Unknown Author, 2006 (Comparison of different gonadotrophin preparations in IUI cycles)
+**Outcome Name**: Clinical pregnancy rate
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (95% - High Certainty)
+Reason: The article explicitly states "prospectively randomized using computer-generated random numbers into three groups."
+
+**1.2**: **PN** (65% - Low Certainty)
+Reason: The article states "Women were allocated randomly... with sealed envelopes by specialist nurse." While sealing is mentioned, there is no mention of the envelopes being opaque or sequentially numbered, which are necessary safeguards for adequate concealment. This falls short of the criteria for "Y" or "PY" and suggests participants/allocators may have been able to anticipate assignment.
+
+**1.3**: **N** (95% - High Certainty)
+Reason: Table I shows no significant differences between groups in age, duration of infertility, BMI, or BMI distribution (all P = NS), indicating no problem with randomization.
+
+**Domain 1 Result: High Risk** (90% - Moderate/High Certainty)
+Reason: Since 1.2 = "PN," per the algorithm, this directly classifies Domain 1 as "High risk" regardless of other answers.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **NI** (65% - Low Certainty)
+Reason: The article does not explicitly describe blinding status of participants; it is not stated to be open-label nor does it describe placebo/sham use. No information regarding participant awareness is given.
+
+**2.2**: **PY** (70% - Low/Moderate Certainty)
+Reason: Although not explicitly stated, staff/nurses administering different named drug preparations (Gonal-F, Metrodin-HP, Pergonal) would almost certainly know which product was being given due to differing packaging/labels, making blinding of care providers unlikely, even though not explicitly confirmed in text.
+
+**2.3**: **NI** (70% - Low Certainty)
+Reason: The article provides no explicit information about non-protocol interventions received by participants during the trial.
+
+**2.4**: **N** (75% - Moderate Certainty)
+Reason: Flow diagram indicates 241 randomized and 241 analyzed (81+80+80); no substantial implementation failures reported affecting >10% of participants.
+
+**2.5**: **NI** (70% - Low Certainty)
+Reason: No specific information is provided regarding adherence to the assigned gonadotrophin regimen (e.g., dose skipping, discontinuation).
+
+**2.6**: **NI** (65% - Low Certainty)
+Reason: No explicit analysis method (ITT, per-protocol, etc.) is stated in the article for handling adherence-related effects.
+
+**Domain 2 Result: High Risk** (75% - Moderate Certainty)
+Reason: Per the algorithm, since one of 2.1/2.2 is "NI"/"PY," and 2.3 is "NI," and 2.6 is "NI," this combination leads to a "High risk" classification for Domain 2.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **Y** (95% - High Certainty)
+Reason: All 241 randomized participants (81+80+80) were included in the final analysis, as confirmed by the Results and Table II (n = 81, n = 80, n = 80). This is a binary outcome with complete data reporting.
+
+**Domain 3 Result: Low Risk** (95% - High Certainty)
+Reason: Since 3.1 = "Y," per the algorithm, Domain 3 is directly classified as "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (90% - High Certainty)
+Reason: Clinical pregnancy was documented by transvaginal ultrasound (TV-US) 6 weeks after IUI, a standard and reliable method for this outcome.
+
+**4.2**: **N** (90% - High Certainty)
+Reason: The measurement method (TV-US) and timing (6 weeks post-IUI) were identical and predefined across all three groups.
+
+**4.3**: **NI** (70% - Low Certainty)
+Reason: The article does not specify whether outcome assessors performing the TV-US were blinded to group allocation.
+
+**4.4**: **N** (90% - High Certainty)
+Reason: Clinical pregnancy confirmed by ultrasound is an objective outcome measure, not subject to patient-reporting bias or subjective assessor interpretation.
+
+**4.5**: **N** (85% - Moderate/High Certainty)
+Reason: No clear evidence suggests that knowledge of intervention allocation influenced the objective ultrasound-based assessment of pregnancy.
+
+**Domain 4 Result: Low Risk** (85% - Moderate Certainty)
+Reason: Per the algorithm, with 4.1 = N, 4.2 = N, 4.3 = NI, and 4.4 = N, this pathway leads to "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **NI** (85% - Moderate Certainty)
+Reason: No trial registration number or pre-specified/published analysis plan is reported in the article. Per instructions, absence of registration/publication plan defaults to "NI."
+
+**5.2**: **N** (85% - Moderate Certainty)
+Reason: Clinical pregnancy rate was measured via a single method (TV-US at a single time point, 6 weeks post-IUI) with no evidence of multiple eligible outcome measurements from which to selectively report.
+
+**5.3**: **N** (85% - Moderate Certainty)
+Reason: A single, consistent statistical analysis approach (Yates-corrected chi-square/Fisher's exact test) was applied to the primary outcome; no evidence of multiple analyses being tried with selective reporting.
+
+**Domain 5 Result: Some Concerns** (85% - Moderate Certainty)
+Reason: Per the algorithm, since 5.2 = N, 5.3 = N, and 5.1 = NI, this combination leads to "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment
+
+**Overall Risk of Bias: High Risk** (85% - Moderate/High Certainty)
+
+Reason: Per the algorithm, since at least one domain (Domain 1 and Domain 2) was rated as "High risk," the overall risk of bias for the article defaults to "High Risk," regardless of the ratings in other domains (Domain 3: Low risk, Domain 4: Low risk, Domain 5: Some concerns).

@@ -1,0 +1,112 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 24391767
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Enders, 2013
+**Outcome Name**: image quality parameters
+**Registration number**: NCT00715806
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+The article explicitly states "Eligible patients were randomly assigned (computer-generated sequence)," which is an adequate method of sequence generation.
+
+**1.2**: PY (80%)
+The article states "allocation was concealed (using sealed envelopes)." This confirms concealment was used, but it does not specify that the envelopes were sequentially numbered or opaque, so it is coded as "probably yes" rather than definitively "yes."
+
+**1.3**: N (95%)
+Table 1 shows that all baseline characteristics (age, sex, BMI, body weight, claustrophobia score, anxiety, region of imaging) were well balanced between groups with no statistically significant differences (all P>0.05), and the article explicitly states "They were well matched between both groups."
+
+**Result of Domain 1**: Low risk (90%)
+Since 1.2 = PY, 1.1 = Y, and 1.3 = N, this meets the criteria for "Low risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from the intended interventions
+
+**2.1**: Y (95%)
+"Patients could not be blinded to the assigned study group due to the MR imaging setting."
+
+**2.2**: Y (95%)
+Technologists/radiographers operating the two physically distinct scanners (open vs. short-bore) would necessarily know which intervention was being delivered.
+
+**2.3**: NI (60%)
+Conscious sedation (IV midazolam) was administered to some patients (16/93) who could not tolerate either scanner, and cross-referral occurred in 25/93 (27%) of examinations. The article does not report whether sedation/cross-referral rates were balanced between groups, and these are plausibly prognostic for image quality (e.g., via reduced motion artifact).
+
+**2.4**: N (90%)
+Only 1 of 93 patients (1%) failed to complete the intervention (aborted MRI, data excluded from analysis) — well below 10%.
+
+**2.5**: Y (90%)
+25 of 93 examinations (~27%) were performed after cross-referral to the alternate scanner (crossover), which exceeds the 10% threshold for non-adherence to assigned intervention.
+
+**2.6**: N (85%)
+"Examinations performed after cross-referral, with or without sedation, were included in the primary analysis" — this reflects an as-treated/treatment-received analysis rather than an appropriate method (e.g., instrumental variable analysis) to account for non-adherence.
+
+**Result of Domain 2**: High risk (85%)
+Since one of 2.1/2.2 = Y, 2.3 = NI, and 2.6 = N, this meets the criteria for "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: N (85%)
+105 patients were randomized for spinal imaging (52 short-bore + 53 open per Figure 1), but only 93 underwent imaging and were analyzed for image quality (93/105 ≈ 88.6%), which is below the 90% threshold for continuous outcomes.
+
+**3.2**: N (90%)
+No sensitivity analysis or bias-correction method (e.g., inverse probability weighting) was reported to address missing data from the 12 non-imaged patients.
+
+**3.3**: N (70%)
+Missing data resulted from patients being unable to tolerate MR imaging in either scanner due to claustrophobia; this reason is unrelated to the true value of the image quality outcome itself (which is only assessed on completed scans).
+
+**Result of Domain 3**: Low risk (75%)
+Since 3.1 = N, 3.2 = N, and 3.3 = N, this meets the criteria for "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+The measurement methods (validated qualitative 1–5 grading scales, standard SNR/CNR calculations, and validated contour sharpness measurement via ImageJ, referencing prior literature) are reliable and appropriate.
+
+**4.2**: N (90%)
+Both groups were measured using identical scales, ROI placement techniques, and comparable sequence parameters across scanners.
+
+**4.3**: N (90%)
+"At the time of the analysis the examiners were blinded to the imaging technique and patient identity." This is not a patient-reported outcome, and assessors were blinded.
+
+**4.4**: Y (80%)
+The qualitative image quality parameters are subjective measures assessed by outcome assessors (graded 1–5), which per the criteria would ordinarily generate a "Y"; however, this does not affect the domain-level judgment given 4.3 = N.
+
+**4.5**: N (85%)
+There is no evidence that assessment was influenced by knowledge of intervention, as assessors were explicitly blinded to imaging technique.
+
+**Result of Domain 4**: Low risk (85%)
+Since 4.1 = N, 4.2 = N, and 4.3 = N, this meets the criteria for "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (85%)
+The trial is registered (NCT00715806) with a published protocol (Enders et al., BMC Med Imaging 2011). The outcomes and analysis methods described in the Methods (qualitative grading, SNR, CNR, contour sharpness) match those reported in Results, consistent with the pre-specified protocol.
+
+**5.2**: N (85%)
+All outcome domains (qualitative parameters, SNR, CNR, contour sharpness) were measured using single, pre-specified methods without evidence of selective reporting from multiple alternative measurements.
+
+**5.3**: N (85%)
+The statistical analysis methods (chi-squared, t-test, Fisher exact test, Mann-Whitney) described in Methods match those applied and reported in Results, with no evidence of selective reporting from multiple analyses.
+
+**Result of Domain 5**: Low risk (85%)
+Since 5.2 = N, 5.3 = N, and 5.1 = Y, this meets the criteria for "Low risk."
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Overall Result**: **High Risk** (85%)
+
+Summary: Domain 1 = Low risk; Domain 2 = High risk; Domain 3 = Low risk; Domain 4 = Low risk; Domain 5 = Low risk. Because Domain 2 was rated "High risk" (driven primarily by substantial crossover/non-adherence [~27%] combined with an inappropriate as-treated analytic approach and unclear balance of non-protocol sedation between groups), the overall risk-of-bias rating for the image quality outcome is **High Risk**.

@@ -1,0 +1,70 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 26144850
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Cure Rate at 2 Years
+
+**Preliminary note:** This assessment addresses the outcome "cure rate at 2 years" and evaluates the effect of assignment to intervention (rather than adherence to intervention), as instructed.
+
+---
+
+## 1. Bias arising from the randomization process: **High risk of bias**
+
+**a. Judgement:** High risk of bias, primarily due to inadequate concealment of the allocation sequence.
+
+**b. Rationale:** 
+- *Sequence generation:* The trial states, "For allocation of patients to the two treatment groups, 268 three-digit random numbers from the table were written in the patient registers in advance. Patients with even numbers were given PB-MDT and those with odd numbers were given ROM." This indicates a genuinely random sequence generation method (Signalling Q1.1 = Yes).
+- *Allocation concealment:* However, the numbers were "written in the patient registers in advance," implying the entire sequence was pre-recorded and potentially visible/accessible to the paramedical workers and doctors performing recruitment and diagnosis confirmation before assignment. There is no description of any concealment mechanism (e.g., sequentially numbered opaque envelopes, central randomization, pharmacy-controlled allocation). This raises serious concern that enrolling personnel could foresee or manipulate assignment (Signalling Q1.2 = Probably No).
+- *Baseline imbalance:* Mean age approached but did not reach statistical significance (36.4 vs 40.2 years, P=0.059); other baseline characteristics were reasonably similar (Table 2), so this alone would not indicate a problem.
+- Per the RoB2 algorithm, an answer of "No"/"Probably No" to the concealment question defaults to **High risk of bias**, regardless of other responses, because concealment failure can permit selection bias in enrollment/allocation.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, despite lack of blinding, because there is no evidence that trial-context-driven deviations affected the outcome differentially, and the analysis approach was consistent with an intention-to-treat/modified-ITT approach.
+
+**b. Rationale:**
+- *Blinding:* "Blinding to treatment was not undertaken," so both participants and personnel were aware of assigned intervention (Q2.1/2.2 = Yes).
+- *Deviations due to trial context:* Both regimens were administered under direct monthly supervision by paramedical workers, and there is no description of contamination, cross-over, or co-intervention differences attributable to trial context. Reported deviations (default due to weakness/intolerance, vomiting/diarrhea, feeling cured, pregnancy) reflect ordinary non-adherence rather than issues arising specifically because of trial recruitment/engagement processes (Q2.3 = Probably No).
+- *Analysis:* The 2-year cure rate was calculated among all patients with available follow-up data at that time point (100/134 MDT; 103/134 ROM), consistent with a modified ITT approach (exclusion is due to missing outcome data, not selective exclusion of non-adherers), which is considered an appropriate analysis method for this domain (missing data itself is assessed separately) (Q2.6 = Yes).
+- This pattern maps to "Low risk of bias" in the RoB2 algorithm for Part 1 (aware but no context-driven deviations) and Part 2 (appropriate analysis).
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk of bias due to substantial, differential loss to follow-up with reasons plausibly related to the true outcome.
+
+**b. Rationale:**
+- *Extent of missing data:* Only 100/134 (74.6%) MDT and 103/134 (76.9%) ROM-6 patients had cure status data at 2 years — roughly a quarter of randomized participants in each arm were missing at this time point (Q3.1 = No; this is not "nearly all").
+- *No sensitivity analysis or correction:* No imputation or sensitivity analysis was reported to demonstrate that the 2-year result was robust to missing data (Q3.2 = No).
+- *Could missingness relate to true outcome value:* Reasons for default included "felt cured" (5 patients) — a reason directly tied to the outcome (cure) — as well as “weakness/intolerance,” “vomiting/diarrhoea,” and pregnancy (Table 3). The default/loss rates also differed between arms (20.1% MDT vs 14.2% ROM discontinued; "Lost to follow up" reported only in ROM-6 group [5.2%] at RFT). The authors themselves acknowledge this limitation: "A number of patients were lost to follow up after release from treatment and thus actual number of relapses in the study could not be assessed" (Q3.3 = Yes).
+- *Likely dependence on true value:* Given that "feeling cured" was an explicit reason for default (directly related to the outcome of interest), combined with differing default/loss proportions between arms, it is likely that missingness depended on the true outcome status, differentially by arm (Q3.4 = Yes) → **High risk**.
+
+---
+
+## 4. Measurement of the outcome: **High risk of bias**
+
+**a. Judgement:** High risk of bias due to unblinded, subjective clinical assessment of cure.
+
+**b. Rationale:**
+- *Appropriateness of method:* The method of assessing cure (clinical examination of lesion resolution) is a standard, appropriate method for this outcome in leprosy trials (Q4.1 = No).
+- *Comparability of ascertainment:* The same assessment method and schedule were applied to both groups (Q4.2 = No).
+- *Blinding of assessors:* "Blinding to treatment was not undertaken." The same paramedical workers/doctors delivering treatment (or aware of allocation) assessed clinical status, meaning outcome assessors were aware of intervention received (Q4.3 = Yes).
+- *Potential for influence:* Cure was defined subjectively — "complete resolution of the lesion or patch becoming flat, hypopigmented and with decrease in size of the lesion and/or regaining of sensation" — a judgement-based (observer-reported, involving judgement) outcome, which could plausibly be influenced by assessors' knowledge of treatment assignment and expectations about the newer ROM-6 regimen's non-inferiority (Q4.4 = Yes).
+- *Likelihood of influence:* Given the study's explicit aim to demonstrate comparability of the novel supervised ROM-6 regimen against standard therapy, combined with fully unblinded, judgement-dependent assessment, it is plausible that assessment of "cure" was influenced by knowledge of the assigned intervention (Q4.5 = Probably Yes) → **High risk**.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of a verifiable prospective analysis plan.
+
+**b. Rationale:**
+- The trial registry entry indicates: "This study is now registered on Clinical Trial Registry of India vide REF/2013/11/005995 dated 22 November, 2013." Patient recruitment occurred from June 2001 to July 2004, and follow-up concluded in 2010 — meaning registration occurred **years after** data collection and follow-up were complete. This precludes verification that the outcome measurements/analyses reported (including the 2-year cure rate) were pre-specified before unblinded outcome data were available (Q5.1 = No information, effectively unverifiable).
+- The sample size calculation in the Methods was explicitly based on a comparison of cure rates "at 24 months after release from treatment," suggesting the 2-year cure rate was a planned primary outcome from the trial's inception; there is no evidence that this particular result was selected from multiple alternative outcome definitions or analyses (Q5.2/5.3 = Probably No, based on internal consistency, though this cannot be confirmed against a genuine prospective protocol).
+- Because a genuine prospective protocol/SAP is unavailable for verification (only retrospective registry data), and multiple outcomes/time-points and subgroup analyses are presented in the paper without a clear a priori analysis hierarchy, there remains uncertainty about whether the reported result was selected on the basis of the findings.
+- This combination of circumstances (no prospective documentation, but internally consistent reporting matching the stated study design) supports a judgement of **Some concerns** rather than High risk.

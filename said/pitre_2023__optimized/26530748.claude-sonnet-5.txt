@@ -1,0 +1,45 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 26530748
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: PORTEC-2 Trial (EORTC QLQ-C30 Global Health Outcome)
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns, primarily due to lack of reported information about randomization methods.
+
+**b. Rationale:** The article provides no description of the sequence generation method or allocation concealment procedures for the PORTEC-2 trial. The publication states only that "427 patients with stage I high–intermediate-risk EC who participated in the PORTEC-2 trial were randomized to EBRT or VBT," with no further methodological detail on sequence generation or concealment. Table 1 shows baseline patient characteristics were compared between responders and the full trial cohort, and "no other significant differences were found" apart from age and comorbidities among responders (a post-randomization comparison relevant to attrition, not randomization integrity). No data are presented comparing baseline characteristics of the EBRT vs. VBT groups as originally randomized in this HRQL report (this was reported in earlier primary trial publications, which are not the focus here, but no information is given in this article to assess adequacy of sequence generation/allocation concealment). Given the absence of details on both signalling questions (1.1 and 1.2) in this source, and no reported baseline imbalance suggesting problems, this leads to a default judgement of "Some concerns" per the algorithm (No information on sequence generation and concealment, no evidence of imbalance problem).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns, due to lack of blinding and absence of explicit information regarding whether deviations from intended intervention arose due to trial context.
+
+**b. Rationale:** This was an open-label trial comparing EBRT versus VBT — two distinct radiotherapy modalities that cannot feasibly be blinded to participants, carers, or those delivering the intervention. The article does not explicitly discuss deviations from intended intervention (e.g., crossover, non-adherence to assigned radiotherapy) for the HRQL outcome, nor does it explicitly confirm that non-protocol interventions or implementation failures were absent. There is no information provided in this article about whether any such deviations occurred due to trial context and impacted the QLQ-C30 Global Health outcome specifically. The analysis appears to be based on all participants who responded and remained disease-free, consistent with an intention-to-treat-like framework ("Analysis of HRQL was done according to EORTC Quality of Life Group guidelines" using linear mixed models including all available data at each time point), which is an appropriate analytic approach. Because participants/personnel were necessarily aware of intervention assignment (lack of blinding inherent to the intervention type), and there is no information confirming absence of trial-context-driven deviations affecting the Global Health outcome specifically, this leads to "Some concerns" rather than "Low risk."
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk of bias due to substantial incomplete follow-up and no evidence that missingness was unrelated to the true outcome value.
+
+**b. Rationale:** Only 205 of 265 eligible patients (77%) responded at 7 years, and only 80 of 119 (67%) responded at 10 years. Furthermore, baseline "Questionnaires were sent to 265 eligible patients" reflects survivors excluding deaths and those lost from the original 427 randomized (348 had baseline + ≥1 follow-up questionnaire, 81% of responders), indicating substantial overall attrition from the original randomized cohort. The article explicitly states: "Responders at 7 years were slightly younger and had fewer comorbidities compared with the whole PORTEC-2 cohort" — indicating a systematic difference between responders and the full randomized population, suggesting that missingness may be related to health status/prognosis, which is plausibly related to the true value of HRQL outcomes such as Global Health. Additionally, patients who died or had disease progression/recurrence were excluded from this analysis by design ("patients were considered eligible if they were previous responders and were alive and disease-free"), meaning outcome data are systematically unavailable for those with worse health trajectories — a substantial concern for the Global Health outcome, as those experiencing recurrence or poor health are more likely to have missing data and differing outcome values. There is no sensitivity analysis presented addressing this potential bias. This pattern — differential and substantial missingness plausibly related to the outcome's true value — supports a "High risk of bias" judgement.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The QLQ-C30 Global Health scale is a well-validated, standard patient-reported outcome measure ("Cancer-specific general HRQL was measured with the EORTC Core questionnaire (QLQ-C30 v3.0)"), and the method of measurement was identical and appropriate for both intervention arms (self-administered questionnaires sent to all patients at the same intervals: "The HRQL questionnaire had been sent to the trial patients at 6-months intervals in the first 2 years and annually until 5 years," with 7- and 10-year follow-up added identically for both groups). As a participant-reported outcome, the "outcome assessor" is inherently the patient, who cannot be blinded given the nature of the interventions (EBRT vs. VBT). However, Global Health is a broad, general quality-of-life measure less likely to be strongly influenced by knowledge of specific treatment modality compared to treatment-specific symptom scales (e.g., bowel/bladder symptoms directly tied to known EBRT toxicity). There is no evidence in the article suggesting patients' global health ratings were systematically influenced by beliefs about which treatment they received, and measurement methods did not differ between groups. Therefore, while participants were unblinded, it is unlikely that assessment of this particular outcome (global health, not specific expected radiotherapy toxicity) was substantially influenced by knowledge of intervention received, supporting a "Low risk" judgement.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The EORTC QLQ-C30 Global Health scale is a core, pre-specified component of the standard, validated EORTC QLQ-C30 instrument, which was pre-specified as part of the trial's HRQL assessment battery from the original PORTEC-2 protocol and consistently reported across previous publications (5-year analysis, ref. 7, and now 7-/10-year analysis). The article states, "Analysis of HRQL was done according to EORTC Quality of Life Group guidelines," and results for the global health/functioning scales are reported comprehensively and consistently: "Scores on the QLQ-C30 functioning and global health scales did not significantly differ between the 2 treatment groups (Fig. 2, Table 2)." There is no indication of selective reporting from multiple alternative outcome measurements or analyses for this specific outcome — the Global Health scale is reported using the pre-specified standard scoring algorithm, and results (both non-significant findings) are transparently presented rather than omitted. Cross-checking against the trial registration record does not reveal evidence of selective outcome reporting for this measure. This supports a "Low risk" judgement.

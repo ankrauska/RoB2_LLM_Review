@@ -1,0 +1,62 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 21216670
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: FLAME Trial — Primary Endpoint: Progression in Fugl-Meyer Motor Scale (FMMS)
+
+---
+
+**1. Risk of bias arising from the randomization process: SOME CONCERNS**
+
+Justification: Randomisation was computer-generated, stratified by centre, with block size of four, and allocation was concealed via sequentially numbered opaque envelopes prepared and distributed by an independent pharmacist — this is a robust concealment mechanism, arguing for low risk on this specific element. However, I flag concerns because:
+- The block size of four was fixed and disclosed in the manuscript itself. In small multi-centre trials with fixed, small block sizes, especially if envelopes are sequentially numbered per centre, there is a theoretical risk of prediction of allocation towards the end of blocks, though the opaque envelope concealment mitigates this substantially.
+- More importantly, baseline imbalances are notable: mean age was higher in the fluoxetine group, previous stroke history was more frequent (17% vs 7%) in the fluoxetine group, and — critically — baseline FMMS score itself (the outcome variable) was already higher in the fluoxetine group (17.1 vs 13.4) at baseline, favouring the fluoxetine arm on the primary outcome measure before treatment even started. While the authors statistically adjusted for these, the imbalance in a modestly sized trial (n=118) with prognostically important variables raises the possibility that randomisation did not achieve comparable groups, and I cannot rule out a chance failure of randomisation or subtle process problems. This is not "high risk" as there is no evidence of subversion, but the imbalance is sufficient for "some concerns."
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: SOME CONCERNS**
+
+Justification: This was a double-blind trial with matched placebo capsules, and compliance (tablet counts, dose intensity) was well-documented and virtually identical between arms (94.8% vs 94.0% relative dose intensity), arguing for low risk of differential adherence.
+
+However, a substantive concern arises from the co-intervention protocol for incident depression: patients developing depression could be given **open-label fluoxetine 20mg** in addition to study drug, meaning some placebo-group patients effectively received fluoxetine (resulting in placebo patients getting the active drug, "20mg", vs fluoxetine-group patients receiving "40mg"). Given that depression occurred in 29% of the placebo group vs 7% of the fluoxetine group, this contamination disproportionately affected the placebo arm, which could dilute or even reverse any treatment difference in principle, but more importantly represents an uncontrolled deviation from the randomised comparison that was differential between groups. Although the authors performed a post-hoc sensitivity analysis adjusting for depression and found the result persisted, this analysis is not a substitute for an intention-to-treat estimate free of this contamination. Rehabilitation/physiotherapy was also not standardised across centres (each centre used its "normal protocol"), introducing further heterogeneity, though this was likely balanced by randomisation stratified by centre and adjustment for centre in analysis. Overall, the differential open-label fluoxetine crossover into placebo arm is a meaningful deviation affecting the estimand, warranting "some concerns" rather than "low risk."
+
+---
+
+**3. Risk of bias due to missing outcome data: LOW RISK**
+
+Justification: Of 118 randomised patients, 113 (95.8%) had complete primary outcome data at day 90 (57/59 fluoxetine, 56/59 placebo). Two deaths and three withdrawals were clearly documented and balanced across groups in absolute terms (1 death, 1 withdrawal in fluoxetine vs 1 death, 2 withdrawals in placebo), with reasons provided (respiratory distress, hypoxia, septic shock, kidney tumour, pulmonary embolism) that appear unrelated to the outcome or treatment effect (i.e., not plausibly related to differential motor outcome trajectories). The proportion of missing data is small (<5%) and unlikely to induce meaningful bias regardless of the missingness mechanism, given the size of the treatment effect reported. This domain is low risk.
+
+---
+
+**4. Risk of bias in measurement of the outcome (FMMS): SOME CONCERNS**
+
+Justification: The FMMS is an outcome rated by a physiotherapist through direct clinical examination of the patient — it is not purely participant-reported, but it does require observation/rating of patient performance (e.g., grading whether a movement is "fully, partly, or not performed"), which retains an element of subjective judgement by the assessor and can be influenced by patient effort/engagement.
+
+The manuscript states patients, carers, and physicians (including presumably the assessors) were masked to treatment assignment, which is reassuring. However:
+- No formal statement confirms that the FMMS-rating physiotherapist was strictly independent from other unmasked study personnel, nor is there description of checking the success of blinding (e.g., no data on whether patients/assessors guessed treatment allocation, which is relevant given fluoxetine's recognisable side-effect profile such as gastrointestinal disturbance, which was significantly more frequent in the fluoxetine group [25% vs 11%] and could unblind assessors or patients over the 90-day exposure period).
+- The FMMS, while more objective than pain/enjoyment scales, still involves patient cooperation and effort, and depression status (which differed significantly between arms — 29% vs 7%) is known to affect motor task engagement and performance; this creates a plausible pathway by which unblinding (via side effects) or the differential depression rates could have influenced the outcome measurement, independent of a true pharmacological motor effect.
+- No mention of testing/reporting on the success of masking.
+
+Given these factors, I rate this as "some concerns" rather than low risk.
+
+---
+
+**5. Risk of bias in selection of the reported result: SOME CONCERNS**
+
+Justification: The trial is registered (NCT00657163) with the primary outcome prospectively specified as "Progression in the Fugl-Meyer Motor Scale" at M3, which matches the reported primary outcome in the manuscript — this is reassuring.
+
+However, several items raise concern:
+- The registered protocol lists a planned FMMS assessment also at **M12** (12 months) as a secondary outcome, and follow-up visits at M12 were part of the original design ("Patients will be evaluated at inclusion, day 30, M3, M12"), yet the published manuscript reports outcomes only up to day 90, with no mention of M12 data or explanation for its absence. This selective reporting/truncation of follow-up (dropping a pre-specified long-term timepoint) is a meaningful concern, especially since durability of effect is central to the clinical relevance of the intervention (a limitation the authors themselves acknowledge in the Discussion).
+- The trial's sample size was designed to enrol up to 168 patients but was stopped early at 118 patients when "loss to follow-up was lower than expected" — this is a data-dependent stopping decision not clearly pre-specified as a formal interim/stopping rule, which introduces risk of bias amplification if statistical significance was a contributing (even if unstated) factor in the decision to stop early. No interim analysis or stopping-boundary methodology is described, and the trial did not have a Data Monitoring Committee (per registry: "oversightHasDmc": false), which is unusual for a decision to alter enrolment targets, raising concern about the discretion exercised in stopping.
+- Multiple secondary/post-hoc analyses (subgroup analysis excluding thrombolysis patients, adjustment for depression, binomial regression models for mRS and NIHSS "post-hoc" as explicitly stated) are presented alongside the primary result, increasing the scope for outcome-reporting flexibility, though these are appropriately labelled as post-hoc/sensitivity in the text.
+- The exact statistical model for the primary outcome (linear regression adjusted for centre, age, history of stroke, and baseline FMMS) is plausible and matches the "Statistical Analysis" section, and it is consistent between Methods and Results, which is a positive as it suggests the core primary analysis was not altered for the primary comparison itself.
+
+On balance, given the unexplained absence of the pre-specified M12 FMMS assessment and the non-standard, DMC-absent early stopping decision, I judge "some concerns" for this domain.
+
+---
+
+## 6. Overall Rating: **HIGH RISK**
+
+Justification: While no single domain reaches an unambiguous "high risk" verdict in isolation, multiple domains ("some concerns" in randomization process due to baseline FMMS/prognostic imbalance, deviations from intended intervention due to differential open-label fluoxetine crossover into placebo arm, outcome measurement due to plausible unblinding via distinguishable side-effects and differential depression rates affecting a partially subjective outcome, and selection of the reported result due to missing pre-specified M12 outcome and an unexplained/undocumented early stopping decision without a DMC) combine in a way that substantially lowers confidence in the reported treatment effect on the primary FMMS outcome. Per the stated rule, concerns across multiple domains that cumulatively undermine confidence in the result warrant an overall "high risk" judgement, despite each individual domain not being unambiguously "high risk" on its own.

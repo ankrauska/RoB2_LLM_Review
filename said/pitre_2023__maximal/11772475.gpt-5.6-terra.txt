@@ -1,0 +1,114 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 11772475
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Assessment scope:** Individually randomized, three-arm parallel-group trial. For treatment retention at 6 months, this assessment considers each MMM strategy (clinic-based or office-based) versus routine clinic care and the **effect of assignment to intervention at baseline**. The publication reports retention using survival analysis.
+
+### 1. Bias due to randomization: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The report states that participants were stratified and then randomized, but gives no information on either the random-sequence generation method or allocation concealment:
+
+> “Patients completed the initial assessment battery and were stratified… They were then randomized into one of the three study conditions…”
+
+There is no description of a computer-generated sequence, random-number table, permuted blocks, central randomization, sealed opaque envelopes, or another mechanism that would establish that allocation was both random and concealed until enrolment.
+
+The initially randomized group sizes were reasonably similar (routine care 25, clinic-based MMM 27, office-based MMM 26), which does not itself suggest a clear problem with randomization. However, baseline characteristics are presented only for the total sample, not separately by randomized group; therefore, meaningful assessment of baseline balance in prognostic factors for retention is not possible.
+
+Under RoB 2, absence of information on allocation concealment leads to **some concerns** unless sufficient evidence supports adequate concealment. There is no direct evidence of a non-random sequence or manipulation, so high risk is not justified for this domain.
+
+---
+
+### 2. Deviations from intended intervention: **high risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**  
+Participants and treating personnel were necessarily aware of the assigned intervention because the interventions involved visibly different treatment settings and medication-reporting schedules (routine clinic attendance versus monthly clinic- or office-based MMM). The report describes the interventions as:
+
+> “28-day MMM reporting schedule in a physician’s office setting”;  
+> “28-day MMM reporting schedule in the clinic setting”; and  
+> “continued routine treatment in the clinic setting.”
+
+There is not clear evidence that trial-context deviations or cointerventions were unbalanced between groups in a way that independently biased retention. The stepped-care approach appears to have been a protocol-defined response to positive urine specimens or medication-recall failures and was applied across groups. Thus, lack of blinding alone would not necessarily create high risk for the effect of assignment.
+
+However, the retention analysis did not include all randomized participants. A total of 78 participants were randomized:
+
+> “A total of 78 patients were randomized into the study (routine=25, clinic-based=27, office-based=26).”
+
+Yet the stated “intent-to-treat” retention analysis included only 73 participants:
+
+> “For the intent-to-treat sample (n=73), routine, clinic-based MMM and office-based MMM groups were compared on treatment retention using survival analysis.”
+
+The discrepancy arose because five participants withdrew immediately after assignment:
+
+> “A total of five patients withdrew from the study upon assignment to study condition; four following assignment to the routine treatment condition and one following assignment to the MMM physician office-based condition.”
+
+These were post-randomization exclusions of apparently eligible participants. They are especially important for a retention outcome: withdrawal upon assignment is itself highly relevant to treatment retention. The exclusions were also materially imbalanced—four of five excluded participants had been assigned to routine care. Excluding them can make routine care appear to have better retention than it would in a full analysis of all randomized participants.
+
+Therefore, despite the authors’ label of “intent-to-treat,” the reported analysis does not meet the RoB 2 ITT principle of analysing **all randomized participants in their assigned groups**. The post-randomization exclusion of 5/78 participants, concentrated in routine care, has potential for a substantial effect on the retention comparison. This warrants **high risk of bias** in this domain.
+
+---
+
+### 3. Missing outcome data: **low risk of bias**
+
+**c. Judgement:** Low risk of bias.
+
+**d. Rationale:**  
+For the 73 participants included in the reported retention analysis, retention status through 6 months appears to be known. The report gives the numbers completing six months in each analysed group:
+
+> “Of the 73 randomized patients who began the study, 90% (n=19/21) of the routine treatment, 89% (n=24/27) of the clinic-based MMM and 92% (n=23/25) of the physician office-based MMM finished 6-months of randomized care…”
+
+It also accounts for the seven participants who did not remain in their randomized treatment arm and gives reasons for their departure:
+
+> “Seven patients dropped out of the randomized treatment arm…”
+
+For retention, departure from the assigned treatment is an observed event rather than missing outcome information. The article reports that retention was analysed using survival analysis, an appropriate broad approach for time-to-event retention data, and there is no indication that participants with unknown retention status were censored differentially or excluded because their outcome was unavailable.
+
+The five participants excluded immediately after randomization are a serious problem, but it is principally an inappropriate post-randomization exclusion/analysis issue and is addressed in Domain 2. Their withdrawal upon assignment was known and could have been incorporated as a retention event; it was not an unknowable missing outcome.
+
+---
+
+### 4. Measurement of the outcome: **low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**  
+Treatment retention—whether a participant remained in the randomized treatment condition through six months—is an objective, administrative outcome that can be determined from clinic attendance and treatment records. The publication reports explicit completion counts and reasons for discontinuation.
+
+Although participants and treatment personnel were aware of treatment allocation, assessment of whether someone remained in treatment does not require substantial subjective judgement. There is no indication that retention was measured differently across the three groups or that thresholds for defining retention differed by group.
+
+The reported result was:
+
+> “No between-group differences were observed in retention (Wilcoxon–Gehan statistic=0.14, df=2, ns).”
+
+Knowledge of allocation could theoretically influence treatment decisions or participant behaviour, but those issues concern deviations from intervention rather than biased measurement of the retention outcome itself. There is no evidence that outcome ascertainment was differentially performed or influenced by assessors’ knowledge of assignment.
+
+---
+
+### 5. Selective reporting: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The article states an a priori expectation of no retention differences:
+
+> “Finally, no group differences were expected on measures of drug use, retention or medication recall problems.”
+
+It also prospectively describes the intended retention analysis:
+
+> “For the intent-to-treat sample (n=73), routine, clinic-based MMM and office-based MMM groups were compared on treatment retention using survival analysis.”
+
+These statements provide some reassurance that retention was a planned outcome and that a survival-analysis approach was intended.
+
+However, there is no accessible contemporaneous trial registration entry, protocol, or statistical analysis plan documenting outcome definitions, the planned retention time point(s), censoring rules, handling of post-randomization withdrawals, or the precise analysis before unblinded outcome data became available. The report presents results for the first 6 months of an ongoing 12-month trial:
+
+> “Results are presented for the first 6 months of the 1-year trial.”
+
+Without the registration/protocol/SAP content, it cannot be determined whether the 6-month retention result was the prespecified analysis or whether it was selected from multiple possible time points or analytic approaches. In particular, the reported “intent-to-treat” analysis excluded five randomized participants, despite the paper’s description of the trial as having randomized 78 patients.
+
+There is no direct evidence that the retention result was selected because of its magnitude, direction, or statistical significance. Therefore, high risk is not justified. Nevertheless, the absence of a verifiable pre-specified analysis plan and uncertainty around the chosen time point and analysed population result in **some concerns**.

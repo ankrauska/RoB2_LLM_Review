@@ -1,0 +1,103 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 28558789
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# ROB 2 Assessment Report
+
+## Preliminary Considerations
+
+**Study design:** Individually-randomized parallel-group trial (pilot, triple-blind case series, n=4 analyzed of 8 randomized per registry)
+**Experimental intervention:** Reaching training + active tRNS
+**Comparator intervention:** Reaching training + sham tRNS
+**Outcome assessed:** Motor Assessment Scale item 6 (MAS6) — primary clinical outcome (upper arm function), assessed at post-training (4 weeks)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+**Sources used:** Journal article, trial registry record (ANZCTR)
+
+**Note on ambiguity/limitation:** The registry indicates a target sample size of 10 (final n=8 enrolled), but the published article reports only 4 participants with no explanation for the discrepancy between the registered accrual (8) and the analyzed sample (4). This is reported as a limitation affecting the completeness of information available for this assessment, particularly domains 3 and 5.
+
+---
+
+### Domain 1: Bias arising from the randomization process
+
+**Judgement: Some concerns**
+
+**Motivation:**
+- Signalling Q1.1 (sequence random?): **Yes.** The article and registry both state "computer generated random number sequence" was used by an offsite/independent investigator.
+- Signalling Q1.2 (allocation concealed?): **Yes.** Consecutively numbered opaque envelopes were prepared by an offsite investigator and collected by the tRNS intervener only after initial assessment, consistent with adequate concealment.
+- Signalling Q1.3 (baseline imbalance suggesting problem with randomization?): **Some concerns.** With only n=4 analyzed, formal assessment of baseline comparability is not statistically meaningful. Table 2 shows meaningful differences between groups at baseline (e.g., mRS 3 for P1/P2/P4 vs 5 for P3; FAC scores ranging from 1–6; differing MSS scores), and Table 3 shows baseline (T0) impairment scores differ substantially between individuals within and across groups (e.g., Triceps MRC T0: P1=10, P2=3, P3=3, P4=3). Given the extremely small sample, chance imbalance is highly likely and cannot be distinguished from a genuine randomization problem; however, there is no evidence of manipulation of allocation given the concealment procedures described.
+
+Because allocation concealment was adequate and sequence generation was random, but there is a plausible baseline imbalance (attributable to small sample size rather than a flawed randomization mechanism), the domain is judged as **Some concerns** rather than Low risk, per the algorithm (adequate concealment + random sequence + imbalance likely due to chance in small trial context).
+
+---
+
+### Domain 2: Bias due to deviations from intended interventions (effect of assignment to intervention)
+
+**Judgement: Low risk of bias**
+
+**Motivation:**
+- Q2.1 (participants aware of assigned intervention?): **Probably no.** Triple-blind design; participants were informed they "may or may not feel the stimulation irrespective of whether they were receiving active or sham stimulation," designed to prevent participants from discerning allocation.
+- Q2.2 (carers/personnel aware?): **Probably no.** The trainer and assessors were blinded; only an independent, unblinded tRNS intervener (who was not involved in training or assessment) knew allocation and recorded parameters in a separate locked log.
+- Given both are answered N/PN, the subsequent questions (2.3–2.5) are not applicable.
+- Q2.6 (appropriate analysis used?): **Yes.** The registry pre-specifies intention-to-treat analysis; the article reports outcomes for all randomized-and-analyzed participants without post-randomization exclusion based on adherence.
+- Q2.7: Not applicable, as an appropriate ITT-consistent analysis was reported.
+
+No evidence of contamination, non-protocol co-interventions, or unblinding-driven behavioral differences is reported. All participants completed 100% of the 12 sessions.
+
+---
+
+### Domain 3: Bias due to missing outcome data
+
+**Judgement: High risk of bias**
+
+**Motivation:**
+- Q3.1 (outcome data available for all/nearly all randomized participants?): **No.** The trial registry indicates a final accrual of 8 participants randomized, yet the published article analyzes and reports data for only 4 participants. No explanation, flow diagram, or accounting for the other 4 randomized participants (reasons for dropout/exclusion) is provided anywhere in the article.
+- Q3.2 (evidence that the result was not biased by missing outcome data?): **No.** No sensitivity analyses, imputation methods, or other approaches addressing the unaccounted-for participants are reported.
+- Q3.3 (could missingness depend on true outcome value?): **Yes/Probably yes.** In the complete absence of any explanation for the discrepancy between registered accrual (n=8) and reported analysis (n=4), it cannot be excluded that dropout/non-reporting is related to outcome (e.g., participants with poor progress or adverse experiences not being included).
+- Q3.4 (likely that missingness depended on true value?): **Yes/Probably yes**, given: (i) the total absence of any documentation, flow diagram or attrition reporting; (ii) the discrepancy is unexplained and undisclosed within the article itself (only detectable via the trial registry); this constitutes a serious transparency and reporting failure that raises high suspicion of selective reporting related to outcomes.
+
+This is a substantial and clearly identifiable problem that is highly likely to bias the specific result assessed (MAS6 at 4 weeks), warranting a "High risk of bias" judgement for this domain.
+
+**Reported ambiguity/limitation:** The article does not include a CONSORT flow diagram, nor does it explain what happened to the additional 4 participants registered/accrued according to ANZCTR. This is a specific, material ambiguity that could not be resolved by the reviewer and is reported as a limitation of this assessment.
+
+---
+
+### Domain 4: Bias in measurement of the outcome
+
+**Judgement: Low risk of bias**
+
+**Motivation:**
+- Q4.1 (method of measuring outcome inappropriate?): **No.** MAS6 is a validated, widely used measure of upper arm function appropriate for detecting change in this population.
+- Q4.2 (measurement/ascertainment differ between groups?): **No.** All participants were assessed using identical protocols and instruments regardless of group allocation, at identical pre-specified timepoints (0, 4, 12 weeks) in the same unit by the same "blinded assessor."
+- Q4.3 (outcome assessors aware of intervention received?): **No/Probably no.** The study is explicitly described as triple-blind, with "study personnel involved in assessment and training, along with all participants...blinded to group allocation for the duration of the study." Only the independent tRNS intervener (not involved in assessment) knew allocation.
+- Given assessors were blinded, Q4.4 and Q4.5 are not applicable, and the outcome (MAS6, an observer-rated scale involving some judgement) is unlikely to have been influenced by knowledge of intervention because such knowledge was successfully withheld from assessors.
+
+---
+
+### Domain 5: Bias in selection of the reported result
+
+**Judgement: Some concerns**
+
+**Motivation:**
+- Q5.1 (analysed in accordance with pre-specified plan finalized before unblinded data available?): **No/Probably no.** The trial registry pre-specifies a **composite** primary outcome of MAS items 6–8, and pre-specifies planned statistical analysis as "a non-parametric, mixed effects model in a 2 group × 3 phases design...followed by between-groups comparisons," conducted on an **intention-to-treat basis**. The published article, however: (a) reports MAS6 alone as "the primary clinical outcome" (deviating from the registered composite MAS6-8), (b) presents no formal statistical/mixed-model analysis or between-group comparison as pre-specified, instead reporting purely descriptive, individual-case-level narrative results, and (c) analyzes only 4 of the registered/accrued 8 participants without ITT accounting for the rest.
+- Q5.2 (result selected from multiple eligible outcome measurements?): **Probably yes.** The narrowing from a composite MAS6-8 outcome to MAS6 alone, without explicit justification in the article, raises concern that this measurement was selected based on how results appeared.
+- Q5.3 (result selected from multiple eligible analyses?): **No information/Probably no.** Given the qualitative/case-series presentation adopted instead of the pre-specified statistical model, it is unclear whether alternative statistical analyses were conducted and not reported; no direct evidence of multiple analyses being run and selectively reported was found, but the complete absence of the pre-specified statistical model itself is concerning.
+
+Given the deviation from the pre-specified analysis plan and outcome definition, but without direct evidence that the specific reported result was selected on the basis of favorable findings from multiple analyses, this is judged as **Some concerns** rather than High risk.
+
+---
+
+## 6. Overall Risk-of-Bias Judgement
+
+**Overall judgement: HIGH RISK OF BIAS**
+
+**Rationale:** Per RoB 2 rules, an overall judgement of "High risk of bias" is warranted if the study is at high risk of bias in **at least one domain**, or if there are "some concerns" in multiple domains that substantially lower confidence in the result.
+
+In this study:
+- **Domain 3 (Missing outcome data) is judged High risk of bias** — a self-sufficient trigger for an overall High risk of bias judgement — due to the unexplained and undisclosed discrepancy between the registered accrual (n=8) and the number of participants whose outcome data are analyzed and reported in the published article (n=4), with no flow diagram, explanation, or sensitivity analysis provided.
+- This is compounded by **Some concerns in Domain 1** (baseline comparability cannot be reliably assessed given extremely small n) and **Some concerns in Domain 5** (deviation from the pre-registered composite outcome and pre-specified statistical analysis plan, replaced by a purely descriptive case-series presentation).
+
+Collectively, these issues — particularly the unexplained loss of half the accrued sample from the reported analysis — substantially undermine confidence in the reported result for MAS6 at post-training. Consequently, the overall risk of bias for this result is judged as **High**.
+
+**Key limitation disclosed:** The principal ambiguity identified is the unexplained discrepancy between the trial registry (n=8 final accrual) and the published article (n=4 analyzed, described as the complete recruited sample with "maximum variation" for a case series). No attrition/flow information is available in the source document to resolve this ambiguity; it is reported here strictly as observed, without further assumption.

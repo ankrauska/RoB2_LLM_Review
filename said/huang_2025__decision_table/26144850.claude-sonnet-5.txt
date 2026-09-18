@@ -1,0 +1,104 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26144850
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Kumar, 2016 (A randomized controlled trial to compare cure and relapse rate of paucibacillary multidrug therapy with monthly rifampicin, ofloxacin, and minocycline among paucibacillary leprosy patients in Agra District, India)
+**Outcome Name**: cure rate at 2 years
+**Registration number**: REF/2013/11/005995 (registered 22 November 2013 — retrospective registration, well after trial completion in 2010)
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+Reason: "patients were allocated randomly... For allocation of patients to the two treatment groups, 268 three-digit random numbers from the table were written in the patient registers in advance." This is explicit use of a random number table, a valid sequence-generation method.
+
+**1.2**: NI (90%)
+Reason: The article does not describe any concealment mechanism (e.g., central allocation, sequentially numbered opaque containers/envelopes). It only states that numbers were "written in the patient registers in advance" and that "patients with even numbers were given PB-MDT and those with odd numbers were given ROM." No concealment method is mentioned, and no central allocation/envelope/postcard system is described upon re-check.
+
+**1.3**: N (85%)
+Reason: Table 2 shows no statistically significant differences in age (P=0.059), sex distribution, or disease duration (P=0.29) between groups; lesion/nerve distribution also appears comparable. No indication that baseline imbalance reflects a problem with randomization.
+
+**Result of Domain 1**: Some concerns (85%)
+Reason: 1.2 = NI and 1.3 = N/NI/PN → per algorithm, this combination yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (95%)
+Reason: "Blinding to treatment was not undertaken." This was an open-label trial; participants were aware of their treatment (ROM tablets vs. daily supervised rifampicin/dapsone + self-administered dapsone).
+
+**2.2**: Y (95%)
+Reason: As an open-label trial with different drug regimens (monthly ROM vs. daily supervised dose plus self-administered dapsone), care providers/PMWs necessarily knew the assigned intervention.
+
+**2.3**: Y (75%)
+Reason: No mention of clinically important non-protocol interventions imbalanced between groups; reactions were treated identically (prednisolone) in both groups as part of protocol-defined management.
+
+**2.4**: Y (95%)
+Reason: Default/discontinuation rates were 20.1% (MDT) and 14.2% (ROM), an overall 17.2% — exceeding the 10% threshold for implementation failure.
+
+**2.5**: NI (70%)
+Reason: Aside from defaults (captured in 2.4), the article does not provide specific information on adherence among those who continued treatment (e.g., compliance with daily self-administered dapsone in the MDT arm).
+
+**2.6**: N (85%)
+Reason: The reported 2-year cure rate is based only on patients who completed treatment and remained in follow-up (100/134 MDT, 103/134 ROM) — essentially a per-protocol/completer analysis rather than an appropriate method (e.g., IPCW) to estimate adherence effects.
+
+**Result of Domain 2**: High risk (90%)
+Reason: 2.1 = Y, 2.3 = Y, one of 2.4/2.5 = Y (2.4=Y), and 2.6 = N → per algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (70%)
+Reason: At 2 years, 203/268 (75.7%) randomized patients were followed up (100 MDT, 103 ROM); this is a binary outcome. The number of observed cure events (~196–199) is much greater than the number of participants with missing outcomes (65), satisfying the criterion for "Y" under the binary-variable rule.
+
+**Result of Domain 3**: Low risk (75%)
+Reason: 3.1 = Y → automatically "Low risk" per algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (80%)
+Reason: Cure was defined using a predefined clinical criterion (resolution of lesion, flattening/hypopigmentation, regained sensation). While subjective, the measurement tool itself was consistently predefined and applied.
+
+**4.2**: N (85%)
+Reason: Both groups were followed with the same schedule (monthly supervision, 6-monthly formal assessment) and identical cure/relapse definitions.
+
+**4.3**: Y (90%)
+Reason: The outcome (cure) was assessor-determined (not solely patient-reported), and since the trial was open-label ("Blinding to treatment was not undertaken"), outcome assessors (PMWs/doctors) were aware of participants' allocation.
+
+**4.4**: Y (90%)
+Reason: Cure is a subjective clinical outcome (assessment of lesion activity, erythema, healing, sensation) assessed by an outcome assessor, meeting the criterion for "Y."
+
+**4.5**: Y (80%)
+Reason: Given the open-label design, unblinded assessors evaluating a subjective clinical outcome (lesion healing) creates a clear plausible mechanism for assessment bias.
+
+**Result of Domain 4**: High risk (85%)
+Reason: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, 4.5 = Y → per algorithm, this combination yields "High risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (70%)
+Reason: The study was registered in the Clinical Trial Registry of India, but registration occurred in November 2013 — years after study completion (2010) — providing no evidence of a pre-specified analysis plan finalized before unblinded outcome data were available.
+
+**5.2**: N (75%)
+Reason: Table 5 reports cure rates at multiple consistent time points (RFT, 6, 12, 18, 24, 36... months) for both arms systematically, suggesting no selective reporting from multiple eligible outcome measurements within the domain.
+
+**5.3**: N (70%)
+Reason: A single, consistent statistical approach (Chi-square/Pearson χ²) was used to compare cure/relapse proportions across time points; no evidence of multiple competing analyses with selective reporting.
+
+**Result of Domain 5**: Some concerns (75%)
+Reason: 5.2 = N, 5.3 = N, and 5.1 = NI → per algorithm, this combination yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article: **High Risk (90%)**
+
+Reason: Domain 2 (deviations from intended interventions) and Domain 4 (measurement of the outcome) were both assessed as "High risk." Per the algorithm, if at least one domain is rated "High risk," the overall assessment for the article is "High Risk."

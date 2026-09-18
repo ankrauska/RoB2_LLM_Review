@@ -1,0 +1,44 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 24937270
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Interhemispheric Functional Connectivity Outcome
+## Sir Ian Chalmers' Review
+
+---
+
+**1. Risk of bias arising from the randomization process: SOME CONCERNS**
+
+Justification: The manuscript states randomization was "completed using blocks of four," which is appropriate for achieving balance, but there is **no description whatsoever of allocation concealment mechanism** (e.g., sequentially numbered opaque envelopes, central randomization service). Given that blocks of four are predictable, and stimulation was delivered by an investigator who presumably programmed the device, there is a real risk that the person allocating/setting up the device could have anticipated or influenced assignment. Baseline characteristics were balanced (Table 1), which is reassuring, but this does not rule out concealment failure. Additionally, group sizes were unequal (9/9/9/11 before further exclusion), unusual for a properly executed block randomization of blocks of four across four arms — this raises a minor flag about whether randomization was fully adhered to. I am not fully satisfied and rate this "some concerns."
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: LOW RISK**
+
+Justification: Both participants and the outcome-assessing investigator were blinded ("double-blinded"), and blinding was empirically validated post-hoc (participants could not guess allocation beyond chance, p = 0.679) — a commendable and rare practice that increases my confidence. The sham protocol (30 seconds of stimulation then automatic cut-off) mimics active stimulation's onset sensations, minimizing risk of unblinding through sensory cues. Stimulation parameters (intensity, duration) were fixed and applied per protocol across groups with only frequency varying, consistent with the trial's stated mechanistic aim. No indication of non-protocol co-interventions or crossover. I find no meaningful deviations here.
+
+---
+
+**3. Risk of bias due to missing outcome data: SOME CONCERNS**
+
+Justification: Of 40 randomized, 2 withdrew before receiving any stimulation (arguably not true post-randomization dropouts affecting outcome ascertainment, though technically they were randomized). More concerning: **one subject in the Random Frequency group was excluded post-hoc "due to excessive artifacts in the EEG recording."** While technically plausible, this is a data-driven, post-randomization exclusion that was not clearly pre-specified with objective, blinded criteria in the methods. Given that the Random Frequency group is the one driving the key positive finding, differential post-hoc exclusion in this arm — however well-intentioned — raises the possibility that data trimming decisions (even if made blind to the hypothesis) could subtly bias the coherence estimates in this arm. There is no sensitivity analysis reported with this subject included, nor any per-protocol vs intention-to-treat comparison.
+
+---
+
+**4. Risk of bias in measurement of the outcome — Interhemispheric Functional Connectivity: LOW RISK**
+
+Justification: This outcome (EEG interhemispheric coherence) is an **objective, machine-derived neurophysiological measure**, not a participant-reported or clinician-rated outcome, so the primary concern of subjective bias from unblinding of participants (per the criteria) does not directly apply. The EEG analysis pipeline (bandpass filtering, magnitude-square coherence via Welch's method) is a standardized, algorithmic computation, minimizing assessor-driven bias. Additionally, the outcome assessor was blinded, and manual artifact rejection — the one subjective step in the pipeline — could theoretically introduce bias, but there is no indication that artifact rejection was performed unblinded or differentially across groups (other than the one exclusion noted above, addressed in Domain 3). I rate this domain low risk, while flagging that the manual artifact-rejection step is not perfectly described (no statement that this step was done blind to allocation, though the overall trial was double-blind).
+
+---
+
+**5. Risk of bias in selection of the reported result: HIGH RISK**
+
+Justification: This is my most serious concern. The manuscript explicitly describes the study as "exploratory," analyzing **two frequency bands (alpha, theta) and four sub-bands (low-alpha, high-alpha, low-beta, high-beta)**, each assessed under two eye conditions (open/closed), across four active/sham post-hoc pairwise comparisons — an enormous number of statistical tests with **no correction for multiple comparisons** reported. There is no mention of a trial registration (e.g., ClinicalTrials.gov) or a published/pre-registered protocol specifying which coherence measure(s) and sub-bands constituted primary vs. secondary outcomes ahead of time. The "significant" theta and low-alpha findings are highlighted and built into the title and abstract, while non-significant results (alpha overall, beta sub-bands) are downplayed. The explicit statement "we conducted an exploratory analysis" combined with the absence of any a priori hypothesis registration for interhemispheric coherence as the primary endpoint suggests strong potential for outcome-selective reporting — the positive theta/low-alpha finding may well be one of many tested outcomes that reached nominal significance by chance (the low-alpha finding itself only reached p = 0.05, at the threshold). Without a registered protocol to check against, I cannot rule out that other pre-specified endpoints were not reported, or that this specific finding was elevated in prominence post hoc.
+
+---
+
+## 6. Overall Rating: **HIGH RISK**
+
+**Justification:** While randomization, blinding, and outcome measurement domains show only low-to-moderate concerns, the **selection of the reported result domain is high risk** given the extensive multiplicity of comparisons without correction, the explicitly "exploratory" nature of the analysis, and the complete absence of a registered protocol or pre-specified primary outcome definition. This is compounded by "some concerns" in both the randomization process (unclear allocation concealment) and missing outcome data (post-hoc, non-prespecified exclusion of a participant from the very arm driving the key positive result). Per the assessment rules, a high-risk judgment in one domain — especially one as fundamental to interpretability as selective outcome reporting — combined with compounding "some concerns" in two other domains, substantially lowers my confidence in the reported effect of tPCS on interhemispheric theta/low-alpha coherence. I would require sight of a pre-registered protocol and a multiplicity-corrected analysis before according this finding any credibility beyond hypothesis-generation.

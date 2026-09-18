@@ -1,0 +1,51 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 26530748
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: low risk of bias**
+
+   a. **Judgement:** Low risk of bias. The PORTEC-2 study was an individually randomized comparison, and the randomization process appears to have been centrally managed using a computer-generated allocation procedure. There is no indication of an important baseline imbalance or manipulation of allocation.
+
+   b. **Rationale:** The report describes that “427 patients with stage I high-intermediate-risk EC … were randomized to EBRT or VBT.” The published PORTEC-2 trial reports describe centralized, computer-generated random allocation, with stratification. This is an appropriate random sequence-generation and allocation-concealment approach. The long-term report also states that characteristics of the analysed participants were generally similar to the full trial cohort, apart from participants at long-term follow-up being somewhat younger and having fewer comorbidities; this reflects survivor/respondent selection rather than evidence that baseline randomization itself was compromised. No evidence suggests baseline differences that are implausible by chance or otherwise indicate a failure of randomization.
+
+2. **Deviations from intended intervention: low risk of bias**
+
+   a. **Judgement:** Low risk of bias for the effect of assignment to EBRT versus VBT at baseline.
+
+   b. **Rationale:** This was necessarily an open-label comparison of external-beam radiotherapy and vaginal brachytherapy, so patients and treating personnel would have been aware of assigned treatment. However, for the RoB 2 effect of *assignment* to intervention, awareness alone does not establish bias. There must be evidence that deviations inconsistent with the protocol arose because of the trial context, affected global health, and were unbalanced between groups.
+
+   The report provides no evidence of trial-context-driven co-interventions, protocol implementation failures, or differential deviations that would plausibly affect EORTC QLQ-C30 global health. The analysis used treatment assignment as a fixed effect in longitudinal mixed models: “a linear mixed model was used with patient as random effect and time (categorical), random assignment, and their interaction as fixed effects.” Thus, participants with observed data were analysed according to randomized assignment rather than according to treatment received. Exclusion arising from unavailable questionnaires is considered under missing outcome data rather than this domain.
+
+3. **Missing outcome data: high risk of bias**
+
+   a. **Judgement:** High risk of bias.
+
+   b. **Rationale:** Outcome data for EORTC QLQ-C30 global health were not available for all, or nearly all, randomized participants. The long-term analysis population was selected from the original randomized cohort: “Baseline questionnaires and at least 1 follow-up questionnaire were received from 348 of 427 patients (81% of responders).” In addition, for the 7- and 10-year analyses, only patients who were previous responders and were “alive and disease-free according to the trial database” were considered eligible.
+
+   At long-term follow-up, questionnaires were sent to 265 eligible patients, of whom 205 (77%) responded at 7 years and 80/119 (67%) responded at 10 years. Further, among the 282 evaluable long-term questionnaires, only “76.2% had completed all items of the QLQ-C30.” Since global health is derived from QLQ-C30 items 29 and 30, incomplete QLQ-C30 data can directly result in unavailable global-health scores.
+
+   These amounts of missing data are substantial relative to the 427 randomized participants. Missingness could plausibly depend on the unobserved global-health outcome: poorer health, worsening symptoms, disability, comorbidity, recurrence, or death may all make questionnaire completion less likely. The authors acknowledge an “inherent selection of responders at long-term analysis” and report that long-term respondents were “slightly younger and had fewer comorbidities compared with the whole PORTEC-2 cohort.” Restricting the analysis to surviving, disease-free previous responders can also induce selection related to health status after randomization.
+
+   Although linear mixed models were used, the report does not present sensitivity analyses showing that the global-health result was robust to plausible missing-not-at-random assumptions. Therefore, there is a substantial risk that missing outcome data biased the estimated long-term effect on global health.
+
+4. **Measurement of the outcome: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** EORTC QLQ-C30 global health is a validated patient-reported outcome measure, and the same questionnaire and scoring approach were used across treatment groups. The report states: “Cancer-specific general HRQL was measured with the EORTC … Core questionnaire (QLQ-C30 v3.0),” and that the global quality-of-life scale was converted to a 0–100 scale, with higher scores indicating better functioning. Thus, the measurement method itself was appropriate and there is no indication that questionnaires were administered at systematically different nominal time points between groups.
+
+   However, the outcome assessors for global health were the participants themselves. The trial was open label: EBRT and VBT are visibly and experientially distinct interventions, making blinding of patients impracticable. Knowledge of treatment received could influence patients’ reporting of their overall health and quality of life, particularly because patients may associate EBRT with greater toxicity. Global health is subjective, so it could be influenced by such knowledge.
+
+   The report does not provide evidence that reporting was actually influenced by treatment knowledge, and assessment occurred over long-term follow-up, which may reduce the influence of immediate treatment expectations. Nevertheless, because this is an unblinded patient-reported outcome, some concerns remain.
+
+5. **Selective reporting: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The trial registration identifies the PORTEC-2 randomized comparison and prespecified major oncologic outcomes; health-related quality of life was collected longitudinally as part of the trial. The publication reports use of the EORTC QLQ-C30 and describes the analysis approach: “To obtain estimates of the EORTC QLQ-C30 and subscales at each of the fixed time points, a linear mixed model was used.”
+
+   However, there is no publicly available, date-stamped statistical analysis plan in the supplied material that was finalized before unblinded outcome data were available and that specifically prespecified the present long-term global-health analysis, including the exact time points, estimand, handling of recurrence/death, exclusion criteria, missing-data approach, and choice between alternative QLQ-C30 analyses. There were multiple QLQ-C30 domains, multiple follow-up time points, and potentially multiple valid analytical choices (for example, analysis of individual time points versus longitudinal mixed-model results).
+
+   The paper reports that global health and all functioning scales did not differ significantly between groups, which does not itself suggest selective reporting. It also reports extensive results for bowel, bladder, sexual, and impact-of-cancer measures. Thus, there is no direct evidence that the global-health result was selected because of its magnitude or statistical significance. Nonetheless, in the absence of a sufficiently detailed pre-specified analysis plan covering this specific long-term result, selective reporting cannot be excluded.

@@ -1,0 +1,105 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21831438
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Lee, 2011
+**Outcome Name**: Changes in the mean sitting DBP from the baseline after 4 weeks of therapy
+**Registration number**: NCT00621153
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (95% High Certainty)
+Reason: The article explicitly states "Study patients were randomized in a 1:1 ratio by using the mixed block randomization (4 and 6 blocks) method," which is an acceptable method of sequence generation.
+
+**1.2**: **NI** (90% Moderate Certainty)
+Reason: The article does not mention any allocation concealment mechanism (e.g., central allocation, sequentially numbered containers, or opaque envelopes). The protocol confirms "masking: NONE" (open-label design), but concealment of the *allocation sequence prior to enrollment* is not described.
+
+**1.3**: **Y** (90% Moderate Certainty)
+Reason: Despite randomization, there was a statistically significant difference in age between groups (51.0 [10.2] years in combination group vs. 47.8 [10.7] years in monotherapy group; P=0.02), explicitly noted by the authors as occurring "despite random allocation."
+
+**Result of Domain 1**: **High risk** (90% Moderate Certainty)
+Reason: Per the algorithm, when 1.2 = NI and 1.3 = Y, the domain is rated High risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **N** (95% High Certainty)
+Reason: The study is explicitly described as "open-label" (per protocol title and article discussion: "the open study design could be the potential source of bias"). Per the specific instruction, open-label studies are coded N for this question.
+
+**2.2**: **Y** (90% Moderate Certainty)
+Reason: This is an open-label trial with no blinding of investigators/care providers; treatment allocation (monotherapy vs. combination pill) was known to those administering treatment.
+
+**2.3**: **Y** (75% Moderate Certainty)
+Reason: No significant imbalance in nonprotocol interventions was reported; concomitant antihypertensive medication was prohibited during the washout/treatment period, and no evidence indicates imbalance in permitted medications between groups.
+
+**2.4**: **Y** (85% Moderate Certainty)
+Reason: Of 233 randomized patients, 35 discontinued overall (20 in combination group, 15 in monotherapy group) = ~15%, exceeding the 10% threshold for implementation failures.
+
+**2.5**: **N** (75% Moderate Certainty)
+Reason: Compliance was reported as high in both groups (98.6% and 97.8% median compliance), with no evidence of substantial (>10%) non-adherence.
+
+**2.6**: **N** (95% High Certainty)
+Reason: The primary efficacy analysis used "Intention-to-treat (ITT)" analysis with ANCOVA; per the override instruction, ITT analysis is coded as N for this question.
+
+**Result of Domain 2**: **High risk** (85% Moderate Certainty)
+Reason: 2.2 = Y (satisfies "one of 2.1/2.2 is Y/PY/NI"), 2.3 = Y (satisfies NA/Y/PY), 2.4 = Y (satisfies "one of 2.4/2.5 is Y/PY/NI"), and 2.6 = N (satisfies NI/N/PN) → algorithm dictates High risk.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **Y** (90% Moderate Certainty)
+Reason: 233 patients were randomized; the ITT population for the DBP outcome at week 4 included 224 patients (111+113) = 96.1% of randomized participants, exceeding the 95% threshold for continuous outcomes.
+
+**Result of Domain 3**: **Low risk** (90% Moderate Certainty)
+Reason: Since 3.1 = Y, the domain is automatically rated Low risk per the algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (90% Moderate Certainty)
+Reason: DBP was measured using a validated, fully automated device (Omron) with a standardized protocol (triplicate measurements, averaging, discarding extremes), which is an appropriate and reliable method.
+
+**4.2**: **N** (90% Moderate Certainty)
+Reason: BP was measured identically in both groups—same device, same visit schedule, same methodology, same investigator per patient throughout the study.
+
+**4.3**: **Y** (85% Moderate Certainty)
+Reason: The outcome (DBP) is not patient-reported; it is assessor-measured. Since this is an open-label trial, the outcome assessors/investigators were aware of participants' group assignment.
+
+**4.4**: **N** (75% Moderate Certainty)
+Reason: DBP measurement via a standardized automated device is an objective outcome measure, not subject to subjective interpretation by the assessor.
+
+**Result of Domain 4**: **Low risk** (85% Moderate Certainty)
+Reason: 4.1 = N/PN/NI, 4.2 = N/PN, 4.3 = Y/PY/NI, and 4.4 = N/PN → algorithm dictates Low risk.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **Y** (90% Moderate Certainty)
+Reason: The trial was prospectively registered (NCT00621153) with the primary outcome defined as "Changes in Mean Sitting DBP From Baseline After 4 Weeks of Therapy," matching the outcome and analysis method (ANCOVA, ITT population) reported in the Results section.
+
+**5.2**: **N** (85% Moderate Certainty)
+Reason: There was only one outcome measurement for DBP change at 4 weeks (sitting DBP via automated device), consistent between Methods and Results, with no evidence of selective reporting among multiple scales/timepoints for this specific outcome.
+
+**5.3**: **N** (80% Moderate Certainty)
+Reason: The primary analysis method (ITT with ANCOVA) was prespecified and consistently applied; PP analysis was also reported as a secondary/supportive analysis showing consistent results, with no evidence of selective reporting from multiple eligible analyses.
+
+**Result of Domain 5**: **Low risk** (85% Moderate Certainty)
+Reason: 5.2 = N/PN, 5.3 = N/PN, and 5.1 = Y/PY → algorithm dictates Low risk.
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (90% Moderate Certainty)
+
+Reason: Per the algorithm, since Domain 1 (randomization process) and Domain 2 (deviations from intended interventions) were both rated **High risk**, the overall risk of bias for this outcome (change in mean sitting DBP from baseline after 4 weeks) is **High Risk**. This is primarily driven by (1) an unexplained, statistically significant baseline age imbalance despite randomization coupled with no described allocation concealment, and (2) the open-label design combined with a >10% dropout rate and use of ITT (rather than an appropriate adherence-adjusted) analysis.

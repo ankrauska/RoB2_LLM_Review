@@ -1,0 +1,288 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 26144850
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read the article. This is a randomized controlled trial comparing standard WHO paucibacillary multidrug therapy (PB-MDT) versus a 6-month monthly regimen of rifampicin, ofloxacin, and minocycline (ROM-6) in 268 paucibacillary leprosy patients from Agra District, India, followed for up to 8+ years (2001-2010).
+
+I've noted the key methodological elements relevant for a systematic review:
+
+**Study design:** Randomized controlled trial (though allocation used pre-assigned odd/even numbers rather than true randomization sequence generation, and no blinding was performed - both important risk-of-bias considerations).
+
+**Population:** 268 newly detected PB leprosy patients (134 per arm), clinically diagnosed (1-5 skin lesions and/or one thickened/tender nerve), from active field survey.
+
+**Interventions:** PB-MDT (daily rifampicin+dapsone supervised monthly, dapsone self-administered daily) vs. ROM-6 (monthly supervised rifampicin+ofloxacin+minocycline for 6 months) — a comparison of multi-dose ROM against standard MDT, not the single-dose ROM tested in earlier trials.
+
+**Key outcomes:**
+- Cure rate at 2 years: 97.0% (MDT) vs 99% (ROM-6) among treatment completers — not significant
+- Overall cure rate: 93.3% (MDT) vs 97.2% (ROM-6) — not significant
+- Relapse rate: 1.10/100 PY (MDT, 7 relapses/636.4 PY) vs 0.436-0.445/100 PY (ROM-6, 3 relapses/688.1 PY) — borderline non-significant (P=0.053)
+- Default/discontinuation: 20.1% (MDT) vs 14.2% (ROM-6)
+
+**Notable limitations I've flagged:**
+1. Substantial loss to follow-up (from 268 enrolled to 140 followed at 8 years) — likely underestimates true relapse rate
+2. No histological confirmation of diagnosis or relapse — purely clinical criteria
+3. No blinding of outcome assessors
+4. Allocation concealment questionable (odd/even number allocation is not truly random and is predictable)
+5. Small number of relapse events limits statistical power
+6. Long recruitment period (36 months) creating variable follow-up durations
+7. Cox regression for confounders (age, sex, duration, regimen) reported as non-significant but full results not presented — limits transparency
+8. Skin smears only obtained in 82% of patients, and used clinical diagnosis without bacteriological/histological confirmation in most cases
+
+**Relevance to systematic review context:** This trial adds long-term (8-year) relapse data on multi-dose ROM regimens, addressing a gap noted by prior systematic reviews (e.g., Setia et al. 2011) that criticized single-dose ROM studies and called for trials of multi-dose ROM vs. standard WHO-MDT — this study directly answers that call, which is important context for how it should be weighted in a review of leprosy treatment regimens.
+
+I'm ready for you to specify what particular aspects (e.g., risk of bias assessment, data extraction for a meta-analysis, GRADE certainty rating, comparison with other included studies) you'd like me to focus on for the systematic review.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I'm ready to evaluate Domain 1 (Bias arising from the randomization process) for the outcome **cure rate at 2 years**.
+
+Outcome Name: cure rate at 2 years
+
+**Domain 1: Bias arising from the randomization process**
+
+1. **Was the allocation sequence random?**
+
+   • Response: **Probably yes**
+   • Reason: The article states, "For allocation of patients to the two treatment groups, 268 three-digit random numbers from the table were written in the patient registers in advance. Patients with even numbers were given PB-MDT and those with odd numbers were given ROM." This indicates that a random number table was used to generate the sequence, which is a valid method of sequence generation. However, no further detail (e.g., which specific random number table, generation software, or method of drawing the numbers) is provided, so full certainty is not possible.
+
+2. **Was the allocation sequence concealed until participants were enrolled and assigned to interventions?**
+
+   • Response: **No**
+   • Reason: The article explicitly states that the random numbers "were written in the patient registers in advance" before patient recruitment. This means the sequence of allocations (odd/even = ROM/PB-MDT) was pre-determined and potentially accessible to the paramedical workers and medical doctors performing recruitment and enrollment, since it was recorded in registers ahead of time. There is no mention of any concealment mechanism such as sealed opaque envelopes, central randomization, or restricted access to the allocation registers. Additionally, the article explicitly states "Blinding to treatment was not undertaken," which reinforces the absence of concealment safeguards. Given that recruiters (PMWs and doctors) confirmed diagnosis and then allocated patients using a pre-written list, there is a real risk that foreknowledge of the upcoming allocation could have influenced recruitment or exclusion decisions (selective enrollment bias).
+
+3. **Did baseline imbalances between intervention groups suggest a problem with the randomization process?**
+
+   • Response: **Probably no**
+   • Reason: Table 2 shows the two groups were largely comparable: mean age (36.4 vs 40.2 years, P=0.059), mean disease duration (35.8 vs 32.0 months, P=0.29), sex distribution, and lesion/nerve involvement distributions were similar between groups, with no statistically significant differences reported. Although the age difference approaches significance (P=0.059), the authors performed Cox regression analysis controlling for age, sex, and duration of disease and found no significant confounding effect on cure rate. This suggests randomization largely achieved comparable groups, although the borderline age difference and lack of full reporting of Cox regression results introduce some minor uncertainty.
+
+**Overall Domain 1 Judgment: Some concerns**
+
+• Reason: While the sequence generation method (random number tables) appears appropriately random, the critical concern is the lack of allocation concealment — the sequence was written in advance in patient registers, accessible to study personnel involved in patient recruitment, with no described mechanism (e.g., sealed envelopes, third-party allocation) to prevent foreknowledge of upcoming assignments. Combined with the explicit absence of blinding, this raises a realistic possibility that recruitment/enrollment decisions could have been subtly influenced by knowledge of the next allocation, even though baseline characteristics appear balanced. Per RoB 2 algorithm, an unclear/inadequate concealment answer (No/No information) with no baseline imbalance problem is classified as "Some concerns" rather than "Low risk" or "High risk."
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+**Domain 1 Judgement: Some concerns**
+
+**Reasoning based on the RoB 2 algorithm:**
+
+- **1.1 = Yes** (random number tables were explicitly used to generate the allocation sequence, an example listed in the tool's guidance for "Yes")
+- **1.2 = No** (the allocation sequence was pre-written in patient registers "in advance," before recruitment, and there is no described concealment mechanism such as sealed opaque envelopes or central/independent allocation. Since the same personnel — PMWs and doctors — who examined and confirmed diagnosis then allocated patients using this pre-written list, there is reason to suspect enrolling investigators could have had knowledge of the forthcoming allocation)
+- **1.3 = No** (baseline characteristics in Table 2 were comparable between groups: age P=0.059, disease duration P=0.29, and no statistically significant differences in sex, lesion number, or nerve involvement were reported; observed differences are compatible with chance)
+
+**Applying the RoB 2 algorithm for Domain 1:**
+- A judgment of **"Low risk"** requires **both** 1.1 and 1.2 to be answered Yes/Probably Yes, with 1.3 as No/Probably No/No information. This is **not met** here because 1.2 = No.
+- A judgment of **"High risk"** requires **both** 1.1 and 1.2 to be No/Probably No, **or** 1.3 = Yes/Probably Yes. This is **not met** here either, since 1.1 = Yes and 1.3 = No.
+- Therefore, by elimination, the appropriate algorithmic outcome is **"Some concerns"** — the sequence generation was adequate, but the lack of allocation concealment introduces a plausible risk that enrollment decisions could have been influenced by foreknowledge of the upcoming allocation, even though no resulting baseline imbalance was detected.
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+**Effect of Interest Selected: Effect of Assignment to Intervention (ITT-type effect)**
+
+I am selecting this effect of interest because the trial's objective was pragmatic — comparing two treatment strategies (PB-MDT vs. ROM-6) as they would be implemented in a public health leprosy control program. This is standard practice for open-label pragmatic trials, and it allows appropriate evaluation without penalizing the trial merely for being unblinded.
+
+---
+
+Outcome Name: cure rate at 2 years
+
+**2.1. Were participants aware of their assigned intervention during the trial?**
+
+• Response: **Yes**
+• Reason: The article explicitly states, "Blinding to treatment was not undertaken." Furthermore, the two regimens were visibly and practically distinct: PB-MDT required daily self-administered dapsone plus monthly supervised rifampicin/dapsone, while ROM-6 was a single monthly supervised dose of three different drugs. Participants would clearly know which regimen they were receiving based on pill burden, dosing frequency, and drug type.
+
+**2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?**
+
+• Response: **Yes**
+• Reason: As above, there was no blinding, and paramedical workers administering monthly supervised doses would necessarily know which regimen (MDT pack vs. ROM pack) they were dispensing, given the visibly different WHO-supplied drug packs and dosing schedules.
+
+**2.3. Were there deviations from the intended intervention that arose because of the trial context?**
+
+• Response: **No information**
+• Reason: The article reports default/discontinuation reasons (weakness/intolerance, swelling of feet, vomiting/diarrhea, feeling cured, stigma, pregnancy, lost to treatment) in Table 3. These reasons appear consistent with what could occur in routine (non-trial) clinical practice rather than being artifacts of trial recruitment or trial-specific engagement (e.g., no evidence that participants sought alternative treatment because they felt "unlucky" about allocation, or that trial personnel deviated from protocol due to the research context). However, the article does not explicitly discuss whether trial context influenced these deviations, so there is insufficient information to make a determination either way.
+
+**2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?**
+
+• Response: **No**
+• Reason: The reported 2-year cure rate ("99% in ROM-6 and 97.0% in PB-MDT group") is explicitly stated to be calculated "of those who completed treatment" and who were available for follow-up (100/134 in MDT and 103/134 in ROM-6, i.e., only ~75-77% of originally randomized participants). This is a per-protocol/completer-style analysis that excludes 27 defaulters in MDT and 19 defaulters in ROM-6 (Table 1), plus additional losses to follow-up, rather than an intention-to-treat analysis retaining all randomized participants. This is explicitly listed in the RoB 2 guidance as an inappropriate analysis type for estimating the effect of assignment to intervention.
+
+**2.7. Was there potential for a substantial impact (on the result) of the failure to analyze participants in the group to which they were randomized?**
+
+• Response: **Yes**
+• Reason: At 2 years, approximately 25% of randomized participants in each arm (34/134 in MDT; 31/134 in ROM-6) were excluded from the cure rate calculation due to default or loss to follow-up. This is a substantial proportion. Furthermore, Table 3 shows the reasons for default differed somewhat between arms (e.g., more weakness/intolerance in MDT [16] vs. ROM [10]; more vomiting/diarrhea and "felt cured/stigma" in ROM), suggesting default was not entirely random and could be related to prognostic factors or treatment tolerability, which could differentially bias the surviving "completer" cure rate estimates in each group. Since cure status of defaulters is unknown and excluded, and the exclusion rate is large (~25%), this has strong potential for substantial impact on the effect estimate (e.g., survivorship bias inflating apparent cure rates in both arms unequally).
+
+---
+
+**Overall Domain 2 (Effect of Assignment to Intervention) Judgement: High risk**
+
+**Reasoning based on the RoB 2 algorithm:** Participants and personnel were aware of intervention assignment (2.1=Yes, 2.2=Yes) due to the open-label design. While there is no clear evidence that deviations arose specifically because of the "trial context" (2.3 = No information), the analysis used to estimate the 2-year cure rate was a completer/per-protocol-style analysis rather than intention-to-treat (2.6 = No), and given the substantial proportion of participants excluded from this analysis (~25% in each arm) with differential reasons for default between groups, there is clear potential for this to have substantially impacted the result (2.7 = Yes). Per the RoB 2 algorithm, an inappropriate analysis (2.6 = No) combined with potential for substantial impact (2.7 = Yes) leads to an overall judgement of **High risk** for this domain.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+Outcome Name: cure rate at 2 years
+
+**3.1. Were data for this outcome available for all, or nearly all, participants randomized?**
+
+• Response: **No**
+• Reason: At 2 years, only 100/134 (74.6%) in the PB-MDT group and 103/134 (76.9%) in the ROM-6 group were followed up and included in the cure rate calculation. This means approximately 25% of randomized participants in each arm (34 in MDT and 31 in ROM-6) had missing outcome data at this timepoint, due to default/discontinuation and loss to follow-up (Table 1). Given that this is a dichotomous outcome with generally high cure rates (97-99%), even a modest number of "non-cured" outcomes among the missing participants could meaningfully shift the estimated cure rate. A missingness rate of ~25% is far from "nearly all" participants having available data, and thus this could plausibly have made an important difference to the estimated effect.
+
+**3.2. Is there evidence that the result was not biased by missing outcome data?**
+
+• Response: **No**
+• Reason: The article reports the 2-year cure rate as simply calculated among "those who completed treatment" and were available for follow-up. There is no sensitivity analysis, imputation method accounting for missingness mechanism, or statistical correction (e.g., inverse probability weighting) applied to address the substantial missing outcome data at the 2-year timepoint. The Cox regression analysis mentioned in the Methods was used to check the effect of confounders on treatment outcome overall, not specifically to correct for or assess robustness of the 2-year cure rate to missingness.
+
+**3.3. Could missingness in the outcome depend on its true value?**
+
+• Response: **Yes**
+• Reason: Table 3 provides reasons for default, several of which are plausibly related to the participant's true disease/cure status. Notably, "felt cured/leprosy stigma" was reported as a reason for default (1 in MDT, 4 in ROM-6), meaning some participants who believed they were already cured stopped attending follow-up — directly linking missingness to a specific (positive) outcome status. Additionally, in the later attempt to trace defaulters (reported in the "Cure rates in defaulters" section), some traced defaulters were found to still have active disease (4/23 traced MDT defaulters; 1/9 traced ROM defaulters), including one who developed grade 2 disability — indicating that among the missing/defaulted population, both cured and non-cured outcomes existed, and default was not occurring for reasons entirely unrelated to disease status.
+
+**3.4. Is it likely that missingness in the outcome depended on its true value?**
+
+• Response: **Yes**
+• Reason: Multiple criteria from the guideline are met: (1) **Reported reasons for missing data provide evidence that missingness depends on the true value** — "felt cured" as a stated reason for default directly ties dropout to perceived outcome status, and traced defaulters showed a mix of cured and non-cured/active disease status, confirming that missingness was not random with respect to outcome. (2) **Reported reasons differ between intervention groups** — Table 3 shows differential default reasons: weakness/intolerance was more common in MDT (16 vs. 10), while vomiting/diarrhea (5 vs. 1) and "felt cured/stigma" (4 vs. 1) were more common in ROM-6. This differential pattern of dropout reasons between arms suggests group-specific mechanisms linking treatment experience/perceived success to missingness, raising concern that the true cure rates in the missing participants likely differed systematically between groups in a way related to the intervention itself.
+
+---
+
+**Overall Domain 3 Judgement: High risk**
+
+**Reasoning based on the RoB 2 algorithm:** Data were not available for nearly all participants (3.1 = No), with ~25% missing in each arm at the 2-year timepoint. No evidence or analytic method was provided to show the result was robust to this missingness (3.2 = No). Missingness in the outcome plausibly depended on its true value, as evidenced by explicit reasons for default connected to perceived cure status ("felt cured") and confirmed mixed cure/non-cure status among traced defaulters (3.3 = Yes). Furthermore, it is likely that missingness depended on the true outcome value, given differing default reasons and rates between the two intervention groups and direct evidence that non-cured participants were among those who defaulted (3.4 = Yes). Per the RoB 2 algorithm, when missingness is likely related to the true outcome value and this differs by group, the domain is judged as **High risk of bias**.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+Outcome Name: cure rate at 2 years
+
+**4.1. Was the method of measuring the outcome inappropriate?**
+
+• Response: **Probably no**
+• Reason: The definition of "cure" was pre-specified as "complete resolution of the lesion or patch becoming flat, hypopigmented and with decrease in size of the lesion and/or regaining of sensation." This is a clinically standard method for assessing cure in paucibacillary leprosy, consistent with methods used in comparable studies cited in the article (e.g., the multicentric ROM trials). While purely clinical assessment without histological or bacteriological confirmation is a limitation (explicitly acknowledged by the authors), this method is not inherently inappropriate for detecting plausible intervention effects on skin lesion resolution, which is the accepted standard in leprosy field trials.
+
+**4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?**
+
+• Response: **Probably no**
+• Reason: Both groups were followed using the same schedule ("formal assessment after completion of treatment for each patient was done once in 6 months") and assessed by the same trained paramedical workers and medical doctors using the same clinical criteria for cure. There is no indication that one intervention group received additional visits, additional diagnostic tests, or a different assessment protocol that would create differential detection opportunities between groups.
+
+**4.3. Were outcome assessors aware of the intervention received by study participants?**
+
+• Response: **Yes**
+• Reason: The study explicitly states "Blinding to treatment was not undertaken." The same paramedical workers who visited patients monthly for supervised drug administration (and would necessarily know which regimen — MDT pack vs. ROM pack — the patient was receiving) also performed the clinical assessments of lesion activity, erythema, infiltration, and cure status. There was no independent, blinded outcome assessment described.
+
+**4.4. Could assessment of the outcome have been influenced by knowledge of intervention received?**
+
+• Response: **Yes**
+• Reason: Cure assessment in this study relies on clinical judgement — evaluating lesion resolution, flattening, hypopigmentation, size decrease, and return of sensation — which involves a degree of subjectivity rather than being a purely objective, non-judgement-based measure (e.g., unlike all-cause mortality). Since assessors were aware of which regimen each patient received (and may have had expectations about relative efficacy, given that ROM was being tested as a "newer"/alternative regimen against the established WHO standard), there is potential for this subjective judgement to be influenced by knowledge of the assigned intervention.
+
+**4.5. Is it likely that assessment of the outcome was influenced by knowledge of intervention received?**
+
+• Response: **Probably no**
+• Reason: While knowledge of the intervention could have influenced subjective assessment (per 4.4), there is no specific evidence in the article suggesting strong prior beliefs among assessors favoring one treatment over the other, nor any reported pattern of systematic differential assessment. The study describes standardized clinical criteria applied consistently, and the authors themselves note "difference was statistically not significant" for cure rates, without any indication of a differential assessment. There is no direct evidence of assessor bias having actually occurred, only a theoretical potential given the lack of blinding. This corresponds to the "Some concerns" scenario (a is possible but not likely to have occurred) rather than "High risk" (likely occurred), per the tool's distinguishing guidance.
+
+---
+
+**Overall Domain 4 Judgement: Some concerns**
+
+**Reasoning based on the RoB 2 algorithm:** The outcome measurement method itself was appropriate and comparable across groups (4.1 = Probably No, 4.2 = Probably No). However, outcome assessors were not blinded (4.3 = Yes), and because cure assessment involves subjective clinical judgement (lesion resolution, hypopigmentation, sensation), knowledge of intervention assignment could have influenced this judgement (4.4 = Yes). However, there is no specific evidence that this influence actually occurred or was likely (4.5 = Probably No — i.e., "could have" but "no reason to believe that it did"). Per the RoB 2 algorithm, this pattern (unblinded assessment of a judgement-based outcome, with potential but not demonstrated influence) corresponds to an overall domain judgement of **Some concerns**.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+Outcome Name: cure rate at 2 years
+
+**5.1. Was the outcome data analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?**
+
+• Response: **No information**
+• Reason: The article states, "This study is now registered on Clinical Trial Registry of India vide REF/2013/11/005995 dated 22 November, 2013." Critically, the study was conducted from June 2001 to November 2010, meaning trial registration occurred **retrospectively, approximately 3 years after the study was completed and unblinded outcome data were already available**. This retrospective registration does not qualify as evidence of a pre-specified analysis plan finalized before unblinded data were available. No trial protocol or statistical analysis plan is referenced or made available in the article. While the Methods section does describe a pre-planned sample size calculation based on an anticipated cure rate improvement "from 53.4% to 70% at 24 months after release from treatment (RFT)," which suggests the 2-year cure rate was intended a priori as a key outcome, there is no full pre-specified analysis plan (e.g., detailing exact statistical methods, subgroup analyses, or handling of missing data) available for verification.
+
+**5.2. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements (e.g., scales, definitions, time points) within the outcome domain?**
+
+• Response: **Probably no**
+• Reason: The sample size and study rationale (Methods section) explicitly pre-specify the 24-month (2-year) cure rate as the comparison of interest ("it was assumed that cure rate was likely to improve from 53.4% to 70% at 24 months after release from treatment (RFT)"). Although the study reports cure rates at multiple time points (RFT, 6, 12, 18, 24, 36, 48, 60 months, and beyond), the 2-year timepoint specifically corresponds to the a priori powered comparison, making it unlikely that this particular result was selectively chosen from among multiple eligible timepoints based on favorable findings.
+
+**5.3. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?**
+
+• Response: **Probably no**
+• Reason: The Methods section pre-specifies that "Chi square test was used to compare relapse rates" and comparable statistical tests (Pearson χ2) for proportions. The cure rate comparison at 2 years appears to use a single, standard, consistent statistical approach (comparison of proportions) with no evidence of multiple alternative analytic approaches (e.g., adjusted vs. unadjusted, different subgroups, different statistical models) being tried and selectively reported for this specific outcome.
+
+---
+
+**Overall Domain 5 Judgement: Some concerns**
+
+**Reasoning based on the RoB 2 algorithm:** Although there is no clear evidence of selective outcome reporting or selective analysis for the 2-year cure rate specifically (5.2 = Probably No, 5.3 = Probably No), question 5.1 cannot be answered "Yes" or "Probably Yes" because the only registration evidence available (Clinical Trial Registry of India, dated November 2013) occurred **retrospectively**, years after study completion and after outcome data were unblinded and known to the investigators. This is a significant limitation, as it means we cannot confirm that the analysis was genuinely pre-specified before the results were known — undermining confidence that reported outcomes and analyses were not influenced by knowledge of the results. Per the RoB 2 algorithm, when 5.1 = No/Probably No/No information but 5.2 and 5.3 = No/Probably No (i.e., no direct evidence of result-based selection, but inability to confirm a genuine prospective plan), the domain is judged as **Some concerns**.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+Outcome Name: cure rate at 2 years
+
+## Summary of All Domain Judgements
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Bias arising from the randomization process | Some concerns |
+| 2. Bias due to deviations from intended interventions | High |
+| 3. Bias due to missing outcome data | High |
+| 4. Bias in measurement of the outcome | Some concerns |
+| 5. Bias in selection of the reported result | Some concerns |
+
+## Overall Risk-of-Bias Judgement: **High**
+
+**Reasoning:** Per the RoB 2 algorithm, if any domain is judged "High risk," the overall study result for that outcome is rated "High risk of bias," regardless of the judgements in other domains. Two domains (Domain 2: deviations from intended interventions, and Domain 3: missing outcome data) were independently judged as **High risk**, which is sufficient to drive the overall judgement to **High risk**, even though the remaining three domains were only "Some concerns."
+
+---
+
+## Overall Predicted Direction of Bias: **Favours experimental (ROM-6)**
+
+**Reasoning:**
+
+1. **Domain 3 (Missing data) contribution:** The reported reason "felt cured/leprosy stigma" for default was more common in the ROM-6 arm (4 patients) than in the PB-MDT arm (1 patient) (Table 3). If some of these self-perceived "cured" participants who dropped out were not, in fact, fully cured, their exclusion from the denominator would selectively inflate the apparent cure rate in the ROM-6 arm relative to PB-MDT, since more such participants were removed from the ROM-6 group's follow-up pool without confirmation of true cure status.
+
+2. **Domain 2 (Completer-type analysis) contribution:** The 2-year cure rate was calculated only among those who completed treatment and remained in follow-up (100/134 MDT; 103/134 ROM-6), excluding defaulters with unknown/mixed true outcomes (as later confirmed by tracing efforts, which found some defaulters still had active disease). Since ROM-6 is the experimental (novel) intervention being tested against the established standard-of-care (PB-MDT), and the pattern of exclusions (via differing default reasons) plausibly favors an inflated cure estimate in the ROM-6 arm, this would bias the estimate in favor of the experimental treatment.
+
+3. **Domain 4 (Unblinded subjective assessment) contribution:** Unblinded assessors evaluating a somewhat subjective outcome (lesion resolution, hypopigmentation, sensation return) while aware of which regimen (the novel ROM-6 vs. established PB-MDT) a patient received creates a theoretical possibility of assessment bias favoring the newer regimen being investigated, consistent with common patterns in unblinded trials of novel interventions.
+
+Taken together, the identified sources of bias (differential dropout related to perceived cure status, exclusion of non-informative outcomes via completer analysis, and unblinded subjective outcome assessment) are more likely to have inflated the apparent benefit of the experimental ROM-6 regimen relative to the standard PB-MDT comparator, rather than biasing towards the null or in the opposite direction.
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Final Risk-of-Bias Assessment (RoB 2): Cure Rate at 2 Years
+
+## Domain-by-Domain Summary Table
+
+| Domain | Signaling Questions | Response | Domain Judgement |
+|--------|---------------------|----------|-------------------|
+| **1. Bias arising from the randomization process** | 1.1 Was allocation sequence random? | Probably Yes | **Some concerns** |
+| | 1.2 Was allocation sequence concealed? | No | |
+| | 1.3 Did baseline differences suggest randomization problems? | No | |
+| **2. Bias due to deviations from intended interventions** (Effect of assignment) | 2.1 Were participants aware of assigned intervention? | Yes | **High** |
+| | 2.2 Were carers/providers aware of assigned intervention? | Yes | |
+| | 2.3 Deviations from intervention due to trial context? | No information | |
+| | 2.6 Was appropriate analysis used (ITT)? | No | |
+| | 2.7 Potential for substantial impact of failure to analyze as randomized? | Yes | |
+| **3. Bias due to missing outcome data** | 3.1 Were data available for all/nearly all participants? | No | **High** |
+| | 3.2 Evidence result not biased by missing data? | No | |
+| | 3.3 Could missingness depend on true value? | Yes | |
+| | 3.4 Likely that missingness depended on true value? | Yes | |
+| **4. Bias in measurement of the outcome** | 4.1 Was method of measuring outcome inappropriate? | Probably No | **Some concerns** |
+| | 4.2 Could measurement differ between groups? | Probably No | |
+| | 4.3 Were outcome assessors aware of intervention? | Yes | |
+| | 4.4 Could assessment be influenced by knowledge of intervention? | Yes | |
+| | 4.5 Likely that assessment was influenced? | Probably No | |
+| **5. Bias in selection of the reported result** | 5.1 Analysed per pre-specified plan finalized before unblinded data available? | No information (registered retrospectively, 2013, after study completion in 2010) | **Some concerns** |
+| | 5.2 Selected from multiple eligible outcome measurements? | Probably No | |
+| | 5.3 Selected from multiple eligible analyses? | Probably No | |
+
+---
+
+## Overall Risk-of-Bias Judgement
+
+| | |
+|---|---|
+| **Overall RoB Judgement** | **High risk of bias** |
+| **Predicted Direction of Bias** | **Favours experimental (ROM-6)** |
+
+---
+
+### Final Justification
+
+**Overall judgement — High risk:** Per the RoB 2 algorithm, an overall "High risk" judgement is triggered when at least one domain is rated High risk. Here, **two domains** (Domain 2: deviations from intended interventions, and Domain 3: missing outcome data) were independently rated **High risk**:
+- Domain 2 was driven by the use of a completer-type (non-ITT) analysis for the 2-year cure rate, combined with a substantial (~25%) exclusion of randomized participants whose true outcomes were unknown.
+- Domain 3 was driven by the same substantial missing outcome data, compounded by direct evidence (stated default reasons such as "felt cured," and later-traced defaulters showing mixed cure/non-cure status) that missingness was related to the true outcome value, and that this pattern differed between treatment arms.
+
+**Direction of bias — Favours experimental (ROM-6):** The differential default patterns (Table 3) show that "felt cured/stigma" as a reason for dropout was more frequent in the ROM-6 arm (4 vs. 1 in MDT), while other dropout reasons (weakness/intolerance) were more frequent in the MDT arm. Combined with the completer-only analysis and unblinded, judgement-based outcome assessment favoring the novel intervention under investigation (ROM-6), the identified biases are more likely to have inflated the apparent cure rate benefit of ROM-6 relative to standard PB-MDT, rather than pushing the estimate toward the null or in an unpredictable direction.

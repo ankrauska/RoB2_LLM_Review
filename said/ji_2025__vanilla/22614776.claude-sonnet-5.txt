@@ -1,0 +1,238 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 22614776
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"participants who completed a computerized baseline assessment were randomly selected (stratified by gender and age: 14–15, 16–18 years), and assigned to 1 of the 3 study conditions (TBI, CBI, control) during the ED visit."
+"designInfo": {"allocation": "RANDOMIZED", "interventionModel": "FACTORIAL"...}
+
+Analysis: The article and trial registry confirm that random assignment occurred and that the sequence was stratified by gender and age. However, no explicit description of the actual method used to generate the random allocation sequence (e.g., computer-generated randomization, random number table) is provided in either the article or the registry information. The stratification detail confirms structured randomization but does not itself specify the randomization mechanism. Given the domain risk assessment states "not yet assessed" and no specific sequence generation method is described, this falls under the category of studies stating they are randomized without detailing the specific random component used for sequence generation. However, this is a well-resourced, NIH-funded RCT conducted by an experienced research team with a clinical trials registration, multiple related publications, and rigorous methodology (GEE analyses, stratified randomization, intent-to-treat), which supports a "Probably yes" judgment rather than "No information," per the guidance regarding large, well-resourced trials with word-limited publications.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"After assent/consent for the RCT, participants who completed a computerized baseline assessment were randomly selected (stratified by gender and age: 14–15, 16–18 years), and assigned to 1 of the 3 study conditions (TBI, CBI, control) during the ED visit."
+
+Analysis: The article states participants were randomized using a computerized system after stratification by gender and age, and assignment occurred immediately after baseline assessment completion during the ED visit. This suggests a computerized/automated allocation process, which typically ensures concealment since the sequence is generated and administered by the computer system rather than being known in advance to enrolling personnel. However, the article does not explicitly describe the specific mechanism of allocation concealment (e.g., whether the randomization list was inaccessible to research staff, whether it was a centrally controlled system independent of enrollment personnel, or details about how the computer-based randomization prevented foreknowledge of assignment). No further details are provided about the security or independence of this computerized randomization process, nor is there description of sequence generation safeguards (e.g., password protection, remote server-based allocation, or third-party administration). Given the lack of explicit detail confirming that the process was safeguarded against foreknowledge, but the plausible use of computerized randomization (which is commonly concealed by nature of computer-generated allocation happening in real time), a judgment of "Probably yes" is reasonable, though not fully verifiable due to missing methodological detail.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"There were no significant differences between conditions on age, race, gender; therefore, these variables were not included in the GEE analysis." "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate."
+
+Analysis: The article explicitly reports that key demographic variables (age, race, gender) did not differ significantly between groups at baseline. There was one baseline difference noted (dropping out of school), but this is a single variable difference, consistent with chance given multiple comparisons, and the authors appropriately controlled for it in sensitivity analyses without change in findings. No other prognostic factors or baseline outcome measures are reported as substantially imbalanced. There is no evidence of unequal group sizes beyond expected allocation, no excess of significant differences beyond chance, and no indication of implausible similarity. This isolated, non-influential imbalance does not suggest a problem with the randomization process itself.
+
+Correct answer: No
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+"Participants assigned to the control received a trifold brochure with community resources." "The TBI was facilitated by a tablet computer..." "The CBI was a stand-alone interactive program28 with touch screens and audio via headphones." "the reliability and validity of self-report data are increased when...staff are blind to condition assignment." Masking info: "masking": "SINGLE", "whoMasked": ["OUTCOMES_ASSESSOR"].
+
+Analysis: The three study arms (therapist-delivered brief intervention, computer-delivered brief intervention, and control brochure) are inherently distinct in mode of delivery and content—one involves a live therapist session with computer-assisted content, another is a stand-alone interactive computer program, and the control simply receives a written brochure. There is no placebo or sham intervention described, and the masking information explicitly states that only outcomes assessors were blinded, not participants. Given the very different nature of these interventions (face-to-face therapist interaction vs. computer program vs. brochure only), participants would almost certainly know which condition they were allocated to. This aligns with the "single masking" limited to outcome assessors, confirming participants were not blinded to their allocated intervention.
+
+Correct answer: Yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+"The TBI was facilitated by a tablet computer that displayed screens to prompt sections of content for the therapist to deliver, including tailored feedback." "Participants assigned to the control received a trifold brochure with community resources." "recent reviews suggest that... reliability and validity of self-report data are increased when... staff are blind to condition assignment." Masking information: "masking": "SINGLE", "whoMasked": ["OUTCOMES_ASSESSOR"].
+
+Analysis: The intervention was delivered by therapists (with computer assistance) or by computer alone, versus a control brochure. By the nature of these interventions, the person delivering the intervention (the therapist, or the computer program itself) necessarily knew which condition was being delivered, since the content, format, and duration differed markedly between the TBI, CBI, and control brochure conditions. The protocol's masking information confirms that only outcomes assessors were blinded ("whoMasked": ["OUTCOMES_ASSESSOR"]), with no mention of blinding of therapists or intervention providers. Therapists delivering the TBI would clearly know they were delivering an active intervention, and this awareness could plausibly affect delivery fidelity, engagement, or additional attention given to participants. There is no indication that carers or those administering the intervention were blinded to allocation.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+- "An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)."
+- "Participants assigned to the control received a trifold brochure with community resources."
+- No mention of participants seeking alternative interventions, crossing over, or trial context (e.g., recruitment/consent process) causing deviations from assigned intervention.
+
+Analysis: The trial describes a single-session brief intervention delivered during the ED visit itself (TBI, CBI, or control brochure), with >95% of participants receiving their assigned intervention as intended. There is no indication that the informed consent process or awareness of group assignment led participants to seek out alternative interventions, refuse their assigned intervention, or otherwise deviate from the protocol because of trial-context effects (e.g., disappointment at being assigned to control, contamination between groups, or performance/attention effects specific to trial participation). Given the single-session, ED-based delivery model, opportunities for such contextual deviations are limited, and the article provides no evidence of any occurring. The absence of explicit reporting on this specific issue, combined with the very high fidelity of intervention delivery (>95%), suggests deviations due to trial context were unlikely, though not explicitly confirmed by the trialists.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+"An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)."
+"Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate."
+
+Analysis: The trial reports that more than 95% of participants received their assigned intervention as randomized, indicating minimal deviation from the intended intervention protocol. The only deviation noted (differential school dropout by condition) was examined as a potential confounder, and controlling for it did not change the findings, suggesting it did not meaningfully affect the outcome. There is no evidence of other substantial deviations from assigned interventions that arose from the trial context (e.g., no reported crossovers, non-adherence to intervention delivery, or contamination between arms) that would be expected to bias the outcome estimate. Given the very high fidelity to assigned intervention and the confirmed lack of impact from the one identified deviation, it is unlikely that deviations affected the outcome.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences: "An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)." Also: "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate."
+
+Analysis: The article reports that over 95% of participants across all groups (control, CBI, TBI) received their assigned intervention as intended, indicating minimal deviation from protocol overall. There is no indication that any deviations from intended intervention (i.e., the small proportion not receiving assigned intervention) were disproportionately concentrated in one arm versus another. The only imbalance noted (dropping out of school) was a baseline characteristic difference, not a deviation from intended intervention, and was addressed via sensitivity analysis showing no change in findings. No differential contamination, crossover, or non-adherence patterns between groups are reported. Given the very high and presumably similar adherence rates (>95%) across arms and no explicit report of imbalance in deviations, the evidence suggests deviations were minimal and did not differentially affect groups, but this is inferred rather than explicitly stated with a breakdown by arm.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+"An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)."
+"GEE analyses use all data available for participants, including those lost to attrition, and allow for observed variable distributions."
+"Finally, although attrition was low (14%) and an intent to treat analysis was conducted, it is always possible that those lost to follow-up may have biased results."
+
+Analysis: The study explicitly states that an intent-to-treat (ITT) approach was used, with all randomly assigned participants analyzed according to their assigned condition regardless of whether they received the intervention. Additionally, the GEE analysis method used incorporates all available data, including participants lost to follow-up, which is consistent with an appropriate ITT-type analysis (also compatible with mITT logic since GEE can handle missing data appropriately using observed data under assumptions). There is no indication of per-protocol or as-treated analysis, nor of post-randomization exclusion of eligible participants. This aligns with the explanation criteria for an appropriate analysis to estimate the effect of assignment to intervention.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)." and "GEE analyses use all data available for participants, including those lost to attrition, and allow for observed variable distributions."
+
+Analysis: The study explicitly used an intent-to-treat (ITT) approach, including all randomized participants regardless of whether they received their assigned intervention. Over 95% of participants actually received their assigned intervention, indicating minimal crossover or deviation from allocated groups. Additionally, the GEE analysis incorporated all available data, including those lost to follow-up, rather than excluding them from analysis. This means there was no substantial departure from analyzing participants in their randomly assigned groups, and the small proportion (<5%) who may not have received their assigned intervention were still analyzed according to their original group assignment. Given the ITT approach and the very high proportion of participants who received their assigned condition, there is minimal potential for the failure to analyze participants in their randomized group to have substantially impacted the results.
+
+Correct answer: No
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+- "726 completed the baseline survey... the 12-month follow-up rate was 83.6% (n = 607/726)."
+- "An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (.95% received their assigned intervention during the ED visit)."
+- "GEE analyses use all data available for participants, including those lost to attrition..."
+- "Finally, although attrition was low (14%) and an intent to treat analysis was conducted, it is always possible that those lost to follow-up may have biased results."
+
+Analysis: The trial reports clear data on missing outcomes: 726 participants were randomized, and 607 (83.6%) completed the 12-month follow-up, meaning approximately 16.4% (119 participants) had missing outcome data at this follow-up point. This exceeds the general 95% threshold typically considered sufficient for continuous or dichotomous outcomes with moderate event rates. Although GEE was used (which can handle missing data under certain assumptions), the actual outcome data were unavailable for a non-trivial proportion of randomized participants (16.4%), and the authors themselves acknowledge that missingness could have biased the results. Given the observed effect sizes (e.g., odds ratios in the 0.60–1.36 range) and the substantial proportion of missing data relative to number of events, it is plausible that missing data could have influenced the estimated intervention effects. This does not meet the "nearly all" standard implied by the explanation (typically ≥95%).
+
+Correct answer: Probably no
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+"An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not... GEE analyses use all data available for participants, including those lost to attrition..."
+"the 12-month follow-up rate was 83.6% (n = 607/726)."
+"Finally, although attrition was low (14%) and an intent to treat analysis was conducted, it is always possible that those lost to follow-up may have biased results."
+
+Analysis: The study used an intent-to-treat approach with GEE models, which use all available data including those lost to follow-up, a method that can help correct for bias due to missing data under a missing-at-random assumption. However, the authors do not report any specific sensitivity analyses testing a range of plausible assumptions about missingness (e.g., comparing worst-case/best-case scenarios or exploring different missing data mechanisms). They explicitly acknowledge in the discussion that "it is always possible that those lost to follow-up may have biased results," indicating uncertainty rather than confirmed evidence that results were unbiased. While GEE is a method that addresses missing data assumptions, without additional sensitivity analyses or explicit justification that the missing data mechanism assumption holds, this only provides partial (not definitive) reassurance against bias.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences:
+- "the 12-month follow-up rate was 83.6% (n = 607/726)."
+- "Finally, although attrition was low (14%) and an intent to treat analysis was conducted, it is always possible that those lost to follow-up may have biased results."
+- "GEE analyses use all data available for participants, including those lost to attrition, and allow for observed variable distributions (eg, logit)."
+- No documented, outcome-unrelated reasons (e.g., device failure) are given for the ~16% missing at 12 months; reasons for loss to follow-up are not specified.
+
+Analysis: About 16% of participants (119/726) did not complete the 12-month follow-up, and the authors themselves acknowledge that "those lost to follow-up may have biased results," indicating uncertainty about whether missingness is related to the outcome. No specific, outcome-independent reasons (e.g., administrative/technical failures) are provided to explain the missing outcome data. Given the outcomes involve self-reported violence and alcohol behaviors, it is plausible that adolescents with worse outcomes (more violence/alcohol misuse, or lack of engagement) were differentially likely to be lost to follow-up. Since no clear evidence rules out this possibility, and the study did not report the missingness reasons in detail, there is a plausible risk that missingness could be related to the true outcome value.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+"84% completed 12-month follow-up" / "the 12-month follow-up rate was 83.6% (n = 607/726)"; "Finally, although attrition was low (14%) and an intent to treat analysis was conducted, it is always possible that those lost to follow-up may have biased results"; "GEE analyses use all data available for participants, including those lost to attrition"; "There were no significant differences between conditions on age, race, gender; therefore, these variables were not included in the GEE analysis"; "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate."
+
+Analysis: Attrition was relatively low (~16%) and appears balanced overall, with intent-to-treat GEE analysis using all available data. No differential dropout rates by condition are reported for missingness beyond the school dropout variable, which was checked and controlled for without changing results. No reasons for missing outcome data are reported that would suggest missingness is related to the outcome's true value (e.g., no evidence that violence/alcohol status predicted dropout differently by arm). The authors acknowledge a general possibility of bias due to loss to follow-up, but do not provide specific evidence (differential proportions between arms, reasons tied to outcome value, or study circumstances) indicating that missingness likely depended on the true outcome value. This pattern is more consistent with only "some concern" rather than clear evidence of dependency.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences:
+"The main outcome measures (at baseline and 12 months) included violence (peer aggression, peer victimization, violence-related consequences) and alcohol (alcohol misuse, binge drinking, alcohol-related consequences)."
+"Items from the conflict tactic scale39,40 assessed past-year severe aggression toward peers..."
+"Past-year alcohol misuse was assessed with the Alcohol Use Disorders Identification Test-Consumption (AUDIT-C)34,35; with a cutoff of ≥3 screening positive for alcohol misuse."
+"Past-year alcohol-related consequences were measured by 17 items from the Problem Oriented Screening Instrument for Teenagers37..."
+"The 12-month follow-up data were obtained via self-administered computer survey.31–33"
+"Although reliance on self-report is a potential limitation of this study, recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers.54–58"
+
+Analysis: The outcome measures used are well-established, validated instruments (Conflict Tactics Scale, AUDIT-C, Problem Oriented Screening Instrument for Teenagers) that are commonly used and validated in adolescent populations for measuring violence and alcohol-related behaviors. These are self-report measures, which is a common and generally appropriate method for measuring subjective behavioral outcomes such as aggression, victimization, and alcohol use, especially when privacy and computer self-administration are used to enhance validity (as noted in the discussion). There is no indication that the measurement methods lack sensitivity to detect intervention effects, nor is there evidence of demonstrated poor validity of these specific instruments in this population. The instruments are standard, pre-specified, and validated in prior literature. While self-report has inherent limitations (which the authors acknowledge), this does not constitute an "inappropriate" method under the specific criteria in the question (insensitivity to plausible effects or demonstrated poor validity). Therefore, the outcome measurement method appears appropriate for assessing peer violence and alcohol misuse outcomes.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"The 12-month follow-up data were obtained via self-administered computer survey." "Twelve-month surveys were completed in the same manner as the 3- and 6-month follow-ups, at the ED or at a convenient location." "Although reliance on self-report is a potential limitation of this study, recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers." The protocol also indicates masking of outcomes assessors ("whoMasked": ["OUTCOMES_ASSESSOR"]).
+
+Analysis: Outcomes were measured identically across all three intervention groups (control, computer, therapist) using the same self-administered computerized survey instruments (AUDIT-C, conflict tactic scale, etc.), at the same time points (baseline, 3, 6, 12 months), and via the same follow-up procedures (same location options, same remuneration). There is no indication of differential outcome ascertainment methods, additional visits, or differential detection opportunities between groups—all groups completed the same self-report computerized assessment independent of group assignment. Additionally, the protocol specifies that outcomes assessors were blinded, further reducing the likelihood of differential measurement. This supports a low risk of differential measurement/ascertainment bias between intervention groups.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences:
+- "The 12-month follow-up data were obtained via self-administered computer survey."
+- "The main outcome measures... included violence (peer aggression, peer victimization, violence-related consequences) and alcohol (alcohol misuse, binge drinking, alcohol-related consequences)."
+- "recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers."
+- Protocol: maskingInfo: masking "SINGLE", whoMasked: ["OUTCOMES_ASSESSOR"]
+
+Analysis: All primary outcomes (peer violence and alcohol use variables) were assessed via self-administered computerized surveys completed directly by the adolescent participants. Since these are participant-reported outcomes, the outcome assessor is the participant themselves, per the explanation provided. Participants inherently know which intervention they received (control brochure vs. computer-delivered vs. therapist-delivered intervention), as the interventions were not blinded to participants (they clearly experienced either a face-to-face therapist session, a computer program, or received a brochure). Therefore, participants (as outcome assessors) were aware of their treatment allocation when self-reporting outcomes. The protocol's designation of "OUTCOMES_ASSESSOR" masking likely refers to an intention to keep research staff blind during data entry/analysis, but this does not blind the participants themselves from knowing their own intervention assignment when completing self-report surveys.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"The 12-month follow-up data were obtained via self-administered computer survey."
+"Although reliance on self-report is a potential limitation of this study, recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers."
+Outcomes measured: peer aggression, peer victimization, violence consequences, alcohol misuse, binge drinking, alcohol consequences — all assessed via self-administered computerized survey (participant self-report).
+Protocol states masking: "whoMasked": ["OUTCOMES_ASSESSOR"] but outcomes assessment relies on adolescent self-report, not an independent observer applying judgement-free measures.
+
+Analysis: The outcomes in this trial (peer aggression, peer victimization, violence consequences, alcohol misuse, binge drinking, alcohol consequences) are all self-reported by the participants themselves via computerized surveys, rather than objectively observed events (e.g., mortality) or assessed by a blinded independent observer. Since participants were aware of which intervention they received (control brochure vs. computer-assisted vs. therapist-assisted intervention), their self-reports of behaviors like aggression, victimization, and alcohol use could be influenced by their knowledge of the intervention (e.g., social desirability bias, demand characteristics, differential recall influenced by perceived intervention effect). Although the article mentions self-administration on computers may increase validity/reliability of self-report generally, this does not eliminate the potential for knowledge of allocation to influence how participants respond, since participants are not blinded to which arm they were in. There is no indication that outcome assessors independent of participants blindly assessed these self-reported behavioral outcomes; the "outcome assessor" masking claimed in the registry is inconsistent with the nature of self-report outcomes, since the "assessor" is essentially the participant. Therefore, knowledge of intervention received could plausibly have influenced how participants self-reported these judgement-involving outcomes.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"The 12-month follow-up data were obtained via self-administered computer survey." / "Follow-Up Survey...Twelve-month surveys were completed in the same manner as the 3- and 6-month follow-ups." / "recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers." / Outcomes were peer aggression, victimization, alcohol misuse/consequences, all self-reported via computerized survey rather than assessed by an outcome assessor aware of allocation. Trial registry indicates masking of "OUTCOMES_ASSESSOR."
+
+Analysis: The outcomes (peer aggression, victimization, violence consequences, alcohol misuse) were all measured via self-administered computerized surveys completed by participants themselves, not by an external assessor who delivered or was aware of the intervention condition. This method minimizes the possibility that knowledge of the intervention assignment influenced the recording/scoring of the outcome, since the computer-based self-report format is standardized and does not involve a human assessor interpreting or influencing the outcome based on group allocation knowledge. Additionally, the article explicitly notes that self-report reliability is enhanced by computer self-administration and blinding of staff, suggesting steps were taken to reduce assessment bias. There is no indication that participants' self-reports would be differentially influenced by knowledge of their intervention status (e.g., no strong expectation effects like placebo/homeopathy scenarios are described), and the same self-administered survey method was used uniformly across all three arms (TBI, CBI, control) at all follow-up points.
+
+Correct answer: No
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+- "It was hypothesized a priori that the BIs would result in significant decreases in peer violence and alcohol-related variables relative to the control condition at 12 months."
+- Trial registration (NCT00251212) was first submitted 2005-11-07, prior to the study start date (2006-09) and long before the 12-month follow-up data (collected through 2010) were analyzed, with primary outcomes (alcohol misuse and violent behaviors, timeframe 12 months) and secondary outcomes pre-specified in the registry.
+- "Data Analysis" section describing GEE models, intent-to-treat approach, and control for a covariate that did not change findings — no indication that plan was altered based on unblinded outcome data.
+- Note: "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate" — this change appears to be based on baseline characteristic imbalance, not on unblinded outcome results.
+
+Analysis:
+The trial was prospectively registered in 2005, prior to enrollment starting (Sept 2006) and well before the 12-month follow-up data could have been analyzed (data collection through 2009, with 12-month follow-up continuing to 2010). The registry specifies the primary and secondary outcome domains (alcohol misuse/violent behaviors; illicit drug use, injury, delinquency, weapon carriage) and the a priori hypothesis is explicitly stated in the manuscript, indicating the analytic intentions (comparing BI vs. control on violence and alcohol outcomes at 12 months) were established before outcome data were unblinded. The one analytic change noted (controlling for school dropout) was justified by a baseline group difference identified independent of outcome results, and the authors report no change in findings, suggesting it was not a bias-inducing change to the analysis plan. However, there is no fully detailed, dated statistical analysis plan (e.g., a separate SAP document) available for direct comparison beyond the registry entries and the general a priori hypothesis, so full certainty is limited, but sufficient information is present to suggest the analysis was in accordance with prospectively planned intentions.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+- Protocol primary outcomes: "Primary outcome variables include alcohol misuse and violent behaviors" (12-months), with detailed description specifying "Primary outcomes will be evaluated at 3, 6 and 12-months and include alcohol use/misuse, violent behaviors, illicit drug use, unintentional injury, delinquency, and weapon carriage."
+- Article Methods: "The main outcome measures (at baseline and 12 months) included violence (peer aggression, peer victimization, violence-related consequences) and alcohol (alcohol misuse, binge drinking, alcohol-related consequences)."
+- Data Analysis section: "At 3 and 6 months, the effects were noted in dichotomous treatment of the variables and not the continuous variables... therefore, only dichotomous outcomes were examined." This indicates continuous versions of variables existed but were not reported at 12 months, with justification given (consistency with prior time points), not clearly result-based.
+- Full results for all pre-specified violence and alcohol outcomes (peer aggression, peer victimization, violence consequences, binge drinking, alcohol misuse, alcohol consequences) are reported in Tables 1-3, matching the outcome domains described in the protocol and methods.
+
+Analysis:
+The trial's registered protocol and the article's methods section both specify the same outcome domains (violence: peer aggression, peer victimization, violence consequences; alcohol: misuse, binge drinking, alcohol-related consequences), each measured at 12 months using specific instruments (conflict tactic scale, AUDIT-C, Problem Oriented Screening Instrument). All of these pre-specified outcomes appear to be fully reported in Tables 1, 2, and 3, with both GEE model results and descriptive percentages. There is a mention that continuous versions of variables were not examined at 12 months, but the authors provide a rationale (consistency with earlier analyses at 3 and 6 months) rather than this appearing to be a result-dependent selection. Since all six main outcome measures matching the pre-specified domains were reported with results (both significant and non-significant, e.g., alcohol variables were non-significant and still fully reported), there is no evidence of selective outcome reporting based on results. The domain risk and analysis are stated as "not yet assessed," but the material provided does not show any indication of selection from multiple eligible measurements based on results.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences:
+- "It was hypothesized a priori that the BIs would result in significant decreases in peer violence and alcohol-related variables relative to the control condition at 12 months."
+- "At 3 and 6 months, the effects were noted in dichotomous treatment of the variables and not the continuous variables. The analyses focused on evaluating if effects noted at 6 months were sustained at 12 months; therefore, only dichotomous outcomes were examined."
+- "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate."
+- "There were no significant differences between conditions on age, race, gender; therefore, these variables were not included in the GEE analysis."
+- Protocol primary outcome measure listed generically as "alcohol misuse and violent behaviors" at 12 months, without specifying dichotomous vs continuous analyses in advance, but article explicitly states rationale (consistency with prior 3/6-month dichotomous analyses) for restricting to dichotomous outcomes rather than choosing based on results.
+
+Analysis:
+The authors provide a clear, results-independent justification for their analytic choices: outcomes were dichotomized (as in previous 3- and 6-month reports) to allow consistency across time points, and covariates (school dropout, demographics) were tested and excluded/included based on lack of differential impact on findings, not based on favorable results. There is no evidence that multiple analytic approaches were tried and only the favorable one reported based on the pattern of results—rather, the analytic approach was pre-specified based on consistency with earlier published methodology and covariate testing was transparently reported (including that inclusion vs exclusion of the dropout covariate did not change findings). This indicates that reported results correspond to the intended/consistent analysis plan rather than selection based on favorable outcomes. There is no indication of cherry-picking specific eligible analyses to favor significant findings; when results were non-significant (e.g., alcohol outcomes, violence consequences, CBI condition), these were still fully reported.
+
+Correct answer: Probably no

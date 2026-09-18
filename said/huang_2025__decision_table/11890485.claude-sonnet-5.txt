@@ -1,0 +1,99 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 11890485
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Eloniemi-Sulkava, 2001
+**Outcome Name**: Time to institutionalization
+**Registration number**: Not reported/Not registered
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% - High Certainty)
+Reason: The article explicitly describes that "the dementia family care coordinator had prepared 100 sealed nontransparent envelopes, of which 53 contained allocation to the intervention group and 47 to the control group. Allocation to the groups was made by each patient (or her/his caregiver if the patient was unable) drawing one envelope." This describes a card/envelope drawing method for sequence generation.
+
+**1.2**: Y (90% - High Certainty)
+Reason: The article specifically describes the use of "sealed nontransparent envelopes" (opaque envelopes), which is a specific concealment method explicitly named in the guidelines as adequate for concealment.
+
+**1.3**: N (95% - High Certainty)
+Reason: Tables 2 and 3 show no statistically significant differences between intervention and control groups on any baseline characteristic (age, gender, diagnosis, MMSE stage/score, Barthel Index, living arrangement, caregiver characteristics) — all p-values > 0.05.
+
+**Result of Domain 1**: Low risk (95% - High Certainty)
+Reason: 1.2 = Y, 1.1 = Y, 1.3 = N, satisfying the criteria for "Low risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from the intended interventions
+
+**2.1**: Y (90% - High Certainty)
+Reason: This was an open-label study; intervention patients/caregivers received extensive, identifiable support (training courses, home visits, mobile phone access) that would make them clearly aware of their assignment.
+
+**2.2**: Y (90% - High Certainty)
+Reason: The dementia family care coordinator delivering the intervention necessarily knew which patients were receiving the intervention (no blinding of care providers described).
+
+**2.3**: Y (70% - Moderate Certainty)
+Reason: No evidence of significant imbalanced nonprotocol interventions; the control group received routine "usual services," and no contamination or crossover of the specialized coordinator-based intervention is reported.
+
+**2.4**: N (95% - High Certainty)
+Reason: The article explicitly states "There were no dropouts from the study during the 2-year follow-up," indicating no implementation failures.
+
+**2.5**: NI (60% - Low Certainty)
+Reason: No specific data on adherence/compliance with intervention components (e.g., attendance at training courses, frequency of contacts) relative to a threshold is reported; only descriptive information (e.g., "caregivers contacted the coordinator only 10 times outside working hours") is given, insufficient to determine a non-adherence rate.
+
+**2.6**: N (90% - High Certainty)
+Reason: The analysis used Cox regression and Kaplan-Meier methods on all randomized participants without any correction (e.g., instrumental variable analysis or inverse probability weighting) for non-adherence; this constitutes an intention-to-treat-like analysis, which per the instructions defaults to "N."
+
+**Result of Domain 2**: High risk (85% - Moderate Certainty)
+Reason: One of 2.1/2.2 = Y; 2.3 = Y; one of 2.4/2.5 (2.5) = NI; and 2.6 = N. According to the algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95% - High Certainty)
+Reason: All 100 randomized participants were accounted for at both 1-year and 2-year follow-up (institutionalized, deceased, or remaining at home), with explicit statement of "no dropouts from the study during the 2-year follow-up."
+
+**Result of Domain 3**: Low risk (95% - High Certainty)
+Reason: 3.1 = Y satisfies the criterion for "Low risk" outright.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95% - High Certainty)
+Reason: Time to institutionalization was measured via objective registry data (Social Insurance Institution records) and a structured decision process by a group of experts (chief physician, head nurse, social worker) — a reliable, predefined measurement method.
+
+**4.2**: N (90% - High Certainty)
+Reason: The same registry-based measurement method and outcome ascertainment process (institutionalization) applied equally to both groups.
+
+**4.3**: N (95% - High Certainty)
+Reason: The article explicitly states, "These groups of experts were blind to the allocation and generally unaware that a patient was even participating in the study." The outcome is not patient-reported, and assessors were unaware of allocation.
+
+**Result of Domain 4**: Low risk (95% - High Certainty)
+Reason: 4.1 = N, 4.2 = N, 4.3 = N, satisfying "Low risk" criteria.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (70% - Moderate Certainty)
+Reason: There is no evidence of a trial registration number or a published pre-specified statistical analysis plan; however, the methods described (Kaplan-Meier, time-dependent Cox regression) are consistent with what is reported in the results.
+
+**5.2**: N (90% - High Certainty)
+Reason: Only one outcome measurement (time to institutionalization from registry data) was used and reported consistently; there is no evidence of multiple eligible outcome measurements being available with selective reporting.
+
+**5.3**: N (90% - High Certainty)
+Reason: Only one analytic approach (Kaplan-Meier survival analysis with time-dependent Cox regression, justified by the violation of proportional hazards assumption) was used and reported consistently between the Methods and Results sections.
+
+**Result of Domain 5**: Some concerns (80% - Moderate Certainty)
+Reason: 5.2 = N, 5.3 = N, but 5.1 = NI (no registration/pre-specified plan confirmed), which per the algorithm yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: High Risk (90% - High Certainty)
+Reason: Domain 2 was rated "High risk" due to lack of blinding of participants/care providers combined with unclear adherence data and use of an intention-to-treat-style analysis without correction. According to the overall algorithm, the presence of at least one "High Risk" domain results in an overall classification of "High Risk," regardless of the favorable ratings in Domains 1, 3, and 4.

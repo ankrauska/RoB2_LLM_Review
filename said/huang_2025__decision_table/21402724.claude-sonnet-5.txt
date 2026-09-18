@@ -1,0 +1,123 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21402724
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk-of-Bias Assessment
+
+**Article ID**: Cook, 2012
+**Outcome Name**: Reduction of psychiatric symptom severity (Brief Symptom Inventory)
+**Registration number**: NCT01024569
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (95%)
+Reason: "Randomization was performed by SRL staff at the end of each interview using a random allocation sequence programmed into CAPI administration software" — this describes computer-generated randomization.
+
+**1.2**: **Y** (95%)
+Reason: The article explicitly describes central allocation concealment: "a random allocation sequence programmed into CAPI administration software that allowed for complete allocation concealment up to the point of assignment... both interviewers and respondents had no way of knowing each subject's study condition until after the assignment had occurred."
+
+**1.3**: **N** (95%)
+Reason: "The success of randomization was confirmed by the absence of statistically significant differences by study condition at baseline on all characteristics," further supported by Table 1 data showing balanced baseline characteristics.
+
+**Domain 1 Result: Low risk (95%)**
+Reason: 1.2=Y, 1.1=Y, 1.3=N meets criteria for low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **Y** (90%)
+Reason: This is a behavioral, peer-led group intervention vs. wait-list control; participants clearly know whether they are attending WRAP classes.
+
+**2.2**: **Y** (90%)
+Reason: Facilitators (peer educators) delivering WRAP obviously know which participants are receiving the intervention.
+
+**2.3**: **NI** (60%)
+Reason: While baseline services were balanced, peer-support group attendance during the trial period (41.9%–44.9% among controls) was not compared directly with experimental group attendance rates in a way that confirms balance; insufficient information to fully judge balance of this nonprotocol intervention.
+
+**2.4**: **Y** (95%)
+Reason: 43/276 (15.6%) of experimental participants did not receive the intervention at all — exceeds 10% threshold for implementation failure.
+
+**2.5**: **Y** (85%)
+Reason: Average attendance was only 5 of 8 sessions (SD=3.08), indicating substantial non-adherence to the full intervention regimen for a sizable proportion of participants.
+
+**2.6**: **N** (95%)
+Reason: The article explicitly used "intent-to-treat mixed-effects random regression analysis," which per the guidelines is classified as an inappropriate method for estimating the effect of adherence.
+
+**Domain 2 Result: High risk (90%)**
+Reason: One of 2.1/2.2 = Y; 2.3 = NI; 2.6 = N → meets the rule for "High risk" (one of 2.1/2.2 is Y/PY/NI, 2.3 is NI/N/PN, and 2.6 is NI/N/PN).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **N** (95%)
+Reason: Continuous outcome. Of 519 randomized, only 458 (88.2%) completed T2 and 448 (86.3%) completed T3 — both below the 90% threshold.
+
+**3.2**: **N** (95%)
+Reason: Only intent-to-treat mixed regression was used; per instructions, ITT does not count as a bias-correction method for missing data (e.g., inverse probability weighting or sensitivity analysis was not reported).
+
+**3.3**: **PY** (70%)
+Reason: Reasons for loss to follow-up included "death or ill health, moving away from the area, and formal withdrawal from the study" — health-related reasons are mentioned but not explicitly linked to the symptom severity outcome itself.
+
+**3.4**: **N** (75%)
+Reason: There were no statistically significant differences in follow-up rates between intervention and control conditions (T2: 89.2% vs 87.3%, p=.29; T3: 87.6% vs 85.1%, p=.23), and reasons for dropout were similar and largely unrelated to symptom severity (68% of experimental dropouts had attended zero sessions, suggesting disengagement rather than symptom-driven withdrawal).
+
+**Domain 3 Result: Some concerns (75%)**
+Reason: 3.1=N, 3.2=N, 3.3=PY, 3.4=N → meets criteria for "Some concerns."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (95%)
+Reason: BSI is a well-validated, reliable, and widely used instrument for measuring psychiatric symptom severity ("patient self-report research instrument showing high concordance with clinician symptom assessment").
+
+**4.2**: **N** (90%)
+Reason: Both groups were assessed using identical instruments (BSI) at the same time points (T1, T2, T3) via identical telephone interview procedures.
+
+**4.3**: **Y** (95%)
+Reason: BSI is patient self-reported, and participants were aware of their own group assignment (established in 2.1=Y) — per guidelines, this yields "Y."
+
+**4.4**: **Y** (95%)
+Reason: BSI is a subjective, patient-reported measure of symptom severity.
+
+**4.5**: **N** (60%)
+Reason: Per instructions, absent clear, explicit evidence demonstrating that knowledge of allocation influenced patient self-report on the BSI (beyond general plausibility), the default is N.
+
+**Domain 4 Result: Some concerns (85%)**
+Reason: 4.1=N, 4.2=N, 4.3=Y, 4.4=Y, 4.5=N → meets criteria for "Some concerns."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **Y** (80%)
+Reason: The study was prospectively registered (NCT01024569), and the article states "all outcomes, hypotheses, and statistical analyses presented here were prespecified at the time the proposal was submitted." The BSI Global Severity Index and Positive Symptom Total reported in the article are consistent with the registered primary outcome (BSI Positive Symptom Score), with GSI as an additional standard subscale of the same instrument.
+
+**5.2**: **N** (80%)
+Reason: Both eligible BSI subscales (Global Severity Index and Positive Symptom Total) were fully reported in the results, with no evidence of selective reporting from multiple eligible measurements.
+
+**5.3**: **N** (85%)
+Reason: A single consistent analytic method (MIXREG) was applied and reported for the BSI outcome, matching the pre-specified statistical approach described in the methods and registration.
+
+**Domain 5 Result: Low risk (80%)**
+Reason: 5.1=Y, 5.2=N, 5.3=N → meets criteria for "Low risk."
+
+---
+
+## Overall Bias Risk Assessment
+
+**Domain Summary**:
+- Domain 1: Low risk
+- Domain 2: **High risk**
+- Domain 3: Some concerns
+- Domain 4: Some concerns
+- Domain 5: Low risk
+
+**Overall Bias Risk for the Article: High Risk (90%)**
+Reason: Per the overall assessment rule, since Domain 2 was rated as "High risk," the overall risk-of-bias assessment for the outcome (reduction of psychiatric symptom severity via BSI) is **High Risk**, driven primarily by lack of blinding of participants/providers (inherent to behavioral intervention design), high non-completion of the intervention (15.6%), substantial non-adherence (average 5/8 sessions attended), and use of an inappropriate (ITT) analytic method to address adherence-related bias.

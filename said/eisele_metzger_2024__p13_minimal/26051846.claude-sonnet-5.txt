@@ -1,0 +1,45 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 26051846
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Sir Ian Chalmers, Clinical Trials Reviewer
+
+## Outcome Assessed: Pain VAS scale (post-treatment)
+
+---
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+
+Justification: The allocation sequence was generated using random permuted blocks by an independent statistician not involved in data collection or analysis — this is a reasonable method for sequence generation. Baseline characteristics (Table 1) are well balanced across groups (age, sex, time since onset, side, pathology type), which is reassuring. However, the manuscript provides no explicit description of the allocation concealment mechanism (e.g., sequentially numbered, sealed, opaque envelopes, or a centralised allocation system) that would have prevented the recruiting clinician from foreseeing assignments. Without this detail, I cannot fully rule out that foreknowledge of the sequence influenced enrolment or allocation, particularly given three distinctly different-feeling interventions (ultrasound gel vs. galvanic current). I therefore flag "some concerns" rather than "low risk."
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: Low risk**
+
+Justification: This was designed as a single-blind trial (assessor blinded, per registration), and this is an accepted design for interventions that are physically impossible to blind to participants (a stinging galvanic current vs. an ultrasound probe cannot be disguised). The interventions were delivered per protocol by physiotherapists following standardised protocols, and "did not collect data and did not evaluate the results," reducing risk of performance bias affecting outcome ascertainment. All 99 participants "completed 20 treatment sessions," indicating no crossovers or deviations affecting the analysis. Analysis was presumably as-randomised (no per-protocol switching described). No evidence of deviations that would bias the estimate of the pain VAS effect.
+
+---
+
+**3. Risk of bias due to missing outcome data: Low risk**
+
+Justification: The text states "all participants completed 20 treatment sessions," and Tables 2–3 report data consistent with the full allocated sample sizes (32/33/34) at all three timepoints (baseline, post-treatment, 1-month). No dropouts or missing VAS data are reported at post-treatment. The sample size calculation allowed for a 20% dropout, but the results suggest this was not realised. I have not been given the supplementary CONSORT flow diagram (Fig. A) to independently verify exact case-by-case attrition, which is a minor limitation, but nothing in the text suggests missingness affected the post-treatment VAS analysis.
+
+---
+
+**4. Risk of bias in measurement of the outcome (VAS pain, post-treatment): High risk**
+
+Justification: VAS pain is a purely participant-reported, subjective outcome. Although the *assessor* was blinded ("single-blind... all visits attended by the same blinded rehabilitation doctor"), the *participants themselves were not blinded* to their treatment allocation. This is inevitable given the very different sensory experiences of ultrasound/phonophoresis (painless gel-mediated probe) versus iontophoresis (perceptible galvanic current) — patients would very likely be aware, or could reasonably infer, which "special" or "active" treatment they were receiving. For a subjective, self-reported outcome like pain, lack of participant blinding introduces a substantial risk of performance/detection bias via expectation effects, placebo response differences, or differential reporting behaviour between groups. This is compounded by the fact that the primary comparative finding for this outcome (ultrasound superior to iontophoresis on VAS, p=0.012) is exactly the kind of small-magnitude, subjectively-assessed difference that unblinded participant reporting could generate or exaggerate. I therefore judge this domain **high risk**.
+
+---
+
+**5. Risk of bias in selection of the reported result: Low risk**
+
+Justification: The trial registration (NCT01748188) prospectively specifies VAS pain as the primary outcome and Constant-Murley/DASH as secondary outcomes, all recorded at baseline, post-treatment, and follow-up — this matches exactly what is reported in the manuscript (Tables 2 and 3), including both between-group and within-group (change-from-baseline) analyses. There is no evidence of selective outcome reporting, unreported timepoints, or switched primary/secondary outcomes. All pre-specified comparisons appear to have been reported regardless of statistical significance (e.g., non-significant CMS change for iontophoresis is reported openly).
+
+---
+
+## 6. Overall Rating: **High risk**
+
+**Justification:** While randomization, adherence, and missing data domains raise only minor or no concerns, the **high risk of bias in outcome measurement** for the VAS pain endpoint is a serious limitation. This is a subjective, patient-reported outcome collected in a trial where participants could not be — and were not — blinded to their allocated intervention, given the starkly different physical sensations of galvanic current versus ultrasound-based delivery. Combined with the "some concerns" regarding allocation concealment, this materially undermines confidence in the reported between-group VAS differences (e.g., the significant ultrasound vs. iontophoresis post-treatment difference). Per the stated rules, a "high risk" judgement in any single domain is sufficient to rate the overall result as **high risk**.

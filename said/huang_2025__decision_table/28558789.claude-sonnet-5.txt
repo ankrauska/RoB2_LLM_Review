@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 28558789
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Hayward, 2019
+**Outcome Name**: Motor Assessment Scale item 6 (Upper Arm Function, MAS6)
+**Registration number**: ACTRN12614000952640
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+*Reason*: The article explicitly states "An offsite investigator prepared the concealed randomization using a computer generated random number sequence (1:1)."
+
+**1.2**: Y (95%)
+*Reason*: "Consecutively numbered opaque envelopes containing group allocation were collected from the offsite investigator by the tRNS intervener after initial assessment," indicating a specific, robust concealment method.
+
+**1.3**: N (60%)
+*Reason*: Although Table 2/3 show some variation in age, mRS, FAC, and baseline MAS6 scores across the four single cases, this is a 4-person pilot case series; no statistical comparison is presented, and differences are consistent with expected variability in a very small, heterogeneous sample rather than evidence of a randomization problem.
+
+**Result of Domain 1**: Low risk (90%)
+*Reason*: 1.2 = Y, 1.1 = Y, 1.3 = N/PN/NI → meets criteria for Low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (90%)
+*Reason*: Triple-blind design; participants were blinded, and the tRNS intervener informed all participants they "may or may not feel the stimulation irrespective of whether they were receiving active or sham stimulation," minimizing unblinding cues.
+
+**2.2**: Y (85%)
+*Reason*: The trainer/assessors were blinded, but the "tRNS intervener" who applied active/sham stimulation necessarily knew group allocation ("Group allocation will only be known by the unblinded person applying the tRNS" per protocol).
+
+**2.3**: Y (65%)
+*Reason*: No mention of any non-protocol interventions; the highly controlled, standardized training protocol (identical session structure, OT-stim, tRNS delivery) suggests no substantive non-protocol co-interventions occurred.
+
+**2.4**: N (95%)
+*Reason*: "All four participants completed the 12 training sessions over 4-weeks, with no training sessions missed."
+
+**2.5**: N (90%)
+*Reason*: No reported non-adherence; all participants completed full training as per protocol logs.
+
+**2.6**: NA (70%)
+*Reason*: Since there were no implementation failures or non-adherence (2.4=N, 2.5=N), an adherence-adjustment analysis is not applicable.
+
+**Result of Domain 2**: Low risk (80%)
+*Reason*: 2.2 = Y, 2.3 = Y, 2.4 = N, 2.5 = N → satisfies Low risk criteria (rule 2).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95%)
+*Reason*: Table 3 shows MAS6 data for all 4 randomized participants at all three timepoints (T0, T1, T2) — 100% data completeness.
+
+**Result of Domain 3**: Low risk (95%)
+*Reason*: 3.1 = Y → Low risk per rule 1.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+*Reason*: MAS6 is a validated, widely used outcome measure (Carr et al. 1985) appropriate for assessing upper arm function; reliability is established.
+
+**4.2**: N (85%)
+*Reason*: All participants were assessed using identical methods and at identical timepoints (baseline, 4-weeks, 12-weeks) regardless of group allocation.
+
+**4.3**: N (85%)
+*Reason*: MAS6 is assessor-rated (not patient-reported), and "people assessing the outcomes" were blinded per the triple-blind design and protocol.
+
+**4.4**: Y (75%)
+*Reason*: MAS6 is a subjective, performance-based measure scored by an assessor, which inherently carries potential for assessment bias, though this is mitigated by blinding (addressed in 4.5).
+
+**4.5**: N (80%)
+*Reason*: No evidence in the article suggests assessors were unblinded or that knowledge of allocation influenced scoring; blinding was maintained through study completion ("The blinding code was shared with the investigator team on completion of training and follow-up assessments").
+
+**Result of Domain 4**: Low risk (85%)
+*Reason*: 4.1 = N, 4.2 = N, 4.3 = N → Low risk per rule 1.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: N (65%)
+*Reason*: The registered protocol specified the primary outcome as a "composite score of Motor Assessment Scale items 6-8" and planned a "non-parametric mixed effects model" for analysis. The published article instead designates MAS6 alone as the primary outcome and analyzes results descriptively on a case-by-case basis without the pre-specified statistical model. This represents a departure from the pre-specified analysis plan, and it cannot be clearly established that this change is unrelated to the results (particularly given the very small sample size of 4 achieved vs. target of 10).
+
+**5.2**: N (70%)
+*Reason*: While MAS6 was elevated to "primary" status (differing from protocol), MAS items 7 and 8 were still fully reported as secondary outcomes; no eligible measurement was suppressed.
+
+**5.3**: NI (55%)
+*Reason*: The planned mixed-effects statistical model was not applied (likely due to insufficient sample size for a feasibility case series), and only descriptive/individual case analyses were reported. It is unclear whether this substitution was influenced by the observed results or purely due to the small sample precluding formal statistical testing.
+
+**Result of Domain 5**: Some concerns (70%)
+*Reason*: 5.2 = N, 5.3 = NI → matches rule "If 5.2 is N/PN/NI and 5.3 is NI → Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **Some concerns** (75%)
+
+*Reason*: Domains 1, 2, 3, and 4 were rated "Low risk," while Domain 5 was rated "Some concerns" due to discrepancies between the pre-specified primary outcome/analysis plan (registered protocol) and the actual reported outcome and analytic approach in the published article. With no domain rated "High risk" and at least two domains rated "Low risk," the overall risk of bias for the MAS6 outcome is classified as **Some concerns**.

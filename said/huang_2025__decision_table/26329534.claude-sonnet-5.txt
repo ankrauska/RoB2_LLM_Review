@@ -1,0 +1,110 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26329534
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Hardigan, 2016
+**Outcome Name**: response rate
+**Registration number**: Not reported (no registration number found)
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+The article states pharmacists were "randomized to" postal mail, email, or hybrid groups, but no specific method of sequence generation (e.g., computer-generated random numbers, random number tables, block randomization) is described anywhere in the Methods section.
+
+**1.2**: NI (90%)
+There is no mention of allocation concealment, central allocation, sequentially numbered containers, or opaque envelopes anywhere in the article.
+
+**1.3**: Y (80%)
+Table 1 shows substantial baseline demographic differences across delivery-method groups (e.g., Non-Hispanic White: 86.3% postal vs. 68.7% email vs. 74.0% hybrid; Black: 3.2% postal vs. 26.4% email vs. 19.2% hybrid; practice site and location differences). Notably, the samples for postal/hybrid groups were drawn from a different commercial database (Medical Marketing Service) than the email group (Statlistics), indicating the "randomization" was not from a single homogeneous sampling frame. This raises real concern that the process generating group assignment did not yield comparable groups.
+
+**Result of Domain 1**: High risk (85%)
+Because 1.2 = NI and 1.3 = Y, per the algorithm this yields "High risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from the intended interventions
+
+**2.1**: Y (95%)
+Participants necessarily knew which delivery method they received (postal letter, email, or postcard/hybrid), as this is inherent to the intervention itself.
+
+**2.2**: Y (95%)
+Study personnel administering the survey were aware of which delivery method was used for each participant (inherent to executing the study).
+
+**2.3**: NI (70%)
+No information provided regarding non-protocol co-interventions.
+
+**2.4**: N (85%)
+Undelivered questionnaires were below 10% in each arm (postal 5.8%, hybrid ~3.9%, email 0%), indicating the intervention (delivery) was largely successfully implemented.
+
+**2.5**: NA (70%)
+Non-adherence in the traditional clinical sense does not apply to survey delivery methods; response/non-response is the outcome itself, not a treatment adherence issue.
+
+**2.6**: NI (60%)
+No specific analytic method addressing adherence was reported; not applicable/described.
+
+**Result of Domain 2**: High risk (75%)
+Since one of 2.1/2.2 = Y, 2.3 = NI, and 2.6 = NI, this combination corresponds to "High risk" per the algorithm.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (90%)
+Response rate is a binary/proportion outcome, and the status (responded/not) is known for essentially all 6967 delivered questionnaires (out of 7200 randomized, only 233 were undeliverable — the numerator/denominator for computing response is clearly documented for nearly all participants).
+
+**Result of Domain 3**: Low risk (90%)
+Since 3.1 = Y, Domain 3 = Low risk automatically.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+Response rate was measured using a clearly predefined, standard, and reliable method (completed questionnaires with no missing data / net delivered questionnaires).
+
+**4.2**: N (90%)
+The measurement method (definition of "completed survey," time window, procedures) was identical and applied consistently across all three delivery-method groups.
+
+**4.3**: Y (80%)
+Response rate is not a patient-reported outcome; it is objectively counted by study personnel, who were inherently aware of each participant's assigned delivery method (necessary to administer/tabulate returns by method).
+
+**4.4**: N (85%)
+Response rate is an objective, count-based measure (number of properly completed surveys returned), not subject to subjective interpretation.
+
+**Result of Domain 4**: Low risk (85%)
+Since 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = N, this matches the "Low risk" criteria.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85%)
+No trial registration or pre-specified analysis plan is mentioned in the article.
+
+**5.2**: N (85%)
+Response rate had a single, consistently defined outcome measurement (percentage of eligible respondents returning a fully completed questionnaire); no evidence of multiple competing definitions being selectively reported.
+
+**5.3**: N (85%)
+A single statistical method (chi-square test) was specified and used consistently to test response rate differences; no evidence of multiple analyses being tried and selectively reported.
+
+**Result of Domain 5**: Some concerns (85%)
+Since 5.2 = N, 5.3 = N, and 5.1 = NI, this corresponds to "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Domain summary**:
+- Domain 1: High risk
+- Domain 2: High risk
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Some concerns
+
+**Overall Bias Risk for the Article**: **High Risk** (85%)
+
+**Rationale**: Per the algorithm, if one or more domains are rated "High risk," the overall risk of bias assessment for the article is "High Risk." Here, both Domain 1 (randomization process) and Domain 2 (deviations from intended interventions) were rated High risk, primarily due to lack of described randomization methodology, lack of allocation concealment information, substantial baseline imbalances (likely stemming from use of different sampling databases for different arms), and unclear handling of non-protocol/adherence issues.

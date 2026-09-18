@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 27993947
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Jouni, 2017
+**Outcome Name**: Shared decision making score
+**Registration Number**: NCT01936675
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% Certainty)
+*Reason*: The article explicitly states "Randomization was performed by means of a computer-generated random sequence with stratification for age, gender, and positive family history for CHD using the Pocock and Simon method." This is a clearly described adequate method of sequence generation.
+
+**1.2**: NI (90% Certainty)
+*Reason*: The article states that "One of the investigators (HJ) generated the random allocation sequence and study arm assignment using the computer software described earlier," but does not mention any specific concealment mechanism (e.g., central allocation, sequentially numbered opaque envelopes) to ensure that the sequence was concealed until participants were enrolled and assigned. No such information is reported in the article or protocol.
+
+**1.3**: N (90% Certainty)
+*Reason*: Table 1 shows baseline characteristics (age, sex, smoking, family history, BMI, lipid levels, education) were similar between groups with no statistically significant differences (all p>0.05), suggesting no problem with randomization.
+
+**Result of Domain 1**: Some concerns (85% Certainty)
+*Reason*: Per the algorithm, since 1.2 = NI and 1.3 = N, the result is "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (85% Certainty)
+*Reason*: This was an open-label study (per registration: masking = NONE). Participants in the CRS*GRS arm received genetic risk information and saw the GRS feature in the decision aid, while CRS-only participants did not; participants would be aware of which information/intervention they received.
+
+**2.2**: Y (85% Certainty)
+*Reason*: Physicians and genetic counselors delivering the intervention used a decision aid that visually displayed CRS or CRS*GRS information, differing by group; therefore providers were aware of participants' assigned intervention.
+
+**2.3**: NI (70% Certainty)
+*Reason*: The article does not provide specific information about non-protocol interventions (e.g., additional counseling, informal information sharing) that might have been imbalanced between groups.
+
+**2.4**: N (85% Certainty)
+*Reason*: Of 216 enrolled, 207 (95.8%) completed randomization and the second study visit (genetic counselor and physician appointments); failure to implement the intervention was below 10%.
+
+**2.5**: N (75% Certainty)
+*Reason*: All 207 randomized participants completed the second visit encompassing the assigned disclosure intervention; no substantial non-adherence to the assigned disclosure intervention (attending the genetic counselor/physician visit) is reported.
+
+**2.6**: NI (70% Certainty)
+*Reason*: The article does not describe use of instrumental variable analysis or inverse probability weighting; standard comparative statistics (t-test, Wilcoxon, Fisher's exact) were used, but no explicit analysis of "adherence" is presented for this outcome.
+
+**Result of Domain 2**: High risk (85% Certainty)
+*Reason*: Per the algorithm, since one of 2.1/2.2 = Y, 2.3 = NI (falls into NI/N/PN category), and 2.6 = NI (falls into NI/N/PN category), the result is "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95% Certainty)
+*Reason*: The SDM survey was completed by 206 of 207 randomized participants (99.5%), which is well above the 95% threshold for continuous outcome data.
+
+**Result of Domain 3**: Low risk (95% Certainty)
+*Reason*: Since 3.1 = Y, the result is automatically "Low risk" per the algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% Certainty)
+*Reason*: The SDM-Q is a validated 11-question survey (Simon et al., 2006) specifically designed to assess SDM; this is a reliable, predefined outcome measurement tool.
+
+**4.2**: N (90% Certainty)
+*Reason*: The SDM-Q was administered identically to both groups at the same time point (after the physician visit), using the same threshold and scoring method.
+
+**4.3**: Y (90% Certainty)
+*Reason*: The SDM score is a patient-reported outcome, and participants were aware of their group assignment (as established in 2.1), since they knew whether they received genetic risk information or not.
+
+**4.4**: Y (95% Certainty)
+*Reason*: The SDM score is a subjective, patient-reported outcome measure, reflecting the participant's personal perception of the decision-making process.
+
+**4.5**: N (70% Certainty)
+*Reason*: Per the guideline, in the absence of clear evidence that knowledge of intervention status influenced outcome assessment (no indication in the article that participants' knowledge biased their SDM scores in a directional way), the answer defaults to N.
+
+**Result of Domain 4**: Some concerns (85% Certainty)
+*Reason*: Per the algorithm, since 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, and 4.5 = N, the result is "Some concerns."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (85% Certainty)
+*Reason*: The trial was registered (NCT01936675) prior to unblinded outcome data being available, with a published protocol (Kullo et al., 2015). SDM was a pre-specified secondary outcome (confirmed in the ClinicalTrials.gov registry). The measurement (SDM-Q survey) and analysis methods (Wilcoxon/t-test, Fisher's exact) described in the Methods matched those reported in the Results section, and all outcomes described in the Methods for SDM were reported in the Results.
+
+**5.2**: N (90% Certainty)
+*Reason*: Only one measurement tool (the validated SDM-Q) was used to assess SDM (supplemented by OPTION5 for video analysis, but both were reported), and all questions/components of the SDM-Q were fully reported in Table 2, with no evidence of selective reporting among multiple scales.
+
+**5.3**: N (85% Certainty)
+*Reason*: The analysis methods described in the Methods section (Wilcoxon rank sum test/t-test for continuous variables, Fisher's exact test for categorical responses) match exactly what was reported and used in the Results section; there is no evidence of multiple analyses being conducted with selective reporting.
+
+**Result of Domain 5**: Low risk (85% Certainty)
+*Reason*: Per the algorithm, since 5.2 = N, 5.3 = N, and 5.1 = Y, the result is "Low risk."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (85% Certainty)
+
+*Reason*: Domain summary:
+- Domain 1: Some concerns
+- Domain 2: High risk
+- Domain 3: Low risk
+- Domain 4: Some concerns
+- Domain 5: Low risk
+
+Since Domain 2 was assessed as "High risk," per the overall algorithm rule ("If one domain assessment result is 'High Risk', then the overall assessment result for the article is 'High Risk'"), the overall risk of bias for the shared decision making score outcome is **High Risk**.

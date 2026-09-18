@@ -1,0 +1,106 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 26530748
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2 Assessment: PORTEC-2 Trial Long-Term HRQL Analysis
+
+## Preliminary Considerations
+
+**Study design:** Individually-randomized parallel-group trial
+**Experimental intervention:** External beam radiation therapy (EBRT)
+**Comparator intervention:** Vaginal brachytherapy (VBT)
+**Outcome assessed:** Long-term (7- and 10-year) Health-Related Quality of Life (HRQL), specifically bowel symptoms, bladder symptoms, and Impact of Cancer (IOC) scores
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect), as this is a HRQL/patient-reported outcome analysis
+**Note:** This assessment applies to the long-term HRQL sub-study, not the original PORTEC-2 oncologic outcome trial in its entirety.
+
+---
+
+## 1. Bias Arising from the Randomization Process
+
+**Judgment: Some Concerns**
+
+**Motivation:**
+- The article refers readers to previous publications (references 6, 13) for details on randomization methodology; the present paper itself provides no description of sequence generation or allocation concealment methods.
+- No information is given in this article regarding whether allocation sequence was computer-generated, used randomization tables, or was otherwise random.
+- No information is provided regarding allocation concealment mechanisms (e.g., central randomization, sealed envelopes).
+- Baseline characteristics: Table 1 comparisons are mentioned to show no significant differences between responders and the full trial cohort, and no baseline imbalance between EBRT and VBT groups is reported as a concern. This suggests no evidence of a problem with randomization, but this is reassurance based on the parent trial, not on details presented in this specific paper.
+- Given this is a companion long-term follow-up analysis of an already-published RCT (with the primary trial presumably having low risk in this domain, based on prior publications), and no baseline imbalance is flagged as problematic, a "Some Concerns" judgment reflects the lack of directly reported information on sequence generation/allocation concealment within this article itself.
+
+**Limitation/Ambiguity noted:** This article does not itself report randomization or allocation concealment methodology; assessment relies on the assumption that methods were consistent with the parent PORTEC-2 publication, which was not directly reviewed as part of this assessment.
+
+---
+
+## 2. Bias Due to Deviations from Intended Interventions
+
+**Judgment: Low risk of bias**
+
+**Motivation:**
+- This is an open-label trial (EBRT vs VBT), where blinding of participants and personnel is not feasible due to the nature of the interventions (different radiation delivery methods with different procedures/visit schedules).
+- However, the effect of interest (assignment to intervention) is a "hard" comparison, and there is no indication of non-protocol interventions or crossover between EBRT and VBT arms in this analysis.
+- No deviations from intended intervention arising from trial context are reported; the interventions were fundamentally different treatment modalities administered per protocol.
+- Analysis was performed based on randomized allocation (intention-to-treat), as patients are grouped and analyzed according to original PORTEC-2 trial arm assignment.
+- No evidence of substantial switching between EBRT and VBT groups is reported, and the analysis approach appears appropriate for estimating the assignment effect.
+- Lack of blinding is not expected to bias objective/patient-reported treatment-specific late effects (bowel/bladder symptoms) via deviations in intervention receipt, since these are fixed, one-time-delivered radiotherapy interventions rather than sustained interventions subject to ongoing adherence issues.
+
+---
+
+## 3. Bias Due to Missing Outcome Data
+
+**Judgment: High risk of bias**
+
+**Motivation:**
+- Substantial missing outcome data are present and inadequately addressed:
+ - At 7 years: only 205/265 eligible patients responded (77%), and 3 of these were not evaluable — effectively 202/265 (76%).
+ - At 10 years: only 80/119 (67%) eligible patients responded.
+ - Overall, of the original 427 randomized patients, only 348 (81%) provided baseline and at least one follow-up questionnaire; from this markedly reduced pool, eligibility for the 7/10-year analysis was further restricted to those "alive and disease-free," excluding patients with recurrence or death — a substantial and non-random attrition process directly tied to prognosis.
+ - Completion rates for specific symptom subscales were further reduced (e.g., sexuality items completed by only 69.8% of the already-reduced respondent pool).
+- Reasons for missing data (death, recurrence, disease progression, inability to respond due to comorbidities/cognitive issues) are directly related to the true health status of participants and plausibly related to the outcome (HRQL, symptom burden), constituting data almost certainly missing not at random (MNAR).
+- The authors acknowledge that responders were "slightly younger and had fewer comorbidities" than the overall trial population — indicating a strong likelihood that missingness in the outcome depends on its true value.
+- No sensitivity analyses were performed to test the robustness of findings to missing data assumptions.
+- No formal statistical methods (multiple imputation, inverse probability weighting, etc.) were used to address the potential bias from missing outcome data; only complete-case analysis is reported.
+- While the proportion of missing data was similar between the two arms (no strong evidence of differential missingness by intervention group), the overall substantial missingness combined with likely dependency on true health/outcome status raises risk of bias, particularly because the population studied here is inherently the survivor subset, which limits generalizability and risks bias in the estimated intervention effect for the full randomized population.
+
+---
+
+## 4. Bias in Measurement of the Outcome
+
+**Judgment: Some Concerns**
+
+**Motivation:**
+- The method of outcome measurement (validated EORTC QLQ-C30, disease-specific symptom subscales, and IOCv2 questionnaire) is appropriate and validated for the constructs being measured; signaling question 4.1 (inappropriate method) = No.
+- Measurement/ascertainment method did not differ structurally between intervention groups — the same questionnaires were administered on the same schedule to both arms; signaling question 4.2 = No.
+- However, this is a patient-reported outcome (PRO) trial. By RoB 2 guidance, participants are the outcome assessors for PROs, and given the open-label nature of the trial, participants were inherently aware of their assigned intervention (they knew whether they received EBRT—external treatment over multiple visits—versus VBT—an internal, briefer procedure).
+- Knowledge of assigned intervention could plausibly influence self-report of symptoms (e.g., patients receiving the more invasive/longer EBRT might over- or under-report symptoms based on expectation bias), meeting criteria for "potentially influenced" (signaling question 4.4 = Yes).
+- However, there is no strong evidence or particular reason (e.g., strong prior belief that one treatment is more toxic, nocebo/placebo expectation of a dramatic sort) to assume this influenced reporting in one systematic direction beyond what is a normal feature of PRO-based trials for radiotherapy where blinding is genuinely unfeasible; also, the described symptoms (fecal leakage, diarrhea, urinary urgency) are relatively concrete/objective symptom reports rather than highly subjective global judgments, somewhat limiting (but not eliminating) this concern.
+- This leads to a judgment of "Some Concerns" rather than "High," as lack of blinding is unavoidable given the nature of the interventions, but the potential for reporting bias in PROs cannot be excluded.
+
+---
+
+## 5. Bias in Selection of the Reported Result
+
+**Judgment: Some Concerns**
+
+**Motivation:**
+- No trial registry entry, protocol, or statistical analysis plan (SAP) for this specific long-term HRQL sub-study is referenced or made available in the article, preventing verification of whether the analyzed outcomes/timepoints/subscales were pre-specified before unblinded data were available.
+- Multiple outcome domains (bowel, bladder, sexual symptoms, global health, functioning scales, IOC subscales) and multiple time points (7-year, 10-year) were assessed; the results section highlights specific significant findings (e.g., specific symptoms reaching P<.05) among many items tested, raising some possibility of selective emphasis, although the paper does appear to systematically report most tested domains (bowel, bladder, sexual, functioning) rather than cherry-picking only positive findings.
+- The authors explicitly used a stringent significance threshold (P<.01) "to guard against false-positive results because of multiple testing," which is a positive methodological feature reducing (but not eliminating) concern regarding selective reporting/multiplicity.
+- Some outcomes (e.g., sexual functioning) had low completion rates and are explicitly flagged as a "limitation" by the authors, suggesting transparency; however, without access to a pre-specified SAP for this specific 7-/10-year extension analysis, it cannot be confirmed that all pre-specified outcomes/analyses were reported in full versus selectively.
+- The 10-year data were stated to be used "only for longitudinal analysis" rather than cross-sectional comparison (due to ongoing follow-up/small numbers) — this appears to be a reasonable a priori methodological decision rather than a result-driven one, but cannot be verified against a published protocol.
+
+**Limitation noted:** No trial registration, protocol, or SAP was available for review to confirm whether analyses were pre-specified; judgment is based on internal consistency and stated methodology only.
+
+---
+
+## 6. Overall Risk-of-Bias Judgement
+
+**Overall Judgment: High Risk of Bias**
+
+**Rationale (per RoB 2 rules):**
+The overall judgment is driven by:
+- A **High risk of bias** rating in the domain "Bias due to missing outcome data," driven by substantial, likely non-random attrition (only 202/265 and 80/119 eligible patients responding at 7 and 10 years respectively, with eligibility itself restricted to survivors who were "alive and disease-free"), with no sensitivity analyses or imputation methods used to address this.
+- Per RoB 2 rules, a "High" risk of bias judgment in *any single domain* is sufficient to classify the overall result as **High risk of bias**, regardless of the "Some Concerns" ratings in the other domains (randomization process, outcome measurement, selection of reported result).
+- Additionally, the presence of "Some Concerns" in multiple domains (randomization process, outcome measurement, selective reporting) compounds and further lowers confidence in the trustworthiness of the long-term HRQL results, reinforcing the "High risk of bias" classification.
+
+**Summary statement:** While the PORTEC-2 trial's long-term HRQL findings (increased bowel/urinary symptoms with EBRT versus VBT) are clinically plausible and consistent with prior analyses of the same trial and the related PORTEC-1 trial, the substantial and likely outcome-dependent loss to follow-up in this survivor-restricted, long-term analysis — combined with unavoidable lack of blinding for patient-reported outcomes and incomplete reporting of randomization/analysis-plan details within this specific article — means the results should be interpreted with caution, particularly regarding the precision and generalizability of the magnitude of effect estimates.

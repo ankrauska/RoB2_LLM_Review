@@ -1,0 +1,106 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 19723701
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Moss, 2009
+**Outcome Name**: all-cause death or nonfatal heart failure events
+**Registration number**: NCT00180271
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+The article states patients were "randomly assigned in a 3:2 ratio... stratified according to clinical center and ischemic status with the use of an algorithm that ensured near balance in each stratum," but no specific method of sequence generation (e.g., computer-generated random numbers, block randomization) is described in the article or the protocol.
+
+**1.2**: NI (85%)
+No mention of allocation concealment mechanisms (e.g., central allocation, sealed envelopes, sequentially numbered containers) is provided anywhere in the article or protocol.
+
+**1.3**: N (90%)
+Table 1 shows baseline demographic, clinical, echocardiographic, and medication characteristics were similar between the CRT-ICD and ICD-only groups, with no notable imbalances reported.
+
+**Result of Domain 1**: Some concerns (85%)
+Since 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Bias due to deviations from intended interventions
+
+**2.1**: Y (90%)
+This was an open-label trial (masking = NONE per protocol); no placebo/sham device was used. Given the differing devices and programming (CRT-ICD vs ICD-only), participants were aware of their assignment.
+
+**2.2**: Y (95%)
+The article explicitly states: "The treating physicians were aware of study-group assignments."
+
+**2.3**: Y (85%)
+Optimal pharmacologic therapy for heart failure was provided in both arms, and Table 1 shows similar medication use in both groups at enrollment, suggesting no important non-protocol imbalance.
+
+**2.4**: N (85%)
+Only 1.0% (CRT-ICD) and 2.6% (ICD-only) of patients failed to receive an assigned device — both under 10%.
+
+**2.5**: Y (90%)
+A total of 173 crossovers occurred: 91/731 (12.4%) of ICD-only patients crossed to CRT-ICD — exceeding the 10% threshold for non-adherence.
+
+**2.6**: N (90%)
+"Data analysis was performed according to the intention-to-treat principle" — an inappropriate method per criteria for estimating the effect of adherence.
+
+**Result of Domain 2**: High risk (88%)
+2.1/2.2 = Y; 2.3 = Y; one of 2.4/2.5 (2.5) = Y; 2.6 = N → High risk.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95%)
+All 1820 randomized patients were analyzed on an intention-to-treat basis; the primary composite endpoint occurred in 372 patients, with no meaningful loss to follow-up for this endpoint (event-driven trial with complete ascertainment status for all randomized patients).
+
+**Result of Domain 3**: Low risk (95%)
+3.1 = Y → Low risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (85%)
+The outcome (death, and HF events defined by predefined clinical criteria requiring decongestive therapy) was measured using a predefined, clinically reliable method, and events were adjudicated by an independent committee.
+
+**4.2**: N (85%)
+Both groups were followed with the same schedule of clinical visits (1 month post-randomization, then every 3 months), with identical HF event criteria applied to both groups.
+
+**4.3**: Y (90%)
+The outcome is not patient-reported; the article explicitly states: "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments." Although final adjudication was blinded, initial diagnosis/ascertainment was performed by unblinded assessors.
+
+**4.4**: Y (85%)
+While death is objective, the nonfatal heart-failure component is a subjective clinical determination (signs/symptoms requiring decongestive therapy) assessed by treating physicians who were aware of assignment — making this a subjective outcome assessed by an unblinded assessor.
+
+**4.5**: Y (90%)
+The article itself acknowledges this risk directly: "It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group." This is direct evidence of potential influence.
+
+**Result of Domain 4**: High risk (90%)
+4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, 4.5 = Y → High risk.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (85%)
+The trial was registered (NCT00180271), and the statistical analysis plan (group-sequential design, stratified log-rank test, Cox proportional-hazards regression) described in the Methods matches what is reported in the Results.
+
+**5.2**: N (85%)
+The composite outcome (death or nonfatal HF event) was pre-specified as the single primary outcome, and this exact measurement was reported in the results consistent with the protocol/registration.
+
+**5.3**: N (85%)
+The pre-specified stratified log-rank test and Cox proportional-hazards model were the analyses described in Methods and match the analyses reported in Results; no evidence of alternative analyses being selectively reported.
+
+**Result of Domain 5**: Low risk (85%)
+5.2 = N, 5.3 = N, 5.1 = Y → Low risk.
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (90%)
+
+**Rationale**: Domain 1 = Some concerns; Domain 2 = High risk; Domain 3 = Low risk; Domain 4 = High risk; Domain 5 = Low risk. Since at least one domain (Domains 2 and 4) is rated "High risk," the overall risk-of-bias assessment for this outcome is **High Risk**.

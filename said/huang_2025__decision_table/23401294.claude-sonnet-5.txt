@@ -1,0 +1,105 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 23401294
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Kamalzadeh/Bagheri (or corresponding author), Year not explicitly stated in text provided (Journal appears to be "Journal of Prosthetics and Orthotics" style article - please verify author/year from full citation)
+**Outcome Name**: Balance score
+**Registration number**: Not reported in the article
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% Confidence)
+*Reason*: The article explicitly states: "The randomization procedure was to pick the name of the orthosis from a bag including the names of both orthoses." This is a lot-drawing method, which is an acceptable random sequence generation method.
+
+**1.2**: NI (95% Confidence)
+*Reason*: The article does not mention any allocation concealment procedure (no central allocation, sequentially numbered containers, or opaque envelopes mentioned).
+
+**1.3**: N (90% Confidence)
+*Reason*: The independent sample t-test revealed no significant differences in age (p=0.06), weight (p=0.391), height (p=0.406), kyphosis angle (p=0.959), and importantly balance score without orthosis (p=0.443) between groups.
+
+**Result of Domain 1**: Some concerns (90% Confidence)
+*Reason*: Per the algorithm, when 1.2 is "NI" and 1.3 is "N," the result is "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (90% Confidence)
+*Reason*: Participants physically wore either the Spinomed orthosis or the PTS device—visually and physically distinct orthoses—making it evident to participants which intervention they received. No blinding of participants to intervention type was described or feasible given the nature of the devices.
+
+**2.2**: Y (90% Confidence)
+*Reason*: A certified orthotist fitted the orthoses on participants, and the interventions were visually distinct; the orthotist/researchers administering the intervention would necessarily know participant allocation.
+
+**2.3**: NI (70% Confidence)
+*Reason*: No information provided regarding non-protocol interventions.
+
+**2.4**: N (85% Confidence)
+*Reason*: All 18 recruited participants completed the study procedures ("Eighteen participants... completed the study procedure"); no dropouts or failures in implementation reported.
+
+**2.5**: NI (70% Confidence)
+*Reason*: No information provided regarding non-adherence to wearing the orthoses during the acclimatization/testing period.
+
+**2.6**: NI (70% Confidence)
+*Reason*: The article does not explicitly report use of ITT, per-protocol, or other specific adherence-related analytic methods; only standard paired/independent t-tests are described without reference to adherence-based analysis.
+
+**Result of Domain 2**: High risk (85% Confidence)
+*Reason*: Per the algorithm, since 2.1/2.2 = Y, 2.3 = NI, and 2.6 = NI (falls under NI/N/PN category), the result is "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95% Confidence)
+*Reason*: The outcome (balance score) is continuous, and data were available for all 18 randomized participants who completed the study (10 Spinomed + 8 PTS = 18, matching the total sample). Tables 1 and 2 confirm n=10 and n=8 respectively, with complete data reported (100%).
+
+**Result of Domain 3**: Low risk (95% Confidence)
+*Reason*: Per the algorithm, since 3.1 = Y, the result is automatically "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% Confidence)
+*Reason*: The balance score was measured using the NeuroCom EquiTest system (Sensory Organization Test), a validated, reliable, and widely used computerized posturography system with established test-retest reliability and predictive validity (cited references 22–24, 29).
+
+**4.2**: N (90% Confidence)
+*Reason*: Both groups underwent identical measurement protocols using the same EquiTest system, same test configurations, and same procedures (with and without orthosis, in randomized order), ensuring comparable measurement conditions.
+
+**4.3**: NI (70% Confidence)
+*Reason*: The outcome is not patient-reported (objective computerized measurement via force plates). The article states this was a "single blinded clinical trial" but does not explicitly specify whether the outcome assessor (or data analyst) was blinded to group allocation. This is ambiguous.
+
+**4.4**: N (85% Confidence)
+*Reason*: Balance score is an objective, computer-generated measure derived from force plate transducer data (automated calculation, not subject to assessor interpretation or patient self-report), minimizing potential for outcome assessment bias due to knowledge of intervention.
+
+**Result of Domain 4**: Low risk (85% Confidence)
+*Reason*: Per the algorithm, since 4.1 = N, 4.2 = N, 4.3 = NI, and 4.4 = N, the result is "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (80% Confidence)
+*Reason*: The article does not mention any trial registration or pre-specified analysis plan; per the specific instruction, if the article has not been registered, 5.1 = NI.
+
+**5.2**: N (85% Confidence)
+*Reason*: Balance score was measured using only one method (SOT via EquiTest system) as pre-specified in the Methods section, and this single measurement is fully reported in the Results (Tables 1–3). There is no evidence of multiple eligible outcome measurements from which selective reporting occurred.
+
+**5.3**: N (85% Confidence)
+*Reason*: The analysis methods described in the Methods section (paired t-test within groups, independent t-test between groups) match exactly what is reported in the Results section. No evidence of multiple analyses with selective reporting.
+
+**Result of Domain 5**: Some concerns (80% Confidence)
+*Reason*: Per the algorithm, since 5.2 = N, 5.3 = N, and 5.1 = NI, the result is "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (85% Confidence)
+
+*Reason*: Domain 2 was rated as "High risk." Per the overall assessment algorithm, if any one domain assessment result is "High Risk," the overall assessment result for the article is "High Risk," regardless of the ratings of other domains (Domain 1: Some concerns; Domain 3: Low risk; Domain 4: Low risk; Domain 5: Some concerns).

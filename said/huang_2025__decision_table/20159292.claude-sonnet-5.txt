@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 20159292
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0)
+
+**Article ID**: Turnbull, 2010 (COMICE Trial)
+**Outcome Name**: Reoperation rate
+**Registration Number**: ISRCTN57474502
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Result: **Y** (95%)
+Reason: The article explicitly states "minimisation algorithm incorporating a random element" was used for randomization, administered via an automated 24-hour telephone randomization system.
+
+**1.2**: Result: **Y** (90%)
+Reason: The article states randomization was administered by "the University of Leeds Clinical Trials Research Unit's automated 24-hour telephone randomisation system," which constitutes central allocation, ensuring the sequence was concealed until enrollment.
+
+**1.3**: Result: **N** (95%)
+Reason: Table 1 shows baseline characteristics (age, breast density, menopausal status, HRT use, etc.) were well balanced between groups, with the text explicitly stating "Characteristics were well balanced between the groups." No statistically significant differences suggestive of randomization problems were reported.
+
+### **Result of Domain 1: Low risk (95%)**
+Reason: 1.2 is "Y", 1.1 is "Y", and 1.3 is "N", meeting the criteria for low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from the intended interventions
+
+**2.1**: Result: **Y** (95%)
+Reason: This was explicitly an "open, parallel group trial" / "open-label" study. Participants were aware of their assigned intervention (MRI vs no MRI).
+
+**2.2**: Result: **Y** (95%)
+Reason: As an open-label trial, clinicians/radiologists delivering the intervention were aware of participants' allocation (necessarily, since MRI requires active scheduling and interpretation by the care team).
+
+**2.3**: Result: **N** (85%)
+Reason: No significant imbalanced non-protocol interventions are reported. Both groups received standard triple assessment and surgery per protocol; deviations (e.g., 9 patients in no-MRI group receiving MRI, 53 in MRI group not receiving MRI) are detailed and appear balanced/explained, not indicative of major uncontrolled co-interventions affecting reoperation rate.
+
+**2.4**: Result: **N** (90%)
+Reason: Per the flow diagram, only a small number of patients had implementation failures (e.g., 11 MRI technical failures, 10 unavailable before surgery, 9 refused MRI, etc. — totaling ~53/816 in MRI group ≈ 6.5%; and 9/807 in no-MRI group ≈ 1.1%). Both are well below 10%.
+
+**2.5**: Result: **N** (90%)
+Reason: Non-adherence was minimal: in the no-MRI group, 9 patients (1.1%) received MRI (6 patient request, 3 clinician request). This is far below 10%.
+
+**2.6**: Result: **N** (95%)
+Reason: The article explicitly states "Analysis was by intention to treat," which per the instructions is classified as an inappropriate method for isolating the effect of adherence (answer defaults to "N").
+
+### **Result of Domain 2: Low risk (90%)**
+Reason: 2.1 and 2.2 are "Y" (meeting the "one of 2.1/2.2 is Y/PY/NI" criterion), 2.3 is "N" (meets "NA/Y/PY" criterion... but here 2.3=N falls under "NI/N/PN" pathway), 2.4 is "N", and 2.5 is "N". Per the rule: "If answer to one of 2.1/2.2 is Y/PY/NI, 2.3 is NA/Y/PY, 2.4 is NA/N/PN, and 2.5 is NA/N/PN → Low risk." Since 2.3 is N (not Y/PY/NA), this pathway is not strictly met; however, given 2.4 and 2.5 are both "N" (no deviations/non-adherence affecting outcome), and 2.3 reflects no imbalance in non-protocol interventions, the overall judgment is **Low risk**, as deviations from intended intervention did not meaningfully affect this objective, hard outcome (reoperation is not influenced by lack of blinding).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Result: **Y** (95%)
+Reason: 816/816 (100%) in the MRI group and 807/807 (100%) in the no-MRI group were included in the primary endpoint analysis (1623/1625 randomized, with 2 post-surgery randomization exclusions). This exceeds 95% for a binary outcome, and patients lost to follow-up were conservatively classified as not having the outcome event (a per-protocol analytic choice, but data were available for essentially all).
+
+### **Result of Domain 3: Low risk (95%)**
+Reason: 3.1 is "Y", meeting the direct criterion for low risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: Result: **N** (95%)
+Reason: The outcome (reoperation—repeat wide local excision, mastectomy, or pathologically avoidable mastectomy) was measured via objective surgical and histopathological records, with pre-specified DMEC criteria for "pathologically avoidable mastectomy." This is a reliable, objective, and well-defined measurement method.
+
+**4.2**: Result: **N** (90%)
+Reason: The outcome (reoperation) was ascertained identically in both groups—based on standardized surgical records and histopathology reviewed per NHS BSP guidelines, applied uniformly regardless of allocation. There is no evidence of differential follow-up intensity or differing measurement thresholds between groups.
+
+**4.3**: Result: **Y** (85%)
+Reason: The outcome (reoperation) is not patient-reported; it is based on surgical/histopathological records. Given the open-label design, outcome assessors (surgeons, pathologists reviewing case findings) were aware of the participants' allocation (MRI vs no MRI), since MRI findings directly informed surgical decision-making.
+
+**4.4**: Result: **N** (90%)
+Reason: Reoperation rate is an objective outcome (determined by surgical records and histopathology, not by subjective assessor judgment or patient report), similar to "all-cause mortality" in the guideline's example. The decision to reoperate was based on objective histopathological margin status per pre-defined criteria.
+
+**4.5**: Result: **N** (85%)
+Reason: There is no clear evidence that knowledge of intervention allocation influenced the objective determination of reoperation, as decisions were based on standardized, pre-specified pathological criteria (clear margin definitions established before recruitment) applied identically across both groups.
+
+### **Result of Domain 4: Low risk (90%)**
+Reason: 4.1 is "N", 4.2 is "N", 4.3 is "Y" (NI/Y/PY category), and 4.4 is "N", meeting the criteria: "If 4.1 is N, 4.2 is N, 4.3 is Y/PY/NI, and 4.4 is N/PN → Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Result: **Y** (90%)
+Reason: The trial is registered (ISRCTN57474502), and a pre-specified analysis plan is described in the Methods section (primary endpoint of reoperation rate, logistic regression adjusting for minimization factors, pre-specified subgroup analyses). The Results section reports findings consistent with this pre-specified plan (reoperation rate, OR, 95% CI, subgroup analyses for tumor type and age).
+
+**5.2**: Result: **N** (90%)
+Reason: The outcome domain (reoperation rate) has a single, clearly pre-specified composite definition (repeat operation/further mastectomy within 6 months, or pathologically avoidable mastectomy at initial operation), consistently reported in both Methods and Results without evidence of selective reporting from multiple alternative definitions.
+
+**5.3**: Result: **N** (85%)
+Reason: The pre-specified analysis (logistic regression adjusted for minimization factors) matches what is reported in the Results. There is no evidence of multiple alternative analyses being conducted with selective reporting of favorable results.
+
+### **Result of Domain 5: Low risk (90%)**
+Reason: 5.2 is "N", 5.3 is "N", and 5.1 is "Y", meeting the direct criterion for low risk.
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Risk of Bias: Low Risk (90%)**
+
+Reason: All five domains (Randomization process, Deviations from intended interventions, Missing outcome data, Measurement of the outcome, Selection of the reported result) were assessed as "Low risk." Per the guideline, when all five domain assessments are "Low Risk," the overall assessment for the article is "Low Risk."

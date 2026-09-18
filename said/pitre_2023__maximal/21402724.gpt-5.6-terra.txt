@@ -1,0 +1,171 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 21402724
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Outcome assessed:** Reduction in psychiatric symptom severity measured by the Brief Symptom Inventory (BSI), comparing peer-led Wellness Recovery Action Planning (WRAP) with wait-list/usual care. The relevant reported effect was the mixed-effects intervention-by-time estimate (e.g., BSI Global Severity Index: estimate −0.05, SE 0.02, *P* = .023; BSI Positive Symptom Total: estimate −1.16, *P* = .027). The effect of interest is the **effect of assignment to WRAP at baseline**.
+
+## 1. Bias due to randomization: **low risk of bias**
+
+### a. Judgement
+The allocation sequence was random and adequately concealed until assignment. Available baseline data do not suggest a failure of randomization.
+
+### b. Rationale
+- The publication explicitly describes a random, concealed process:
+  > “Randomization was performed by SRL staff at the end of each interview using a **random allocation sequence programmed into CAPI administration software** that allowed for **complete allocation concealment up to the point of assignment**.”
+
+- It further states:
+  > “Thus, both interviewers and respondents had no way of knowing each subject’s study condition until after the assignment had occurred.”
+
+  This is a centralized/software-based allocation mechanism, independent of recruitment, and is consistent with adequate allocation concealment under RoB 2.
+
+- The trial randomized 555 participants, with closely similar numbers allocated to WRAP and control (276 versus 279), which does not suggest allocation manipulation.
+
+- Baseline characteristics were generally comparable. The authors report:
+  > “The success of randomization was confirmed by the absence of statistically significant differences by study condition at baseline on all characteristics.”
+
+  Table 1 shows broadly similar distributions of age, sex, race/ethnicity, diagnoses, housing, marital status, study site, and service use. Baseline BSI Global Severity Index scores were also very similar (0.76 in WRAP versus 0.73 in control).
+
+- Although the report does not provide a full randomization protocol or details such as blocking/stratification, the reported computerized random sequence and explicit allocation concealment provide sufficient assurance.
+
+---
+
+## 2. Deviations from intended intervention: **low risk of bias**
+
+### a. Judgement
+Participants and intervention personnel were aware of assignment, as would be expected for a peer-led group self-management programme versus waiting list. However, for the effect of **assignment** to WRAP, there is no evidence that deviations arising specifically from the trial context caused an important, unbalanced bias. The analysis was appropriate for estimating the assignment effect.
+
+### b. Rationale
+- Blinding of participants and facilitators was not feasible. Participants allocated to WRAP attended an 8-week, peer-led programme, whereas controls were assigned to a wait-list/usual-care condition. Therefore, participants and those delivering WRAP were necessarily aware of assignment.
+
+- Nevertheless, RoB 2 assessment of the effect of assignment is concerned with deviations that:
+  1. arose because of the trial context,
+  2. were inconsistent with the intended interventions, and
+  3. were likely to affect the outcome and be unbalanced between groups.
+
+  The report does not identify such trial-context deviations.
+
+- Non-attendance at WRAP was substantial: only 233/276 randomized intervention participants (84%) received the intervention, and mean attendance was about five of eight classes. However, non-adherence itself does **not** bias an estimate of the effect of assignment when the analysis retains participants in their randomized groups. It may reduce the observed effect of assignment, but is not, by itself, a RoB 2 deviation bias for the intention-to-treat effect.
+
+- The authors state:
+  > “No other subjects were excluded from the analysis for any other reason given the ‘intent-to-treat’ design.”
+
+  They used:
+  > “intent-to-treat mixed-effects random regression analysis.”
+
+  The mixed-effects model retained randomized group assignment and used repeated observations, including participants with incomplete follow-up. This is appropriate for the assignment effect, apart from concerns about missing data, which are addressed separately.
+
+- Controls could participate in peer-led support groups:
+  > “Between T1 and T2, 41.9% of control subjects … reported attending such groups, and between T2 and T3, 44.9% … reported doing so.”
+
+  This may have diluted the contrast between WRAP and usual care. However, the report indicates these were available community peer-support groups, rather than a deviation demonstrably caused by the trial context. Moreover:
+  > “all models were rerun controlling for exposure to peer-led support groups. Results did not differ substantially.”
+
+- The wait-list design may also have produced an “anticipation effect” among controls, acknowledged by the authors, but this is a feature of the assigned comparison strategy rather than documented evidence of an unbalanced non-protocol deviation arising from trial conduct.
+
+---
+
+## 3. Missing outcome data: **high risk of bias**
+
+### a. Judgement
+Outcome data were not available for all or nearly all randomized participants, missingness was not fully addressed by sensitivity analyses, and it is likely that missing BSI data could be related to the underlying psychiatric symptom severity. Differential loss before or during follow-up, together with reasons including illness and withdrawal, heightens this concern.
+
+### b. Rationale
+- Of 555 randomized participants, 519 were included in the analyzed baseline sample: 251/276 (90.9%) in WRAP and 268/279 (96.1%) in control. Thus, 25 WRAP participants and 11 control participants were lost before being included in the analysis:
+  > “Eleven control subjects and 25 intervention subjects were lost to follow-up with reasons including death or ill health, moving away from the area, and formal withdrawal from the study.”
+
+- The imbalance in losses before analysis is notable: approximately 9.1% in WRAP versus 3.9% in control.
+
+- Follow-up BSI data were also incomplete. For BSI Global Severity Index:
+  - immediate post-intervention: 224/251 WRAP and 234/268 control;
+  - six-month follow-up: 220/251 WRAP and 228/268 control.
+
+  Relative to all randomized participants, BSI data at six months were available for approximately 80% in each group (220/276 WRAP; 228/279 control), leaving roughly one fifth without observed BSI outcome data at that time point.
+
+- The authors report:
+  > “Of the 519 subjects who completed T1 assessments, 458 subjects (88.2%) completed T2 interviews, and 448 (86.3%) completed T3 interviews.”
+
+  Although they found no statistically significant between-group difference in observed follow-up rates, absence of a statistically significant difference does not establish that missingness was unrelated to the unobserved BSI values.
+
+- The reasons for missingness include “death or ill health” and withdrawal. In a population with severe and persistent mental illness, missing follow-up BSI data could plausibly depend on true psychiatric symptom severity. For example, poorer symptoms or deteriorating health may make participation in telephone interviews less likely.
+
+- The report notes that most intervention participants lost to follow-up had not attended WRAP:
+  > “The majority of the 25 experimental subjects lost to follow-up (68%) received no sessions of WRAP.”
+
+  This suggests missingness may be associated with engagement and potentially with prognosis or symptom burden.
+
+- Mixed-effects regression can accommodate incomplete repeated measurements under assumptions such as missing at random, but the publication provides no sensitivity analyses demonstrating that the BSI intervention effect was robust to plausible departures from these assumptions. It therefore does not provide evidence that missing outcome data did not bias the result.
+
+---
+
+## 4. Measurement of the outcome: **high risk of bias**
+
+### a. Judgement
+The BSI is an appropriate and established instrument for psychiatric symptom severity, and it was administered similarly in both groups. However, it is a participant-reported outcome, participants knew their assigned intervention, and reporting of symptoms was likely influenced by knowledge of receiving WRAP versus being placed on a waiting list.
+
+### b. Rationale
+- The BSI is a suitable measure of the outcome domain:
+  > “The primary outcome was reduction of psychiatric symptom severity, measured by the Brief Symptom Inventory (BSI), a patient self-report research instrument showing high concordance with clinician symptom assessment.”
+
+  It assesses symptoms over the prior week using 53 items and is an established psychiatric symptom measure. There is no indication that measurement procedures or thresholds differed between groups.
+
+- Interviews were undertaken by blinded University of Illinois at Chicago Survey Research Laboratory interviewers:
+  > “Interviewers were blinded to respondents’ study condition.”
+
+  The integrity of interviewer blinding was monitored, with assignment reportedly revealed in only 4% of T2/T3 interviews.
+
+- However, for the BSI, the participant—not the interviewer—is the outcome assessor, because it is a self-report measure:
+  > “The BSI [is] a patient self-report research instrument.”
+
+- Participants necessarily knew whether they had received an 8-week WRAP programme or had been assigned to a wait-list. They could therefore have had expectations regarding symptom improvement. The comparison was not an attention-control or sham intervention; controls received usual care and were promised WRAP after follow-up.
+
+- The authors acknowledge this limitation directly:
+  > “The study relied on participant self-report data that were uncorroborated by clinicians or objective observers such as research staff.”
+
+  They also acknowledge that:
+  > “Use of an attention-control placebo would have allowed us to assess whether 8 weeks of peer interaction alone, and not the specific features of the WRAP intervention, caused the observed outcomes.”
+
+- For an unblinded, subjective, participant-reported symptom outcome in a behavioural intervention versus waiting-list comparison, it is likely that awareness of intervention receipt influenced reporting of psychiatric symptoms. Blinded interviewers do not eliminate this risk because they do not determine the symptom ratings themselves.
+
+---
+
+## 5. Selective reporting: **some concerns**
+
+### a. Judgement
+The publication and registry identify BSI psychiatric symptoms as a prespecified primary outcome, which is reassuring. However, there was no prospectively registered, detailed statistical analysis plan finalized before unblinded outcome data were available, and there were multiple BSI measures, time points, and plausible analytic choices. There is insufficient information to rule out selective selection of the reported BSI result, but no clear evidence that reporting was selected on the basis of results.
+
+### b. Rationale
+- The article states:
+  > “The primary outcome was reduction of psychiatric symptoms.”
+
+- The registry identifies psychiatric symptoms measured with the BSI as a primary outcome and specifies three measurement occasions:
+  - study entry;
+  - eight weeks/post-intervention;
+  - six months after intervention.
+
+  Thus, the broad outcome domain and repeated measurement schedule were specified.
+
+- However, the registry was first submitted and posted after the study had started and after trial completion:
+  - study start: December 2007;
+  - primary completion: September 2009;
+  - first submitted: December 2009;
+  - first posted: December 2009.
+
+  Therefore, the registry record cannot demonstrate that the analysis plan was finalized before unblinded outcome data became available.
+
+- The article claims:
+  > “all outcomes, hypotheses, and statistical analyses presented here were prespecified at the time the proposal was submitted to the federal government for funding consideration.”
+
+  However, the funding proposal and a date-stamped statistical analysis plan were not provided. This claim cannot be independently verified from the available documents.
+
+- There were multiple potentially eligible BSI results:
+  - BSI Global Severity Index;
+  - BSI Positive Symptom Total;
+  - immediate post-intervention and six-month follow-up measurements;
+  - a longitudinal mixed-effects interaction analysis;
+  - potentially alternative analyses using final values, changes from baseline, different missing-data assumptions, or adjustment sets.
+
+- There is also a minor discrepancy between sources: the registry specifically describes the BSI Positive Symptom Score, whereas the publication presents both Positive Symptom Total and Global Severity Index as symptom outcomes. This does not prove selective reporting, but reinforces uncertainty about the precise prespecified BSI analysis.
+
+- Both reported BSI measures were presented in the paper, and there is no direct evidence that unreported BSI measurements or analyses were omitted because of their results. Consequently, the appropriate RoB 2 judgement is **some concerns**, rather than high risk.

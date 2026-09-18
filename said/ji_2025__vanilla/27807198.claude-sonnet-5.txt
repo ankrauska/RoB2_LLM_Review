@@ -1,0 +1,246 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 27807198
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences: "Patients were randomly assigned (ratio 1:1) to receive either doxycycline or placebo. The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany."
+
+Analysis: The article states that patients were randomly assigned in a 1:1 ratio, and that the randomisation list was generated and administered by an independent institution (Charité, Berlin), separate from the treating/enrolling site. However, no specific detail is given about the actual method used to generate the allocation sequence (e.g., computer-generated random numbers, random number table, etc.). While the involvement of an independent, experienced institution for generating and administering the randomisation list suggests a formal, likely random process, the absence of explicit description of the sequence generation method leaves some uncertainty. Given the description of a rigorous double-blind, placebo-controlled RCT registered with EudraCT and conducted with an external randomisation authority, it is plausible that a proper random sequence generation method was used, though not explicitly detailed in the text.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"Patients were randomly assigned (ratio 1:1) to receive either doxycycline or placebo. The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany."
+
+Analysis:
+The randomisation list and the study medication were administered centrally by an independent institution (Charité, Universitätsmedizin, Berlin), which was separate from the enrolling site (University of Göttingen). This indicates that allocation was managed by an external unit independent from enrolment personnel, consistent with an appropriate concealment mechanism (e.g., centralized randomization/drug allocation service). However, no explicit detail is given about specific procedures (e.g., sequential numbering, tamper-proof envelopes, or a formal description of how allocation concealment was maintained until enrollment), so full certainty is not achievable, but the described process strongly suggests that concealment was likely adequate given the physical and organizational separation between the treating site and the randomization/drug supply administrator.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences: 
+- "Patients were randomised to active drug (n=7) or placebo (n=6). One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+- Table 2 data for the double-blind study: Age at onset — 58.0 (56.0–66.0) doxycycline vs 72.0 (55.0–73.0) control; MMSE 21 (21–25) vs 16 (8–25); Codon 129 M/M 0% (0) vs 20% (1); PSWCs in EEG 13% vs 42%.
+- "Mean age at onset of the doxycycline-treated group was 62 years" (observational, not randomized, not relevant to this question).
+- "The Barthel index score was slightly better in the placebo group."
+
+Analysis: 
+In the double-blind randomized trial, only 12–13 patients were analyzed (7 doxycycline vs 5–6 placebo), an extremely small sample. Table 2 shows some baseline differences between arms (age at onset, MMSE, codon 129 genotype distribution, PSWC frequency), which could suggest imbalance in prognostic factors known to influence CJD survival (age, codon 129 genotype, cognitive function/MMSE are explicitly cited by the authors as key prognostic factors used later for propensity-score adjustment in the observational arm). However, given the very small sample size (n=5–7 per arm), such baseline differences are highly likely to occur by chance simply due to random allocation in a tiny cohort, rather than indicating a flaw in the randomization process itself. No formal significance testing of baseline characteristics was reported, and the differences, while numerically noticeable (e.g., MMSE 21 vs 16, age 58 vs 72), fall within the range expected from chance variation with such small groups. There is no indication of a flawed randomization procedure (allocation was centrally administered and blinded), and the group size ratio (7:6, close to 1:1) is not substantially different from the intended allocation. Therefore, although the imbalances are present and could be a source of bias in effect estimation, they are more consistent with chance variation due to small sample size rather than evidence of a problematic randomization process.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+- "Patients were randomly assigned (ratio 1:1) to receive either doxycycline or placebo. The randomisation list and the study medication were administered by the Charité... The patients in the therapy group received oral doxycycline at a dose of 100 mg per day."
+- "The randomised, single-centre, double-blind, placebo-controlled phase II trial (EudraCT (2006-003934-14))..."
+- Protocol: "D.8.1 Is a Placebo used in this Trial? Yes; D.8.3 Pharmaceutical form of the placebo: Capsule, hard" (matching formulation to active drug)
+- "The adverse event (AE) rate was 70% in the doxycycline group and 60% in the placebo group. The severe adverse event (SAE) rate was 40% in both groups."
+
+Analysis:
+The trial was designed and conducted as a double-blind, placebo-controlled study, with the placebo manufactured in an identical capsule form to the active doxycycline treatment, and randomisation/medication managed centrally by an independent site (Charité), which supports adequate concealment of allocation from participants. The AE and SAE rates were similar between groups (SAE identical at 40%), with no report of characteristic doxycycline-specific side effects (e.g., photosensitivity, GI-specific antibiotic effects) that would have unblinded participants — the reported AEs (dysphagia, respiratory insufficiency, infections, thrombosis, UTI) are typical of the underlying CJD disease progression rather than doxycycline-specific effects. There is no explicit statement of testing blinding success, but the described methodology (matched placebo capsules, similar AE profile) suggests participants were likely not able to identify their treatment allocation. This corresponds to a low likelihood of participant awareness, though not explicitly confirmed by a blinding-integrity check.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences: "The randomised, single-centre, double-blind, placebo-controlled phase II trial (EudraCT (2006-003934-14))..."; "The patients in the therapy group received oral doxycycline at a dose of 100 mg per day"; "D.8.1 Is a Placebo used in this Trial? Yes"; "D.8.3 Pharmaceutical form of the placebo: Capsule, hard"; "E.8.1.4 Double blind: Yes"; "The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany."
+
+Analysis: The trial is explicitly described as double-blind, with placebo capsules matching the active drug's pharmaceutical form (hard capsules), and randomisation/medication was administered centrally by a separate institution (Charité, Berlin), independent from the treating site, supporting concealment and blinding of caregivers/treating physicians. There is no mention of unblinding events, and the identical capsule formulation of active drug and placebo supports that those delivering the intervention (physicians, caregivers) were not aware of allocation. This is consistent with the domain risk being "not yet assessed" but the evidence strongly suggests adequate blinding of care providers.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+
+- "Enrolment of patients with CJD in randomised trials poses specific problems, such as refusal to give informed consent due to the risk of receiving a placebo for a fatal disease and patients' preference for the effective substance"
+- "Of 392 probable and patients with definite sCJD referred between March 2010 and September 2012, only 13 participants with sCJD agreed to participate in the randomised trial"
+- "The experiences were similar—patients at early disease stages declined to receive placebo and did not agree to randomisation."
+- "One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+- "4 discontinued in the doxycycline group" (per flowchart)
+
+Analysis: The trial explicitly discusses that awareness of trial assignment (informed consent process) influenced participation and behavior: patients declined to enroll or be randomized because they did not want to risk receiving placebo, reflecting a trial-context effect on recruitment/engagement. Additionally, there was a notable dropout/discontinuation rate (1/6 placebo, 4/7 doxycycline discontinued), and no detailed explanation is given as to whether these deviations were due to trial-context factors (e.g., feeling unlucky about assignment, disease progression, or intercurrent illness) versus in the context of standard care. The authors themselves note this is a known problem in CJD trials (also observed in quinacrine trials), where patients' preference for the "real" drug and reluctance to accept placebo affects participation and possibly compliance. This suggests some deviations from the intended intervention arose specifically because of trial context (patient preference for active treatment, refusal to adhere to a placebo assignment), rather than due to standard clinical practice deviations. However, the article does not provide explicit details on whether the discontinuations in the doxycycline/placebo arms were due to trial-context-related behavior (e.g., patients dropping out because they suspected placebo) or due to disease progression/death, which is common in this severe disease. Because the reasons for the 5 discontinuations are not clearly detailed, and though there is strong suggestive evidence of trial-context effects on recruitment (patients refusing randomization), the actual intervention deviations during the trial (dropouts) are not clearly attributed to trial context specifically.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+- "Of 392 probable and patients with definite sCJD referred between March 2010 and September 2012, only 13 participants with sCJD agreed to participate in the randomised trial"
+- "Patients were randomised to active drug (n=7) or placebo (n=6). One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+- Figure 1: "4 discontinued in the doxycycline group" during follow-up, and "1 excluded" from analysis in placebo group.
+- Planned sample size was 28 subjects (F.4.1), but only 13 were recruited and 12 analyzed — a substantial deviation from protocol in terms of achieved sample size.
+- No explicit description of reasons for the 4 discontinuations in the doxycycline arm or their handling in the analysis (whether ITT or per-protocol).
+
+Analysis: The trial experienced a severe shortfall in recruitment (13 of a planned 28 patients) and substantial post-randomisation attrition (4/7 discontinuations in the doxycycline arm, 1 dropout/exclusion in the placebo arm), which is inconsistent with the trial protocol's intended conduct. Such large-scale non-adherence and loss to follow-up in a small trial (n=12 analyzed) is very likely to distort the estimated treatment effect, given that survival/functional outcomes for those who discontinued treatment early may differ systematically from those who continued, and the small sample size amplifies the impact of each dropout. The paper itself acknowledges "our results might be biased by the small sample size in the double-blind trial," implying awareness of the potential impact of these deviations on outcome estimates. However, because reasons for discontinuation/dropout and their relation to outcome are not clearly detailed, some uncertainty remains, but the pattern strongly suggests likely impact on the outcome.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+- "One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+- "Mean treatment duration was 89 days" (doxycycline group) vs table 2 showing "Days of doxycycline/placebo therapy: 61 (11–156) [doxycycline] vs 34 (1–439) [control]"
+- "The adverse event (AE) rate was 70% in the doxycycline group and 60% in the placebo group. The severe adverse event (SAE) rate was 40% in both groups."
+- No mention of other protocol deviations (e.g., non-adherence, additional interventions, co-interventions) being reported or compared between groups.
+
+Analysis:
+The article provides limited information about deviations from the intended intervention. There is one reported dropout (1 patient in placebo group), and differences in treatment duration between arms (median/range 61 vs 34 days), which could reflect differential early discontinuation, but this is not explicitly discussed as a "deviation" issue, nor is it clearly analyzed for balance across groups. Adverse event and severe adverse event rates were reported and were similar or comparable between groups (70% vs 60% AE; 40% vs 40% SAE), suggesting no gross imbalance in tolerability-driven deviations. However, no explicit discussion of protocol deviations, cross-overs, non-protocol treatments, or unblinding is provided, and the study does not explicitly report whether deviations (if any) were balanced between groups. Given the absence of clear data or discussion addressing this specific question, and only indirect/incomplete information (differential dropout and treatment duration), a definitive judgment cannot be made confidently.
+
+Correct answer: No information
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+"One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+"Patients were randomised to active drug (n=7) or placebo (n=6)."
+"Survival times were analysed by means of Cox proportional hazard models with treatment (doxycycline vs control) as a factor."
+
+Analysis: The randomized trial analyzed patients according to their assigned groups (doxycycline vs placebo), consistent with an intention-to-treat approach. One randomized participant (placebo group) dropped out and was excluded from the survival analysis due to missing outcome data, which is consistent with a modified ITT approach (excluding participants with missing outcome data), rather than exclusion based on non-adherence or switching treatment. There is no indication of per-protocol or as-treated analysis, nor of post-randomization exclusion of eligible participants for reasons other than missing data. Therefore, the analysis approach used for the randomized trial appears appropriate under the given criteria.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis." "Patients were randomised to active drug (n=7) or placebo (n=6)."
+
+Analysis: In the double-blind randomised trial, only 13 patients were randomised in total, an extremely small sample size. One patient allocated to placebo dropped out and was excluded from the survival analysis, leaving 5 placebo vs 7 doxycycline patients analysed. Although this represents only 1 of 13 participants (about 8%), given the very small overall sample size, any single exclusion can have a disproportionately large influence on the estimated treatment effect (HR, survival times, CIs). Since the outcome (survival/death) is a hard endpoint but the number at risk is minimal, the loss of even one participant—especially since dropout reasons and prognostic status are not detailed—could substantially alter the comparison between groups. This meets the threshold for "potential for substantial impact" as described in the explanation (small numbers excluded can still bias result significantly when sample size is small or exclusions relate to prognosis, which cannot be ruled out here since the reason for dropout is not specified).
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"Patients were randomised to active drug (n=7) or placebo (n=6). One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+
+Analysis: Of 13 randomized participants, only 12 were included in the primary outcome (survival) analysis, with 1 patient lost from the placebo group before receiving any follow-up data. Given the very small sample size (13 total), a loss of even one participant (~8%) represents a substantial proportion of the randomized population, and this could plausibly influence the effect estimate given the small numbers involved. This exceeds the threshold that would be considered "nearly all" for such a small trial, especially since no sensitivity analysis or imputation approach was reported to address this missing data.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+- "One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis."
+- Figure 1: "In the 'Follow-Up' stage, 1 patient was lost in the placebo group and 4 discontinued in the doxycycline group." "In the 'Analysis' stage, 5 patients were analyzed in the placebo group (with 1 excluded) and 7 in the doxycycline group."
+- No mention of intention-to-treat analysis, sensitivity analyses, or imputation methods addressing missing outcome data (e.g., for the 4 patients who discontinued in the doxycycline group, whose outcome status is unclear) is reported in the statistical methods.
+
+Analysis: In this small trial, missing/incomplete data occurred (1 placebo dropout excluded from analysis, and 4 doxycycline discontinuations noted in the flow diagram, though their outcome/death data may still have been captured for survival analysis since survival is a hard endpoint that can often be ascertained even after discontinuation of study drug). However, the placebo dropout was excluded entirely from the survival analysis, meaning the primary outcome analysis was not conducted on all randomized participants (not a true intention-to-treat approach). There is no mention of any correction method (e.g., worst-case sensitivity analysis, multiple imputation across arms, or analysis retaining the excluded participant with appropriate censoring) to address this exclusion and its potential bias. Given survival as primary outcome, exclusion of a randomized patient without justification or sensitivity analysis raises concern that missingness may bias the result, and no evidence is provided to rule this out.
+
+Correct answer: No
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences:
+"One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis." 
+"In the 'Follow-Up' stage, 1 patient was lost in the placebo group and 4 discontinued in the doxycycline group. In the 'Analysis' stage, 5 patients were analyzed in the placebo group (with 1 excluded) and 7 in the doxycycline group."
+"The primary outcome measure was survival time."
+No stated reason for the dropout/discontinuation is provided in the article.
+
+Analysis: The primary outcome is survival time in patients with a rapidly fatal neurodegenerative disease (sCJD). One patient in the placebo arm dropped out and was excluded from the survival analysis, and four patients in the doxycycline arm "discontinued" during follow-up (though apparently still contributing to the analysis). No explicit, documented reason unrelated to the outcome (e.g., administrative error, unrelated equipment failure) is given for these losses. In a disease where clinical deterioration, cognitive decline, or worsening physical condition (all closely tied to survival/health status) commonly precipitate withdrawal from a trial or loss of ability to continue follow-up, it is plausible that the missingness (dropout/discontinuation) is related to the patients' true health status and hence to the outcome (survival time) itself. Since no clear alternative explanation excluding this possibility is provided, the missingness could very plausibly depend on the true outcome value.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+"One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis." (Results section); "In the 'Follow-Up' stage, 1 patient was lost in the placebo group and 4 discontinued in the doxycycline group." (Figure 1 description); "Analyses were adjusted for several prognostic factors including age at onset, gender, codon 129 genotype and baseline MMSE, by stratifying the Cox regression by terciles of the propensity scores." (Statistical analyses)
+
+Analysis: The primary outcome was survival, a time-to-event outcome. In the double-blind randomized trial, there is an imbalance in loss to follow-up between arms: 1 patient lost/dropped out from the placebo arm (excluded from the 12 analyzed), while in the Figure 1 flow, 4 patients "discontinued" in the doxycycline arm during follow-up (though only 1 exclusion from analysis is mentioned in the text for placebo). No reasons are given for the placebo patient's dropout or for the doxycycline group's discontinuations, and no explanation is provided as to whether these were related to disease severity, death, or unrelated administrative reasons. Given the fatal, rapidly progressive nature of CJD, it is plausible that missingness/censoring could relate to disease severity or approaching death, but the article provides no explicit reasons for the missing data, nor is there a systematic account of whether missingness is balanced or unbalanced in a way explainable by measured prognostic factors. Because reasons for missingness are not reported and cannot be attributed with confidence to true outcome values or characteristics accounted for in the analysis, there isn't sufficient information to conclude that missingness is likely dependent on the true outcome value, but the concern cannot be ruled out either.
+
+Correct answer: No information
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences: "The primary outcome measure was survival time." "Survival times were analysed by means of Cox proportional hazard models..." "Secondary outcome measures focused on the quality of life... time from disease onset to the onset of deficits in sphincter control and food intake, or the appearance of akinetic mutism." "Other secondary measures included scores on cognitive and functional tests (Barthel index, MMSE...)."
+
+Analysis: The primary outcome (survival time) is an objective, unambiguous, and easily verifiable measure (date of death), which is entirely appropriate for evaluating a treatment intended to prolong survival in a fatal disease. Secondary outcomes use standardized, validated clinical assessment tools (MMSE, Barthel index) and clinically meaningful milestones (loss of sphincter control, feeding difficulty, akinetic mutism) that are established and sensitive indicators of disease progression in CJD. There is no indication that any measurement method used was insensitive to plausible intervention effects or lacked validity. All outcome measures align with standard practice in CJD trials and are appropriate for detecting the effects being studied.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences: 
+- "The randomised, single-centre, double-blind, placebo-controlled phase II trial... After the baseline visit (BL) and the first visit (visit 1), the patients were visited every 2 months during the first 6 months (visits 2–4) and then every 3 months. Additionally, the caregivers were interviewed by telephone every 2 weeks to evaluate the disease progression based on a standardised questionnaire."
+- "The investigator determining this date [onset] was blinded to treatment."
+- "In the observational study, follow-up cannot be defined in the same way... patients in the observational study are followed up for survival from disease onset... This start point... minimises the risk of bias when comparing patients treated with doxycycline to controls since the onset of symptoms is well defined in both groups as the date of the first interview with close relatives."
+- "Standardised clinical examination with special emphasis on CJD-specific symptoms and standardised scales to measure clinical presentation (Barthel index) and cognitive decline (MMSE) was performed" (applied equally to treated and control groups).
+
+Analysis: In the randomized trial, outcome assessment (survival, secondary clinical milestones) was collected under double-blind conditions with identical visit schedules and telephone follow-up procedures for both doxycycline and placebo groups, and the person determining disease onset date was blinded to treatment allocation. In the observational study, survival was measured from a well-defined onset date (based on relative interviews) identically for both doxycycline-treated and control patients, using the same standardized clinical/neuropsychological assessment battery in both groups. There is no indication of differential surveillance intensity, additional visits, or different measurement thresholds between groups in either study component. Thus, ascertainment bias due to unequal detection effort is unlikely.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences: "double-blinded randomised phase II study," "Patients were randomly assigned (ratio 1:1) to receive either doxycycline or placebo," "The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany," "The investigator determining this date was blinded to treatment." Also E.8.1.4 Double blind: Yes. However, primary outcome (survival) assessment likely not affected by blinding, but secondary outcomes (MMSE, Barthel, sphincter, feeding, akinetic mutism) were assessed by study physicians/caregivers who were part of the double-blind design, and the trial is explicitly described as double-blind with concealed randomization list held by an external site (Charité). No explicit statement of unblinding of assessors was found, and the double-blind design implies both participants and assessors were unaware of intervention. For observational/compassionate-use cohort, there was no blinding, but the question concerns the RCT.
+
+Analysis: The trial was explicitly designed and conducted as double-blind, with randomization and drug allocation handled externally by Charité, Berlin, separate from the treating/assessing site, supporting that outcome assessors (including those evaluating MMSE, Barthel index, and clinical progression) were unaware of group allocation. No information suggests unblinding occurred during the trial. This supports low risk of detection bias for the RCT component.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+- "The randomised, single-centre, double-blind, placebo-controlled phase II trial... was approved by the local Ethics Committee..."
+- "Patients were randomly assigned (ratio 1:1) to receive either doxycycline or placebo. The randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany."
+- "The primary outcome measure was survival time... follow-up for survival starts with the randomisation... and ends with date of death or end of the study."
+- "The investigator determining this date was blinded to treatment."
+- Secondary measures: "time from disease onset to the onset of deficits in sphincter control and food intake, or the appearance of akinetic mutism" assessed via caregiver telephone interviews using a standardized questionnaire.
+
+Analysis:
+The trial was explicitly designed and conducted as double-blind, with treatment allocation concealed from patients, caregivers, and the investigators involved in assessing outcomes. The primary outcome (survival/all-cause mortality) is an objective outcome that does not require subjective judgement and is therefore inherently not susceptible to influence by knowledge of allocated intervention. Even the date of symptom onset determination was explicitly noted to be assessed by an investigator "blinded to treatment," reinforcing that outcome assessors were unaware of intervention status. While secondary outcomes (e.g., loss of sphincter control, feeding difficulties, akinetic mutism) involve some clinical judgement and were assessed via caregiver-reported telephone interviews, the double-blind design (patients, caregivers, and treating/assessing physicians all blinded) minimizes the likelihood that knowledge of the intervention influenced outcome assessment for both primary and secondary outcomes. There is no indication in the article that blinding was broken or compromised during the trial. Therefore, based on the double-blind design and blinded outcome assessment procedures, it is unlikely that assessment of the outcome could have been influenced by knowledge of the intervention received.
+
+Correct answer: No
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"The randomised, single-centre, double-blind, placebo-controlled phase II trial... The investigator determining this date was blinded to treatment." "The primary outcome measure was survival time."
+
+Analysis: The primary outcome assessed in the randomized trial was survival time (time to death), which is an objective, "hard" outcome that is not susceptible to subjective interpretation. Even though secondary outcomes (e.g., cognitive/functional assessments) could theoretically be influenced by unblinding, the primary outcome of survival cannot be meaningfully influenced by knowledge of treatment allocation, as death is an unambiguous event. Furthermore, the study was double-blinded, and the investigator determining disease onset date was explicitly blinded to treatment, reducing the risk that knowledge of the intervention influenced the assessment of survival.
+
+Correct answer: No
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+- Protocol E.5.1: "Der primäre Zielparameter soll die Überlebenszeit der Patienten von Symptombeginn an sein" (primary endpoint = survival from symptom onset).
+- Article: "In the double-blinded randomised study, follow-up for survival starts with the randomisation... In the observational study... patients... are followed up for survival from disease onset."
+- Article: "In addition, we analysed the data from patients who received compassionate treatment with doxycycline in a separate group... compared with 33 controls by a stratified propensity score applied to a Cox proportional hazard analysis. The results of both studies were combined by means of a random-effects meta-analysis."
+- Protocol F.4.1: planned number of subjects = 28; Article: only 13 patients were actually randomised, and additional observational/compassionate-use cohort with propensity-score matching and meta-analytic combination were added, none of which appear in the registered protocol.
+
+Analysis:
+The registered EudraCT protocol pre-specifies a single double-blind RCT with survival measured from symptom onset, with secondary endpoints being time to loss of feeding, sphincter control, and akinetic mutism, and a planned sample size of 28. In the published article, the primary survival analysis for the RCT is instead measured from randomisation (not from symptom onset as pre-specified), and an entirely separate observational/compassionate-use cohort with propensity-score-stratified Cox regression and a subsequent random-effects meta-analysis combining the RCT and observational data were introduced — none of which were part of the original pre-specified analysis plan. These are substantial deviations from the pre-specified plan, and there is no evidence that these changes (particularly the shift in the survival start point and the addition of the observational-data combination) were finalized before the investigators had access to unblinded outcome data. Given the severe under-recruitment (13 vs. planned 28) and the introduction of new analytic strategies (propensity score stratification, meta-analysis) not mentioned in the protocol, it is likely that the analysis plan was adapted after some knowledge of results, raising concern for selective reporting bias.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+- "The primary outcome measure was survival time. In the double-blinded randomised study, follow-up for survival starts with the randomisation... In the observational study... patients... are followed up for survival from disease onset."
+- Protocol: "Der primäre Zielparameter soll die Überlebenszeit der Patienten von Symptombeginn an sein" (primary endpoint = survival time from symptom onset).
+- "This start point is both a natural choice and also minimises the risk of bias when comparing patients treated with doxycycline to controls since the onset of symptoms is well defined in both groups."
+
+Analysis: The primary outcome domain assessed here is survival time, which is a single, unambiguous endpoint (time to death) without competing scales or multiple alternative definitions that could be selectively reported based on favorable results. Although the starting point for follow-up differs slightly between the RCT (randomization) and observational study (symptom onset), this discrepancy is explicitly justified by practical/methodological reasons (difficulty defining a randomization-equivalent start point in the observational cohort) rather than being driven by the observed results. There is no evidence of multiple survival definitions or scales being tested and only the favorable one reported. Since survival is inherently measured in one primary way (time from a defined start point to death) and the difference in start point across sub-studies is explained by non-results-related reasons, there is no indication of selective reporting from multiple eligible outcome measurements for this domain.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences:
+- Protocol: "Der primäre Zielparameter soll die Überlebenszeit der Patienten von Symptombeginn an sein" (primary endpoint = survival from symptom onset), with follow-up "until death," and secondary endpoints defined as time to loss of feeding, sphincter control, and akinetic mutism from randomization.
+- Article: "In the double-blinded randomised study, follow-up for survival starts with the randomisation... In the observational study... patients... are followed up for survival from disease onset."
+- "Analyses were adjusted for several prognostic factors including age at onset, gender, codon 129 genotype and baseline MMSE, by stratifying the Cox regression by terciles of the propensity scores."
+- "The Cox proportional hazard analysis revealed no statistically significant prolongation in survival time in patients treated with doxycycline with an estimated HR of 0.841 (95% CI (0.238 to 2.966))" (unadjusted RCT result).
+- "In the stratified analysis, we found a significant prolongation in survival time in patients treated with doxycycline compared with the untreated controls, with an estimated HR of 0.607 (95% CI (0.372 to 0.989))" (adjusted observational result).
+- "The results of both studies were formally combined in a random-effects meta-analysis resulting in a combined HR of 0.633 (95% CI (0.402 to 0.999))... (p=0.049)."
+
+Analysis:
+The registered protocol specifies survival from symptom onset as the primary endpoint for the randomized trial, with a fixed set of endpoints and no pre-specified plan for combining the RCT with an observational cohort via meta-analysis, nor a pre-specified propensity-score-stratified/adjusted Cox model as the primary analysis. In the published report, the RCT’s own unadjusted analysis (using randomization as start point, deviating from the protocol’s symptom-onset start point) was non-significant (HR 0.841, CI crossing 1), while the observational cohort’s adjusted/stratified analysis was significant (HR 0.607), and the final reported/emphasized "positive" result is the post-hoc combined meta-analytic HR (0.633, p=0.049) that was not part of the original protocol. Multiple ways of analyzing and combining the data (adjusted vs unadjusted, different starting points, single-study vs combined meta-analysis) were used, and the most favorable, statistically significant result (the combined meta-analysis) is prominently reported as the headline finding in the abstract/conclusions, despite this not being the pre-specified primary analysis. This pattern—several eligible analytic approaches with the most favorable one being emphasized—raises concern that the reported result was selected based on the significance of its findings.
+
+Correct answer: Probably yes

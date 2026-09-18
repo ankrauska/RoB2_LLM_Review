@@ -1,0 +1,85 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 11571068
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Women's Burden and Distress (assessed via RSS and GHQ)
+## Effect of Interest: Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns arise primarily due to lack of detail on allocation concealment, despite adequate random sequence generation.
+
+**b. Rationale:**
+- **Sequence generation (1.1):** The article states "Participants were assigned randomly via random number tables to one of three treatment conditions" — this constitutes a valid random component. Answer: **Yes**.
+- **Allocation concealment (1.2):** No information is provided regarding whether the allocation sequence was concealed from those enrolling participants (e.g., no mention of sequentially numbered, sealed envelopes, or independent randomization service). Answer: **No information**.
+- **Baseline imbalance (1.3):** The article explicitly reports: "One-way ANOVAs showed that at pre-treatment the women's GHQ, RSS, reports of their partner's drinking and KAT did not differ significantly across conditions" and "no significant differences between the conditions on the demographic variables." This suggests no problem with randomization based on observed balance. Answer: **No**.
+
+Applying the algorithm: Random sequence = Yes; Concealment = No information; Baseline imbalance = No → This maps to **"Some concerns"** per Table 4 (NI on concealment combined with no evidence of baseline imbalance problems yields "Some concerns" rather than "Low," since concealment cannot be confirmed as adequate).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **High risk of bias**
+
+**a. Judgement:** High risk of bias due to lack of blinding combined with substantial, unbalanced deviations from intended intervention arising from the trial context (differential non-adherence to intervention by design across arms), which plausibly affected the outcome.
+
+**b. Rationale:**
+- **Awareness of assignment (2.1/2.2):** Neither participants nor treating psychologists could be blinded to which of three distinct psychotherapy conditions (supportive counselling, stress management, or AFCT) was being delivered. Therapists delivered manualized, condition-specific protocols. Answer: **Yes** to both.
+- **Deviations arising from trial context (2.3):** A major deviation occurred: in the AFCT arm, the protocol intended conjoint couple therapy, but "Only six husbands of the 21 wives assigned to AFCT engaged in treatment" — meaning 15/21 (71%) of AFCT-assigned participants did **not** receive the intended conjoint intervention and instead received the fallback: "If the man refused to participate in therapy, the woman received the stress management treatment." This is a substantial, protocol-driven switch in intervention content that is intrinsic to the trial context (male partner engagement was solicited as part of the trial procedures) — effectively contaminating the distinctiveness of the AFCT arm with stress management. Answer: **Yes**.
+- **Likely to have affected the outcome (2.4):** Given AFCT and stress management share core content, but AFCT specifically added conjoint work believed relevant to relationship and drinking outcomes, this deviation is likely to affect between-group differences for the outcome comparisons intended by the trial (though the effect specifically on "burden and distress" may be more modest than on relationship/drinking outcomes, but cannot be ruled out, since burden was also targeted by "helping women encourage male to enter treatment"). Answer: **Probably yes**.
+- **Balanced between groups (2.5):** This deviation is inherently unbalanced — it only occurred in, and was specific to, the AFCT condition (71% did not receive intended conjoint therapy), while supportive counselling and stress management were delivered largely as manualized (mean sessions ~12.3, no significant difference in session numbers, but content fidelity for AFCT was compromised for most participants). Answer: **No**.
+- **Analysis (2.6):** The study appears to have analyzed participants according to original group assignment (ITT-like), i.e., the 21 women assigned to AFCT (including the 15 whose partners did not engage) were retained and analyzed within the AFCT condition based on Table 1 sample sizes (BMT n=13 at post/follow-up, reflecting dropout, not a switch to per-protocol analysis by treatment received). This appears consistent with **assignment-based analysis (Yes)**, but the substantial contamination of the AFCT arm as delivered/experienced by participants remains a key concern regardless of the appropriate analytic approach.
+
+Given the substantial, unbalanced, trial-context-driven deviation (majority of AFCT arm effectively receiving stress management content) that could plausibly influence outcomes, and no correction for this in the analysis (no instrumental variable or complier-adjustment approach reported), this domain is judged **High risk of bias**.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns due to meaningful attrition (~22%) with no strong evidence that missingness was unrelated to the true value of the outcome, although the reasons given somewhat mitigate concern regarding direction of bias.
+
+**b. Rationale:**
+- **Data available for all/nearly all participants (3.1):** "Forty-seven participants completed treatment and 44 of these participants provided assessed data at 6-month follow-up. This represents an overall attrition of 22% of participants from the treatment phase of the study." This is not "nearly all" (22% attrition is non-trivial). Answer: **No**.
+- **Evidence result not biased (3.2):** No sensitivity analyses were reported addressing plausible values for missing data; only a chi-square test of differential dropout by condition ("A 3×2 χ² (treatment condition by dropout status) showed no significant association between treatment condition and numbers of dropouts, although the small number of dropouts overall give this analysis low power to detect differential attrition"). This provides some, but not strong, reassurance. Answer: **Probably no**.
+- **Could missingness depend on true value (3.3):** Yes — the authors note: "most of these women reported they had left their partners soon after beginning the programme... the sessions they attended assisted them to leave a relationship in which they had been very unhappy for many years." This suggests dropout was related to the participant's underlying status/trajectory (relationship and distress-related), which is directly relevant to the burden/distress outcome. Answer: **Yes**.
+- **Likely missingness depended on true value (3.4):** While plausible, the authors' account suggests dropout may reflect *resolution* of distress (leaving an unhappy relationship) rather than a worsening confounded with treatment arm, and dropout was not significantly associated with treatment condition (though underpowered). There is no clear evidence that reasons for dropout differed systematically between arms in a way that would bias the specific burden/distress comparison. Answer: **Probably no**.
+
+This pattern (3.1=No, 3.2=Probably no, 3.3=Yes, 3.4=Probably no) maps to **"Some concerns"** per the decision algorithm (Table 10).
+
+---
+
+## 4. Measurement of the outcome: **High risk of bias**
+
+**a. Judgement:** High risk of bias because the outcome (burden/distress) is entirely participant-reported (self-report questionnaires: RSS, GHQ), participants were not blinded, and knowledge of intervention assignment could plausibly, and likely did, influence self-reported outcomes, particularly given demand characteristics inherent in supportive counselling versus active behavioral interventions.
+
+**b. Rationale:**
+- **Inappropriate measurement method (4.1):** The RSS and GHQ are validated, appropriate instruments for this purpose ("The RSS has a test–retest reliability of r = 0.85"; GHQ has "satisfactory internal reliability... and established validity"). Answer: **No**.
+- **Differences in ascertainment between groups (4.2):** All groups were assessed with the same instruments at the same timepoints. Answer: **No**.
+- **Outcome assessor aware of intervention (4.3):** The outcome assessor for RSS/GHQ is the participant herself (a participant-reported outcome). Given lack of blinding of participants to their condition (as established in Domain 2), participants were clearly aware of their assigned/received intervention. Answer: **Yes**.
+- **Could assessment be influenced by knowledge of intervention (4.4):** Yes — participant-reported outcomes are inherently susceptible to influence by knowledge of treatment received, especially with strong differences in perceived "activity"/credibility between supportive counselling (non-directive) versus the more structured behavioral interventions. Answer: **Yes**.
+- **Likely influenced (4.5):** Given the trial explicitly contrasted a "plausible contact control" (supportive counselling) against active behavioral treatments, and given participants' expectancies about receiving specific skills-based help versus generic supportive counselling could shape self-reports of burden/distress (demand characteristics, therapeutic alliance effects), it is likely that self-report was influenced by awareness of condition. This is compounded by the subjective, self-referential nature of "burden" and "distress" constructs. Answer: **Probably yes**.
+
+This pattern (4.1=No, 4.2=No, 4.3=Yes, 4.4=Yes, 4.5=Probably yes) maps to **"High risk of bias"** per Table 12.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns because no trial registration or pre-specified statistical analysis plan was available/cited to confirm that the reported RSS/GHQ analyses (and specific time points/models) were pre-specified prior to unblinded outcome data being available.
+
+**b. Rationale:**
+- **Pre-specified analysis plan (5.1):** No trial registry entry, protocol, or statistical analysis plan is referenced or cited anywhere in the article or its reference list. The methods section describes measures and general ANOVA analytic strategy (3×3 ANOVAs of condition by time), but there is no independently date-stamped document confirming this was finalized before outcome data were unblinded. Answer: **No information**.
+- **Selective reporting from multiple outcome measurements (5.2):** Both RSS and GHQ are reported in full, at all three time points, with means, SDs, F-statistics, and p-values, and with additional clinical significance analyses (Table 2, using Jacobson & Truax criteria) — reporting appears comprehensive and consistent for this outcome domain, with no evidence of selective suppression of measurement instruments or time points relevant to burden/distress. Answer: **Probably no**.
+- **Selective reporting from multiple analyses (5.3):** The ANOVA results (main effects and interaction effects) are reported fully, including non-significant main effects (e.g., "no main effect for condition" on RSS), which suggests results were not selectively suppressed based on significance. No alternative adjusted/unadjusted models are hinted at as being omitted. Answer: **Probably no**.
+
+Given 5.1 = No information (no protocol/registration available to verify), but 5.2 and 5.3 = Probably no (full, consistent reporting of both instruments across all timepoints with both significant and non-significant results disclosed), this maps to **"Some concerns"** per Table 14 (absence of a verifiable pre-specified plan alone, without evidence of actual selective reporting, results in "Some concerns" rather than "High risk").
+
+---
+
+# Overall Risk of Bias for "Women's Burden and Distress": **High risk of bias**
+
+**Summary rationale:** Although randomization and reporting concerns are moderate ("Some concerns"), the outcome measurement domain is judged **high risk of bias** because burden/distress was assessed via unblinded self-report in a trial where blinding was not possible and where credibility/expectancy differences between an explicit "plausible contact control" (supportive counselling) and active behavioral treatments could plausibly and likely did influence self-reported outcomes. Additionally, the deviations from intended intervention domain is judged **high risk** due to substantial, unbalanced contamination between the AFCT and stress management arms (71% of AFCT-assigned participants did not receive conjoint therapy as intended). Per RoB 2 guidance, a "High" judgement in any single domain drives the overall outcome-level judgement to **High risk of bias**.

@@ -1,0 +1,114 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 20826832
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk-of-Bias Assessment
+
+**Article ID**: Puschel, 2011
+**Outcome Name**: Compliance with mammogram screening
+**Registration number**: Not reported in the article
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (95% Certainty)
+The article states: "by using a computerized random number generator program, 500 women were randomly selected" and "A stratified randomization method blocking by age (50–59; 60–70) was used to allocate women to each group using a computerized random generator program." This clearly describes computer-generated randomization and block randomization.
+
+**1.2**: **Y** (90% Certainty)
+"A complete data base with 500 eligible women interviewed at baseline was sent to the Fred Hutchinson Cancer Center in the US (i.e. the coordination center) to proceed with a random allocation." This describes central allocation (allocation conducted remotely by an independent coordinating center), which prevents foreknowledge of assignment.
+
+**1.3**: **N** (95% Certainty)
+"No significant differences were observed between groups in the demographic characteristics of the participants." Explicit statement of baseline comparability.
+
+**Result of Domain 1: Low risk (90% Certainty)**
+1.2 = Y, 1.1 = Y, 1.3 = N → meets criteria for Low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **N** (95% Certainty)
+"Blinding participants to their intervention group was not possible in this study." Participants were aware of allocation given the nature of interventions (mail, calls, home visits vs. standard care).
+
+**2.2**: **Y** (90% Certainty)
+The intervention itself (mail, telephone, home visit) was delivered differently across groups, so those delivering it (health educators, physicians for opportunistic advice) necessarily knew participants' allocation. Although outcome-assessing staff at clinic/radiology were blinded, the *intervention deliverers* were not.
+
+**2.3**: **Y** (85% Certainty)
+"About 14% of participants in each group received opportunistic advice" — this nonprotocol co-intervention (opportunistic advice from providers) was balanced across all three arms.
+
+**2.4**: **N** (85% Certainty)
+Loss to follow-up for the final survey was 7.6% overall (92.4% completed), under 10%, and reasons (refusal, non-contact, one death) were balanced and unrelated to intervention failure. Electronic record review (main outcome) was obtained for all randomized participants.
+
+**2.5**: **N** (70% Certainty)
+No substantial evidence of non-adherence exceeding 10% affecting outcome ascertainment; intervention delivery is well documented (100% received mail, 50% received phone/home visit as per protocol design, not non-adherence).
+
+**2.6**: **N** (90% Certainty)
+"An intention to treat analysis was conducted using electronic clinical records." Per instructions, ITT analysis is considered an inappropriate method for addressing adherence-related bias in this context.
+
+**Result of Domain 2: Low risk (85% Certainty)**
+One of 2.1/2.2 = Y (2.2), 2.3 = Y, 2.4 = N, 2.5 = N → meets criteria for Low risk (2.6 not required in this pathway).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **Y** (90% Certainty)
+The outcome is binary (mammogram compliance yes/no) and measured via electronic records: "An intention to treat analysis was conducted using electronic clinical records. They were reviewed for all women and compliance was estimated using the baseline denominators of each group." Data were available for all 500 randomized participants (100%).
+
+**Result of Domain 3: Low risk (90% Certainty)**
+3.1 = Y → Low risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (90% Certainty)
+Outcome measured via electronic records from the radiology unit database and electronic chart — a reliable, objective, predefined measurement method.
+
+**4.2**: **N** (85% Certainty)
+The same electronic record systems were used to ascertain the outcome for all three groups equally; no differential measurement frequency or method reported.
+
+**4.3**: **N** (85% Certainty)
+The outcome (electronic records) is not patient-reported for this measure, and "The analysis of the data was conducted by investigators of the coordination center... They were blinded to the group assignment of participants." Additionally, "Staff at the clinic and at the radiology unit where participants got their mammograms were blinded to the allocation group."
+
+**4.4**: **N** (85% Certainty)
+The outcome (mammogram completion recorded electronically) is an objective measure, not subject to interpretation bias.
+
+**4.5**: **N** (80% Certainty)
+No clear evidence that knowledge of intervention status influenced this objective outcome assessment.
+
+**Result of Domain 4: Low risk (88% Certainty)**
+4.1 = N, 4.2 = N, 4.3 = N → Low risk.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **NI** (75% Certainty)
+No trial registration number or pre-specified analysis plan/protocol publication is mentioned in the article. Per instruction, absence of registration/protocol pre-specification results in NI.
+
+**5.2**: **N** (80% Certainty)
+The outcome was measured via self-report and electronic records as stated in Methods, and both are reported in Results (Table 2); no evidence of selective reporting among multiple possible measurements.
+
+**5.3**: **N** (75% Certainty)
+The analysis method (ITT using electronic records, with rate comparisons) described in Methods matches what is reported in Results; no evidence of selection among multiple analyses for this specific outcome.
+
+**Result of Domain 5: Some concerns (80% Certainty)**
+5.2 = N, 5.3 = N, 5.1 = NI → matches rule for "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment
+
+**Domain 1**: Low risk
+**Domain 2**: Low risk
+**Domain 3**: Low risk
+**Domain 4**: Low risk
+**Domain 5**: Some concerns
+
+**Overall Bias Risk for the Article: Some concerns (85% Certainty)**
+
+Rationale: Four domains were rated "Low risk" and one domain ("Selection of the reported result") was rated "Some concerns" due to the absence of a clearly identifiable trial registration or pre-specified analysis plan, despite no direct evidence of selective outcome reporting. Per the overall assessment rules, one "Some concerns" domain with the remainder rated "Low risk" and no "High risk" domains yields an overall judgment of **Some concerns**.

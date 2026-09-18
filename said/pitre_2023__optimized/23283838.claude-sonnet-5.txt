@@ -1,0 +1,85 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 23283838
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias 2.0 Assessment
+**Outcome:** Between-session habituation (categorical SUDS response, ≥5-point drop from Visit 1 to Visit 2)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- *Sequence generation:* The paper states "Participants were randomly assigned to 250mg of DCS or placebo… by a data manager who had no interaction with participants." No explicit description of the random-number method is given, but given the involvement of an independent data manager and identical capsules, a "Probably yes" judgement is reasonable for randomness of the sequence.
+- *Allocation concealment:* "Participants were randomly assigned to 250mg of DCS or placebo in identical-appearing capsules by a data manager who had no interaction with participants." This constitutes an adequate, independent, concealed allocation process (Probably yes/Yes).
+- *Baseline imbalance:* The paper reports: "Participants did not differ across group in regard to: gender, ethnicity, use of medication, use of antidepressants, LSAS scores at Visit 1, average SUDS for the speech in Visit 1, or Social Phobia Scale ratings at Visit 1 (ps > .16). … Groups differed by age (p = .019)." A single significant difference among many baseline comparisons in a very small trial (N=34) is compatible with chance, and the age effect was tested as a covariate and "could not [explain any group effects]." This does not indicate a problem with the randomization process itself.
+
+Because allocation was concealed, the sequence was plausibly random, and the one notable baseline difference (age) is compatible with chance and did not confound the outcome, the domain is judged low risk.
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention)
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- *Blinding of participants/personnel:* "Adequacy of the blind was assessed by having both participants and experimenters guess treatment assignment based on Visit 1 of the study; neither participants nor experimenters were able to discern assignment (ps > .15)." This indicates successful blinding of both participants and those delivering/administering the intervention.
+- Because blinding was successful, deviations from intended intervention arising from "trial context" (recruitment/engagement effects driven by knowledge of assignment) are unlikely.
+- No non-protocol interventions, co-interventions, or unblinding-related deviations are reported. The single-dose, single-visit design leaves essentially no opportunity for non-adherence to the assigned pill (participants "ingested their assigned pill immediately prior to beginning preparation").
+- *Analysis:* The authors excluded 4 participants (2 per group) who did not complete Visit 2 from the analysis, but this exclusion is due to missing outcome data (see Domain 3), not a per-protocol/as-treated analysis or exclusion of adherent-only participants. Given the balanced blinding and single-dose nature of the intervention, an appropriate assignment-based analysis was essentially available for all who provided outcome data.
+
+Given adequate blinding of participants/personnel and no evidence of context-driven deviations affecting the outcome, this domain is judged low risk.
+
+---
+
+## 3. Missing outcome data
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- Outcome data (Visit 2 SUDS, required to compute "between-session habituation") were unavailable for 4 of 34 randomized participants (~12%): "Four participants (2 DCS, 2 placebo) did not return for Visit 2 and were not included in any analyses."
+- Missingness was balanced numerically between arms (2 vs 2), which is reassuring, but the *reasons* given—"Two participants became unreachable (change in or loss of phone number: 1 DCS, 1 placebo), and two stated that they preferred not to continue in the study (1 DCS, 1 placebo)"—are not clearly unrelated to the outcome (e.g., "preferred not to continue" could plausibly relate to continued high anxiety, i.e., the true value of the outcome).
+- The authors explicitly acknowledge: "Only those participants completing Visit 2 are analyzed because the intent is to assess the sensitivity of the clinical assay, not evaluate the real-world effectiveness of an intervention package." No sensitivity analyses or imputation approaches were used to demonstrate that the results were robust to the missing data, and 12% missingness in a sample of only 30 analyzed participants could plausibly have a non-trivial impact on a categorical (dichotomous) outcome like "responder" status.
+- Because missingness could plausibly depend on the true (unmeasured) outcome value, but there is no strong indication that it certainly did (small, balanced numbers, plausible non-informative reasons such as "unreachable"), this is judged as "some concerns" rather than "high risk."
+
+---
+
+## 4. Measurement of the outcome
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- The outcome (SUDS, a self-report/participant-reported measure) was measured identically in both groups at both timepoints using a standardized script and anchors ("Subjective Units of Distress Scale (SUDS)…presented along with anchors based on its use in established treatment").
+- Because this is a participant-reported outcome, the "outcome assessor" is effectively the participant. Blinding of participants was verified to be successful ("neither participants nor experimenters were able to discern assignment (ps > .15)"), so knowledge of assigned intervention is unlikely to have differentially influenced self-reported SUDS ratings.
+- Measurement methods and timing (2 minutes before, immediately before, every 2 minutes during, and at the end of the speech) were identical across groups and visits, so ascertainment did not differ by group.
+
+Given successful blinding of the participant (who is the outcome assessor for this self-report measure) and identical measurement procedures across arms, this domain is judged low risk.
+
+---
+
+## 5. Selective reporting
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- The manuscript explicitly pre-specifies between-session habituation as the primary outcome: "Our primary measure of DCS's exposure-facilitating effect was between-session habituation: whether or not the participants showed less distress during the second speech compared to the first." This matches exactly the reported analysis (chi-square test on categorical responder status, defined a priori as "a drop of at least 5 points in average SUDS across the exposure across visits").
+- The result for this specific pre-specified outcome/analysis is reported fully and unambiguously: "Participants in the DCS group were more likely to respond, defined as showing an average SUDS change of at least a 5 point decrease (75%) than those in the placebo group (36%), as assessed by the chi-square test, χ2(1) = 4.69, p = .030."
+- There is no indication that this particular outcome measurement/analysis was selected post hoc from among multiple alternative operationalizations reported for a between-session habituation "responder" definition (the 5-point cutoff and analysis approach are described in the Methods a priori, prior to Results).
+- Cross-referencing with the trial registration record did not reveal discrepancies in the definition or reporting of this specific outcome (between-session habituation/categorical responder analysis) that would suggest selection based on the results.
+
+Because the exact analysis for this outcome corresponds to the pre-specified definition described in the Methods, and no alternative competing definitions/analyses for this specific outcome appear to have been suppressed, this domain is judged low risk.
+
+---
+
+# Overall Risk of Bias Judgement for "Between-session Habituation"
+
+Given that four of five domains are judged "Low risk" and one domain ("Missing outcome data") is judged "Some concerns," the overall risk-of-bias judgement for this outcome is:
+
+**Overall: Some concerns**
+
+(Per RoB 2 guidance, a judgement of "Some concerns" in at least one domain, with no domain at "High risk," results in an overall judgement of "Some concerns.")

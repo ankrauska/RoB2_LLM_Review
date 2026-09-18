@@ -1,0 +1,70 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 10844830
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Venous concentrations of endothelin-1 (ET-1)
+## Effect of interest: Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** The trial states: "Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1... or group 2." No details are provided on how the allocation sequence itself was generated (e.g., computer-generated random numbers, random number tables), nor on the specific features of the envelope method that would ensure adequate concealment (e.g., whether envelopes were opaque, sequentially numbered, and sealed with tamper-proof material). Per RoB 2 guidance, unqualified use of "sealed envelopes" without further detail is insufficient to confirm adequate concealment, and simple use of the word "randomized" is not sufficient evidence of a truly random sequence.
+
+Further, there is evidence of baseline imbalance in a key prognostic variable: pulmonary artery pressure was significantly greater in group 1 (25±5 mmHg) than group 2 (19±5 mmHg) before CPB, which the authors themselves acknowledge: "Pulmonary arterial pressure values were not equal in the two groups before CPB, indicating the difficulty of getting a good match in this kind of a study." Given that pulmonary artery pressure is plausibly related to endothelin physiology (the paper notes "arterial ET-1 also correlates directly with right atrial pressure, pulmonary vascular resistance..."), this imbalance raises concern that randomization may not have fully balanced prognostic factors, though it does not clearly indicate deliberate subversion of allocation. Sex distribution was also markedly imbalanced (9/1 vs 5/5), though not necessarily linked to the outcome. Combined with lack of information on sequence generation/concealment, this supports a judgement of "Some concerns" rather than "Low risk."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention at baseline): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** Participants were under general anesthesia/mechanically ventilated at the time the intervention (FIO2 level) was applied, so participant awareness of allocation is not relevant to this period. Carers/personnel delivering the intervention (anesthesiologists) were necessarily aware of the assigned FIO2, since they directly set it on the ventilator ("FIO2 was set to either 1.0 (high, group 1) or 0.35 (moderate, group 2) with a mean exposure time of 70 min"); this is an inherent feature of the intervention rather than an unblinded co-intervention subject to manipulation. There is no evidence that non-protocol interventions or failures in implementing the assigned FIO2 arose because of the "trial context" (e.g., no reported crossovers, contamination, or unplanned changes in the ventilatory strategy): "Except for the FIO2, the ventilatory mode did not differ from the pre-bypass settings in order to preserve equal ventilatory conditions between the groups." All 20 randomized patients appear to have been analysed according to their randomized group (an ITT-consistent analysis), with no reported post-randomization exclusions based on assigned intervention. Therefore, there is no indication of bias in the effect of assignment to intervention due to deviations from intended intervention.
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:** While outcome data appear to have been collected for all 20 randomized patients across the sampling time points, the authors explicitly excluded one participant's arterial ET-1 data from the statistical analysis: "Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation."
+
+This exclusion was made post hoc and explicitly on the basis of the outcome value being unusual/extreme (an "outlier"), rather than for a documented reason unrelated to the true value of the outcome (e.g., equipment failure). This is a clear example of missingness in the outcome being related to its true value, which per RoB 2 guidance is a primary driver of bias due to missing outcome data ("It is likely that missingness in the outcome depended on its true value" — signalling question 3.4). Because this exclusion was not balanced or justified by an independent, outcome-unrelated reason, and no sensitivity analysis was reported to demonstrate the result was robust to inclusion of this participant, this domain is judged at high risk of bias for the ET-1 outcome specifically.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** ET-1 was measured using a standardized, validated laboratory sandwich enzyme immunoassay applied identically to all samples regardless of group assignment: "For ET-1 and Big ET-1 analyses, a sandwich-type enzyme immunoassay (Biomedica, Vienna, Austria) was used. Direct measurements of the peptides were performed in duplicate according to the manufacturer's instructions." This is an objective, automated laboratory outcome assessment method (an "observer-reported outcome not involving judgement" in RoB 2 terminology), performed identically across both intervention groups, using pre-specified detection limits and quality-control coefficients of variation. There is no indication that measurement or ascertainment of the outcome differed between groups, and given the objective/automated nature of the ELISA assay, it is highly unlikely that knowledge of group assignment by laboratory personnel could have influenced the numerical result. Therefore, risk of bias in measurement of this outcome is low.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** The published article reports ET-1 (and Big ET-1) concentrations at all four pre-specified time points (pre-bypass, +20 min after CPB, 90 min in ICU, and postoperative day 1) for both arterial and mixed venous samples, in a manner generally consistent with the stated study aims ("The effects of each FIO2 on arterial and mixed venous concentrations of endothelin-1 (ET-1) and its precursor, Big ET-1, were measured"). There is no obvious evidence that the reported ET-1 result was selected from among multiple alternative measurements/analyses based on the results (e.g., no evidence of multiple assays, multiple statistical models, or alternative outcome definitions being tried and only the most favorable reported).
+
+However, there is no explicit statement or accessible documentation (trial protocol/statistical analysis plan) confirming that the analysis plan for ET-1 was pre-specified and finalized before unblinded outcome data were available. Additionally, the post hoc exclusion of the "outlier" data point (discussed under missing data) was a data-dependent analytic decision made after inspecting the results, which further raises some concern about potential undocumented flexibility in the analysis. Without access to a trial registry entry or protocol confirming a priori specification of the analysis (including whether exclusion rules for outliers were pre-specified), a judgement of "Some concerns" rather than "Low risk" is warranted.
+
+---
+
+## Overall summary table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended intervention | Low risk |
+| 3. Missing outcome data | High risk |
+| 4. Measurement of the outcome | Low risk |
+| 5. Selective reporting | Some concerns |
+| **Overall risk of bias** | **High risk** (driven by Domain 3) |
+
+**Overall judgement rationale:** Per RoB 2 guidance, a "High risk of bias" judgement in any single domain results in an overall "High risk of bias" judgement for the result. The post-hoc exclusion of an outcome data point based on its extreme/unusual value (Domain 3) is sufficient to classify the overall risk of bias for the venous ET-1 outcome as **High**.

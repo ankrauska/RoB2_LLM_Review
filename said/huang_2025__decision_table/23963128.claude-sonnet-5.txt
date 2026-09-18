@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 23963128
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Piquette, 2013
+**Outcome Name**: Effects of supervision on patient care, measured by team checklist score
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (90% Moderate-High Certainty)
+The article states residents were "randomized to one of three levels of supervision" but does not describe the specific method used to generate the allocation sequence (no mention of computer-generated randomization, block randomization, etc.).
+
+**1.2**: NI (95% High Certainty)
+No information is provided regarding allocation concealment procedures (no mention of central allocation, sealed envelopes, or similar safeguards).
+
+**1.3**: N (85% Moderate Certainty)
+Table 1 shows baseline characteristics (age, gender, ICU experience, simulation experience, level of training, subspecialty, confidence score) that appear generally comparable across the three groups. No statistically significant differences are reported, and differences appear attributable to chance/random allocation.
+
+**Result of Domain 1**: Some concerns (85% Moderate Certainty)
+*Reason*: Since 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (90% Moderate-High Certainty)
+Residents were aware of their supervision condition (direct, immediately available, or distant) as this was based on physical proximity of the supervisor, which is inherently unblindable to participants.
+
+**2.2**: Y (90% Moderate-High Certainty)
+Fellows (intervention deliverers) were aware of their assigned supervision role, as they had to physically position themselves according to the assigned condition.
+
+**2.3**: NI (70% Low-Moderate Certainty)
+No explicit information is provided about non-protocol interventions or co-interventions that could have differentially affected groups.
+
+**2.4**: N (75% Moderate Certainty)
+No dropout or failure to implement the intervention is reported; all 53 residents completed their assigned supervised scenarios (Table 2 shows full n for each group).
+
+**2.5**: N (70% Low-Moderate Certainty)
+While there was variability in resident behavior (e.g., in the immediately available group, some residents called immediately, some later), this reflects the natural design of that supervision level rather than non-adherence to the assigned intervention protocol.
+
+**2.6**: NI (75% Moderate Certainty)
+No specific analysis addressing effects of adherence/non-adherence is described; standard ANOVA was used to compare the three groups, which does not correspond to an "appropriate" or clearly "inappropriate" adherence-correction method as defined.
+
+**Result of Domain 2**: High risk (80% Moderate Certainty)
+*Reason*: One of 2.1/2.2 = Y, 2.3 = NI (falls in NI/N/PN category), and 2.6 = NI (falls in NI/N/PN category) → per the algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (95% High Certainty)
+All 53 randomized residents are accounted for in Table 2 (18 direct + 16 immediately available + 19 distant = 53), with complete team checklist score data reported for all participants (100% data availability).
+
+**Result of Domain 3**: Low risk (95% High Certainty)
+*Reason*: 3.1 = Y directly yields "Low risk" per the algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (85% Moderate Certainty)
+The team checklist score was a predefined, structured measurement tool developed specifically for this study with content validity established through the checklist development process; it appears methodologically reliable for measuring the intended construct.
+
+**4.2**: N (85% Moderate Certainty)
+The same checklist and measurement procedure was applied identically across all three groups during the supervised scenario, with items scored based on whether tasks were completed by any team member.
+
+**4.3**: Y (80% Moderate Certainty)
+Outcome assessors (raters reviewing videotapes, and the checklist recorded in real-time) were not blinded — the level of supervision (physical presence/absence of the fellow) would be visually apparent in videotaped recordings, making it very difficult for assessors to be unaware of group allocation.
+
+**4.4**: Y (75% Moderate Certainty)
+The team checklist score, while task-based, still requires assessor judgment regarding whether an item was adequately completed; this involves an element of subjective assessment by the outcome assessor (rater).
+
+**4.5**: N (70% Low-Moderate Certainty)
+Although assessors were likely aware of allocation, there is no clear evidence provided in the article that this awareness influenced the assessment. The study used two independent raters, a calibration process, and a third independent assessor to resolve discrepancies, suggesting efforts to minimize bias despite lack of blinding.
+
+**Result of Domain 4**: Some concerns (80% Moderate Certainty)
+*Reason*: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, 4.5 = N → per the algorithm, this combination yields "Some concerns."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85% Moderate Certainty)
+No trial registration number is reported, and there is no mention of a prespecified, publicly available analysis plan finalized before unblinded data were available.
+
+**5.2**: N (80% Moderate Certainty)
+The team checklist score is described as a single predefined outcome measurement method (percentage of checklist items completed), consistently reported in both Methods and Results without evidence of selection from multiple alternative outcome measures.
+
+**5.3**: N (80% Moderate Certainty)
+The analysis method (one-way ANOVA) specified in the Methods for the team checklist score matches exactly the analysis reported in the Results, with no evidence of selection from multiple analysis approaches.
+
+**Result of Domain 5**: Some concerns (80% Moderate Certainty)
+*Reason*: 5.2 = N, 5.3 = N, and 5.1 = NI → per the algorithm, this combination yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result: High Risk** (85% Moderate-High Certainty)
+
+*Reason*: Domain 2 was rated as "High risk." Per the overall assessment algorithm, if any single domain is rated "High Risk," the overall risk of bias for the article is "High Risk," regardless of the ratings in other domains.
+
+**Summary of Domain Results**:
+- Domain 1 (Randomization): Some concerns
+- Domain 2 (Deviations from intended interventions): High risk
+- Domain 3 (Missing outcome data): Low risk
+- Domain 4 (Measurement of outcome): Some concerns
+- Domain 5 (Selection of reported result): Some concerns

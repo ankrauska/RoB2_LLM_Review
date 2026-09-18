@@ -1,0 +1,314 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 21216670
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read through the FLAME trial article by Chollet et al. (2011) published in Lancet Neurology, along with the associated tables, figures, and clinical trial registry protocol information. I have a thorough understanding of the study's key elements, including:
+
+**Study design**: Multicentre (9 French stroke units), double-blind, randomized, placebo-controlled trial (Phase IIb) testing fluoxetine 20mg/day vs placebo for 3 months alongside physiotherapy in patients with acute ischaemic stroke and moderate-to-severe motor deficits.
+
+**Key methodological details**: Randomization by centre with block size 4, allocation concealment via sequentially numbered opaque envelopes, FMMS as primary outcome, sample size calculated for 90% power, enrollment stopped early at 118 patients (vs planned 168) due to lower-than-expected dropout.
+
+**Key findings**: Significant improvement in FMMS score at day 90 with fluoxetine (adjusted mean difference of 9.7 points), improvements in both upper and lower limb subscores, higher proportion of independent patients (mRS 0-2), lower depression incidence in the fluoxetine group, and generally comparable adverse event profiles between groups (with more GI disturbances in the fluoxetine arm).
+
+**Limitations noted by the authors**: Small sample size, non-representative population (selected for motor deficit), no long-term follow-up data (though the registry indicates M12 assessments were planned), potential for random error, and the analytical (rather than functional) nature of the primary outcome measure (FMMS vs mRS).
+
+**Discrepancies I noted between the published article and the registered protocol** that would be worth flagging for a systematic review/risk of bias assessment:
+- The registry lists enrollment as "100" (estimated) while the actual enrolled/analyzed sample was 118/113
+- The protocol/registry specifies eligibility with Motor NIHSS ≥5, while the published inclusion criteria description doesn't emphasize this threshold as clearly
+- The registry indicates M12 (12-month) assessments were planned as secondary outcomes (Fugl-Meyer, NIHSS, MADRS, mRS, mortality), but the published article only reports data through day 90, with no mention of 12-month results—this is an important point regarding selective outcome reporting
+- The trial completion date shown in the registry (2010-12) postdates the article submission, suggesting the 12-month data may have been collected but not reported in this publication
+
+I'm ready to answer specific questions you have about the trial's methodology, results, risk of bias assessment (e.g., using Cochrane RoB tool domains), data extraction for a meta-analysis, or how this study fits within the broader evidence base on SSRIs for post-stroke motor recovery. Please let me know what aspect of the systematic review you'd like me to focus on.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I'm ready to evaluate the first domain.
+
+I understand the task: I will use the Cochrane RoB 2 tool to assess risk of bias for the FLAME trial (Chollet et al., 2011), specifically for the outcome **Progression in the Fugl-Meyer Motor Scale** (the primary outcome, measured as change in FMMS score from day 0 to day 90).
+
+I will evaluate this outcome across the five standard RoB 2 domains:
+
+1. **Bias arising from the randomization process**
+2. **Bias due to deviations from intended interventions**
+3. **Bias due to missing outcome data**
+4. **Bias in measurement of the outcome**
+5. **Bias in selection of the reported result**
+
+For each domain, I will answer the signaling questions using the response options provided (Yes / Probably yes / Probably no / No / No information), base my judgments strictly on facts reported in the article (not speculation or extrapolation), and provide a reasoned justification citing specific evidence from the text. I will then reach an overall risk-of-bias judgment for each domain, and an overall risk-of-bias judgment for the outcome as a whole, following the RoB 2 algorithm logic.
+
+Please go ahead and present Domain 1 (Bias arising from the randomization process), or let me know if you'd like me to proceed directly with all domains in sequence.
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+**Domain 1: Risk of bias arising from the randomization process**
+
+**1.1. Was the allocation sequence random?**
+
+- **Response: Yes**
+- **Reason:** The article explicitly states: "Randomisation was balanced by centre, with an allocation sequence based on a block size of four, generated with a computer random-number generator by the pharmacist at the coordinating centre (Hôpital Purpan, Toulouse)." This clearly describes a random component (computer-generated random-number sequence) in the generation of the allocation sequence.
+
+**1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?**
+
+- **Response: Yes**
+- **Reason:** The article states: "The pharmacist assigned the participants to the trial groups in accordance with the randomisation list. Allocation was concealed by use of sequentially numbered opaque envelopes. Fluoxetine and placebo capsules were both prepared by the pharmacist for the study... The placebo was identical to the active drug in appearance and packaging." This describes an independent pharmacist controlling allocation, use of sequentially numbered opaque envelopes, and identical placebo/active drug packaging — a robust concealment mechanism that would prevent foreknowledge of assignment by enrolling investigators or participants.
+
+**1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?**
+
+- **Response: Yes**
+- **Reason:** The article explicitly reports notable baseline imbalances directly relevant to the primary outcome: "mean age was slightly higher and previous history of stroke was more frequent in the fluoxetine group than in the control group. FMMS score at inclusion was higher in the fluoxetine group than in the placebo group." Specifically, Table 2 shows: Total FMMS score at baseline = 17.1 (SD 11.7) in fluoxetine vs 13.4 (SD 8.8) in placebo — a difference of nearly 27% in the baseline value of the very variable used to calculate the primary outcome (change in FMMS from day 0 to day 90). Similarly, previous stroke was more common in the fluoxetine group (17% vs 7%) and mean age differed (66.4 vs 62.9 years). Because FMMS at baseline is a direct baseline measure of the outcome variable itself, this imbalance is particularly concerning, as a lower baseline score gives more room for improvement (potential regression to the mean or ceiling effects), which could bias the estimated treatment effect. The fact that investigators felt compelled to statistically adjust for "centre, age, history of stroke, and FMMS score at inclusion" in all primary analyses further underscores that this imbalance was recognized as clinically/statistically meaningful and could threaten the validity of a naïve unadjusted comparison. While the block randomization and concealment procedures appear robust, this magnitude of imbalance in a key prognostic/outcome-related baseline variable is not clearly compatible with chance alone in this context, or at minimum raises sufficient concern to answer "Yes" per the RoB 2 guidance on imbalance in baseline measures of the outcome variable.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 1: Some concerns**
+
+**Justification:** Although the randomization sequence generation (1.1) and allocation concealment (1.2) were both adequate and well-documented ("Yes" for both), the trial exhibited a meaningful baseline imbalance in the primary outcome variable itself (FMMS score at inclusion: 17.1 vs 13.4) as well as in other prognostic factors (age, previous stroke history) that could plausibly influence the magnitude of subsequent motor recovery. This is not simply a case of isolated, non-substantial random imbalance; it is the very variable used to compute the change score. Per the RoB 2 algorithm, when the randomization process itself is judged adequate (Y/PY for 1.1 and 1.2) but there is a signal of a problematic baseline imbalance (Y/PY for 1.3), the domain-level judgment should be **"Some concerns"** rather than "Low risk," reflecting the possibility that chance imbalance in a small trial (n=118) could have influenced the estimated treatment effect, despite proper randomization and concealment procedures. The authors' own statistical adjustment for this imbalance is a mitigating factor but does not fully eliminate the concern, especially since not all potential confounders may have been captured.
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+**Domain 2: Risk of bias due to deviations from the intended interventions**
+
+**Note on approach:** I will assess this domain using the **effect of assignment to intervention** framework (rather than effect of adhering to intervention), as this is the standard and most appropriate effect of interest for this double-blind, placebo-controlled trial. The trial used a "full analysis set" (a form of modified intention-to-treat analysis) as its primary analysis strategy, which aligns with the assignment-to-intervention estimand.
+
+---
+
+**2.1. Were participants aware of their assigned intervention during the trial?**
+
+- **Response: No**
+- **Reason:** The article explicitly states: "Patients, carers, all site study staff, and investigators were masked to treatment assignment." Additionally, "The placebo was identical to the active drug in appearance and packaging." There is no evidence in the article suggesting that blinding of participants was broken. While transient digestive disorders were somewhat more frequent in the fluoxetine group (25% vs 11%, p=0.19, not statistically significant), this difference alone is not strong evidence that participants became aware of their allocation.
+
+**2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?**
+
+- **Response: No**
+- **Reason:** The article states: "Participants, carers, and physicians assessing the outcome were masked to group assignment," and separately, "Patients, carers, all site study staff, and investigators were masked to treatment assignment." Allocation concealment was robust (sequentially numbered opaque envelopes, identical placebo/active packaging prepared by an independent pharmacist), supporting that carers and treating personnel remained unaware of assignment throughout the trial.
+
+*Since the answers to 2.1 and 2.2 are both "No," questions 2.3–2.5 (which apply only if Yes/Probably yes to 2.1 or 2.2) are not applicable, and the assessment proceeds directly to question 2.6.*
+
+**2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?**
+
+- **Response: Yes**
+- **Reason:** The article states: "Analysis was of all patients for whom data were available (full analysis set)" — 113 of 118 randomized patients (57 fluoxetine, 56 placebo) were included in the primary analysis, with only 2 deaths and 3 withdrawals excluded (documented and balanced in the trial flow diagram, Figure 1). This constitutes a modified intention-to-treat (mITT) analysis excluding only participants with missing outcome data, which is considered an appropriate analysis method per RoB 2 guidance. There is no evidence of a naïve per-protocol or as-treated analysis being used for the primary outcome.
+
+**2.7. Was there potential for a substantial impact of the failure to analyse participants in the group to which they were randomized?**
+
+- **Response: Not applicable**
+- **Reason:** Since the answer to 2.6 was "Yes" (appropriate analysis was used), this question does not need to be answered.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 2 (Effect of Assignment to Intervention): Low**
+
+**Justification:** The trial maintained double-blinding of participants, carers, and outcome assessors throughout the study, with no evidence of unblinding or deviations from intended intervention arising from the trial context. The primary analysis used a full analysis set (mITT), an appropriate method for estimating the effect of assignment to intervention, with minimal and balanced exclusions (2 deaths, 3 withdrawals total, clearly documented in Figure 1) that are unlikely to introduce substantial bias. There is no indication of important non-protocol interventions, implementation failures, or non-adherence that would compromise this domain. Compliance data further support this judgment, as treatment adherence (cumulative dose, dose intensity, relative dose intensity) was similar and high in both groups (~95% relative dose intensity, p=0.854), indicating good adherence to the assigned intervention in both arms.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+**Domain 3: Risk of bias due to missing outcome data**
+
+**3.1. Were data for this outcome available for all, or nearly all, participants randomized?**
+
+- **Response: Yes**
+- **Reason:** Of 118 participants randomized (59 fluoxetine, 59 placebo), 113 (57 fluoxetine, 56 placebo) were included in the full analysis set for the primary outcome (FMMS progression) at day 90. This represents 95.8% of randomized participants (113/118) with available outcome data, meeting the "nearly all" threshold (~95%) suggested for continuous outcomes. Specifically, only 5 participants had missing data: 2 patients died (1 per group) and 3 withdrew from the study (1 fluoxetine, 2 placebo), as detailed in Figure 1 (Trial profile). The small amount of missing data (2/59 = 3.4% in fluoxetine; 3/59 = 5.1% in placebo) is unlikely to have made an important difference to the estimated treatment effect.
+
+*Since the answer to 3.1 is "Yes," questions 3.2–3.4 are not applicable per the RoB 2 algorithm, and the domain-level judgment is based directly on 3.1.*
+
+**3.2 / 3.3 / 3.4: Not applicable**
+
+- **Reason:** These signaling questions are only triggered if the response to 3.1 is "No" or "Probably no." Since nearly all randomized participants had outcome data available, these follow-up questions do not need to be assessed.
+
+---
+
+**Additional supporting observations (for context, not directly required by algorithm but relevant to judgment quality):**
+
+- The reasons for missing data are documented and appear clinically severe but unrelated to the true value of the motor outcome (FMMS): septic shock and respiratory distress (deaths), and severe hypoxia, kidney tumour, and pulmonary embolism (withdrawals). These are serious, largely idiosyncratic medical events not obviously linked to the degree of motor recovery, reducing concern that missingness depended on the outcome's true value.
+- There is a slight numerical imbalance in missing data between groups (2 missing in fluoxetine vs 3 missing in placebo), but given the very small absolute numbers (out of 59 per group), this modest difference is compatible with chance and does not suggest a systematic pattern of differential attrition.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 3: Low**
+
+**Justification:** Outcome data were available for 113/118 (95.8%) of randomized participants, meeting the "nearly all" threshold for continuous outcomes under RoB 2 guidance. The small number of missing participants (5 total) were lost due to well-documented, serious medical events (death, severe hypoxia, kidney tumour, pulmonary embolism) that do not appear plausibly related to the true value of the motor recovery outcome (FMMS). The pattern and small magnitude of missingness, balanced across both groups, is very unlikely to have introduced meaningful bias into the estimated treatment effect. Therefore, this domain is judged as **Low risk of bias**.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+**Domain 4: Risk of bias in measurement of the outcome**
+
+**4.1. Was the method of measuring the outcome inappropriate?**
+
+- **Response: No**
+- **Reason:** The primary outcome, the Fugl-Meyer Motor Scale (FMMS), is explicitly described in the article as "an index that is widely used for assessment of motor recovery after stroke and has excellent intra-rater and inter-rater reliability and validity," citing a specific validation reference (Gladstone et al., 2002). This is a well-established, validated instrument sensitive to changes in motor function across a wide range (0–100 points), and there is no indication that it would be insensitive to plausible intervention effects in this population (patients with FMMS ≤55 at baseline, allowing ample room to detect improvement).
+
+**4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?**
+
+- **Response: No**
+- **Reason:** The article states: "All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment." This indicates that the same standardized measurement method, instrument, and assessment schedule (day 0, 30, 90) were applied uniformly to both treatment groups, with no evidence of differential timing, methods, or additional assessment opportunities for either group.
+
+**4.3. Were outcome assessors aware of the intervention received by study participants?**
+
+- **Response: No**
+- **Reason:** The article states: "Participants, carers, and physicians assessing the outcome were masked to group assignment," and more broadly, "Patients, carers, all site study staff, and investigators were masked to treatment assignment." This masking statement encompasses all site study staff, which would include the physiotherapists conducting the FMMS assessments. Additionally, allocation concealment was robust: identical-appearing placebo and active drug capsules, prepared and dispensed by an independent pharmacist using sequentially numbered opaque envelopes, with no indication in the article that this blinding was compromised for outcome assessors specifically.
+
+*Since the answer to 4.3 is "No" (assessors were blinded), questions 4.4 and 4.5 are not applicable per the RoB 2 algorithm.*
+
+**4.4 / 4.5: Not applicable**
+
+- **Reason:** These signaling questions are only triggered if the response to 4.3 is "Yes" or "Probably yes." Since outcome assessors were reported to be blinded to intervention assignment, these follow-up questions do not need to be assessed.
+
+---
+
+**Additional consideration:** While transient digestive disorders (nausea, diarrhoea, abdominal pain) were somewhat more common in the fluoxetine group (25% vs 11%, though not statistically significant at p=0.19), there is no explicit evidence in the article that this side-effect profile led to unblinding of the physiotherapists conducting the FMMS assessments, or that assessors' judgments were influenced by any perceived knowledge of group assignment. FMMS assessment, while involving some rater judgment (each item rated as not/partly/fully performed), was conducted by trained physiotherapists following a standardized, validated protocol, reducing the likelihood of assessment bias even in the event of partial unblinding.
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 4: Low**
+
+**Justification:** The outcome measurement method (FMMS) was appropriate and validated, applied identically and at the same time points across both intervention groups, and outcome assessors (physiotherapists) were reported to be blinded to treatment assignment as part of a rigorous double-blind design with matched placebo and concealed allocation. There is no evidence in the article to suggest that measurement or ascertainment of the outcome differed between groups or that assessors' blinding was compromised. Therefore, this domain is judged as **Low risk of bias**.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+**Domain 5: Risk of bias in selection of the reported result**
+
+**5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?**
+
+- **Response: Probably yes**
+- **Reason:** The trial is registered with ClinicalTrials.gov (NCT00657163), as stated in both the abstract ("This trial is registered with ClinicalTrials.gov, number NCT00657163") and the Methods section. The registry confirms the primary outcome ("Progression in the Fugl-Meyer Motor Scale," timeframe M3) matches what was reported in the publication. The Methods section also describes a detailed a priori sample size/power calculation ("The trial was designed to have greater than 90% power to detect a 40% difference in the change in the FMMS score... if 100 patients were enrolled, assuming a spontaneous 30-point (SD 18) mean increase at day 90"), suggesting a pre-specified analysis plan existed. However, since the full statistical analysis plan (SAP) document itself is not available/presented, and only the registry entry and Methods description can be verified, this warrants "Probably yes" rather than "Yes."
+
+**5.2. Is the numerical result being assessed likely to have been selected from multiple eligible outcome measurements within the outcome domain?**
+
+- **Response: No**
+- **Reason:** The primary outcome domain (motor recovery) was measured using a single, clearly pre-specified instrument — the FMMS — with the primary outcome explicitly defined as "the mean change in FMMS score between inclusion (day 0) and day 90." This matches exactly with the registered outcome ("Progression in the Fugl-Meyer Motor Scale," timeframe M3). While the article reports total score as well as upper and lower limb subscores, these are components of the single validated FMMS instrument, not alternative competing measurements of the same construct selected post hoc. There is no evidence that other candidate scales/timepoints (e.g., FMMS at day 30, or other motor scales) were suppressed in favor of the day 90 total score due to more favorable results — in fact, Figure 2 reports FMMS scores at days 0, 30, and 90 consistently for both groups, and Table 3 reports total, upper, and lower limb data transparently.
+
+**5.3. Is the numerical result being assessed likely to have been selected from multiple eligible analyses of the data?**
+
+- **Response: Probably yes**
+- **Reason:** The article explicitly states: "We did a multiple linear regression analysis to control for centre and baseline factors that showed treatment group imbalance." This indicates that the covariates included in the adjusted primary analysis (age, history of stroke, FMMS score at inclusion) were selected *after* observing baseline imbalances between groups, rather than being specified in advance in a fixed, pre-determined analysis plan. This data-dependent approach to covariate selection for the primary analysis raises the possibility that the adjustment strategy — and consequently the reported result — was influenced by data patterns rather than a strictly pre-specified plan. There is no available protocol/SAP document explicitly pre-specifying this exact adjusted model, so it cannot be confirmed that this was the only eligible analysis approach intended a priori. This creates reasonable concern that an alternative (e.g., unadjusted) analysis might have been considered or conducted, with the adjusted version reported due to it producing a clearer/stronger result (though the adjusted and reported unadjusted-like results in Table 3 — median differences with p=0.0006 — are consistent, which is a mitigating factor).
+
+---
+
+**Domain-level Risk-of-Bias Judgement for Domain 5: Some concerns**
+
+**Justification:** While there is no evidence of selective outcome reporting among multiple candidate outcome measurements (5.2 = No), and the trial was registered with a matching primary outcome (5.1 = Probably yes), the explicit statement that regression covariates were chosen "to control for centre and baseline factors that showed treatment group imbalance" indicates a degree of data-dependent flexibility in the analytical approach for the primary result (5.3 = Probably yes). Without access to a fully pre-specified, locked statistical analysis plan detailing the exact adjusted model in advance, it cannot be ruled out that this analytical choice was influenced by the observed data, which is sufficient under RoB 2 guidance to warrant a judgment of **Some concerns** for this domain.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+**Overall Predicted Direction of Bias: Unpredictable**
+
+**Reason:** The concerns identified across domains point in potentially opposing directions, making the net direction of bias difficult to predict with confidence:
+
+- **Domain 1 concern (baseline imbalance):** The fluoxetine group had a *higher* baseline FMMS score (17.1 vs 13.4, i.e., milder motor deficit), which could work in *favour of the experimental group* if milder baseline deficits are associated with greater absolute recovery potential. However, the fluoxetine group also had *older age* and *more frequent previous stroke history* — both negative prognostic factors for stroke recovery — which would tend to work *against* the experimental group (i.e., bias towards the null or favouring the comparator). These competing imbalances do not clearly point in one consistent direction.
+- **Domain 5 concern (analytic flexibility):** The post-hoc selection of covariates for adjustment ("to control for centre and baseline factors that showed treatment group imbalance") introduces some uncertainty about whether the reported result reflects the most favourable analytic choice, but there is no direct evidence indicating in which direction (if any) this would have skewed the result.
+
+Given that the identified concerns do not consistently align toward inflating or deflating the treatment effect in a predictable direction, and given the instruction to avoid speculation beyond what is reported, the most defensible judgment is **Unpredictable**.
+
+---
+
+**Overall Risk-of-Bias Judgement: Some concerns**
+
+**Justification (per RoB 2 algorithm):**
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions | Low |
+| 3. Missing outcome data | Low |
+| 4. Measurement of the outcome | Low |
+| 5. Selection of the reported result | Some concerns |
+
+Following the standard RoB 2 algorithm for reaching an overall risk-of-bias judgement:
+- The overall judgement is **"High risk"** only if at least one domain is judged "High risk," OR if multiple domains are judged to have "Some concerns" in a way that substantially lowers confidence in the result.
+- The overall judgement is **"Low risk"** only if all domains are judged "Low risk."
+- Otherwise, the overall judgement is **"Some concerns."**
+
+Since no domain was rated "High risk," but two domains (Domain 1: Randomization process, and Domain 5: Selection of the reported result) were rated "Some concerns," and these concerns are not judged severe enough in combination to elevate to "High risk" (the baseline imbalance was statistically adjusted for by the authors, and the analytic flexibility concern relates to covariate selection rather than outcome/timepoint switching), the overall risk-of-bias judgement for the outcome **"Progression in the Fugl-Meyer Motor Scale"** is:
+
+## **Some concerns**
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Final Risk-of-Bias Assessment (RoB 2) — Re-evaluated
+
+## Outcome: Progression in the Fugl-Meyer Motor Scale (Primary Outcome, Day 0 to Day 90)
+
+After careful re-evaluation of all evidence presented in the article, I confirm my judgments below, with justifications summarized.
+
+---
+
+### Domain 1: Risk of bias arising from the randomization process
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 1.1 Was the allocation sequence random? | **Yes** | Computer-generated random-number sequence, block size 4, generated by independent pharmacist |
+| 1.2 Was the allocation sequence concealed? | **Yes** | Sequentially numbered opaque envelopes; identical placebo/active capsules; independent pharmacist controlled allocation |
+| 1.3 Did baseline differences suggest a problem? | **Yes** | Baseline FMMS (the outcome variable itself) differed: 17.1 vs 13.4; age and previous stroke history also imbalanced (Table 2) |
+
+**Domain 1 Judgement: Some concerns**
+
+---
+
+### Domain 2: Risk of bias due to deviations from intended interventions (effect of assignment to intervention)
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 2.1 Were participants aware of assigned intervention? | **No** | Double-blind design; identical placebo/active drug; no evidence of unblinding |
+| 2.2 Were carers/intervention deliverers aware? | **No** | "Patients, carers, all site study staff, and investigators were masked to treatment assignment" |
+| 2.3–2.5 | **N/A** | Not triggered (2.1 & 2.2 = No) |
+| 2.6 Was an appropriate analysis used? | **Yes** | Full analysis set (mITT); 113/118 analyzed; balanced exclusions |
+| 2.7 | **N/A** | Not triggered (2.6 = Yes) |
+
+**Domain 2 Judgement: Low**
+
+---
+
+### Domain 3: Risk of bias due to missing outcome data
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 3.1 Were data available for all/nearly all participants? | **Yes** | 113/118 (95.8%) had outcome data; only 2 deaths + 3 withdrawals, balanced across groups, unrelated to motor outcome (sepsis, hypoxia, kidney tumour, pulmonary embolism) |
+| 3.2–3.4 | **N/A** | Not triggered (3.1 = Yes) |
+
+**Domain 3 Judgement: Low**
+
+---
+
+### Domain 4: Risk of bias in measurement of the outcome
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 4.1 Was the measurement method inappropriate? | **No** | FMMS is a validated, widely-used, reliable instrument (cited validation reference) |
+| 4.2 Could measurement differ between groups? | **No** | Same assessment schedule (day 0, 30, 90) and method (physiotherapist-administered) for both groups |
+| 4.3 Were outcome assessors aware of intervention? | **No** | "Physicians assessing the outcome were masked to group assignment" |
+| 4.4–4.5 | **N/A** | Not triggered (4.3 = No) |
+
+**Domain 4 Judgement: Low**
+
+---
+
+### Domain 5: Risk of bias in selection of the reported result
+
+| Signaling Question | Response | Key Evidence |
+|---|---|---|
+| 5.1 Pre-specified analysis plan finalized before unblinded data available? | **Probably yes** | Registered on ClinicalTrials.gov (NCT00657163); a priori power calculation reported; but full SAP not directly viewable |
+| 5.2 Selected from multiple eligible outcome measurements? | **No** | Single pre-specified instrument (FMMS); total/upper/lower limb are components of same validated scale, all transparently reported |
+| 5.3 Selected from multiple eligible analyses? | **Probably yes** | Covariates for adjustment were chosen post hoc "to control for centre and baseline factors that showed treatment group imbalance" — data-dependent model selection, not clearly pre-specified |
+
+**Domain 5 Judgement: Some concerns**
+
+---
+
+## SUMMARY TABLE
+
+| Domain | Risk-of-Bias Judgement |
+|---|---|
+| **1. Randomization process** | Some concerns |
+| **2. Deviations from intended interventions** | Low |
+| **3. Missing outcome data** | Low |
+| **4. Measurement of the outcome** | Low |
+| **5. Selection of the reported result** | Some concerns |
+| **OVERALL RISK OF BIAS** | **Some concerns** |
+| **Predicted Direction of Bias** | **Unpredictable** |
+
+---
+
+### Overall Justification
+
+Per the RoB 2 algorithm: an overall judgement of "Low risk" requires all five domains to be rated "Low"; an overall judgement of "High risk" requires at least one domain rated "High," or multiple domains with "Some concerns" that cumulatively raise substantial doubt about the result. Here, three domains (2, 3, 4) are rated **Low risk**, reflecting robust blinding, minimal/balanced missing data, and appropriate, validated, blinded outcome measurement. However, two domains (1 and 5) raise **Some concerns**: a baseline imbalance in the outcome variable itself (FMMS at inclusion) arising from the randomization process, and a data-dependent (post-hoc) selection of adjustment covariates in the primary analysis. Neither concern alone reaches the threshold of "High risk" — the baseline imbalance was addressed via covariate adjustment, and there is no evidence of outcome/timepoint switching — but together they are sufficient to prevent a "Low risk" rating. Therefore, the overall risk-of-bias judgement for this outcome is **Some concerns**, with an **unpredictable** direction of potential bias given the competing (and not clearly aligned) nature of the identified imbalances.

@@ -1,0 +1,82 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 11961621
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Schneider, 1999
+**Outcome Name**: length of hospital stay
+**registration number**: NI
+
+Domain 1
+1.1 : Y (100%)
+The article states: "Procedure type was assigned by a computer-generated randomization list".
+1.2 : Y (100%)
+The article states: "...and concealment of randomization was done by telephone inquiry." This implies central allocation.
+1.3 : N (100%)
+The baseline characteristics in Table 1 (Age, Gravidity, Parity, Quetelet Index, Weight, Body surface, Uterine weight) are similar between the two groups.
+Result of the domain (100%)
+Low risk
+The answer to question 1.2 is "Y", 1.1 is "Y", and 1.3 is "N".
+
+Domain 2
+2.1 : N (100%)
+The article states it is a surgical trial (LAVH vs AH), participants couldn't be blinded to the scars/procedure, but this is a non-blinded experiment by nature. Wait, "If the article states that this is a non blind or open label experiment, the answer to this question is "N"". 
+2.2 : N (100%)
+Surgical trial, surgeons are aware, but "If the article states that intervention providers administered a placebo or sham intervention... or if there is no information regarding blinding... wait. They couldn't be blinded, they performed the surgery. So Y. Wait, if providers were aware, Y.
+Let's check the prompt: "If the intervention providers were aware of the participants' allocation, the answer to this question is "Y"."
+2.3 : Y (100%)
+There are no significant non-protocol measures mentioned that are imbalanced between groups.
+2.4 : N (100%)
+No failures in implementing the intervention are reported (no conversions from LAVH to AH). Implementation was successful for all participants.
+2.5 : N (100%)
+There was no non-adherence to the assigned intervention regimen reported.
+2.6 : NI (100%)
+The article does not provide information on appropriate analysis used to estimate the effect of adhering to the intervention (such as instrumental variable analyses or inverse probability weighting).
+Result of the domain (100%)
+Some concerns
+The answer to 2.1 is Y (patients knew, scars), 2.2 is Y, 2.3 is Y, 2.4/2.5 is N, 2.6 is NI. Wait, based on rules: If 2.1/2.2 is Y, 2.3 is Y, 2.4/2.5 is N, and 2.6 is NI -> "High risk". Let me check rules: "If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NA", "Y" or "PY", the answer to one of questions 2.4 and 2.5 is "Y", "PY" or "NI", and the answer to question 2.6 is "NI", "N" or "PN", then the result for Domain 2 is "High risk";" Wait, 2.4 and 2.5 are N.
+Let's look at rule 2: "If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NA", "Y" or "PY", the answer to question 2.4 is "NA", "N" or "PN", and the answer to question 2.5 is "NA", "N" or "PN", then the result for Domain 2 is "Low risk";" Yes, 2.4 and 2.5 are N. So Low risk.
+
+Domain 3
+3.1 : Y (100%)
+All 48 randomized women (28 LAVH and 20 AH) were included in the analysis of the continuous outcome length of hospital stay (Table 2 includes n=28 and n=20). So 100% data available.
+3.2 : Y (100%)
+There were no missing data, so the result was not biased by missing outcome data.
+3.3 : N (100%)
+There are no missing outcome data.
+3.4 : N (100%)
+There are no missing outcome data.
+Result of the domain (100%)
+Low risk
+The answer to question 3.1 is "Y".
+
+Domain 4
+4.1 : N (100%)
+Length of hospital stay is appropriately measured as days.
+4.2 : N (100%)
+Length of hospital stay was measured similarly for both groups.
+4.3 : Y (100%)
+"Each patient decided for herself when she was ready to be discharged from hospital." Since patients were not blinded to their surgical group, and they decided their discharge, outcome assessors (the patients themselves in this case) were aware of the intervention received.
+4.4 : Y (100%)
+Since the patient decided for herself when to be discharged and was aware of the intervention, the assessment of the outcome is subjective and reported/assessed by the patient.
+4.5 : Y (100%)
+Since the patients knew which surgery they had, and they decided their own discharge, their expectations could easily influence the length of stay ("their expectations may have influenced...").
+Result of the domain (100%)
+High risk
+If 4.1 is N, 4.2 is N, 4.3 is Y, 4.4 is Y, 4.5 is Y, then High risk.
+
+Domain 5
+5.1 : NI (100%)
+There is no mention of a pre-specified analysis plan or trial registration finalized before unblinded outcome data were available.
+5.2 : N (100%)
+Length of hospital stay is a standard measurement and there is no indication it was selected from multiple measurements.
+5.3 : N (100%)
+There is no indication the result was selected from multiple analyses.
+Result of the domain (100%)
+Some concerns
+The answer to 5.2 is N, 5.3 is N, 5.1 is NI.
+
+Overall Bias Risk for the Article (100%)
+High risk
+Domain 4 is High Risk, leading to an overall High Risk of bias.

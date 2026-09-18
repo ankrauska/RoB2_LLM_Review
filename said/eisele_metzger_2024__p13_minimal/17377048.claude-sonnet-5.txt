@@ -1,0 +1,36 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 17377048
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Bias Assessment: Coronary Artery Calcium Scoring - Reconstruction Interval and Increment Study
+## Outcome: Agatston Score
+
+---
+
+**1. Risk of bias arising from the randomization process:** **Some concerns**
+
+Justification: The manuscript states patients were "assigned to two groups at random with 20 patients each," but provides no description of the method used to generate the random allocation sequence (e.g., computer-generated randomization, random number tables) nor any description of allocation concealment. Given the technical, semi-objective nature of the outcome (Agatston score is largely computer-generated with reader adjudication), formal blinding of the group assignment is less critical to outcome integrity than in a typical clinical trial; however, the complete absence of methodological detail regarding sequence generation prevents confirmation that randomization was truly random and adequately concealed prior to allocation. This lack of transparency downgrades this domain from "low risk."
+
+**2. Risk of bias due to deviations from the intended interventions:** **Low risk**
+
+Justification: All 40 (later 36) patients underwent an identical, standardized post-processing pipeline (five reconstruction intervals × two increments) regardless of their assigned collimation group. The "intervention" (collimation protocol) is scanner-hardware defined and applied identically to all members of each group; there is no indication of cross-over, non-adherence, or deviation from the assigned protocol. Because the comparisons of interest (increment/interval) are performed within-patient on identical raw data, this domain carries low risk of bias.
+
+**3. Risk of bias due to missing outcome data:** **Some concerns**
+
+Justification: Four patients (10% of the original cohort) were excluded post-randomization because "no CAC was detected in any of the reconstructions." This exclusion is directly related to the outcome measure itself (calcium score = 0), constituting a form of outcome-dependent post-randomization exclusion. Although scientifically justified by the authors (a zero score cannot yield a meaningful comparison of increments/intervals), this exclusion could differentially affect the two groups (uneven distribution of low-calcium patients) and reduces the analyzed sample from 40 to 36, without formal sensitivity analysis addressing whether this exclusion altered between-group balance or overall estimates.
+
+**4. Risk of bias in measurement of the outcome (Agatston score):** **Some concerns**
+
+Justification: The Agatston score is a semi-automated measure: the software identifies candidate lesions, but a radiologist and cardiologist manually differentiate "calcium from noise" by placing regions of interest. Because the entire premise of the study requires readers to know which reconstruction interval, increment, and collimation setting they are analyzing, blinding of the assessors to these study "arms" was not feasible and was not undertaken. This raises the possibility that reader expectation (e.g., knowing that thinner overlapping reconstructions should reduce partial-volume artifact) could subtly influence the discrimination between true calcium and noise, particularly for borderline/small lesions (as demonstrated by the two additional plaques detected only at 1.5-mm increment). No blinded/independent adjudication or reproducibility (intra/inter-observer) data are reported for this manual step, raising some concern regarding differential measurement bias across reconstruction conditions.
+
+**5. Risk of bias in selection of the reported result:** **Some concerns**
+
+Justification: No trial registration, published protocol, or pre-specified statistical analysis plan is referenced anywhere in the manuscript. Multiple outcome metrics (Agatston score, volumetric score, coefficient of variation, percentile-based risk categorization) and multiple comparisons (increment 1.5 vs 3.0 mm; five reconstruction intervals; group A vs B) are reported, without clear pre-specification of primary vs secondary endpoints or correction for multiple comparisons. While all pre-specified comparisons described in the Methods appear to be reported in the Results (no obvious suppression of specific comparisons), the absence of a registered protocol makes it impossible to fully rule out selective analysis or selective emphasis of statistically significant findings (e.g., the volumetric score reaching significance is discussed prominently, whereas non-significant Agatston comparisons are downplayed in the interpretation, without pre-registration to confirm this was not data-driven).
+
+---
+
+## 6. Overall Rating: **High risk**
+
+Justification: Although randomization details and intervention fidelity present only some concern individually, the combination of (a) outcome-dependent post-randomization exclusions, (b) unblinded, subjective reader adjudication central to the primary outcome measurement, and (c) absence of any pre-registered protocol to verify selective outcome reporting across multiple tested comparisons collectively and substantially lowers confidence in the reported Agatston score results. Per the stated rating rules, the accumulation of "some concerns" across multiple domains (3, 4, and 5) in a manner that materially undermines confidence in the outcome elevates the overall judgment to "high risk" of bias for the Agatston score endpoint.

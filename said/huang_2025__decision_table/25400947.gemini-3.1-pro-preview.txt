@@ -1,0 +1,75 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 25400947
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Borna, 2013 (First author listed as We in text, but let's use the assumed author or no author provided in citation. The text has no authors listed at top. Let's use Ahvaz, 2013 or Clinical Study, 2013. Actually, the text says "Using Celecoxib for the Suppression...". Let's use [Unknown], 2013)
+Let's use [Unknown], 2013
+**Outcome Name**: Frequency of delivery after 48 h
+**registration number**: NI
+
+Domain 1
+1.1 : NI (90%)
+The article mentions "all patients were divided in two groups by simple random sampling" but does not report the specific method used to generate the random sequence (such as computer-generated random numbers or random number tables).
+1.2 : NI (90%)
+The article does not mention any methods for allocation concealment such as opaque envelopes or central allocation.
+1.3 : Y (95%)
+There is a statistically significant difference in baseline cervical effacement between the two groups (35.93 ± 18.07 vs. 42 ± 15.64, P < 0.0001), which suggests a problem with the randomization process.
+Result of the domain: High risk (95%)
+Based on the criteria, since 1.2 is NI and 1.3 is Y, the assessment result for Domain 1 is High risk.
+
+Domain 2
+2.1 : Y (95%)
+The interventions involved different administration routes (intravenous MgSO4 vs. oral celecoxib) without any mention of matching placebos, making it likely that participants were aware of their assigned intervention.
+2.2 : Y (95%)
+Due to the different administration routes (intravenous vs. oral), carers and people delivering the interventions were likely aware of the participants' assigned interventions.
+2.3 : Y (80%)
+There is no evidence in the article to suggest that important non-protocol interventions were imbalanced across the intervention groups.
+2.4 : N (95%)
+The article reports outcomes for all 600 participants (300 in each group), indicating that implementation of the intervention was successful for most participants and there were no significant withdrawals.
+2.5 : NI (90%)
+The article does not provide specific information regarding non-adherence (such as cessation or crossovers) to the assigned intervention regimen.
+2.6 : NI (90%)
+The article does not provide information on whether an appropriate analysis, such as intention-to-treat (ITT) or inverse probability weighting, was used to estimate the effect of adhering to the intervention.
+Result of the domain: High risk (90%)
+Since 2.1/2.2 is Y, 2.3 is Y, 2.5 is NI, and 2.6 is NI, the assessment result for Domain 2 is High risk.
+
+Domain 3
+3.1 : Y (100%)
+Outcome data for frequency of delivery after 48 hours is available for all 600 randomized participants (300 in each group), which is 100%.
+3.2 : Y (95%)
+Since there is no missing outcome data (100% of participants have data), the result was not biased by missing data.
+3.3 : N (95%)
+There are no missing outcome data, so missingness could not depend on its true value.
+3.4 : N (95%)
+There are no missing data, so it is not likely that missingness depended on true values.
+Result of the domain: Low risk (95%)
+Since 3.1 is Y, the assessment result for Domain 3 is Low risk.
+
+Domain 4
+4.1 : N (95%)
+The measurement of the frequency of delivery before/after 48 hours is a standard, appropriate, and objective clinical measure.
+4.2 : N (95%)
+There is no evidence to suggest that the ascertainment of the time of delivery differed between the intervention groups.
+4.3 : NI (80%)
+The article describes the study as "single blinded," but it is unclear if the outcome assessors were blinded to the intervention received. However, the route of administration differed.
+4.4 : N (95%)
+The outcome (frequency of delivery after 48 h) is an objective measure, so assessment is not likely to be influenced by knowledge of the intervention received.
+4.5 : N (95%)
+There is no clear evidence to suggest that knowledge of the intervention status was likely to influence the objective outcome assessment of delivery time.
+Result of the domain: Low risk (90%)
+Since 4.1 is N, 4.2 is N, 4.3 is NI, and 4.4 is N, the assessment result for Domain 4 is Low risk.
+
+Domain 5
+5.1 : NI (95%)
+The article does not provide a trial registration number or reference a pre-specified analysis plan finalized before unblinded outcome data were available.
+5.2 : N (90%)
+The outcome is a clear timeframe (delivery after 48 hours), and there is no evidence that the reported numerical result was selected from multiple eligible measurements.
+5.3 : N (90%)
+There is no evidence to suggest that the result was selected from multiple eligible analyses of the data; a standard chi-square/t-test was planned and reported.
+Result of the domain: Some concerns (90%)
+Since 5.2 is N, 5.3 is N, and 5.1 is NI, the assessment result for Domain 5 is Some concerns.
+
+Overall Bias Risk for the Article: High risk (95%)
+Because at least one domain (Domain 1 and Domain 2) was evaluated as "High risk", the overall bias risk assessment result for the article is High risk.

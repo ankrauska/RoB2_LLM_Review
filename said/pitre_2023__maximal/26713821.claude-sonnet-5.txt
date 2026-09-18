@@ -1,0 +1,82 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 26713821
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Neuropsychological Test Performance
+
+---
+
+### 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Sequence generation:** The article states patients were "1:1, randomized" but provides no details on the method of sequence generation (e.g., computer-generated, random number table). No information is provided in either the article or protocol. → *No information* on randomization method.
+- **Allocation concealment:** No information is provided about how the allocation sequence was concealed from those enrolling participants. → *No information*.
+- **Baseline imbalances:** Table 1 shows no statistically significant differences between groups on demographic, clinical, cognitive (MoCA), or genotype variables (all P > .05). This suggests no evidence of a problem with randomization based on baseline data.
+
+Since there is no information on random sequence generation or allocation concealment, but baseline characteristics appear balanced (compatible with chance), this maps to "Some concerns" per the RoB 2 algorithm (no information on concealment + no evidence of imbalance problem = Some concerns).
+
+---
+
+### 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Awareness of participants/personnel:** This trial was not blinded for participants or those delivering the intervention (nutritional counseling in groups vs. conventional care alone) — only outcome assessors were masked per the registry ("whoMasked": "OUTCOMES_ASSESSOR"). Participants and personnel were clearly aware of group assignment. → *Yes*.
+- **Deviations arising from trial context:** The authors note: "Because the process of recruiting volunteers included information on the risks of obesity, it is also possible that this may have increased motivation to lose weight in both groups." This is a plausible trial-context-driven deviation (contamination of the comparator group), evidenced by the unexpectedly small between-group difference in weight loss: "The weight loss difference between the groups was lower than expected, limiting the analyses by the initial study design" and "Because both groups lost similar amounts of weight after the intervention period (mean ΔBMI intensive group = −2.1 kg/m2, conventional group = −1.3 kg/m2, P = .428)."
+- **Effect on outcome and balance:** This deviation (unintended weight loss in the control/conventional-care group) likely affected the outcome (cognition, via the mechanism the trial explicitly studies) and was **not balanced** between groups — the "contamination" was asymmetric enough to nearly eliminate the intended between-group contrast, though it did not clearly favor one intervention over the other in terms of magnitude (P=.428, not significant).
+- **Analysis approach:** The study appears to have analyzed all randomized participants who completed follow-up (75/80) in their originally assigned groups for the group comparison (Supplemental Tables), consistent with an ITT-type approach. However, the *primary* published cognitive analyses reported in Tables 3 and 4 pool patients and use ΔBMI as a continuous exposure variable **rather than the original randomized groups**, explicitly deviating from the ITT comparison: "we decided to a posteriori pool the longitudinal analysis between groups and to test for the effects of change of BMI as a continuous variable." This means the primary published result being assessed for neuropsychological outcomes is **not** an intention-to-treat analysis of assignment, but an exploratory, non-randomized association analysis.
+
+Because deviations arose from trial context (contamination), were likely to affect the outcome, and were not clearly balanced, combined with the fact that the key analysis presented deviates from an appropriate ITT comparison (analysis reclassifies exposure by observed BMI change instead of randomized assignment), this domain is judged **Some concerns** (bordering on high, given the switch from a randomized comparison to an observational-style analysis, but the underlying data collection/follow-up was otherwise intact and pre-planned sensitivity language was provided).
+
+---
+
+### 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- Of 80 randomized participants, 75 completed follow-up (37/40 conventional, 38/40 intensive) — a 93.75% retention rate, described in Figure 1 flow chart.
+- Reasons for missing data were reported: "Five women did not complete the follow-up: 4 dropped out and one died of pneumonia (Figure 1)." The death from pneumonia is very unlikely to be related to cognitive outcome status, and dropout reasons are not clearly linked to neuropsychological performance.
+- The proportion of missing data is small (6.25%) and roughly balanced between groups (3/40 vs 2/40), which is unlikely to have made an important difference to the estimated effect.
+- No evidence suggests missingness depended on the true (cognitive) outcome value.
+
+---
+
+### 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Appropriateness of method:** The neuropsychological battery used is a comprehensive, validated set of standard cognitive tests (RAVLT, Trail Making Test, Wisconsin Card Sorting Test, verbal fluency, digit span, CAMcog, IQCODE) — appropriate methods for measuring cognition. → *No* concern on this signalling question.
+- **Differences in measurement between arms:** The same tests were administered identically to both groups at baseline and 12 months; no evidence of differential ascertainment methods between groups.
+- **Blinding of outcome assessors:** The trial registry indicates outcome assessors were masked ("whoMasked": "OUTCOMES_ASSESSOR"), which is reassuring.
+- **Potential for influence:** However, several outcome measures are **participant-reported or involve subjective judgement** (e.g., IQCODE — an informant-reported cognitive complaint questionnaire; and neuropsychological test performance itself can be influenced by participant effort/motivation, testing conditions, and rapport, though administered by assessors). Even if formal outcome assessors administering/scoring were blinded, participants themselves were aware of their allocation (unblinded design), and for tests requiring participant engagement, motivation, or self-report of decline (IQCODE), knowledge of intervention assignment (e.g., participants in the nutrition-counseling arm being aware they were "trying" to improve cognition through weight loss) could plausibly influence performance or self/informant-report.
+- It is unclear whether blinding of the outcome assessor was fully maintained in practice, given that assessors interacting with participants during testing might infer group assignment from conversation, weight changes, or other cues, and no explicit description of procedures to preserve blinding (e.g., separate assessors from counselors, instructions to avoid discussing group assignment) is provided.
+
+Because assessment could plausibly be influenced by knowledge of the intervention (via engaged/motivated participants or informants) even though formal test administration was intended to be blinded, but there is insufficient evidence that this influence was substantial, the judgement is **Some concerns**.
+
+---
+
+### 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Comparison with registry:** The trial registry (NCT01286389) lists three co-primary outcomes: "Neuropsychological test performance," "Diagnosis of dementia," and "Weight loss." The published article reports extensively on neuropsychological test performance and weight/BMI, but the outcome "Diagnosis of dementia" is not reported in this article at all — suggesting selective non-reporting of a pre-specified primary outcome domain (though this affects assessment of reporting bias risk more broadly rather than being direct evidence of the *specific* neuropsychological result being selected).
+- **Multiple outcome measurements within domain:** The neuropsychological battery includes many individual tests grouped post-hoc into domains (via principal-components analysis) — global cognition, verbal memory, executive function, language/fluency, attention. There is no evidence that this grouping and analytic strategy (PCA-derived composite scores) was pre-specified in a trial protocol or SAP; the article does not reference a prospectively registered analysis plan for this domain construction. The registry does not specify which specific tests, timepoints, or composite scoring approach would constitute the "neuropsychological test performance" outcome.
+- **Multiple analyses:** The primary hypothesis (comparing randomized groups) was reportedly not confirmed/not significant for most cognitive tests ("There was no significant time-group interaction for most of the tests after 12 months"), and the authors then pursued a **different, non-pre-specified analytic approach** (BMI change as a continuous predictor, subgroup interactions by age and APOE4 status) that yielded statistically significant associations. The authors acknowledge this was exploratory: "it is a secondary analysis" and "due to the exploratory nature of the analyses... it was not possible to carry a multiple comparisons correction." This is a clear post-hoc/exploratory reanalysis strategy, and there is a strong likelihood that reported associations (Table 3, Table 4) were selected, at least in part, on the basis of statistical significance across the many tests, domains, and subgroup interactions examined.
+- No statistical analysis plan (SAP) or detailed pre-specified plan for the composite/domain analyses or subgroup interaction tests is available to confirm these were planned prior to unblinded data availability.
+
+Given the switch from the pre-specified randomized-group comparison (largely null) to an exploratory continuous-exposure/subgroup-interaction analysis, multiple outcome domains/tests, and lack of a documented pre-specified SAP for these specific analyses, there is meaningful risk that reported results were selected on the basis of the findings. This warrants **Some concerns** (bordering on high, but not judged "High" absent definitive documentary evidence that the specific reported comparisons were cherry-picked from a larger set that included non-significant results that were suppressed).
+
+---
+
+## Overall Risk of Bias Judgement: **Some concerns**
+
+**Rationale:** No domain was judged to be at high risk of bias, but multiple domains (randomization process, deviations from intended intervention, measurement of the outcome, and selective reporting) raised "Some concerns." Per RoB 2 guidance, "Some concerns" in multiple domains can lead to an overall judgement of "High" risk of bias if this substantially lowers confidence in the result. Here, the cumulative concerns — particularly the shift from a null intention-to-treat comparison to an exploratory continuous-BMI/subgroup-interaction analysis without a documented pre-specified plan — substantially reduce confidence in the reported neuropsychological findings. However, because no single domain reaches "High" risk based on strict signalling-question criteria, and missing data were minimal, the overall judgement is **Some concerns**, with a note that reviewers may reasonably elevate this to "High" risk of bias overall given the convergence of concerns across the randomization, deviation, and selective-reporting domains.

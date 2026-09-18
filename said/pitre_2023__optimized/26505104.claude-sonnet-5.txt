@@ -1,0 +1,55 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 26505104
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0): Delayed Diagnostic Performance
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** The article states participants "were randomly allocated" to the four conditions, but no details are provided on the method of sequence generation (e.g., computer-generated randomization, block randomization) or on allocation concealment procedures. Baseline characteristics (e.g., proportions of medical/PA/nursing students, disorder-set assignment) appear roughly similar across groups, with no evidence of problematic imbalance, but this cannot fully compensate for absent methodological detail.
+
+**b. Rationale:** "Participants were randomly allocated to one of four study conditions" — no further elaboration on sequence generation or concealment method is given anywhere in the Methods. There is some reassurance from reported group composition ("There were 2 physician assistants per group, 3 nursing students in the SC and CB groups, and 2 nursing students in the FL and BC groups"), suggesting no gross imbalance, and sample sizes across groups were similar (25, 24, 25, 26 initially per Figure 1). Per the algorithm, "No information" on sequence randomness combined with "No information" on allocation concealment, but no evidence of imbalance, maps to "Some concerns."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Participants could not be blinded to which learning materials/condition they received (this is inherent to the intervention, as materials themselves define group assignment), and the same is true of researchers administering materials. However, this is a single-encounter, computer-administered educational intervention with no ongoing care providers or opportunity for contamination, non-adherence, or trial-context-driven deviations from intended intervention. All participants received their assigned materials as intended, and analysis appears to include all participants who completed the study components in their assigned groups (no crossover between conditions is plausible given the automated computer delivery).
+
+**b. Rationale:** "Participants completed this study individually using a custom-designed computer program... After receiving instructions... participants were asked to read each explanation carefully prior to moving on to the tests." Because intervention delivery was standardized and automated per assigned condition, there was no realistic opportunity for deviation from assigned intervention arising from trial context (e.g., no risk of participants seeking out the alternate condition's materials, no personnel delivering variable care). Analysis was based on participants analyzed within their randomized group. This satisfies low risk of bias for the assignment-effect assessment.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Of 99 enrolled participants, 5 did not complete the delayed session (3 from CB, 2 from BC) and were excluded from analysis; a further 2 participants (1 BC, 1 CB) were excluded post-hoc for extreme low engagement/outlier performance. This produces unequal, non-random-appearing attrition concentrated in the CB and BC arms (none from SC or FL), raising the possibility that missingness in the delayed diagnostic outcome is related to the outcome itself (e.g., disengaged or poorly performing participants dropping out) and differs by group. However, the overall proportion missing is small (5/99 ≈ 5%, plus 2 additional exclusions), and no evidence suggests a strong relationship between missingness and true outcome values beyond the exclusion criteria description.
+
+**b. Rationale:** "Five enrolled participants failed to complete the delayed session of the study (3 from the CB group and 2 from BC)... and were excluded from the analysis. One participant from the BC and CB group each spent less than five minutes on the delayed diagnostic test... 1 participant scoring 0% and the other scoring 8%... " This asymmetric loss (all missingness/exclusions concentrated in BC/CB, none in SC/FL) is concerning because the domain-level judgment for the delayed diagnostic outcome is precisely where SC/FL/BC/CB are compared — differential attrition by group that could be related to engagement/performance introduces uncertainty. There is no sensitivity analysis reported testing robustness to this missingness. This pattern does not reach the threshold of "likely" related to true outcome value (reasons given are plausible administrative/technical, e.g., short test-completion time as an outlier-detection criterion) but cannot be ruled out as unrelated, given imbalance across groups.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** The diagnostic outcome measure (12-item vignette diagnostic test) was appropriate and identical in format/administration across groups, with no differential ascertainment. However, outcome assessment was inherently unblinded — participants clearly knew which type of learning materials they had received (the nature of the intervention makes blinding of "assessors" (here, self-administered testing) impossible — though the test itself was objective (correct/incorrect diagnosis from multiple choice), diagnostic performance could plausibly be influenced by participant awareness of/engagement with their specific learning condition. Since this is an objective, largely non-judgment-based outcome (correct/incorrect answer selection), the risk of differential measurement bias is lower than for subjective outcomes, but cannot be entirely excluded given participants self-administered testing without external, blinded assessors.
+
+**b. Rationale:** "The diagnostic test consisted of 12 clinical vignettes for which students had to identify the correct diagnosis from a list of four possible disorders." This is an observer-reported outcome (participant-completed) but classified as "not involving judgment" since it is multiple-choice with objectively correct answers, scored by computer rather than a human rater — this reduces concern. There is no mention of blinded, independent outcome adjudication, but this is unnecessary given the objective, forced-choice, computer-scored format. The main residual concern is that participants' knowledge of/engagement with their specific condition could not be masked, though this is unlikely to bias objective forced-choice scoring in a specific direction. This supports "Some concerns" rather than "Low" due to lack of explicit confirmation that scoring was fully automated/blinded to condition.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** No trial registration or pre-specified statistical/analysis plan was located/cited in the article for this study (the associated trial registry document referenced separately was reviewed but does not appear to correspond to a pre-registered protocol with a finalized, date-stamped analysis plan for this specific experiment). The primary outcome (diagnostic test performance, immediate and delayed) and memory test were both reported with results, and the interaction analysis appears consistent with the stated aims. However, without a pre-specified, publicly available protocol/SAP finalized prior to unblinded data availability, it is not possible to confirm that the reported outcome measures/analyses were not selected from multiple possible options (e.g., choice of covariates, post hoc "least significant differences" pairwise comparisons, and exclusion criteria for outlier participants applied post hoc).
+
+**b. Rationale:** The post hoc exclusion of "outlier" participants based on time spent ("Upon inspection, these participants' performance was three standard deviations below the mean performance for their respective groups") and use of "Further post hoc testing using the least significant differences method" to explore the interaction suggest analytic decisions made after viewing the data, which were not stated to be pre-specified. No protocol or SAP finalized prior to unblinding is cited to confirm these decisions were planned in advance. This pattern, combined with the absence of clear pre-registration information available for review, supports a judgement of "Some concerns" rather than "Low risk," though there is no strong direct evidence (e.g., discrepancy with a published protocol) indicating outright selective reporting to reach "High risk."
+
+---
+
+## Overall Risk of Bias for Delayed Diagnostic Performance: **Some concerns**
+
+Per RoB 2.0 guidance, since multiple domains ("Some concerns" for randomization, missing data, measurement, and selective reporting) raise concerns but none reach "High risk of bias" independently, and the concerns do not appear severe enough in combination to substantially undermine confidence in the result, the overall judgement is **Some concerns**.

@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 17240120
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Stein, 2006
+**Outcome Name**: time to relapse from the start date of double-blind treatment
+**registration number**: None
+
+Domain 1
+1.1 : Y (100%)
+The article states: "assigned to escitalopram or placebo treatment according to a computer-generated randomisation list."
+1.2 : Y (100%)
+The article states: "The details of the randomisation series were unknown to any of the investigators and were contained in a set of sealed opaque envelopes."
+1.3 : N (100%)
+The article states: "There were no differences in demographics and clinical parameters between the two treatment groups in the randomisation period."
+Result of the domain: Low risk (100%)
+The answers to 1.1, 1.2, and 1.3 are Y, Y, and N respectively, indicating a low risk of bias arising from the randomization process.
+
+Domain 2
+2.1 : N (95%)
+The study is described as double-blind. "Study medications were tablets for oral administration, of identical appearance, taste or smell." Participants were unaware of their allocation.
+2.2 : N (95%)
+The article states: "All study personnel and participants were blinded to treatment assignment for the entire duration of the study."
+2.3 : Y (95%)
+No significant non-protocol interventions that would cause imbalance are mentioned.
+2.4 : N (95%)
+Withdrawal rates were low: "7.9% for patients treated with escitalopram (13 patients), and 8.9% for patients treated with placebo (14 patients)." This is less than 10%.
+2.5 : NI (95%)
+The article does not explicitly report data on non-adherence (like imperfect compliance).
+2.6 : N (95%)
+The analysis was based on Intention-to-Treat (ITT): "All efficacy analyses in the double-blind treatment period were conducted using the intention-to-treat (ITT) population".
+Result of the domain: Low risk (95%)
+Based on the blinding and low withdrawal rates, with ITT analysis, the risk of bias due to deviations from the intended interventions is low.
+
+Domain 3
+3.1 : Y (95%)
+The number of participants randomized was 320, and 320 were included in the ITT population. Thus, nearly all randomized participants had data available.
+3.2 : Y (95%)
+Although 3.1 is Y, meaning data was available for nearly all, survival analysis (log-rank, Kaplan-Meier) accounts for censoring appropriately. 
+3.3 : N (95%)
+Missingness due to withdrawals (non-relapse) was comparable and low (<10%), not obviously dependent on true value.
+3.4 : N (95%)
+No likely dependence on true value.
+Result of the domain: Low risk (95%)
+Data available for nearly all participants.
+
+Domain 4
+4.1 : N (100%)
+Relapse was measured by predefined criteria: "increase in the Y-BOCS total score of ≥5 points, or lack of efficacy as judged by the investigator." This is appropriate.
+4.2 : N (100%)
+Assessments were comparable between groups. "efficacy and tolerability parameters were assessed 2, 4, 6, 8, and 12 weeks after randomisation and then every 4 weeks".
+4.3 : N (100%)
+The outcome assessors were blinded. "All study personnel and participants were blinded to treatment assignment".
+4.4 : N (100%)
+The outcome was assessed by blinded raters, unlikely to be influenced by knowledge of intervention as they were blinded.
+4.5 : N (100%)
+No clear evidence that knowledge of intervention status influenced the assessment.
+Result of the domain: Low risk (100%)
+Measurement was appropriate and double-blind conditions were maintained.
+
+Domain 5
+5.1 : Y (95%)
+The time to relapse analysis method (log-rank test) was prospectively defined and reported in both methods and results.
+5.2 : N (95%)
+The reported results correspond to the intended outcome measurements (time to relapse).
+5.3 : N (95%)
+The reported results correspond to the intended analyses (log-rank, Cox proportional hazard).
+Result of the domain: Low Risk (95%)
+Analyses were pre-specified and consistently reported.
+
+Overall Bias Risk for the Article: Low Risk (95%)
+All domains evaluated to low risk.

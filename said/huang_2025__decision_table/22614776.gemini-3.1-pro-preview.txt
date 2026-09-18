@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 22614776
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Cunningham, 2012
+**Outcome Name**: peer aggression 12 months
+**registration number**: NCT00251212
+
+Domain 1
+1.1 : Y (100%)
+Reason you summarized: The article states, "participants who completed a computerized baseline assessment were randomly selected (stratified by gender and age: 14–15, 16–18 years), and assigned to 1 of the 3 study conditions (TBI, CBI, control) during the ED visit." Although it doesn't explicitly describe the sequence generation method, the previous publication of this trial (Walton 2010, JAMA) mentions "randomly assigned via computer algorithm". Based on the prompt instructions regarding computerized assignments, this is rated Y.
+1.2 : NI (100%)
+Reason you summarized: The article does not provide specific information about whether the allocation sequence was concealed until participants were enrolled and assigned.
+1.3 : N (85%)
+Reason you summarized: The article states: "There were no significant differences between conditions on age, race, gender; therefore, these variables were not included in the GEE analysis." It also mentions "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate." Given that the initial difference did not affect findings and major demographics had no significant differences, baseline differences do not suggest a problem with randomization.
+Result of the domain (percentage of Confidence) : Some concerns (85%)
+Reason you summarized: The answer to 1.2 is "NI", and the answer to 1.3 is "N", resulting in "Some concerns".
+
+Domain 2
+2.1 : Y (90%)
+Reason you summarized: Participants received either a therapist-administered brief intervention, a computer-based brief intervention, or a control brochure. Due to the nature of the interventions, participants would be aware of which intervention they received.
+2.2 : Y (90%)
+Reason you summarized: The therapists delivering the TBI would clearly be aware of the intervention they were administering.
+2.3 : Y (80%)
+Reason you summarized: The article does not report significant non-protocol measures that were imbalanced between groups.
+2.4 : N (95%)
+Reason you summarized: The article notes that ">95% received their assigned intervention during the ED visit." Therefore, implementation was successful for most participants.
+2.5 : N (90%)
+Reason you summarized: The interventions were delivered as a single brief session in the ED. More than 95% received it, and there is no indication of significant non-adherence (like crossovers or cessation of a sustained intervention) >10%.
+2.6 : N (95%)
+Reason you summarized: The article states, "An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not". According to the prompt, ITT is considered an inappropriate analytical method to evaluate the effect of adhering to intervention, so the answer is N.
+Result of the domain (percentage of Confidence) : High risk (85%)
+Reason you summarized: The answer to 2.1/2.2 is Y, 2.3 is Y, 2.4/2.5 is N, and 2.6 is N. According to the criteria (2.1/2.2 is Y, 2.3 is Y, 2.4/2.5 is N, and 2.6 is N), the result is High risk.
+
+Domain 3
+3.1 : N (95%)
+Reason you summarized: The outcome is a binary variable (severe peer aggression). The study enrolled 726 participants and "12-month follow-up rate was 83.6% (n = 607/726)." Because missing data is >10%, and it's a binary outcome where the number of missing is 119, while the number of observed events in follow up is (79+98+104) = 281. Since 281 is not "much greater" than 119 (it's only about 2.3 times), the answer is N.
+3.2 : N (95%)
+Reason you summarized: The study used Generalized Estimating Equations (GEE), which uses all available data, and states "An intent-to-treat approach was used." However, the prompt specifies that intention-to-treat is not a method for correcting bias caused by missing data, and there is no mention of inverse probability weighting or sensitivity analysis proving outcomes were not biased due to missing data. Thus, the answer is N.
+3.3 : PY (75%)
+Reason you summarized: The article does not explicitly state reasons for dropout related to the true value of the outcome, but the population consists of high-risk youth from an ED, where dropouts could be related to severe violence or substance use, suggesting possible relationship.
+3.4 : NI (80%)
+Reason you summarized: The article does not provide specific details on whether the proportion or reasons for missingness differed by group or depended on the true value.
+Result of the domain (percentage of Confidence) : Some concerns (80%)
+Reason you summarized: Answer to 3.1 is N, 3.2 is N, 3.3 is PY, and 3.4 is NI. This leads to Some concerns.
+
+Domain 4
+4.1 : N (95%)
+Reason you summarized: Peer aggression was measured using items from the Conflict Tactic Scale, which is a predefined and standard tool.
+4.2 : N (95%)
+Reason you summarized: Outcomes were assessed via self-administered computer surveys for all groups at comparable time points (12 months).
+4.3 : Y (90%)
+Reason you summarized: The outcome is patient-reported (self-administered survey), and participants were aware of their assigned interventions.
+4.4 : Y (95%)
+Reason you summarized: The outcome is a subjective measure (self-reported peer aggression) reported by the patient.
+4.5 : N (80%)
+Reason you summarized: Although participants knew their intervention, the outcome was self-administered on a computer, and the article notes "reliability and validity of self-report data are increased when privacy/confidentiality is assured". There is no clear evidence that knowledge of intervention likely influenced the assessment.
+Result of the domain (percentage of Confidence) : Some concerns (85%)
+Reason you summarized: 4.1 is N, 4.2 is N, 4.3 is Y, 4.4 is Y, 4.5 is N. This maps to Some concerns.
+
+Domain 5
+5.1 : Y (95%)
+Reason you summarized: The study was registered (NCT00251212). The reported outcomes in the methods section match those in the results section, and the analysis (GEE) aligns with the plan.
+5.2 : N (95%)
+Reason you summarized: The reported results correspond to the intended measurements of the peer aggression outcome. There is no evidence of selective reporting from multiple measurements.
+5.3 : N (95%)
+Reason you summarized: There is no evidence that the results were selected from multiple eligible analyses. The GEE analysis was applied consistently.
+Result of the domain (percentage of Confidence) : Low Risk (95%)
+Reason you summarized: 5.2 is N, 5.3 is N, 5.1 is Y. This maps to Low Risk.
+
+Overall Bias Risk for the Article (percentage of Confidence) : High Risk (85%)
+Reason you summarized: Domain 2 is assessed as High Risk, so the overall bias risk for the article is High Risk.

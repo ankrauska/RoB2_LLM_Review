@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26156151
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Hong, 2015
+**Outcome Name**: occurrence of cardiac death
+**registration number**: NCT01563952
+
+Domain 1
+1.1 : Y (100%)
+The article states that an interactive web-based response system was used for random assignment, which qualifies as a computerized randomization system for adequate sequence generation.
+1.2 : Y (100%)
+The use of an interactive web-based response system for allocation ensures that the sequence was concealed until participants were enrolled and assigned.
+1.3 : N (100%)
+The article explicitly states, "The groups (IVUS versus angiography) were well matched for baseline clinical and angiographic characteristics without significant differences."
+Result of the domain : Low risk (100%)
+The allocation sequence was adequately generated and concealed, and there were no significant baseline differences suggesting a problem with the randomization process.
+
+Domain 2
+2.1 : NI (80%)
+The article does not provide specific information regarding whether the participants were blinded to their assigned intervention (IVUS vs. angiography).
+2.2 : Y (90%)
+Given the nature of the interventions (IVUS-guided vs. angiography-guided percutaneous coronary intervention), it is practically impossible to blind the operators delivering the intervention.
+2.3 : Y (85%)
+There is no mention of significant non-protocol interventions that were imbalanced across the intervention groups.
+2.4 : N (100%)
+The implementation of the intervention was successful for most participants, with 200 out of 201 (99.5%) in the IVUS-guided group and 201 out of 201 (100%) in the angiography-guided group completing the 12-month follow-up, which is well below the 10% failure threshold.
+2.5 : N (90%)
+There is no indication in the article that more than 10% of participants had non-adherence to the assigned intervention regimen.
+2.6 : N (100%)
+The article states, "The intention-to-treat principle was used in all analyses," which is considered an inappropriate analytical method to evaluate the effect of adhering to the intervention according to the prompt guidelines.
+Result of the domain : Low risk (90%)
+Although caregivers were aware of the assignment and intention-to-treat analysis was used, there were no significant non-protocol interventions, and adherence and implementation were highly successful, resulting in a low risk of bias for deviations from intended interventions.
+
+Domain 3
+3.1 : N (95%)
+The outcome is a binary variable (cardiac death). There were 2 observed events, and 1 participant had missing outcome data. Since the number of observed events (2) is not much greater than the number of participants with missing outcomes (1), the answer is "N".
+3.2 : N (95%)
+The article used intention-to-treat analysis, but there is no mention of appropriate methods like inverse probability weighting to correct for missing data or sensitivity analyses demonstrating that outcomes were not biased due to missing data.
+3.3 : NI (85%)
+The article does not provide any specific reasons for the 1 participant dropping out, making it impossible to determine if the missingness depends on the true value of the outcome.
+3.4 : NI (85%)
+There is insufficient information provided in the article to evaluate whether it is likely that the missingness in the outcome depended on its true value.
+Result of the domain : High risk (90%)
+Because the data was not available for nearly all participants relative to the event count, no appropriate bias correction methods were used for missing data, and the reasons for missingness are unknown, this domain poses a high risk of bias based on the evaluation criteria.
+
+Domain 4
+4.1 : N (100%)
+Cardiac death is a predefined, standard, and reliable outcome measure for cardiovascular trials.
+4.2 : N (100%)
+The outcome (cardiac death) was measured comparably for all participants through clinical follow-ups at predetermined time points (1, 3, 9, and 12 months) for both groups.
+4.3 : N (100%)
+The article states, "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization," ensuring outcome assessors were unaware of the interventions.
+4.4 : N (100%)
+Cardiac death is an objective measure, meaning its assessment is not influenced by knowledge of the intervention received.
+4.5 : N (100%)
+There is no evidence to suggest that the assessment of the objective outcome was likely to be influenced by knowledge of the intervention received.
+Result of the domain : Low risk (100%)
+The measurement methods were appropriate and comparable, the outcome was objective, and assessors were blinded, resulting in a low risk of bias in outcome measurement.
+
+Domain 5
+5.1 : Y (100%)
+The study was pre-registered (NCT01563952), and the measurement and analysis methods for the primary outcome (cardiac death) reported in the Methods section are consistent with those reported in the Results section.
+5.2 : N (100%)
+The outcome of cardiac death is standard and there is no evidence that the reported result was selected from multiple eligible measurements within the domain.
+5.3 : N (100%)
+There is clear evidence that the reported results correspond to all intended analyses (intention-to-treat), without selection from multiple analyses.
+Result of the domain : Low Risk (100%)
+The results were analyzed according to a pre-specified plan, with no evidence of selective reporting of measurements or analyses.
+
+Overall Bias Risk for the Article : High Risk (95%)
+While Domains 1, 2, 4, and 5 present a low risk of bias, Domain 3 is assessed as High Risk due to the extremely low event rate relative to the missing data count and lack of bias correction methods for missing data. According to the criteria, if one domain assessment result is "High Risk", the overall assessment result for the article is "High Risk".

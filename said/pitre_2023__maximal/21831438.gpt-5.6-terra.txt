@@ -1,0 +1,86 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 21831438
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Outcome assessed:** Change in mean sitting diastolic blood pressure (DBP) from baseline to 4 weeks, comparing candesartan 16 mg/hydrochlorothiazide (HCT) 12.5 mg with candesartan 16 mg monotherapy. The effect of interest is the **effect of assignment to intervention at baseline**.
+
+### 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The allocation sequence appears to have been random: the publication states that participants “were randomized in a 1:1 ratio by using the mixed block randomization (4 and 6 blocks) method.” Mixed block randomization is an acceptable random sequence-generation method.
+
+However, neither the publication nor the registry describes how allocation was concealed before enrolment and assignment. There is no information on central randomization, an independent allocation service, pharmacy-controlled allocation, or sequentially numbered opaque sealed envelopes. Under RoB 2, absence of information about allocation concealment leads to *some concerns* when baseline imbalances do not themselves suggest a definite failure of randomization.
+
+Baseline values for the principal outcome were well balanced: mean DBP was 104.7 versus 104.5 mm Hg (P = 0.89), and mean SBP was 161.9 versus 160.0 mm Hg (P = 0.26). There was an age imbalance (51.0 versus 47.8 years; P = 0.02), but this was one imbalance among numerous measured characteristics and is compatible with chance in this modest-sized trial. It does not by itself establish that the randomization process failed.
+
+---
+
+### 2. Deviations from intended intervention: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+This was explicitly an open-label trial: the registry describes it as “**Open-label, Randomised**,” and reports no masking. Therefore, participants, carers, and personnel delivering treatment were aware of assigned treatment.
+
+The report does not identify important deviations from the assigned treatment that clearly arose because of the trial context, affected 4-week DBP, and differed between groups. Adherence appeared high: median compliance was 98.6% in the candesartan-HCT group and 97.8% in the monotherapy group. No evidence is provided of differential use of non-protocol antihypertensive co-interventions during the first 4 weeks. Thus, there is no direct evidence that lack of blinding caused outcome-relevant, unbalanced deviations.
+
+Nevertheless, the information is insufficient to exclude such deviations confidently in an open-label study.
+
+In addition, the analysis labelled “ITT” was not a full ITT analysis of all 233 randomized participants. The article defines ITT as patients with “baseline BP values and ≥1 postrandomization BP values and who had taken ≥1 dose of the study drug.” The 4-week DBP analysis included 111/117 combination participants and 113/116 monotherapy participants (224/233 randomized participants). Thus, nine randomized participants were excluded from this analysis. This is essentially a modified ITT/available-case analysis; the small number excluded is unlikely by itself to have had a substantial effect on the continuous DBP result, but it prevents a clear low-risk judgement for analysis of the assignment effect.
+
+---
+
+### 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**  
+Four-week DBP data were available for 224 of 233 randomized participants: 111/117 (94.9%) in the combination group and 113/116 (97.4%) in the monotherapy group. Overall, outcome data were available for approximately 96% of randomized participants.
+
+For a continuous outcome such as sitting DBP, this amount of missing data is sufficiently small that it is unlikely that the missing values could materially alter the estimated between-group effect. The absolute number with missing 4-week outcome data was only nine.
+
+The missingness was somewhat greater in the combination group (six versus three participants), but the difference is small. The report does not provide participant-level reasons specifically for missing 4-week DBP data, so missingness related to true BP cannot be completely ruled out. However, given the very high outcome-data availability and small absolute number missing, the risk of material bias from missing data is low.
+
+---
+
+### 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**  
+Sitting DBP was measured using an appropriate, standardized, automated method:
+
+> “BPs were measured in each patient’s arm by the same investigator at each center with a fully automated device produced by Omron.”
+
+The study also specified procedures intended to standardize measurements across groups and time points:
+
+> “These measurements were taken at the same time of day before dosing.”
+
+> “Three consecutive BPs were measured at 1-minute intervals in a sitting position.”
+
+> “The 2 extreme values out of the 5 measurements … were discarded, and the remaining 3 were averaged.”
+
+The same measurement procedures, device type, resting period, timing relative to dosing, and averaging algorithm were used in both intervention groups. Although the trial was open label and investigators were likely aware of treatment assignment, the outcome was generated by a fully automated blood-pressure device using a prespecified procedure. There is little scope for assessor judgement to influence the recorded DBP materially. Therefore, knowledge of treatment allocation is unlikely to have biased outcome measurement.
+
+---
+
+### 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The prespecified registry primary outcome exactly corresponds to the outcome assessed:
+
+> “Changes in Mean Sitting DBP From Baseline After 4 Weeks of Therapy.”
+
+The registry specifies a 4-week timeframe and identifies the outcome as the mean change in DBP from baseline. The publication reports this outcome for both groups and provides the corresponding between-group comparison: mean changes of −17.8 and −14.1 mm Hg, respectively, with P = 0.0028. The registry results also report the same primary outcome using least-squares means.
+
+Thus, there is no direct indication that the reported 4-week DBP outcome was selected from an unreported alternative outcome domain or time point. The paper also states its intended approach:
+
+> “The mean change between the combination and the monotherapy groups was compared using the ANCOVA model with the treatment as a factor and the BP at randomization as a covariate.”
+
+However, no detailed, date-stamped statistical analysis plan finalized before access to unblinded outcome data is available. The registry does not prespecify sufficient analytical detail—such as the exact handling of missing data, use of raw versus least-squares mean changes, covariate specification beyond the published statement, or possible alternative analyses—to establish that the reported numerical result was analyzed exactly according to a prospectively finalized plan. Consequently, RoB 2 indicates *some concerns*, rather than low risk, for selection of the reported result.

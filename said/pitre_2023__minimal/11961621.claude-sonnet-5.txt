@@ -1,0 +1,81 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 11961621
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Length of Hospital Stay
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of detail on sequence generation and probable lack of allocation concealment effectiveness, combined with an unequal distribution of surgeon experience between groups that suggests a possible imbalance related to a key prognostic factor.
+
+**b. Rationale:**
+- Sequence generation: "Procedure type was assigned by a computer-generated randomization list" — this supports a judgement of **Yes/Probably Yes** for random sequence generation.
+- Allocation concealment: "concealment of randomization was done by telephone inquiry" — this is suggestive of adequate concealment (central-type allocation), supporting **Probably Yes**.
+- Baseline imbalance: Table 1 shows other baseline characteristics (age, gravidity, parity, Quetelet Index, estimated uterine weight) were reasonably similar between groups (differences compatible with chance). However, there was a statistically significant difference in surgeon seniority: "20 patients (71.4%) were operated on by an attending physician... A total of 20 patients (41.7%) were treated by AH, eight (40%) by an attending physician and the other 12 (60%) by a resident... (p < 0.05)." Since surgeon experience is plausibly a prognostic factor for hospital stay (via complications, operative technique, blood loss), and this difference reached significance, it raises a question about whether this reflects a problem with the randomization process itself (versus a post-randomization operational choice unrelated to allocation). There is no indication this assignment of surgeon was influenced by treatment allocation knowledge before enrollment, so it is more plausibly a chance/logistical imbalance than a failure of the randomization process itself, but it cannot be entirely excluded as a concern.
+- Given a random sequence and probable adequate concealment, but with an unexplained, statistically significant imbalance in a plausible prognostic factor (surgeon experience) between groups, this leads to a judgement of **Some concerns** rather than "Low risk."
+
+---
+
+## 2. Bias due to deviations from intended interventions (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns, primarily driven by the impossibility of blinding participants and personnel to a surgical intervention (LAVH vs AH), combined with an appropriate (ITT-consistent) analysis approach and the absence of clear evidence that deviations from intended intervention driven by trial context affected the outcome.
+
+**b. Rationale:**
+- Participants and personnel could not be blinded to type of surgery: "the patients could not be blinded to type of surgical treatment; thus, their expectations may have influenced the duration of their recuperation or their satisfaction with the procedure." This directly acknowledges an awareness of assigned intervention (signalling question 2.1/2.2 = Yes).
+- For the specific outcome of **length of hospital stay**, the authors note: "Each patient decided for herself when she was ready to be discharged from hospital." This is a critical detail — self-determined discharge timing in an unblinded trial is a clear mechanism by which the trial context (participant awareness of allocation, possible expectations about recovery associated with the "less invasive" LAVH) could influence the outcome measurement/duration, constituting a deviation from intended intervention in effect (not a formal protocol deviation, but a source of bias linked to lack of blinding influencing behavior/decision that determines the outcome).
+- There is no discussion of the analysis excluding participants or switching intervention groups — all 48 randomized patients appear to have been analyzed in their assigned groups (LAVH n=28, AH n=20), consistent with an appropriate (ITT) analysis for this outcome.
+- No non-protocol interventions or crossovers are reported (no conversions from LAVH to AH: "There were no conversions from LAVH to AH").
+- Because unblinding is unavoidable in this type of surgical trial, and self-determined discharge could plausibly be influenced by knowledge of intervention assignment/trial context (patient expectations of "less invasive" surgery leading to earlier self-discharge), but there's no direct evidence quantifying this effect or indicating it was severe/imbalanced beyond what's expected, the judgement is **Some concerns** rather than "High risk."
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk, as data for hospital stay (an objectively/routinely recorded variable, not reliant on the post-treatment questionnaire) appear to have been available for essentially all randomized participants.
+
+**b. Rationale:**
+- All 48 randomized patients (28 LAVH, 20 AH) are accounted for in Table 2, with results reported for "Hospital stay (d)" for both groups with no indication of missing data for this particular outcome.
+- Unlike the longer-term questionnaire-based outcomes (where only 35/48, 72.9%, responded), hospital stay is a routinely and objectively collected clinical/administrative variable recorded during the inpatient stay itself, not dependent on the postoperative questionnaire return.
+- No dropouts, losses to follow-up, or exclusions are reported prior to hospital discharge; this is consistent with data being available for essentially all randomized participants for this particular outcome.
+
+---
+
+## 4. Measurement of the outcome: **High risk of bias**
+
+**a. Judgement:** High risk of bias, because the outcome (length of hospital stay) was materially influenced by an unblinded, participant-driven decision-making process that could differ systematically according to knowledge of assigned intervention.
+
+**b. Rationale:**
+- Critically, the article states: "Each patient decided for herself when she was ready to be discharged from hospital." This means the "outcome assessor" for length of hospital stay is effectively the (unblinded) participant, whose decision could be consciously or unconsciously influenced by knowledge/expectations related to the type of surgery received (e.g., expecting a "minimally invasive" procedure to warrant earlier discharge).
+- The measurement/ascertainment method (self-determined discharge) very plausibly differed systematically between intervention groups, because participants' expectations about LAVH (marketed/perceived as less invasive) versus AH (open abdominal surgery) are likely to differ and directly affect their decision on when to be "ready" for discharge, independent of any true difference in physical recovery.
+- The authors themselves raise this concern for a related outcome (recuperation): "It also has to be kept in mind that the patients could not be blinded to type of surgical treatment; thus, their expectations may have influenced the duration of their recuperation." This same reasoning directly applies to hospital stay because discharge was patient-determined.
+- Because (1) the outcome assessor (patient) was aware of the intervention, (2) assessment of this outcome could clearly be influenced by that knowledge, and (3) there is a plausible, specific, and substantial mechanism (differential expectations about invasiveness/recovery) by which this influenced the differential result, this meets criteria for **High risk of bias** in this domain (per signalling questions 4.3–4.5).
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk, because length of hospital stay was the pre-specified primary outcome and was reported in a manner consistent with the trial's stated analytic intentions.
+
+**b. Rationale:**
+- The article explicitly identifies hospital stay as the primary, pre-specified outcome and even provides an a priori sample size justification specifically for this outcome: "We defined the primary outcome measure as length of hospital stay. We hoped to reduce the median hospital stay, for example, at least from 9 to 7 days. For this purpose, we calculated that we would need a sample size of 20 cases per group."
+- The result for hospital stay is reported clearly and completely in Table 2 as a single, unambiguous median with interquartile range for each group ("Hospital stay (d): 6.5 (5-7) vs 10 (8.25-11)"), with a statistical comparison (p < 0.05) — there is no evidence of multiple alternative analyses, definitions, or time points from which this result could have been selectively chosen.
+- There is no trial registry record identified in the provided materials (predating widespread trial registration; study conducted 1995–1997), so no external pre-specified protocol is available for comparison; however, given that hospital stay is explicitly the named primary outcome with an a priori power calculation reported in the Methods, and the result reported matches this specification directly and completely, there is no indication of selective outcome reporting for this result.
+- This supports a judgement of **Low risk of bias** for this domain.
+
+---
+
+## Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions | Some concerns |
+| 3. Missing outcome data | Low risk |
+| 4. Measurement of the outcome | **High risk** |
+| 5. Selective reporting | Low risk |
+| **Overall** | **High risk of bias** (driven by Domain 4) |

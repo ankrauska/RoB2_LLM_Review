@@ -1,0 +1,44 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 26144850
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Bias Assessment: Cure Rate at 2 Years
+## Sir Ian Chalmers' Review
+
+---
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+
+Justification: The allocation method used pre-generated three-digit random numbers assigned sequentially in patient registers, with even numbers to PB-MDT and odd numbers to ROM. Critically, this scheme is **entirely predictable** once the pattern is known - any staff member enrolling patients could anticipate the next allocation. There is no description of allocation concealment (e.g., sealed opaque envelopes, central randomization). The registers were apparently accessible to field workers making diagnostic and recruitment decisions. Baseline characteristics (Table 2) show some imbalance (mean age 36.4 vs 40.2 years, P=0.059, borderline; duration of disease also differs) raising possible concerns about whether allocation influenced recruitment decisions. Explicit statement: "Blinding to treatment was not undertaken" confirms no allocation concealment. This is a genuine open, non-concealed quasi-random system, raising some concerns about selection bias at entry.
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: Some concerns**
+
+Justification: This was an open-label trial with no blinding of participants, treating clinicians, or outcome assessors - explicitly stated ("Blinding to treatment was not undertaken"). PB-MDT is a more complex regimen (daily dapsone self-administered + monthly supervised rifampicin) versus ROM-6 (fully supervised monthly dosing), creating different patient experience and adherence burden. Differential default rates were observed (20.1% MDT vs 14.2% ROM), suggesting an intervention-related deviation from protocol. Two patients with unexpectedly positive smears were treated by protocol deviation (continued on PB-MDT despite becoming apparent as possibly MB after enrollment) - a post-hoc management decision rather than pre-specified handling. No mention of intention-to-treat analysis; results at 2 years are per-protocol (i.e., "of those who completed treatment"), which does not preserve the benefits of randomization for deviations/non-adherence.
+
+---
+
+**3. Risk of bias due to missing outcome data: High risk**
+
+Justification: At 2 years, only 100/134 (74.6%) in PB-MDT and 103/134 (76.9%) in ROM-6 were available for follow-up - meaning roughly 25% of randomized patients in each arm have missing 2-year cure status. The stated cure rate ("99% in ROM-6 and 97.0% in PB-MDT") explicitly excludes defaulters/those lost to follow-up ("of those who completed treatment"), which is a per-protocol/complete-case analysis rather than addressing missingness through ITT or sensitivity analysis. While default rates were somewhat comparable across arms and reasons for default were documented (Table 3), the magnitude of missingness (~25%) is substantial and could plausibly bias the effect estimate, particularly since defaulting patients may differ systematically in disease trajectory (some defaulted because "felt cured," others due to intolerable side effects — differentially distributed across arms, e.g., "swelling of feet" only in MDT arm, possibly signaling drug-related discontinuation biasing the surviving analytic sample toward good responders in MDT).
+
+---
+
+**4. Risk of bias in measurement of the outcome (Cure rate at 2 years): High risk**
+
+Justification: Cure was defined via clinical assessment (resolution of lesion, flattening, hypopigmentation, sensation return) - a **subjective clinical outcome** requiring judgment calls by assessors. Critically, there was **no blinding of outcome assessors** - the same paramedical workers/doctors who administered treatment monthly and were aware of allocation also assessed cure status. This is a major source of potential bias: knowledge of treatment assignment could influence the assessor's threshold for declaring "cure" versus "partial cure," especially given the study's a priori interest in demonstrating comparability of the newer ROM-6 regimen. No independent, blinded clinical outcome adjudication committee is described. Additionally, histological confirmation (bacteriological/histopathological corroboration) was not performed ("diagnosis was purely clinical and histology could not be done"), removing any objective corroborating measure that could offset the subjectivity of unblinded clinical assessment.
+
+---
+
+**5. Risk of bias in selection of the reported result: Some concerns**
+
+Justification: The trial was retrospectively registered on the Clinical Trial Registry of India in November 2013, many years after enrollment began (2001) and completion of most follow-up - meaning no prospectively published protocol or pre-specified outcome/analysis plan is available for comparison. This precludes verification that the 2-year cure rate analysis (denominator, definition, statistical test) was pre-specified rather than chosen post hoc from multiple possible timepoints/analyses (the paper reports outcomes at 6, 12, 18, 24, 36, 48, 60, and >60 months - multiple looks at the data create outcome-reporting flexibility). The sample size calculation was based on a "cure rate ... at 24 months" endpoint, suggesting 2-year cure was likely a planned primary outcome, which somewhat mitigates concern; however, the retrospective registration and lack of an accessible original protocol prevent full verification. Additionally, Cox regression exploring confounders is mentioned but results are simply stated as "not presented" since "no effect was found" - this selective non-reporting of full model results is a minor but real red flag for selective reporting practices in this study.
+
+---
+
+## 6. Overall Rating: **High risk**
+
+**Justification:** While the randomization domain and reporting-selection domain show "some concerns," the outcome measurement domain is rated **high risk** due to a subjective, clinically-assessed primary outcome (cure) evaluated in a completely unblinded trial with no independent adjudication - a critical vulnerability for exactly the type of endpoint under review. This is compounded by **high risk of bias from missing data** (~25% loss at the very timepoint being assessed) analyzed per-protocol rather than by intention-to-treat. Per the stated decision rules, a single high-risk domain (measurement) combined with a second high-risk domain (missing data) is sufficient to classify the overall risk of bias for the 2-year cure rate outcome as **high risk**. The combination of an open-label design, subjective outcome assessment without blinded adjudication, and substantial unaddressed attrition means confidence in the reported 2-year cure rate difference (99% vs 97%) is substantially undermined.

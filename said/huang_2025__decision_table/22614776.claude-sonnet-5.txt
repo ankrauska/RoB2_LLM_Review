@@ -1,0 +1,113 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 22614776
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Cunningham, 2012
+**Outcome Name**: peer aggression 12 months
+**Registration number**: NCT00251212
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (90% certainty)
+The article states participants "were randomly selected (stratified by gender and age...), and assigned to 1 of the 3 study conditions." No specific method of sequence generation (e.g., computer-generated random numbers, block randomization) is described anywhere in the methods.
+
+**1.2**: NI (90% certainty)
+There is no mention of allocation concealment mechanisms (e.g., central allocation, sequentially numbered opaque envelopes) anywhere in the article.
+
+**1.3**: N (90% certainty)
+The article explicitly states: "There were no significant differences between conditions on age, race, gender." Baseline characteristics reported in Table 1 also appear reasonably balanced across groups, with no indication of randomization failure.
+
+**Result of Domain 1**: Some concerns (85% certainty)
+Since 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Bias due to deviations from intended interventions
+
+**2.1**: Y (80% certainty)
+Although not explicitly stated, participants would necessarily know whether they received a therapist-delivered session, a computer-delivered session, or a brochure — these are overtly distinct delivery modes that cannot be masked from participants.
+
+**2.2**: Y (85% certainty)
+Therapists delivering the TBI necessarily knew the participants' assigned condition (they administered the therapist-assisted intervention themselves); computer-delivered and control conditions involved no live interventionist, but staff distributing conditions would know assignment.
+
+**2.3**: NI (70% certainty)
+The article mentions a baseline imbalance in "dropping out of school" between conditions (controlled for in analysis), but does not provide clear information on other non-protocol co-interventions (e.g., outside counseling, other services) and whether these were balanced.
+
+**2.4**: N (90% certainty)
+">95% received their assigned intervention during the ED visit," indicating implementation failure was under 10%.
+
+**2.5**: N (85% certainty)
+Given the single-session nature of the intervention and that >95% received the assigned intervention, non-adherence appears minimal (<10%).
+
+**2.6**: N (95% certainty)
+The article explicitly states "An intent-to-treat approach was used," which per the guidance is an inappropriate method for estimating the effect of adhering to intervention, so this is scored N.
+
+**Result of Domain 2**: High risk (85% certainty)
+2.1/2.2 = Y (at least one "Y/PY/NI"), 2.3 = NI, and 2.6 = N → per the algorithm ("one of 2.1/2.2 is Y/PY/NI, 2.3 is NI/N/PN, and 2.6 is NI/N/PN") → High risk.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (75% certainty)
+This is a binary outcome. 12-month follow-up was 83.6% (607/726), with 119 participants missing. The number of observed events for severe peer aggression at 12 months (79+98+104 = 281) is substantially greater than the number of participants with missing data (119), consistent with the "Y" criterion for binary outcomes.
+
+**Result of Domain 3**: Low risk (75% certainty)
+Since 3.1 = Y, Domain 3 = Low risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% certainty)
+Peer aggression was measured using the Conflict Tactics Scale, a well-established and validated psychometric tool; the method is appropriate and predefined.
+
+**4.2**: N (85% certainty)
+All groups completed identical computerized self-administered surveys at the same time points (baseline, 3, 6, 12 months), with the same measurement thresholds.
+
+**4.3**: Y (85% certainty)
+This outcome is patient-reported (self-administered computer survey), and participants were aware of their own assigned intervention (therapist, computer, or brochure control) — meeting the criterion for "Y."
+
+**4.4**: Y (90% certainty)
+Peer aggression is a subjective, patient-reported outcome (self-report survey), meeting the criterion for "Y."
+
+**4.5**: N (70% certainty)
+While the article acknowledges potential self-report bias, it also notes efforts to increase validity (confidentiality assurance, blinded staff to condition, computer self-administration). There is no clear, direct evidence that assessment was actually influenced by knowledge of intervention status.
+
+**Result of Domain 4**: Some concerns (80% certainty)
+4.1=N, 4.2=N, 4.3=Y, 4.4=Y, 4.5=N → matches the rule for "Some concerns."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (85% certainty)
+The trial is registered (NCT00251212), and the primary outcomes (violence and alcohol-related variables at 12 months) reported in the article match those specified in the registration and prior protocol papers referenced (e.g., Walton et al., 2010).
+
+**5.2**: N (80% certainty)
+Peer aggression was measured using a single defined outcome variable derived from the Conflict Tactic Scale (severe peer aggression, binary variable), consistently used across the SafERteens series of papers—no evidence of selection from multiple eligible measurements.
+
+**5.3**: N (80% certainty)
+A single prespecified GEE analytic approach was used consistently to test group-by-time interactions for this outcome, with no evidence of multiple analyses being conducted and selectively reported.
+
+**Result of Domain 5**: Low risk (80% certainty)
+5.1=Y, 5.2=N, 5.3=N → Low risk.
+
+---
+
+## Overall Bias Risk Assessment
+
+**Domain Summary**:
+- Domain 1: Some concerns
+- Domain 2: High risk
+- Domain 3: Low risk
+- Domain 4: Some concerns
+- Domain 5: Low risk
+
+**Overall Bias Risk for the Article**: **High Risk** (85% certainty)
+
+Rationale: Per the algorithm, if any domain is assessed as "High Risk," the overall risk of bias for the article is "High Risk." Domain 2 (deviations from intended interventions) was rated High Risk primarily due to inherent lack of blinding of participants/providers in this behavioral intervention trial, combined with unclear balance of non-protocol co-interventions and use of an inappropriate (ITT) analytic method to estimate intervention adherence effects.

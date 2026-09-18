@@ -1,0 +1,101 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 27807198
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Outcome assessed:** survival time in the double-blind randomized comparison of doxycycline 100 mg/day versus placebo (reported randomized-trial estimate: HR 0.841, 95% CI 0.238–2.966). The observational/compassionate-use cohort and the meta-analysis combining it with the randomized trial were not used to judge the randomized-trial result.
+
+### 1. Bias due to randomization: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The report states that participants were “randomly assigned (ratio 1:1)” and that “the randomisation list and the study medication were administered by the Charité, Universitätsmedizin, Berlin, Germany.” This supports that a formal allocation list existed and that medication handling may have been separated from the recruiting centre. However:
+
+* The method used to generate the sequence is not reported (e.g., computer-generated random numbers, random permuted blocks, etc.). Thus, it is not possible to verify that the allocation sequence had a random component.
+* Allocation concealment is not described sufficiently. Administration of the randomization list and medication by another institution does not explicitly establish that recruiters could not know the next allocation before a participant was irrevocably enrolled.
+* There are potentially important baseline imbalances in this very small trial. The doxycycline group was younger (median age 58 vs 72 years) and had better cognitive status (median MMSE 21 vs 16) than the placebo group. Both age and disease severity/cognitive status are plausible prognostic factors for survival in CJD. The groups also differed in time from disease onset to treatment (median 95 vs 152 days).
+
+These differences could readily occur by chance in a trial with only 13 randomized participants, so they do not establish that randomization failed. Nevertheless, in conjunction with incomplete reporting of sequence generation and allocation concealment, they raise concerns about the randomization process.
+
+---
+
+### 2. Deviations from intended intervention: **low risk of bias**
+
+**a. Judgement:** Low risk of bias for the effect of assignment to doxycycline versus placebo at baseline.
+
+**b. Rationale:**  
+The trial was described as a “randomised, single-centre, double-blind, placebo-controlled phase II trial.” Participants received either oral doxycycline or placebo, and placebo was supplied as hard oral capsules according to the registry. Thus, participants, carers, and personnel were likely unaware of assigned intervention.
+
+Although treatment discontinuation occurred—Figure 1 indicates that four doxycycline participants discontinued treatment—the relevant RoB 2 estimand is the **effect of assignment** at baseline, not the effect of remaining adherent to doxycycline. Discontinuation itself does not bias an intention-to-treat-type estimate unless it arose from the trial context and was associated with unbalanced, outcome-relevant non-protocol care.
+
+There is no report of differential non-protocol cointerventions or protocol departures caused by knowledge of allocated treatment. The article reports that all seven randomized doxycycline participants were included in the survival analysis; the one excluded participant was in the placebo group and was described as having “dropped out,” which is principally an issue of missing outcome data rather than deviations from intended intervention.
+
+The analysis retained participants in their randomized treatment groups rather than analysing them according to treatment actually received. Therefore, for the assignment effect, there is no evidence of bias due to deviations from intended interventions.
+
+---
+
+### 3. Missing outcome data: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+Thirteen participants were randomized: seven to doxycycline and six to placebo. However, the report states:
+
+> “Patients were randomised to active drug (n=7) or placebo (n=6). One patient who was randomised to the placebo group dropped out, so that 12 patients with sCJD were included in the reported survival analysis.”
+
+Figure 1 likewise shows five placebo participants analysed and one placebo participant excluded. Thus, survival data were unavailable, or follow-up was censored without adequate outcome ascertainment, for one of six placebo participants (approximately 17% of that group).
+
+For survival outcomes, a participant who drops out before death has potentially informative censoring: their unobserved survival time could differ from that of participants retained in follow-up. This is particularly relevant in a rapidly fatal condition such as CJD and in a trial with only 12 analysed participants. The missing participant was exclusively in the placebo group, so missingness was also unbalanced between groups.
+
+The report does not provide:
+
+* the reason for the placebo participant’s dropout;
+* the time of dropout/censoring;
+* whether death status was subsequently ascertained through relatives, physicians, records, or registries;
+* an analysis addressing informative censoring; or
+* sensitivity analyses examining the influence of the missing participant.
+
+The available information does not establish that missingness depended on the true survival outcome; therefore, high risk of bias is not justified. However, the small sample size, differential loss of one placebo participant, and lack of explanation or sensitivity analysis create some concerns.
+
+---
+
+### 4. Measurement of the outcome: **low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**  
+Survival/death is an objective outcome, and ascertainment of death is not plausibly influenced by knowledge of whether a participant received doxycycline or placebo. The study was double-blind, which further limits the potential for differential assessment.
+
+The report specifies that, for the randomized study:
+
+> “follow-up for survival starts with the randomisation (first application of study medication) and ends with date of death or end of the study, whichever occurs first.”
+
+Death is an appropriate outcome measurement for survival time, and there is no indication that death was ascertained using different procedures or thresholds in the two intervention groups. Although the investigator determining date of disease onset was explicitly blinded to treatment, blinding of the person recording death is less consequential because death is not a subjective or judgement-based endpoint.
+
+The issue of one placebo participant dropping out concerns completeness of outcome data, addressed in the missing-data domain, rather than differential measurement of death.
+
+---
+
+### 5. Selective reporting: **some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**  
+The trial registration was entered before recruitment and clearly specifies survival as the primary endpoint:
+
+> “Der primäre Zielparameter soll die Überlebenszeit der Patienten von Symptombeginn an sein.”  
+> [The primary endpoint is intended to be patients’ survival time from symptom onset.]
+
+It further specifies assessment “until death.” This confirms that survival was prespecified as the primary outcome domain.
+
+However, the publication defines the survival analysis for the randomized trial differently:
+
+> “In the double-blinded randomised study, follow-up for survival starts with the randomisation (first application of study medication) and ends with date of death or end of the study, whichever occurs first.”
+
+Thus, the registered primary endpoint was survival **from symptom onset**, whereas the published randomized comparison uses survival **from randomization/treatment initiation**. These are materially different time origins and can produce different estimates, particularly because the timing from onset to randomization differed between groups (median 95 days for doxycycline and 152 days for placebo).
+
+No protocol-level statistical analysis plan is available that specifies the planned survival model, time origin, handling of censoring/dropout, covariate adjustment, or whether analyses from both symptom onset and randomization were intended. The article does not explain the discrepancy between the registered endpoint definition and the published randomized-trial analysis, nor does it report the randomized comparison using survival from symptom onset.
+
+There is no direct evidence that the reported analysis was selected because it was statistically favourable; therefore, high risk of bias is not warranted. Nonetheless, the outcome-analysis discrepancy and absence of a prespecified analysis plan create some concerns about selection of the reported result.

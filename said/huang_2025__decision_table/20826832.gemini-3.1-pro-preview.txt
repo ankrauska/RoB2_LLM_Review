@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 20826832
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Püschel, 2010
+**Outcome Name**: compliance with mammogram screening
+**registration number**: NI
+
+Domain 1
+1.1 : Y (100%)
+The article states: "by using a computerized random number generator program, 500 women were randomly selected... A stratified randomization method blocking by age (50 –59; 60 – 70) was used to allocate women to each group using a computerized random generator program."
+1.2 : NI (95%)
+The article does not mention any methods for allocation sequence concealment (e.g., opaque envelopes, central allocation, etc.) until participants were enrolled and assigned.
+1.3 : N (100%)
+The article reports: "No significant differences were observed between groups in the demographic characteristics of the participants." Baseline characteristics are presented in Table 1 and are balanced.
+Result of Domain 1: Some concerns (95%)
+The answer to question 1.2 is "NI", and the answer to question 1.3 is "N", resulting in "Some concerns".
+
+Domain 2
+2.1 : N (100%)
+The article states: "Blinding participants to their intervention group was not possible in this study", which would typically imply they were aware. Wait, the prompt says "If the article states that this is a non blind or open label experiment, the answer to this question is "N";" - here, it explicitly states blinding was not possible. Therefore, following the instructions, the answer is N.
+2.2 : N (100%)
+Following the same logic as 2.1, it was an open trial, meaning intervention providers were not blinded, so based on the strict instruction for open label/non-blind experiment, this is N.
+2.3 : Y (95%)
+There are no significant non protocol measures imbalanced between groups reported.
+2.4 : N (100%)
+Implementation was successful. About 92.4% completed the final survey. The percentage of failures was less than 10%.
+2.5 : N (100%)
+There was high compliance with the intervention. "Compliance in this study was very high..."
+2.6 : NA (100%)
+Not applicable, because there was no significant non-adherence. 
+Result of Domain 2: Low risk (95%)
+Since 2.1 is N, 2.2 is N, 2.4 is N, and 2.5 is N, Domain 2 is "Low risk".
+
+Domain 3
+3.1 : Y (100%)
+The primary outcome of compliance was evaluated via electronic records for all randomized women. "An intention to treat analysis was conducted using electronic clinical records. They were reviewed for all women and compliance was estimated using the baseline denominators of each group." (100% data availability for this outcome).
+3.2 : Y (100%)
+Since data was available for all (or nearly all), missing outcome data is not an issue.
+3.3 : N (100%)
+Missingness is not related to the true value since data was obtained for all participants through electronic records.
+3.4 : N (100%)
+It is not likely.
+Result of Domain 3: Low risk (100%)
+If the answer to question 3.1 is "Y", the assessment result for Domain 3 is "Low risk".
+
+Domain 4
+4.1 : N (100%)
+The outcome was measured using electronic clinical records, which is a reliable objective method.
+4.2 : N (100%)
+Electronic clinical records were reviewed for all groups in the same way.
+4.3 : N (100%)
+The outcome (from electronic records) is objective, and assessors (investigators reviewing records) were blinded: "The analysis of the data was conducted by investigators of the coordination center at the Fred Hutchinson Cancer Research Center. They were blinded to the group assignment of participants."
+4.4 : N (100%)
+The primary objective measure is based on electronic records (objective).
+4.5 : N (100%)
+There is no clear evidence to suggest outcome assessment was influenced by knowledge of intervention received.
+Result of Domain 4: Low risk (100%)
+4.1 is N, 4.2 is N, 4.3 is N.
+
+Domain 5
+5.1 : Y (95%)
+The outcome of compliance with mammogram screening was pre-specified in the methods and reported accordingly.
+5.2 : N (95%)
+There is no evidence that the reported result was selected from multiple eligible measurements. 
+5.3 : N (95%)
+There is no evidence that the reported result was selected from multiple eligible analyses.
+Result of Domain 5: Low Risk (95%)
+5.2 is N, 5.3 is N, and 5.1 is Y.
+
+Overall Bias Risk for the Article: Some concerns (95%)
+One domain (Domain 1) is "Some concerns" and there are no "High Risk" domains, with the rest being "Low Risk".

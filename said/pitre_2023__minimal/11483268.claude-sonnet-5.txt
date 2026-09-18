@@ -1,0 +1,88 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 11483268
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Anti-HAV antibody GMT 1 month post-vaccination
+
+**Study design:** Individually-randomized parallel-group trial
+**Comparison:** Vaqta™ booster vs. Avaxim™ booster (both following Avaxim™ priming)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- Signalling question 1.1 (random sequence): The paper states subjects "were randomised" but provides no description of the method used to generate the allocation sequence (e.g., no mention of computer-generated randomization, random number tables, etc.). Given this is a single-centre trial published with limited detail, this is not enough to confidently answer "Probably yes" → **No information**.
+- Signalling question 1.2 (allocation concealment): No information is provided on how the allocation sequence was concealed from investigators/participants prior to assignment. This was an "open study" as stated in the Discussion ("This was an open study and was therefore a sub-optimal setting for comparing reactogenicity"), but this pertains to blinding after allocation, not concealment of the sequence itself. No information on concealment mechanism (envelopes, central randomization, etc.) is given → **No information**.
+- Signalling question 1.3 (baseline imbalance): Baseline demographic characteristics (age, sex, weight, height, Table 1) appear well balanced between groups. Additionally, pre-booster GMTs, while numerically different (496 vs. 325 mIU/mL), were explicitly tested and found not statistically significant (p=0.171), and both groups had 100% seroprotection at baseline. This imbalance is compatible with chance → **No** imbalance suggestive of a problem.
+
+Given "No information" on both sequence generation and allocation concealment, combined with no evidence of problematic baseline imbalance, the algorithm defaults to **"Some concerns"** (per Table 4: NI/NI/N → Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention)
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- **2.1 (Participants aware of assigned intervention):** Yes. This was an open-label study; participants necessarily knew which vaccine (Vaqta™ vs. Avaxim™) they received, as these are different, distinguishable commercial products administered with different injection volumes (0.5 mL vs. 1.0 mL).
+- **2.2 (Personnel aware):** Yes. Trial personnel administering vaccines and assessing subjects were aware of assignment (open study, no blinding described).
+- **2.3 (Deviations arising from trial context):** No/Probably no. For the outcome of anti-HAV GMT, there is no plausible mechanism by which awareness of intervention assignment would lead to deviations from intended intervention affecting antibody titre measurement. GMT is a serological/laboratory outcome measured by a blinded, independent laboratory (Merck Research Laboratories) using a standardized quantitative assay (modified HAVAB™), not open to influence by participant or personnel behaviour, non-protocol interventions, or trial engagement effects. There is no evidence of non-protocol interventions (e.g., additional vaccines, immune globulins) being administered differentially between groups.
+- **2.6 (Appropriate analysis):** Both ITT and per-protocol analyses were performed; "the results of both analyses were close enough to allow only the per-protocol results to be reported." Per-protocol exclusions were minor (6 subjects total, for reasons unrelated to the intervention effect on GMT: prior booster, travel to India, missing serology) and not differential in a way suggesting bias. Given the objective nature of the outcome and close concordance between ITT and PP results, the analysis is considered appropriate for estimating the assignment effect.
+
+Because participants/personnel were aware of assignment, but there is no plausible or reported deviation from intended intervention arising from the trial context that would affect this objective, laboratory-measured outcome, and an appropriate analytical approach was used → **Low risk of bias**.
+
+---
+
+## 3. Missing outcome data
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- Of 127 randomized subjects, 121 (59+62) were included in the per-protocol immunogenicity analysis; six subjects were excluded for reasons clearly unrelated to the value of the outcome itself: "one subject had previously received a hepatitis A booster, one subject travelled to India between visits and four subjects did not have pre- and post-vaccination serological results available."
+- This represents ~4.7% missing data overall, a small proportion, and the reasons given (protocol deviations, travel, missing samples) do not appear related to the true GMT value. There is no indication of differential loss between groups that could be linked to the outcome (2 excluded from Vaqta™ arm [64→? approximately 5] vs 1 from Avaxim™ arm; actual per-protocol n's were 59 and 62 respectively, i.e., 5 excluded from Vaqta arm, 1 from Avaxim arm).
+- Although there is a numerical difference in exclusions between arms (5 vs 1), the stated reasons (one prior booster, one travel to India, four missing samples—reasons not specified by arm but described as generic protocol violations) do not suggest that missingness depended on the true GMT value. The amount of missing data is small enough that even under plausible alternative assumptions, it is very unlikely to have made an important difference to the large, statistically robust GMT differences observed (496→7262 and 325→5131 mIU/mL).
+
+Given the small amount of missing data and the non-informative nature of the documented reasons, → **Low risk of bias**.
+
+---
+
+## 4. Measurement of the outcome
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- **4.1 (Inappropriate measurement method):** No. The outcome (anti-HAV GMT) was measured using a validated, quantitative modified HAVAB™ assay, calibrated against a WHO standard serum immune globulin, with a defined lower limit of detection (6 mIU/mL). This is an appropriate, objective, and validated method.
+- **4.2 (Differential measurement/ascertainment):** No. The same assay and laboratory procedures were applied identically to both groups; blood samples were taken at the same time-points (pre-vaccination and 1 month post-vaccination [4 weeks ± 7 days]) in both arms.
+- **4.3 (Outcome assessors aware of intervention):** No. Serological evaluations were performed by an independent laboratory ("Merck Research Laboratories, Pennsylvania, USA") separate from the clinical site. There is no indication that laboratory personnel performing the antibody titre assays were aware of, or need have been aware of, which vaccine each blood sample corresponded to; the assay is a standardized, quantitative, automated-type immunoassay leaving little room for subjective judgement.
+- This is an "observer-reported outcome not involving judgement" (akin to an automated laboratory test), for which non-blinding of outcome assessors is not a substantial concern even if it occurred, and here there is no evidence assessors were unblinded.
+
+Because the measurement method was appropriate, ascertainment did not differ between groups, and the objective, laboratory-based nature of the outcome makes it very unlikely to be influenced by knowledge of intervention assignment (even in the absence of explicit statements about assessor blinding) → **Low risk of bias**.
+
+---
+
+## 5. Selective reporting
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- No trial protocol, statistical analysis plan, or trial registry entry is referenced or available for this study (published in 2001, prior to widespread trial registration requirements). The methods section pre-specifies the primary evaluation criterion clearly: "The primary evaluation criterion was the comparison of the anti-HAV antibody GMT for both vaccines 1 month post-vaccination," and this is the result reported in Table 2 and discussed in the text, with a pre-specified non-inferiority margin and sample size calculation (4-fold margin, 2.5% one-sided significance, 99% power) established *a priori*.
+- There is no evidence of selection among multiple eligible outcome measurements (e.g., only one assay, one timepoint [1 month ± 7 days], one definition of GMT is reported) — signalling question 5.2 → **No**.
+- There is no evidence of selection among multiple eligible analyses — signalling question 5.3 → **No**, since both ITT and per-protocol analyses were performed and both are reported to be concordant, with per-protocol chosen for full presentation. This is a legitimate, transparent analytic decision, not indicative of selective reporting bias (the results were stated to be "close enough").
+- However, since no protocol or SAP was available for verification (signalling question 5.1), and this is an industry-funded study (funded by Aventis Pasteur MSD, manufacturer of Avaxim™, one of the compared products) it cannot be fully confirmed that the analysis was conducted strictly in accordance with a plan finalized before unblinded data were available.
+
+Given the absence of a verifiable pre-specified analysis plan/protocol (No information on 5.1), despite no direct evidence of selective reporting of outcome measurements or analyses → **Some concerns**.
+
+---
+
+## Overall Risk of Bias Judgement (for this outcome/result)
+
+**Overall: Some concerns**
+
+Two domains ("bias arising from the randomization process" and "selective reporting") were judged as "Some concerns," while the remaining three domains ("deviations from intended intervention," "missing outcome data," and "measurement of the outcome") were judged as "Low risk of bias." No domain was judged "High risk of bias." Per the RoB 2 framework, this results in an overall judgement of **Some concerns** for the outcome of anti-HAV antibody GMT 1 month post-vaccination.

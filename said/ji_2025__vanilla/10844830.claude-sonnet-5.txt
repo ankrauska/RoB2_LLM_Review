@@ -1,0 +1,202 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 10844830
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"Twenty consecutive patients undergoing cardiac surgery with cardiopulmonary bypass (CPB) were allocated at random to group 1... or group 2..."
+"Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1... or group 2..."
+
+Analysis: The article explicitly states that patients were "allocated at random" using "sealed envelopes." However, the description only specifies the allocation concealment mechanism (sealed envelopes) rather than detailing the actual method used to generate the random sequence (e.g., computer-generated random numbers, random number tables, coin tossing, etc.). The term "at random" is used, but no specific sequence generation method is described—only the concealment technique (sealed envelopes) is mentioned. Sealed envelopes alone do not indicate how the sequence itself was generated; they are typically an allocation concealment method rather than a sequence generation method. Since no specific random sequence generation technique is described, but the study explicitly claims randomization ("allocated at random") in two separate instances, this suggests genuine intent to randomize. Given this is a smaller, investigator-initiated trial (not necessarily a large trial run by an experienced CTU), and no journal word-limit context is provided, we cannot fully confirm the sequence generation method. However, the repeated explicit statement of "allocated at random" combined with sealed envelope allocation (a common practice paired with random sequence generation) supports a judgement leaning toward randomness being present, even though the specific generation method is not detailed.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences: "Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1 (n=10, high FIO2 (1.0)) or group 2 (n=10, moderate FIO2 (0.35))."
+
+Analysis: The article only states that "sealed envelopes were used to allocate at random," without providing further detail on whether the envelopes were opaque, sequentially numbered, tamper-proof, or opened only after irreversible assignment. There is no mention of a centralized or third-party administered randomization system, nor any description confirming that enrolling personnel could not foresee or manipulate the allocation sequence. Given the lack of detail on the envelope procedure's integrity (opacity, sequential numbering, tamper-proofing), a definitive judgment of adequate concealment cannot be made, but the use of sealed envelopes suggests some effort toward concealment, which is not explicitly contradicted elsewhere in the text.
+
+Correct answer: No information
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"Sealed envelopes were used to allocate at random 20 consecutive adults... to group 1 (n=10) or group 2 (n=10)." Table 2 shows: Sex (M/F) 9/1 vs 5/5; Pulmonary artery pressure mean 25(5) vs 19(5); Coronary artery surgery 1 vs 4; Aortic/mitral valve surgery 9 vs 6; CPB times 116(34) vs 84(38) min. The text explicitly states: "Pre-bypass values of pulmonary artery pressures were significantly greater in group 1 (25±5) than in group 2 (19±4)... indicating the difficulty of getting a good match in this kind of a study."
+
+Analysis: With only 10 patients per group, several baseline characteristics show marked imbalance: sex distribution (90% male vs 50% male), type of surgery (mostly valve vs more mixed coronary/valve), CPB duration (116 vs 84 min, a ~35% difference), and pulmonary artery pressure (a key prognostic/physiological variable directly relevant to the pulmonary outcomes being studied), which the authors themselves acknowledge was statistically significantly different at baseline and admit reflects "the difficulty of getting a good match" with randomization in this small study. Given the small sample size, this baseline PA pressure imbalance is unlikely to be due to chance alone and is directly related to the key outcome (venous admixture/pulmonary function), raising concern that this imbalance could bias the intervention effect estimate. The combination of multiple simultaneous imbalances (sex, surgery type, CPB time, and especially PA pressure) in such a small trial suggests problems with the randomization process, though sealed envelope allocation is described, the resulting imbalance is concerning enough to answer affirmatively per criterion (3) of the explanation.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences: "Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1 (n=10, high FIO2 (1.0)) or group 2 (n=10, moderate FIO2 (0.35))." No mention of blinding of patients to FIO2 levels; the intervention (inspired oxygen fraction) was administered mechanically via ventilator settings, and there is no description of any blinding procedure for participants (patients were under general anesthesia during exposure to the intervention and in ICU postoperatively, but no explicit statement that patients were unaware of their group assignment or that a sham FIO2 was used).
+
+Analysis: The trial compared two FIO2 regimens administered via mechanical ventilation immediately after CPB and in the ICU. Patients were sedated/anesthetized during the CPB period and early ICU period when the FIO2 difference was applied, making direct patient awareness unlikely during that window. However, there is no explicit statement about blinding of participants, and by the time patients were extubated and possibly more alert (though FIO2 was equalized in the ICU thereafter), it's unclear if they could perceive or be informed of their allocated FIO2 group. Since the paper does not describe any blinding strategy for participants and does not state that patients remained unaware of their allocation, but the physiological/pharmacological nature of the intervention (variation in inspired oxygen concentration) is not something a sedated post-CPB patient could readily detect, and no side effects specific to one group are reported as recognizable to the patient, the most defensible answer is "No information" since blinding status of participants is not explicitly reported.
+
+Correct answer: No information
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+"Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1 (n=10, high FIO2 (1.0)) or group 2 (n=10, moderate FIO2 (0.35))." "After the patient was rewarmed and weaned from the CPB machine, FIO2 was set to either 1.0 (high, group 1) or 0.35 (moderate, group 2)." No mention of blinding of clinicians/ICU staff/anaesthetists; the FIO2 setting is an overt, actively administered intervention that must be manually set on the ventilator by the treating team.
+
+Analysis: The intervention consists of deliberately setting the FIO2 to a specific, distinct value (1.0 vs 0.35) on the ventilator after CPB. This requires the clinical/ICU staff delivering care to actively read and set the ventilator FIO2 dial, making the assigned group evident to them at the time of intervention delivery. There is no mention of any blinding procedure (e.g., use of masked ventilator settings, blinded gas mixing, or independent blinded administration) to conceal this from caregivers. Given the nature of the intervention (a directly visible and manually set parameter), it is highly likely that those delivering the intervention (anaesthetists/ICU staff) were aware of the group assignment. This lack of blinding of care providers increases risk of differential co-intervention or management deviations.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+"After the patient was rewarmed and weaned from the CPB machine, FIO2 was set to either 1.0 (high, group 1) or 0.35 (moderate, group 2) with a mean exposure time of 70 min... Except for the FIO2, the ventilatory mode did not differ from the pre-bypass settings in order to preserve equal ventilatory conditions between the groups." "Postoperative care was standardized for all patients and extubation was accomplished at the earliest clinically appropriate time..." No mention of protocol deviations, co-interventions, or trial-context-driven changes to the assigned intervention; the protocol (FIO2 settings per group and timing) appears to have been implemented as planned, with standardized care otherwise.
+
+Analysis: The study describes a strict, well-defined protocol for FIO2 assignment at specific time points, with the only difference between groups being the FIO2 level, and all other aspects of care (ventilatory mode, postoperative management, extubation criteria) standardized identically. There is no indication that recruitment, consent procedures, or trial participation influenced clinicians or patients to deviate from the assigned FIO2 protocol, nor is there mention of unblinding leading to compensatory treatment changes, crossover, or protocol violations due to trial context. The report does not describe any problems with implementation fidelity attributable to the trial context (e.g., participants seeking alternative treatment, clinicians deviating due to awareness of assignment). No information is given about deviations of this kind, but the detailed methodology suggests protocol adherence was tightly controlled and monitored (blood gas sampling at defined times, standardized ventilator settings). Given the absence of any reported deviations linked to trial context, and the tightly controlled experimental design, there is no evidence suggesting trial-context-driven deviations occurred.
+
+Correct answer: No information
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences: The protocol itself specifies FIO2 changes at each time point (Table 1) as the planned intervention (1.0 vs 0.35 after CPB, then 0.6 for both, then 0.4 for both). One outlier patient in group 2 with persistently high arterial ET-1 (3.6–4.7 fmol/litre) throughout the study was excluded from statistical analysis "in order to simplify statistical interpretation," with no clinical explanation found. No other deviations from assigned intervention (e.g., non-adherence to allocated FIO2 protocol) are reported; the described FIO2 changes are the intended, protocol-driven exposures rather than deviations.
+
+Analysis: This question concerns deviations from the intended intervention arising from the trial context (e.g., non-protocol co-interventions, non-adherence, or switches inconsistent with assignment) that could affect the outcome. In this trial, the FIO2 changes at each time point were prespecified per protocol for both groups (Table 1), so they do not constitute "deviations." The only notable departure from strict adherence to plan is the post-hoc exclusion of one outlier patient's data from analysis, which is an analytic deviation rather than an intervention deviation, and is unlikely to substantially bias the intervention effect estimate given it was a single outlier excluded for both groups' comparability. No other deviations (crossovers, non-adherence, unplanned co-interventions differing by arm) are reported. Therefore, there is no clear evidence that meaningful deviations from intended interventions occurred that would have affected the outcome.
+
+Correct answer: No
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+"After the patient was rewarmed and weaned from the CPB machine, FIO2 was set to either 1.0 (high, group 1) or 0.35 (moderate, group 2) with a mean exposure time of 70 min... Except for the FIO2, the ventilatory mode did not differ from the pre-bypass settings in order to preserve equal ventilatory conditions between the groups." Also: "Postoperative care was standardized for all patients and extubation was accomplished at the earliest clinically appropriate time..." and "Changing the FIO2 from 1.0 (group 1) and 0.35 (group 2) to 0.60 in both groups resulted in no significant changes..." No mention of any protocol deviations, co-interventions, or non-adherence being reported at all.
+
+Analysis:
+The intervention (FIO2 level) itself was the randomized exposure, and both groups received standardized anaesthesia, surgery, CPB technique, postoperative ventilation protocol (FIO2 0.6 in ICU for both groups), and standardized extubation criteria. There is no description of any deviation from the intended intervention protocol (e.g., unplanned crossover, non-adherence, additional treatments differing between groups) in either group. Since no deviations were reported or described in the article, the question of whether such deviations were "balanced" cannot be substantively assessed from the given information — there is no evidence of any deviations occurring at all, and the article provides no data on this specific aspect.
+
+Correct answer: No information
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+"Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation."
+
+Analysis: The study excluded a randomized participant's data from the statistical analysis post-hoc, based on the outlying nature of their results rather than ineligibility discovered after randomization. This is a post-randomization exclusion of an eligible participant, which does not meet criteria for an appropriate ITT or modified ITT analysis. This exclusion was not due to missing data but due to an inconvenient/outlying result, which introduces potential bias into the analysis. This matches the description of an inappropriate analysis, as it excludes eligible participants post-randomization based on their data pattern rather than on missing outcome data or confirmed ineligibility.
+
+Correct answer: No
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences: "Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation."
+
+Analysis: One participant in group 2 (out of 10, i.e., 10% of that group and 5% of the total sample) was excluded post hoc from the statistical analysis for ET-1 values because their data were considered an outlier, without a clear pre-specified rule or physiological explanation. This exclusion was not due to protocol deviation but appears to be a data-driven decision made after observing the results, which raises concern about analysis bias. However, this exclusion was specific to the ET-1 outcome only (not Big ET-1 or venous admixture, the primary outcomes of interest), and given that ET-1 showed no significant differences between groups even with this exclusion, and the sample size is already very small (n=10 per group), removing one data point could have influenced the direction or magnitude of the ET-1 result, but the primary outcomes of the study (Big ET-1 and venous admixture) were not affected by this exclusion. The impact seems limited to a secondary/non-significant outcome analysis rather than the primary result of the study.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation."
+"Twenty consecutive patients... were allocated at random to group 1 (n=10...) or group 2 (n=10...)"
+No mention of dropouts or missing data elsewhere in the results.
+
+Analysis: All 20 randomized patients appear to have completed the study and data are reported for all time points in Figure 1 and Results for both groups (n=10 each). However, one participant in group 2 was excluded post-hoc from the ET-1 statistical analysis due to being an "outlier," despite having data available. This constitutes an exclusion of available data based on post-hoc judgment rather than missing data per se, but it does mean that for the ET-1 outcome, data from all randomized participants were not used in the analysis as reported. This is a deviation from including all randomized participants' data, though it is not "missing" data in the classic sense—it was deliberately excluded. For other outcomes (Big ET-1, venous admixture), all 20 patients' data appear to be included. Given that the exclusion is limited to one outlier for one specific measure (ET-1) and does not represent missing outcome data due to dropout/loss to follow-up, and 19/20 (95%) of participants contributed data for that specific analysis, the impact is likely minimal. Overall, there is no indication of missing outcome data due to withdrawal, loss to follow-up, or non-collection for the primary outcomes.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+"Twenty consecutive patients... were allocated at random to group 1 (n=10...) or group 2 (n=10...)" and all subsequent results/discussion sections report data on both groups (n=10 each) at all four time points, with no mention of dropouts, withdrawals, or missing data. One outlier in group 2 was excluded and explicitly explained ("Group 2 had an outlier with high arterial ET-1 values... excluded from the statistical analysis in order to simplify statistical interpretation"), but this appears to be a data-point exclusion for one variable, not a participant lost to follow-up—full data for all 20 patients appear to have been analyzed and reported at each time point (Fig. 1, Table 1, Table 2).
+
+Analysis:
+There is no mention of participant dropout, loss to follow-up, or missing outcome data in the article. All 20 patients appear to have completed the study with data reported at all four time points in Table 1 and Figure 1. The only exclusion noted is a single outlier data point (not a whole participant) for arterial ET-1, which was explained and does not indicate missing outcome data due to attrition. Since there is no evidence of missing outcome data at all (complete data for all randomized participants across all outcomes and time points appears to have been analyzed), the result is unlikely to be biased by missing outcome data — data completeness itself constitutes evidence of no missing-data bias, even though no explicit sensitivity analysis or imputation method was reported.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences: All 20 patients (10 per group) appear to have completed the study with data reported at all four time points (Pre, +20 min, ICU 90 min, Day 1) in Figure 1 and the results section. One outlier in group 2 with high arterial ET-1 values was excluded from statistical analysis, but this exclusion was based on values being outliers unrelated to missingness of outcome data, and the participant appears to still have data present. No mention of loss to follow-up, withdrawal, or missing data due to attrition is made anywhere in the article.
+
+Analysis: The article does not report any missing outcome data, dropouts, or withdrawals. All patients appear to have complete data recorded at each of the four specified time points as per the study protocol (Table 1, Figure 1). The one exclusion mentioned (an outlier with high arterial ET-1 values in group 2) was a statistical decision to simplify interpretation, not a case of missing data related to the outcome's true value—the data existed and were measured, just excluded from analysis for statistical reasons unrelated to the outcome's true value in the sense of loss to follow-up. There is no indication that missingness (if any existed) was related to the participants' true outcome values, and no missing outcome data due to attrition, withdrawal, or dropout is reported in this small (n=20) trial.
+
+Correct answer: No information
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+- No mention of missing outcome data, dropouts, or loss to follow-up for any of the 20 patients throughout the article.
+- "One outlier with high arterial ET-1 values...excluded from the statistical analysis" — this refers to exclusion of a data point for analysis simplification, not missing data due to true outcome value.
+- All 20 patients appear to have complete data reported for all time points (Pre, +20 min, ICU 90 min, Day 1) in Table 1/Figure 1.
+- Extubation times and PAO2/FIO2 ratios are reported for all patients with no indication of missing data.
+
+Analysis: The article does not report any missing outcome data, withdrawals, or losses to follow-up in either group. All 20 patients (10 per group) appear to have complete data collected at all four specified time points for ET-1, Big ET-1, and venous admixture measurements. The one exclusion mentioned (an outlier in group 2) was a statistical decision to simplify interpretation rather than a case of missing data related to the true outcome value, and this exclusion is explained and not related to dropout or unavailability of data. There is no information suggesting differential missingness between groups, no reported reasons for missing data, and no circumstances described that would suggest missingness related to outcome values. Since there is no evidence of missing outcome data at all, there is insufficient information to assess whether missingness depended on its true value.
+
+Correct answer: No information
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences:
+"Venous admixture was calculated to assess the efficiency of pulmonary gas exchange" using standard oxygen technique equations (Qs/Qt) with blood gas electrodes (ABL 500), and ET-1/Big ET-1 measured by validated sandwich-type enzyme immunoassay (Biomedica) with stated detection limits and coefficients of variation (2.5–10.9%). The discussion acknowledges: "the oxygen technique has limitations in the description of intrapulmonary shunt," but the authors justify its use: "our calculated venous admixture data varied clearly with different FIO2... for our clinical trial the oxygen technique was less complex and costly compared with other techniques using inert tracer gases."
+
+Analysis:
+The outcome measurement methods (ELISA-based peptide assays with established sensitivity/specificity and quality control parameters, and venous admixture calculated via a standard, widely used oxygen content equation) are standard, validated techniques appropriate for detecting the biological effects under study. Although the authors note theoretical limitations of the venous admixture ("oxygen shunt") technique (it is not a "pure shunt" and includes low V/Q regions), they justify its use and show that it varied clearly and sensitively with different FIO2 levels within the study, demonstrating adequate sensitivity to detect the intervention effect. There is no evidence of poor validity or insensitivity to plausible intervention effects; on the contrary, the measurements successfully detected significant differences between groups. Thus, the method of measuring the outcome is not inappropriate for the purposes of this study.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"Blood samples were obtained from the distal lumen of the pulmonary artery catheter and from the cannula in the radial artery... obtained at the following times: (i) during anaesthesia before surgery (baseline); (ii) 20 min after CPB had been discontinued... (iii) 90 min after arrival in the ICU; (iv) on the first postoperative day in the ICU (Table 1)." "Direct measurements of the peptides were performed in duplicate according to the manufacturer's instructions." "Arterial and mixed venous blood gas measurements were performed by using a standard technique with the electrodes calibrated for the required partial pressure ranges." "Postoperative care was standardized for all patients and extubation was accomplished at the earliest clinically appropriate time..."
+
+Analysis: The outcomes (ET-1, Big ET-1 concentrations, and venous admixture) were measured using identical, objective, standardized laboratory assays (ELISA kits with fixed detection thresholds) and standardized blood gas analyzers, applied at the same pre-specified time points for both groups, regardless of allocation. There is no indication that outcome assessors were aware of group allocation in a way that could influence measurement, nor that measurement methods, timing, or thresholds differed between groups. The only difference between groups was the FIO2 level itself (the intervention), not the way outcomes were measured. Blood sampling protocols, assay kits, and equipment were identical and applied uniformly across both study arms. There is no evidence of differential surveillance, extra visits, or ascertainment methods that would create detection bias between groups.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences: The article describes objective laboratory measures (blood peptide concentrations via enzyme immunoassay, blood gas analysis for venous admixture calculation) as outcomes. There is no mention of blinding of outcome assessors, laboratory personnel, or those performing blood gas/peptide analyses to group allocation. The FIO2 settings differed markedly between groups (1.0 vs 0.35) and were part of the study protocol, meaning clinical staff administering/monitoring ventilation would necessarily know group allocation, though this does not equate to blinding status of assessors analyzing biochemical samples.
+
+Analysis: The outcomes assessed (Big ET-1, ET-1 concentrations, venous admixture, blood gases) are objective, assay-based measurements not inherently susceptible to assessor bias if the personnel performing the assays were blinded. However, the article provides no explicit statement regarding whether laboratory personnel or those calculating venous admixture were blinded to group allocation. Given the FIO2 difference (1.0 vs 0.35) was overt and part of routine ICU/OR ventilator management, it is plausible that clinical staff recording physiological/blood gas data were aware of allocation, but this is not explicitly confirmed for the specific outcome assessors (lab technicians running ELISA assays, personnel calculating venous admixture from blood gas data). Since there is no direct statement on blinding of outcome assessors, and no information suggesting blinding procedures were implemented, the domain risk indicates uncertainty in this domain.
+
+Correct answer: No information
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"Twenty consecutive patients undergoing cardiac surgery with cardiopulmonary bypass (CPB) were allocated at random to group 1 (n=10, high inspired oxygen fraction (FIO2) after CPB), or group 2 (n=10, moderate FIO2 after CPB)." The outcomes measured were arterial and mixed venous concentrations of endothelin-1 (ET-1) and Big ET-1, and venous admixture calculated from blood gas analysis. There is no mention of blinding of outcome assessors, laboratory personnel performing the ELISA assays, or clinicians involved in data collection/analysis.
+
+Analysis: The outcomes in this study (Big ET-1, ET-1 concentrations, and venous admixture calculated from arterial/venous blood gas measurements) are objective, laboratory-based, and calculated from standardized biochemical assays (ELISA) and blood gas machines, rather than subjective clinical judgement or patient-reported outcomes. These are objective biochemical/physiological measurements unlikely to be influenced by knowledge of group assignment, since the assay results are determined by standardized kits and automated blood gas analyzers, not by subjective interpretation. However, the article gives no explicit statement about blinding of the laboratory personnel or outcome assessors to group allocation, so we cannot confirm definitively that blinding was undertaken. Given the objective nature of the outcome measures (biochemical assay values, calculated shunt fraction from blood gas data), knowledge of allocation is unlikely to have influenced the measurement, even in the absence of explicit blinding statements.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"Peptide concentrations and calculations determining venous admixture (see below) were based on analyses of these blood samples" and "Direct measurements of the peptides were performed in duplicate according to the manufacturer's instructions" using ELISA assay methodology; also "Arterial and mixed venous blood gas measurements were performed by using a standard technique with the electrodes calibrated" for venous admixture calculations. No mention of blinding of outcome assessors is provided anywhere in the methods.
+
+Analysis: The outcomes were objective laboratory measurements (ET-1, Big ET-1 concentrations via ELISA immunoassay) and calculated physiological parameters (venous admixture from blood gas analysis using standardized equations and calibrated electrodes). These are objective, biochemically/physiologically determined outcomes rather than subjective clinician- or patient-reported outcomes. Knowledge of group allocation (FIO2 level) by the laboratory personnel performing the ELISA assay or blood gas analysis would be unlikely to influence the numerical results, since these are automated/standardized measurement techniques with fixed protocols (immunoassay kits, calibrated blood gas analyzers) rather than subjective clinical judgment. There is no indication of subjective assessment components in these outcomes that would be susceptible to biased interpretation based on knowledge of intervention. Therefore, even without explicit information on blinding, the nature of the outcome measurement process makes it improbable that assessment was influenced by knowledge of the intervention received.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences: There is no mention of a pre-specified analysis plan, trial registration, or protocol reference anywhere in the article. The statistical methods section describes analyses performed (Friedman ANOVA, Wilcoxon rank-sum, Tukey's test, Spearman correlation) but does not state whether these were pre-specified before unblinded data access. Notably, the article states: "Group 2 had an outlier with high arterial ET-1 values... These data were excluded from the statistical analysis in order to simplify statistical interpretation," suggesting post-hoc data exclusion decisions were made after viewing the data.
+
+Analysis: There is no evidence of a registered protocol or pre-specified statistical analysis plan (SAP) finalized before unblinded outcome data were available. The exclusion of an outlier's data "in order to simplify statistical interpretation" indicates an analytic decision made after inspecting the actual data, which raises concern about post-hoc, data-driven analytical choices rather than adherence to a pre-specified plan. No protocol registration, trial registry number, or reference to a prospectively written analysis plan is provided in the methods or elsewhere in the manuscript. This absence of any documentation of pre-specified analysis intentions, combined with evidence of at least one post-hoc data handling decision, means it cannot be confirmed that the analysis followed a plan finalized before unblinding.
+
+Correct answer: No information
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+"Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation." Also, the study consistently reports all pre-specified outcomes (Big ET-1, ET-1, venous admixture) at all pre-specified time points (Pre, +20 min, ICU, Day 1) as outlined in Table 1 and Methods, with no evidence of selective omission of scales/time points.
+
+Analysis: The outcome domains (endothelin peptides and venous admixture) were measured using a single defined method (ELISA for peptides, oxygen technique for venous admixture) at four pre-specified time points, and results for all these measurements and all time points are fully reported in Figure 1 and text, consistent with the study plan in Table 1. There is no indication that alternative scales, definitions, or time points were measured but selectively omitted based on results. The exclusion of one outlier's ET-1 data was justified (unexplained persistent abnormality) and unrelated to the direction or significance of the overall trial results. Thus there is no evidence of outcome-reporting selection bias based on results.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences: "Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation." No trial protocol or statistical analysis plan is referenced anywhere in the article; outcomes analyzed (ET-1, Big ET-1, venous admixture) are reported using consistent statistical methods (Friedman ANOVA, Wilcoxon rank-sum, Tukey post hoc) across all time points without evidence of multiple alternative analytic approaches being tried and selectively reported.
+
+Analysis: There is no protocol or statistical analysis plan available to compare against the reported analyses. The methods section pre-specifies a single analytic approach (Friedman ANOVA for repeated measures, Wilcoxon rank-sum for between-group comparisons, Tukey post hoc, Spearman correlation) that is applied uniformly to all outcomes and time points. There is no indication that multiple alternative analyses (e.g., different adjustment sets, different cut-points, alternative handling of missing data) were conducted and only favorable ones reported. The exclusion of one outlier's ET-1 data is explained transparently and applies to raw data pattern rather than results-based selection of analytic method. However, since no protocol/SAP is available for verification, and there could in principle be more than one way outcomes might have been analyzed (e.g., change from baseline vs. absolute values, adjusted vs. unadjusted), we lack sufficient information to fully confirm that no selective reporting occurred based on results.
+
+Correct answer: No information

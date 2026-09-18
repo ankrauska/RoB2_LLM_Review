@@ -1,0 +1,70 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 24391767
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: some concerns**
+
+   a. **Judgement:** Some concerns, because random sequence generation was reported, and baseline characteristics were well balanced, but allocation concealment was insufficiently described to establish that sealed envelopes were adequately protected from prediction or manipulation.
+
+   b. **Rationale:**
+   - The study reports: “Eligible patients were randomly assigned (**computer-generated sequence**) in a 1:1 ratio” to open or short-bore MR imaging. This supports a random allocation sequence.
+   - It also states that “**Randomization was not stratified and allocation was concealed (using sealed envelopes).**”
+   - However, RoB 2 requires sufficient assurance that envelope allocation was concealed—for example, sequentially numbered, opaque, tamper-proof sealed envelopes, opened only after irreversible enrolment. The report does not state that the envelopes were opaque, sequentially numbered, tamper-proof, or opened only after patient inclusion. Thus, concealment cannot be confidently judged adequate.
+   - Baseline characteristics among the analysed spinal-imaging participants were similar: age, sex, BMI, anxiety score, claustrophobia score, and imaging region showed no important differences between groups (all reported *P* values ≥0.1). The authors state that participants “were well matched between both groups.” There is therefore no indication from baseline data that randomization was subverted or otherwise failed.
+   - Under RoB 2, random sequence generation and balanced baseline characteristics are reassuring, but inadequate information about envelope safeguards results in **some concerns** rather than low risk.
+
+2. **Deviations from intended intervention: high risk of bias**
+
+   a. **Judgement:** High risk of bias for the effect of assignment to intervention at baseline, because the reported image-quality comparison was based substantially on the scanner actually used rather than on the scanner originally assigned, despite a considerable number of cross-referrals.
+
+   b. **Rationale:**
+   - Participants and personnel could not be blinded: “**Patients could not be blinded to the assigned study group due to the MR imaging setting.**” Personnel delivering the scan would likewise necessarily know which scanner was used.
+   - The trial protocol permitted cross-referral after a claustrophobic event: “**If patients did not complete imaging in their assigned MR scanner due to claustrophobia, they were cross-referred to imaging in the other scanner** in order to avoid the risks of conscious sedation.”
+   - Cross-referral itself was a prespecified clinical management strategy and therefore need not be treated as a protocol deviation arising from the trial context. Nevertheless, it materially affects the analysis appropriate to the effect of *assignment*.
+   - The report states: “**Examinations performed after cross-referral, with or without sedation, were included in the primary analysis**.” There were “**25 examinations … performed after cross-referral, 16 of them with conscious sedation**.”
+   - The randomized allocation was 52 participants to short-bore and 53 to open MR imaging, whereas the image-quality analysis compares examinations performed on the scanners: 48 short-bore and 55 open-MR examinations. This indicates that the analysis is based on the scanner received/used, rather than retaining all participants in their originally randomized group.
+   - For the RoB 2 effect of assignment to intervention, an intention-to-treat analysis should compare all participants according to original allocation, regardless of cross-referral, scanner received, or sedation. An as-treated analysis is inappropriate for this estimand.
+   - The extent of cross-referral was substantial relative to the spinal-imaging sample, and the reason for switching—claustrophobia—could plausibly be associated with anxiety, movement, scan completion, and image quality. Consequently, analysing by scanner actually used could have a substantial effect on the estimated comparison.
+
+3. **Missing outcome data: high risk of bias**
+
+   c. **Judgement:** High risk of bias, because image-quality data were unavailable for a non-trivial proportion of eligible spinal-imaging participants, the exclusions were related to inability to undergo imaging because of claustrophobia, and no analysis demonstrates that these missing data did not affect the result.
+
+   d. **Rationale:**
+   - Of 106 patients with an indication for spinal MR imaging, only 93 underwent spinal MR imaging and were included in the image-quality analysis: “**Of these 106 patients, 93 underwent MR imaging, and all were included in this analysis.**”
+   - Thus, image-quality outcomes were unavailable for 13/106 patients with a spinal imaging indication (approximately 12%), in addition to one patient who “**aborted MR imaging on the short-bore MR scanner after acquisition of one sequence, which could thus not be included in the analysis.**”
+   - This is not “all, or nearly all” randomized participants for a continuous image-quality outcome. The amount missing is large enough that it could potentially affect the result.
+   - Missingness was connected to claustrophobia and scan non-completion. The article defines a claustrophobic event as inability to undergo imaging, and reports that patients unable to complete imaging could be cross-referred and sometimes sedated.
+   - Claustrophobia, inability to tolerate the scanner, and scan abortion may plausibly be associated with factors relevant to image quality, including motion artefacts, incomplete sequences, and procedural conditions. Therefore, missingness could depend on the true image-quality outcome.
+   - The report does not provide an intention-to-treat approach, imputation strategy, or sensitivity analysis addressing participants without image-quality data. It also does not demonstrate that missingness was unrelated to image quality or balanced in a way that would preclude bias.
+
+4. **Measurement of the outcome: low risk of bias**
+
+   a. **Judgement:** Low risk of bias, because the image-quality outcomes were measured using appropriate qualitative and quantitative methods, applied comparably across groups, and the assessors were blinded to scanner type and patient identity.
+
+   b. **Rationale:**
+   - The outcome measures were appropriate for the stated outcome domain. The study assessed:
+     - qualitative image quality, contrast, contour sharpness, noise, and artefacts;
+     - quantitative signal-to-noise ratio (SNR);
+     - contrast-to-noise ratio (CNR); and
+     - quantitative contour sharpness.
+   - The methods are clearly specified. For example, qualitative assessment used defined five-point scales, while quantitative analyses used standardized regions of interest and predefined formulae for SNR and CNR.
+   - The same broad MR sequence types were acquired for both groups—sagittal T1-weighted, sagittal T2-weighted, and axial T2-weighted sequences—and the authors state that the “**primary aim of the sequence setup was to obtain a voxel size and imaging time that is as similar as possible on both scanners**.”
+   - Although different scanner hardware and coils are intrinsic features of the compared interventions, there is no evidence that outcome measurement itself was selectively or differentially performed between groups.
+   - Importantly, “**At the time of the analysis the examiners were blinded to the imaging technique and patient identity.**” The qualitative analysis was undertaken by two examiners in consensus; quantitative analysis was performed using specified objective image-derived measurements.
+   - Because outcome assessors were blinded and the image-quality measures were objectively derived or assessed using standardized criteria, knowledge of intervention received was unlikely to influence measurement.
+
+5. **Selective reporting: some concerns**
+
+   a. **Judgement:** Some concerns, because image-quality parameters were not prespecified as outcomes in the ClinicalTrials.gov record, and no time-stamped statistical analysis plan for this derived image-quality analysis was available. However, there is no direct evidence that the reported image-quality result was selected from multiple analyses or measurements because of its results.
+
+   b. **Rationale:**
+   - The trial registry (NCT00715806) identifies the primary outcome as: “**The ability of an open MRI scanner to reduce claustrophobic reactions that prevent MR examinations**,” measured before or during MRI.
+   - The registry’s secondary outcome is “**Impact of MR imaging results on subsequent measurement**,” at six months after MRI.
+   - The registry does not specify spinal image quality, SNR, CNR, contour sharpness, qualitative image-quality ratings, individual MR sequences, or a prespecified image-quality analysis plan.
+   - The publication explicitly characterizes the spinal image-quality study as a subset/secondary analysis: “**This patient subset was part of a larger cohort**,” and notes that image-quality comparison of head and shoulder imaging would be addressed in future analyses.
+   - Multiple image-quality measurements and analysis choices were possible, including several qualitative domains, different sequences, two anatomical regions, SNR, several CNR contrasts, and contour-sharpness measures. The publication reports many of these results, which is reassuring.
+   - Nevertheless, without a prespecified and time-stamped analysis plan covering the image-quality outcomes, it cannot be confirmed that the reported measurements, time points/sequences, and analyses were selected independently of the observed findings.
+   - There is no clear evidence that a particular favourable result was selected from among multiple eligible unreported results. Therefore, RoB 2 supports **some concerns**, rather than high risk, for selective reporting.

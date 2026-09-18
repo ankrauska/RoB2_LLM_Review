@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 11772475
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: King, 2002
+**Outcome Name**: treatment retention
+**registration number**: None
+
+**Domain 1**
+**1.1 : Result of the Question: NI (100%)**
+**Reason you summarized**: The article states that participants were randomized into one of three study conditions, but it does not describe the specific method used to generate the allocation sequence (e.g., computer-generated random numbers).
+**1.2 : Result of the Question: NI (100%)**
+**Reason you summarized**: The article does not mention any methods used for allocation concealment, such as opaque envelopes or central allocation, prior to the assignment of interventions.
+**1.3 : Result of the Question: NI (100%)**
+**Reason you summarized**: The article provides baseline demographic characteristics for the entire study sample but does not report baseline comparisons between the specific randomized intervention groups to determine if differences existed.
+**Result of the domain: Some concerns (100%)**
+**Reason you summarized**: The assessment result is "some concerns" because the answers to questions 1.2 and 1.3 are both "NI".
+
+**Domain 2**
+**2.1 : Result of the Question: Y (100%)**
+**Reason you summarized**: The interventions involved receiving treatment in distinctly different settings (routine clinic care, clinic-based medical maintenance, and physician office-based medical maintenance), making it impossible to blind participants to their assigned condition.
+**2.2 : Result of the Question: Y (100%)**
+**Reason you summarized**: Due to the nature of the interventions (different reporting schedules and treatment settings), the clinicians and staff delivering the interventions were aware of the participants' assignments.
+**2.3 : Result of the Question: Y (90%)**
+**Reason you summarized**: There is no indication in the article of any significant imbalanced nonprotocol interventions between the groups that would impact the treatment retention outcome.
+**2.4 : Result of the Question: N (100%)**
+**Reason you summarized**: Out of 73 participants, 7 dropped out of the randomized treatment arm, which constitutes less than 10% (approximately 9.6%), indicating that implementation failures did not affect a large portion of participants.
+**2.5 : Result of the Question: Y (100%)**
+**Reason you summarized**: The article reports that 29% of study patients (21/73) were required to participate in brief periods of intensified care for problems associated with drug-positive urine results or failed medication recalls, which reflects non-adherence greater than 10%.
+**2.6 : Result of the Question: N (100%)**
+**Reason you summarized**: The article explicitly reports the use of an "intent-to-treat" sample for analyzing treatment retention, which is considered an inappropriate analytical method for estimating the specific effect of adhering to the intervention.
+**Result of the domain: High risk (100%)**
+**Reason you summarized**: The assessment result is "High risk" because the answers to 2.1 and 2.2 are "Y", 2.3 is "Y", 2.5 is "Y", and 2.6 is "N".
+
+**Domain 3**
+**3.1 : Result of the Question: Y (100%)**
+**Reason you summarized**: The outcome is treatment retention, and the retention status (whether they remained in or dropped out of the assigned treatment) is known and reported for all 73 randomized participants.
+**3.2 : Result of the Question: Y (100%)**
+**Reason you summarized**: Because there is no missing data for the outcome of treatment retention itself (the retention status of every participant is accounted for), the result is not biased by missing outcome data.
+**3.3 : Result of the Question: N (100%)**
+**Reason you summarized**: Missingness for the outcome of treatment retention is not applicable since the retention status of all participants is known.
+**3.4 : Result of the Question: N (100%)**
+**Reason you summarized**: There is no missing outcome data for treatment retention that could depend on its true value.
+**Result of the domain: Low risk (100%)**
+**Reason you summarized**: The assessment result is "Low risk" because the answer to question 3.1 is "Y".
+
+**Domain 4**
+**4.1 : Result of the Question: N (100%)**
+**Reason you summarized**: Treatment retention is a standard, predefined, and objective outcome measure evaluated appropriately based on continuing in the trial.
+**4.2 : Result of the Question: N (100%)**
+**Reason you summarized**: Treatment retention was measured in a comparable way across all intervention groups.
+**4.3 : Result of the Question: Y (100%)**
+**Reason you summarized**: The outcome assessors (study personnel) were aware of the participants' assigned groups due to the unblinded nature of the clinical settings and reporting schedules.
+**4.4 : Result of the Question: N (100%)**
+**Reason you summarized**: Treatment retention is an objective measure, meaning its assessment is unlikely to be influenced by knowledge of the intervention received.
+**4.5 : Result of the Question: N (100%)**
+**Reason you summarized**: There is no clear evidence to suggest that knowledge of the assigned intervention influenced the objective assessment of participant retention.
+**Result of the domain: Low risk (100%)**
+**Reason you summarized**: The assessment is "Low risk" because 4.1 is "N", 4.2 is "N", 4.3 is "Y", and 4.4 is "N".
+
+**Domain 5**
+**5.1 : Result of the Question: NI (100%)**
+**Reason you summarized**: The article does not mention a pre-specified analysis plan or provide a clinical trial registration number to confirm that the analyses were finalized before unblinded data were available.
+**5.2 : Result of the Question: N (100%)**
+**Reason you summarized**: Treatment retention is a straightforward outcome with only one standard way to be measured, leaving no opportunity to select from multiple eligible measures.
+**5.3 : Result of the Question: N (100%)**
+**Reason you summarized**: The analysis of treatment retention (survival analysis) corresponds to the standard intended analysis, with no evidence of selective reporting from multiple data analyses.
+**Result of the domain: Some concerns (100%)**
+**Reason you summarized**: The assessment is "Some concerns" because questions 5.2 and 5.3 are "N", while 5.1 is "NI".
+
+**Overall Bias Risk for the Article: High risk (100%)**
+**Reason you summarized**: The overall risk of bias is "High risk" because Domain 2 is assessed as "High risk".

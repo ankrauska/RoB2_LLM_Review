@@ -1,0 +1,123 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 16364124
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Kampf, 2005
+**Outcome Name**: Visual assessment for erythema and dryness as key symptoms
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1** – **Y** (95%)
+The article explicitly states: "Randomization was performed via randomly permuted blocks of fixed size using validated software RANCODE 3.6." This is a clearly described, adequate method of sequence generation (block randomization via validated software).
+
+**1.2** – **Y** (85%)
+"Both hand rubs...were randomly assigned a letter A or B for blinding of the test formulations. Blinding codes were kept sealed until closure of final database." This describes a specific concealment mechanism (sealed blinding codes maintained until database closure), preventing participants, care providers, and assessors from knowing allocation in advance.
+
+**1.3** – **N** (90%)
+This is a within-subject, split-body design (each subject received both interventions on left/right cubital fossa). No baseline imbalance between "groups" is reported or plausible, as both interventions were applied to the same 35 subjects.
+
+**Domain 1 Result: Low risk (90%)**
+1.2 = Y, 1.1 = Y, 1.3 = N → meets criteria for "Low risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1** – **N** (90%)
+Double-blind design with sealed blinding codes; no indication participants were aware of allocation.
+
+**2.2** – **N** (85%)
+Study nurses applied coded (A/B) products with blinding codes sealed until database closure; no indication of unblinding of intervention providers.
+
+**2.3** – **Y** (75%)
+No significant non-protocol interventions reported that were imbalanced between the two products (both products applied under identical procedures/timing to the same subjects).
+
+**2.4** – **N** (85%)
+3/35 (8.6%) subjects were excluded due to protocol violations (antiphlogistic intake, disinfection of the fossa cubitalis) — below the 10% threshold for implementation failure.
+
+**2.5** – **N** (75%)
+No substantial non-adherence reported beyond the same 3 protocol-violation cases (<10%).
+
+**2.6** – **N** (90%)
+The article states "Results are presented for the intention-to-treat (ITT) population" and also a per-protocol (PP) analysis — both are inappropriate methods for estimating the effect of adherence per the guideline.
+
+**Domain 2 Result: Low risk (85%)**
+2.1 = N, 2.2 = N, 2.4 = N, 2.5 = N → meets criteria for "Low risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1** – **PN** (85%)
+Continuous outcome; 32/35 (91.4%) of randomized participants had complete (non-imputed) outcome data (3 participants required LOCF imputation), falling within the 90–95% range.
+
+**3.2** – **N** (90%)
+LOCF (Last Observation Carried Forward) was used to handle missing data — this is explicitly identified as an inappropriate method for correcting bias due to missing data (per instructions, ITT/LOCF do not qualify as bias-correcting methods).
+
+**3.3** – **PY** (70%)
+The 3 missing participants were excluded due to protocol violations: intake of antiphlogistics (which could directly reduce erythema, the outcome itself) and disinfection of the fossa cubitalis (which could directly alter the skin's dryness/erythema status). This suggests a plausible relationship between reasons for missingness and the true outcome value, though not explicitly confirmed.
+
+**3.4** – **Y** (70%)
+The specific reasons for dropout (antiphlogistic use affecting erythema; disinfectant application affecting skin condition) are mechanistically linked to the outcome domain being measured (erythema/dryness), suggesting missingness likely depended on the true outcome value.
+
+**Domain 3 Result: High risk (75%)**
+3.1 = PN, 3.2 = N, 3.3 = PY, 3.4 = Y → meets criteria for "High risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1** – **N** (85%)
+A standardized, predefined visual scale (modified from Fitzpatrick) was used for both erythema and dryness — a reliable, validated method for this type of outcome.
+
+**4.2** – **N** (85%)
+Both preparations were assessed identically — same assessor, same time points, same scale — no differential measurement between groups.
+
+**4.3** – **N** (90%)
+Outcome was assessor-reported (dermatologist), not patient-reported. "All evaluations were conducted blindly by the same investigator," indicating the assessor was unaware of allocation.
+
+**4.4** – **Y** (90%)
+The outcome (visual assessment of erythema/dryness) is a subjective measure assessed by an outcome assessor.
+
+**4.5** – **N** (85%)
+No clear evidence assessment was influenced by knowledge of intervention, as the assessor was blinded via sealed coding (A/B) throughout the trial until database closure.
+
+**Domain 4 Result: Low risk (85%)**
+4.1 = N, 4.2 = N, 4.3 = N → meets criteria for "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1** – **NI** (90%)
+No trial registration number is provided in the article, and no pre-specified/published analysis plan is referenced. Per instructions, absence of registration/protocol publication → NI.
+
+**5.2** – **N** (80%)
+The methods section pre-specifies the sum score (erythema + dryness) as the primary outcome; results report this sum score as well as the individual erythema and dryness components (Table 1, Figures 2–3) consistently with the described outcome domain — no evidence of selective reporting from multiple eligible measures.
+
+**5.3** – **N** (80%)
+The statistical methods (Fieller's CI for non-inferiority, Wilcoxon signed-rank test for superiority, ITT and PP analyses) are all pre-specified in the Methods and fully reported in the Results without evidence of selective analysis reporting.
+
+**Domain 5 Result: Some concerns (80%)**
+5.2 = N, 5.3 = N, 5.1 = NI → meets criteria for "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment
+
+| Domain | Result |
+|--------|--------|
+| Domain 1 | Low risk |
+| Domain 2 | Low risk |
+| Domain 3 | **High risk** |
+| Domain 4 | Low risk |
+| Domain 5 | Some concerns |
+
+**Overall Bias Risk for the Article: High Risk (85%)**
+
+**Reason**: Domain 3 (missing outcome data) was rated "High risk" due to the combination of incomplete outcome data (91.4%, below the 95% threshold), use of an inappropriate bias-correction method (LOCF), and plausible mechanistic links between the reasons for missingness (antiphlogistic drug use and skin disinfection at the test site) and the true value of the outcome (erythema/dryness). Per the overall assessment rule, any single domain rated "High risk" results in an overall "High Risk" classification for the article, regardless of the favorable ratings in Domains 1, 2, and 4.

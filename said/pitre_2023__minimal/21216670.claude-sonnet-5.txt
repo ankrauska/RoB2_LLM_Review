@@ -1,0 +1,67 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 21216670
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: FLAME Trial (Fugl-Meyer Motor Scale Outcome)
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns due to baseline imbalance in the outcome variable itself, despite adequate randomization procedures.
+
+**b. Rationale:** 
+- Sequence generation: "Randomisation was balanced by centre, with an allocation sequence based on a block size of four, generated with a computer random-number generator by the pharmacist at the coordinating centre." This is adequate (Yes to 1.1).
+- Allocation concealment: "Allocation was concealed by use of sequentially numbered opaque envelopes." Combined with a pharmacist controlling assignment independent of enrolling clinicians, this suggests adequate concealment (Yes to 1.2).
+- However, baseline imbalance: FMMS score at inclusion was notably higher in the fluoxetine group (17.1, SD 11.7) than placebo (13.4, SD 8.8) — the very outcome measure being assessed. Additionally, "mean age was slightly higher and previous history of stroke was more frequent in the fluoxetine group." The paper itself acknowledges this imbalance requiring statistical adjustment ("multiple linear regression analysis to control for centre and baseline factors that showed treatment group imbalance"). While a small block size (4) with an unblinded pharmacist and use of stratification by center are appropriate methodologically, the magnitude of baseline FMMS difference (nearly 4 points, ~25% relative difference) in the primary outcome variable itself raises some concern that this could reflect a chance imbalance inherent to a modest sample size, though there is no strong evidence of subversion of the randomization process itself. This is judged **not severe enough for "High"** (no evidence of manipulation, no gross imbalance in group sizes: 59 vs 59), but sufficient to raise "Some concerns" per the algorithm (adequate concealment + baseline imbalance suggestive of a problem → Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Participants, carers, and outcome assessors were blinded: "Participants, carers, all site study staff, and investigators were masked to treatment assignment," and "Fluoxetine and placebo capsules were both prepared by the pharmacist for the study… The placebo was identical to the active drug in appearance and packaging." This supports low risk of unblinding-related deviations (No to 2.1/2.2).
+- No evidence that non-protocol interventions or contamination occurred due to trial context. Compliance was well documented and near-identical between groups: "The mean cumulative dose at day 90… was 88.3 tablets (SD 11.6) in the fluoxetine group and 87.4 tablets (12.3) in the placebo group (p=0.722)." Relative dose intensity was ~94% in both groups.
+- Analysis was appropriate: The "full analysis set" included all randomized patients with available data (113 of 118), analyzed according to assigned groups — consistent with ITT principles (Yes to 2.6). The 5 patients excluded (2 deaths, 3 withdrawals) are appropriately handled as missing data (assessed in Domain 3), not as an inappropriate analysis choice.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Outcome data were available for 113/118 (95.8%) randomized participants: "118 patients were randomly assigned to fluoxetine (n=59) or placebo (n=59), and 113 were included in the analysis (57 in the fluoxetine group and 56 in the placebo group). Two patients died before day 90 and three withdrew from the study."
+- The proportion of missing data is very similar between groups (2/59 fluoxetine [1 death, 1 withdrawal] vs 3/59 placebo [1 death, 2 withdrawals]), and reasons for missingness are reported and appear unrelated to the true FMMS value or to a differential relationship with intervention: "one in each group" died from causes related to their neurological disorder (septic shock, respiratory distress), and withdrawals were due to severe hypoxia, kidney tumour, and pulmonary embolism — reasons plausibly unrelated to the motor outcome trajectory and balanced across groups.
+- Given the very small number of missing participants (5/118, ~4%) and balanced/documented reasons unrelated to outcome, this satisfies the "nearly all" criterion for low risk of bias.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- FMMS is an appropriate, validated instrument: "FMMS is an index that is widely used for assessment of motor recovery after stroke and has excellent intra-rater and inter-rater reliability and validity." (No to 4.1)
+- Measurement method did not differ between groups: "All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment" — identical protocol-driven assessment schedule for both arms (No to 4.2).
+- Outcome assessors were blinded: "Participants, carers, all site study staff, and investigators were masked to treatment assignment." Although FMMS involves some clinical judgement by the physiotherapist (an observer-reported outcome involving some judgement), the assessor was blinded to allocation, and there is no reported information suggesting unblinding occurred (No/No information to 4.3). Given effective blinding via identical placebo/drug in appearance, and no reported evidence of unblinding, risk of differential assessment bias is low.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial registry (NCT00657163) prospectively specifies the primary outcome as "Progression in the Fugl-Meyer Motor Scale" at "M3 (3 months)," matching exactly what is reported in the publication: "The primary outcome measure was the change on the FMMS between day 0 and day 90 after the start of the study drug."
+- The publication reports the pre-specified single primary analysis (total FMMS score change, day 0 to day 90) without evidence of selecting among multiple alternative outcome measurements or timepoints for the primary endpoint. Upper and lower limb subscores are reported additionally but transparently, and total score (the primary registered outcome) is the one emphasized and consistent with the registry.
+- The analysis method (linear regression adjusting for centre and baseline imbalance factors) is pre-specified in the statistical analysis section and is a reasonable, transparent choice rather than an apparently outcome-driven selection among many models.
+- No indication of switched primary outcomes, selectively reported timepoints, or selectively reported analytic models specific to the FMMS outcome.
+
+---
+
+# Overall Risk of Bias for FMMS Outcome: **Some concerns**
+
+Per Table 1 (overall judgement criteria), because Domain 1 (randomization) is judged as "Some concerns" and no domain is judged "High risk," the overall risk-of-bias judgement for this outcome is **Some concerns**, driven primarily by the baseline imbalance in FMMS score at inclusion between groups despite an otherwise well-conducted double-blind trial with low risk of bias in deviations from intervention, missing data, outcome measurement, and selective reporting.

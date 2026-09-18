@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 10844830
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Unspecified author, year (title: "Inspired oxygen fraction after cardiopulmonary bypass: effects on pulmonary function with regard to endothelin-1 concentrations and venous admixture")
+**Outcome Name**: venous concentrations of endothelin-1 (ET-1)
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (90% certainty)
+The article states patients were "allocated at random" but does not describe the specific method used to generate the randomization sequence (no mention of computer-generated numbers, random number tables, block randomization, coin tossing, etc.). Only the concealment mechanism (sealed envelopes) is described, not the sequence generation method.
+
+**1.2**: PY (80% certainty)
+"Sealed envelopes were used to allocate at random" is mentioned. This indicates a concealment mechanism, but it is not explicitly stated that envelopes were opaque and sequentially numbered, so it cannot be rated as definitively "Y." Since sealed envelopes generally prevent foreknowledge of assignment, PY is appropriate.
+
+**1.3**: Y (85% certainty)
+Table 2 and the text show a statistically significant difference in baseline pulmonary artery pressure between groups (25±5 mm Hg in group 1 vs 19±4 mm Hg in group 2, p<0.05). This is a relevant baseline/prognostic variable (pulmonary artery pressure correlates with ET-1 in the discussion), suggesting a possible imbalance from randomization.
+
+**Domain 1 Result: Some concerns (85% certainty)**
+Because 1.2 = PY, 1.1 = NI, and 1.3 = Y, this matches the rule: 1.2 (Y/PY) + 1.1 (Y/NI/PY) + 1.3 (Y/PY) → Some concerns.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: NI (70% certainty)
+No information is given regarding whether patients were aware of their FIO2 assignment; patients were under anesthesia/sedation during the exposure period, but no explicit statement on blinding is provided.
+
+**2.2**: Y (85% certainty)
+Since FIO2 is a directly-set ventilator parameter and no blinding procedure (e.g., placebo gas mixture, blinded ventilator settings) is described, clinical staff administering/setting the ventilator would necessarily know the assigned FIO2.
+
+**2.3**: Y (75% certainty)
+Postoperative sedation, analgesia, fluid management, and extubation criteria were standardized and described as identical between groups; no evidence of imbalance in nonprotocol interventions.
+
+**2.4**: N (90% certainty)
+All 20 patients completed the study; there is no reported failure of intervention implementation (e.g., withdrawal, death) exceeding 10%.
+
+**2.5**: N (90% certainty)
+No evidence of non-adherence to the assigned FIO2 protocol; all patients received their assigned intervention as planned.
+
+**2.6**: NA (90% certainty)
+Since there is no substantial non-adherence or implementation failure (2.4 and 2.5 = N), this question is not applicable.
+
+**Domain 2 Result: Low risk (85% certainty)**
+2.2 = Y, 2.3 = Y, 2.4 = N, 2.5 = N → matches the "Low risk" criteria.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (85% certainty)
+All 20 randomized patients had venous ET-1 data reported at all time points in Figure 1B. The single excluded outlier applied only to **arterial** ET-1 values in Group 2, not venous ET-1. Thus, 100% of venous ET-1 data were available.
+
+**3.2**: N/A (90% certainty)
+Because 3.1 = Y, this question does not need to be further evaluated under the decision rule (data are complete).
+
+**3.3 / 3.4**: N/A (90% certainty)
+Not applicable since 3.1 = Y already establishes low risk.
+
+**Domain 3 Result: Low risk (90% certainty)**
+Per the rule: If 3.1 = Y, Domain 3 = Low risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% certainty)
+ET-1 was measured using a validated sandwich ELISA immunoassay (Biomedica, Vienna) with defined sensitivity, detection limits, and coefficients of variation—an appropriate and reliable method.
+
+**4.2**: N (90% certainty)
+Blood sampling and measurement procedures were identical for both groups at the same predefined time points using the same assay.
+
+**4.3**: NI (75% certainty)
+No statement is provided regarding whether laboratory personnel/assay analysts were blinded to group assignment.
+
+**4.4**: N (85% certainty)
+ET-1 concentration is an objective biochemical/laboratory measure (ELISA), not a subjective, patient-reported, or assessor-judged outcome.
+
+**Domain 4 Result: Low risk (85% certainty)**
+4.1 = N, 4.2 = N, 4.3 = NI, 4.4 = N → matches the “Low risk” criteria (4.1 N/PN/NI, 4.2 N/PN, 4.3 Y/PY/NI, 4.4 N/PN).
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85% certainty)
+No trial registration number or pre-specified statistical analysis plan is mentioned in the article.
+
+**5.2**: N (80% certainty)
+ET-1 was measured consistently (arterial and mixed venous) at all four predefined time points, and all these measurements are reported in Figure 1B and the text—no evidence of selective reporting among multiple possible outcome measures.
+
+**5.3**: N (80% certainty)
+The statistical methods described in the Methods section (Friedman ANOVA, Wilcoxon rank-sum test, Tukey post hoc, Spearman correlation) are consistently applied and reported in the Results, with no evidence of selective analysis reporting.
+
+**Domain 5 Result: Some concerns (80% certainty)**
+Since 5.2 = N, 5.3 = N, but 5.1 = NI, this matches the rule: 5.2 (N/PN) + 5.3 (N/PN) + 5.1 (N/PN/NI) → Some concerns.
+
+---
+
+## Overall Bias Risk Assessment
+
+- Domain 1: Some concerns
+- Domain 2: Low risk
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Some concerns
+
+**Overall Bias Risk for the Article: Some concerns (85% certainty)**
+
+Rationale: No domain was rated "High risk." Two domains were rated "Some concerns" (Domains 1 and 5), while three domains were rated "Low risk" (Domains 2, 3, and 4). Per the overall rule, when at least one domain is "Some concerns," no domain is "High risk," and at least two domains are "Low risk," the overall risk-of-bias rating is **Some concerns**.

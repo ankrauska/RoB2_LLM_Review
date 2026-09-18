@@ -1,0 +1,70 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 28558789
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Motor Assessment Scale Item 6 (Upper Arm Function, MAS6)
+## Effect of Interest: Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns arise primarily due to lack of detailed reporting on allocation concealment procedures and the extremely small sample size (n=4), which raises concerns about baseline comparability despite adequate randomization methods being described.
+
+**b. Rationale:**
+- Sequence generation: "An offsite investigator prepared the concealed randomization using a computer generated random number sequence (1:1)" — this is adequate random sequence generation (Yes to signalling question 1.1).
+- Allocation concealment: "Consecutively numbered opaque envelopes containing group allocation were collected from the offsite investigator by the tRNS intervener after initial assessment." This meets minimal criteria for concealment (Yes to signalling question 1.2), as it involves an independent offsite investigator and sequentially numbered opaque envelopes.
+- Baseline imbalance: With only 4 participants, baseline characteristics were markedly different across cases (e.g., MSS scores 24-37, mRS 3-5, differing paretic arm dominance, differing FAC scores, and critically, differing corticospinal tract integrity - P01 mild, P02 moderate, P03 and P04 severe AI). While these differences are plausible given the extremely small sample and simple randomization, the paper itself acknowledges: *"these may remain influential when a small cohort is involved."* Given n=4, chance imbalances at baseline are highly likely and cannot be ruled out as reflecting problems with the randomization process versus simply small sample variability. This uncertainty, combined with the extreme vulnerability of very small samples to chance imbalance affecting the interpretability of results, leads to a judgement of "Some concerns" rather than "Low risk."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Participants and personnel were not fully blinded (the tRNS intervener was necessarily unblinded), but this arose from an unavoidable feature of the trial design (triple-blind design still requires one unblinded stimulation administrator) rather than from problems with blinding among those interacting with participants during training itself. However, therapists delivering the reaching training were blinded, and analysis was appropriate (ITT).
+
+**b. Rationale:**
+- Participants: "Study personnel involved in assessment and training, along with all participants were blinded to group allocation for the duration of the study." (2.1 = No/Probably No for participants)
+- Personnel (trainers) were blinded: "The tRNS intervener informed participants that they may or may not feel the stimulation irrespective of whether they were receiving active or sham stimulation." The trainer delivering reaching training was separate from and blinded to the unblinded tRNS intervener, whose parameters were "recorded... in a separate log that was stored in a separate locked filing cabinet." (2.2 = Probably No for training personnel, though the tRNS intervener themselves was, by necessity, aware).
+- No evidence in the article of deviations from intended intervention arising because of trial context (e.g., no differential contamination, no use of non-protocol interventions reported): "There were no adverse events recorded during the course of training." Training logs show full completion by all four participants of protocol-specified sessions.
+- Analysis: The article states this was analyzed as a case series with all four participants' data reported and considered individually — consistent with ITT principles (all randomized participants included, analyzed according to assigned group). No participants were excluded from analysis.
+- The "Some concerns" judgement stems mainly from the fact that with a single unblinded tRNS intervener necessarily aware of allocation, and given the tiny sample size, subtle unconscious influence on session delivery (even though logs were separated) cannot be entirely excluded, though there is no evidence this occurred.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Outcome data (MAS6) were available for all randomized participants at all three timepoints (baseline, post-training, follow-up), with no dropouts.
+
+**b. Rationale:**
+- "All four participants completed the 12 training sessions over 4-weeks, with no training sessions missed."
+- Table 3 reports complete MAS6 data (T0, T1, T2) for all four participants (P1–P4), with no missing values.
+- "There were no adverse events recorded during the course of training, and no adverse events were reported to have occurred during follow up," supporting full retention through follow-up.
+- Since outcome data are available for all randomized participants (100%), this meets the criterion for low risk of bias regardless of further signalling questions.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** MAS6 is an observer-rated outcome measure involving clinical judgement, and there is no explicit statement that outcome assessors were blinded to intervention group allocation, despite the trial being described as "triple-blind." This creates uncertainty as to whether outcome assessors could have been influenced by knowledge of allocation, though there is no specific indication that they were.
+
+**b. Rationale:**
+- MAS6 is a performance-based clinical outcome measure requiring assessor judgement of movement quality/function (an "observer-reported outcome involving some judgement" per RoB2 categorization), meaning that lack of blinding could plausibly influence scoring.
+- The paper states: "Study personnel involved in assessment and training, along with all participants were blinded to group allocation for the duration of the study," and the study is described throughout as "triple-blind" — this description strongly suggests that the outcome assessors (a distinct blinded role, separate from the unblinded tRNS intervener) were unaware of allocation status (signalling question 4.3 = Probably No).
+- However, no explicit statement clarifies procedures used to maintain assessor blinding (e.g., no mention of separate blinded assessors distinct from trainers, no confirmation of successful blinding via a manipulation check), and given the extremely small sample (n=4) and intensive, hands-on nature of the study, unblinding could plausibly have occurred inadvertently (e.g., through participant comments about sensations from stimulation, or contact with unblinded personnel).
+- Given the ambiguity and lack of detail confirming robust separation of assessment from other trial roles, "Some concerns" is a more conservative and appropriate judgement than "Low risk."
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** There is a discrepancy between the trial registry's designated primary outcome (a composite MAS 6-8 score) and the study publication's primary outcome (MAS6 alone), raising some concern about selection of the reported result, although this appears more attributable to a change in study design and reporting focus (from an RCT of clinical efficacy to a feasibility pilot case series) than to results-based selective reporting.
+
+**b. Rationale:**
+- The trial registry states: "Primary outcome [1]: Composite score of Motor Assessment Scale upper limb items 6-8, which measure upper arm function, hand movements and advanced hand movements."
+- The published article states: "The primary clinical outcome measure was Motor Assessment Scale item 6 (Upper Arm Function, MAS6)" — a change from a composite (items 6-8) to a single item (item 6 only).
+- This change is plausible given the shift in study framing from an efficacy-focused RCT (registry, target n=10) to an explicitly feasibility-focused pilot case series (published article, actual n=4): "This study aimed to investigate the feasibility of transcranial Random Noise Stimulation (tRNS)..." The registry itself notes recruitment was stopped early (Final sample size = 8 planned vs 4 actual enrolled/analyzed), and the statistical analysis plan described in the registry (mixed-effects model, between-group comparisons) was not implemented; instead, a descriptive, individual case-based analysis was used.
+- While the change in primary outcome and analytic approach is plausibly explained by the switch to a feasibility case-series design rather than results-based selection, this cannot be fully confirmed since no updated/amended statistical analysis plan or protocol is available to verify that this change was pre-specified before unblinded data were available. This uncertainty, combined with the change in the specific primary outcome measure between registration and publication, supports "Some concerns" rather than "Low risk."
+- Items 7 and 8 (secondary hand-function components of the original composite) do not appear to be reported at all in the results tables/text, which is consistent with the reduced primary outcome definition but leaves open the possibility that these data existed and were not reported due to results.

@@ -1,0 +1,26 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 10844830
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Venous Concentrations of Endothelin-1 (ET-1)
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+Justification: The manuscript states "Sealed envelopes were used to allocate at random," which provides some allocation concealment, but no information is given about the method of random sequence generation (e.g., computer-generated randomization, random number tables), making it impossible to confirm that this was a genuinely unpredictable process. Furthermore, Table 2 reveals a substantial baseline imbalance: sex distribution differed markedly (9M/1F in Group 1 vs 5M/5F in Group 2), and pulmonary artery pressure was significantly higher in Group 1 before CPB (25±5 vs 19±4 mmHg, explicitly noted by the authors as "significantly greater"). Such baseline imbalance in a small trial (n=20) raises concern that the randomization process may not have been adequately executed or concealed, and this imbalance is relevant to ET-1 since the paper itself notes correlations between ET-1 and pulmonary artery/right atrial pressures.
+
+**2. Risk of bias due to deviations from the intended interventions: Low risk**
+Justification: The FIO2 protocol assignments were clearly implemented as intended per Table 1, and the "ventilatory mode did not differ from pre-bypass settings" other than FIO2, preserving comparability of co-interventions. There is no blinding of clinicians (impossible given visible ventilator settings), but since ET-1 is an objective biochemical outcome unlikely to be influenced by clinician knowledge of allocation (no indication of differential co-interventions, rescue treatments, or protocol deviations), this domain is judged low risk.
+
+**3. Risk of bias due to missing outcome data: High risk**
+Justification: The authors explicitly report excluding an outlier patient in Group 2 with persistently high arterial ET-1 values (3.6–4.7 fmol/litre) "in order to simplify statistical interpretation," stating that comparison with patient data revealed no explanation for this finding. This is a post-hoc, data-driven exclusion of an outcome data point directly relevant to the ET-1 endpoint, without pre-specified exclusion criteria. This exclusion could plausibly have altered the between-group comparison for ET-1, especially given the small sample size (n=10 per group).
+
+**4. Risk of bias in measurement of the outcome (ET-1): Some concerns**
+Justification: ET-1 was measured using a validated sandwich ELISA performed in duplicate according to manufacturer's instructions—an objective laboratory assay unlikely to be influenced by subjective assessment. This substantially reduces concern regarding detection bias. However, there is no explicit statement that laboratory personnel performing the ELISA assays were blinded to group allocation, and no statement of blinded sample handling/coding. In the absence of confirmed blinding of assessors, and given that group allocation was not blinded to the clinical team who collected samples, "some concerns" is warranted, though the objective nature of the assay mitigates the severity of this concern.
+
+**5. Risk of bias in selection of the reported result: High risk**
+Justification: No trial registration or published protocol is referenced anywhere in the manuscript, making it impossible to verify whether ET-1 (versus Big ET-1 or venous admixture) was a pre-specified primary or secondary outcome, or whether the four sampling timepoints and multiple comparison methods (Friedman ANOVA, Wilcoxon rank-sum, Tukey post-hoc, Spearman correlations) were pre-planned or exploratory. Compounding this, the post-hoc exclusion of the outlier's ET-1 data (justified only as being done "to simplify statistical interpretation") is a clear indicator of an analytical decision made after inspecting the data, directly affecting the reported ET-1 result (the paper reports ET-1 was "not significantly different" between groups). This combination of absent pre-registration and a data-dependent exclusion decision specifically affecting this outcome constitutes high risk of selective reporting bias.
+
+## 6. Overall Rating: **High risk**
+
+Justification: While the outcome measurement technique itself (ELISA) is objective and lends some reassurance regarding detection bias, the combination of (a) unclear randomization procedure with demonstrated baseline imbalance in variables mechanistically linked to ET-1, (b) post-hoc exclusion of outcome data for an outlier specifically affecting the ET-1 comparison, and (c) complete absence of pre-registration/protocol to verify outcome and analysis pre-specification, collectively and substantially lower confidence in the reported ET-1 result. Per the stated rules, having multiple domains with "some concerns" plus at least one domain (missing data, selective reporting) that independently justifies "high risk" mandates an overall high risk of bias rating for this specific outcome.

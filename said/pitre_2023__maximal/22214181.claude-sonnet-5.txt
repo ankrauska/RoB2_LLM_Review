@@ -1,0 +1,80 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 22214181
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias 2.0 Assessment: List of Attributions Task (LAT)
+
+**Study:** Harris & Carney - "Can We Modify Maladaptive Attributions for Fatigue?"
+**Effect of interest:** Effect of assignment to intervention
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns arise primarily because although randomization was random, allocation concealment is not described, leaving uncertainty about whether it was adequately concealed.
+
+**b. Rationale:**
+- **Random sequence generation:** The article states, "a Microsoft Excel random number generator was used to randomize participants into the two conditions." This satisfies the criterion for a random allocation sequence (Answer: Yes).
+- **Allocation concealment:** No information is provided about how the randomization sequence was concealed from the study investigator prior to assignment. It is unclear whether the investigator generating/administering the randomization had foreknowledge of upcoming allocations. This lack of reported detail leads to a response of "No information" for allocation concealment.
+- **Baseline imbalances:** The article states, "No significant pre-intervention group differences were found on levels of insomnia, fatigue, depressed mood or dysfunctional beliefs about sleep. There were also no significant group differences on the LAT outcome measures at baseline." Groups also did not differ on age, ethnicity, or sex distribution. This suggests no imbalance beyond chance (Answer: No).
+- Per the RoB2 algorithm: Random sequence (Yes) + No information on concealment + No baseline imbalance issues → **Some concerns** (per Table 4: NI on concealment + N/PN/NI on imbalance = Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as lack of blinding was not likely to introduce bias affecting this particular cognitive/behavioral outcome, and an appropriate intention-to-treat-consistent analysis was used.
+
+**b. Rationale:**
+- **Awareness of intervention:** Participants and the study investigator (who read the information sheet aloud) were necessarily aware of intervention assignment, since the FI and control information sheets were overtly different in content ("The study investigator read the information sheet alongside each participant individually"). Thus, both participants and personnel were aware of intervention assignment (Answer: Yes to signalling questions 2.1/2.2).
+- **Deviations arising from trial context:** There is no evidence that this awareness led to deviations from the intended intervention protocol (e.g., non-protocol interventions, contamination, or switching between information conditions). The intervention consisted of a single, brief, structured information session with no opportunity for later crossover or non-adherence—the entire "intervention" was delivered once, within the same 1-hour session, immediately followed by outcome assessment. The authors explicitly consider potential demand characteristics/priming effects but conclude: "the results clearly show that there were no significant pre–post differences in the control group; thus, it appears unlikely that priming would have significantly affected the attributional change in the FI group." This suggests no meaningful deviation from intended intervention delivery due to trial context that differentially affected outcomes (Answer: No/Probably no to 2.3).
+- **Analysis:** All 88 participants who completed the outcome measures were included in the analysis according to their randomized group ("Independent t tests and chi-square analyses were used to assess for any pre-existing group differences... mixed within-between analyses of variance (ANOVAs) were conducted"). There is no indication of post-randomization exclusion related to intervention adherence; the 5 excluded participants were excluded for missing baseline/demographic data or age ineligibility, unrelated to the intervention received (Answer: Yes, appropriate analysis used, consistent with modified ITT principles).
+- Given no plausible mechanism for differential deviations affecting this specific in-session cognitive outcome, and an appropriate analysis, this domain is judged **Low risk of bias**.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as outcome data were available for all or nearly all randomized participants included in the final analytic sample, with only minor, non-differential exclusions unrelated to the true value of the outcome.
+
+**b. Rationale:**
+- The article states: "Five participants' data were not included in the analyses. Two participants were younger than 18 years and thus their data was not used, one participant did not complete the demographic information, and two participants did not complete the outcome measures in a way that would allow us to obtain a total score."
+- Of the 5 exclusions, only 2 relate to missing/unusable outcome data on the LAT ("did not complete the outcome measures in a way that would allow us to obtain a total score"), out of an original sample of 93 (88 + 5), representing only ~2.2% missingness for this reason, and there is no indication this differed between arms.
+- The reasons for exclusion (age ineligibility, incomplete demographics, unscorable responses) appear unrelated to the true value of the outcome (i.e., not related to participants' actual attributional patterns) and unrelated to intervention assignment.
+- There is no evidence of differential missingness between the FI and control groups, and the final sample was balanced (44 per group).
+- Given the very small number of participants with missing LAT data and no plausible relationship between missingness and the true outcome value, this domain is judged **Low risk of bias**.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of blinding of outcome assessors (the participants themselves generating self-reported attributions, and the study investigator who was involved in both delivering the intervention and initially reviewing coding), combined with the plausibility that knowledge of intervention condition could influence the outcome, although the primary coding was done by a blinded coder.
+
+**b. Rationale:**
+- **Appropriateness of the measurement method:** The LAT was a novel, non-validated measure "developed for the purposes of this study." However, its use is reasonably matched to the constructs of interest, so the method itself is not judged inappropriate (Answer: No to 4.1).
+- **Comparability of measurement between groups:** The same LAT form and administration procedure were used identically for both groups pre- and post-intervention (Answer: No to 4.2 differences in ascertainment).
+- **Outcome assessor awareness:** The primary outcome assessor for this task is the *participant* (a participant-reported outcome, since participants themselves generate and self-rate the attributions). Participants were, by necessity, aware of which intervention they received (they read/heard the information sheet). Thus, outcome assessors (participants) were aware of intervention status (Answer: Yes to 4.3).
+- **Potential for influence:** As a participant-reported outcome, "the assessment of outcome is potentially influenced by knowledge of intervention received" per RoB2 guidance for participant-reported outcomes, leading to at least "Some concerns" by default.
+- **Likelihood of actual influence:** While demand characteristics are plausible, the authors implemented safeguards: the LAT explicitly directed participants to reflect on personal experience ("the participants were told to list possible attributions related to their personal experiences with fatigue, rather than people's fatigue in general"), and coding of open-ended responses into sleep/non-sleep categories was performed by "a laboratory volunteer... who was blind to the study hypotheses," with the investigator's cross-check also done "while being blind to participants' random assignment." This partially mitigates concern about differential assessment bias in the *coding* stage, but does not eliminate the fundamental concern that participants' generation and self-rating of attributions (the primary data) could be influenced by their awareness of the information they just received.
+- Because knowledge of intervention could have influenced the participant-generated ratings, but there is no strong direct evidence that it was likely to have done so in a way that fully explains the result (the coding of the raw responses was blinded), this is judged as **Some concerns** rather than High risk.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, based on comparison with the trial registration record and consistency between the reported outcomes/analyses and pre-specified plans (to the extent registration information is available).
+
+**b. Rationale:**
+- The three outcome scores derived from the LAT (NumberAttributionScore, FrequencyScore, ImportanceScore) correspond directly to the three columns of the single pre-specified LAT instrument (number of attributions, rank/frequency, and likelihood/importance), as described in the Method section: "(1) a participant-generated list of attributions... (2) a ranking of the frequency... and (3) the participants' rating of the likelihood..." All three pre-specified components were fully analyzed and reported with corresponding hypotheses stated a priori in the introduction ("the following hypotheses were proposed: (1)... (2)...").
+- All three LAT-derived scores were reported with results (significant interactions for all three), with no evidence of selective omission of a subscale, time point, or alternative analytic approach.
+- There is no evidence of multiple competing analytic strategies (e.g., adjusted vs. unadjusted models) for the LAT outcome; a single, consistent ANOVA approach (mixed within-between ANOVA) was applied uniformly across all three LAT-derived outcomes.
+- Based on the trial registration record, no discrepancies were identified indicating that alternative measurements or analyses were conducted but not reported for this outcome.
+- Given full and consistent reporting of all pre-specified LAT components and analysis methods, this domain is judged **Low risk of bias**.
+
+---
+
+# Overall Risk of Bias Judgement: **Some concerns**
+
+**Rationale:** No domain was judged to be at High risk of bias. However, two domains ("bias arising from the randomization process" and "measurement of the outcome") were judged as "Some concerns" due to lack of reported information on allocation concealment and the inherent susceptibility of this self-report, unblinded outcome to influence by awareness of intervention assignment. Per RoB 2.0 guidance, since at least one domain (and here, two domains) raise "Some concerns" without any domain reaching "High risk," the overall judgement for this outcome (LAT) is **Some concerns**.

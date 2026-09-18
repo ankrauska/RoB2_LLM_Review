@@ -1,0 +1,69 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 14984447
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: SBGM Frequency and HbA1c
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns arise because although sequence generation appears random, allocation concealment is not described, and there is no information regarding whether allocation was concealed from those enrolling participants.
+
+**b. Rationale:** The paper states: "The patients... were randomly assigned in a patient-blinded fashion to two groups of 31 patients each," and randomization was stratified by income category. There is no description of the method of random sequence generation (e.g., computer-generated, random number table) beyond the word "randomly," and no description of allocation concealment procedures (e.g., sealed envelopes, central allocation). This leads to "No information" responses for signalling questions 1.1 and 1.2. Baseline characteristics (Table 1) appear well balanced between groups (age, gender, education, income, diabetes type, duration, insulin dose/injections, baseline HbA1c, baseline SBGM frequency), with no evidence of problematic imbalance — supporting that randomization was not compromised. However, because there is no information on both sequence generation method details and allocation concealment, and given the algorithm criteria (NI on concealment + no info on imbalance problem defaults to "Some concerns"), this domain is judged as **Some concerns** rather than "Low."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **High risk of bias**
+
+**a. Judgement:** High risk of bias due to lack of blinding of participants/personnel combined with a substantial and differential intervention (free strips) that plausibly influenced behavior (SBGM frequency, insulin adjustments) differentially between groups, and use of an inappropriate analysis (per-protocol/completer-based reporting rather than full ITT).
+
+**b. Rationale:** 
+- Participants and study personnel were aware of group assignment: patients in the NC group received free strips monthly, while C group patients had to purchase strips — this cannot be blinded. The paper describes this as a "single-blinded" study (referring to outcome assessment blinding to the nurse's feedback), but participants clearly knew their allocation.
+- The core "intervention" (free vs. paid reagents) is intrinsically linked to behavior change: "The SBGM frequency recorded by the glucometer increased progressively with time... and was higher in the NC group." This is a direct trial-context effect on behavior (the very mechanism being tested), and also insulin dose adjustments differed markedly: "Insulin dose did not change significantly in the NC group, but it increased by 1.5-fold in the C group."
+- Critically, for the outcome of interest (SBGM frequency and HbA1c), analysis was substantially affected by differential and large dropout (see missing data domain), and there is no clear indication of full ITT analysis being the primary reported result — a completer/LOCF approach was used ("Efficacy data from the intention-to-treat population, using the last observation carried forward" is mentioned, but also "In subjects that completed the entire duration of the study, a repeated measures ANOVA was also used," suggesting per-protocol/completer analyses were prominently reported alongside).
+- Given the substantial imbalance in dropout (19% NC vs. 48% C) which is itself a deviation from intended follow-up, and the fact that the deviations (differential engagement, insulin dose changes, differential dropout) arose because of the trial context (free vs. paid strips) and were unbalanced between groups, and likely affected the outcome, this meets criteria for **High risk of bias**.
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk of bias due to substantial and highly differential attrition between groups, with reasons for dropout plausibly related to the true outcome value (e.g., cost-related dropout in the C group).
+
+**b. Rationale:** 
+- "At the end of the study, there were 25 patients remaining in the NC group and 16 patients in the C group, i.e. a dropout rate of 19% in the NC group and 48% in the C group." This is a large and highly differential proportion of missing outcome data.
+- The reasons for dropout are plausibly related to the outcome: the authors themselves speculate, "patients in the C group who found the cost of the reagent strips to be problematic may well have dropped out of the study, thus accounting for the decline in the reported significance of this factor at the exit," and note, "the importance of the cost of SBGM is also underscored by the higher dropout rate (~50%) among patients not given free glucometer strips."
+- This directly suggests that missingness in the outcome (SBGM frequency/HbA1c) is related to its true value and to intervention group assignment (i.e., poorer control/less engagement leading to dropout, differentially by group) — satisfying criteria for concluding it is "likely" that missingness depended on the true outcome value.
+- The authors acknowledge, "the power of the study using self-tests/day and HbA1c as variables of interest fell to 0.64" due to this dropout, and note reliance on LOCF-based ITT and completer-only (repeated-measures) analyses, neither of which adequately corrects for informative missingness.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns because the outcome assessors (research nurse) were blinded to feedback provision, and HbA1c/glucometer download are relatively objective measures, but SBGM frequency (via glucometer download) could theoretically be influenced by patient behavior/awareness of group assignment, and complete blinding of the nurse to patients' group assignment was not possible given differing strip supplies.
+
+**b. Rationale:** 
+- HbA1c was measured using DCA 2000 Analyser — an objective laboratory method, unlikely to be influenced by knowledge of allocation ("observer-reported outcome not involving judgement"), supporting low concern for this component.
+- SBGM frequency was obtained by objectively downloading the glucometer memory ("WinGlucofacts" software) rather than patient self-report, reducing risk of reporting bias for this outcome: "the frequency of SBGM was determined by downloading the glucometer memory."
+- However, the research nurse who interacted with patients and downloaded data was not blinded to group assignment (she knew who received free strips vs. not), since she was administering the intervention. The paper states, "The research nurse did not provide any feedback to the patient concerning glucometer readings, random blood glucose readings or HbA1c determinations," which mitigates outcome-assessment bias, but does not fully eliminate the possibility of differential interaction effects.
+- Because measurement methods (glucometer download, DCA 2000 analyser) were identical and objective across groups, and were not likely to differ in ascertainment between groups, but blinding of assessors was not fully achieved, this is judged as **Some concerns** rather than "Low."
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of an available pre-specified, time-stamped statistical analysis plan or trial registration to confirm that reported outcomes/analyses (SBGM frequency, HbA1c, multiple time points, LOCF vs. completer analyses) were pre-specified rather than selected based on results.
+
+**b. Rationale:** 
+- No trial registry entry or published protocol is referenced in the article (the study was conducted 1998–2000, prior to widespread trial registration requirements), so it is not possible to verify whether the analysis plan (e.g., choice of General Linear Model with LOCF vs. repeated-measures ANOVA in completers, choice of time points reported, e.g., "most apparent at the 6th month") was specified in advance.
+- Multiple analytic approaches are reported for overlapping data (ITT/LOCF-based General Linear Model *and* repeated-measures ANOVA restricted to completers), without clear pre-specification of which was primary: "Efficacy data from the intention-to-treat population, using the last observation carried forward, were analysed by General Linear Model... In subjects that completed the entire duration of the study, a repeated measure analysis of variance was also used." This raises the possibility that results were selected among multiple eligible analyses.
+- However, there is no strong direct evidence (e.g., discrepancy with a registered protocol) that selective reporting occurred — the outcomes assessed (SBGM frequency and HbA1c) are the primary and clearly stated objectives of the study throughout, and results for these outcomes are fully reported across all time points in figures.
+- Given the absence of a protocol/registry for verification, but no clear evidence of selective suppression of unfavorable results, this is judged as **Some concerns** (per the algorithm: no information to assess pre-specification plus no information on selection from multiple outcomes/analyses defaults to "Some concerns").
+
+---
+
+## Overall Risk of Bias Summary
+
+Given **High risk of bias** in both the "deviations from intended intervention" and "missing outcome data" domains, the overall risk of bias for the outcome SBGM frequency and HbA1c is:
+
+### **Overall judgement: High risk of bias**

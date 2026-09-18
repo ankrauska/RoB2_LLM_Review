@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 22773179
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Chansue, 2012
+**Outcome Name**: Visual acuity (Fig 4 - Efficacy, 20/25 or better)
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (95% - High Certainty)
+Reason: The article explicitly states "assigned at random using Microsoft Excel's random number function (Microsoft Excel 2003)" - this is a computer-generated random number method, clearly described.
+
+**1.2**: **NI** (95% - High Certainty)
+Reason: The article does not mention any allocation concealment method (e.g., sealed envelopes, central allocation). No information is provided about how the assignment sequence was concealed from investigators/patients until enrollment.
+
+**1.3**: **N** (90% - Moderate Certainty)
+Reason: The article reports no statistically significant difference in preoperative spherical equivalent refraction between groups (p=0.87). This is a paired-eye design (same patient, fellow eyes), which inherently controls for most baseline patient characteristics. No other baseline imbalances are reported.
+
+**Result of Domain 1**: **Some concerns** (90% - Moderate Certainty)
+Reason: Per the algorithm, since 1.2 is "NI" and 1.3 is "N", the result is "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **NI** (70% - Low Certainty)
+Reason: No explicit information provided about whether patients were aware of which eye received which treatment (ASA vs TSA). No blinding procedure or placebo is described for participants.
+
+**2.2**: **NI** (70% - Low Certainty)
+Reason: No information provided regarding whether the surgeon/treating clinician was aware of which profile was assigned to each eye (though this is likely, as the surgeon must select laser settings, this is not explicitly stated for blinding assessment).
+
+**2.3**: **NI** (75% - Moderate Certainty)
+Reason: No information provided about non-protocol interventions occurring during the study period that could affect outcomes.
+
+**2.4**: **N** (85% - Moderate Certainty)
+Reason: No dropouts are reported; all 30 eyes (15 patients) appear to have completed the study with full data presented in the results and figures (e.g., Fig 4 shows 100% of eyes with data).
+
+**2.5**: **NI** (75% - Moderate Certainty)
+Reason: No information is provided regarding patient adherence to postoperative care, follow-up compliance, or any protocol deviations.
+
+**2.6**: **NI** (75% - Moderate Certainty)
+Reason: No specific analysis method addressing adherence is described (no ITT, per-protocol, or other adherence-related analysis method mentioned).
+
+**Result of Domain 2**: **High risk** (80% - Moderate Certainty)
+Reason: Per the algorithm, since one of 2.1/2.2 is "NI", 2.3 is "NI", and 2.6 is "NI", the result is "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **Y** (95% - High Certainty)
+Reason: Figure 4 reports "100% of eyes were 20/25 or better" for both groups, indicating complete data was available for all 30 randomized eyes (15 patients) with no reported dropouts or missing data for this outcome.
+
+**Result of Domain 3**: **Low risk** (95% - High Certainty)
+Reason: Since 3.1 is "Y", the result is automatically "Low risk" per the algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (90% - Moderate Certainty)
+Reason: Visual acuity was measured using standard Snellen chart methodology (CDVA), which is a well-established, reliable, and predefined measurement tool commonly used in refractive surgery research.
+
+**4.2**: **N** (90% - Moderate Certainty)
+Reason: Visual acuity was measured using the same method (Snellen CDVA) at the same time point (3 months postoperatively) for both ASA and TSA groups, ensuring comparability.
+
+**4.3**: **NI** (70% - Low Certainty)
+Reason: Visual acuity (CDVA) is an outcome typically assessed by an examiner (not patient-reported). No information is given regarding whether the outcome assessor was aware of which treatment (ASA/TSA) each eye received.
+
+**4.4**: **N** (80% - Moderate Certainty)
+Reason: CDVA measured via Snellen chart is a relatively objective measure (though it requires patient participation, the assessment/interpretation is standardized and objective, similar to visual acuity testing in other trials), reducing the likelihood of subjective bias affecting the result.
+
+**4.5**: **N** (85% - Moderate Certainty)
+Reason: There is no clear evidence in the article suggesting that knowledge of intervention assignment influenced the assessment of visual acuity. Standardized objective testing was used.
+
+**Result of Domain 4**: **Low risk** (85% - Moderate Certainty)
+Reason: Per the algorithm, 4.1 is "N", 4.2 is "N", 4.3 is "NI", 4.4 is "N" → Low risk (following the specific rule: 4.1 N/PN/NI, 4.2 N/PN, 4.3 Y/PY/NI, 4.4 N/PN = Low risk).
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **NI** (85% - Moderate Certainty)
+Reason: The article does not mention trial registration or a pre-specified, published analysis plan. Per the specific instruction, if the article has not been registered or planned for publication, the answer is "NI."
+
+**5.2**: **N** (85% - Moderate Certainty)
+Reason: Visual acuity (CDVA) was measured using a single, standard method (Snellen chart) and reported consistently as "efficacy" in the Methods and Results sections. There is no evidence of selective reporting from multiple possible visual acuity measures.
+
+**5.3**: **N** (85% - Moderate Certainty)
+Reason: The visual acuity outcome was analyzed using a single method (cumulative percentage bar graph) as described in the Methods and consistently applied in the Results. No evidence of multiple competing analyses.
+
+**Result of Domain 5**: **Some concerns** (85% - Moderate Certainty)
+Reason: Per the algorithm, since 5.2 is "N", 5.3 is "N", and 5.1 is "NI", the result is "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (85% - Moderate Certainty)
+
+Reason: Domain 1 = Some concerns, Domain 2 = High risk, Domain 3 = Low risk, Domain 4 = Low risk, Domain 5 = Some concerns. Per the algorithm, since one domain (Domain 2) is assessed as "High Risk," the overall risk of bias for the article is **High Risk**.

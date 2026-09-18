@@ -1,0 +1,114 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 16763088
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: [Author not stated in excerpt], [Year not explicitly stated - University of Otago study, ~2005]
+**Outcome Name**: failure rate (bracket bond failure)
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% - High Certainty)
+Reason: The article explicitly states "Randomization for allocation of either of the two etch and primer systems to the upper right quadrant was undertaken using a block randomization method as described by Roberts and Torgerson (1998)." This is an explicitly described valid method of sequence generation.
+
+**1.2**: NI (90% - Moderate/High Certainty)
+Reason: The article states "The operators were unaware of the assignment until the patient was entered into the trial" but does not describe the specific concealment mechanism (e.g., sequentially numbered opaque containers, central allocation, opaque sealed envelopes). No such mechanism is mentioned anywhere in the methods.
+
+**1.3**: N (90% - Moderate/High Certainty)
+Reason: This is a split-mouth, cross-quadrant design where the same patients received both interventions (SEP and conventional etch) on different quadrants. Baseline patient characteristics (Table 1) are therefore identical between "groups" by design; no imbalance attributable to randomization is present.
+
+**Result of Domain 1**: Some concerns (85%)
+Reason: Per the algorithm, since 1.2 = NI and 1.3 = N, the result is "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (90% - Moderate/High Certainty)
+Reason: "The patients were unaware which system had been used on each side of the mouth."
+
+**2.2**: Y (95% - High Certainty)
+Reason: "As the two systems had different modes of application, it was not possible to blind the operators to the type of system being used."
+
+**2.3**: NI (70% - Low/Moderate Certainty)
+Reason: No explicit mention of non-protocol interventions; while the split-mouth design likely balances any incidental factors, this is not explicitly discussed.
+
+**2.4**: N (90% - Moderate/High Certainty)
+Reason: Only one of 39 patients (2.6%) had incomplete follow-up (moved away after 7 months), well under 10%.
+
+**2.5**: N (75% - Moderate Certainty)
+Reason: No mention of crossover, cessation, or non-adherence to the assigned etching protocol; the intervention (a one-time bonding procedure) was delivered as intended for essentially all brackets.
+
+**2.6**: N (75% - Moderate Certainty)
+Reason: No specific adherence-correcting analysis (e.g., instrumental variable, IPW) was reported. The one participant with incomplete follow-up was retained in the analysis, consistent with an ITT-type approach, which per instructions is coded as "N."
+
+**Result of Domain 2**: High risk (85%)
+Reason: One of 2.1/2.2 = Y (2.2 = Y), 2.3 = NI, and 2.6 = N → per the algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (90% - Moderate/High Certainty)
+Reason: All 39 patients and 661 brackets were followed for the full 12-month period, with only one patient's follow-up truncated (at 7 months, no failures during that time, data still included). This represents >95% complete data for a binary outcome (bracket failure/non-failure).
+
+**3.2**: N (70% - Low/Moderate Certainty)
+Reason: No specific bias-correction analysis (e.g., inverse probability weighting) or sensitivity analysis was reported regarding missing data; however, this does not change the domain outcome given 3.1 = Y.
+
+**3.3**: N (70% - Low/Moderate Certainty)
+Reason: The single instance of missing data (patient relocation) was unrelated to the outcome (bracket failure) itself — it was due to relocation to another city.
+
+**3.4**: N (70% - Low/Moderate Certainty)
+Reason: No differential dropout pattern between groups; the missingness (relocation) is unrelated to bracket failure status.
+
+**Result of Domain 3**: Low risk (90%)
+Reason: 3.1 = Y → automatically "Low risk" per algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% - Moderate/High Certainty)
+Reason: Bracket failure (debonding) is a clearly observable, objective, and reliably measured clinical outcome; the method was predefined and clinically standard.
+
+**4.2**: N (85% - Moderate Certainty)
+Reason: Both quadrants (SEP and conventional) were monitored under an identical schedule within the same patient (split-mouth design), with the same follow-up visits and thresholds for defining failure.
+
+**4.3**: Y (75% - Moderate Certainty)
+Reason: The outcome is not patient-reported (clinician-assessed bracket failure). Since operators were not blinded to which quadrant received which treatment (recorded at bonding), the assessing clinician was likely aware of group assignment during follow-up assessments.
+
+**4.4**: N (80% - Moderate Certainty)
+Reason: Bracket failure/survival is an objective outcome (clinically visible presence/absence of the bracket), not a subjective patient-reported or clinician-judged symptom.
+
+**Result of Domain 4**: Low risk (85%)
+Reason: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = N → per algorithm, "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85% - Moderate/High Certainty)
+Reason: No trial registration or pre-specified/published analysis plan is mentioned in the article.
+
+**5.2**: N (80% - Moderate Certainty)
+Reason: All outcomes described in the methods (failure rate, survival, mode of failure, tooth location, gender, age, operator, manipulations) are fully reported in the results with consistent measurement methods.
+
+**5.3**: N (80% - Moderate Certainty)
+Reason: The analysis methods described in the methods section (logistic regression, multinomial logistic regression, Cox proportional hazards, Kaplan-Meier) match those reported in the results without evidence of selective reporting among multiple analyses.
+
+**Result of Domain 5**: Some concerns (85%)
+Reason: 5.2 = N, 5.3 = N, and 5.1 = NI → per algorithm, "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment
+
+**Overall Bias Risk for the Article**: **High Risk** (85% - Moderate/High Certainty)
+
+Reason: Domain summary — Domain 1: Some concerns; Domain 2: High risk; Domain 3: Low risk; Domain 4: Low risk; Domain 5: Some concerns. Since at least one domain (Domain 2) is rated "High risk," per the algorithm, the overall risk of bias for the failure rate outcome is **High Risk**.

@@ -1,0 +1,238 @@
+PROMPT   huang_2025::decision_table
+PAPER    PMID 21153417
+MODE     independent   1 call(s)
+
+[ Third-party text is elided; see README.md. The scaffolding is the author's, verbatim. ]
+==============================================================================
+THE PROMPT   label=all_domains
+==============================================================================
+Risk-of-bias assessment prompt
+Introduction and Role Setting:
+You are a professional reviewer. You are particularly good at learning evaluation criteria, and closely following it to assess the risk of bias of Randomized Controlled Trials (RCTs). I will give you a command, you can fully understand and follow the command and evaluate the RCTs I have provided to you. Finally, make sure your answers are completely correct.
+Guidelines for Evaluation:
+Certainty Rating System:
+You should use the following certainty rating system to qualify the confidence in your evaluations:
+High Certainty (95-100%): The evaluation is based on clear, direct, and comprehensive information provided in the RCT.
+Moderate Certainty (75-94%): The evaluation is based on information that is mostly clear and direct, but with some minor uncertainties or gaps.
+Low Certainty (50-74%): The evaluation is based on limited or indirect information, with significant uncertainties or gaps.
+Very Low Certainty (0-49%): The evaluation is based on sparse, unclear, or highly speculative information.
+For each evaluation item, include the certainty rating along with the percentage to provide a clear indication of the confidence in the assessment.
+Specific Requirements:
+The examples provided in the tool are illustrative and do not cover all possible scenarios in real-world applications. Use your expert judgment to evaluate each item based on the information provided in the RCT, and do not rely solely on the examples.
+Important:
+• The evaluation should be conducted only for the outcome of Muscle damage
+1 Domain 1: Risk of bias arising from the randomization process
+Content of Domain One assessment: There are a total of 3 questions in this domain.
+Was the allocation sequence adequately generated?
+In this question, you must strictly rely on the information in the article and not make assumptions or implications about the information in the article
+If the article describes the methods of sequence generating (computer-generated random numbers, block randomization, coin tossing, card or envelope shuffling, dice rolling, lot drawing, or minimization) were used, the answer to this question is "Y"; 
+If the sequence was generated based on the odd or even date of birth, some rule based on the date (or day) of admission, or some rule based on hospital or clinic record number, the answer to this question is "PN".
+If allocation was based on clinician judgment, participant preference, results of a series of laboratory tests, or availability of the intervention, the answer to this question is "N".
+1.2 Was the allocation  sequence concealed until  participants were  enrolled and assigned to  interventions?
+In this question, you must strictly rely on the information in the article and not make assumptions or implications about the information in the article
+The most important: If does not mention assignment concealment, the answer to this question is “NI”, even if the study was described as a double-blind or triple blind study;
+If the article mentions allocation concealing or masking (including central allocation, sequentially numbered drug containers of identical appearance, or opaque envelopes), participants may not be aware of the assignment, the answer to this question is "PY"; 
+If the article mentions allocation concealing or masking (including central allocation, sequentially numbered drug containers of identical appearance, or opaque envelopes), participants may be aware of the assignment, the answer to this question is "PN";
+If the article describes the specific methods of sequence concealing (including central allocation, sequentially numbered drug containers of identical appearance, or opaque envelopes) were used, the answer to this question is "Y"; 
+If an open random allocation schedule was used or if assignment envelopes were used without appropriate safeguards (e.g., if envelopes were unsealed, non-opaque, or not sequentially numbered), the answer to this question is "N".
+1.3 Did baseline differences between intervention groups suggest a problem with the randomization process?
+If there are no significant differences between the intervention and control groups, or if any existing differences are attributed to random error, the answer to this question is "N"; 
+If there are noticeable differences between the intervention and control groups that are attributed to randomization, including the following aspects: 1, The sample sizes between the two groups differ significantly beyond the expected allocation ratio, 2 There are statistically significant differences in baseline characteristics between the two groups, 3 The differences between the groups are substantial enough to introduce bias in the assessment of intervention effects, 4 One or more important prognostic factors or baseline measurements of outcome variables differ, and it's not due to random error, 5 Baseline characteristics are too similar to be explained by random error, then the answer to this question is "Y"; 
+If there is no information in the article regarding differences in baseline characteristics between the intervention and control groups, the answer to this question is "NI".
+2 Domain 2: Bias Deviation from the Prespecified Interventions
+Risk of bias due to deviations from the intended interventions
+2.2 Effect of assignment to intervention
+2.1 Were participants aware of their assigned intervention during the trial?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If participants were aware of their allocation, the answer to this question is "Y"; 
+If there is handling of potential side effects or toxicity of interventions suffered by participants, or if there are other circumstances that may lead participants to know their allocation, the answer to this question is "PY"; 
+If participants were unaware of their allocation, the answer to this question is "N";
+If the article states that participants received a placebo or sham intervention as part of the blinding procedure, the answer to this question is "N";
+If the article states that this is a non blind or open label experiment, the answer to this question is "N"; 
+If there is no information in the article regarding blinding of participants, the answer to this question is "NI". 
+2.2 Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If the intervention providers were aware of the participants' allocation, the answer to this question is "Y"; 
+If there is handling of potential side effects or toxicity of interventions suffered by participants, or if there are other circumstances that may lead intervention providers to know the participants' allocation, the answer to this question is "PY"; 
+If intervention providers were unaware of the participants' allocation, or if the article states that intervention providers administered a placebo or sham intervention as part of the blinding procedure, the answer to this question is "N"; 
+If there is no information in the article regarding blinding of intervention providers, the answer to this question is "NI".
+2.3 Were important nonprotocol interventions balanced across intervention groups?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If there are significant non protocol measures in the trial, such as (1) intervention are not inconsistent with the trial protocol; (2) trial participants might receive with or after starting their assigned intervention; and (3) are prognostic for the outcome; and they are imbalanced between groups, the answer to this question is "N";
+If there are not significant non protocol measures in the trial, the answer to this question is "Y";
+If the article does not provide any information that can help you make a judgment on the question, the answer to this question is "NI".
+2.4 Were there failures in implementing the intervention that could have affecte?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If more than 10% of the participants have failures in implementing the intervention, for example, Withdrawing from the trial due to reasons such as death, worsening of the condition, and doctor's advice, the answer to this question is "Y". 
+If implementation of the intervention was successful for most participants, the answer to this question is "N".
+If the article does not provide any information that can help you make a judgment on the question, the answer to this question is "NI".
+2.5 Was there non-adherence to the assigned intervention regimen that could have affected participants’ outcomes?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If more than 10% of the participants have non-adherence to the assigned intervention, such as imperfect compliance with a sustained intervention, cessation of intervention, crossovers to the comparator intervention and switches to another active intervention, the answer to this question is "Y";
+If there are not non-adherence to the assigned intervention in the trial, the answer to this question is "N";
+If the article does not provide any information that can help you make a judgment on the question, the answer to this question is "NI";
+2.6 Was an appropriate analysis used to estimate the effect of adhering to the intervention?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If the article used appropriate analytical methods to evaluate the effectiveness of persistent interventions, like: (1) instrumental variable analyses to estimate the effect of receiving the assigned intervention in trials in which a single intervention, administered only at baseline and with all-or-nothing adherence, is compared with standard care; and (2) inverse probability weighting to adjust for censoring of participants who cease adherence to their assigned intervention, in trials of sustained treatment strategies, the answer to this question is "Y"
+If the article used inappropriate analytical methods to evaluate the effectiveness of persistent interventions, like:(i) ‘Intention to treat (ITT) analysis’, (ii) ‘per protocol analysis’, (iii) ‘as-treated analysis’, (iv) ‘analysis by treatment received’, the answer to this question is "N"
+If the article does not provide any information that can help you make a judgment on the question, the answer to this question is "NI".
+3 Domain 3: Risk of bias due to missing outcome data
+Evaluation Content for Domain 3: Domain 3 comprises 4 questions.
+3.1 Were data for this outcome available for all, or nearly all, participants randomized?
+In this question, you need to calculate the proportion of the number of participants in the result analysis to the total number of participants after randomization, and judge the answer of the question based on the calculated proportion:
+If the outcome is a continuous variable and 95% or more of the randomized participants have complete outcome data (excluding imputed data), the answer is "Y";
+If the outcome is a continuous variable and 90% to 95% of randomized participants have complete outcome data (excluding imputed data), the answer is "PN";
+If the outcome is a continuous variable and the proportion of participants with complete outcome data after randomization is less than 90%, the answer is "N";
+If the outcome is a binary variable and the number of observed events is much greater than the number of participants with missing outcomes, the answer is "Y";
+If the outcome is a binary variable and the number of observed events is not much greater than the number of participants with missing outcomes, the answer is "N";
+If the article does not provide the number of randomized individuals, the answer is "NI".
+3.2 Is there evidence that the result was not biased by missing outcome data?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If the article uses analysis methods such as inverse probability weighting that can correct for bias, or provides evidence through sensitivity analysis that outcomes were not biased due to missing data, the answer is "Y"; 
+If no information is provided regarding the relationship between missing outcome data and bias correction methods or if inappropriate methods like last observation carried forward (LOCF) or imputation based solely on the intervention group were used, the answer is "N".
+3.3 Could missingness in the outcome depend on its true value?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If, based on the information provided in the article, it can be inferred that participants dropped out of the study and follow-up due to health issues related to the outcome variable, the answer is "Y"; 
+If, based on the information provided in the article, it can be inferred that participants dropped out of the study and follow-up due to their health status, and does not specify whether it is related to the outcome variable, the answer is "PY"; 
+If, based on the information provided in the article, it can be inferred that all missing outcome data is unrelated to the outcome itself, the answer is "N"; 
+If the article does not provide any information that can help you make a judgment on the question, the answer is "NI".
+3.4 Is it likely that missingness in the outcome depended on its true value?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If the article contains any of the following situations: 1) There is a discrepancy in the proportion of missing outcome data between the intervention and control groups, and this discrepancy is related to the outcome variable; 2) The reported reasons for missing outcome data suggest a relationship with the missing outcome variable; 3) Different intervention groups have different reasons for missing outcome data; 4) The actual circumstances of the study suggest that missing outcome data is likely related to the outcome itself; 5) In time-to-event analysis, when a participants drops out of the study and follow-up due to drug toxicity or side effects, the answer is "Y"; If the analysis explains the characteristics of participants that may explain the relationship between missing outcome data and the outcome variable, the answer is "N"; 
+If the article does not provide any information that can help you make a judgment on the question, the answer is "NI".
+4 Domain 4: Risk of bias in measurement of the outcome
+Evaluation Content for Domain 4: Domain 4 comprises five questions.
+4.1 Was the method of measuring the outcome inappropriate?
+In this question, you need to extract the measurement method of the outcome in the article and make a judgment based on your professional knowledge
+If the current measurement method cannot reliably measure the intervention effect (e.g., the outcome measure is beyond the detection range of the measurement method) or if the measurement tool's reliability is poor, the answer is "Y"; 
+If the outcome measure was predefined and the measurement tool is reliable, the answer is "N"; 
+If the article does not provide the outcome measurement method of the outcome, the answer is "NI".
+4.2 Could measurement or ascertainment of the outcome have differed between intervention groups?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question.
+If the outcome variables for both groups should be measured in a comparable way, including using the same measurement method at comparable time points and having the same measurement thresholds, the answer is "N"; 
+If there are differences in measurement between the two groups, such as more frequent visits in the intervention group, the answer is "Y"; 
+If the article does not provide any information that can help you make a judgment on the question, the answer is "NI".
+4.3 Were outcome assessors aware of the intervention received by study participants? 
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question;
+If the outcome measurement is based on patient reported results and the participants were aware of their own group assignments, the answer is "Y";
+If the outcome measurement is not based on patient reported results and the outcome assessors were aware of the participants' group assignments, the answer is "Y"; 
+If the outcome measurement is based on patient reported results and participants are not aware of their group assignments, the answer is "N";;
+If the outcome measurement is based on patient reported results and the article states that blinding methods like placebo or sham intervention were employed for the participants, the answer is "N";
+If the outcome measurement is not based on patient reported results and the outcome assessors were not aware of the participants' group assignments, the answer is "N";
+If the outcome measurement is not based on patient reported results and the article states that blinding methods like placebo or sham intervention were employed for the outcome assessors, the answer is "N"; 
+If the article does not provide any information that can help you make a judgment on the question, the answer is "NI".
+4.4 Could assessment of the outcome have been influenced by knowledge of intervention received?
+In this question, you need to determine whether the outcome is subjective or objective.
+If the outcome is an objective measure, such as all-cause mortality, the answer is "N"; 
+If the outcome is a subjective measure and the measurement method does not specify whether it was assessed by the outcome assessor or reported by the patient, the answer is "PY"; 
+If the outcome is a subjective measure reported by the patient, such as patient-reported pain level, the answer is "Y"; 
+If the outcome is a subjective measure assessed by the outcome assessor, the answer is "Y"; 
+If the article does not report a measurement method for the outcome, the answer is "NI".
+4.5 Is it likely that assessment of the outcome was influenced by knowledge of intervention received?
+In this question, you need to combine the information provided in the article with your own professional knowledge to make a comprehensive judgment on the question
+If there is no clear evidence to suggest that knowledge of intervention status was likely to influence outcome assessment, the answer is "N"; 
+If there is clear evidence to suggest that knowledge of intervention status was likely to influence outcome assessment, (such as patient-reported symptoms in trials of homeopathy, or assessments of recovery of function by a physiotherapist who delivered the intervention), the answer is "Y"; 
+If the article does not provide any information about this can help you make a judgment on the question, the answer is "NI";
+Domain 5: Risk of bias in selection of the reported result
+Evaluation Content for Domain 5: Domain 5 comprises three questions:
+5.1 Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?
+In this question, you need to extract the measurement and the analyses method for all outcomes reported in the Methods section of the article and compare them with the measurement method for all outcomes reported in the Results section
+If the measurement and analysis methods of all results in the results section are consistent with those of all results in the methods section, and all outcomes reported in the methods section are reported in the results section, the answer to the question is "Y";
+If the measurement and analysis methods of all results in the results section are  inconsistent with those of all results in the methods section, or if there is an outcome mentioned in the methods section that is not reported in the results section, but it can be clearly established that the changes to the plan are unrelated to the results, the answer to the question is "Y";
+If the measurement and analysis methods of all results in the results section are  inconsistent with those of all results in the methods section, or if there is an outcome mentioned in the methods section that is not reported in the results section, in addition, it can be clearly established that the changes to the plan are related to the results, the answer to the question is "N";
+If the article does not provide any information about the measurement and the analyses method of outcomes that can help you make a judgment on the question, the answer to the question is "NI".
+5.2 Is the numerical result being assessed likely to have been selected, on the basis of the 
+results, from multiple eligible outcome measurements (e.g. scales, definitions, time points) within the outcome domain?
+In this question, you need to extract the measurement method for this outcome reported in the Methods section of the article and compare them with the measurement method for this outcome reported in the Results section
+If there is clear evidence that multiple measurements were taken for the outcomes, but only one or a few of these measurements are fully reported, the answer to this question is "Y"; 
+If all eligible reported results for the outcome domain correspond to all intended outcome measurements, the answer to this question is "N";
+If there is only one possible way in which the outcome domain can be measured (hence there is no opportunity to select from multiple measures), the answer to this question is "N";
+If outcome measurements are inconsistent across different reports on the same trial, but the article have provided the reason for the inconsistency and it is not related to the nature of the results, the answer to this question is "N";
+If the article does not provide any information that can help you make a judgment on the question, the answer to this question is "NI".
+5.3 Is the numerical result being assessed likely to have been selected, on the basis of the 
+results, from multiple eligible analyses of the data?
+In this question, you need to extract the analyses method reported in the Methods section of the article and compare them with the analyses method reported in the Results section
+you need to compare the analyses method reported in the Methods section of the article with the outcome measurement method reported in the Results section.
+If there is clear evidence that multiple analysis methods were used for the results, but only one or a few of these analyses are fully reported, the answer to this question is "Y"; 
+If there is clear evidence that all eligible reported results for the outcome measurement correspond to all intended analyses., the answer is "N"; 
+If there is only one possible way in which the outcome measurement can be analysed (hence there is no opportunity to select from multiple analyses).
+If the article does not provide any information that can help you make a judgment on the question, the answer to this question is "NI".
+Domain evaluate
+Please strictly follow the following requirements for the domain evaluation section and do not include any assumptions or reflections
+1 Evaluation Results for Domain 1:
+If the answer to question 1.2 is "Y" or "PY" and the answer to question 1.1 is "Y", "NI" or "PY" and the answer to question 1.1.3 is "N", "PN" or "NI", then the assessment result for Domain 1 is "Low risk";
+If the answer to question 1.2 is "Y" or "PY", and the answer to question 1.1 is "Y" , "NI" or "PY", and the answer to question 1.1.3 is "Y" or "PY", then the assessment result for Domain 1 is "some concerns";
+If the answer to question 1.2 is "Y" or "PY", and the answer to question 1.1 is "N" or "PN", then the assessment result for Domain 1 is "some concerns";
+If the answer to question 1.2 is "NI", and the answer to question 1.3 is "N", "NI" or "PN", then the assessment result for Domain 1 is " some concerns ";
+If the answer to question 1.2 is "NI", and the answer to question 1.3 is "Y" or "PY", then the assessment result for Domain 1 is "High risk";
+If the answer to question 1.2 is "N" or "PN", then the assessment result for Domain 1 is "High risk".
+2 Assessment of Domain 2:
+If the answer to question 2.1 is "N" or "PN", the answer to question 2.2 is "N" or "PN", the answer to question 2.4 is "NA", "N" or "PN", and the answer to question 2.5 is "NA", "N" or "PN", then the result for Domain 2 is "Low risk";
+If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NA", "Y" or "PY", the answer to question 2.4 is "NA", "N" or "PN", and the answer to question 2.5 is "NA", "N" or "PN", then the result for Domain 2 is "Low risk";
+If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NA", "Y" or "PY", the answer to one of questions 2.4 and 2.5 is "Y", "PY" or "NI",, and the answer to question 2.6 is "Y" or "PY", then the result for Domain 2 is "Some concerns";
+If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NI", "N" or "PN", and the answer to question 2.6 is "Y" or "PY", then the result for Domain 2 is "Some concerns";
+If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NA", "Y" or "PY", the answer to one of questions 2.4 and 2.5 is "Y", "PY" or "NI", and the answer to question 2.6 is "NI", "N" or "PN", then the result for Domain 2 is "High risk";
+If the answer to one of questions 2.1 and 2.2 is "Y", "PY" or "NI", the answer to question 2.3 is "NI", "N" or "PN", and the answer to question 2.6 is "NI", "N" or "PN", then the result for Domain 2 is "High risk";
+3 Assessment Result for Domain 3:
+If the answer to question 3.1 is "Y" or "PY", then the assessment result for Domain 3 is "Low risk";
+If the answer to question 3.1 is "N", "PN" or "NI", and the answer to question 3.2 is "Y" or "PY", then the assessment result for Domain 3 is "Low risk";
+If the answer to question 3.1 is "N", "PN" or "NI", the answer to question 3.2 is "N" or "PN", and the answer to question 3.3 is "N" or "PN", then the assessment result for Domain 3 is "Low risk";
+If the answer to question 3.1 is "N", "PN" or "NI", and the answer to question 3.2 is "N" or "PN", and the answer to question 3.3 is "Y", "PY" or "NI", and the answer to question 3.4 is "N" or "PN", then the assessment result for Domain 3 is "Some concerns";
+If the answer to question 3.1 is "N", "PN" or "NI", and the answer to question 3.2 is "N" or "PN", and the answer to question 3.3 is "Y", "PY" or "NI", and the answer to question 3.4 is "Y", "PY" or "NI", the assessment result for Domain 3 is "High risk".
+4 Assessment Result for Domain 4:
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "N" or "PN", and the answer to question 4.3 is "N" or "PN", then the assessment result for Domain 4 is "Low risk";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "N" or "PN", the answer to question 4.3 is "Y", "PY" or "NI", and the answer to question 4.4 is "N" or "PN", then the assessment result for Domain 4 is "Low risk";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "N" or "PN", the answer to question 4.3 is "Y", "PY" or "NI", the answer to question 4.4 is "Y", "PY" or "NI", and the answer to question 4.5 is "N" or "PN", then the assessment result for Domain 4 is "Some concerns";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "NI", the answer to question 4.3 is "N" or "PN", then the assessment result for Domain 4 is "Some concerns"; 
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "NI", the answer to question 4.3 is "Y", "PY" or "NI", the answer to question 4.4 is "N" or "PN", then the assessment result for Domain 4 is "Some concerns";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "NI", the answer to question 4.3 is "Y", "PY" or "NI", the answer to question 4.4 is "Y", "PY" or "NI", and the answer to question 4.5 is "N" or "PN", then the assessment result for Domain 4 is "Some concerns";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "N" or "PN", and the answer to question 4.3 is "Y", "PY" or "NI", and the answer to question 4.4 is "Y", "PY" or "NI", and the answer to question 4.5 is "Y", "PY" or "NI", then the assessment result for Domain 4 is "High risk";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "NI", the answer to question 4.3 is "Y", "PY" or "NI", the answer to question 4.4 is "Y", "PY" or "NI", and the answer to question 4.5 is "Y", "PY" or "NI", then the assessment result for Domain 4 is "High risk";
+If the answer to question 4.1 is "N", "PN" or "NI", the answer to question 4.2 is "Y" or "PY", and the answer to question 4.3 is "Y", "PY", then the assessment result for Domain 4 is "High risk";
+If the answer to question 4.1 is "Y" or "PY", then the assessment result for Domain 4 is "High risk".
+5 Domain 5 Assessment Results:
+If the answer to question 5.2 is "N" or "PN", the answer to question 5.3 is "N" or "PN", and the answer to question 5.1 is "Y" or "PY", then the assessment result for Domain 5 is "Low Risk"; 
+If the answer to question 5.2 is "N" or "PN", the answer to question 5.3 is "N" or "PN", and the answer to question 5.1 is "N", "PN" or "NI", then the assessment result for Domain 5 is "Some concerns";
+If the answer to question 5.2 is "N", "PN" or "NI", the answer to question 5.3 is "NI", the assessment result for Domain 5 is "Some concerns";
+If the answer to question 5.2 is "NI", the answer to question 5.3 is "N", "PN" or "NI", then the assessment result for Domain 5 is "Some concerns";
+If the answer to question 5.2 is "Y" or "PY", then the assessment result for Domain 5 is "High Risk";
+If the answer to question 5.3 is "Y" or "PY", then the assessment result for Domain 5 is "High Risk ".
+6 Overall Bias Risk Assessment Result for the Article:
+If all five domain assessment results are "Low Risk", then the overall assessment result for the article is "Low Risk"; 
+If one domain assessment result is "Some concerns", and there are no domain assessment results that are "High Risk", with at least two being "Low Risk", then the overall assessment result for the article is "Some concerns"; 
+If one domain assessment result is "High Risk", then the overall assessment result for the article is "High Risk"; 
+If all five domain assessment results that are "Some concerns", then the overall assessment result for the article is "High Risk".
+Output Format:
+**Article ID**: [Insert First Author's Last Name], [Insert Year of Publication]
+**Outcome Name**: Muscle damage
+**registration number**: [Insert registration number]
+Domain 1
+1.1 : Result of the Question (percentage of Confidence)
+Reason you summarized
+(Continue in the same format for all Question in this Domain)
+Result of the domain (percentage of Confidence) 
+Reason you summarized
+(Continue in the same format for all Domain)
+Overall Bias Risk for the Article (percentage of Confidence)
+Please ensure that all answers are based on the following instructions and do not need to add your subjective judgment. Finally, make sure your answers are completely correct.
+If 1.1 is NI, you need to double check if the article reports the use of computer-generated random numbers, block randomization, random number tables, and other methods to generate random sequences. If so, then 1.1 is Y
+If the answer to question 1.2 is NI, you need to carefully check if the article mentions central allocation, envelopes and postcard, If so, then 1.2 is Y
+If more than 10% of the participants have failures in implementing, such as withdrawing from the trial, 2.4 is "Y". 
+If more than 10% of the participants have non-adherence to the assigned intervention, 2.5 is "Y";
+If no information reported regarding adherence in article, 2.5 is NI
+If 2.6 is NI or Y, you need to double check if the analysis method of the article report is Intention to treat (ITT) analysis, per protocol analysis, as-treated analysis or analysis by treatment received, and other methods to generate random sequences. If so, then 2.6 is N
+The answer to 3.2 can not be "NI"
+Intention-to-treat analysis is not a method for correcting bias caused by missing data, and 3.2 cannot be used to determine Y just because the article used Intention-to-treat analysis
+If there is no clear evidence to prove assessment of the outcome was influenced by knowledge of intervention receive,the the answer to 4.5 is N;
+If the article has not been registered or planned for publication, the answer to 5.1 is NI;
+
+
+<article>
+[ THE TRIAL REPORT WAS HERE: about 5,824 words, omitted.
+  Not ours to redistribute. Obtain it from https://pubmed.ncbi.nlm.nih.gov/21153417/ ]
+</article>
+
+<tables_and_figures>
+[ ITS TABLES AND FIGURES WAS HERE: about 1,028 words, omitted.
+  Not ours to redistribute. Obtain it from https://pubmed.ncbi.nlm.nih.gov/21153417/ ]
+</tables_and_figures>

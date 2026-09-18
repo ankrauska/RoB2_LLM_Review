@@ -1,0 +1,91 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 26530748
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The report states that participants “were randomized to EBRT or VBT” / “randomly allocated to EBRT or VBT,” but does not describe how the allocation sequence was generated or concealed. Thus, there is insufficient information to establish either that a random sequence was used or that allocation was concealed until enrolment.
+
+   * RoB 2 signalling considerations:
+     * Allocation sequence random: **No information**.
+     * Allocation concealment: **No information**.
+     * Baseline imbalances suggesting a randomization problem: **No information** from the supplied material, since the relevant baseline table is not provided. The text does not report an imbalance suggesting failed randomization.
+
+   The absence of reported methods does not itself establish that randomization was inadequate, but it prevents a low-risk judgement. Under RoB 2, lack of information on allocation concealment, without evidence of baseline imbalance, leads to **some concerns**.
+
+2. **Deviations from intended intervention: high risk of bias**
+
+   a. **Judgement:** High risk of bias for the effect of assignment to intervention at baseline.
+
+   b. **Rationale:** This was an open-label comparison of two visibly different radiotherapy strategies. The cited main PORTEC-2 report is described as an “open-label, non-inferiority, randomised trial.” Therefore, participants and treating personnel were likely aware of assigned treatment.
+
+   More importantly, the reported long-term HRQL analysis was not a full intention-to-treat analysis of all 427 randomized women. The analysis population was restricted after randomization:
+
+   * “Baseline questionnaires and at least 1 follow-up questionnaire were received from **348 of 427 patients (81% of responders)**.”
+   * For the present analysis, patients were eligible only if they “were **previous responders and were alive and disease-free** according to the trial database.”
+   * Patients with recurrence or a pelvic second cancer were excluded from the longitudinal and symptom analyses: “patients with an EC recurrence or a second cancer in the pelvic region were **excluded for longitudinal and symptom analysis**.”
+
+   Restricting the analysis to prior questionnaire responders, survivors, and disease-free participants means that not all randomized participants were analysed according to their original allocation. In particular, exclusion based on recurrence, second cancer, survival, and previous response is post-randomization and may be related to both treatment assignment and global health status. This is not a full ITT estimate of the effect of assignment at baseline.
+
+   The number excluded from the long-term analysis is substantial: at 7 years, questionnaires were sent only to 265 eligible patients, and 202 evaluable questionnaires were available. This is far below the 427 randomized participants. The potential effect of excluding participants from the randomized comparison is therefore substantial.
+
+   Although the report does not provide clear evidence that non-protocol cointerventions or deviations arose specifically because of the trial context, the non-ITT restriction of the analytic population is sufficient for a **high-risk** judgement in this domain for the assignment effect.
+
+3. **Missing outcome data: high risk of bias**
+
+   c. **Judgement:** High risk of bias.
+
+   d. **Rationale:** Outcome data for EORTC QLQ-C30 Global Health were not available for all, or nearly all, randomized participants.
+
+   * The original randomized population comprised 427 patients.
+   * Only 348 participants had a baseline questionnaire and at least one follow-up questionnaire.
+   * At 7 years, questionnaires were sent to 265 “eligible” patients and 205 were returned; after excluding three non-evaluable responses, 202 evaluable questionnaires remained.
+   * At 10 years, 80 of 119 eligible patients returned a questionnaire.
+   * Among the 282 evaluable 7- and 10-year questionnaires, only “**76.2% had completed all items of the QLQ-C30**.”
+
+   Missingness was not merely a small amount of administrative missing data. The long-term analysis excluded people who were not previous responders, were no longer alive, were not disease-free, had recurrent endometrial cancer, or had a pelvic second cancer. The authors acknowledge the potential selection issue:
+
+   > “Another possible limitation to this analysis is the inherent selection of responders at long-term analysis, because participants had to be alive and disease-free.”
+
+   They also report that long-term responders were “slightly younger and had fewer comorbidities compared with the whole PORTEC-2 cohort.” These characteristics are plausibly related to patient-reported global health. Thus, missingness could depend on the true value of the Global Health outcome, and the circumstances make this likely.
+
+   No sensitivity analysis demonstrating robustness to missing Global Health data is reported. There is also no evidence that the analysis adequately addressed missingness related to survival, recurrence, health status, or non-response. Therefore, this domain is judged at **high risk of bias**.
+
+4. **Measurement of the outcome: high risk of bias**
+
+   a. **Judgement:** High risk of bias.
+
+   b. **Rationale:** EORTC QLQ-C30 Global Health is an appropriate and well-established patient-reported HRQL instrument. The report describes use of “the EORTC … Core questionnaire (QLQ-C30 v3.0)” and states that higher global quality-of-life scores represent better functioning. The same questionnaire and assessment schedule appear to have been used in both groups. Therefore, there is no indication that the outcome instrument itself was inappropriate or that measurement procedures differed systematically by treatment group.
+
+   However, Global Health is a participant-reported outcome, so the participant is the outcome assessor. The trial was open label, and participants were likely aware whether they received EBRT or VBT. Knowledge of treatment assignment could influence self-assessment and reporting of global health, particularly because:
+
+   * EBRT and VBT are materially different treatments;
+   * treatment-related bowel and urinary symptoms were expected and were a focus of the HRQL assessment;
+   * the study explicitly evaluated the long-term quality-of-life effects of the two radiotherapy approaches.
+
+   The article itself reports persistent treatment-group differences in symptoms, stating that “EBRT patients reported a persisting higher rate of bowel symptoms” and a trend toward more urinary symptoms. Participants’ knowledge of their treatment and expectations about its effects could plausibly influence their subjective global-health ratings.
+
+   Although the comparison involved two active treatments rather than treatment versus no treatment, the open-label design combined with a subjective patient-reported outcome means that outcome assessment was likely influenced by knowledge of the intervention received. This supports a **high-risk** judgement.
+
+5. **Selective reporting: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The supplied article reports that HRQL was measured repeatedly: every 6 months during the first 2 years, annually to 5 years, and at 7 and 10 years. It also reports numerous QLQ-C30 domains, bowel and bladder outcomes, sexual outcomes, single items, and other questionnaire scales. Thus, there were multiple possible outcome measurements, time points, and analytical choices.
+
+   The analysis used linear mixed models for subscales and logistic/ordinal logistic models for individual items:
+
+   > “To obtain estimates of the EORTC QLQ-C30 and subscales at each of the fixed time points, a linear mixed model was used…”
+
+   However, no pre-specified statistical analysis plan, dated protocol, or sufficiently detailed prospective analysis plan is supplied in the article materials. The trial registration is referenced in the request, but its actual content is not provided here; consequently, it is not possible to verify that the Global Health result was analysed according to a plan finalized before unblinded outcome data were available.
+
+   There is no direct evidence that the reported Global Health result was selected because of its direction, magnitude, or statistical significance. Nevertheless, because:
+   * analysis intentions cannot be verified;
+   * multiple eligible measurement times and analytic approaches existed; and
+   * the report does not provide enough information to rule out selection among these alternatives,
+
+   the appropriate RoB 2 judgement is **some concerns**, rather than low risk or high risk.

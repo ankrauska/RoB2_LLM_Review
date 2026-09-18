@@ -1,0 +1,266 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 11772475
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read the article by King et al. on "A multicenter randomized evaluation of methadone medical maintenance." I've reviewed the full text including the abstract, introduction, methods, results, discussion, and conclusions sections, as well as the accompanying tables and figure.
+
+I now have a thorough understanding of:
+
+- **Study design**: 3-arm RCT (routine care, clinic-based MMM, office-based MMM) at two Baltimore methadone clinics, with 78 randomized/73 completing initial assignment, reporting 6-month outcomes from an ongoing 12-month trial
+- **Population**: Highly selected, stable patients with ≥12 months abstinence, full-time employment, no medication handling problems
+- **Intervention**: 28-day take-home methadone schedule with monthly counseling vs. routine care (1-2x/week visits), embedded in a "stepped care" model with intensification for drug-positive UAs or failed recalls
+- **Key measures**: urinalysis (random + scheduled), medication recall via daily phone-in system, ASI, CSQ, monthly treatment hours, new activity engagement
+- **Main findings**: Very low drug-positive rates (~1%) and no diversion across groups; high retention (~90%) with no group differences; MMM groups reported greater treatment satisfaction (particularly office-based vs. routine) and more new employment/social activities; monthly treatment-related hours dropped sharply for MMM groups; stepped care effectively managed the minority (29%) needing intensified care, mostly briefly
+- **Comparisons to prior literature**: Favorable comparison to Senay et al. (1993) and naturalistic studies (Novick et al., Schwartz et al.) regarding safety/diversion outcomes
+- **Limitations**: Highly selected sample (stable, employed patients), potential for missed intermittent drug use given twice-monthly testing, generalizability concerns, single geographic location (Baltimore), short follow-up (6 of planned 12 months) reported here
+- **Conclusions**: MMM can be feasibly and safely integrated into a stepped-care continuum in both clinic- and office-based settings with comparable effectiveness and satisfaction
+
+I'm ready to proceed with whatever systematic review task you need—whether that's data extraction into a specific template, risk-of-bias/quality assessment (e.g., using Cochrane RoB tool or similar), PICO summarization, comparison against other included studies, or synthesis of findings. Please let me know the specific next step you'd like me to take.
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I'm ready to evaluate the first domain (Bias arising from the randomization process) for the outcome **treatment retention**, using the RoB 2 tool.
+
+Before proceeding, let me confirm my understanding of the task:
+
+- I will evaluate **treatment retention** as the single primary outcome specified.
+- I will go through each RoB 2 domain (1–5) with their respective signaling questions, basing all judgments strictly on facts stated in the article (no speculation or extrapolation).
+- Response options for each signaling question: Yes / Probably yes / Probably no / No / No information.
+- I will be critical and default toward "No information" or higher risk when the article does not explicitly report relevant methodological details (e.g., allocation concealment, pre-specified analysis plans), rather than assuming best practice was followed.
+- I will provide a domain-level judgment (Low risk / Some concerns / High risk) after going through the signaling questions for each domain, followed by an overall risk-of-bias judgment for the outcome at the end.
+
+I will proceed one domain at a time as requested. Shall I begin with **Domain 1: Bias arising from the randomization process** now?
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+# Domain 1: Risk of Bias Arising from the Randomization Process
+## Outcome: Treatment Retention
+
+**1.1. Was the allocation sequence random?**
+
+- **Response: No information**
+- **Reason:** The article states: "Patients completed the initial assessment battery and were stratified on the following variables: (1) any self-reported drug or alcohol use in the past 30 days; and (2) having negative urine drug screens for at least 2 years. They were then randomized into one of the three study conditions." While stratification variables are described, there is no description of the actual method used to generate the random allocation sequence (e.g., no mention of computer-generated randomization, random number tables, or similar). Per the guidelines, when only a statement that the study was "randomized" is provided without further methodological detail, the response should be "No information."
+
+**1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?**
+
+- **Response: No information**
+- **Reason:** The article provides no information about whether the allocation sequence was concealed from the enrolling investigators or participants prior to assignment. There is no mention of a central randomization service, sequentially numbered sealed envelopes, or any other concealment mechanism. No details are given about who performed the randomization or how it was implemented at the point of enrollment.
+
+**1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?**
+
+- **Response: Probably no**
+- **Reason:** Table 2 shows a statistically significant difference in self-reported marijuana use at baseline across the three groups (Routine 16%, Clinic-based 21%, Office-based 0%; χ²=9.13, df=2, P=0.01). This is the only baseline variable reported as significantly different among several ASI substance-use categories examined (alcohol, marijuana, other drug) and among the broader set of demographic variables reported for the full sample (age, sex, race, marital status, education, income, income, years of methadone treatment, dose). Given the small sample size (n=73) and the limited number of significant differences identified relative to the number of variables compared, this isolated finding is compatible with chance under the guideline that "a small number of differences identified as 'statistically significant' at the conventional 0.05 threshold should usually be considered to be compatible with chance." There is no evidence of unequal group sizes relative to the intended allocation ratio, nor evidence of excessive similarity suggesting manipulation. Therefore, this does not strongly suggest a problem with the randomization process itself, though it is noted as a minor concern.
+
+---
+
+## Domain-Level Judgement (1.1, 1.2, 1.3): **Some concerns**
+
+**Justification:** Both signaling questions on sequence generation (1.1) and allocation concealment (1.2) are rated "No information" because the article gives no methodological detail beyond stating that patients were "randomized" following stratification. Although the observed baseline imbalance in marijuana use (1.3) is plausibly attributable to chance given the small sample size and limited number of significant comparisons, the complete absence of information regarding sequence generation and allocation concealment prevents a "Low risk" judgement. Per RoB 2 guidance, the combination of unspecified randomization methodology and unspecified allocation concealment — even without strong evidence of baseline imbalance — should be rated as **"Some concerns"** rather than "Low risk," since we cannot rule out selection bias arising from foreknowledge of the allocation sequence or a non-random component in sequence generation.
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+# Domain 2: Risk of Bias Due to Deviations from the Intended Interventions
+## Outcome: Treatment Retention
+
+**Note on effect of interest:** I will assess this domain for the **effect of assignment to intervention** (rather than effect of adhering to intervention), as this is the more appropriate and commonly used framework for this type of open-label, pragmatic service-delivery trial, and it aligns with the intention-to-treat analytic approach used by the authors for retention (Wilcoxon-Gehan survival analysis on the "intent-to-treat sample," n=73).
+
+---
+
+**2.1. Were participants aware of their assigned intervention during the trial?**
+
+- **Response: Yes**
+- **Reason:** This was an open-label trial with no blinding described. Participants clearly knew their assigned condition, as the interventions differed substantially and observably in structure: routine care patients continued 1–2x/week clinic visits, clinic-based MMM patients received a 28-day take-home schedule at the clinic, and office-based MMM patients received the same schedule but at a physician's office in the community. Patients could not have been unaware of which condition they were in.
+
+**2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?**
+
+- **Response: Yes**
+- **Reason:** The physicians, nurses, and counselors delivering care necessarily knew the assigned condition, since delivery settings, dosing schedules, and monitoring procedures differed by design across groups (e.g., "clinic-based MMM patients were seen monthly by the clinic physician or a senior nurse," while "office-based MMM group were seen monthly by a physician or nurse practitioner" at a separate location). No blinding of treatment providers was described or would have been feasible given the nature of the intervention.
+
+**2.3. Were there deviations from the intended intervention that arose because of the trial context?**
+
+- **Response: Probably no**
+- **Reason:** The article reports 7 dropouts with specified reasons: dislike of recall procedure frequency (n=3), transfer to non-participating clinic (n=1), self-reported inability to manage a 28-day supply (n=1), abrupt departure for unknown reasons (n=1), and decision to taper off methadone (n=1). While some of these reasons (e.g., dislike of the daily recall procedure) relate to research-specific monitoring burdens, this monitoring protocol (daily phone recall, twice-monthly urine testing) was applied **equally across all three study arms**, not differentially, so it does not represent a differential deviation between assigned interventions that would bias the between-group comparison. The stepped-care intensification (used in 29% of patients) was a **pre-specified protocol element** applied consistently across groups when clinical criteria were met, not an off-protocol deviation arising from trial context. There is no evidence of crossover between assigned conditions or receipt of non-protocol interventions specific to trial participation.
+
+**2.4. Were these deviations likely to have affected the outcome?**
+
+- **Response: No information / Not applicable**
+- **Reason:** Since 2.3 was judged "Probably no," this question is not triggered under the RoB 2 algorithm for the effect of assignment to intervention.
+
+**2.5. Were these deviations from intended intervention balanced between groups?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, as 2.3 was judged "Probably no."
+
+**2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?**
+
+- **Response: Yes**
+- **Reason:** The authors explicitly state: "For the intent-to-treat sample (n=73), routine, clinic-based MMM and office-based MMM groups were compared on treatment retention using survival analysis." This is an appropriate ITT analysis for the retention outcome, retaining all randomized patients (who began the study protocol) in their originally assigned groups, consistent with RoB 2 guidance that ITT or modified ITT analyses are appropriate for estimating the effect of assignment to intervention.
+
+**2.7. Was there potential for a substantial impact of the failure to analyze participants in the group to which they were randomized?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, since 2.6 was judged "Yes" (appropriate ITT analysis was used).
+
+---
+
+## Domain-Level Judgement (2.1–2.6): **Low risk**
+
+**Justification:** Although this was an open-label trial with participants and care providers fully aware of assigned intervention (2.1 = Yes, 2.2 = Yes), there is no evidence that the trial context led to deviations from the intended interventions that were inconsistent with the protocol (2.3 = Probably no). The research monitoring burden (daily recalls, urine testing) was applied uniformly across all arms and does not constitute a differential, protocol-inconsistent deviation. Furthermore, an appropriate intention-to-treat analysis was used to estimate the effect of assignment to intervention for the retention outcome (2.6 = Yes). Because retention is a relatively objective, easily ascertained outcome (whether or not a patient remained in the assigned treatment condition), the lack of blinding is unlikely to have introduced substantial bias into this specific outcome. Therefore, the overall risk of bias for this domain, for the retention outcome, is judged as **Low risk**.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+# Domain 3: Risk of Bias Due to Missing Outcome Data
+## Outcome: Treatment Retention
+
+**3.1. Were data for this outcome available for all, or nearly all, participants randomized?**
+
+- **Response: Probably no**
+- **Reason:** The article states 78 patients were originally randomized (routine=25, clinic-based=27, office-based=26). However, "a total of five patients withdrew from the study upon assignment to study condition; four following assignment to the routine treatment condition and one following assignment to the MMM physician office-based condition." The reported retention analysis was conducted only on the remaining 73 patients (routine=21, clinic=27, office=25), explicitly labeled as the "intent-to-treat sample (n=73)." This means 5/78 (6.4%) of originally randomized participants were excluded from the retention analysis entirely, and — critically — this exclusion was **not balanced across groups**: 4/25 (16%) from routine care, 1/26 (3.8%) from office-based MMM, and 0/27 (0%) from clinic-based MMM. Since retention is itself the outcome of interest, excluding patients who dropped out immediately after randomization (rather than counting them as early treatment failures) represents a meaningful gap in outcome data for the true ITT population.
+
+**3.2. Is there evidence that the result was not biased by missing outcome data?**
+
+- **Response: No**
+- **Reason:** No sensitivity analyses, imputation methods, or statistical corrections are reported to address the exclusion of these 5 patients from the retention analysis. The survival analysis (Wilcoxon-Gehan statistic) was conducted only on the n=73 sample, with no attempt to incorporate the 5 excluded patients as early dropout/failure events, and no discussion of how their inclusion might have altered the result.
+
+**3.3. Could missingness in the outcome depend on its true value?**
+
+- **Response: Yes**
+- **Reason:** The reason for exclusion — "withdrew from the study upon assignment to study condition" — directly implicates the intervention assignment as the reason for withdrawal, particularly given that 4 of the 5 immediate withdrawals occurred in the routine care condition. This raises strong concern that patients disliked their randomized assignment (specifically the less desirable "routine care" condition) and left before treatment/follow-up could even begin. Since retention is fundamentally about whether patients remain in their assigned condition, an immediate withdrawal driven by dissatisfaction with the assigned arm is conceptually and directly tied to the outcome itself.
+
+**3.4. Is it likely that missingness in the outcome depended on its true value?**
+
+- **Response: Yes**
+- **Reason:** Multiple factors support this conclusion: (1) There is a clear difference in the proportion of missing/excluded participants between intervention groups (16% routine vs. 3.8% office vs. 0% clinic-based) — a pattern the RoB 2 guidance explicitly flags as evidence of dependency between missingness and true outcome value; (2) the reported reason for exclusion (withdrawal "upon assignment to study condition") differs in likely underlying cause from group to group and directly reflects a reaction to the assigned intervention itself, particularly aversion to continued routine/frequent clinic visits; (3) no analysis was reported that accounted for or adjusted for this differential attrition pattern. Given these converging indicators, it is likely — not merely possible — that missingness in retention status was related to the true value of the outcome (i.e., patients who would have had poor retention/satisfaction with their assigned condition were more likely to leave before being counted).
+
+---
+
+## Domain-Level Judgement (3.1–3.4): **High risk**
+
+**Justification:** Although the overall proportion of excluded participants is small in absolute terms (5/78, 6.4%), for the retention outcome specifically this is a critical concern because: (1) the exclusions were unevenly distributed across arms (disproportionately from routine care), (2) the stated reason for exclusion is directly and plausibly linked to the participant's reaction to their randomized assignment, (3) no correction, sensitivity analysis, or alternative handling (e.g., counting these participants as immediate dropouts within the ITT retention analysis) was performed, and (4) the "intent-to-treat" label used by the authors for the n=73 sample is a misnomer, as it excludes randomized participants in a non-random, group-imbalanced manner. Per RoB 2 guidance, when reported reasons for missing data differ between groups and directly implicate the intervention assignment, and no correction is applied, this constitutes sufficient grounds for a **High risk of bias** judgement in this domain for the treatment retention outcome.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+# Domain 4: Risk of Bias in Measurement of the Outcome
+## Outcome: Treatment Retention
+
+**4.1. Was the method of measuring the outcome inappropriate?**
+
+- **Response: No**
+- **Reason:** Treatment retention was measured as an objective, administrative fact — whether a patient completed the 6-month randomized treatment period or withdrew/dropped out. This is a straightforward, observable outcome (documented via clinic/study records) and is an entirely appropriate and standard method for measuring retention in a substance use treatment trial. There is no indication that this method was insensitive to intervention effects or lacked validity.
+
+**4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?**
+
+- **Response: No**
+- **Reason:** All patients, regardless of assigned condition, were subject to the same monitoring infrastructure: mandatory daily phone-in medication recalls (Monday–Friday), monthly counseling contact, and monthly urine collection. This uniform monitoring and contact schedule across all three arms means that ascertainment of whether a patient remained enrolled versus dropped out was equally likely to be detected regardless of group assignment. Although routine care patients had more frequent clinic visits (1–2x/week) compared to monthly visits for MMM patients, the daily call-in system ensured comparable opportunity for detecting dropout/withdrawal across all groups. There is no evidence of differential ascertainment procedures for retention status between groups.
+
+**4.3. Were outcome assessors aware of the intervention received by study participants?**
+
+- **Response: Yes**
+- **Reason:** This was an open-label trial (as established in Domain 2), and clinic staff, physicians, and researchers responsible for documenting whether a patient remained in or withdrew from the study were necessarily aware of the patient's assigned condition, since the interventions were delivered in observably different settings and schedules (e.g., office-based MMM patients were seen at a physician's office in the community, distinct from the clinic).
+
+**4.4. Could assessment of the outcome have been influenced by knowledge of intervention received?**
+
+- **Response: No**
+- **Reason:** Retention is an objective outcome analogous to the "all-cause mortality" example cited in the RoB 2 guidance — it does not involve subjective judgment or interpretation by an assessor. Whether a patient completed the 6-month study period or formally withdrew is a discrete, factual administrative determination (e.g., documented reasons for withdrawal such as transfer to another clinic, self-reported inability to manage medication, or decision to taper off methadone) that is not susceptible to assessor bias or subjective interpretation, regardless of the assessor's awareness of group assignment.
+
+**4.5. Is it likely that assessment of the outcome was influenced by knowledge of intervention received?**
+
+- **Response: Not applicable**
+- **Reason:** Not triggered, since 4.4 was judged "No."
+
+---
+
+## Domain-Level Judgement (4.1–4.5): **Low risk**
+
+**Justification:** The outcome measurement method (documented completion vs. withdrawal from the study) was appropriate and applied identically across all three arms via a uniform monitoring infrastructure (daily phone recalls, monthly contacts), meaning ascertainment procedures did not differ between groups. Although assessors were not blinded to intervention assignment (an unavoidable feature of this open-label service-delivery trial), retention is an objective, non-judgment-based outcome that is unlikely to be influenced by assessor knowledge of group assignment, similar to all-cause mortality. Therefore, this domain is judged as **Low risk** for the treatment retention outcome.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+# Domain 5: Risk of Bias in Selection of the Reported Result
+## Outcome: Treatment Retention
+
+**5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?**
+
+- **Response: No information**
+- **Reason:** The article does not reference a published trial protocol, a pre-specified statistical analysis plan, or a clinical trial registration number (e.g., ClinicalTrials.gov). While the Methods section describes the general study design, randomization stratification variables, and the intended analytic approach (survival analysis for retention), there is no explicit statement or citation confirming that this analysis plan was finalized and locked prior to the availability of unblinded outcome data. Given the era of this publication (2002) and absence of any registration reference, there is no basis to assume a pre-specified, time-stamped analysis plan existed.
+
+**5.2. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements within the outcome domain?**
+
+- **Response: Probably no**
+- **Reason:** Treatment retention was operationalized in a single, straightforward way — the proportion of randomized patients who completed the 6-month follow-up period (90%, 89%, 92% across routine, clinic-based, and office-based groups respectively; Table 1), analyzed via survival analysis (Wilcoxon-Gehan statistic). There is no indication in the article of alternative retention definitions, timepoints, or measurement approaches (e.g., different follow-up durations, alternative retention thresholds) that could have been selectively chosen and reported based on favorable results. The outcome is reported in a single, consistent manner throughout the Results and Table 1.
+
+**5.3. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?**
+
+- **Response: Probably no**
+- **Reason:** Only one analytic method is reported for the retention outcome — survival analysis (Wilcoxon-Gehan statistic) comparing the three groups, as stated in the Data Analyses section ("routine, clinic-based MMM and office-based MMM groups were compared on treatment retention using survival analysis"). There is no evidence of multiple alternative analytic approaches (e.g., different statistical tests, alternative covariate adjustments, or subgroup analyses) being conducted and only the most favorable result reported. The reported non-significant result (Wilcoxon–Gehan statistic=0.14, df=2, ns) is also consistent with the authors' a priori stated hypothesis in the Introduction that "no group differences were expected on measures of drug use, retention or medication recall problems," reducing concern that this specific result was cherry-picked to support a preferred narrative.
+
+---
+
+## Domain-Level Judgement (5.1–5.3): **Some concerns**
+
+**Justification:** There is no available evidence of a pre-specified, finalized analysis plan or trial registration (5.1 = No information), which prevents a "Low risk" judgement per the RoB 2 algorithm — the absence of a verifiable pre-specified plan means selective reporting cannot be fully ruled out based on documentation alone. However, there is no positive evidence of selective outcome reporting or selective analysis reporting for the retention outcome specifically (5.2 = Probably no; 5.3 = Probably no): only one operational definition and one statistical analysis are presented for retention, and the resulting null finding aligns with the authors' pre-stated expectations rather than appearing "cherry-picked" to support a hypothesis of benefit. Per RoB 2 guidance, when there is no confirmed pre-specified analysis plan but no clear evidence of result-based selective reporting, the appropriate judgement is **"Some concerns"** rather than "Low risk" or "High risk."
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+# Final Assessment: Treatment Retention
+
+## Overall Predicted Direction of Bias
+
+**Response: Towards null**
+
+**Reasoning:** The primary source of bias in this assessment arises from Domain 3 (missing outcome data), where 4/25 (16%) of routine care patients withdrew immediately "upon assignment to study condition," compared to only 1/26 (3.8%) in office-based MMM and 0/27 (0%) in clinic-based MMM. These patients were excluded entirely from the reported "intent-to-treat" retention analysis (n=73) rather than being counted as early dropouts/failures in their randomized arm.
+
+If these excluded patients had been retained in the denominator and counted as non-completers (consistent with a true ITT approach), the routine care retention rate would fall further (from 90% i.e. 19/21, to approximately 76% i.e. 19/25), while the MMM arms would be minimally affected (clinic-based unchanged at 89%; office-based only modestly reduced from 92% to ~88.5%). This would likely widen the gap between routine care and the MMM conditions.
+
+By excluding these early routine-care dropouts from the analysis, the observed retention rates across groups appear more similar than they likely would be under a complete, true ITT analysis. This masks a potentially larger true difference favoring the experimental (MMM) conditions over the comparator (routine care), thereby biasing the reported non-significant result (Wilcoxon-Gehan ns) **towards the null** hypothesis of no between-group difference.
+
+---
+
+## Overall Risk-of-Bias Judgement
+
+**Response: High risk**
+
+**Summary of domain-level judgements:**
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization process | Some concerns |
+| 2. Deviations from intended interventions | Low risk |
+| 3. Missing outcome data | **High risk** |
+| 4. Measurement of the outcome | Low risk |
+| 5. Selection of the reported result | Some concerns |
+
+**Justification:** Per the RoB 2 algorithm, if any single domain is judged to be at **High risk of bias**, the overall risk-of-bias judgement for that outcome must be **High risk**, regardless of the judgements in other domains. Domain 3 was judged High risk because of differential, group-imbalanced exclusion of randomized participants (concentrated in the routine care arm) for reasons plausibly related to the true outcome (dissatisfaction with assigned condition), combined with the absence of any statistical correction, sensitivity analysis, or appropriate handling of these missing data in the retention analysis. Therefore, the overall risk-of-bias judgement for the **treatment retention** outcome in this trial is **High risk**.
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Final Re-Evaluation: Risk of Bias Assessment (RoB 2)
+## Outcome: Treatment Retention
+
+I have re-examined each domain and signaling question against the reported facts in the article. My judgments remain consistent upon re-evaluation, as detailed below.
+
+---
+
+## Summary Table
+
+| Domain | Signaling Questions & Responses | Domain-Level Judgement | Key Justification |
+|---|---|---|---|
+| **1. Randomization process** | 1.1 Random sequence? → **No information**<br>1.2 Allocation concealed? → **No information**<br>1.3 Baseline imbalance problem? → **Probably no** | **Some concerns** | No description of sequence generation method or concealment procedure beyond stating patients were "stratified" and "randomized." One significant baseline imbalance (marijuana use, P=0.01) noted but plausibly due to chance given small sample and few significant differences overall. |
+| **2. Deviations from intended interventions** | 2.1 Participants aware of assignment? → **Yes**<br>2.2 Carers/providers aware? → **Yes**<br>2.3 Deviations due to trial context? → **Probably no**<br>2.6 Appropriate analysis used? → **Yes** | **Low risk** | Open-label trial (unavoidable given intervention nature), but monitoring burden (daily recalls, stepped care) applied uniformly across all arms. No evidence of differential non-protocol deviations. Appropriate ITT-style survival analysis used for retention. |
+| **3. Missing outcome data** | 3.1 Data available for all/nearly all? → **Probably no**<br>3.2 Evidence result not biased? → **No**<br>3.3 Missingness depend on true value? → **Yes**<br>3.4 Likely missingness depended on true value? → **Yes** | **High risk** | 5/78 (6.4%) randomized patients withdrew "upon assignment," disproportionately from routine care (4/25, 16%) vs. clinic-based (0/27) and office-based (1/26, 3.8%). These patients were excluded from the n=73 "ITT" retention analysis with no correction/sensitivity analysis. Reason for withdrawal plausibly tied to dissatisfaction with assigned condition (directly related to retention outcome). |
+| **4. Measurement of the outcome** | 4.1 Method inappropriate? → **No**<br>4.2 Ascertainment differ between groups? → **No**<br>4.3 Assessors aware of intervention? → **Yes**<br>4.4 Assessment influenced by knowledge? → **No** | **Low risk** | Retention is an objective, non-judgment-based administrative outcome. Uniform monitoring infrastructure (daily call-ins, monthly contacts) across all arms ensured comparable ascertainment. Lack of blinding unlikely to bias this objective outcome. |
+| **5. Selection of reported result** | 5.1 Pre-specified analysis plan? → **No information**<br>5.2 Selected from multiple outcome measures? → **Probably no**<br>5.3 Selected from multiple analyses? → **Probably no** | **Some concerns** | No trial registration or protocol referenced. However, only one definition and one analytic method (Wilcoxon-Gehan survival analysis) reported for retention; null result is consistent with authors' a priori stated hypothesis (no group differences expected), reducing suspicion of selective reporting. |
+
+---
+
+## Overall Judgement for Outcome: Treatment Retention
+
+| Predicted Direction of Bias | Overall Risk-of-Bias Judgement |
+|---|---|
+| **Towards null** | **High risk** |
+
+**Final Reasoning:**
+- **Direction of bias — Towards null:** Differential post-randomization exclusion (concentrated in routine care) likely masked a true difference in retention favoring the MMM (experimental) conditions over routine care (comparator), biasing the null result reported (Wilcoxon-Gehan = 0.14, ns) toward no difference between groups.
+- **Overall judgement — High risk:** Per the RoB 2 algorithm, an overall "High risk" judgement is warranted whenever any single domain is rated High risk. Domain 3 (missing outcome data) meets this threshold due to unbalanced, outcome-related exclusion of randomized participants without correction, which is sufficient to drive the overall outcome-level judgement to **High risk**, irrespective of the more favorable judgements in Domains 2 and 4 and the "Some concerns" ratings in Domains 1 and 5.

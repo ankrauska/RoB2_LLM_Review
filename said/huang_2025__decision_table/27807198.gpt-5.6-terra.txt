@@ -1,0 +1,111 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 27807198
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Varges, 2016  
+**Outcome Name**: survival time  
+**registration number**: EudraCT 2006-003934-14  
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1: NI (High Certainty, 98%)**  
+**Reason:** The article states that participants were “randomly assigned (ratio 1:1)” but does not report a method used to generate the allocation sequence (e.g., computer-generated random numbers, random-number table, block randomization, or minimization).
+
+**1.2: NI (High Certainty, 96%)**  
+**Reason:** The randomisation list and study medication were administered by Charité, Universitätsmedizin Berlin. However, the article does not explicitly describe a concealment method such as central allocation, sequentially numbered identical drug containers, or sequentially numbered opaque sealed envelopes. Double blinding alone does not establish allocation concealment.
+
+**1.3: Y (Moderate Certainty, 83%)**  
+**Reason:** There were important baseline imbalances in the randomized groups. Median age at onset was 58 years in the doxycycline group versus 72 years in the placebo group. Baseline MMSE was also higher in the doxycycline group (21 versus 16), and time from disease onset to treatment/placebo initiation differed (95 versus 152 days). These differences in relevant prognostic factors could introduce bias in the estimated survival effect.
+
+**Result of Domain 1: High risk (High Certainty, 91%)**  
+**Reason:** Allocation concealment was not reported, and substantial baseline imbalances in important prognostic factors suggest a problem with the randomization process.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1: N (High Certainty, 95%)**  
+**Reason:** This was described as a double-blind, placebo-controlled trial. Participants assigned to the control group received placebo capsules.
+
+**2.2: N (High Certainty, 92%)**  
+**Reason:** The study was double blinded and placebo controlled; therefore, carers and personnel delivering the study medication were not reported to be aware of the allocated intervention.
+
+**2.3: NI (Moderate Certainty, 72%)**  
+**Reason:** The article does not provide sufficient information on potentially important non-protocol co-interventions, such as differential use of antibiotics, supportive care, feeding interventions, or other treatments that could affect survival.
+
+**2.4: Y (High Certainty, 97%)**  
+**Reason:** Failures in implementation occurred in more than 10% of participants. According to the participant flow diagram, 4 of 7 participants in the doxycycline group discontinued and 1 of 6 participants in the placebo group was lost to follow-up/discontinued.
+
+**2.5: NI (High Certainty, 96%)**  
+**Reason:** The article does not report adherence to the assigned doxycycline or placebo regimen, including whether participants stopped treatment, missed doses, crossed over, or switched treatments.
+
+**2.6: N (Moderate Certainty, 80%)**  
+**Reason:** The reported Cox proportional-hazards analysis was based on 12 analyzed participants after exclusion of one randomized placebo participant. No instrumental-variable analysis, inverse-probability weighting, or other appropriate method to estimate the effect of adherence to sustained assigned treatment was reported.
+
+**Result of Domain 2: High risk (Moderate Certainty, 84%)**  
+**Reason:** There were substantial failures in intervention implementation, adherence was not reported, and no appropriate adherence-adjusted analysis was reported. The supplied decision algorithm does not explicitly provide a separate branch for this exact combination when both participants and carers were blinded; however, the documented discontinuations and absence of an appropriate analysis indicate high risk under the stated criteria.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1: PN (High Certainty, 95%)**  
+**Reason:** Thirteen participants were randomized, but survival analysis included 12 participants because one participant randomized to placebo dropped out. Complete survival data were therefore available for 12/13 randomized participants (92.3%), which is between 90% and 95%.
+
+**3.2: N (High Certainty, 94%)**  
+**Reason:** No inverse-probability weighting, missing-data sensitivity analysis, or other method demonstrating that missing survival data did not bias the result was reported. Intention-to-treat analysis was not reported and would not itself correct bias from missing outcome data.
+
+**3.3: NI (Moderate Certainty, 77%)**  
+**Reason:** One placebo participant dropped out, but the reason for dropout was not reported. Therefore, it cannot be determined whether missingness was related to the participant’s true survival time.
+
+**3.4: NI (Moderate Certainty, 75%)**  
+**Reason:** The article does not report the reason for the placebo participant’s dropout or characteristics that would clarify whether missing survival data were likely related to true survival status.
+
+**Result of Domain 3: High risk (High Certainty, 89%)**  
+**Reason:** Survival data were missing for more than 5% of randomized participants, no analysis was reported to address potential bias from missing data, and the relationship between missingness and survival could not be assessed.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1: N (High Certainty, 97%)**  
+**Reason:** Survival time was measured from randomization/first study-medication administration until death or study end in the randomized trial. Death is an objective and reliable outcome measure.
+
+**4.2: N (High Certainty, 90%)**  
+**Reason:** The same survival definition and follow-up framework were applied to both randomized groups. Participants were followed through scheduled visits and telephone interviews, with survival ending at death or study end.
+
+**4.3: N (Moderate Certainty, 84%)**  
+**Reason:** The trial was described as double blinded and placebo controlled. Survival status is not patient-reported, and there is no evidence that outcome assessors knew the intervention received. In addition, the investigator determining disease-onset date was explicitly blinded to treatment.
+
+**4.4: N (High Certainty, 99%)**  
+**Reason:** Survival/death is an objective outcome. Assessment of death is not expected to be influenced by knowledge of the assigned intervention.
+
+**4.5: N (High Certainty, 98%)**  
+**Reason:** There is no clear evidence that knowledge of intervention assignment was likely to influence ascertainment of death or survival time.
+
+**Result of Domain 4: Low risk (High Certainty, 95%)**  
+**Reason:** Survival was an objective outcome, was measured comparably between groups, and there is no evidence that outcome measurement was influenced by knowledge of intervention assignment.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1: NI (Moderate Certainty, 82%)**  
+**Reason:** The trial was registered before recruitment and specified survival as the primary endpoint. However, the registry specifies survival time from symptom onset until death, whereas the article defines follow-up for the randomized study from randomization/first study-medication administration until death or study end. The registry information provided does not contain a detailed prespecified statistical analysis plan finalized before unblinded outcome data were available.
+
+**5.2: NI (Moderate Certainty, 76%)**  
+**Reason:** The protocol and article use different origins for the survival-time outcome: symptom onset in the protocol and randomization/first medication administration in the article. The available information does not establish whether the reported survival result was selected from multiple eligible outcome definitions on the basis of the results.
+
+**5.3: NI (Moderate Certainty, 78%)**  
+**Reason:** Cox proportional-hazards analysis was reported in the article, but the provided registered protocol does not specify a prespecified statistical analysis plan for the primary survival outcome. Therefore, it cannot be determined whether the reported analysis was selected from multiple eligible analyses.
+
+**Result of Domain 5: Some concerns (High Certainty, 88%)**  
+**Reason:** Although the trial was prospectively registered and survival was prespecified as the primary outcome, the available registry record does not provide a finalized prespecified statistical analysis plan, and the reported survival-time origin differs from the registered endpoint definition.
+
+---
+
+# Overall Bias Risk for the Article: High Risk (High Certainty, 94%)
+
+**Reason:** Domain 1 was at high risk because allocation concealment was not reported and important baseline prognostic factors were imbalanced. Domain 2 was at high risk because there were substantial intervention discontinuations, adherence data were unavailable, and no appropriate adherence-adjusted analysis was reported. Domain 3 was at high risk because one randomized participant was excluded from survival analysis without evidence that missing data did not bias the result.

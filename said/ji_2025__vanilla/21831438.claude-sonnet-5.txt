@@ -1,0 +1,226 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 21831438
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"Study patients were randomized in a 1:1 ratio by using the mixed block randomization (4 and 6 blocks) method."
+
+Analysis: The article explicitly states that randomization was performed using a "mixed block randomization" method with block sizes of 4 and 6. Block randomization, when properly implemented (e.g., using a computer-generated random sequence or random selection of block size/order), inherently incorporates a random component in the sequence generation process. This is distinct from merely stating "randomized" without further detail (which would warrant "No information"), as the specific method of sequence generation (block randomization) is disclosed. Block randomization is a well-established method that relies on random allocation within blocks, and is considered an acceptable random component method for generating allocation sequences, consistent with the criteria for a "Yes" judgment.
+
+Correct answer: Yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"Study patients were randomized in a 1:1 ratio by using the mixed block randomization (4 and 6 blocks) method." No further description is provided regarding who generated the allocation sequence, how it was concealed, or the mechanism used to allocate participants to interventions (e.g., no mention of central randomization, sequentially numbered sealed envelopes, or pharmacy-controlled allocation). The study was open-label (no masking reported in the protocol registry: "maskingInfo": "masking": "NONE").
+
+Analysis: The article and registry only state that block randomization was used, without any detail on the allocation concealment mechanism (e.g., central randomization service, sealed opaque envelopes, or independent pharmacy control). There is no description of who generated the random allocation sequence or how it was implemented, and no information suggesting steps were taken to prevent foreknowledge of assignments by enrolling investigators or participants. Given the open-label design and lack of any details about concealment procedures, it is not possible to determine whether the allocation sequence was concealed until enrollment. This aligns with the domain-level assessment of "not yet assessed," reflecting insufficient reporting to judge concealment adequacy.
+
+Correct answer: No information
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"the mean age in the candesartan-HCT group (51.0 [10.2] years) was about 3.2 years higher than that in the candesartan monotherapy group (47.8 [10.7] years; P <0.02) despite random allocation." "Other demographic parameters did not appear to differ significantly between groups."
+
+Analysis: The baseline table shows only one statistically significant difference (age) among many compared characteristics (sex, weight, height, BMI, previous treatment, concomitant diseases). A single significant difference among numerous comparisons at conventional thresholds is compatible with chance, particularly given the modest sample size (n=117 vs 116) and multiple comparisons being made. The magnitude of the age difference (~3 years) is modest and unlikely to introduce substantial bias into the BP-lowering outcome measures. There is no evidence of unequal group sizes, excessive number of significant differences, or imbalance in key prognostic factors (e.g., baseline BP was well-matched: 160.7/104.6 mmHg overall, and Table I/II/III show similar baseline BP and other characteristics between groups) that would suggest problems with the randomization process itself. This isolated finding does not indicate a flawed randomization process.
+
+Correct answer: No
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences: "This was a Phase IV, multicenter, randomized, active treatment–controlled, parallel group study..."; the protocol explicitly states "maskingInfo": {"masking": "NONE"}; the official title designates the study as "Open-label, Randomised, 2-Arm Parallel Group..."; discussion notes "the open study design could be the potential source of bias regarding the safety profile."
+
+Analysis: The trial was explicitly designed and registered as an open-label study with no masking of participants or investigators. Patients received either a combination pill (candesartan/HCT) or monotherapy (candesartan alone), which are pharmacologically and likely visually/formulation distinguishable, and no placebo or sham comparator was used. The authors themselves acknowledge the open-label design as a limitation contributing to potential bias. Since there was no blinding procedure implemented, participants would have known which treatment (monotherapy vs. combination therapy) they were receiving throughout the 8-week trial.
+
+Correct answer: Yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences: "This was a Phase IV, multicenter, randomized, active treatment–controlled, parallel group study..." and "However, the open study design could be the potential source of bias regarding the safety profile." The protocol explicitly states: "maskingInfo": {"masking": "NONE"} and the official title describes it as "Open-label, Randomised, 2-Arm Parallel Group..." study.
+
+Analysis: The trial is explicitly described as open-label with no masking ("masking": "NONE") in the registered protocol, and the article itself acknowledges "the open study design could be the potential source of bias." This confirms that there was no blinding of any party, including carers and those administering/delivering the interventions (investigators at each site who dispensed medication, forced-titrated doses, and evaluated outcomes). Since allocation was open-label and unconcealed, investigators and treating personnel would have known which treatment (monotherapy vs. combination therapy) each patient was receiving throughout the 8-week study. This lack of blinding of care providers could have influenced the administration of treatment, monitoring practices, or the threshold for reporting/managing adverse events, especially given the known difference in dizziness rates between groups being consistent with the expected side effect profile of HCT.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences: "Treatment started with either candesartan 16 mg or candesartan 16 mg/HCT 12.5 mg. After 4 weeks, the candesartan dose was forced titrated to 32 mg in both groups." "Compliance was assessed during each visit... median compliance were relatively high in both groups (98.6%... 97.8%)." "Three patients in the candesartan-HCT combination group... and 4 patients in the candesartan monotherapy group... were discontinued from the study because of AEs." This was an open-label study with a forced titration design per protocol; discontinuations were due to AEs and consent withdrawal, which are consistent with expected trial procedures and would likely occur outside the trial context as well. There is no report of participants seeking alternative treatments due to feeling "unlucky" about allocation, nor evidence that trial personnel or recruitment activities caused non-protocol implementation of interventions. The open-label design could theoretically affect behavior, but no specific evidence of protocol-inconsistent deviations arising from trial context (e.g., participants switching treatments due to trial engagement) is reported.
+
+Analysis: The forced titration and adverse-event-related discontinuations are all specified within the protocol design itself, and the compliance rates were high in both arms without notable disparity attributable to trial context effects. No mention is made of participants' behavior changing because of recruitment/consent processes or of personnel deviating from protocol due to trial-specific pressures. However, the study explicitly acknowledges its open-label design as a "potential source of bias," and no detailed information is given about whether behavior (e.g., compliance-seeking additional treatment) differed due to knowledge of assignment. Given the lack of explicit reporting on whether trial context (e.g., participants' awareness of assignment affecting behavior) led to protocol deviations, but also no evidence suggesting such deviations occurred, the most appropriate answer is "No information," as the trialists did not report on this specific aspect.
+
+Correct answer: No information
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+"After 4 weeks, the candesartan dose was forced titrated to 32 mg in both groups." "The per-protocol (PP) population consisted of all patients within the ITT population who did not commit any major protocol violation that would likely affect the efficacy outcomes." "The results from the PP analysis showed the same pattern of responses in both SBP and DBP." "A major limitation of this study is that a parallel group was not included in which the lower dose was maintained during the 4 to 8 weeks." "However, the open study design could be the potential source of bias regarding the safety profile." "A total of 227 patients took at least 1 dose of study medication. The ITT set consisted of 224 patients, and the PP set included 211 patients."
+
+Analysis: The protocol pre-specified forced titration to 32 mg in both arms at week 4, so this was an intended, protocol-consistent design feature rather than an unplanned deviation. The main deviations noted (protocol violations excluded from PP analysis, dropouts, noncompliance) were similar in magnitude between groups (211/224 ITT patients retained in PP), and sensitivity analyses (PP vs ITT) showed consistent results for both SBP and DBP, indicating that these deviations did not meaningfully alter the effect estimate. There is no evidence that deviations from assigned intervention (e.g., non-adherence, co-medication use) differed systematically between arms or were substantial enough to bias the outcome. The open-label design is a separate concern (performance/detection bias) rather than deviations affecting outcome per se, and it was explicitly flagged as a limitation for safety/AE reporting, not efficacy. Given the consistency between ITT and PP results and comparable dropout/deviation numbers between arms, deviations were unlikely to have substantially affected the outcome.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+"Compliance was assessed during each visit... median compliance were relatively high in both groups (98.6% for candesartan-HCT combination and 97.8% for candesartan monotherapy)." 
+"Major protocol violations included inclusion-exclusion criteria violations, randomization error, early discontinuation within 21 days of the start of the study, taking concomitant medication that was not permitted, and noncompliance." (PP population excluded these)
+"The ITT set consisted of 224 patients, and the PP set included 211 patients" — 13 patients excluded from PP for major protocol deviations, but no breakdown by group is reported.
+"3 patients... discontinued... because of AEs" (combination) vs "4 patients... discontinued... because of AEs" (monotherapy) — similar numbers, but reasons for PP exclusions not detailed by group.
+
+Analysis: The study reports high and similar compliance rates between groups (98.6% vs 97.8%), and discontinuations due to AEs were similar in number (3 vs 4). However, the specific protocol deviations that led to exclusion from the per-protocol population (13 patients total) were not broken down by treatment group, so it cannot be fully confirmed whether all deviations were balanced. Given the comparable compliance rates and similar discontinuation numbers, there is no clear evidence of imbalance, but the lack of detailed group-specific breakdown of all protocol deviations limits certainty.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences: "Efficacy data were evaluated in the intent-to-treat (ITT) population. The ITT population consisted of patients who had baseline BP values and ≥1 postrandomization BP values and who had taken ≥1 dose of the study drug." Also: "The per-protocol (PP) population consisted of all patients within the ITT population who did not commit any major protocol violation..." and "The results from the PP analysis showed the same pattern of responses in both SBP and DBP."
+
+Analysis: The primary efficacy analysis was based on an ITT population, defined as randomized patients with baseline BP and at least one post-randomization BP measurement who took at least one dose of study drug. This is a modified ITT (mITT) approach excluding those with missing outcome data, which is considered appropriate per the domain guidance. Although a per-protocol analysis was also conducted, it was supplementary and not the primary analysis used to estimate the effect of assignment to intervention. Since the main analysis appropriately used an ITT/mITT approach consistent with randomized assignment, this supports a low risk of bias for this signaling question.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"Efficacy data were evaluated in the intent-to-treat (ITT) population... A total of 227 patients took at least 1 dose of study medication. The ITT set consisted of 224 patients, and the PP set included 211 patients." "The results from the PP analysis showed the same pattern of responses in both SBP and DBP (Tables II and III)."
+
+Analysis: The trial used both ITT and PP analyses, and both analyses showed consistent results (same pattern of responses for SBP and DBP). Although some participants were excluded from the PP analysis (233 randomized vs. 211 in PP set, ~9% excluded), the ITT population (224/233, ~96%) was analyzed largely according to the randomized assignment, and the results were consistent across both ITT and PP analyses. There is no indication that participants were analyzed in the wrong group, and the exclusions from PP analysis do not appear to be related to prognostic factors that would bias the result, since findings were similar between ITT and PP. This suggests low potential for substantial impact from any analysis deviations.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+- "A total of 253 patients were enrolled at 12 centers, and 233 patients were randomized either to the candesartan-HCT combination group (n =117) or the candesartan monotherapy group (n =116)."
+- "A total of 227 patients took at least 1 dose of study medication. The ITT set consisted of 224 patients, and the PP set included 211 patients (Figure 2)."
+- "The ITT population consisted of patients who had baseline BP values and ≥1 postrandomization BP values and who had taken ≥1 dose of the study drug."
+- From protocol registry: 233 randomized, only 223 randomized (per participant flow module) with 198 completing; discontinuation numbers of 20 and 15 in each group with various reasons (safety, AE, lost to follow-up, withdrawal).
+- Efficacy tables (ITT analysis) report n=111 and n=113 for DBP/SBP outcomes, versus 117 and 116 randomized — i.e., 6 and 3 participants missing from each arm respectively (~9 total, ~4% missing).
+
+Analysis: Of the 233 (or 223 per registry) randomized participants, the ITT efficacy population used for the primary/secondary BP outcomes comprised only 111 and 113 participants per group (224 total), meaning approximately 9 participants (nearly 4%) were excluded from the ITT/efficacy analysis due to not meeting the ITT definition (lack of baseline or postrandomization BP measurement, or not receiving ≥1 dose). This is a relatively small proportion of missing outcome data (well under 5%), and the reasons for exclusion (screening failures, consent withdrawal, early discontinuation) are documented in the flow diagram, allowing verification that missingness was similar across groups and unlikely to bias the continuous BP outcome. Because this is a continuous outcome (change in BP) with over 95% of randomized participants included in the analysis, and the pattern of loss is well documented and balanced between groups, it satisfies the "nearly all" threshold criterion described in the explanation.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+- "The ITT population consisted of patients who had baseline BP values and ≥1 postrandomization BP values and who had taken ≥1 dose of the study drug."
+- "A total of 227 patients took at least 1 dose of study medication. The ITT set consisted of 224 patients, and the PP set included 211 patients (Figure 2)."
+- Participant flow data showing discontinuation: 20/117 (17%) discontinued in combination group, 15/116 (13%) in monotherapy group, with reasons including safety, adverse events, lost to follow-up, and withdrawal by subject.
+- No mention of any imputation method, sensitivity analysis, or statistical method specifically correcting for missing outcome data bias.
+- "The results from the PP analysis showed the same pattern of responses in both SBP and DBP" - this is a per-protocol analysis, not a sensitivity analysis addressing missingness assumptions.
+
+Analysis:
+The trial used an ITT analysis (based on baseline BP and ≥1 post-randomization BP value) and a PP analysis, both of which produced consistent results. However, there is no explicit sensitivity analysis testing a range of plausible assumptions about the relationship between missingness and the true outcome value (e.g., best-case/worst-case scenarios, pattern-mixture models, or multiple imputation accounting for both arms). The ITT definition itself is not a robust correction for missing data bias, as it requires at least one post-baseline measurement rather than including all randomized participants with imputed missing outcomes. The consistency between ITT and PP analyses is reassuring but does not constitute formal evidence via appropriate methods (per the Cochrane RoB2 guidance) that address missing outcome data bias directly. Given the moderate dropout rates (17% and 13%) and lack of formal methodological correction or sensitivity analysis for missingness, there is no direct evidence provided that the result was unbiased by missing outcome data, though the consistency of ITT/PP results provides some reassurance.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences:
+"A total of 253 patients were enrolled at 12 centers, and 233 patients were randomized... Among the 20 patients who were not randomized, the most common reason was failure to meet BP categories (12 subjects). Eight patients withdrew consent for the study; of these, 1 patient discontinued the study because of an elevation of BP after drug withdrawal."
+"A total of 227 patients took at least 1 dose of study medication. The ITT set consisted of 224 patients, and the PP set included 211 patients."
+From protocol: Discontinuation reasons include "Safety Reason" (8 vs 7), "Adverse Event" (3 vs 2), "Lost to Follow-up" (5 vs 1), and "Withdrawal by Subject" (4 vs 5).
+
+Analysis:
+The missing outcome data (withdrawals, discontinuations, losses to follow-up) were not entirely due to unrelated administrative reasons. A substantial portion of dropouts were attributable to safety reasons/adverse events (which are directly related to the participants' health status and could correlate with BP outcomes), as well as "withdrawal by subject" and "lost to follow-up," which could plausibly be linked to how well the treatment was controlling blood pressure or to intolerable side effects. Notably, one patient discontinued specifically because of "elevation of BP after drug withdrawal," directly indicating that missingness could be related to the true outcome value (BP level). This differential pattern of discontinuation for safety/AE reasons between arms (8 vs 7, 3 vs 2) raises the possibility that missing outcome data is related to the true (unfavorable) BP outcome, rather than purely incidental technical/administrative causes.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+"Among the 20 patients who were not randomized, the most common reason was failure to meet BP categories (12 subjects). Eight patients withdrew consent for the study; of these, 1 patient discontinued the study because of an elevation of BP after drug withdrawal."
+"Discontinued: FG000 (combination) = 20; FG001 (monotherapy) = 15" with reasons including Safety Reason (8 vs 7), Adverse Event (3 vs 2), Lost to Follow-up (5 vs 1), Withdrawal by Subject (4 vs 5).
+"Three patients in the candesartan-HCT combination group (2 cases of dizziness and 1 case of myalgia) and 4 patients in the candesartan monotherapy group (2 cases of dizziness, 1 case of headache, and 1 coronary artery revascularization) were discontinued from the study because of AEs."
+Efficacy analysis was based on the ITT population, which "consisted of patients who had baseline BP values and ≥1 postrandomization BP values."
+
+Analysis:
+The proportions of missing/discontinued data differ somewhat between groups (20 vs 15 discontinuations overall in the participant flow module), with "Lost to Follow-up" being notably higher in the combination group (5 vs 1) and "Safety Reason" also slightly higher (8 vs 7). Reasons for missingness include AEs (dizziness, headache, myalgia), withdrawal of consent, and lost to follow-up. Some of these reasons—particularly AE-related discontinuations (e.g., dizziness, elevated BP after drug withdrawal)—could plausibly relate to the true value of the BP outcome (i.e., patients experiencing poor BP control or adverse effects related to treatment efficacy might be more likely to drop out). However, the difference in missingness between groups is modest, and the majority of missing data reasons (protocol violations, consent withdrawal, unrelated AEs such as scrub typhus, breast calcification, anal fistula) do not clearly relate to the outcome's true value. There is no strong or systematic evidence that missingness is driven by outcome value differentially between arms, nor is there a very high overall dropout rate. This pattern is more consistent with "some concerns" rather than clear evidence of dependency on true outcome value, but there is some suggestion (BP elevation causing dropout, differential lost-to-follow-up) that could raise it to a moderate probability of dependence.
+
+Given the reported case of a patient discontinuing due to "elevation of BP after drug withdrawal" and the imbalance in lost-to-follow-up numbers, there is some indication that missingness could be related to the true BP outcome, but this evidence is not strong or systematic enough to conclude at high confidence that missingness is likely dependent on true value.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences:
+"BPs were measured in each patient's arm by the same investigator at each center with a fully automated device produced by Omron, Tokyo, Japan... Three consecutive BPs were measured at 1-minute intervals in a sitting position. If there was a difference in DBP of more than 10 mm Hg between any 2 of the 3 measurements, 2 additional measurements were made. The 2 extreme values out of the 5 measurements (the highest and the lowest values) were discarded, and the remaining 3 were averaged."
+
+"The primary objective of this study was to compare the changes in the mean sitting DBP from the baseline after 4 weeks of therapy between the candesartan-HCT combination and candesartan monotherapy."
+
+Analysis: The outcome (blood pressure) was measured using a standardized, validated method - a fully automated oscillometric device (Omron), with consistent timing (trough values before dosing), consistent positioning (sitting), same arm and same investigator throughout, and a rigorous protocol involving multiple measurements with outlier exclusion and averaging to reduce measurement error. This is a standard, well-validated, and clinically appropriate method for measuring blood pressure in antihypertensive trials, and is sensitive to detecting plausible intervention effects (as demonstrated by the significant between-group differences detected). There is no indication that the measurement method was unsuitable, insensitive, or lacked validity for assessing the BP-lowering effects of the interventions being compared.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"BPs were measured in each patient's arm by the same investigator at each center with a fully automated device produced by Omron, Tokyo, Japan... Every attempt was made to have the same individual perform all BP readings in the same patient at each visit and throughout the study." "Three consecutive BPs were measured at 1-minute intervals in a sitting position... The 2 extreme values out of the 5 measurements... were discarded, and the remaining 3 were averaged." "However, the open study design could be the potential source of bias regarding the safety profile." The study design was "open-label" (unmasked/no blinding) per the protocol registry.
+
+Analysis: The outcome measurement methods (standardized automated BP device, same investigator, same time points, same protocol for measurement) were identical and pre-specified for both intervention groups, applied consistently regardless of group assignment. There is no indication that the frequency of visits, measurement schedule, or diagnostic thresholds differed between the combination therapy and monotherapy arms - both groups had assessments at the same time points (baseline, week 4, week 8) using identical BP measurement protocols. Although the study was open-label (unblinded), the primary and secondary outcomes (BP measurements) are objective, standardized, and mechanically measured using an automated device, minimizing the potential for differential ascertainment based on group knowledge. The AE assessment involved similar structured questioning for both groups. However, the authors themselves acknowledge the open-label design "could be the potential source of bias regarding the safety profile," suggesting some awareness of potential differential ascertainment, particularly for subjective outcomes like AEs. For the primary outcome (BP change), measurement was highly standardized and objective, but the open-label nature introduces a theoretical possibility of measurement bias if outcome assessors' behavior differed by knowledge of group assignment.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences:
+- "Official title: Open-label, Randomised, 2-Arm Parallel Group..." (designModule maskingInfo: "masking": "NONE")
+- "BPs were measured in each patient's arm by the same investigator at each center with a fully automated device..."
+- "However, the open study design could be the potential source of bias regarding the safety profile."
+- "Adverse events (AEs) were investigated both by spontaneous report of the patient and by an open question from the investigators during each visit."
+
+Analysis: This was explicitly designed and reported as an "open-label" study with no masking ("masking": "NONE" in the registry, and the article title states "Open-label, Randomised..."). The outcome assessors (investigators) measuring blood pressure and evaluating adverse events were aware of which treatment arm participants were assigned to, since there was no blinding of study personnel or participants. The article itself acknowledges this limitation, stating that "the open study design could be the potential source of bias regarding the safety profile." Since the primary and secondary outcomes (BP measurements) were assessed by investigators who knew the treatment allocation (combination vs monotherapy), and there is no mention of blinded assessors, outcome assessors were aware of the intervention received.
+
+Correct answer: Yes
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"Blood Pressure Measurements: At each visit, sitting cuff SBP and DBP and pulse rate were recorded...measured in each patient's arm by the same investigator at each center with a fully automated device produced by Omron"; "the open study design could be the potential source of bias regarding the safety profile"; designModule maskingInfo: "masking": "NONE"; the official title states "Open-label, Randomised, 2-Arm Parallel Group..."
+
+Analysis: The study was open-label (no masking of participants, investigators, or outcome assessors), as explicitly stated in the study design ("masking": "NONE") and confirmed by the official title describing it as "Open-label." Blood pressure, the primary and secondary outcomes, was measured using a fully automated (Omron) device, which minimizes observer subjectivity/judgment in the measurement itself, similar to an objective outcome. However, adverse event assessment relied on investigator judgment about drug relatedness and patient self-report, which could be influenced by knowledge of treatment allocation — the authors themselves acknowledge this: "the open study design could be the potential source of bias regarding the safety profile." Since BP was measured automatically (objective outcome, low judgment involved), but AE/tolerability assessments involved judgment and were unblinded, there is a mix, but overall knowledge of intervention could plausibly have influenced outcome assessment for AEs/tolerability outcomes, and the trial explicitly lacked masking.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences: "This was a Phase IV, multicenter, randomized, active treatment–controlled, parallel group study" and design module indicates "maskingInfo": {"masking": "NONE"} — an open-label study. BP was measured objectively using an automated device (Omron), and outcome measures (SBP/DBP via automated device) are relatively objective, reducing subjectivity in assessment despite lack of blinding.
+
+Analysis: The study was open-label (no masking of participants, investigators, or outcome assessors), as explicitly stated in the registry ("masking": "NONE") and implied by the "open-label" design mentioned in the discussion ("the open study design could be the potential source of bias regarding the safety profile"). The primary and secondary outcomes (SBP/DBP) were measured using a fully automated oscillometric device (Omron), which is an objective measurement not易 susceptible to assessor's subjective judgment or belief in treatment efficacy. Although adverse event assessment could be influenced by unblinded status, the primary outcome (blood pressure) was assessed using a standardized automated device, minimizing the likelihood that knowledge of treatment allocation influenced the outcome measurement itself. Thus, while there is a theoretical potential for bias due to lack of blinding, there is no specific indication that assessors' knowledge of the intervention influenced the objective BP measurements.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+"A sample of 107 patients per group was calculated to be necessary to detect a 2.7 mm Hg difference between groups with standard deviation at 7 mm Hg and 80% power to reach a P value of 0.05." "The primary objective of this study was to compare the changes in the mean sitting DBP from the baseline after 4 weeks of therapy... The secondary objectives of this study were..." "Because this study was not powered to detect differences in efficacy among subgroups, such statistical comparison was not conducted." "The post hoc analysis in subgroups of patients... suggested that both candesartan monotherapy and the candesartan-HCT combination were effective..."
+
+Analysis: The article and registry entry describe a pre-specified primary outcome (DBP change at 4 weeks) and secondary outcomes (SBP change, target BP achievement, AEs, compliance) that match those reported in the results, with consistent statistical methods (ANCOVA, Fisher's exact test) described in the Methods section before presentation of results. However, there is no explicit statement or reference to a formally registered, dated statistical analysis plan (SAP) finalized before unblinding, nor is there a trial protocol document with a version history provided for comparison. The study was open-label (unmasked), meaning outcome data were essentially available to investigators as it was collected, raising some concern about whether analysis decisions (e.g., subgroup analyses explicitly labeled "post hoc") were locked in before data review. The presence of "post hoc" subgroup analyses indicates that some analyses were not pre-specified, though this is transparently disclosed and does not affect the primary/secondary outcome reporting. Since no independent pre-specified SAP or protocol timestamp is available for verification, and the study was unblinded throughout, it cannot be confirmed with certainty that all analyses (especially subgroup ones) were finalized before unblinded data were available, though the primary/secondary outcomes appear consistent with what was registered.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+
+- Protocol primary outcome: "Changes in Mean Sitting DBP From Baseline After 4 Weeks of Therapy" (single prespecified measure, timeFrame 4 weeks).
+- Article: "The primary objective of this study was to compare the changes in the mean sitting DBP from the baseline after 4 weeks of therapy between the candesartan-HCT combination and candesartan monotherapy."
+- Protocol secondary outcomes match article's reported secondary outcomes (SBP change at 4 and 8 weeks, proportion achieving target BP at 4 and 8 weeks, AEs, compliance, hs-CRP).
+- All prespecified outcome measures (BP measurement type: sitting DBP/SBP, at 4 and 8 weeks) are consistently reported in the article as per the registered protocol, with matching definitions and timepoints.
+
+Analysis:
+The registered protocol (ClinicalTrials.gov) prespecifies the primary outcome as change in mean sitting DBP at 4 weeks, using a single, clearly defined measurement (sitting DBP, mmHg, ANCOVA-based mean change) and time point. There is no indication of multiple alternative scales, definitions, or outcome measurements for blood pressure that could have been selectively chosen — sitting DBP is the only measurement method used throughout for the primary outcome domain (blood pressure control), and it is reported exactly as intended in the protocol at the same time point (4 weeks). The secondary outcomes are also consistent between the protocol and the full publication (SBP changes at 4 and 8 weeks, target BP achievement rates, AEs, compliance), with no evidence of selective reporting from multiple alternative outcome measurements within the domain. Thus, there is clear evidence (via comparison with the registered protocol) that the reported result corresponds to the prespecified single measurement approach, with no indication of selection from multiple eligible measures based on results.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences: "Efficacy data were evaluated in the intent-to-treat (ITT) population... The per-protocol (PP) population consisted of all patients..."; "The results from the PP analysis showed the same pattern of responses in both SBP and DBP (Tables II and III)."; Table II and III report both ITT and PP changes from baseline to week 4 and week 8, with consistent P-values and direction of effect; the registered primary outcome (ClinicalTrials.gov) specifies "Changes in Mean Sitting DBP From Baseline After 4 Weeks of Therapy" using ITT population, matching the fully reported result in the article (-17.8 vs -14.1 mmHg, P=0.0028 in article; -17.0 vs -14.1 in registry, consistent direction and significance).
+
+Analysis: The primary outcome (DBP change from baseline at 4 weeks) was pre-specified in the registry as an ITT analysis, and this exact analysis is reported in the article with consistent results. Although both ITT and PP analyses were conducted, both are fully reported (Tables II and III) rather than selectively presenting only the favorable one, and the paper explicitly states that "the results from the PP analysis showed the same pattern of responses," indicating no discrepancy that would suggest selection based on results. The secondary outcomes (SBP change, target BP achievement) are also fully reported in both ITT and PP populations with consistent directions of effect. There is no evidence of multiple competing statistical models (e.g., different covariate adjustments, different cut-points, or transformations) being tested with only favorable ones reported. The ANCOVA model with baseline BP as covariate was specified and applied consistently. Thus, there is no clear indication of selective reporting from multiple eligible analyses based on the results.
+
+Correct answer: Probably no

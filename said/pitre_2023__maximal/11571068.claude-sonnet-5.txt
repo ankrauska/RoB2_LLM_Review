@@ -1,0 +1,81 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 11571068
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Women's Burden and Distress Outcome
+
+**Trial:** Halford et al. – Helping the female partners of men abusing alcohol: comparison of three treatments (supportive counselling vs. stress management vs. alcohol-focused couple therapy [AFCT])
+**Outcome assessed:** Women's burden and distress (RSS, GHQ)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns, driven by lack of information on allocation concealment, despite adequate sequence generation and no evidence of problematic baseline imbalance.
+
+**b. Rationale:**
+- *Sequence generation:* “Participants were assigned randomly via random number tables” – this constitutes an adequate random component (Answer to Q1.1 = Yes).
+- *Allocation concealment:* No information is provided about how the random number table allocations were concealed from the recruiting/assessing clinicians prior to enrolment (Answer to Q1.2 = No information).
+- *Baseline imbalance:* “One-way ANOVAs showed that at pre-treatment the women’s GHQ, RSS... did not differ significantly across conditions” and demographic variables (age, years married, children) also did not differ. This suggests no problem with randomization (Answer to Q1.3 = No).
+- Per the RoB2 algorithm, "No information" on concealment + no evidence of baseline imbalance problem → **Some concerns**.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **High risk of bias**
+
+**a. Judgement:** High risk, due to unblinded psychotherapy conditions with context-driven deviations that plausibly affected outcome and were not balanced across arms, combined with an analysis that did not adhere to intention-to-treat principles.
+
+**b. Rationale:**
+- *Awareness:* Participants (women) and personnel (therapists) were necessarily aware of the assigned intervention type (supportive counselling vs. stress management vs. AFCT); blinding of a psychosocial intervention delivered by trained therapists is not feasible (Q2.1/2.2 = Yes).
+- *Deviations arising from trial context:* A key deviation was differential male-partner engagement — “Only six husbands of the 21 wives assigned to AFCT engaged in treatment” — meaning most participants assigned to AFCT effectively received something akin to the stress-management protocol instead. This is a substantial deviation from the intended intervention that arose from the trial context (male partners' willingness to engage) and was unbalanced by design (only affects the AFCT arm) (Q2.3–2.5 point toward unbalanced, outcome-relevant deviations).
+- Additionally, differential attrition patterns were noted: “most of these women reported they had left their partners soon after beginning the programme,” which is directly related to the burden/distress outcome and trial engagement, though the reported chi-square test for differential dropout by condition was non-significant (low power noted by authors).
+- *Analysis approach:* The results presented in Table 1 and the ANOVA models are based on available data at each timepoint from participants retained in the study ("Forty-seven participants completed treatment and 44... provided assessed data at 6-month follow-up"), rather than a full ITT analysis including all 61 randomized women with imputation for missing values. This is not consistent with ITT principles (Q2.6 = No), and given ~22–28% attrition unevenly distributed by reasons related to the outcome, the potential impact on the result is substantial (Q2.7 = Yes).
+- Per the RoB2 algorithm, awareness + context-driven, outcome-relevant, unbalanced deviations AND inappropriate/non-ITT analysis with potential for substantial impact → **High risk of bias**.
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk, because a substantial proportion of outcome data are missing, and it is plausible that missingness in the outcome (burden/distress) depended on its true value, with no sensitivity analyses to counter this concern.
+
+**b. Rationale:**
+- *Extent of missing data:* “This represents an overall attrition of 22% of participants from the treatment phase of the study,” and only 44/61 (72%) provided data at 6-month follow-up. This is not a "small" degree of missingness (Q3.1 = No).
+- *Evidence of no bias:* No sensitivity analyses were performed to test the robustness of the result to plausible values of missing data. The authors explicitly state, “Unfortunately, all the women who dropped out from treatment declined further assessment” (Q3.2 = No).
+- *Could missingness depend on true value?* Yes — the authors state: “most of these women reported they had left their partners soon after beginning the programme... Many women who dropped out told us that the sessions they attended assisted them to leave a relationship in which they had been very unhappy for many years.” This directly implies that dropout was related to change in relationship/psychological status, i.e., to the true value of the burden/distress outcome (Q3.3 = Yes).
+- *Likely dependence:* The reasons given (leaving the relationship due to unhappiness) are plausibly and directly tied to underlying distress/burden levels, and it is unclear whether this pattern differed systematically by arm, but the mechanism itself (differential coping strategies leading to different withdrawal patterns) raises strong concern (Q3.4 = Yes, tending toward "likely").
+- This pattern of missingness/dependence, combined with lack of correction, leads to **High risk of bias** for this domain.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns, because burden/distress was assessed via participant self-report in an unblinded design, creating potential for outcome assessment to be influenced by knowledge of intervention received, though no strong evidence of directional influence is presented.
+
+**b. Rationale:**
+- *Appropriateness of method:* The RSS and GHQ are validated, reliable instruments (“test–retest reliability of r=0.85”; “Cronbach’s alpha=0.93”) appropriate for measuring burden and psychological distress (Q4.1 = No).
+- *Comparability of measurement across arms:* All groups completed the same instruments at the same timepoints (pre, post, 6-month follow-up), so measurement/ascertainment methods did not differ between arms (Q4.2 = No).
+- *Awareness of outcome assessors:* Because these are participant-reported outcomes, the "outcome assessor" is the woman herself, who is necessarily aware of her treatment assignment (Q4.3 = Yes).
+- *Could assessment be influenced by knowledge of intervention?* Yes — participant-reported outcomes such as self-rated stress/distress are inherently susceptible to expectation and demand effects, particularly in a study explicitly testing whether "active" treatments (stress management, AFCT) outperform a supportive counselling comparator (Q4.4 = Yes).
+- *Likely influenced?* There is no explicit evidence (e.g., large unexplained placebo-like effects, exaggerated self-report inconsistent with objective corroborating data) that assessment was strongly biased by expectancy; the pattern of change (with all three arms showing improvement and only modest/non-significant between-group differences) does not clearly indicate systematic differential reporting bias (Q4.5 = Probably no).
+- This combination (potential but not clearly demonstrated influence) yields a judgement of **Some concerns** rather than High risk.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns, due to the absence of confirmed availability of a prospectively registered, date-stamped statistical analysis plan, though the outcomes reported appear consistent with the a priori stated hypotheses.
+
+**b. Rationale:**
+- The published article states four a priori hypotheses (concerning spouse stress, male drinking, relationship functioning, and differential treatment effects) and reports results for all of the pre-specified outcome domains (RSS, GHQ for stress; drinking measures; DAS, MSI, CTS for relationship functioning) in Tables 1 and 2, with no apparent omission of a measured domain.
+- However, this trial predates near-universal prospective trial registration practices in psychosocial intervention research, and the article gives no indication that a formal, date-stamped, pre-specified statistical analysis plan (finalized before unblinded outcome data were available) exists that can be cross-checked against the reported results (Q5.1 = No information).
+- There is no clear evidence from the trial registration information provided that the outcome measurement (RSS, GHQ) or analysis method (repeated-measures ANOVA) was selected from multiple eligible alternatives on the basis of the results (Q5.2/5.3 = No information based on available materials).
+- Per the RoB2 algorithm, "No information" to confirm a pre-specified plan combined with no information on multiplicity of outcome/analysis choices defaults to **Some concerns**.
+
+---
+
+# Overall Risk of Bias for "Women's Burden and Distress": **High risk of bias**
+
+**Rationale for overall judgement:** Per RoB 2.0 guidance, a judgement of "High risk of bias" in any single domain results in an overall "High risk of bias" for the outcome. This trial was judged to be at high risk of bias in two domains — deviations from intended intervention (due to substantial, unbalanced, context-driven deviations, particularly poor male engagement in the AFCT arm, combined with non-ITT analysis) and missing outcome data (due to differential, outcome-related attrition without corrective sensitivity analyses). Combined with "some concerns" in randomization, outcome measurement, and selective reporting, confidence in the trial's estimate of the effect of the assigned intervention on women's burden and distress is substantially undermined.

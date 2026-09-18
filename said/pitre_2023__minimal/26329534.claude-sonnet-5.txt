@@ -1,0 +1,52 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 26329534
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Response Rate Outcome
+
+**Trial:** Randomized trial of survey delivery method, questionnaire length, item placement, and gender on pharmacist survey response rate
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** The article states: "A random sample of 7200 pharmacists practicing throughout the U.S... The sample was stratified by delivery method, questionnaire length, item placement, and gender of respondent for a total of 300 observations within each subgroup." There is no description of the actual method of sequence generation (e.g., computer-generated randomization, use of a random number table) beyond the term "random sample" and "randomized to." No information is provided about allocation concealment procedures. Given that gender was used as a stratification/allocation variable (not truly randomizable, since gender is a fixed baseline characteristic), this raises questions about whether "randomization" for this factor is conventional (this is more similar to a stratified sampling design than true randomization for one of the four factors). For delivery method, length, and placement, no details on sequence generation or concealment are given ("No information"). Baseline demographic data (Table 1) show differences across delivery method arms in ethnicity (e.g., Non-Hispanic White: 86.3% postal vs 68.7% email vs 74.0% hybrid) and practice site/location that are fairly large, though this could partly reflect true differences in the different sampling databases (MMS vs Statlistics) used for different delivery arms rather than a failure of randomization per se — this is an important caveat, as the databases used to source pharmacists differed by group ("provided by the Medical Marketing Service (for the postal mail and hybrid groups) and Statlistics (for the email group)"), which is itself a source of possible systematic difference introduced prior to randomization. This is not a "failure of randomization" in the classical sense but reflects a limitation in the sampling frame that could confound delivery method comparisons. Because of (1) absence of explicit description of sequence generation/concealment methods, and (2) use of different sampling databases per arm introducing baseline imbalance in prognostic characteristics between groups (e.g. race, practice site), there are some concerns about the randomization process.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** This domain, assessed for the effect of assignment to intervention, focuses on whether participants/personnel were aware of intervention assignment and whether this awareness led to deviations from intended intervention arising from the trial context, and whether an appropriate (ITT-type) analysis was used.
+
+Blinding of participants to delivery method (postal, email, hybrid) is not feasible or expected in this type of methodological survey trial — respondents necessarily know which mode they were sent. However, this type of "unblinding" is inherent to the intervention itself (delivery method) and does not constitute a deviation from intended intervention in the RoB2 sense (i.e., a switch to a non-protocol intervention). There is no evidence that participants crossed over between delivery methods, questionnaire lengths, or item placements, or that trial personnel implemented interventions inconsistent with the protocol. The description of the protocol (Fig. 1, Methods) indicates the intended delivery/reminder procedures were followed as described for each arm. The analysis reported (response rate calculated as the proportion of the fully allocated/net delivered sample who responded, e.g., "Out of the original 7200 intended respondents... 233 of them did not receive the questionnaires, which yielded a net of 6967 delivered questionnaires") is consistent with an appropriate ITT-style analysis based on assignment, not on received intervention. Therefore, this domain is judged as low risk of bias.
+
+---
+
+## 3. Missing outcome data: **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:** The primary outcome (response rate) is explicitly defined based on complete responses only: "The response rate was defined as the percentage of eligible respondents that returned completed questionnaires, with no missing data for any questions." This means that partially completed responses were excluded from the numerator, but they were not necessarily excluded from consideration as "missing outcome data" in the RoB2 sense — arguably, incomplete/partial responses and total non-response represent different amounts and reasons for "missing data" relative to whether a person truly responded. The text explicitly notes for postal mail: "suffered from a relatively high prevalence (5.8%) of undeliverable questionnaires and a high prevalence (9.9%) of responses dropped because of incomplete data" and for email "a similar prevalence (9.4%) of dropped responses because of incomplete data." Overall, out of 6967 delivered questionnaires, only 710 were counted as complete responses (an overall raw response rate of only 10.2%), meaning that the vast majority of the randomized/allocated sample did not provide the codified outcome. Critically, the proportion of missing/dropped data (both non-response and incomplete-response dropped) differed substantially and systematically between delivery method arms (e.g., postal mail undeliverable rate 5.8% vs 0% for email), which is a key indicator of differential missingness related to intervention group assignment. Given that (1) the outcome itself is a response/non-response outcome, meaning missingness in "response" is definitionally tied to the outcome being measured, (2) the reasons for and rates of missingness differ substantially between arms, and (3) no sensitivity analyses were conducted to assess robustness to missing outcome data, it is likely that missingness depended on group assignment and possibly on other characteristics related to the true outcome. This leads to a judgement of high risk of bias.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The outcome (response rate — an objective count of returned, complete questionnaires per allocation arm) is not a subjective, judgment-based outcome; it is an observer-reported outcome not involving judgement (akin to a count/objective administrative record), calculated from the master database and delivery records. The method for measuring the outcome was appropriate and consistent across groups — a completed questionnaire was defined identically in all arms ("no missing data for any questions"), and the mechanism of capturing this (postal returns cataloged, or entries in a "master database" for electronic/hybrid arms) was applied consistently. There is no indication that ascertainment of the outcome (whether a survey was returned complete) differed systematically between groups beyond the nature of the delivery mode itself, which is the intervention under study, not a source of differential measurement error. Assessment of the outcome (i.e., counting a returned/completed questionnaire) could not be influenced by knowledge of intervention received, since it is an automatic determination based on objective completion status, not requiring judgement by an assessor. Therefore, this domain is judged as low risk of bias.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** No trial registration or pre-specified statistical/analysis plan was identified/provided (doc_id 4dab5cab-2b44-42f8-8559-2dd9073b18b5 did not yield an accessible registered protocol for verification in this response, and none is cited within the article itself). The article does report response rate as a primary outcome consistently across all specified subgroups (delivery method, questionnaire length, item placement, gender) in Table 2, and reports both statistically significant (delivery method) and non-significant (length, placement, gender) results without evidence of selective suppression of any subgroup comparisons — all four planned classifications are fully reported with results for each combination in Table 2. This suggests low risk of outcome-measure- or analysis-selection for the primary comparisons presented. However, because no protocol or SAP could be verified as prospectively registered before unblinded data were available, and the study does not explicitly state that the analysis was conducted according to a pre-specified plan finalized in advance, there remains uncertainty as to whether alternative analytic approaches (e.g., alternative definitions of "response," analyses including partial responders, or additional planned comparisons/interactions) might have been conducted but not reported. Given the lack of independently verifiable pre-registration information, a judgement of "Some concerns" is most appropriate.

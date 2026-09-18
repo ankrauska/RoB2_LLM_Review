@@ -1,0 +1,237 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 21216670
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"Randomisation was balanced by centre, with an allocation sequence based on a block size of four, generated with a computer random-number generator by the pharmacist at the coordinating centre (Hôpital Purpan, Toulouse)."
+
+Analysis:
+The article explicitly states that the allocation sequence was generated using a computer random-number generator, performed by a pharmacist at the coordinating centre, stratified by block randomization within each centre. This clearly indicates a random component was used in the sequence generation process, meeting the criteria for a "Yes" judgment. There is no ambiguity or missing detail regarding the randomization method.
+
+Correct answer: Yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"Randomisation was balanced by centre, with an allocation sequence based on a block size of four, generated with a computer random-number generator by the pharmacist at the coordinating centre (Hôpital Purpan, Toulouse). The pharmacist assigned the participants to the trial groups in accordance with the randomisation list. Allocation was concealed by use of sequentially numbered opaque envelopes. Fluoxetine and placebo capsules were both prepared by the pharmacist for the study. The capsules were distributed to each centre by the Toulouse Hospital Pharmacy."
+
+Analysis: The allocation sequence was generated centrally by an independent pharmacist at the coordinating centre, separate from the enrolling investigators. Concealment was achieved through use of sequentially numbered opaque envelopes, and drug capsules (fluoxetine/placebo) were identical in appearance and prepared/distributed centrally by the hospital pharmacy. This describes a robust, independent, centrally-controlled allocation and concealment mechanism consistent with the criteria for “Yes” — an external unit (pharmacist/pharmacy) controlled the allocation process independent of enrolling personnel, and opaque sequentially numbered envelopes were used, with identical-appearing drug containers. There is no indication that enrolling investigators or participants could have foreseen or accessed the allocation sequence before assignment.
+
+Correct answer: Yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"The two groups were well balanced in terms of baseline and demographic characteristics and stroke severity (table 2). However, mean age was slightly higher and previous history of stroke was more frequent in the fluoxetine group than in the control group. FMMS score at inclusion was higher in the fluoxetine group than in the placebo group (table 2)."
+"We did a multiple linear regression analysis to control for centre and baseline factors that showed treatment group imbalance."
+Table 2 data: Age 66.4 vs 62.9; Previous stroke 17% vs 7%; Total FMMS score 17.1 vs 13.4 (baseline outcome measure imbalance favoring fluoxetine group, i.e., less severe deficit).
+
+Analysis: The trial report itself acknowledges baseline imbalances in age, history of stroke, and notably the primary outcome measure (FMMS) at baseline, with the fluoxetine group having a higher (less severe) baseline FMMS score than placebo (17.1 vs 13.4). This is a baseline measure of the outcome variable itself, and the difference is non-trivial in magnitude relative to the observed effect size, raising concern that it could bias the effect estimate given FMMS is also the primary outcome. The authors themselves recognized this imbalance sufficiently to adjust for it in their primary analysis (multiple linear regression controlling for baseline FMMS, age, and history of stroke), indicating they considered it a meaningful imbalance rather than simple chance variation compatible with negligible risk. This corresponds to criterion (3) in the explanation — imbalance in a baseline measure of the outcome variable that could bias the intervention effect estimate. While randomization methods were described as adequate (computer-generated, blocked, concealed), this baseline difference in the outcome-relevant variable (FMMS at baseline) suggests a potential problem arising from the randomization process (e.g., chance imbalance in a small sample of ~59 per arm) that could affect interpretation of the effect estimate, especially since the trial relied on adjusted analyses to compensate.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+"In this double-blind, placebo-controlled trial... Participants, carers, and physicians assessing the outcome were masked to group assignment."
+"The placebo was identical to the active drug in appearance and packaging."
+"Patients, carers, all site study staff, and investigators were masked to treatment assignment."
+"Transient digestive disorders were more frequent in the fluoxetine group (p=0·19)."
+Adverse events table shows some differences between groups (e.g., nausea 9% vs 0%, hyponatraemia, seizure) but these were not statistically significant and not explicitly identified by participants as drug-specific.
+
+Analysis: The trial used a double-blind design with placebo capsules identical in appearance and packaging to fluoxetine, and both participants and caregivers were explicitly stated to be masked to treatment allocation. There is no information suggesting that participants became aware of their allocation through side effects, since the difference in adverse events (e.g., digestive disorders) was not statistically significant (p=0.19) and no explicit unmasking event or complaint was reported. Therefore, there is no strong evidence that participants were aware of their assigned intervention, and the trial's design and reporting support effective blinding of participants throughout the study.
+
+Correct answer: No
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+- "Allocation was concealed by use of sequentially numbered opaque envelopes. Fluoxetine and placebo capsules were both prepared by the pharmacist for the study... The placebo was identical to the active drug in appearance and packaging."
+- "Patients, carers, all site study staff, and investigators were masked to treatment assignment."
+- "Physiotherapists were instructed not to design a specific rehabilitation programme but to use the normal protocol for their centre."
+- "Reports were periodically examined by the FLAME executive committee, which tried to assess whether the side-effects could be related or not to the drug intake, but the committee remained masked during the study."
+- "The blinding code was not broken."
+
+Analysis:
+The trial explicitly states that carers and all site study staff (who deliver the intervention/physiotherapy and manage patient care) were masked to treatment assignment, along with participants and investigators. Allocation concealment was robust (sequentially numbered opaque envelopes, identical placebo/active capsules), supporting successful blinding. The blinding code was maintained throughout the trial and not broken, even when adverse events or depression occurred. There is no indication that any unblinding occurred among carers or those delivering interventions. This directly and explicitly answers the question posed.
+
+Correct answer: No
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+"When depression occurred (according to clinical assessment) during the 3 months of treatment, clinicians were instructed to continue the study treatment (fluoxetine or placebo), to avoid use of any other antidepressant drugs and, if necessary, to give open-label fluoxetine (20 mg once a day)... If a patient was given another antidepressant drug, the study treatment was stopped."
+"Treatment compliance was similar in the two groups... mean relative dose intensity... 94.8%... vs 94.0%..."
+"Treatment was not interrupted in patients with adverse events."
+"Patients, carers, all site study staff, and investigators were masked to treatment assignment."
+
+Analysis: The protocol itself specified a pre-planned procedure for managing depression that occurred during treatment (continuing study drug, adding open-label fluoxetine if needed, or stopping study treatment if another antidepressant was required). This deviation is a protocol-specified contingency rather than an unplanned deviation arising from trial context (e.g., participants seeking alternative treatment due to disappointment with allocation, or unblinding-driven behavior). Compliance was high and similar between groups (94.8% vs 94.0%), indicating no differential dropout or crossover behavior driven by trial engagement. There is no evidence that recruitment, consent processes, or participant awareness of allocation led to non-protocol behaviors such as unauthorized additional treatments, discontinuation due to disappointment, or contamination between arms. Adverse events did not lead to treatment interruption, and this was consistent with the protocol. No information suggests trial context (e.g., participant frustration with allocation, differential engagement) caused deviations from intended intervention beyond what is expected/allowed by the protocol. Therefore, there is no clear evidence of context-driven deviations from the intended intervention.
+
+Correct answer: No
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+"When depression occurred (according to clinical assessment) during the 3 months of treatment, clinicians were instructed to continue the study treatment (fluoxetine or placebo)... and, if necessary, to give open-label fluoxetine (20 mg once a day) so that the patient received either 20 mg (placebo group) or 40 mg per day (fluoxetine group). If a patient was given another antidepressant drug, the study treatment was stopped."
+"After adjustment of our analysis for clinical depression diagnosed before day 90, we noted that FMMS change between day 0 and day 90 was still significantly greater in the fluoxetine group (adjusted mean 34·2 points [95% CI 29·7–38·6]) than in the placebo group (24·2 [19·6–28·7]; p=0·004)."
+"Occurrence of depression during the 3 months was significantly lower in the fluoxetine group than in the placebo group... (17 [29%] patients) than in the fluoxetine group (four [7%] patients; p=0·002)."
+
+Analysis:
+There was a protocol-specified deviation pathway: patients who developed depression during the trial could receive open-label fluoxetine added to their randomized treatment (resulting in placebo+fluoxetine 20mg, or fluoxetine 40mg total), which represents a deviation from the strictly randomized single-blind intervention (a co-intervention differential between arms, since depression—and thus this deviation—occurred much more frequently in the placebo group: 29% vs 7%). This differential deviation could, in principle, bias the estimate of effect by improving outcomes in the placebo arm (since more placebo patients received open-label fluoxetine) or by other pathways related to depression treatment affecting motor recovery. However, the authors performed a sensitivity analysis adjusting for clinical depression diagnosed before day 90, and the treatment effect on the primary FMMS outcome remained materially unchanged and significant (adjusted mean difference of roughly similar magnitude, p=0.004 vs original p=0.003). This indicates that the deviation, though present and disproportionately affecting the placebo group, did not appreciably alter the estimated effect on the primary outcome. Therefore, the deviations were probably not likely to have materially affected the outcome estimate.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences: "When depression occurred (according to clinical assessment) during the 3 months of treatment, clinicians were instructed to continue the study treatment (fluoxetine or placebo), to avoid use of any other antidepressant drugs and, if necessary, to give open-label fluoxetine (20 mg once a day) so that the patient received either 20 mg (placebo group) or 40 mg per day (fluoxetine group)." Combined with: "the frequency of depression was significantly higher in the placebo group (17 [29%] patients) than in the fluoxetine group (four [7%] patients; p=0·002)."
+
+Analysis: The protocol allowed a deviation from the assigned intervention—administration of open-label fluoxetine—when a patient developed depression during the trial. This deviation altered the actual drug regimen received (adding open-label fluoxetine to either the placebo or fluoxetine arm). Because the incidence of depression differed markedly between groups (29% in placebo vs 7% in fluoxetine), the number of patients who received this additional non-protocol intervention was also unequal between arms. This means that far more placebo-group patients received supplemental open-label fluoxetine due to depression than fluoxetine-group patients, introducing an important asymmetry in exposure to the active drug across groups. Such an imbalance in deviations from the assigned intervention could influence the estimate of the intervention effect, particularly since receiving even open-label fluoxetine could affect motor recovery outcomes, potentially diluting the between-group difference or conversely being a source of bias. Therefore, the deviations from intended intervention were not balanced between the two groups.
+
+Correct answer: No
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+"Analysis was of all patients for whom data were available (full analysis set)."
+"118 patients were randomly assigned to fluoxetine (n=59) or placebo (n=59), and 113 were included in the analysis (57 in the fluoxetine group and 56 in the placebo group). Two patients died before day 90 and three withdrew from the study."
+"The primary analysis for efficacy (full-analysis set) consisted of a comparison of the change in FMMS distribution (total score, upper limb score, and lower limb score) over 90 days."
+
+Analysis: The trial analyzed all randomized patients for whom outcome data were available (113 of 118), excluding only those who died or withdrew (missing outcome data), which constitutes a modified intention-to-treat (mITT) analysis. This is consistent with the definition of an appropriate analysis, as no per-protocol or as-treated analysis was used for the primary outcome, and no eligible participants were excluded post-randomization for reasons other than missing data.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"118 patients were randomly assigned to fluoxetine (n=59) or placebo (n=59), and 113 were included in the analysis (57 in the fluoxetine group and 56 in the placebo group). Two patients died before day 90 and three withdrew from the study."
+"Analysis was of all patients for whom data were available (full analysis set)."
+"Two patients died before day 90, and three withdrew from follow-up (figure 1)."
+
+Analysis: Only 5 of 118 randomized patients (~4.2%) were excluded from the analysis, and these exclusions were due to death (2 patients, one in each group) and withdrawal (3 patients) — not due to being analysed in the wrong group. The exclusions were balanced across both groups and unrelated to differential misclassification of treatment allocation. There is no evidence that participants were analysed in the group other than the one to which they were randomized (no cross-over misclassification). Given the small number of exclusions, their balance between groups, and their non-prognostic-related reasons (death/withdrawal rather than systematic dropout related to outcome), it is unlikely that this could have had a substantial impact on the treatment effect estimate, especially given the large, robust effect size (p=0.003) and consistency across sensitivity analyses.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"118 patients were randomly assigned to fluoxetine (n=59) or placebo (n=59), and 113 were included in the analysis (57 in the fluoxetine group and 56 in the placebo group). Two patients died before day 90 and three withdrew from the study."
+"113 patients were included in the full-set analysis (figure 1). Two patients died before day 90, and three withdrew from follow-up (figure 1)."
+
+Analysis: Of 118 randomized participants, 113 (95.8%) had primary outcome (FMMS) data available at day 90, with only 5 missing (2 deaths, 3 withdrawals). This is a continuous outcome, and the proportion of missing data (4.2%) is below the 5% threshold typically considered acceptable for continuous outcomes. The reasons for missingness (death, withdrawal) are clearly reported and balanced between groups (2 fluoxetine, 3 placebo), and the small number of missing participants is unlikely to have made an important difference to the estimated treatment effect. The trial profile (Figure 1) clearly documents the flow of participants and reasons for exclusion from analysis.
+
+Correct answer: Yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+- "118 patients were randomly assigned to fluoxetine (n=59) or placebo (n=59), and 113 were included in the analysis (57 in the fluoxetine group and 56 in the placebo group). Two patients died before day 90 and three withdrew from the study."
+- "Analysis was of all patients for whom data were available (full analysis set)."
+- "After adjustment of our analysis for clinical depression diagnosed before day 90, we noted that FMMS change between day 0 and day 90 was still significantly greater in the fluoxetine group... In a sensitivity analysis of the subgroup of patients who were not given thrombolysis... improvement in FMMS was still significantly higher in the fluoxetine group..."
+
+Analysis: Only 5/118 patients (4.2%) had missing outcome data (2 deaths, 3 withdrawals), balanced across groups (1 death and 1 withdrawal-equivalent in fluoxetine vs 1 death and 2 withdrawals in placebo). This amount of missingness is very small and unlikely to meaningfully bias the large, highly significant treatment effect (p=0.003). Although the analysis used a "full analysis set" (complete case, not multiple imputation correcting for missingness) rather than a formal method to account for missing data, the low proportion of missing data across both arms, combined with sensitivity/subgroup analyses (excluding thrombolysis patients, adjusting for depression) that show consistent effects, provides reasonable evidence that missing data are unlikely to have caused bias.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences:
+"Two patients died before day 90 and three withdrew from the study." "The cause of death was related to their neurological disorder (septic shock, respiratory distress; figure 1)." From Figure 1: "1 died from respiratory distress after inhalation of food, 1 withdrew (severe hypoxia)" (fluoxetine group); "1 died from septic shock, 2 withdrew (1 kidney tumour, 1 pulmonary embolism)" (placebo group).
+
+Analysis: Only 5 of 118 randomized patients (4.2%) had missing outcome data, all with clearly documented reasons. The deaths were attributed to severe neurological/medical complications directly related to stroke severity (septic shock, respiratory distress from aspiration), which could plausibly relate to the severity of the underlying condition affecting the primary outcome (motor recovery/FMMS). However, withdrawals were due to unrelated medical events (kidney tumour, pulmonary embolism, severe hypoxia) rather than the outcome itself. Given the very small amount of missing data and that reasons are documented and largely appear unrelated to the true FMMS outcome value (though deaths from severe stroke complications could be plausibly linked to poor motor outcome), there remains some possibility that missingness relates to the true outcome value, but explicit reasons are provided and are mostly medical complications rather than motor outcome-driven withdrawal. Overall the evidence suggests missingness is unlikely to be dependent on the outcome value.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+- "118 patients were randomly assigned to fluoxetine (n=59) or placebo (n=59), and 113 were included in the analysis (57 in the fluoxetine group and 56 in the placebo group)."
+- "Two patients died before day 90 and three withdrew from the study."
+- Figure 1: In the fluoxetine group, 1 died from respiratory distress after inhalation of food, 1 withdrew (severe hypoxia); in the placebo group, 1 died from septic shock, 2 withdrew (1 kidney tumour, 1 pulmonary embolism).
+- "All patients were followed up until day 90."
+
+Analysis: Missing outcome data were minimal (5 of 118 patients, ~4%) and balanced between groups (2 in fluoxetine, 3 in placebo). The reasons for missingness (death from septic shock/respiratory distress, kidney tumour, pulmonary embolism, severe hypoxia) are clinical events unrelated to the underlying motor recovery (FMMS) outcome itself - i.e., not plausibly linked to the true FMMS value that would have been observed. There is no evidence of imbalance in missingness proportions between arms that would suggest outcome-dependent dropout, and the reasons given are unrelated to the trial's motor outcome measure. This pattern does not suggest that missingness depended on the true value of the FMMS outcome.
+
+Correct answer: No
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences:
+"The primary outcome was the mean change in FMMS score18 between inclusion (day 0) and day 90. FMMS is an index that is widely used for assessment of motor recovery after stroke and has excellent intra-rater and inter-rater reliability and validity.19"
+
+Analysis: The primary outcome measure (Fugl-Meyer Motor Scale) is a validated, widely used instrument with established reliability and validity for assessing motor recovery after stroke. It is a continuous scale ranging from 0-100 that is sensitive to changes in motor function across the full range of severity, making it appropriate for detecting plausible intervention effects in this population. There is no indication that the measurement method has poor validity or is insensitive to expected treatment effects. Assessments were performed by physiotherapists using a standardized, well-established protocol at multiple time points (day 0, 30, and 90), consistent with appropriate outcome measurement methodology.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"Participants, carers, and physicians assessing the outcome were masked to group assignment."
+"Patients, carers, all site study staff, and investigators were masked to treatment assignment."
+"All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment."
+"Reports were periodically examined by the FLAME executive committee, which tried to assess whether the side-effects could be related or not to the drug intake, but the committee remained masked during the study."
+
+Analysis: The outcome assessors (physiotherapists administering the FMMS) and other trial personnel involved in outcome ascertainment were explicitly masked to treatment allocation, and outcome measurement was standardized across groups (same scale, same time points: day 0, 30, 90). There is no indication that additional visits, differential monitoring, or diagnostic detection bias could have occurred between groups, since both groups received the same visit schedule, physiotherapy, and follow-up procedures. Given the double-blind design with masking maintained even for adverse event adjudication, it is unlikely that measurement or ascertainment of the outcome differed between intervention groups.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences:
+"Participants, carers, and physicians assessing the outcome were masked to group assignment." "Patients, carers, all site study staff, and investigators were masked to treatment assignment." "All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment."
+
+Analysis: The primary outcome (FMMS) was assessed by a physiotherapist, and the article explicitly states that all site study staff, investigators, and physicians assessing the outcome were masked to group assignment. This indicates that the outcome assessors were blinded to intervention status, consistent with a low risk of bias in this domain.
+
+Correct answer: No
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment."
+"Participants, carers, and physicians assessing the outcome were masked to group assignment."
+"Patients, carers, all site study staff, and investigators were masked to treatment assignment."
+"FMMS is an index that is widely used for assessment of motor recovery after stroke... each item is rated as not, partly, or fully performed."
+
+Analysis: The primary outcome (FMMS) is an observer-reported outcome that involves some degree of clinical judgement (rating whether a motor task is “not, partly, or fully performed”), meaning that knowledge of intervention assignment could theoretically influence scoring. However, the trial explicitly states that participants, carers, and the physiotherapists/physicians assessing the outcome were all masked to group assignment, and this was maintained through blinded drug/placebo packaging, sequentially numbered opaque envelopes, and identical capsule appearance. Since the outcome assessors were blinded and outcome assessment did involve judgement but was protected by masking, knowledge of intervention was unlikely to have influenced the outcome assessment.
+
+Correct answer: No
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment."
+"Participants, carers, and physicians assessing the outcome were masked to group assignment."
+"Patients, carers, all site study staff, and investigators were masked to treatment assignment."
+
+Analysis: The primary outcome (FMMS) was assessed by physiotherapists who were masked to treatment allocation, and this masking was maintained throughout the trial (the blinding code was not broken even when depression occurred). Since assessors were unaware of intervention status, knowledge of allocation could not have influenced their outcome assessment. There is no indication of unblinding or systematic differential assessment behavior based on treatment knowledge.
+
+Correct answer: No
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences: "This trial is registered with ClinicalTrials.gov, number NCT00657163." "The primary outcome was the mean change in FMMS score... Secondary endpoints were NIHSS, modified Rankin scale (mRS), and MADRS." "The statistical analysis... Statistical analysis section describing pre-planned tests, adjustments, and sample size calculation." "The blinding code was not broken." "The sponsor had no involvement in study design, data collection, data analysis, data interpretation, or writing of the report."
+
+Analysis: The trial was prospectively registered (NCT00657163) with a pre-specified primary outcome (change in FMMS score at day 90) and secondary outcomes (NIHSS, mRS, MADRS) that match those reported in the publication. The statistical methods section describes a detailed, seemingly pre-specified analysis plan (full-analysis set, adjustment for centre and baseline imbalances, specific tests for each outcome), and the blinding code was maintained ("not broken") throughout the study, including during analysis. There is no mention of any changes to the analysis plan after unblinding, and the sponsor had no role in analysis. However, the article does not provide an explicit, separate, detailed pre-specified statistical analysis plan document (SAP) for verification beyond the registry entry and the methods described in the paper itself, and some post-hoc analyses (e.g., binomial regression for mRS/NIHSS) are explicitly labeled "post-hoc," suggesting that not all analyses were pre-specified. This suggests that while the primary outcome analysis appears consistent with pre-specified plans, full certainty about a finalized SAP prior to unblinding cannot be confirmed with complete confidence.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+- Protocol primary outcome: "Progression in the Fugl-Meyer Motor Scale" measured at "M3 (3 months)" (single time point, single scale, matches article's primary outcome: "The primary outcome was the mean change in FMMS score between day 0 and day 90").
+- Article: "The primary outcome measure was the change on the FMMS between day 0 and day 90 after the start of the study drug."
+- Protocol secondary outcomes list additional timepoint M12 for Fugl-Meyer, but article only reports up to day 90 data with no M12 results reported for primary outcome, consistent with trial being stopped/analyzed at 90 days (not indicative of selective results based on results, but rather truncated follow-up already known/explained by trial design/duration of treatment 90 days).
+
+Analysis:
+The primary outcome domain (motor recovery, measured by FMMS) was pre-specified in both the protocol and the article as change from baseline to day 90 (3 months), using a single, specific scale (FMMS) and a single time point for the primary analysis. There is no indication that multiple scales or multiple time points were eligible for the primary outcome and that a subset was selectively reported based on results. The secondary outcome (Fugl-Meyer at M12) was planned in the protocol but not reported in the article; however, this appears due to the trial's treatment duration being only 90 days and the study design ending follow-up at day 90 (as explicitly stated: "Study treatment began... All patients were followed up until day 90" and discussion limitation "treatment was stopped after 90 days and we have no idea of the long-term development"). This absence of 12-month data is explained by the trial's design/limitation rather than selective reporting based on results. For the primary outcome (FMMS change at day 90), the measurement matches exactly between protocol and publication, with no evidence of selection among multiple eligible measurements.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences: "The primary analysis for efficacy (full-analysis set) consisted of a comparison of the change in FMMS distribution... We did a multiple linear regression analysis to control for centre and baseline factors that showed treatment group imbalance." "After adjustment of our analysis for clinical depression diagnosed before day 90, we noted that FMMS change... was still significantly greater..." "In a sensitivity analysis of the subgroup of patients who were not given thrombolysis... improvement in FMMS was still significantly higher..." Table 3 reports both mean/SD and median/IQR with Mann-Whitney p-values, and the adjusted mean is also reported.
+
+Analysis: The primary outcome (FMMS change at day 90) was analysed and reported using multiple approaches — unadjusted comparison (Mann-Whitney U test, mean/SD), an adjusted multiple linear regression (controlling for centre, age, history of stroke, baseline FMMS), and further sensitivity analyses (adjusting for depression, excluding thrombolysis patients). Critically, all of these multiple analyses are explicitly reported in the text and tables, and all yield consistent, statistically significant results favouring fluoxetine. There is no indication that any analysis was suppressed or selectively omitted based on unfavourable results; rather, the authors transparently present all analyses performed, which reinforces rather than undermines the robustness of the finding. The registered protocol outcome definition is brief ("Progression in the Fugl-Meyer Motor Scale") without detailed prespecified statistical methods, but the manuscript's full and consistent reporting of all analyses (primary, adjusted, and sensitivity) argues against selective reporting on the basis of results.
+
+Correct answer: Probably no

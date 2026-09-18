@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26530748
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Rutten, 2015 (PORTEC-2 Long-Term HRQL analysis)
+**Outcome Name**: EORTC QLQ-C30 Global health
+**Registration number**: Not reported in this article
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+Reason: This article does not describe the method of sequence generation itself; it refers to "previous publications" (refs 6, 13) for details of the PORTEC-2 trial design. No specific method (e.g., computer-generated randomization, block randomization) is described within this article.
+
+**1.2**: NI (85%)
+Reason: No mention of allocation concealment (e.g., central allocation, sealed envelopes) is provided in this article.
+
+**1.3**: NI (80%)
+Reason: The article reports that "Responders at 7 years were slightly younger and had fewer comorbidities compared with the whole PORTEC-2 cohort; no other significant differences were found," but this compares responders vs. the whole cohort, not baseline differences between the EBRT and VBT randomized arms. No information on baseline imbalance between the two randomized arms is given.
+
+**Result of Domain 1**: Some concerns (85%)
+Reason: 1.2 = NI and 1.3 = NI → per algorithm, this combination yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (90%)
+Reason: PORTEC-2 was an open-label trial (EBRT vs. VBT), physically distinguishable treatments; participants would necessarily be aware of their assigned treatment.
+
+**2.2**: Y (90%)
+Reason: Same rationale as 2.1 — open-label trial with clinicians/radiotherapists aware of which treatment (external vs. vaginal) was being delivered.
+
+**2.3**: NI (70%)
+Reason: No information provided regarding non-protocol interventions or their balance across groups.
+
+**2.4**: NI (70%)
+Reason: No explicit data on treatment implementation failures is provided in this HRQL-focused article (focus is on questionnaire response, not treatment delivery failures).
+
+**2.5**: NI (70%)
+Reason: No information on non-adherence to assigned radiotherapy regimen is provided.
+
+**2.6**: NI (75%)
+Reason: The analysis used linear mixed models based on randomized assignment groups; this is effectively an ITT-type approach, but no explicit statement of analysis type (ITT/per-protocol) is provided. Per instructions, NI in this context leads to further check — no explicit statement of ITT/PP found, retained as NI.
+
+**Result of Domain 2**: High risk (85%)
+Reason: One of 2.1/2.2 = Y, 2.3 = NI, and 2.6 = NI → per algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: N (90%)
+Reason: Of 427 randomized patients, only 202 evaluable 7-year questionnaires (and 80 10-year) were obtained. This represents well under 90% of the randomized population with complete continuous outcome data.
+
+**3.2**: N (90%)
+Reason: No inverse probability weighting, sensitivity analysis, or other bias-correction method was used to address missing outcome data.
+
+**3.3**: PY (70%)
+Reason: Eligibility for follow-up required patients to be "alive and disease-free"; the discussion further notes that older, more comorbid patients were more likely to have died, and QoL/global health is plausibly related to health status, though not explicitly confirmed as directly tied to the global health score itself.
+
+**3.4**: Y (75%)
+Reason: The discussion explicitly states that non-responders were more likely to be older with more comorbidities, and that mortality was more likely in this subgroup — suggesting missingness is related to the true value of the global health outcome measure.
+
+**Result of Domain 3**: High risk (85%)
+Reason: 3.1 = N, 3.2 = N, 3.3 = PY, 3.4 = Y → per algorithm, yields "High risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95%)
+Reason: EORTC QLQ-C30 is a validated, widely used, reliable instrument for measuring HRQL/global health.
+
+**4.2**: N (90%)
+Reason: The same questionnaire was administered to both groups at the same time points (7 and 10 years) with identical methodology.
+
+**4.3**: Y (90%)
+Reason: This is a patient-reported outcome, and participants were aware of their treatment assignment (open-label trial).
+
+**4.4**: Y (90%)
+Reason: Global health is a subjective, patient-reported outcome, and patients were aware of their allocation, which could influence assessment.
+
+**4.5**: N (70%)
+Reason: No clear evidence is provided indicating that knowledge of treatment assignment actually influenced the reporting of the global health outcome; results in fact showed no significant difference in this scale, and per instructions, absence of clear evidence defaults to "N."
+
+**Result of Domain 4**: Some concerns (85%)
+Reason: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, 4.5 = N → per algorithm, yields "Some concerns."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (80%)
+Reason: No trial registration number or pre-specified statistical analysis plan is cited in the article; per instructions, absence of registration/plan info defaults to "NI."
+
+**5.2**: N (85%)
+Reason: EORTC QLQ-C30 Global health is a single, standard predefined scale; there is no evidence of multiple eligible outcome measurements being available and selectively reported.
+
+**5.3**: N (85%)
+Reason: A single, prespecified analytic approach (linear mixed models with Wald test, threshold P<.01) was applied consistently to this outcome; no evidence of multiple analyses being conducted with selective reporting.
+
+**Result of Domain 5**: Some concerns (85%)
+Reason: 5.2 = N, 5.3 = N, 5.1 = NI → per algorithm, yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (90%)
+
+Reason: Domains 2 and 3 were both rated "High risk." Per the algorithm, if at least one domain is rated "High risk," the overall risk-of-bias assessment for the article is "High Risk."

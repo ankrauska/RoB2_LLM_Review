@@ -1,0 +1,85 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 20159292
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: COMICE Trial (Reoperation Rate Outcome)
+
+**Preliminary considerations:** This is an individually-randomized parallel-group trial. Experimental intervention = MRI + triple assessment; Comparator = triple assessment alone. Outcome assessed = reoperation rate (repeat operation, further mastectomy within 6 months, or pathologically avoidable mastectomy at initial operation). Effect of interest = effect of assignment to intervention (intention-to-treat effect), per instructions.
+
+---
+
+## 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- *Sequence generation:* Random—"Patients were randomised to receive either MRI or no further imaging (no MRI) on a 1:1 basis, with a minimisation algorithm incorporating a random element." Minimization algorithms are considered to have a random component per RoB2 guidance (Y).
+- *Allocation concealment:* Adequate—"Randomisation was administered by the University of Leeds Clinical Trials Research Unit's automated 24-hour telephone randomisation system." Central, remote randomization system, independent of enrolling personnel (Y).
+- *Baseline imbalance:* Table 1 shows groups well balanced on age, breast density, menopausal status, HRT/contraceptive use, surgeon recruitment volume. Text states: "Characteristics were well balanced between the groups." No evidence of problems with randomization.
+
+All three signalling questions support low risk (sequence random = Y; allocation concealed = Y; baseline imbalance suggesting problem = N).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- *Awareness:* This was an "open, parallel group trial"—participants, carers, and personnel were aware of intervention assignment (Y to both 2.1 and 2.2). Blinding was not feasible given the nature of the intervention (MRI vs no MRI).
+- *Deviations arising from trial context:* There is evidence of cross-over/deviation: in the no-MRI group, 9 patients (798 did not receive MRI, but "9 received MRI: 6 on patient request, 3 on clinician request" per trial profile). This suggests some deviations attributable to trial context (patient/clinician request), though the numbers are small (9/807, ~1%).
+- *Effect on outcome:* It is plausible these deviations could affect the outcome (since MRI findings could change management), but the numbers are minimal and unlikely to bias the overall result substantially.
+- *Balance:* These deviations are not exactly "balanced" (all occurred in one direction—crossover into MRI from the no-MRI arm), but given the very small numbers (9 patients), impact is likely negligible.
+- *Analysis:* An appropriate intention-to-treat analysis was used: "Analysis was by intention to treat." Patients were analyzed according to randomized group regardless of actual MRI receipt (e.g., the 9 patients who received MRI in the "no MRI" arm remained analyzed in that arm). This satisfies principles of ITT analysis (Y to appropriate analysis question).
+
+Because there was an unblinded design with a small, non-trivial number of unbalanced deviations (crossovers) that could plausibly affect the outcome, but the analysis was appropriate (ITT) and deviations were few, this is judged as "Some concerns" rather than "Low" or "High."
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Outcome data were available for nearly all randomized participants. Per Figure 1: 816/816 analyzed in MRI group (with only 2 unable to identify MRI receipt status, unrelated to outcome ascertainment) and 807/807 analyzed in no-MRI group for the primary endpoint.
+- Only small numbers were lost to follow-up: "4 lost to follow-up" in MRI group and "6 lost to follow-up" in no-MRI group, out of 816 and 807 respectively (<1%).
+- The paper explicitly states: "Those who were lost to follow-up were classified as not having a primary-endpoint event" — a pre-specified, transparent handling of missing data.
+- Given the very low proportion of missing data (<1% in each arm) relative to the event rate (19%), the missing data could not have made an important difference to the estimated effect. This satisfies the "nearly all" criterion for low risk.
+- No evidence of differential loss to follow-up between groups that would suggest missingness related to the true outcome value.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- *Appropriateness of method:* The outcome (reoperation rate) was measured via review of surgical/pathology records according to standardized definitions ("Histopathological assessment of excised specimens was done at every participating centre in accordance with guidelines in the NHS BSP publication") and pre-specified DMEC criteria for "pathologically avoidable mastectomy." This is an appropriate, objective method (N to 4.1).
+- *Comparability of measurement between groups:* The same follow-up protocol, pathology reporting guidelines, and definitions of clear margins (defined locally, in advance, and applied to both arms) were used for both groups—"Local definitions were applied to both trial groups." Follow-up schedule (6 and 12 months, then yearly) was identical across arms. Thus measurement did not differ between intervention groups (N to 4.2).
+- *Outcome assessor awareness/blinding:* Outcome assessors (surgeons deciding on reoperation, pathologists) were not blinded to the MRI result, since MRI findings directly informed the surgical decision itself in the intervention arm. However, this is an objective outcome (reoperation—a decision recorded and confirmed by pathology, akin to an "observer-reported outcome not involving much subjective judgement" once the decision is made) and adjudication used pre-specified, objective DMEC criteria applied retrospectively and reviewed by an independent DMEC: "Imaging findings from patients undergoing a mastectomy at initial operation were reviewed every 12 months in conjunction with histopathological findings by the DMEC to identify any false-positive MR findings." Additionally, a masked independent radiologist conducted quality assurance re-reading of MRI scans ("This process was completed by an independent radiologist, who was masked to the original MRI findings").
+- Because reoperation is a fairly objective outcome determined by documented pathology findings against pre-specified, DMEC-adjudicated criteria that were applied uniformly and reviewed independently, it is unlikely that lack of blinding of the treating surgeon influenced the ascertainment of whether reoperation occurred.
+
+This supports a judgement of low risk, since although personnel were unblinded, the outcome measurement itself was objective and independently adjudicated using pre-specified criteria consistently applied across groups.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial was registered prospectively (ISRCTN57474502), and the primary outcome (reoperation rate) is clearly pre-specified in both the registration and the published protocol/methods section, consistent with the reported primary analysis.
+- Sample size calculation and power justification given in the Methods correspond directly to the primary outcome analyzed and reported ("With an assumption that the addition of MRI would reduce the overall primary-endpoint rate from about 15% to 10%, we needed 1840 patients...").
+- The statistical analysis for the primary outcome (logistic regression adjusting for minimisation factors) is pre-specified in the Methods section and matches what is reported in Results, with no evidence of alternative reoperation-rate analyses being selectively reported.
+- There is no indication that multiple alternative definitions/measurements or analyses of the reoperation-rate outcome were tried and only a favorable one reported. The single, clearly defined composite outcome (repeat operation/further mastectomy within 6 months, or pathologically avoidable mastectomy at initial surgery) was consistently used, with its components clearly justified in the Methods and reported in full in Table 3.
+- Subgroup and secondary analyses (tumor type, age) were explicitly labeled as "prespecified exploratory" or "ad-hoc exploratory," transparently distinguishing pre-planned from post-hoc analyses.
+
+Given consistency between the trial registry entry/protocol-described primary outcome and the analysis reported, with no evidence of selection among multiple outcome definitions or analytic approaches for this specific outcome, risk of bias is low.
+
+---
+
+## Overall Risk of Bias for Reoperation Rate Outcome: **Some concerns**
+
+Per RoB 2.0 guidance (Table 1), since Domain 2 (deviations from intended intervention) was judged as "Some concerns" and no domain was judged "High risk," the overall judgement for this outcome is **Some concerns**.

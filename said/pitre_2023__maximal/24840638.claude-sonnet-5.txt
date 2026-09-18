@@ -1,0 +1,76 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 24840638
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Smoking abstinence by breath CO sample < 3 ppm
+## Effect of interest: Effect of assignment to intervention
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of information on allocation concealment, combined with an unusual randomization procedure and one notable baseline imbalance.
+
+**b. Rationale:**
+- **Sequence generation:** The method described suggests a random element was used: "Random assignment to one of the three groups was accomplished by randomly assigning 2 participants to the percentile group, 2 to the fixed criterion group and 1 to the random incentives group from each group of 5 participants completing intake." This is a form of restricted/block randomization (blocks of 5), which is an acceptable random method → **Yes** to signalling question 1.1.
+- **Allocation concealment:** No information is provided about how the allocation sequence was concealed from personnel enrolling participants. Given that block size was fixed (blocks of 5, with a known ratio of 2:2:1), and given no mention of a central/independent randomization mechanism, there is a risk that study personnel could predict upcoming allocations, particularly toward the end of each block of 5. This raises concern, but is not sufficient by itself to escalate to "high" absent explicit evidence of manipulation → **No information/Probably No** to signalling question 1.2.
+- **Baseline imbalance:** Table 1 and the text show groups were largely similar, but there was a statistically significant difference in education: "A higher proportion of percentile incentive participants achieved this level of education [Vocational/Technical School/Community College], relative to fixed criterion participants (χ2 = 8.46, p < 0.01)." This is a moderately low p-value but only one variable among many tested, and education is not established as a strong prognostic factor for the objectively measured outcome (breath CO). This alone does not meet the threshold of "very unlikely to be due to chance" causing meaningful confounding, but combined with concealment uncertainty, contributes to some concern → **No/Probably No** (not indicative of a fundamental randomization problem) to signalling question 1.3.
+- Combining: sequence was random (Yes), concealment unclear (No information), and no major imbalance issue (No) → maps to "Some concerns" per the algorithm (Table 4: Y/PY sequence, NI concealment, N/PN/NI imbalance → Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as lack of blinding is inherent to this type of CM design but is unlikely to reflect deviations arising from trial context that biased the objectively measured outcome, and an appropriate intention-to-treat-consistent analytic approach was used.
+
+**b. Rationale:**
+- **Awareness of assignment:** Participants and study personnel were clearly aware of intervention assignment: "Percentile incentive participants were told that the value of the breath CO changed to help them smoke less. Fixed criterion incentive participants were told that they could only earn incentives for not smoking. Random incentive participants were told that they would receive incentives only for attendance." Blinding was not feasible or intended in this design → **Yes** to 2.1 and 2.2.
+- **Deviations arising from trial context:** There is no evidence that non-protocol interventions or trial-context-driven deviations (e.g., co-interventions, differential clinical management) occurred because of participants' or staff's awareness of allocation. The primary "deviations" discussed in the paper (i.e., differing patterns of smoking/abstinence) are the actual behavioral outcomes under investigation, not deviations from the delivery of the assigned incentive schedule itself. The incentive schedules were mechanically and consistently applied as specified (fixed monetary contingencies tied directly to breath CO results) — there is no indication that carers/personnel altered delivery of the incentive intervention based on trial context → **No** to 2.3.
+- Because 2.3 = No, questions 2.4/2.5 are not applicable.
+- **Appropriate analysis:** The analyses included essentially all randomized/eligible HTT participants within each group for the outcomes assessed (e.g., proportion achieving at least one abstinent sample used the full randomized N per group: 36, 40, 18), consistent with an intention-to-treat approach for this behavioral/attendance-based outcome. There is no indication of post-randomization exclusion of eligible participants or "as-treated"/naïve per-protocol analysis for this specific outcome → **Yes** to 2.6.
+- Overall: Part 1 = Low (aware, but no deviations from trial context), Part 2 = Low (appropriate analysis) → **Low risk of bias**.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns due to substantial and differential missing data (non-attendance) across groups without evidence that this did not bias the result.
+
+**b. Rationale:**
+- **Data availability:** Attendance was incomplete for many participants: "The average number of delivered breath CO samples per participant (out of 60) was 42 (SD = 22), 40 (24), and 52 (19) for the percentile, fixed criterion and random incentive groups, respectively." This indicates a substantial proportion of visits were missed by many participants (up to 60 possible visits), and Figure 1 explicitly displays "white areas represent missed visits" as a notable feature of the data → **No** to signalling question 3.1 (data were not available for all/nearly all scheduled assessments).
+- **Evidence result not biased:** No imputation or sensitivity analyses addressing missing visit data were reported. The analysis appears to be based on available/completed visits rather than an approach accounting for missing samples (e.g., no worst-case/best-case sensitivity analysis, no multiple imputation) → **No** to 3.2.
+- **Could missingness depend on true value:** It is plausible that missingness (non-attendance) is related to smoking status — participants who resumed heavy smoking may be more likely to avoid returning for testing (to avoid an unfavorable/non-earning result), a classic concern in CM studies. The paper does note a statistically significant difference in number of delivered samples between groups (H = 8.57, df(2), p < 0.02), although not significant specifically between percentile and fixed criterion (z = −0.10, p = 0.92) → **Yes** to 3.3.
+- **Likely depends on true value:** While plausible, there is no strong direct evidence (e.g., differential reasons for missingness reported by group tied explicitly to smoking status) that missingness definitively depended on true smoking/abstinence status, and the group-level difference in attendance was not significant between the two primary comparison groups of interest (percentile vs. fixed criterion) → **No/Probably No** to 3.4.
+- This combination (data not complete, no evidence of no bias, missingness could depend on true value, but not clearly likely to) maps to **Some concerns** per Table 10.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias because the outcome was measured objectively using a validated, standardized method applied identically across all groups.
+
+**b. Rationale:**
+- **Appropriateness of method:** Breath CO was measured using a standardized, objective instrument: "Vitalograph CO monitors (Vitalograph Inc. Lenexa, KS) were used to take breath CO samples... The peak breath CO reading was taken as the participant's breath CO level." This is a validated method referenced to prior literature (Henningfield et al., 1980; Javors et al., 2005) and is not an inappropriate method for measuring smoking abstinence → **No** to 4.1.
+- **Differential measurement between groups:** The same CO monitor and measurement protocol were used identically for all three groups at each of the up to 60 visits, following the same procedure (deep breath, hold 20 sec, expire over 20 sec) → **No** to 4.2.
+- **Outcome assessor awareness:** This is an "observer-reported outcome not involving judgement" (an automated/objective test reading), similar to a lab test. Although staff recording the breath CO were not described as blinded (and could not be, since incentive delivery depended immediately on the result), this is an objective, automated measurement with no room for subjective interpretation — the CO monitor produces a numeric reading regardless of assessor beliefs → **Yes/Probably Yes** to 4.3 (aware), but 4.4: **No/Probably No**, because the measurement itself (breath CO ppm reading from a calibrated device) could not be influenced by knowledge of intervention assignment.
+- Given the outcome is objective and not subject to assessor judgment, lack of blinding of assessors does not introduce risk of bias here → **Low risk of bias**.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias, as the outcome and analytic approach reported correspond to a pre-specified, primary abstinence definition consistently used across the study and consistent with prior work by the same research group, with no evidence of selection among multiple alternative outcome definitions or analyses.
+
+**b. Rationale:**
+- The abstinence criterion (breath CO < 3 ppm) was defined a priori and consistently applied throughout the study, including during the initial classification (HTT) phase and the incentive intervention phase: "We used an abstinence breath CO criterion of < 3 ppm based on our previous smoking cessation studies (Javors, Hatch & Lamb, 2005)." This is the sole, consistently used definition of abstinence throughout the paper — there is no indication that multiple CO thresholds or alternative measures of abstinence were assessed and selectively reported.
+- Multiple related endpoints are reported transparently and consistently (proportion achieving ≥1 abstinent sample, time to first abstinent sample, total number of abstinent samples, consecutive abstinent samples, earnings) using consistent non-parametric statistical methods (Kruskal-Wallis, Mann-Whitney, chi-square) described uniformly in the Data Analysis section, suggesting a consistent analytic approach rather than selective reporting based on results.
+- No trial registration information was provided/available to compare against (per the task instructions, registration information was referenced but no discrepancies are noted here); based on the internal consistency of the reported methods and outcome definition, and the consistent application of statistical tests across all comparisons (including non-significant ones, which were reported, e.g., "there was no difference... (all χ2 tests, p > 0.05)"), there is no clear evidence of selective reporting → **No** to signalling questions 5.2 and 5.3.
+
+---
+
+# Overall Risk of Bias Judgement: **Some concerns**
+
+**Rationale:** No domain was judged "high risk of bias," but two domains ("bias arising from the randomization process" and "bias due to missing outcome data") were judged to raise "some concerns." Per RoB 2.0 guidance (Table 1), a study with "some concerns" in at least one domain, but not high risk in any domain, is judged overall as **"Some concerns."** The combination of unclear allocation concealment and substantial, differentially-distributed missing outcome data (non-attendance) across three arms modestly lowers confidence in the trial's estimate of the effect of assignment to intervention on smoking abstinence, though neither issue rises to the level of high risk of bias individually.

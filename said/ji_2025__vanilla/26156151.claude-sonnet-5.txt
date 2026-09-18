@@ -1,0 +1,240 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 26156151
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"Using an interactive web-based response system, study participants were randomly assigned and stratified by participating center."
+"patients with a CTO fulfilling study criteria were randomly assigned in a 1:1 ratio to IVUS or angiography guidance, and then randomly assigned again in a 1:1 ratio (2×2 design) to Endeavor Resolute Integrity zotarolimus-eluting stents (R-ZES) or Nobori biolimus-eluting stents (N-BES)."
+
+Analysis: The article states that randomization was performed using an interactive web-based response system with stratification by center. This indicates a centralized, computer-based allocation system, which is a well-established method that inherently incorporates a random element (such as computer-generated random sequences) in the generation of the allocation sequence. Although the paper does not explicitly describe the specific algorithm (e.g., random number generator) used within the web-based system, the use of an interactive web-response system for randomization is standard practice in rigorous multicenter RCTs and strongly implies a random component was used, as opposed to a systematic or predictable method. There is no evidence suggesting alternation, date-based allocation, or clinician/participant-driven allocation, which would suggest non-random methods. Given the specificity of the described randomization procedure (web-based system with stratification), this is more informative than a bare statement of "randomized," but it stops short of explicitly confirming the random number generation process itself.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"Using an interactive web-based response system, study participants were randomly assigned and stratified by participating center."
+
+Analysis: The trial used an interactive web-based response system (IWRS) for randomization, which is a centrally administered, independent allocation method. This type of system ensures that allocation is controlled externally and sequentially, independent of the enrolling investigators, and is generally considered adequate for concealment of allocation since the sequence cannot be predicted or manipulated by site personnel. This satisfies the criteria for a "Yes" judgment as explicitly described in the explanation (remote or centrally administered method, e.g., internet-based randomization service). There is no indication of any lapse in this concealment process.
+
+Correct answer: Yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"The groups (IVUS versus angiography) were well matched for baseline clinical and angiographic characteristics without significant differences (Table 1). However, high-pressure poststent balloon dilation was more frequently performed with a greater maximal poststent balloon pressure in the IVUS-guided group than the angiography-guided group (51.2% versus 41.3%; P=0.045). On QCA, postprocedural minimum lumen diameter (MLD) was significantly greater in the IVUS-guided group than in the angiography-guided group (2.64±0.35 versus 2.56±0.41 mm; P=0.025)."
+"In the comparison between R-ZES and N-BES, there was no significant difference of baseline clinical, angiographic, and procedural characteristics including QCA (Table 2)."
+Group sizes: IVUS n=201 vs angiography n=201 (intended 1:1 ratio).
+
+Analysis: Group sizes exactly match the intended 1:1 allocation ratio, so there is no imbalance there. Baseline clinical, demographic, and angiographic characteristics (Table 1) show no significant differences between groups—the two significant differences found (high-pressure poststent dilation and postprocedural MLD) are procedural/post-randomization variables, not baseline prognostic factors, and thus reflect the intervention itself (IVUS guidance influencing procedural decisions) rather than a flaw in randomization. Given 20+ baseline variables compared, finding 0 significant baseline differences is well within chance expectations and does not suggest excessive similarity or an imbalance problem. The DES comparison (Table 2) likewise shows no significant baseline differences. There is no evidence of an excess of statistically significant differences, no imbalance in key prognostic factors affecting outcome estimation, and no unusual excessive similarity beyond chance. Therefore, there is no indication that baseline differences suggest a problem with the randomization process.
+
+Correct answer: No
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+"Using an interactive web-based response system, study participants were randomly assigned and stratified by participating center." "In patients assigned to the IVUS-guided group, it is strongly recommended to follow the below criteria..." Masking info: "masking": "SINGLE", "whoMasked": ["INVESTIGATOR"]. No mention of blinding of participants; the intervention itself (IVUS use during PCI vs angiography-only) is a procedural difference that would be evident to the treating team and likely to patients as well, since IVUS guidance involves an additional intravascular device use during the procedure, but no explicit statement about participant blinding is provided in the article.
+
+Analysis: The trial's masking information indicates only the investigator was blinded ("whoMasked": ["INVESTIGATOR"]), with no mention of participant blinding. The intervention involves use of IVUS device during PCI, which is a physical, invasive difference in procedure that would be difficult to conceal from participants (e.g., awareness of an additional intravascular ultrasound catheter being used, potential differences in procedure time, imaging use). No placebo or sham IVUS procedure was described, and the article does not report any blinding of patients to their treatment allocation. Given the nature of the intervention (procedural, device-based) and the explicit report that masking was single (investigator-blinded only), it is highly likely that participants were aware of their assigned intervention (IVUS-guided vs angiography-guided).
+
+Correct answer: Yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+- "This study was designed to test the hypothesis that IVUS-guided CTO intervention is superior to angiography-guided intervention" (open-label comparison of IVUS vs angiography guidance during PCI).
+- Procedure and Randomization: "Using an interactive web-based response system, study participants were randomly assigned and stratified by participating center... IVUS devices, pullback methods, use at poststenting and prestenting, and numbers of exams were all left to the discretion of physicians."
+- Protocol maskingInfo: "masking": "SINGLE", "whoMasked": ["INVESTIGATOR"] — indicating only assessors/investigators (clinical event committee) were blinded, not the treating physicians.
+- "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization" — this blinding applies only to outcome assessors, not to the treating interventionalists.
+- High-pressure poststent balloon dilation was more frequent in the IVUS group, and postprocedural MLD differed, consistent with operators knowing which imaging modality (IVUS vs angiography) was being used to guide the procedure — this is an inherent, unblindable difference in intervention delivery.
+
+Analysis:
+The intervention itself (use of IVUS during the procedure vs. angiography alone) is directly visible to the interventional cardiologist performing the PCI, as IVUS catheter use is an overt physical part of the procedure. There is no mention of any attempt to blind operators/interventionalists (e.g., sham IVUS runs) to the allocated strategy. The protocol explicitly states masking was "SINGLE" with only investigators (likely referring to outcome assessors/clinical event committee) blinded — not the treating physicians/carers delivering the intervention. Given the nature of the intervention (presence or absence of IVUS device use), it is essentially impossible to blind the operators performing the procedure. Therefore, carers/people delivering the intervention were certainly aware of the assigned intervention.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+- "In patients assigned to the IVUS-guided group, it is strongly recommended to follow the below criteria... IVUS devices, pullback methods, use at poststenting and prestenting, and numbers of exams were all left to the discretion of physicians."
+- "However, high-pressure poststent balloon dilation was more frequently performed with a greater maximal poststent balloon pressure in the IVUS-guided group than the angiography-guided group (51.2% versus 41.3%; P=0.045)."
+- "In the IVUS-guided group, there are no standardized methods for IVUS evaluation or management guideline according to the procedural steps and no detailed data on the additional therapeutic actions according to the IVUS findings."
+- "All enrolled patients received a detailed explanation on this study including the processes of study and potential complications of CTO procedures, and then provided the written informed consent form before randomization."
+- "There were no complications related with IVUS evaluation."
+
+Analysis: The trial procedures (IVUS criteria, high-pressure ballooning, stent optimization) were part of the protocol itself, not deviations arising from trial context. The difference in high-pressure poststent dilation between groups reflects protocol-consistent practice (physician response to IVUS findings), not a deviation from assigned intervention due to trial context (e.g., participants seeking alternative treatment because of awareness of allocation). There is no evidence that recruitment/consent processes led participants or personnel to deviate from assigned intervention in ways inconsistent with the protocol. The single-blinded design (investigator masking only, not participants) and lack of reported crossover, non-adherence complaints, or contamination suggest no contextual deviations occurred. However, the article does not explicitly discuss whether trial context caused deviations from intended intervention (e.g., no mention of patients switching arms, no discussion of Hawthorne effects, no reported protocol violations due to trial engagement). This absence of explicit reporting means we cannot confirm either presence or absence of context-driven deviations.
+
+Correct answer: No information
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+- "The intention-to-treat principle was used in all analyses."
+- "high-pressure poststent balloon dilation was more frequently performed with a greater maximal poststent balloon pressure in the IVUS-guided group than the angiography-guided group (51.2% versus 41.3%; P=0.045). On QCA, postprocedural minimum lumen diameter (MLD) was significantly greater in the IVUS-guided group than in the angiography-guided group (2.64±0.35 versus 2.56±0.41 mm; P=0.025)."
+- "IVUS devices, pullback methods, use at poststenting and prestenting, and numbers of exams were all left to the discretion of physicians."
+- Author discussion: "These improved outcomes for the IVUS-guided group could not be explained by a single predominant factor... a larger postprocedural MLD... one of the main contributing factors to the improved outcome."
+
+Analysis: There is no report of major protocol deviations such as crossovers, non-adherence to assigned IVUS/angiography guidance, or unplanned co-interventions that were inconsistent with the protocol. The differences noted (poststent high-pressure ballooning, MLD) are consequences of the IVUS-guided strategy itself (i.e., part of the intended intervention effect, since IVUS findings legitimately guide stent optimization) rather than deviations from assigned intervention. The IVUS procedural approach (pullback methods, timing, number of exams) was left to physician discretion, which was specified in the protocol itself, not a deviation. No unplanned crossovers between groups, no failure to adhere to allocated intervention, and no other contextual deviations affecting outcome are reported. Analysis was per intention-to-treat with full follow-up (99.5–100%), and no differential dropout or co-intervention issues are described that would bias the effect estimate. Therefore, there is no evidence of deviations from intended intervention likely to have affected the outcome.
+
+Correct answer: No
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences: "high-pressure poststent balloon dilation was more frequently performed with a greater maximal poststent balloon pressure in the IVUS-guided group than the angiography-guided group (51.2% versus 41.3%; P=0.045)"; "postprocedural minimum lumen diameter (MLD) was significantly greater in the IVUS-guided group than in the angiography-guided group (2.64±0.35 versus 2.56±0.41 mm; P=0.025)"; "IVUS devices, pullback methods, use at poststenting and prestenting, and numbers of exams were all left to the discretion of physicians"; "In the IVUS-guided group, there are no standardized methods for IVUS evaluation or management guideline according to the procedural steps."
+
+Analysis: The article reports that certain procedural deviations from the protocol—specifically higher use of high-pressure poststent ballooning and greater postprocedural minimum lumen diameter—were significantly more common in the IVUS-guided group than in the angiography-guided group. These are context-driven deviations related to differential management based on IVUS findings, which by design and effect were not balanced between groups. The imbalance was statistically significant (P=0.045 for high-pressure ballooning; P=0.025 for postprocedural MLD), indicating that intervention-related deviations occurred more frequently in one arm, potentially confounding the intervention effect. The authors themselves acknowledge this imbalance as a possible contributor to the observed outcome differences, and identify it as a limitation impacting interpretation of the causal pathway.
+
+Correct answer: No
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences:
+"The intention-to-treat principle was used in all analyses."
+"Mean follow-up duration was 359±34 days in the IVUS-guided group and 359±37 days in the angiography-guided group (P=0.907); 200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up."
+
+Analysis: The study explicitly states that the intention-to-treat principle was applied in all analyses, meaning patients were analyzed according to their randomized assignment rather than the treatment actually received. Nearly all randomized patients (200/201 in IVUS group, 201/201 in angiography group) completed follow-up and were included in the analysis, with minimal missing data. There is no indication of per-protocol or as-treated analysis, nor post-randomization exclusion of eligible participants. This aligns with the definition of an appropriate ITT (or near-complete ITT) analysis as described in the explanation.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"The intention-to-treat principle was used in all analyses."
+"200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up."
+
+Analysis: The study explicitly states that intention-to-treat analysis was used, meaning participants were analysed according to their randomized group assignment rather than the treatment they actually received. Follow-up was nearly complete (99.5% and 100%), with only 1 patient lost to follow-up in the IVUS group. There is no indication of participants being analysed in the wrong group or excluded from the analysis in a way that could bias results. Given the near-complete follow-up and adherence to ITT principles, there is minimal potential for the failure to analyse participants in their randomized group to have substantially impacted the results.
+
+Correct answer: No
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"402 patients in total... were finally enrolled and randomized"; "200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up"; "The intention-to-treat principle was used in all analyses."
+
+Analysis: Of the 402 randomized patients, outcome data were available for 401 (200/201 in IVUS-guided group and 201/201 in angiography-guided group) at the 12-month follow-up, corresponding to the primary and secondary outcomes (cardiac death and MACE). Only 1 patient (0.25%) was lost to follow-up, which is well within the "nearly all" threshold (>95% availability for dichotomous/continuous outcomes). Given the low overall event rate but even lower missing data rate, this single missing participant could not meaningfully bias the estimated effect. The intention-to-treat principle was explicitly applied, supporting that data were available for nearly all randomized participants.
+
+Correct answer: Yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+"200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up."
+"The intention-to-treat principle was used in all analyses."
+"Mean follow-up duration was 359±34 days in the IVUS-guided group and 359±37 days in the angiography-guided group (P=0.907)"
+
+Analysis: Missing outcome data was minimal (only 1 patient out of 402, i.e., 0.5% in the IVUS group) and virtually balanced between groups. With such a low overall attrition rate (<1%), the risk of bias due to missing outcome data is negligible regardless of the reason for the single missing follow-up. The intention-to-treat principle was applied. Given the extremely low and balanced missingness, it is very unlikely that this could meaningfully bias the result, even without formal sensitivity analyses or imputation methods explicitly correcting for bias.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences:
+"Mean follow-up duration was 359±34 days in the IVUS-guided group and 359±37 days in the angiography-guided group (P=0.907); 200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up."
+
+Analysis: Only one patient (0.5%) in the IVUS-guided group was lost to follow-up, with essentially complete outcome data (99.5% and 100%) across both groups. There is no indication that this single missing outcome was related to the patient's health status or the true outcome value. Given the negligible amount of missing data and the intention-to-treat analysis with virtually complete follow-up, it is very unlikely that missingness could be related to the true outcome value.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+"200 patients of IVUS-guided group (99.5%) and 201 patients (100%) in the angiography-guided group finished 12-month clinical follow-up." "The intention-to-treat principle was used in all analyses."
+
+Analysis: Only 1 patient (0.5%) out of 402 total was lost to follow-up in the IVUS-guided group, and 0 patients were missing in the angiography-guided group. This is an extremely low, negligible amount of missing outcome data. There is virtually no meaningful difference in missingness between groups, no reported reasons suggesting missingness related to true outcome value, and no plausible mechanism by which such a minimal single dropout could bias the result. Given the very low overall missingness (<1%) and near-complete follow-up in both arms, it is not likely that missingness depended on the true outcome value.
+
+Correct answer: No
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences:
+- "The prespecified primary end point was the occurrence of cardiac death. The secondary end point was the major adverse cardiac event (MACE) defined as the composite of cardiac death, myocardial infarction (MI), or target-vessel revascularization at 12 months."
+- "MI was defined as the presence of clinical symptoms, electrocardiographic changes, or abnormal imaging findings associated with MI combined with an increase in creatine kinase-MB above the upper normal limit or troponin T/I greater than the 99th percentile of the upper normal limit, unrelated to an interventional procedure."
+- "Target-vessel revascularization was defined as repeat PCI or bypass surgery of the target vessel with ischemic symptoms or positive stress test results as well as lesion severity of >50% angiographic diameter stenosis by quantitative angiographic analysis (QCA)."
+- "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization."
+- "Overall, this study showed low event rates, especially for cardiac death and MI, and small differences in clinical outcomes with marginal statistical significances."
+
+Analysis:
+The outcomes (cardiac death, MACE, MI, target-vessel revascularization) are objective, clinically standard endpoints defined using established, validated criteria (Academic Research Consortium and Universal Definition of MI). These measurement methods are standard in cardiovascular RCTs and are sensitive to detecting clinically meaningful differences in intervention effects, as evidenced by the trial detecting a significant difference in MACE between groups. There is no indication that the measurement methods (clinical event adjudication, standardized definitions, angiographic QCA for revascularization decisions) are invalid or insensitive to plausible intervention effects. The domain risk assessment status is "not yet assessed," but the underlying methodology described is consistent with appropriate, validated outcome measurement methods used in cardiology trials. No evidence suggests poor validity or insensitivity of the measurement approach.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization."
+"All data were collected using a web-based system, and clinical follow-up was performed at 1, 3, 9, and 12 months after the index procedure either by clinic visit or by telephone contact."
+"MI was defined as the presence of clinical symptoms, electrocardiographic changes, or abnormal imaging findings associated with MI combined with an increase in creatine kinase-MB above the upper normal limit or troponin T/I greater than the 99th percentile of the upper normal limit, unrelated to an interventional procedure."
+"Target-vessel revascularization was defined as repeat PCI or bypass surgery of the target vessel with ischemic symptoms or positive stress test results as well as lesion severity of >50% angiographic diameter stenosis by quantitative angiographic analysis (QCA)."
+
+Analysis: The outcomes (cardiac death, MI, target-vessel revascularization, MACE) were assessed using clearly prespecified, objective, and standardized definitions applied identically to both intervention arms, following the same follow-up schedule (1, 3, 9, 12 months) regardless of group assignment. Importantly, all clinical events were adjudicated by a clinical event committee that was blinded to treatment allocation, which minimizes the possibility of differential ascertainment or detection bias between the IVUS-guided and angiography-guided groups. There is no indication that the IVUS group underwent additional monitoring visits or diagnostic testing that could have increased the likelihood of outcome detection compared to the angiography group. Therefore, measurement or ascertainment of the outcome is unlikely to have differed between intervention groups.
+
+Correct answer: No
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences: "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization." The primary outcome is cardiac death (a composite/adjudicated clinical outcome, not participant-reported), and MI/target-vessel revascularization definitions rely on objective clinical/angiographic/laboratory criteria adjudicated by this blinded committee. However, the treating physicians and possibly other personnel involved in clinical follow-up were not explicitly described as blinded, and no explicit statement indicates that the outcome assessors performing the actual outcome ascertainment (e.g., attending physicians recording events, or personnel obtaining angiographic/QCA measurements) were blinded to allocation, aside from the clinical event committee.
+
+Analysis: The article explicitly states that all clinical events were independently monitored and assessed by a clinical event committee blinded to randomization, supporting blinding of the key adjudicators for the primary and secondary composite outcomes (cardiac death, MI, target-vessel revascularization). This suggests the outcome assessors responsible for adjudicating these outcomes were unaware of the intervention assignment. Since the domain risk and analysis are described as "not yet assessed," we rely directly on the text, which provides clear information supporting blinding of the outcome assessment committee, satisfying the blinding criterion for this signaling question. There is no information suggesting that the committee was unblinded or that this blinding was compromised.
+
+Correct answer: No
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+- "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization."
+- "The prespecified primary end point was the occurrence of cardiac death." Secondary: MACE (composite of cardiac death, MI, or target-vessel revascularization).
+- Target-vessel revascularization was defined based on ischemic symptoms or positive stress test results as well as angiographic diameter stenosis by QCA, which involves an element of clinician/patient judgement.
+- MI diagnosis involves clinical symptoms and interpretation of ECG/imaging findings, which involves some judgement.
+- The study design (single masking, investigator masked) does not explicitly indicate outcome assessors/patients were blinded to treatment allocation regarding IVUS vs angiography guidance, which is an open interventional procedure difference that could be apparent to those assessing revascularization need or symptoms.
+
+Analysis:
+The primary outcome (cardiac death) is a hard, objective outcome unlikely to be influenced by knowledge of intervention assignment. However, the secondary outcome (MACE) includes MI and target-vessel revascularization, which involve some clinical judgement (e.g., symptom-driven revascularization decisions, interpretation of imaging/ECG for MI). Although a clinical event committee blinded to randomization adjudicated events centrally, the initial determination of symptoms warranting revascularization or clinical suspicion of MI at the site level could be influenced by the treating physician's awareness of whether IVUS or angiography guidance was used, given the open-label nature of the procedural intervention. This introduces potential for detection bias in some outcome components even though the committee itself was blinded. Since the domain risk and analysis have not yet been assessed and outcome measurement involves both objective (cardiac death) and judgement-based (MI, revascularization) components, knowledge of intervention allocation could plausibly influence assessment of some outcome components, but effective blinding of the adjudication committee reduces this risk somewhat.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+- "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization."
+- The outcomes assessed are cardiac death, MI, target-vessel revascularization, and stent thrombosis—objective, adjudicated clinical endpoints based on standardized definitions (Academic Research Consortium, universal MI definition).
+- Masking info indicates single masking (investigator), with no mention of blinding of outcome assessors/patients, but the clinical event committee adjudicating outcomes was explicitly blinded to randomization.
+
+Analysis:
+The primary and secondary outcomes (cardiac death, MACE components including MI, target-vessel revascularization) are hard clinical endpoints defined by objective, standardized criteria (biomarkers, ECG changes, angiographic stenosis thresholds) rather than subjective symptom reports. Critically, the article explicitly states that all clinical events were independently monitored and assessed by a clinical event committee that was blinded to treatment allocation. Since the assessors were blinded and the outcomes were objectively defined, knowledge of intervention assignment (IVUS vs angiography guidance) is unlikely to have influenced the outcome assessment.
+
+Correct answer: No
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+"The prespecified primary end point was the occurrence of cardiac death. The secondary end point was the major adverse cardiac event (MACE) defined as the composite of cardiac death, myocardial infarction (MI), or target-vessel revascularization at 12 months."
+"The intention-to-treat principle was used in all analyses."
+Protocol registration (NCT01563952) lists primary outcome as "event rate of cardiac death within 12 months" and secondary outcome as "Incidence of MACE," consistent with the published outcomes. No trial registry history, SAP document, or protocol amendments were provided to verify the timing of finalization relative to unblinding of outcome data.
+
+Analysis:
+The article reports prespecified primary and secondary endpoints (cardiac death and MACE) that match the registered outcomes in the trial registry (NCT01563952), suggesting consistency between planned and reported outcomes. However, there is no explicit statement or supplementary documentation (e.g., a dated statistical analysis plan, protocol version history, or amendments log) confirming that the analysis plan was finalized before unblinding of outcome data. The methods section describes standard statistical procedures (t-tests, chi-square, Kaplan-Meier, Cox model) but does not specify the timing of finalization of these analyses relative to data unblinding. Given the consistency between registered and reported outcomes but the absence of explicit confirmation of pre-unblinding finalization, the risk judgment leans toward "Probably yes," as there is reasonable but incomplete evidence supporting adherence to a pre-specified plan.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+"The prespecified primary end point was the occurrence of cardiac death." "The secondary end point was the major adverse cardiac event (MACE) defined as the composite of cardiac death, myocardial infarction (MI), or target-vessel revascularization at 12 months." These match the registered protocol outcomes: primary outcome "event rate of cardiac death within 12 months" and secondary outcome "Incidence of MACE after stent implantation." Both outcomes are single, well-defined composite/binary endpoints with a single time point (12 months), each assessed only in one way (no alternative scales, definitions, or additional time points reported or implied). The reported results (cardiac death 0% vs 1.0%, MACE 2.6% vs 7.1%) correspond exactly to the prespecified single primary and secondary endpoints, both fully reported regardless of statistical significance (cardiac death was non-significant but still fully reported).
+
+Analysis: There is clear correspondence between the protocol-specified outcomes (cardiac death, MACE) and the outcomes reported in the results, with only one definition and one time point (12 months) used for each. No evidence of multiple eligible measurements (e.g., alternative scales, different definitions, or multiple time points) from which selective reporting could have occurred. The non-significant primary outcome (cardiac death) was reported transparently alongside the significant secondary outcome, indicating no selective reporting behavior based on results.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences:
+- Protocol/registry specifies primary outcome as "event rate of cardiac death within 12 months" and secondary outcome as "Incidence of MACE" (composite of cardiac death, MI, or target-vessel revascularization).
+- The article's Methods state: "The prespecified primary end point was the occurrence of cardiac death. The secondary end point was the major adverse cardiac event (MACE) defined as the composite of cardiac death, myocardial infarction (MI), or target-vessel revascularization at 12 months."
+- The article fully reports both cardiac death (primary) and MACE (secondary) results, consistent with the prespecified plan, along with individual components (MI, TVR, stent thrombosis) all reported in Table 3 with hazard ratios and CIs.
+- Statistical methods (log-rank test, Cox model, intention-to-treat) are prespecified and consistently applied across all outcomes without evidence of selective reporting of alternative analytic methods (e.g., no mention of adjusted vs. unadjusted models, different cut-points, or alternative handling of missing data being selectively reported).
+
+Analysis: The registered protocol and the published prespecified end points match: cardiac death as primary outcome and MACE as secondary outcome, both fully reported with consistent statistical methodology (Kaplan-Meier, log-rank, Cox proportional hazards) throughout the results. All components of MACE (cardiac death, MI, TVR) are reported individually and as composites, with no evidence of alternative analyses (e.g., different covariate adjustments, different definitions, or different statistical approaches) being tried and selectively not reported. There is no indication of selection from multiple eligible analyses based on the results — the reported findings correspond to the prespecified analysis plan.
+
+Correct answer: No

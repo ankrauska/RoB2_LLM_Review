@@ -1,0 +1,37 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 28840525
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Bias Assessment: T2D Remission Outcome (Four HbA1c Thresholds)
+
+## 1. Risk of bias arising from the randomization process
+**Low risk**
+
+Justification: Randomization was computer-generated with random number codes managed by an independent study member, incorporating minimization for age, BMI, diabetes duration, insulin treatment, and ethnicity — a robust approach reducing confounding at baseline. Allocation concealment appears adequate, as codes were "disclosed after anaesthesia induction," preventing foreknowledge of allocation by clinicians or patients prior to surgery. Baseline characteristics (Table 1) appear well-balanced between groups. This is a genuine strength of the trial, and I have no concerns regarding the randomization mechanism or concealment.
+
+## 2. Risk of bias due to deviations from the intended interventions
+**Some concerns**
+
+Justification: This trial was blinded for patients and outcome assessors, which is commendable and rare in bariatric surgery trials. However: (a) The type of surgery is inherently associated with different physiological effects (differential malabsorption, restriction, hormonal changes), and while patients may not know which procedure they received, surgeons/perioperative teams obviously were not blinded — this is unavoidable but creates potential for differential post-operative management despite the stated blinded medication protocol. (b) Post-operative diabetes medication was determined by "endocrinologists blinded to treatment allocation" following a standardised algorithm — this is a strength that should mitigate co-intervention bias for the primary outcome. (c) No explicit mention of pre-specified per-protocol vs intention-to-treat analysis plan, and it appears the analysis was per-protocol (only those completing 1-year follow-up analysed), which could introduce bias if deviations/crossovers occurred non-randomly. There is no mention of any protocol deviations, crossovers, or non-adherence to assigned surgery. Given the blinded endocrinologist review procedure was well-implemented but analysis approach unclear, I rate this as some concerns.
+
+## 3. Risk of bias due to missing outcome data
+**Some concerns**
+
+Justification: 5 of 58 (8.6%) patients were lost to follow-up in the LSG group, with 0 lost in the SR-LRYGB group (Fig 1). This asymmetry is notable — patients lost to follow-up were reported as due to "failure to make contact and/or attend appointments," but no sensitivity analysis or comparison of baseline characteristics between completers and non-completers is provided to assess whether this loss was informative (e.g., patients doing poorly/well disproportionately lost). The trial's own power calculation anticipated up to 20% loss to follow-up, and the actual loss (8.6% in one arm, 0% in the other) is within this bound but the differential nature between arms raises some concern, particularly since the primary outcome is a binary remission outcome sensitive to denominator changes. No multiple imputation or intention-to-treat handling of missing HbA1c data is described — analysis appears to use only completers (n=53 not n=58 for LSG).
+
+## 4. Risk of bias in measurement of the outcome (T2D remission via HbA1c thresholds)
+**Low risk**
+
+Justification: The primary outcome (T2D remission defined by HbA1c thresholds without medication) is an objective, laboratory-measured outcome (HbA1c value), not a participant-reported outcome. This substantially reduces risk of bias from unblinding, since patient/assessor beliefs about which surgery they received cannot directly alter a blood test result. Importantly, since the outcome definition requires "without diabetes medication," a critical potential source of bias is whether decisions to continue/discontinue diabetes medication were influenced by knowledge of allocation — the manuscript specifically addresses this: medication decisions were made by "endocrinologists blinded to treatment allocation" per "a standard medical review protocol." This is a notable strength directly designed to prevent this bias pathway (which the authors explicitly identify as a limitation of prior unblinded trials in the Discussion). Laboratory HbA1c assays are also not susceptible to observer-expectation bias. I therefore judge this outcome domain as low risk.
+
+## 5. Risk of bias in selection of the reported result
+**Some concerns**
+
+Justification: Comparing the registered protocol (NCT01486680) to the published report: the registered primary outcome was "Remission of type 2 diabetes mellitus/glycaemic control" without specifying the four distinct thresholds at 1 year — the published paper explicitly states the true registered primary outcome is HbA1c <42 mmol/mol at **5 years**, and what is reported here are 1-year outcomes using four thresholds "to allow comparison with previous studies." This is a legitimate rationale, but it represents outcome-reporting flexibility: reporting four thresholds increases the chance of a "positive" finding by multiplicity, and none of the four reached statistical significance, so this does not appear to be selective reporting toward a favourable result. However, the change from the pre-specified 5-year primary endpoint to 1-year interim results, and the use of four thresholds rather than one pre-specified definition, constitutes a deviation from the original protocol/primary outcome specification. No formal statistical correction for multiple comparisons across the four thresholds is reported. Registered secondary/other outcomes (body composition, resting energy expenditure, bone density) are not reported in this paper at all, though this may be intended for a separate publication — full outcome-level cross-checking against a detailed statistical analysis plan is not possible from the given information.
+
+## 6. Overall rating
+**Some concerns**
+
+Justification: While randomization and outcome measurement (objective, blinded-adjudicated medication management) are strong points (both low risk), there are concerns in three domains: deviations from intended interventions (unclear ITT/per-protocol handling), missing outcome data (asymmetric loss to follow-up between arms without sensitivity analysis), and selection of the reported result (shift from 5-year to 1-year primary endpoint, multiple thresholds without correction, unreported protocol secondary outcomes). None of these concerns individually rises to "high risk," but cumulatively they are sufficient to lower confidence modestly, warranting an overall rating of "some concerns" rather than "low risk."

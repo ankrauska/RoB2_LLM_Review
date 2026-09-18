@@ -1,0 +1,121 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 24937270
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Unknown Author, Unknown Year (tPCS qEEG mechanistic trial)
+**Outcome Name**: Interhemispheric functional connectivity
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% – High Certainty)
+Reason: The article explicitly states "Randomization was completed using blocks of four," which is an accepted method of adequate sequence generation.
+
+**1.2**: NI (90% – Moderate Certainty)
+Reason: The article does not mention any allocation concealment method (e.g., sequentially numbered containers, central allocation, sealed opaque envelopes). Although the study is described as "double-blinded," this alone does not satisfy the concealment criterion per instructions.
+
+**1.3**: N (90% – Moderate Certainty)
+Reason: Table 1 shows no statistically significant differences in demographic characteristics (age, sex, MMSE) or baseline behavioral task performance between groups. The differences observed are consistent with random variation.
+
+**Domain 1 Result: Some concerns (85% – Moderate Certainty)**
+Reason: Per the rules, when 1.2 = NI and 1.3 = N, the domain assessment defaults to "Some concerns" due to lack of information on allocation concealment.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (85% – Moderate Certainty)
+Reason: The study used a sham stimulation condition (applied for 30 seconds then automatically turned off) to maintain participant blinding. Blinding validation confirmed subjects could not correctly guess their group (p = 0.679), consistent with effective blinding.
+
+**2.2**: N (80% – Moderate Certainty)
+Reason: The article states "the investigator assessing the outcomes and the subjects were blinded to the intervention." While not explicit about the person delivering stimulation, the double-blind design and automated sham protocol suggest that those interacting with participants were also blinded.
+
+**2.3**: NI (80% – Moderate Certainty)
+Reason: No mention of any non-protocol interventions or co-interventions during the single-session study.
+
+**2.4**: N (85% – Moderate Certainty)
+Reason: Of 40 recruited participants, 2 withdrew before stimulation (5%) and 1 was excluded due to EEG artifact (2.6%), together under 10%, indicating minimal implementation failure.
+
+**2.5**: NA/N (70% – Low-Moderate Certainty)
+Reason: This was a single 20-minute session intervention; adherence issues (e.g., cessation, crossover) are not applicable to this design, and none were reported.
+
+**2.6**: NI (65% – Low Certainty)
+Reason: No explicit description of adherence-adjusted analysis; standard mixed-model ANOVA was used, not clearly ITT/per-protocol labeled.
+
+**Domain 2 Result: Low risk (85% – Moderate Certainty)**
+Reason: 2.1 = N, 2.2 = N, 2.4 = N, 2.5 = N/NA — meeting the criteria for "Low risk" per the algorithm.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: PN (85% – Moderate Certainty)
+Reason: 40 participants randomized; 37/40 (92.5%) had complete coherence data (1 excluded for EEG artifacts, 2 withdrew pre-stimulation). This falls in the 90–95% range for continuous outcomes.
+
+**3.2**: N (85% – Moderate Certainty)
+Reason: No sensitivity analysis or bias-correction method (e.g., inverse probability weighting) was reported to address missing data.
+
+**3.3**: N (80% – Moderate Certainty)
+Reason: The missing data resulted from "excessive artifacts in the EEG recording" (technical issue) and voluntary withdrawal before intervention began — both unrelated to the true value of the interhemispheric coherence outcome.
+
+**3.4**: N/A (not required given above)
+
+**Domain 3 Result: Low risk (85% – Moderate Certainty)**
+Reason: 3.1 = PN, 3.2 = N, 3.3 = N — satisfies the "Low risk" criteria per the algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% – Moderate-High Certainty)
+Reason: Interhemispheric coherence was measured using magnitude square coherence via Welch's averaged modified periodogram method, a validated and reliable EEG connectivity measure.
+
+**4.2**: N (90% – Moderate-High Certainty)
+Reason: Identical EEG recording procedures, electrode pairs, and timing (pre/post, eyes open/closed) were applied uniformly across all four groups.
+
+**4.3**: N (85% – Moderate Certainty)
+Reason: The outcome is not patient-reported; it is an objective EEG-derived measure, and outcome assessors were explicitly stated to be blinded ("the investigator assessing the outcomes... were blinded to the intervention").
+
+**4.4**: N (85% – Moderate Certainty)
+Reason: EEG coherence is an objective, quantitatively derived measure (not subject to subjective interpretation by patient or assessor in real-time).
+
+**4.5**: N (85% – Moderate Certainty)
+Reason: No evidence suggests that knowledge of intervention assignment influenced the objective EEG coherence calculation, which is computed via standardized signal-processing algorithms.
+
+**Domain 4 Result: Low risk (88% – Moderate Certainty)**
+Reason: 4.1 = N, 4.2 = N, 4.3 = N — satisfies "Low risk" criteria.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (80% – Moderate Certainty)
+Reason: No trial registration number or pre-specified analysis plan is reported/referenced in the article.
+
+**5.2**: N (80% – Moderate Certainty)
+Reason: The Methods section pre-specifies measurement of coherence for two bands (alpha, theta) and four sub-bands (low-alpha, high-alpha, low-beta, high-beta); Results report all of these measures fully and consistently, with no evidence of selective reporting.
+
+**5.3**: N (80% – Moderate Certainty)
+Reason: The analysis method (mixed-model ANOVA with a-priori specified post-hoc t-tests: random vs. sham, 1Hz vs. sham, 100Hz vs. sham) is consistent between Methods and Results sections; no evidence of multiple analyses tried with selective reporting.
+
+**Domain 5 Result: Some concerns (80% – Moderate Certainty)**
+Reason: Per the algorithm, when 5.2 = N, 5.3 = N, and 5.1 = NI, the result defaults to "Some concerns" due to the absence of a verifiable pre-registered analysis plan.
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Domain Summary:**
+- Domain 1: Some concerns
+- Domain 2: Low risk
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Some concerns
+
+**Overall Bias Risk: Some concerns (82% – Moderate Certainty)**
+
+Reason: Two domains (Domain 1 and Domain 5) were rated as "Some concerns," while no domain was rated "High risk," and three domains (2, 3, 4) were rated "Low risk." Per the overall assessment algorithm, the presence of "Some concerns" domains without any "High risk" domain, alongside multiple "Low risk" domains, results in an overall classification of **"Some concerns."** The primary sources of concern are the lack of reported allocation concealment procedures (Domain 1) and the absence of a verifiable pre-registered/pre-specified analysis plan (Domain 5), though the trial otherwise demonstrates strong methodological rigor (block randomization, effective double-blinding validated statistically, objective EEG-based outcome measurement, and minimal missing data).

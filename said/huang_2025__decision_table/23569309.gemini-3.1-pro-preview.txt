@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 23569309
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Park, 2013
+**Outcome Name**: progression free survival
+**registration number**: NCT00561119
+
+Domain 1
+1.1 : Y (100%)
+The article states that the random permutation method was used for random assignment, which is an adequate method for sequence generation.
+1.2 : Y (100%)
+The study explicitly mentions that registration and random assignment were coordinated centrally at the KCSG data center, indicating central allocation was used to conceal the sequence.
+1.3 : N (100%)
+Table 1 shows the baseline characteristics of the patients, and the text confirms that "The baseline characteristics of the patients were similar between the two groups," with any minor differences attributed to random error.
+Result of the domain (100%)
+Low risk
+The allocation sequence was adequately generated and concealed using central allocation, and there were no significant baseline differences suggesting a problem with the randomization process.
+
+Domain 2
+2.1 : Y (100%)
+This was an open-label trial comparing maintenance chemotherapy with observation. Participants in the observation arm received no treatment, so they were aware of their assigned intervention.
+2.2 : Y (100%)
+Because the study was open-label (chemotherapy vs. observation without a placebo), the carers and people delivering the interventions were aware of the participants' assignments.
+2.3 : Y (90%)
+The study protocol restricted other treatments, stating that "Hormonal therapy was not allowed in either group of patients after random assignment before disease progression," indicating that important non-protocol interventions were balanced.
+2.4 : Y (100%)
+Table 2 and the text report that 33 patients (28.4%) in the maintenance group stopped the study drugs without disease progression at the physician's discretion, which is a failure in implementing the intervention for more than 10% of participants.
+2.5 : Y (100%)
+More than 10% of the participants had non-adherence to the assigned intervention, as evidenced by the 33 patients in the maintenance arm who discontinued treatment early at the physician's discretion.
+2.6 : N (100%)
+The text states that "All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle," which is an inappropriate analytical method to estimate the true effect of adhering to the intervention.
+Result of the domain (100%)
+High risk
+Participants and carers were aware of the assignment, there were substantial deviations/non-adherence (>10%) in the intervention arm (e.g., discontinuation at physician discretion), and an inappropriate ITT analysis was used to estimate the effect of adherence.
+
+Domain 3
+3.1 : Y (100%)
+The CONSORT flow diagram and text indicate that all 231 randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle.
+3.2 : Y (100%)
+Data was available for nearly all randomized participants, making the result not biased by missing data.
+3.3 : N (90%)
+With nearly complete data for the survival analysis, there is no evidence that missingness in the outcome depended on its true value.
+3.4 : N (90%)
+There is no indication that missingness in the outcome was related to its true value.
+Result of the domain (100%)
+Low risk
+Outcome data were available for all or nearly all randomized participants through the intention-to-treat survival analysis.
+
+Domain 4
+4.1 : N (100%)
+Progression-free survival was assessed according to predefined RECIST (version 1.0) criteria, which is an appropriate and reliable measurement method.
+4.2 : N (100%)
+Radiographic studies to assess progression were performed equally every 6 weeks in both intervention groups.
+4.3 : Y (100%)
+The outcome was assessed by investigators who were aware of the participants' group assignments due to the open-label design of the trial.
+4.4 : Y (80%)
+Tumor response and progression assessment by investigators can involve subjective judgment, which could be influenced by knowledge of the intervention received.
+4.5 : N (90%)
+There is no clear evidence provided in the article to suggest that the assessment of the outcome was actually influenced by knowledge of the intervention received.
+Result of the domain (90%)
+Some concerns
+The outcome measurement method was appropriate and consistent between groups, but the outcome assessors (investigators) were unblinded, and the assessment involves some subjectivity, raising some concerns, though there is no direct evidence of bias.
+
+Domain 5
+5.1 : Y (100%)
+The study was pre-registered (NCT00561119), and the measurement and analysis methods reported in the Results section match those predefined in the Methods and the registry.
+5.2 : N (100%)
+There is no evidence that the reported progression-free survival result was selected from multiple eligible outcome measurements.
+5.3 : N (100%)
+There is no clear evidence that the result was selected from multiple eligible analyses of the data; the primary analysis methods are fully reported.
+Result of the domain (100%)
+Low Risk
+The data were analyzed according to a pre-specified plan, and there is no evidence of selective reporting of results or analyses.
+
+Overall Bias Risk for the Article (95%)
+High Risk
+The trial has a "High risk" rating in Domain 2 (deviations from intended interventions) due to the open-label design, significant treatment discontinuation in the maintenance arm, and the use of ITT analysis for adherence effects, which drives the overall assessment to High Risk.

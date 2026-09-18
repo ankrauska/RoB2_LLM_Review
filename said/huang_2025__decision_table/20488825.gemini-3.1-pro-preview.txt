@@ -1,0 +1,74 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 20488825
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Togha, 2010
+**Outcome Name**: attack number
+**registration number**: NCT00668343
+
+**Domain 1**
+1.1 : Y (100%)
+The article states: "A computer-based blocking method (four blocks) was used for the randomization" which is a valid generation method.
+1.2 : Y (95%)
+The article states: "all medications were given in similar packages, every 3 months." This implies masking/concealing through identical packaging.
+1.3 : N (100%)
+Table 1 shows "There was no significant difference in baseline characteristics between the two groups."
+Result of the domain: Low risk (100%)
+The sequence was adequately generated, concealment was ensured via similar packages, and there were no significant baseline differences.
+
+**Domain 2**
+2.1 : N (95%)
+The study was double-blinded, used similar packages, and the article states: "The patients were unaware of their group assignment and all medications were given in similar packages". Placebo was used.
+2.2 : N (95%)
+The article states: "Four neurologists were asked to assess the patients’ eligibility for the study and perform the follow-up examinations. They were blinded to the patients’ assignment to treatment group."
+2.3 : Y (80%)
+There is no indication of unbalanced non-protocol interventions.
+2.4 : N (95%)
+14 out of 85 patients withdrew from the study, which is about 16.5% (>10%), but only 9 after 2 months. However, 14/85 > 10% withdrawal, so we will answer Y for failures in implementing. Wait, the prompt says "If more than 10% of the participants have failures in implementing, such as withdrawing from the trial, 2.4 is 'Y'." Thus, 2.4 is Y.
+2.5 : N (80%)
+The article mentions the dropouts had taken the provided medications consistently until they withdrew. Adherence is reported for the remaining. Let's say NI or N. If 2.4 is Y, then adherence to remaining might be N. Wait, the prompt says "If more than 10% of the participants have non-adherence... 2.5 is 'Y'". 
+2.6 : N (100%)
+The analyses were performed according to intention-to-treat methods, and LOCF/per protocol. Prompt says ITT means N.
+Result of the domain: Some concerns (80%)
+Based on the rules: 2.1 is N, 2.2 is N, 2.4 is Y, so result is "Some concerns" (Wait, 2.1=N, 2.2=N, 2.4=Y is not in the Low Risk rule, which requires 2.4=NA/N/PN).
+
+**Domain 3**
+3.1 : N (95%)
+Out of 85 randomized, 76 (89%) were analyzed in some parts, or dropouts were 14 (leaving 71). The proportion is less than 90%, so N.
+3.2 : N (100%)
+They used LOCF and per protocol. The prompt says: "if inappropriate methods like last observation carried forward (LOCF)... were used, the answer is 'N'." Also ITT does not correct bias.
+3.3 : Y (95%)
+The text states: "six had two relapses... one patient... experienced chronic exacerbation". Relapses are the outcome, so dropout depended on true value.
+3.4 : Y (90%)
+Dropouts due to relapses/exacerbation suggest missingness depends on true value.
+Result of the domain: High risk (95%)
+Based on the rules, 3.1 N, 3.2 N, 3.3 Y, 3.4 Y -> High risk.
+
+**Domain 4**
+4.1 : N (100%)
+The measurement method is tracking relapses by a neurologist, which is appropriate.
+4.2 : N (100%)
+Both groups were evaluated every 3 months.
+4.3 : N (100%)
+Outcome assessors (neurologists) were blinded.
+4.4 : N (90%)
+Assessed by neurologists, but based on clear criteria. 
+4.5 : N (100%)
+There is no clear evidence that assessment was influenced by knowledge of intervention, as they were blinded.
+Result of the domain: Low risk (100%)
+Based on 4.1 N, 4.2 N, 4.3 N.
+
+**Domain 5**
+5.1 : Y (95%)
+Outcomes listed in protocol (NCT00668343) include attack number, edss, new enhancing lesion, new T2 lesion, which match the results reported. 
+5.2 : N (95%)
+The reported results correspond to the intended outcome measurements.
+5.3 : N (95%)
+The analysis methods correspond to the pre-specified plan.
+Result of the domain: Low Risk (95%)
+Based on 5.1 Y, 5.2 N, 5.3 N.
+
+**Overall Bias Risk for the Article**: High Risk (95%)
+Domain 3 is High Risk, leading to an overall High Risk rating.

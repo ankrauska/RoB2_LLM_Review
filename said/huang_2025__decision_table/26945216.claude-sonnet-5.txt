@@ -1,0 +1,108 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26945216
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Rampopo/Peiris, 2015 (Comparison of TENS and IFT on Upper Trapezius in MPS)
+**Outcome Name**: Pain intensity
+**Registration number**: Sri Lanka Clinical Trial Registry (specific number not stated in text)
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+*Reason*: The article explicitly states "computerized block randomization" was used to generate the allocation sequence.
+
+**1.2**: PY (80%)
+*Reason*: The article states "allocation group concealed in envelopes," indicating concealment was performed, but does not specify whether envelopes were sequentially numbered, opaque, or sealed. Since the specific safeguards are not detailed, this meets criteria for "PY" rather than "Y."
+
+**1.3**: N (90%)
+*Reason*: One-way ANOVA showed no statistically significant differences in baseline pain intensity (P=0.06), age, or sex between groups. While affected side differed significantly (P=0.015), this is not a prognostic factor for the pain intensity outcome, and baseline pain and ROM measures were balanced.
+
+**Domain 1 Result: Low risk (90%)**
+*Reason*: 1.2 = PY, 1.1 = Y, 1.3 = N, satisfying criteria for Low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (85%)
+*Reason*: The article explicitly states "participants were blind to the allocation to treatment groups after randomization," and describes the study as single-blind.
+
+**2.2**: Y (95%)
+*Reason*: The principal investigator "acted as both outcome assessor... and as therapist administering all study treatment," and clearly knew which modality (TENS vs. IFT vs. standard care alone) was being delivered.
+
+**2.3**: Y (75%)
+*Reason*: No evidence of additional non-protocol co-interventions; all groups received a standardized protocol (standard care ± TENS/IFT) with no mention of imbalanced supplementary treatments.
+
+**2.4**: N (95%)
+*Reason*: All 105 randomized participants completed the study (per CONSORT flow diagram), indicating 0% failure to implement intervention.
+
+**2.5**: NI (70%)
+*Reason*: While diaries of home exercises were checked, no explicit adherence rate or compliance percentage was reported for the assigned intervention regimen.
+
+**2.6**: N (80%)
+*Reason*: The analysis was based on all 105 participants as randomized (essentially an ITT-type analysis), which is considered an inappropriate method for estimating the effect of adhering to intervention per the guideline criteria.
+
+**Domain 2 Result: High risk (85%)**
+*Reason*: One of 2.1/2.2 = Y (2.2=Y); 2.3 = Y; one of 2.4/2.5 = NI (2.5=NI); 2.6 = N → matches criteria for High risk.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (98%)
+*Reason*: All 105 randomized participants (100%) completed the study and were included in the analysis for pain intensity, as confirmed in the CONSORT flow chart ("All completed the study and were entered into the analysis").
+
+**Domain 3 Result: Low risk (98%)**
+*Reason*: 3.1 = Y directly qualifies for Low risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+*Reason*: Pain intensity was measured using a 100-mm Visual Analog Scale (VAS), a well-validated and reliable tool for pain measurement (cited reference for reliability).
+
+**4.2**: N (90%)
+*Reason*: Pain intensity was measured identically across all groups at the same four time points (baseline, immediately after first treatment, before eighth treatment, 1 week after eighth treatment) using the same VAS instrument.
+
+**4.3**: Y (90%)
+*Reason*: Pain intensity is a patient-reported outcome (VAS). Although the article claims participant blinding, the control group received no electrical stimulation device at all, while TENS/IFT groups received distinct sensory stimulation (different electrode configurations/sensations). This makes it highly likely participants could discern their allocation, particularly between active treatment vs. control.
+
+**4.4**: Y (95%)
+*Reason*: Pain intensity is a subjective, patient-reported outcome measure (VAS), which is inherently susceptible to influence by knowledge of intervention received.
+
+**4.5**: Y (85%)
+*Reason*: The authors explicitly acknowledge as a limitation that "not using a placebo for the patients of the control group could be considered as limitations of the present study," providing clear evidence that lack of blinding/placebo could have influenced patient-reported pain outcomes.
+
+**Domain 4 Result: High risk (90%)**
+*Reason*: 4.1=N, 4.2=N, 4.3=Y, 4.4=Y, 4.5=Y matches the High risk criteria.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (75%)
+*Reason*: The study was registered with the Sri Lanka Clinical Trial Registry. All outcomes described in the Methods (pain intensity, cervical ROM) were fully reported in the Results with consistent measurement/analysis methods (one-way ANOVA with Tukey post hoc).
+
+**5.2**: N (85%)
+*Reason*: Pain intensity was measured using only one instrument (100-mm VAS) at pre-specified time points, with no evidence of multiple competing measures from which to selectively report.
+
+**5.3**: N (80%)
+*Reason*: A single, consistent analytical approach (one-way ANOVA with Tukey post-hoc tests) was used and reported for the pain intensity outcome; no evidence of multiple alternative analyses being conducted with selective reporting.
+
+**Domain 5 Result: Low risk (80%)**
+*Reason*: 5.2=N, 5.3=N, and 5.1=Y, satisfying criteria for Low risk.
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result: High Risk (90%)**
+
+*Reason*: Domain 2 (deviations from intended interventions) and Domain 4 (measurement of the outcome) were both rated as "High risk." Per the overall assessment rules, if any domain is rated "High risk," the overall assessment for the article is "High Risk." This is driven primarily by (1) uncertainty regarding non-adherence combined with an ITT-type analysis without appropriate correction methods, and (2) the subjective, patient-reported nature of the pain outcome combined with lack of a placebo/sham control and clear potential for participants to discern their treatment allocation (explicitly acknowledged as a limitation by the authors).

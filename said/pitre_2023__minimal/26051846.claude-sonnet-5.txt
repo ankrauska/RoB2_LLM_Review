@@ -1,0 +1,77 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 26051846
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias 2.0 Assessment
+**Outcome:** Pain VAS scale, post-treatment
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+**Comparison:** Ultrasound vs. Phonophoresis vs. Iontophoresis
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- Sequence generation was random: "Each participant was assigned to one treatment group, at random, using a numbered list generated through the random permuted blocks method, applied by a statistician."
+- Allocation concealment: The statistician who generated the sequence "was not involved in data collection or analysis," suggesting some separation, but there is no explicit description of the concealment mechanism (e.g., sequential opaque envelopes, central allocation) that would prevent foreknowledge of assignment by those enrolling participants. No information is given about how or when participants were enrolled relative to allocation, so it cannot be confirmed that allocation was concealed until assignment.
+- Baseline characteristics (Table 1) were well balanced across groups (age, sex, dominant shoulder, time since onset, tendinitis/tendinosis/partial tear all P>0.4), with no evidence of problems with randomization.
+- Because allocation concealment cannot be confirmed (no information provided) but there is no evidence of baseline imbalance or non-random sequence generation, this maps to "Some concerns" per the algorithm (random sequence + no information on concealment + baseline balance compatible with chance = Some concerns).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**
+- Participants were blinded ("single-blind" per registry, masking of participants), but personnel/care providers (physiotherapists administering treatment) were **not blinded** — they necessarily knew which modality (ultrasound, phonophoresis, or iontophoresis) they were delivering, and the assessing physician performed the outcome measure, though it says "same blinded rehabilitation doctor," so the assessor was blinded but the treating physiotherapists were not blinded to allocation, as is unavoidable given the distinct nature of the three physical modalities.
+- The article does not report any assessment of deviations from intended intervention arising from the trial context (e.g., co-interventions, differential engagement, etc.), and no information is given on this issue ("2.3" = No information).
+- Critically, the analysis does not appear to strictly follow ITT principles: the primary outcome analysis appears to be based on completers with no explicit ITT analysis or handling of the sample as randomized (99 randomized: 32+33+34 = 99, so groups match allocation numbers, but no report of a flow diagram accounting for exclusions, protocol deviations, or dropout numbers per group is provided in text). There is no CONSORT flow diagram described in the text, and no explicit statement that all randomized participants were analyzed using ITT principles.
+- Given the absence of information confirming an appropriate ITT analysis, combined with unblinded personnel delivering distinctly different interventions (raising the possibility of differential co-interventions, e.g., additional care/attention differences between drug and non-drug arms), and no information on whether deviations arose or were balanced, the domain is judged **high risk** per the algorithm (awareness of personnel + no information on deviations + no information on appropriate analysis defaults toward high/some concerns, and combined with lack of explicit ITT reporting, the more cautious/high judgement is used).
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- The article states the sample size calculation "allowed for a 20% dropout rate," implying dropout was anticipated, but the results section and tables do not report the actual number of participants analyzed at each time point (post-treatment) versus the number randomized (32, 33, 34 per group).
+- No CONSORT flow diagram data is presented in the main text (though a supplementary Fig. A is referenced: "Fig. A (see online supplementary material) shows the selection and recruitment of the study population, and the distribution of participants in treatment"), but this is not accessible/quoted in the provided text, and no attrition numbers are given in text or tables.
+- There is no explicit statement of the number of participants lost to follow-up at the post-treatment assessment, nor reasons for any missing data, nor a comparison of missingness between groups.
+- Because the extent of missing outcome data cannot be determined from the available text (only referenced in a supplementary figure not included here), and no sensitivity analysis is reported, this raises "Some concerns" rather than "High risk," since there is no clear indication of substantial or differential missingness, but also no confirmation that data were complete or nearly complete for all randomized participants.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The VAS is a participant-reported outcome, and participants were blinded to which modality they received in the sense that they could not be blinded to the study intervention. However, the RoB2 tool for participant-reported outcomes focuses on whether participant-reported outcome assessment was influenced by knowledge of intervention received.
+- Participants could feel/see the different treatment modalities (ultrasound gel vs. iontophoresis current vs. phonophoresis), so they were technically aware of which intervention they received, and this is inherent given the nature of the physical agents.
+- However, all three interventions (ultrasound, phonophoresis, iontophoresis) were active, "real" treatments involving physical agents, and participants had no strong reason to have a preconceived belief that one modality was superior (i.e., this was not a placebo-controlled trial where participants would know they received an inactive comparator). The trial is described as "single-blind," and there is no indication of differential expectations between the three active physical-agent groups that would bias self-reported pain in a particular direction.
+- The outcome assessment (VAS) was performed by "the same blinded rehabilitation doctor using standardised protocols" at all visits, reducing risk of differential assessment bias from the assessor's perspective, even though the ultimate reporter of pain (VAS) is the participant.
+- Given that all groups received active, credible physical treatments without an inert placebo comparator, and standardized outcome collection procedures were used, it is unlikely that assessment of the outcome was meaningfully influenced by knowledge of the specific intervention received.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial registry (NCT01748188) pre-specifies the primary outcome as "Pain measure by the visual analogic scale pain score," matching exactly the outcome and measurement instrument (VAS) reported in the publication at baseline, post-treatment, and 1-month post-treatment.
+- The publication reports VAS results at all pre-specified time points (baseline, post-treatment, 1-month post-treatment) in a manner consistent with the registered outcome, with no evidence of selective reporting of only favorable time points or alternative scales for pain.
+- Both between-group comparisons (Table 2) and within-group change-from-baseline comparisons (Table 3) are reported for VAS at all time points, including both statistically significant and non-significant results (e.g., "At 1 month post-treatment, no significant differences were detected between the groups" for VAS), indicating results were not selectively suppressed based on significance.
+- There is no indication of multiple alternative analyses (e.g., different adjustment sets, alternative pain scales) being conducted with only favorable ones reported.
+
+---
+
+# Overall Risk of Bias Judgement: **High risk of bias**
+
+**Rationale:** Although randomization and outcome measurement domains raise low-to-moderate concerns, the domain "Deviations from intended intervention" is judged at **high risk of bias**, which by RoB 2 rules is sufficient to classify the overall result for this outcome as being at **high risk of bias**. This is driven primarily by unblinded treatment delivery personnel administering distinctly different physical modalities, absence of information on whether trial-context-related deviations occurred or were balanced across groups, and lack of clear reporting of an intention-to-treat analysis accounting for all randomized participants.

@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21831438
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Lee, 2011
+**Outcome Name**: changes in the mean sitting DBP from the baseline after 4 weeks of therapy
+**registration number**: NCT00621153
+
+Domain 1
+1.1 : Y (100%)
+The article states that "Study patients were randomized in a 1:1 ratio by using the mixed block randomization (4 and 6 blocks) method," which describes an adequate method for sequence generation.
+1.2 : NI (100%)
+The article mentions an "open study design" but does not explicitly mention any methods of assignment concealment (such as opaque envelopes or central allocation) before participants were enrolled and assigned.
+1.3 : Y (95%)
+The article notes a statistically significant difference in baseline age between the candesartan-HCT group (51.0 years) and the candesartan monotherapy group (47.8 years; P = 0.02) despite random allocation.
+Result of the domain (100%)
+High risk
+Because the answer to question 1.2 is "NI" and the answer to question 1.3 is "Y", the assessment result for Domain 1 is "High risk".
+
+Domain 2
+2.1 : Y (100%)
+The study is described as an "open study design" in the discussion section, and the clinical trial registration also specifies "Masking: NONE", meaning participants were aware of their assigned intervention.
+2.2 : Y (100%)
+Due to the open-label design of the trial, the carers and people delivering the interventions were aware of the participants' assigned interventions.
+2.3 : NI (100%)
+The article does not provide information regarding whether there were any significant non-protocol interventions or whether they were balanced across intervention groups.
+2.4 : N (95%)
+Out of 233 randomized patients, 227 took at least one dose of the study medication, meaning that failure to implement the intervention occurred in less than 10% of the participants.
+2.5 : N (95%)
+The article reports that median compliance was very high (98.6% and 97.8% in the two groups), indicating that non-adherence affected less than 10% of the participants.
+2.6 : N (100%)
+The study utilized "intent-to-treat (ITT) analysis" and "per-protocol (PP) analysis", which are considered inappropriate analytical methods to evaluate the effectiveness of persistent interventions (i.e., the effect of adhering to intervention).
+Result of the domain (100%)
+High risk
+Because the answer to questions 2.1 and 2.2 is "Y", the answer to 2.3 is "NI", and the answer to 2.6 is "N", the assessment result for Domain 2 is "High risk".
+
+Domain 3
+3.1 : Y (100%)
+Out of 233 randomized participants, 224 were included in the Intention-to-Treat (ITT) efficacy analysis at week 4. This corresponds to 96.1% (≥95%) of the randomized participants having complete continuous outcome data.
+3.2 : N (100%)
+The article does not provide evidence through sensitivity analysis or bias correction methods (like inverse probability weighting) that the result was not biased by missing outcome data. 
+3.3 : N (95%)
+Based on the reasons for discontinuation (mostly non-health related or unrelated adverse events like scrub typhus/anal fistula), missingness in the outcome does not appear to depend on its true value.
+3.4 : N (95%)
+There is no clear evidence to suggest that the missingness in the outcome depended on its true value, and the missing proportions were small and balanced.
+Result of the domain (100%)
+Low risk
+Because the answer to question 3.1 is "Y", the assessment result for Domain 3 is "Low risk".
+
+Domain 4
+4.1 : N (100%)
+The outcome (blood pressure) was measured using a fully automated device in a standardized manner (sitting position, resting for 5 minutes, 3 consecutive measurements averaged), which is an appropriate and reliable predefined method.
+4.2 : N (100%)
+Blood pressure was measured in the same comparable way for both intervention groups at the same time points (weeks 4 and 8) by the same investigator at each center.
+4.3 : Y (100%)
+The outcome is not patient-reported, and due to the open-label nature of the trial, the outcome assessors were aware of the interventions received by the study participants.
+4.4 : N (100%)
+The outcome is blood pressure measured with a fully automated device, which is an objective measurement, so the assessment was not likely to be influenced by knowledge of the intervention received.
+4.5 : N (100%)
+Because the outcome is objective (automated BP machine), there is no clear evidence to suggest that the assessment of the outcome was influenced by knowledge of the intervention received.
+Result of the domain (100%)
+Low risk
+Because the answer to 4.1 is "N", 4.2 is "N", 4.3 is "Y", and 4.4 is "N", the assessment result for Domain 4 is "Low risk".
+
+Domain 5
+5.1 : Y (100%)
+The outcome measurements and analysis methods reported in the Results section are consistent with the predefined methods listed in the Methods section and the clinical trial registration (NCT00621153).
+5.2 : N (100%)
+There is no evidence that the reported numerical result was selected from multiple eligible outcome measurements. The outcome of changes in mean sitting DBP after 4 weeks corresponds to the intended primary measurement.
+5.3 : N (100%)
+There is no evidence that the result was selected from multiple eligible analyses of the data. The data were analyzed according to the planned ANCOVA model.
+Result of the domain (100%)
+Low Risk
+Because the answers to 5.2 and 5.3 are "N" and the answer to 5.1 is "Y", the assessment result for Domain 5 is "Low Risk".
+
+Overall Bias Risk for the Article (100%)
+High Risk
+Because at least one domain (Domain 1 and Domain 2) assessment result is "High Risk", the overall assessment result for the article is "High Risk".

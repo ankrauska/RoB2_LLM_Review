@@ -1,0 +1,84 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 20159292
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Turnbull, 2010
+**Outcome Name**: reoperation rate
+**registration number**: ISRCTN57474502
+
+Domain 1
+1.1 : Y (100%)
+The article states "Patients were randomly assigned to receive either MRI (n=816) or no further imaging (807), with use of a minimisation algorithm incorporating a random element." This indicates an adequate sequence generation method.
+1.2 : Y (100%)
+The article states "Randomisation was administered by the University of Leeds Clinical Trials Research Unit’s automated 24-hour telephone randomisation system..." This indicates central allocation, ensuring concealment.
+1.3 : N (100%)
+Table 1 shows baseline characteristics are well balanced between the groups, suggesting no problem with the randomization process.
+Result of the domain (100%) 
+Low risk
+Reason you summarized
+The allocation sequence was adequately generated and concealed using an automated telephone system, and baseline characteristics were well balanced, indicating a low risk of bias in the randomization process.
+
+Domain 2
+2.1 : Y (100%)
+The article states "COMICE is a multicentre, randomised, controlled, open-label, parallel group trial", indicating participants were aware of their assigned intervention.
+2.2 : Y (100%)
+As an open-label trial, the carers and people delivering the interventions (e.g., surgeons performing the operation) were aware of the participants' assigned intervention.
+2.3 : N (100%)
+The article states "Patients allocated to no MRI were scheduled to undergo wide local excision as planned. If the findings for those undergoing MRI were not equivalent to those of triple assessment, results were reviewed by a multidisciplinary team. MR-guided biopsy sampling... was needed for multicentric lesions that were 5 mm or larger... Surgery was planned as appropriate". These are protocol-driven differences based on the imaging results (the intervention itself), not non-protocol interventions that were imbalanced. Thus, there were no significant non-protocol interventions imbalanced across groups.
+2.4 : N (100%)
+Figure 1 shows that out of 817 assigned to MRI, 761 received it (failures < 10%). Out of 808 assigned to no MRI, 798 did not receive MRI (failures < 10%). Thus, failures were less than 10%.
+2.5 : N (100%)
+As per Figure 1, the vast majority of participants adhered to the assigned intervention (MRI or no MRI). Non-adherence (e.g., crossovers or not receiving MRI) was well below 10%.
+2.6 : N (100%)
+The article states "Analysis was by intention to treat." This is considered an inappropriate analytical method to evaluate the effect of adhering to intervention according to the prompt guidelines.
+Result of the domain (100%)
+Some concerns
+Reason you summarized
+The trial was open-label, so participants and carers were aware of the intervention. While there were no significant non-protocol interventions and implementation/adherence was successful for most, the use of Intention to Treat (ITT) analysis leads to some concerns regarding deviations from the intended interventions.
+
+Domain 3
+3.1 : Y (100%)
+Figure 1 shows 816/817 (99.9%) and 807/808 (99.9%) were analyzed for the primary endpoint. Thus, data were available for nearly all randomized participants.
+3.2 : Y (100%)
+Since data were available for nearly all participants, the missing data is minimal and unlikely to cause bias. The prompt evaluates this as Y since the missing data is negligible. (Note: The prompt requires 3.2 to not be NI, and with 3.1 as Y, Domain 3 defaults to Low risk).
+3.3 : N (100%)
+The missing outcome data (lost to follow-up, etc.) is very small and there is no evidence it depends on the true value of the outcome.
+3.4 : N (100%)
+There is no indication that missingness depended on the true value.
+Result of the domain (100%)
+Low risk
+Reason you summarized
+Data were available for nearly all randomized participants, resulting in a low risk of bias due to missing outcome data.
+
+Domain 4
+4.1 : N (100%)
+The outcome (reoperation rate) was measured through standard clinical follow-up and hospital records, which is a reliable and appropriate predefined method.
+4.2 : N (100%)
+The outcome was measured in a comparable way for both groups during surgical follow-up.
+4.3 : N (100%)
+The outcome is an objective clinical event (reoperation/mastectomy), not a patient-reported outcome. Although outcome assessors might know the assignment, the objective nature of the outcome means it wasn't inappropriately influenced. Thus, assessors' knowledge of assignment for this objective outcome is evaluated as N for bias introduction.
+4.4 : N (100%)
+The outcome (reoperation rate) is an objective clinical measure.
+4.5 : N (100%)
+There is no evidence that the assessment of the objective outcome was influenced by knowledge of the intervention received.
+Result of the domain (100%)
+Low risk
+Reason you summarized
+The outcome is an objective clinical event (reoperation rate) measured appropriately and comparably across groups, with no evidence that knowledge of intervention influenced the assessment.
+
+Domain 5
+5.1 : Y (100%)
+The trial was registered (ISRCTN57474502), and the primary endpoint reported in the methods (proportion of patients undergoing a repeat operation or further mastectomy within 6 months) matches the results exactly.
+5.2 : N (100%)
+The reported results correspond to the intended outcome measurements as predefined, with no indication of selective reporting from multiple measures.
+5.3 : N (100%)
+The analysis methods reported in the results are consistent with those predefined in the methods section.
+Result of the domain (100%)
+Low Risk
+Reason you summarized
+The results were analyzed according to a prespecified plan, with no evidence of selective reporting of multiple measurements or analyses.
+
+Overall Bias Risk for the Article (100%)
+Some concerns

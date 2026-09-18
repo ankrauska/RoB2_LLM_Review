@@ -1,0 +1,77 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 28558789
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Motor Assessment Scale item 6 (Upper Arm Function, MAS6)
+## Effect of Interest: Assignment to intervention
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- *Sequence generation*: "An offsite investigator prepared the concealed randomization using a computer generated random number sequence (1:1)." This is adequate random sequence generation (Yes).
+- *Allocation concealment*: "Consecutively numbered opaque envelopes containing group allocation were collected from the offsite investigator by the tRNS intervener after initial assessment." This is a reasonable method (Yes/Probably yes) since the randomization was performed offsite and only revealed via sequentially collected opaque envelopes.
+- *Baseline imbalance*: This is where concern arises. With only n=4 participants (2 active, 2 sham), baseline characteristics are severely imbalanced in ways that could affect interpretation of MAS6 change. Notably, Corticospinal Tract (CST) integrity varied dramatically: P01 (active) had mild asymmetry index (0.02), P02 (sham) had moderate (0.11), while P03 (active) and P04 (sham) had severe degeneration (streamlines could not be reconstructed). Additionally, baseline MAS6 scores differed (P01=1, P02=2, P03=0, P04=1), and functional ambulation baseline scores were highly disparate (FAC 6, 5, 1, 4). Given the extremely small sample size, chance imbalances in key prognostic factors (CST integrity, baseline MAS6, functional mobility) are highly likely to have occurred and are very likely to bias/confound the treatment effect estimate, given that CST integrity is a plausible determinant of responsiveness to intervention. However, because n=4 makes formal statistical testing of "excess significant differences" not meaningful, and the imbalance appears attributable to small sample chance variation rather than a flawed randomization *process* per se, this is judged as "Some concerns" rather than "High risk."
+
+Overall: adequate concealment and random sequence, but substantial baseline imbalance in a key prognostic factor (CST integrity) that could not be corrected for and is very likely attributable to chance given n=4, leading to "Some concerns."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- *Participant/personnel awareness*: This was a triple-blind study: "Study personnel involved in assessment and training, along with all participants were blinded to group allocation for the duration of the study." The tRNS intervener was unblinded but was independent of training/assessment. The trainer, participants, and assessors were blinded to allocation (2.1/2.2 = No/Probably no for participants and training personnel).
+- *Deviations arising from trial context*: No evidence deviations occurred because of trial context. The paper reports: "There were no adverse events... All training sessions were completed, repetitive practice performed." Both groups received identical reaching training protocols and identical OT-stim; only the tRNS component differed (active vs. 0mA sham), and this was concealed even from participants ("participants may or may not feel the stimulation irrespective of whether they were receiving active or sham stimulation").
+- *Analysis*: "Analysis will be performed on an intention-to-treat basis" (per protocol), and the case series design analyzed all four participants as randomized, with no participants excluded, switching groups, or lost to follow-up during the treatment phase.
+
+Given effective blinding of participants and personnel delivering training, no evidence of trial-context-driven deviations, and an appropriate (ITT) analytic approach with no post-randomization exclusions, this domain is judged as low risk of bias.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- Outcome data (MAS6) were available for all four randomized participants at all three time points (baseline, post-training, follow-up), as shown in Table 3. "All four participants completed the 12 training sessions over 4-weeks, with no training sessions missed." There is no indication of missing outcome data for the MAS6 measure at post-training (the timepoint of primary interest, week 4) for any participant.
+- Since data were available for all participants at the primary post-intervention assessment, there is no risk of bias due to missing outcome data for this specific outcome/timepoint.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- *Appropriateness of method*: The MAS6 is a validated, appropriate, clinician-administered scale for upper arm function (Carr et al. 1985), so the method itself is not inappropriate (No to signalling question 4.1).
+- *Differential measurement between groups*: No evidence that measurement procedures differed systematically between groups; the same assessment protocol was used for both arms.
+- *Assessor blinding*: The study states outcome assessors were blinded ("triple-blind" design; "the people assessing the outcomes" were masked per the protocol). This supports low risk in principle.
+- However, MAS6 is an observer-reported outcome that **does involve clinical judgement** (it is a performance-based, ordinal scale requiring the assessor to judge quality/extent of movement), unlike a fully objective outcome (e.g., mortality). Even with blinding, there remains potential vulnerability to subtle unblinding, particularly because: (1) tRNS delivery may occasionally be perceptible (though the study attempted to control for this by telling participants they may or may not feel it in either condition), and (2) with such a small sample (n=4) and individualized in-person training/interviews, there is a realistic possibility that assessors or participants could infer group allocation over the course of extended contact (12 sessions), which could subtly influence performance-based scoring.
+- The trial report does not explicitly document a formal blinding-integrity check (e.g., asking assessors/participants to guess allocation), so we cannot be fully confident that blinding remained intact throughout using an outcome measure that requires judgement.
+
+Given the assessor was nominally blinded but the outcome involves subjective judgement and there is no reported verification of maintained blinding, this is judged as "Some concerns" rather than "Low risk."
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- Comparing the trial registration (ANZCTR) to the published article reveals discrepancies. The registered **primary outcome** was explicitly a **"Composite score of Motor Assessment Scale upper limb items 6-8"** (i.e., MAS6+7+8 combined), not MAS6 alone. In the published article, MAS6 alone is designated as "the primary clinical outcome measure," while MAS7 and MAS8 are reported as secondary outcomes. This represents a change in how the primary outcome was defined/analyzed relative to what was pre-specified, without clear justification provided in the article.
+- Additionally, the registered protocol specifies quality of life (Stroke Specific QoL Scale) and MRI-based functional connectivity (resting-state fMRI) as outcomes, neither of which are reported in this publication. While non-reporting of these outcomes is a separate "outcome reporting bias" issue (addressed elsewhere), the redefinition/splitting of the composite primary outcome into a single-item outcome (MAS6) — the specific result being assessed here — raises the question of whether this outcome measurement was selected, from multiple eligible options (composite score vs. individual items), based on the results.
+- There is no publicly available statistical analysis plan finalized prior to unblinding to clarify whether this change was pre-specified before outcome data were examined. Given this is a small pilot/feasibility case series (not primarily a hypothesis-testing efficacy trial) and the change plausibly reflects a reasonable feasibility-study decision to examine individual items descriptively, we do not judge this as clear evidence of results-based selection meriting "High risk." However, the unexplained discrepancy between the registered composite primary outcome and the reported single-item "primary" outcome is sufficient to raise "Some concerns."
+
+---
+
+# Overall Risk of Bias Judgement: **High risk of bias**
+
+**Rationale:** Although no single domain was judged "High risk," three domains ("Some concerns" for randomization, measurement of outcome, and selective reporting) collectively raise substantial concerns that, in combination, "substantially lower confidence in the result" (per RoB 2 Table 1 guidance for reaching an overall judgement). Given the very small sample size (n=4), pre-existing prognostic imbalance (CST integrity) that plausibly interacts with treatment response, subjective/judgement-based outcome measurement without confirmed maintained blinding, and an unexplained change in specification of the primary outcome relative to the trial registry, the overall risk of bias for the MAS6 result (effect of assignment to intervention) is judged as **High**.

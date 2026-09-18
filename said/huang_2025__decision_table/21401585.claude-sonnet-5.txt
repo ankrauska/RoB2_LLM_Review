@@ -1,0 +1,106 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21401585
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Sakzewski, 2011
+**Outcome Name**: Quality of movement of the impaired upper limb by MUUL
+**Registration number**: Not explicitly stated in this paper; however, protocol published as Boyd R, et al. "INCITE: a randomised trial comparing constraint induced movement therapy and bimanual training in children with congenital hemiplegia." BMC Neurol 2010;10:4 (referenced as ref 17)
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (High Certainty, 98%)
+*Reason*: The article explicitly states "children were randomized to pairs using a computer generated list of random numbers."
+
+**1.2**: **Y** (High Certainty, 95%)
+*Reason*: The article explicitly states "concealed envelopes opened by non-study personnel," which describes a specific, appropriate concealment method (sequentially handled, opaque implied by "concealed," opened by non-study personnel to prevent foreknowledge).
+
+**1.3**: **N** (High Certainty, 97%)
+*Reason*: The article states "After matching and concealed random allocation within pairs, there were no differences between groups on demographic or baseline measures (Table I)." Table I confirms similar MUUL baseline scores (67.1 vs 70.8, overlapping CIs) and other characteristics.
+
+### **Result of Domain 1: Low Risk (96%)**
+*Reason*: 1.2 = Y, 1.1 = Y, 1.3 = N — meets criteria for Low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **Y** (High Certainty, 95%)
+*Reason*: Participants were not blinded — CIMT group wore a visible glove constraint while BIM group did not; children would clearly know their allocated intervention type.
+
+**2.2**: **Y** (High Certainty, 97%)
+*Reason*: Therapists delivering CIMT vs BIM training necessarily knew which intervention they were administering, given the fundamentally different intervention protocols (constraint glove vs. bimanual instructions).
+
+**2.3**: **Y** (Moderate Certainty, 85%)
+*Reason*: "At 3 and 26 weeks, there were no changes to pre-existing therapy for all children with the exception of one child (CIMT group) who received upper limb BoNT-A injections." This represents a very minor imbalance (1/63), essentially balanced nonprotocol care between groups.
+
+**2.4**: **N** (Moderate Certainty, 85%)
+*Reason*: Only 1 dropout among 64 randomized children (1.6%), well below 10% threshold. ("There was one dropout on day two of the camp from the BIM training group.")
+
+**2.5**: **N** (High Certainty, 95%)
+*Reason*: "Compliance was 100% for CIMT, and 97% with BIM training," indicating adherence well above 90%.
+
+**2.6**: **N** (High Certainty, 95%)
+*Reason*: "Analyses were on an intention-to-treat basis according to CONSORT guidelines" — ITT analysis is specified as an inappropriate method per the evaluation instructions.
+
+### **Result of Domain 2: Low Risk (90%)**
+*Reason*: One of 2.1/2.2 = Y; 2.3 = Y; 2.4 = N; 2.5 = N → matches criteria for Low risk (deviations rule satisfied regardless of 2.6 in this pathway).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **Y** (Moderate Certainty, 85%)
+*Reason*: Of 64 randomized children, only 1 dropped out (BIM group, day 2) due to unrelated emotional/behavioral issues. This yields ~98% retention, exceeding the 95% threshold for continuous outcomes. GEE modeling using all available longitudinal data further supports near-complete data utilization.
+
+### **Result of Domain 3: Low Risk (85%)**
+*Reason*: 3.1 = Y → automatically qualifies as Low risk per Domain 3 decision rules.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (High Certainty, 96%)
+*Reason*: The MUUL is a validated, reliable tool for this population. The authors specifically established intrarater reliability (ICC = 0.93, 95% CI 0.84–0.97) for this study, confirming appropriateness of the measurement method.
+
+**4.2**: **N** (High Certainty, 95%)
+*Reason*: "Outcome measures were conducted at baseline, 3 and 26 weeks following intervention by four experienced occupational therapists and physiotherapists" — identical measurement protocol, timing, and tools applied to both groups.
+
+**4.3**: **N** (High Certainty, 95%)
+*Reason*: The MUUL is not patient-reported; it is assessor-scored from video. The article states outcomes were "videotaped and scored in random order by trained occupational therapists masked to group allocation." Assessors were blinded.
+
+**4.4**: **Y** (Moderate Certainty, 80%)
+*Reason*: MUUL is a subjective measure assessed by an outcome assessor (rating "quality of movement"), which involves clinical judgment despite being video-scored.
+
+**4.5**: **N** (High Certainty, 92%)
+*Reason*: No evidence assessment was influenced by knowledge of intervention — assessors were explicitly masked to group allocation ("masked to group allocation"), and reliability was rigorously established (ICC 0.93).
+
+### **Result of Domain 4: Low Risk (92%)**
+*Reason*: 4.1 = N, 4.2 = N, 4.3 = N → satisfies first rule for Low risk regardless of 4.4/4.5.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **Y** (Moderate Certainty, 80%)
+*Reason*: The trial protocol was pre-published (Boyd et al., BMC Neurol 2010, ref 17) prior to outcome data availability, and the MUUL as a primary outcome measure was pre-specified with the same analysis approach (GEE) as reported in the results, consistent with the described statistical analysis plan.
+
+**5.2**: **N** (High Certainty, 93%)
+*Reason*: MUUL was the sole predefined measure of unimanual capacity/quality of movement; there is no evidence of selection among multiple scales for this specific outcome domain — it was consistently reported as the single measure of movement quality.
+
+**5.3**: **N** (High Certainty, 90%)
+*Reason*: A single pre-specified GEE regression model (with treatment-by-time interaction, adjusting for matching covariates) was used and consistently reported for the MUUL outcome; no evidence of multiple competing analyses.
+
+### **Result of Domain 5: Low Risk (88%)**
+*Reason*: 5.2 = N, 5.3 = N, 5.1 = Y → satisfies criteria for Low risk.
+
+---
+
+# **Overall Bias Risk for the Article: Low Risk (90%)**
+
+*Reason*: All five domains (Randomization process, Deviations from intended interventions, Missing outcome data, Measurement of the outcome, Selection of the reported result) were assessed as **Low Risk**. Per the overall assessment rules, when all five domains are rated "Low Risk," the overall risk of bias for the MUUL outcome is **Low Risk**.

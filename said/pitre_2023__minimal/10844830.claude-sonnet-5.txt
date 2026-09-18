@@ -1,0 +1,92 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 10844830
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Venous Concentrations of Endothelin-1 (ET-1)
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect), as specified in instructions.
+
+---
+
+## 1. Bias arising from the randomization process
+
+**Judgement: Some concerns**
+
+**a. Rationale for Judgement:**
+The method of sequence generation is not described in sufficient detail (only "allocated at random"), and the allocation concealment method — "sealed envelopes" — is not further specified as opaque, sequentially numbered, or tamper-proof. This falls short of the criteria required for a judgement of adequate concealment. Additionally, there is notable baseline imbalance in a key prognostic variable (pulmonary artery pressure) and in sex distribution, though with only n=20 these differences could plausibly be due to chance.
+
+**b. Supporting text:**
+- "Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1... or group 2."
+- Table 2: Pulmonary artery pressure mean 25 (5) mm Hg (group 1) vs 19 (5) mm Hg (group 2); Sex (M/F) 9/1 vs 5/5.
+- Text: "Pulmonary artery pressure values were not equal in the two groups before CPB, indicating the difficulty of getting a good match in this kind of a study."
+
+Because sequence generation is unreported (No information), allocation concealment is inadequately described (essentially No information/inadequate), and there is a baseline imbalance in a plausible prognostic factor (PA pressure) that is not clearly attributable to chance given its clinical relevance to the study's pulmonary physiology outcomes — but not extreme enough (no p-value reported, small sample) to conclude definite randomization failure — this leads to a judgement of **Some concerns** rather than High risk.
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention at baseline)
+
+**Judgement: Low risk of bias**
+
+**a. Rationale for Judgement:**
+Participants and personnel could not be blinded to FIO2 assignment (a ventilator setting directly controlled by clinical staff), so signalling question 2.1/2.2 = Yes. However, there is no evidence that deviations from the intended intervention (non-protocol interventions related to trial context) occurred. FIO2 was directly administered by the research/clinical team per protocol at each pre-specified time point, and there is no reported crossover or failure to implement the assigned FIO2 regimen. The outcome (ET-1, a passively measured serum biomarker) is not plausible to be influenced by participant behavior or awareness of allocation. Analysis included all randomized participants at each corresponding time point (aside from the excluded outlier, addressed under missing data).
+
+**b. Supporting text:**
+- "Ventilating the patient's lungs with a FIO2 of 1.0 after weaning from the CPB machine (group 1) resulted in significantly greater arterial and mixed venous Big ET-1 concentrations... compared with patients who received a moderate FIO2 of 0.35."
+- "Except for the FIO2, the ventilatory mode did not differ from the pre-bypass settings in order to preserve equal ventilatory conditions between the groups."
+- No report of protocol deviations, co-interventions differing by group, or non-adherence to assigned FIO2.
+
+Since participants/personnel were aware of allocation but no deviations arising from trial context were reported or plausible for this biochemical outcome, the domain defaults to **Low risk of bias**.
+
+---
+
+## 3. Missing outcome data
+
+**Judgement: High risk of bias**
+
+**a. Rationale for Judgement:**
+An outlier in group 2 was explicitly excluded from the statistical analysis for arterial ET-1 post-hoc, apparently because its values were atypical/extreme — this is a data-driven exclusion based on the observed outcome value rather than a pre-specified, outcome-independent reason. This raises strong concern that exclusion was related to the value of the outcome itself (i.e., "missing"/excluded not at random), which could bias the ET-1 comparison between groups.
+
+**b. Supporting text:**
+- "Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre–1) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation."
+
+This is a clear example of exclusion motivated by the (extreme) value of the outcome measurement itself, satisfying the criterion that missingness (here, exclusion) is likely related to the true value of the outcome, and the reason for exclusion was not applied in a pre-specified, symmetric fashion between groups. This leads to **High risk of bias** for this outcome.
+
+---
+
+## 4. Measurement of the outcome
+
+**Judgement: Low risk of bias**
+
+**a. Rationale for Judgement:**
+ET-1 was measured using a validated, standardized sandwich enzyme immunoassay performed on blinded, coded plasma samples in a laboratory setting. This is an objective biochemical assay unlikely to be influenced by knowledge of group assignment, and the assay methodology did not differ between groups (same assay applied to all samples, same time points, same equipment).
+
+**b. Supporting text:**
+- "For ET-1 and Big ET-1 analyses, a sandwich-type enzyme immunoassay (Biomedica, Vienna, Austria) was used. Direct measurements of the peptides were performed in duplicate according to the manufacturer's instructions."
+- "The concentration range of quality control samples was between 2 and 6 fmol ml–1, with intra- and interassay coefficients of variation of 2.5–5.5 and 3.2–10.9% respectively."
+
+No evidence that outcome ascertainment method differed by group, or that laboratory assessors were aware of, or influenced by, group allocation. This is an "observer-reported outcome not involving judgement" (automated/objective assay), which is unlikely to be influenced by lack of blinding of clinical staff. **Low risk of bias.**
+
+---
+
+## 5. Selective reporting
+
+**Judgement: Some concerns**
+
+**a. Rationale for Judgement:**
+No trial protocol or statistical analysis plan is referenced in the article, and there is no indication that outcome measurements and analyses (e.g., choice of time points, arterial vs mixed venous values, choice of parametric vs non-parametric tests) were pre-specified before unblinded data were available. Furthermore, the post-hoc exclusion of the "outlier" for arterial ET-1 (discussed above) raises additional concern about selective/discretionary handling of the data used to generate the reported ET-1 result. Without access to a prospectively registered protocol confirming the intended outcome measurements/analyses for ET-1, it is not possible to rule out selective reporting of the result actually presented.
+
+**b. Supporting text:**
+- No statement of trial registration, protocol, or pre-specified statistical analysis plan appears in the manuscript.
+- "These data were excluded from the statistical analysis in order to simplify statistical interpretation" — indicates a post-hoc, results-influenced analytic decision.
+- Multiple time points and both arterial and mixed venous ET-1 measures were reported (Fig. 1), but there is no indication of which was the pre-specified primary comparison.
+
+Given the absence of information confirming a pre-specified analysis plan (and the demonstrated instance of a results-based data-handling decision), this is judged as **Some concerns** (not "High," as there is no direct textual evidence that the specific reported ET-1 comparison itself was selected from multiple alternative analyses based on the significance/direction of results, beyond the noted exclusion).
+
+---
+
+# Overall Risk-of-Bias Judgement for ET-1 (venous): **High risk of bias**
+
+**Rationale:** Although several domains were rated as low risk or some concerns, the domain "missing outcome data" is judged as **High risk of bias** due to the explicit, non-pre-specified, results-driven exclusion of an outlier's ET-1 values. Per RoB 2 guidance, a "High" risk of bias judgement in any single domain is sufficient to classify the overall result as being at **high risk of bias**, regardless of the ratings in other domains.

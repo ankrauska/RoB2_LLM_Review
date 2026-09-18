@@ -1,0 +1,95 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 16364124
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Emollients in Propanol-Based Hand Rub Trial
+**Outcome assessed: Visual assessment for erythema and dryness (key symptoms of irritant contact dermatitis)**
+**Effect of interest: Effect of assignment to intervention**
+
+---
+
+## 1. Bias due to randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Sequence generation:** "Randomization was performed via randomly permuted blocks of fixed size using validated software RANCODE 3.6." This confirms a genuine random component (Yes to signalling question 1.1).
+- **Allocation concealment:** This was a within-person, split-body design (left vs. right cubital fossa), with formulations coded as A/B and "Blinding codes were kept sealed until closure of final database. Derandomization and unblinding were performed after closure of the final database." Randomization was performed centrally at "the Department of Statistics and Data Management at proDERM," independent of the treating study nurse. This supports adequate concealment (Yes to 1.2).
+- **Baseline imbalance:** Because this is a paired/split-body design, systemic baseline prognostic factors (age, atopy status, skin type) are inherently balanced within-subject between the two treatment sites. No evidence of imbalance is reported that would suggest problems with randomization.
+
+All three domain criteria (random sequence, concealed allocation, no baseline imbalance) are met → **Low risk of bias**.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Blinding of participants/personnel:** The study is described as "double-blind." "All applications were performed by a study nurse" using coded (A/B) products, and "All evaluations were conducted blindly by the same investigator." This indicates both those administering the intervention and the assessor were blinded to allocation.
+- Because participants and personnel were blinded (2.1/2.2 = No/Probably No), per the algorithm this leads directly to a "Low" risk of bias for Part 1, without needing to assess whether trial-context deviations occurred.
+- **Appropriate analysis:** Results are presented "for the intention-to-treat (ITT) population" including all 35 randomized subjects, with missing values for 3 participants imputed via LOCF (a modified ITT approach, which is considered appropriate for this domain, as bias due to missingness is captured separately in Domain 3). This satisfies criteria for Part 2 (appropriate analysis).
+- Both Part 1 (blinding) and Part 2 (appropriate analysis) suggest low risk.
+
+**Overall: Low risk of bias** for this domain.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Outcome data were available for all or nearly all randomized participants. The ITT population comprised all 35 randomized subjects, and "Missing values in 3 participants were replaced by the method of Last Observation Carried Forward (LOCF)," meaning no truly missing outcome data remained in the reported ITT sum score results.
+- The reasons for missingness during the trial (3 subjects excluded from per-protocol analysis due to "intake of antiphlogistics for 1 panellist and disinfection of fossa cubitalis for 2 panellists") are protocol deviations unrelated to the true value of the skin outcome itself (not driven by e.g., severity of dermatitis), and did not lead to exclusion from the ITT analysis.
+- Since data were available (via LOCF) for all 35 ITT participants, and the reasons for the underlying missing visits are not plausibly related to the true dryness/erythema score, missingness is unlikely to bias the result.
+
+**Overall: Low risk of bias.**
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Appropriateness of method:** The visual assessment scale for erythema and dryness is a standard, validated approach (modified from Fitzpatrick et al.) commonly used in ROAT studies. This is not an inappropriate method (No to 4.1).
+- **Comparability of measurement between groups:** The same measurement method/scale was used identically for both study arms at the same time points, with no indication that ascertainment methods differed by group (No to 4.2).
+- **Blinding of outcome assessors:** "All evaluations were conducted blindly by the same investigator," and the study is described as double-blind, with codes for formulations kept sealed until database closure. This supports blinding of the dermatologist assessor (No to 4.3).
+- **Potential for influence despite blinding:** This is an **observer-reported outcome involving judgement** (visual scoring of erythema/dryness on an ordinal scale), which inherently involves subjective clinical judgement. Although the assessor was blinded, visual assessment of skin dryness/erythema is a "soft" outcome type prone to subtle detection bias if blinding is imperfect (e.g., subtle sensory or olfactory cues from the alcohol/emollient formulations, order effects, or unblinding due to skin feel differences between formulations, given handling of the treatment sites was performed by unblinded study nurses).
+- However, there is no explicit evidence in the report that blinding of the outcome assessor was breached, nor any indication (such as differential physical characteristics of the products, e.g., visible texture/scent differences) that could have compromised blinding of the dermatologist evaluator. Because the intervention involves physically applied products for which subtle blinding failures cannot be entirely excluded (e.g. emollient formulations often have distinct texture/skin feel that could theoretically be detected on subsequent contact by the assessor during the tactile portion of assessment), and because no explicit description of methods used to preserve blinding integrity during assessment is provided (e.g., use of identical scent/texture placebo controls, or formal checks of blinding success), some residual uncertainty remains.
+
+Given blinding was reported but not explicitly verified/tested, and the subjective nature of the outcome despite blinding, this leads to **"Some concerns"** rather than "Low risk," per the algorithm for observer-reported outcomes involving judgement in blinded studies where full assurance of unbroken blinding cannot be firmly established.
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- Reviewing the trial registration information available, and comparing with the elaboration in the published article, the study clearly pre-specifies its primary outcome (sum score for erythema/dryness) and its statistical method (Fieller's confidence interval for non-inferiority), consistent with what is reported: "The primary objective of the study was the proof of non-inferiority of a hand rub with emollients to a hand rub without emollients based on an irritation sum score." This suggests the primary comparison and outcome measurement were reported as intended (No to 5.2 regarding the overall sum score).
+- However, several sub-analyses/breakdowns are presented (erythema alone, dryness alone, ITT vs. PP populations, atopic vs. non-atopic subgroups) without clear evidence from a prospectively published, date-stamped statistical analysis plan (SAP) confirming that all of these breakdowns, and only these, were pre-specified before unblinded data were available. The provided documentation for this assessment did not include a detailed SAP or protocol with sufficient granularity to confirm that:
+  - The individual component scores (erythema, dryness) were prespecified as separate secondary outcomes with the same analytic approach reported.
+  - The choice to present both ITT and PP results, and the LOCF imputation approach specifically, were prespecified rather than chosen post hoc.
+- Because the trial registration entry (referenced but not detailed with full analysis plan text in the provided material) does not provide sufficient granularity to confirm the pre-specification of secondary/subgroup analyses and their timing relative to unblinding, and because multiple potentially selectable analyses are presented (erythema alone, dryness alone, sum score; ITT and PP; subgroup by atopic status) without full assurance that this reflects a complete, prespecified reporting of all intended analyses, there is **"No information"** to fully confirm the absence of selective reporting for these secondary breakdowns.
+
+This leads to **"Some concerns"** per the algorithm (analysis plan status not fully confirmed as prespecified/finalized before unblinding, combined with lack of full information on the range of intended analyses).
+
+---
+
+# Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Bias arising from randomization process | **Low risk** |
+| 2. Bias due to deviations from intended interventions (assignment effect) | **Low risk** |
+| 3. Bias due to missing outcome data | **Low risk** |
+| 4. Bias in measurement of the outcome | **Some concerns** |
+| 5. Bias in selection of the reported result | **Some concerns** |
+
+## **Overall Risk of Bias Judgement: Some concerns**
+
+**Rationale for overall judgement:** Per RoB 2.0 guidance (Table 1), since no domain was rated "High risk of bias," but two domains ("measurement of the outcome" and "selective reporting") were rated as "Some concerns," the overall judgement for this outcome (visual assessment of erythema and dryness) is **"Some concerns."** This reflects residual uncertainty around the robustness of blinding during the tactile/visual assessment process and around the completeness of pre-specification for secondary and subgroup analyses, despite the trial's otherwise rigorous randomization, blinding, and low missing-data profile.

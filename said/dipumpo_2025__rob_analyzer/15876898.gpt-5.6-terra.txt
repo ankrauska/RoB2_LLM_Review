@@ -1,0 +1,130 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 15876898
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## Scope of this RoB 2 assessment
+
+- **Study design:** Individually randomized, parallel-group, double-blind, placebo-controlled trial.
+- **Comparison:** Adjunctive topiramate versus matching placebo in women receiving olanzapine who had gained ≥5 kg.
+- **Result assessed:** The primary body-weight result at 10 weeks: reported final body weight was 82.2 kg (SD 11.3) in the topiramate group and 86.3 kg (SD 10.2) in the placebo group; reported between-group difference in weight loss was 5.6 kg (95% CI −8.5 to −3.0; P<0.001).
+- **Effect of interest:** Effect of **assignment** to topiramate versus placebo (intention-to-treat effect).
+- **Sources available:** The article and its tables/figures only. No protocol, statistical analysis plan, trial-registry record, or other pre-specified analysis document is available in the supplied material.
+
+---
+
+### 1. Bias arising from the randomization process  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **1.1 Was the allocation sequence random? — No information.**  
+  The report states that participants were “randomly assigned” and that “randomization was carried out confidentially by the clinic administration.” However, it does not describe how the allocation sequence was generated. There is no information on use of computer-generated random numbers, a random-number table, random permuted blocks, or another method with a random component. Under RoB 2, merely describing a trial as randomized does not establish that the allocation sequence was random.
+
+- **1.2 Was the allocation sequence concealed until participants were enrolled and assigned to interventions? — No information.**  
+  The article states that randomization was conducted confidentially by clinic administration and that tablets were supplied in numbered boxes. It does not state that allocation was centrally or remotely assigned after irreversible enrolment, nor does it document safeguards for the numbered boxes or envelopes, such as sequential use, opacity, tamper-proofing, or prevention of foreknowledge by recruiting personnel. Thus, adequate allocation concealment cannot be established from the report.
+
+- **1.3 Did baseline differences suggest a problem with the randomization process? — No information.**  
+  Table 1 presents 25 topiramate participants and 18 placebo participants—the final analysed sample—not the 25 versus 24 participants originally allocated. Six placebo-group participants were excluded after randomization because they missed more than one evaluation. Therefore, the reported baseline table does not represent all randomized participants and cannot reliably assess whether baseline balance in the randomized groups suggested a randomization problem. In the analysed sample, the reported means appear broadly similar, but this does not resolve the absence of baseline data for all randomized participants.
+
+**Motivation for judgement:**  
+The report does not provide sufficient information to confirm either random sequence generation or allocation concealment. There is also no usable baseline comparison for the complete randomized sample because baseline data are reported only after exclusion of six placebo participants. There is no direct evidence that allocation was manipulated or non-random; therefore, the appropriate RoB 2 judgement is **some concerns**, rather than high risk.
+
+---
+
+### 2. Bias due to deviations from intended interventions  
+**Judgement: High risk of bias**
+
+**Signalling questions**
+
+- **2.1 Were participants aware of their assigned intervention during the trial? — Probably no.**  
+  The article states that participants received blinded medication and that both subjects and clinicians were blinded regarding topiramate/placebo assignment.
+
+- **2.2 Were carers and people delivering the interventions aware of participants’ assigned intervention during the trial? — Probably no.**  
+  The article explicitly states that clinicians were blinded to treatment assignment.
+
+- **2.3 Were there deviations from intended intervention that arose because of the trial context? — Probably no.**  
+  No trial-context-related deviations, differential co-interventions, or failures to provide the assigned study medication are reported. Olanzapine doses and listed concomitant medications reportedly remained constant during the study.
+
+- **2.6 Was an appropriate analysis used to estimate the effect of assignment to intervention? — No.**  
+  The analysis was not an intention-to-treat analysis. The report explicitly states: “Six subjects who failed to appear for more than one evaluation (all from the placebo group) dropped out of the study, and their data were not further analyzed.” Thus, six of the 24 placebo participants initially assigned to placebo were excluded from the final analysis, whereas all 25 topiramate participants were retained. The reported result therefore compares 25 topiramate participants with only 18 placebo participants.
+
+- **2.7 Was there potential for a substantial impact of failure to analyse participants in the group to which they were randomized? — Yes.**  
+  The exclusions involved **6/24 (25%)** participants allocated to placebo and **0/25** allocated to topiramate. The exclusions were completely differential by treatment group. Since body weight was measured repeatedly and the excluded placebo participants did not complete sufficient evaluations, their exclusion can materially alter the observed placebo-group weight change and consequently the treatment comparison.
+
+**Motivation for judgement:**  
+Although the study was described as double-blind and no relevant trial-context deviations are reported, the effect of assignment was estimated using an analysis that excluded all six post-randomization dropouts, all from the placebo group. This is a substantial, differential post-randomization exclusion and is incompatible with a full intention-to-treat analysis. It has clear potential to materially affect the estimated topiramate-versus-placebo effect. This domain is therefore at **high risk of bias**.
+
+---
+
+### 3. Bias due to missing outcome data  
+**Judgement: High risk of bias**
+
+**Signalling questions**
+
+- **3.1 Were data for this outcome available for all, or nearly all, participants randomized? — No.**  
+  Weight data were analysed for 43 of 49 randomized participants. All six missing participants were in the placebo group. Therefore, outcome data were unavailable for **25% of the placebo group initially randomized** (6/24) and for 12.2% of all randomized participants (6/49). This cannot be regarded as data available for all or nearly all randomized participants.
+
+- **3.2 Is there evidence that the result was not biased by missing outcome data? — No.**  
+  The report does not present a sensitivity analysis, imputation analysis, analysis including all randomized participants, or another method demonstrating that the result is robust to plausible values of the missing placebo-group body-weight outcomes.
+
+- **3.3 Could missingness in the outcome depend on its true value? — Yes.**  
+  Participants were excluded because they “failed to appear for more than one evaluation.” The report gives no further explanation for non-attendance. Since the outcome is body weight and the study concerns treatment of medication-associated weight gain, non-attendance could be related to participants’ health status, weight trajectory, treatment response, adverse effects, or other outcome-related circumstances. The available report does not rule out a relationship between missing body-weight data and the unobserved true body-weight outcome.
+
+- **3.4 Is it likely that missingness in the outcome depended on its true value? — Probably yes.**  
+  Missing outcome data occurred only in the placebo group: 6/24 placebo participants versus 0/25 topiramate participants. This marked differential loss to follow-up, combined with the absence of stated reasons for missing outcome data and lack of any analysis addressing missingness, makes outcome-related missingness likely under RoB 2.
+
+**Motivation for judgement:**  
+A quarter of placebo-assigned participants were omitted from the outcome analysis, while no topiramate participants were omitted. The study does not report why the placebo participants missed assessments, does not provide their outcome data, and does not demonstrate that plausible missing outcomes would not change the result. The differential missingness is large enough to threaten the validity of the estimated treatment effect. This domain is therefore at **high risk of bias**.
+
+---
+
+### 4. Bias in measurement of the outcome  
+**Judgement: Low risk of bias**
+
+**Signalling questions**
+
+- **4.1 Was the method of measuring the outcome inappropriate? — Probably no.**  
+  The primary outcome was body weight, assessed through scheduled weight checks every two weeks. Measuring body weight is an appropriate method for evaluating change in body weight/adiposity in this trial. The report provides no evidence that the weighing method was unsuitable for detecting relevant changes.
+
+- **4.2 Could measurement or ascertainment of the outcome have differed between intervention groups? — Probably no.**  
+  The article states that subjects were seen and weighed every two weeks. It does not report different assessment schedules, thresholds, or methods between treatment groups.
+
+- **4.3 Were outcome assessors aware of the intervention received? — Probably no.**  
+  The report states that both subjects and clinicians were blinded regarding topiramate/placebo allocation. The personnel performing or recording the weight checks are not separately identified, but clinicians were reported as blinded. The evidence supports that outcome measurement was conducted without knowledge of treatment assignment.
+
+**Motivation for judgement:**  
+Body weight is an objective outcome, assessed repeatedly using the same stated schedule in both groups. The study reports blinding of subjects and clinicians, and no differential outcome-ascertainment method is described. Accordingly, there is no identified material risk of bias in the measurement of the body-weight outcome. This domain is judged at **low risk of bias**.
+
+---
+
+### 5. Bias in selection of the reported result  
+**Judgement: Some concerns**
+
+**Signalling questions**
+
+- **5.1 Were the data that produced this result analysed in accordance with a pre-specified analysis plan finalized before unblinded outcome data were available? — No information.**  
+  No protocol, registry entry, or statistical analysis plan is provided. The article does not state that the analysis plan for the body-weight result was finalized before unblinded outcome data became available.
+
+- **5.2 Is the result likely to have been selected on the basis of the results from multiple eligible outcome measurements? — No information.**  
+  Weight was measured every two weeks over the 10-week study. Therefore, multiple potentially eligible time points existed. The article reports the final 10-week result and figures showing repeated measurements, but no prospectively specified primary time point or pre-specified hierarchy of time points is available. There is no direct evidence that the 10-week result was selected because of its magnitude, direction, or statistical significance; however, selection cannot be excluded.
+
+- **5.3 Is the result likely to have been selected on the basis of the results from multiple eligible analyses? — No information.**  
+  The report presents analyses using Mann–Whitney U tests and reports changes from baseline/final values, but there is no pre-specified analysis plan indicating whether analyses of final values, change scores, repeated measurements, adjusted analyses, or different approaches to missing data were intended. The report provides no evidence that a particular analysis was selected because it was favourable, but the absence of pre-specified intentions prevents exclusion of this possibility.
+
+**Motivation for judgement:**  
+The article provides no date-stamped pre-specified protocol or statistical analysis plan. The body-weight outcome was measured at several time points, and more than one plausible analytical approach could have been used. There is no direct evidence of selective reporting sufficient for a high-risk judgement, but the absence of pre-specified analysis intentions gives **some concerns** about selective reporting of the numerical result.
+
+---
+
+### 6. Overall risk-of-bias judgement  
+**Overall judgement: High risk of bias**
+
+**Motivation:**  
+The overall judgement is **high risk of bias** because the study is at high risk in at least two RoB 2 domains:
+
+1. **Bias due to deviations from intended interventions:** all six post-randomization exclusions occurred in the placebo group and those participants were not analysed in their randomized group, contrary to the intention-to-treat principle.
+2. **Bias due to missing outcome data:** 25% of placebo-assigned participants had missing final outcome data, compared with none in the topiramate group; reasons and outcome values are not reported, and no sensitivity analysis addresses the effect of this differential missingness.
+
+There are also **some concerns** about the randomization process and selection of the reported result because the publication does not provide sufficient information on sequence generation, allocation concealment, complete randomized baseline data, or a pre-specified analysis plan. While measurement of body weight is judged at low risk of bias, this does not offset the substantial risk introduced by the differential placebo-group exclusions and missing outcome data.

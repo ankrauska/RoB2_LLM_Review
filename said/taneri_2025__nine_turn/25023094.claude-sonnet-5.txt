@@ -1,0 +1,312 @@
+PROMPT taneri_2025::nine_turn
+PAPER  PMID 25023094
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 9  label=turn_1
+==============================================================================
+I've carefully read through the article by Ruiz-Molinero et al. on the efficacy of therapeutic ultrasound for pain and joint mobility in whiplash injuries. I've reviewed the study design (RCT with placebo control, blinding of patients and assessors), methodology (54 subjects, 27 per group, sex-stratified randomization), intervention protocols (three-phase treatment combining pulsed/continuous US, microwave, massage, and exercise), outcome measures (VAS, algometer, inclinometer), statistical approach (intention-to-treat analysis with Cohen's d effect sizes), and the results presented in Tables 1-3 and Figure 1.
+
+I'm ready to assist with your systematic review. I can help with tasks such as:
+
+1. **Risk of bias assessment** (e.g., using Cochrane RoB 2.0 tool) - noting aspects like the unblinded treating physiotherapist, randomization method, and intention-to-treat analysis
+2. **Data extraction** for a specific template/table (PICO elements, sample characteristics, outcomes, effect sizes)
+3. **Critical appraisal** of methodology (e.g., non-probabilistic sampling despite claims of "simple random selection" in the abstract vs. "non-probabilistic sampling" in methods - this is a notable inconsistency)
+4. **Comparing findings** with other studies in your review
+5. **Extracting specific effect sizes** from Tables 2 and 3 for meta-analysis
+6. **Identifying limitations** the authors acknowledged (algometer measurement difficulty, lack of therapist blinding, employment status as confounder) or ones you've identified yourself
+7. **Assessing outcome measure validity/reliability** as applied in this study
+
+A few things I noticed that may be relevant for your review:
+- There's a discrepancy between the abstract ("simple random selection") and methods section ("non-probabilistic sampling row" with "sex-stratified randomization")
+- The therapist administering treatment could not be blinded, which is a source of potential performance bias
+- The primary significant finding is delayed (20 days post-US completion), which the authors interpret as a secondary/indirect biological effect rather than immediate analgesic effect
+- Joint mobility showed no significant differences between groups at any point, contradicting part of the study hypothesis
+
+Let me know which specific aspect you'd like me to focus on or what output format you need (e.g., GRADE table, PRISMA-related extraction, forest plot data).
+==============================================================================
+REPLY 2 OF 9  label=turn_2
+==============================================================================
+Yes, I'm ready to evaluate the first domain.
+
+I have thoroughly reviewed the article by Ruiz-Molinero et al. and understand the RoB 2 framework structure, which consists of five domains:
+
+1. **Domain 1**: Risk of bias arising from the randomization process
+2. **Domain 2**: Risk of bias due to deviations from intended interventions
+3. **Domain 3**: Risk of bias due to missing outcome data
+4. **Domain 4**: Risk of bias in measurement of the outcome
+5. **Domain 5**: Risk of bias in selection of the reported result
+
+I will evaluate each domain systematically for the outcome **pain visual analogue scale (VAS)**, using only the signaling questions relevant to each domain, basing all judgments strictly on facts reported in the article (e.g., "non-probabilistic sampling row," "sex-stratified randomization," "allocation sequence was blinded through the use of sealed envelopes," "blinding of patients and blind assessor," no dropouts reported, etc.).
+
+I will be critical and will not default to positive judgments when information is missing or ambiguous — per your instructions, I will flag "No information" or lean toward higher risk when the article does not provide sufficient detail, while being careful not to over-penalize when the information genuinely supports a low-risk judgment.
+
+Please go ahead and present Domain 1 (Bias arising from the randomization process), or let me know if you'd like me to proceed directly with all domains in sequence.
+==============================================================================
+REPLY 3 OF 9  label=turn_3
+==============================================================================
+# Domain 1: Risk of Bias Arising from the Randomization Process
+
+**Outcome Name: pain visual analogue scale VAS**
+
+## 1.1. Was the allocation sequence random?
+
+- **Response: No information**
+- **Reason:** The article states two seemingly contradictory statements: "A non-probabilistic sampling row was used" and "The distribution of subjects to the two treatment groups was performed using sex-stratified randomization." While stratification by sex is mentioned, there is no description of the actual method used to generate the random allocation sequence within each stratum (e.g., no mention of a computer-generated random number list, random number table, coin tossing, or similar random component). The term "sex-stratified randomization" describes a stratification approach but does not clarify how the sequence itself was randomly generated. Per the guideline, a bare statement that the study is "randomized" (or in this case, a description of stratification without generation detail) is insufficient to answer "Yes." Therefore, "No information" is the appropriate judgment.
+
+## 1.2. Was the allocation sequence concealed until participants were enrolled and assigned to interventions?
+
+- **Response: Probably yes**
+- **Reason:** The article states, "the allocation sequence was blinded through the use of sealed envelopes." This indicates an attempt at concealment consistent with common allocation concealment practice. However, the article does not explicitly confirm that the envelopes were opaque, sequentially numbered, or tamper-proof, nor does it describe who opened the envelopes and when in relation to enrollment. Given the partial information provided (sealed envelopes used specifically for concealment purposes) but lack of full procedural detail, "Probably yes" is judged more appropriate than "Yes."
+
+## 1.3. Did baseline differences between intervention groups suggest a problem with the randomization process?
+
+- **Response: No**
+- **Reason:** Table 1 (Homogeneity of the two groups pre-test) reports no statistically significant differences between the experimental and control groups for age (p=0.784), VAS (p=0.421), all four algometer measures (p=0.845, 0.428, 0.070, 0.662), and all six mobility measures (p=0.495, 0.054, 0.060, 0.050, 0.084, 0.358). The authors explicitly state, "there were no significant differences between two groups in these two variables" (age and pre-test of dependent variables), and sex distribution was also equal (p=1.000, 10 men/17 women in each group). While the authors themselves note "differences were observed" descriptively in mobility (extension, right/left side bending), none reached statistical significance, and these are compatible with chance given the number of comparisons performed. No imbalance appears large enough to suggest a flawed randomization process for the VAS outcome specifically.
+
+---
+
+## Overall Judgement for Domain 1 (Signaling Questions 1.1, 1.2, 1.3): **Some Concerns**
+
+**Justification:** Because signaling question 1.1 was answered "No information" (the actual method of random sequence generation was not described, despite mention of stratification by sex), this alone is sufficient to preclude a "Low risk" judgment for this domain, per the RoB 2 algorithm. Signaling question 1.2 ("Probably yes") suggests reasonable, though not fully detailed, allocation concealment, and 1.3 ("No") indicates no evidence of baseline imbalance suggestive of a flawed randomization process. Combined, the lack of clarity on sequence generation (1.1), despite adequate concealment (1.2) and no baseline imbalance (1.3), results in a domain-level judgment of **Some Concerns** rather than "Low risk" or "High risk."
+==============================================================================
+REPLY 4 OF 9  label=turn_4
+==============================================================================
+# Domain 2: Risk of Bias Due to Deviations from the Intended Interventions
+
+**Outcome Name: pain visual analogue scale VAS**
+
+**Note on effect of interest:** This is a placebo-controlled trial (active US vs. sham US) with explicit patient blinding described by the authors ("blinding of patients"). Therefore, this domain will be assessed for the **effect of assignment to intervention** (the standard approach for placebo-controlled trials), rather than the effect of adhering to intervention.
+
+---
+
+## 2.1. Were participants aware of their assigned intervention during the trial?
+
+- **Response: Probably no**
+- **Reason:** The article explicitly states the study design included "blinding of patients and blind assessor" and describes the control group as receiving "sham US" where "the ultrasound was off." Both groups underwent an identical sequence of interventions, procedures, and durations, with only the US device's active/inactive status differing. There is no report of participants experiencing side effects or sensations that would unblind them to their allocation. This supports a judgment of "Probably no" rather than "No," as no explicit confirmation of blinding success (e.g., a blinding-check question to participants) was reported.
+
+## 2.2. Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?
+
+- **Response: Yes**
+- **Reason:** The authors explicitly state in the Discussion/Limitations section: "The blinding of the physiotherapist who applied the treatment was not possible, which constitutes another limitation of the study." This is a direct, unambiguous statement that the treatment-delivering physiotherapist was aware of each participant's group assignment.
+
+## 2.3. Were there deviations from the intended intervention that arose because of the trial context?
+
+- **Response: No information**
+- **Reason:** While the physiotherapist delivering the intervention was unblinded (2.2 = Yes), the article provides no evidence — either supporting or refuting — that this awareness led to deviations from the described protocol (e.g., differential encouragement, extra unprotocolized care, or differences in intervention fidelity between groups). The treatment protocol is described in detailed, standardized phases (Phase I, II, III) applied identically to both groups aside from the US device status, suggesting a structured protocol was intended to be followed. However, there is no explicit statement confirming that this fidelity was maintained despite the therapist's awareness, nor any monitoring/fidelity-check reported. Given the absence of information in either direction, "No information" is the appropriate response rather than assuming protocol fidelity was maintained.
+
+## 2.4. Were these deviations likely to have affected the outcome?
+
+- **Response: Not applicable / No information**
+- **Reason:** Since 2.3 could not be answered "Yes/Probably yes" with supporting evidence, this question cannot be meaningfully assessed beyond "No information," as no deviations were identified or described in the article.
+
+## 2.5. Were these deviations from intended intervention balanced between groups?
+
+- **Response: Not applicable / No information**
+- **Reason:** As no deviations were reported or evidenced in the article (2.3/2.4), this question cannot be assessed with available information.
+
+## 2.6. Was an appropriate analysis used to estimate the effect of assignment to intervention?
+
+- **Response: Yes**
+- **Reason:** The article explicitly states, "The analysis was done by intention to treat." Additionally, "During the study no patient was lost or dropped out," meaning all 54 randomized participants (27 per group) were included in the final analysis as randomized. This constitutes an appropriate ITT analysis with no missing outcome data to complicate the estimate.
+
+## 2.7. Was there potential for a substantial impact of the failure to analyse participants in the group to which they were randomized?
+
+- **Response: Not applicable**
+- **Reason:** Since 2.6 was answered "Yes" (appropriate ITT analysis was used, with zero dropouts/loss to follow-up), this question does not need to be assessed.
+
+---
+
+## Overall Judgement for Domain 2 (Effect of Assignment to Intervention): **Some Concerns**
+
+**Justification:** Participants were likely successfully blinded (2.1 = Probably no), which is a strength given the placebo-controlled, sham-device design. However, the physiotherapist delivering the intervention was explicitly **not blinded** (2.2 = Yes), a limitation acknowledged by the authors themselves. Critically, the article provides **no information** on whether this lack of blinding of the treatment provider led to deviations from the intended protocol due to the trial context (2.3 = No information) — for example, whether the unblinded therapist may have provided differential encouragement, attention, or subtle variations in massage/exercise delivery between the active and placebo groups. While the ITT analysis was appropriately conducted with no missing data (2.6 = Yes), the unresolved uncertainty about therapist-driven deviations arising from unblinding — combined with no fidelity monitoring reported — prevents a "Low risk" judgment. Per RoB 2 guidance, when signaling question 2.2 raises a concern (Yes) and there is insufficient information to rule out resulting deviations (2.3 = No information), the domain-level judgment should reflect this uncertainty rather than default to "Low risk." Therefore, the overall judgment is **Some Concerns**.
+==============================================================================
+REPLY 5 OF 9  label=turn_5
+==============================================================================
+# Domain 3: Risk of Bias Due to Missing Outcome Data
+
+**Outcome Name: pain visual analogue scale VAS**
+
+## 3.1. Were data for this outcome available for all, or nearly all, participants randomized?
+
+- **Response: Yes**
+- **Reason:** The article explicitly states, "During the study no patient was lost or dropped out." Furthermore, the sample section confirms "The sample comprised 54 subjects (27 in each group)," and Tables 1, 2, and 3 report VAS data for the full sample at all time points (pre-test, post-test 5, post-test 10, and post-test discharge) with no indication of any missing values for the VAS outcome. This confirms that data were available for all 54 randomized participants (100%), which clearly exceeds the 95% threshold suggested for continuous outcomes.
+
+## 3.2. Is there evidence that the result was not biased by missing outcome data?
+
+- **Response: Not applicable**
+- **Reason:** Since 3.1 was answered "Yes" (data available for all participants, no missing outcome data), this signaling question does not need to be assessed, per the RoB 2 algorithm, which only requires 3.2 if 3.1 is answered "No/Probably no."
+
+## 3.3. Could missingness in the outcome depend on its true value?
+
+- **Response: Not applicable**
+- **Reason:** As there was no missing outcome data (0 participants lost or dropped out for the VAS outcome), this question is not applicable.
+
+## 3.4. Is it likely that missingness in the outcome depended on its true value?
+
+- **Response: Not applicable**
+- **Reason:** As there was no missing outcome data, this question is not applicable.
+
+---
+
+## Overall Judgement for Domain 3: **Low**
+
+**Justification:** The trial explicitly reports zero attrition ("no patient was lost or dropped out") across all 54 randomized participants (27 per group), and complete VAS data are reported for all participants at all pre-specified assessment time points (pre-test, session 5, session 10, and discharge at session 25) in Tables 1, 2, and 3. Since data were available for 100% of randomized participants for this outcome, there is no risk of bias arising from missing outcome data, resulting in an overall **Low risk of bias** judgment for this domain.
+==============================================================================
+REPLY 6 OF 9  label=turn_6
+==============================================================================
+# Domain 4: Risk of Bias in Measurement of the Outcome
+
+**Outcome Name: pain visual analogue scale VAS**
+
+## 4.1. Was the method of measuring the outcome inappropriate?
+
+- **Response: No**
+- **Reason:** The Visual Analogue Scale (VAS) is a well-established, validated, and widely used instrument for measuring pain intensity in clinical and physiotherapy research, including whiplash-associated pain. The article cites supporting literature for its use (Guevara-López et al. 2005; Simons and Travell 2005; Suissa et al. 2001). There is no evidence in the article suggesting the VAS was insensitive to plausible intervention effects or that it demonstrated poor validity in this context. Table 2 and Table 3 show the VAS was capable of detecting differences between groups (e.g., significant difference at discharge, p=0.021), confirming its sensitivity to the intervention effect.
+
+## 4.2. Could measurement or ascertainment of the outcome have differed between intervention groups?
+
+- **Response: No**
+- **Reason:** The VAS was administered to both groups using identical methods and at the same pre-specified time points: "before starting the 1st (pre-test), 6th (post-test 5) and 11th (post-test 10) sessions and on completing the 25th session (post-test discharge)." Both the experimental and control groups underwent the same assessment schedule, using the same instrument, with no indication of differential visit frequency, additional assessments, or differing thresholds between groups. There is no evidence of differential ascertainment.
+
+## 4.3. Were outcome assessors aware of the intervention received by study participants?
+
+- **Response: Probably no**
+- **Reason:** For the VAS, which is a participant-reported outcome, the relevant "outcome assessor" per RoB 2 guidance is the study participant themselves (the person self-rating their pain on the scale). The article explicitly describes the study design as including "blinding of patients," and the control group received an identical procedure with the ultrasound device simply switched off ("sham US"), with all other aspects of treatment (massage, exercises, device application, timing) kept identical between groups. There is no reported evidence that participants experienced perceptible differences (e.g., sensory cues, device sounds, heat sensation) that would have unblinded them to their allocation. Additionally, a separate "physiotherapist appraiser" (distinct from the physiotherapist who "executed the interventions") performed the VAS assessments, suggesting some procedural separation designed to preserve blinding. Given this, it is judged "Probably no" rather than "No," as no explicit blinding-check or confirmation of successful blinding was reported by the authors.
+
+## 4.4. Could assessment of the outcome have been influenced by knowledge of intervention received?
+
+- **Response: Not applicable**
+- **Reason:** Since 4.3 was answered "Probably no" (assessors/participants were probably not aware of intervention assignment), this signaling question does not need to be assessed per the RoB 2 algorithm.
+
+## 4.5. Is it likely that assessment of the outcome was influenced by knowledge of intervention received?
+
+- **Response: Not applicable**
+- **Reason:** As 4.3 was answered "Probably no," this question is not applicable.
+
+---
+
+## Overall Judgement for Domain 4: **Low**
+
+**Justification:** The VAS is an appropriate and validated method for measuring pain (4.1 = No), and measurement/ascertainment procedures were identical and applied at the same time points for both groups (4.2 = No). As the VAS is a participant-reported outcome, the relevant assessor is the study participant, who was probably successfully blinded to group allocation via the sham ultrasound design, identical treatment procedures, and use of a separate assessment physiotherapist independent from the treatment-delivering physiotherapist (4.3 = Probably no). There is no evidence in the article suggesting blinding of participants was compromised. Based on these responses, the overall risk of bias for this domain is judged **Low**.
+==============================================================================
+REPLY 7 OF 9  label=turn_7
+==============================================================================
+# Domain 5: Risk of Bias in Selection of the Reported Result
+
+**Outcome Name: pain visual analogue scale VAS**
+
+## 5.1. Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?
+
+- **Response: No information**
+- **Reason:** The article does not mention a pre-registered study protocol, a trial registration number (e.g., ClinicalTrials.gov), or a pre-specified statistical analysis plan finalized before outcome data were unblinded/analyzed. While the Methods section describes the statistical tests used (Student's t-test, Mann-Whitney U-test, Welch's t-test, normality testing via Shapiro-Wilk/Kolmogorov-Smirnov), there is no indication that this analysis plan was registered or finalized prior to data collection/unblinding. No protocol reference or registration number is provided anywhere in the article. Therefore, "No information" is the appropriate judgment.
+
+## 5.2. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements within the outcome domain?
+
+- **Response: Probably no**
+- **Reason:** The VAS was measured consistently at four pre-specified time points (pre-test, post-test 5, post-test 10, post-test discharge) as described in the Procedure section, and results from all these time points appear to be reported in the tables (Table 1: pre-test; Table 2: improvement after 10 sessions; Table 3: improvement at discharge). There is no evidence that alternative pain measurement scales/domains were collected but selectively omitted from the pain domain (the algometer is a separate, distinct outcome also fully reported). All VAS-related timepoints and results appear to be consistently reported across the tables without apparent selective omission.
+
+## 5.3. Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?
+
+- **Response: Probably no**
+- **Reason:** The Methods section explains a consistent, pre-specified decision rule for choosing statistical tests: normality was tested first (Shapiro-Wilk and Kolmogorov-Smirnov with Lilliefors correction), and then either parametric (Student's t-test, Welch's t-test) or non-parametric (Mann-Whitney U) tests were applied "as appropriate" based on distribution. This is a transparent, justified, and consistently applied decision rule rather than an ad hoc, results-based selection among multiple analyses for the VAS outcome specifically. There is no evidence of multiple competing analyses being conducted for the VAS with only favorable ones reported.
+
+---
+
+## Overall Judgement for Domain 5: **Some Concerns**
+
+**Justification:** There is no information available regarding a pre-specified, registered analysis plan finalized before outcome data were unblinded/analyzed (5.1 = No information), which is a notable gap given the absence of any trial registration number or reference to a published protocol. This lack of documentation prevents verification that the reported VAS analyses and results were not influenced by knowledge of the data. However, there is no direct evidence of selective outcome reporting from multiple eligible measurements (5.2 = Probably no) or selective analysis reporting from multiple eligible statistical approaches (5.3 = Probably no), as the methods for measurement and analysis appear consistently and transparently applied across all reported time points. Per RoB 2 guidance, the absence of a pre-specified/registered protocol (5.1 = No information) combined with otherwise low indication of selective reporting is generally insufficient to warrant "High risk" but also insufficient to support "Low risk," resulting in an overall judgment of **Some Concerns** for this domain.
+==============================================================================
+REPLY 8 OF 9  label=turn_8
+==============================================================================
+# Overall Risk-of-Bias Assessment Summary
+
+**Outcome Name: pain visual analogue scale VAS**
+
+## Summary of Domain-Level Judgments:
+
+| Domain | Judgement |
+|--------|-----------|
+| Domain 1: Randomization process | Some concerns |
+| Domain 2: Deviations from intended interventions | Some concerns |
+| Domain 3: Missing outcome data | Low |
+| Domain 4: Measurement of the outcome | Low |
+| Domain 5: Selection of the reported result | Some concerns |
+
+---
+
+## Overall Predicted Direction of Bias: **Favours experimental**
+
+**Reasoning:** The most substantial concern identified across domains stems from Domain 2, where the physiotherapist delivering the intervention was explicitly unblinded to group allocation ("The blinding of the physiotherapist who applied the treatment was not possible"). While participants themselves were probably blinded (supporting Domain 4's low-risk judgment for self-reported VAS), an unblinded treatment provider who is aware of which patients are receiving "real" active ultrasound versus placebo may unconsciously provide differential attention, encouragement, reassurance, or subtle variations in the delivery of the non-blinded components of care (massage technique, exercise supervision, verbal engagement) to the experimental group. This is a well-documented mechanism of bias in placebo-controlled physical therapy trials with unblinded providers, and it would plausibly inflate the perceived benefit of the active intervention on a subjective, participant-reported outcome like VAS pain. Combined with the lack of a registered/pre-specified protocol (Domain 1 and Domain 5 concerns), which removes a safeguard against outcome/analysis reporting flexibility that typically favors statistically significant, "publishable" findings for the experimental intervention, the overall predicted direction of bias leans toward **favouring the experimental (active ultrasound) group**.
+
+---
+
+## Overall Risk-of-Bias Judgement: **Some Concerns**
+
+**Justification:** Per the RoB 2 algorithm, since no domain was judged "High risk," but three domains (Domain 1, Domain 2, and Domain 5) were judged as raising "Some concerns," the overall risk-of-bias judgment for this outcome (pain VAS) is **Some Concerns**. This reflects genuine, non-trivial uncertainty regarding the trustworthiness of the result — driven primarily by unclear randomization sequence generation, unblinded treatment delivery personnel with unknown downstream effects on protocol fidelity, and absence of a pre-registered analysis plan — even though missing data (Domain 3) and outcome measurement (Domain 4) were both judged to be at low risk of bias.
+==============================================================================
+REPLY 9 OF 9  label=turn_9
+==============================================================================
+# Final Risk-of-Bias Assessment (RoB 2) — Re-Evaluated
+
+**Article:** Efficacy of Therapeutic Ultrasound in Pain and Joint Mobility in Whiplash Traumatic Acute and Subacute Phases
+**Outcome Assessed:** Pain – Visual Analogue Scale (VAS)
+
+After re-examining all evidence directly reported in the article against the RoB 2 signaling questions, my judgments remain consistent upon critical re-review. Below is the finalized, consolidated table.
+
+---
+
+## Domain-by-Domain Final Table
+
+| Domain | Signaling Question | Response | Key Evidence from Article |
+|---|---|---|---|
+| **1. Randomization Process** | 1.1 Was allocation sequence random? | **No information** | Contradictory statements: "non-probabilistic sampling row" vs. "sex-stratified randomization"; no method of sequence generation (e.g., computer, random tables) described |
+| | 1.2 Was allocation sequence concealed? | **Probably yes** | "Allocation sequence was blinded through the use of sealed envelopes" — but no confirmation of opaque/sequentially numbered/tamper-proof envelopes |
+| | 1.3 Baseline differences suggesting problems? | **No** | Table 1: no significant differences in age, VAS, algometer, or mobility (all p>0.05); sex distribution identical (p=1.000) |
+| | **Domain 1 Judgement** | **Some concerns** | Driven by "No information" on sequence generation method |
+| **2. Deviations from Intended Interventions** (Effect of assignment) | 2.1 Participants aware of assignment? | **Probably no** | "Blinding of patients" stated; identical sham US procedure; no reported unblinding evidence |
+| | 2.2 Carers/deliverers aware of assignment? | **Yes** | Explicitly stated: "blinding of the physiotherapist who applied the treatment was not possible" |
+| | 2.3 Deviations due to trial context? | **No information** | No data on whether unblinded therapist altered care delivery between groups |
+| | 2.4 Deviations affected outcome? | **No information** (N/A) | Cannot assess — no evidence of deviations reported |
+| | 2.5 Deviations balanced between groups? | **No information** (N/A) | Cannot assess |
+| | 2.6 Appropriate analysis (ITT)? | **Yes** | "The analysis was done by intention to treat"; "no patient was lost or dropped out" |
+| | 2.7 Potential impact of misanalysis? | **N/A** | Not applicable — 2.6 = Yes |
+| | **Domain 2 Judgement** | **Some concerns** | Unblinded provider (2.2=Yes) + unresolved uncertainty on resulting deviations (2.3=No info) |
+| **3. Missing Outcome Data** | 3.1 Data available for all/nearly all? | **Yes** | "No patient was lost or dropped out"; 54/54 (100%) participants with complete VAS data across all timepoints (Tables 1–3) |
+| | 3.2–3.4 | **N/A** | Not applicable — 3.1 = Yes |
+| | **Domain 3 Judgement** | **Low** | Complete outcome data, zero attrition |
+| **4. Measurement of the Outcome** | 4.1 Method inappropriate? | **No** | VAS is a validated, established pain measure; cited literature support; scale demonstrated sensitivity to detect group differences |
+| | 4.2 Measurement differed between groups? | **No** | Identical assessment schedule/instrument/timing for both groups (pre-test, session 5, 10, discharge) |
+| | 4.3 Assessors aware of intervention? | **Probably no** | VAS = self-reported outcome; patients "blinded"; separate assessing physiotherapist distinct from treating physiotherapist |
+| | 4.4–4.5 | **N/A** | Not applicable — 4.3 = Probably no |
+| | **Domain 4 Judgement** | **Low** | Appropriate, validated measure; consistent ascertainment; probable participant blinding |
+| **5. Selection of the Reported Result** | 5.1 Pre-specified analysis plan? | **No information** | No trial registration number, protocol, or pre-specified/pre-registered SAP reported anywhere in article |
+| | 5.2 Selected from multiple outcome measurements? | **Probably no** | All pre-specified VAS timepoints (pre-test, session 5/10, discharge) consistently reported in Tables 1–3 |
+| | 5.3 Selected from multiple eligible analyses? | **Probably no** | Transparent, consistent, pre-defined decision rule (normality test → parametric/non-parametric test) applied uniformly |
+| | **Domain 5 Judgement** | **Some concerns** | Absence of registered protocol (5.1) prevents full verification, despite no direct evidence of selective reporting |
+
+---
+
+## Overall Summary Table
+
+| Domain | Final Judgement |
+|---|---|
+| 1. Bias arising from the randomization process | **Some concerns** |
+| 2. Bias due to deviations from intended interventions | **Some concerns** |
+| 3. Bias due to missing outcome data | **Low** |
+| 4. Bias in measurement of the outcome | **Low** |
+| 5. Bias in selection of the reported result | **Some concerns** |
+| **OVERALL RISK OF BIAS** | **Some concerns** |
+| **Predicted Direction of Bias** | **Favours experimental** |
+
+---
+
+## Final Conclusion
+
+Applying the RoB 2 algorithm (where the overall judgment is "High" only if ≥1 domain is "High," or multiple domains raise substantial "Some concerns" that collectively undermine confidence; otherwise "Some concerns" if ≥1 domain is "Some concerns" but no domain is "High"):
+
+- **No domain reached "High risk."**
+- **Three of five domains (1, 2, and 5) were judged "Some concerns,"** driven primarily by: (a) unclear/unverifiable random sequence generation method, (b) unblinded treatment-delivering physiotherapist with unknown downstream impact on protocol fidelity, and (c) absence of a pre-registered trial protocol/analysis plan.
+- **Two domains (3 and 4) were judged "Low risk,"** reflecting complete outcome data and appropriate, consistently applied outcome measurement with probable participant blinding.
+
+### **Final Overall Risk-of-Bias Judgement: Some Concerns**
+### **Final Predicted Direction of Bias: Favours Experimental**

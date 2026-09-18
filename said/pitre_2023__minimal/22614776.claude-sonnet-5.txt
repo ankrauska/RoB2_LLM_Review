@@ -1,0 +1,50 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 22614776
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: SafERteens Trial - Peer Aggression at 12 Months
+
+**Comparison assessed:** Therapist-assisted Brief Intervention (TBI) vs. Control
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns, primarily due to insufficient reporting of randomization sequence generation and allocation concealment methods.
+
+**b. Rationale:** The article states: "participants who completed a computerized baseline assessment were randomly selected (stratified by gender and age: 14–15, 16–18 years), and assigned to 1 of the 3 study conditions (TBI, CBI, control) during the ED visit." No further detail is given about the specific method of random sequence generation (e.g., computer-generated random numbers) or how allocation concealment was achieved to prevent foreknowledge of assignment by research assistants approaching and enrolling participants during the ED visit. The protocol registration lists "allocation: RANDOMIZED" but provides no further mechanistic detail. There is no explicit statement confirming that assignment was concealed from research staff until enrollment was finalized. Baseline characteristics (Table 1) show group percentages for severe peer aggression that differ somewhat (82.7% Therapist vs. 75.5% Computer vs. 77.9% Control), but no statistical test of baseline imbalance is reported, and differences are plausibly compatible with chance given stratified randomization. Given the lack of information on sequence generation/allocation concealment methods, but no strong evidence of baseline imbalance problems, this is judged as "Some concerns" rather than "High risk."
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns, because participants and intervention personnel could not be blinded (open-label design), although there is limited evidence to suggest that trial-context-related deviations substantially biased the peer aggression outcome, and an appropriate ITT analysis was used.
+
+**b. Rationale:** Participants and those delivering the TBI could not be blinded to intervention assignment, as the TBI involved direct interaction with a therapist using motivational interviewing techniques, versus the control group receiving only "a trifold brochure with community resources." The article does not explicitly address whether deviations from intended intervention (e.g., contamination, non-protocol interventions) arose because of trial-context factors (such as engagement effects from consent procedures) that could have differentially influenced the peer aggression outcome. However: "An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)," indicating appropriate ITT analysis and minimal non-adherence to assigned intervention delivery. There is no clear evidence of problematic deviations arising specifically from awareness of group assignment that would bias the peer aggression result, but the inherent lack of blinding in a psychosocial intervention trial with self-reported outcomes introduces some concern.
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns, due to a moderate proportion of missing outcome data (~16%) without clear evidence that missingness was unrelated to the true outcome value, though attrition appears fairly balanced across groups.
+
+**b. Rationale:** "Of these, the 12-month follow-up rate was 83.6% (n = 607/726)," meaning 16.4% of randomized participants had missing outcome data at 12 months — this is not "nearly all" participants with available data. The article states: "Because of initial differences in dropping out of school by condition, this variable was controlled for in analysis; however, findings did not differ so models are presented without this covariate," suggesting some baseline differences related to dropout risk factors existed between groups. GEE analysis was used, which "use[s] all data available for participants, including those lost to attrition," but this approach does not fully correct for bias if missingness is related to the true outcome (peer aggression) and differs by group. The authors acknowledge this limitation: "although attrition was low (14%) and an intent to treat analysis was conducted, it is always possible that those lost to follow-up may have biased results." No sensitivity analyses were reported to assess robustness to missing data assumptions, and there's no detailed breakdown of missing data by group specifically for the peer aggression outcome or reasons for dropout by group.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns, because peer aggression is a self-reported outcome and participants could not be blinded to their intervention assignment, creating potential for differential reporting bias, though outcome assessors (independent of intervention delivery) were blinded.
+
+**b. Rationale:** Peer aggression was measured using "Items from the conflict tactic scale," a self-report measure completed via "self-administered computer survey." Since this is a participant-reported outcome, the participant is effectively the "outcome assessor," and participants were necessarily aware of their intervention assignment (TBI vs. brochure control) — it is not feasible to blind participants to whether they received a motivational interviewing session or a brochure. This creates potential for differential reporting (e.g., social desirability bias, demand characteristics from receiving a more intensive intervention). The design module notes "whoMasked: OUTCOMES_ASSESSOR" in the protocol, indicating that independent staff conducting follow-up assessments were blinded to condition, which is a mitigating factor. However, because the outcome relies on participant self-report of their own behavior, and participants who received a motivational, empathetic session might feel differently inclined to report reduced aggression (regardless of true behavior change) compared to controls who received minimal intervention, there is a plausible mechanism for bias. The authors themselves note: "recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers," suggesting steps were taken to mitigate bias, but this does not eliminate the fundamental concern given lack of participant blinding.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias — the outcome and analysis reported are consistent with pre-specified plans, and correspond to the primary outcome registered in the trial protocol.
+
+**b. Rationale:** The trial registration (NCT00251212) lists as a primary outcome: "Primary outcome variables include alcohol misuse and violent behaviors," with a timeframe of "12-months," consistent with the reported peer aggression outcome. The peer aggression measure is consistently defined across the linked 6-month and 3-month follow-up publications (Walton et al. 2010, JAMA; Cunningham et al. 2009, Acad Emerg Med) referenced in this article, using the same conflict tactic scale-based binary variable ("no/yes") for severe past-year peer aggression, without evidence of switching outcome definitions or scales based on results. The statistical approach (GEE models with group-by-time interaction) is applied consistently to all outcomes examined (peer aggression, peer victimization, violence consequences, and three alcohol variables), with results reported regardless of statistical significance (e.g., non-significant CBI vs. control results and non-significant alcohol outcomes are also fully reported in Tables 2 and 3), suggesting no selective reporting based on the direction or significance of results for this outcome domain.

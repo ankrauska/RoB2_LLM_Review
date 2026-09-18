@@ -1,0 +1,91 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 15876898
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0): Weight Outcome
+## Topiramate vs. Placebo for Olanzapine-Related Weight Gain
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias Arising from the Randomization Process
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- **Sequence generation:** The article states subjects were "randomly assigned to topiramate (n = 25) or a placebo (n = 18)" and the study is titled "A Random, Double-Blind, Placebo-Controlled Study." No explicit description of the method used to generate the allocation sequence (e.g., computer-generated randomization) is provided. This warrants a response of "Probably yes" given the explicit terminology used and the double-blind design requiring pre-specified allocation.
+- **Allocation concealment:** "The randomization was carried out confidentially by the clinic administration, and arranged so that 25 test persons would be treated with the active drug and 24 with a placebo." This indicates a centrally-administered process independent of the enrolling clinicians, supporting "Probably yes" for concealment. Medication was also supplied in "numbered boxes," consistent with adequate concealment mechanisms.
+- **Baseline imbalance:** Table 1 shows groups were closely comparable at baseline for age, height, initial body weight, weight gain, duration of olanzapine treatment, olanzapine dose, and diagnosis distribution (e.g., initial weight 86.6±11.8 kg vs. 85.1±10.7 kg; weight gain 9.9±3.0 kg vs. 8.6±1.9 kg). No indications of problematic imbalance suggestive of a flawed randomization process.
+
+Combining: allocation concealment probably adequate + no evidence of baseline imbalance + probable random sequence → **Low risk of bias**.
+
+---
+
+## 2. Deviations from the Intended Intervention (Effect of Assignment to Intervention)
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- **Blinding of participants/personnel:** "Both subjects and clinicians were blinded regarding topiramate/placebo assignment." Topiramate was titrated using matched, numbered tablets, indistinguishable from placebo.
+- **Trial-context deviations:** No non-protocol interventions related to trial context are described. Notably, concomitant psychotropic medications were explicitly kept "constant" during the study for both groups, reducing risk of co-intervention bias: "the doses of olanzapine and the concomitant medications…remained constant."
+- **Side effects/unblinding potential:** "All patients tolerated topiramate well. Moderate, objectionable symptoms were reported only in isolated cases" (dizziness, headache, paresthesia) — these were infrequent and unlikely to have systematically unblinded participants or altered behavior related to weight outcomes.
+- **Analysis approach:** Data were analyzed for all participants with available outcome data (43/49, following ITT principles excluding those with missing data — a modified ITT approach, which is considered appropriate for this domain, as missing-data bias is captured in Domain 3). No naïve per-protocol or as-treated analysis was used for the weight outcome.
+
+Given full blinding of participants/personnel, absence of evidence of differential trial-context deviations, and appropriate (mITT) analysis: **Low risk of bias**.
+
+---
+
+## 3. Missing Outcome Data
+
+**Judgement: High risk of bias**
+
+**Rationale:**
+- **Extent and balance of missing data:** "Six subjects who failed to appear for more than one evaluation (all from the placebo group) dropped out of the study." Of the original 49 randomized (25 TG, 24 PG), this represents **0% missingness in the topiramate group vs. 25% (6/24) missingness in the placebo group** — a stark and clinically important imbalance in missing outcome data between arms.
+- **No correction/sensitivity analysis:** There is no evidence of imputation, inverse-probability weighting, or sensitivity analyses to explore the impact of these missing data on the weight outcome; the paper simply states "data from 43 women…were evaluated" and "the trial was concluded according to protocol," implying a complete-case analysis.
+- **Plausibility that missingness depends on the true outcome value:** Because all dropouts occurred exclusively in the placebo arm (where no active weight-reduction treatment was given), it is plausible that participants withdrew due to dissatisfaction with continued weight gain or lack of perceived benefit — i.e., missingness is plausibly related to the true (unfavorable) outcome value. This is a classic scenario in which "reasons for missing outcome data differ between the intervention groups" (dissatisfied/non-improving placebo patients dropping out), which the RoB 2 guidance specifically flags as likely introducing bias.
+
+Given differential dropout entirely confined to one arm, absence of corrective analysis, and plausible dependence of missingness on the true outcome (weight change): **High risk of bias**.
+
+---
+
+## 4. Measurement of the Outcome
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- **Appropriateness of measurement method:** Weight was measured directly (an objective, observer-reported outcome not involving judgement): "Every 2 weeks, subjects were seen, weighed, and tested with SF-36, EWL-60-S, Bf-S…" This is an appropriate and standard method for measuring weight.
+- **Comparability of measurement across groups:** The same measurement schedule and procedure (biweekly weigh-ins) was applied to both intervention groups equally.
+- **Blinding of outcome assessors:** The study was double-blind, and weight — being an objective, device-based (scale) measurement — is not the type of outcome likely to be influenced by knowledge of intervention assignment even in the unlikely event of partial unblinding (e.g., via side effects). This corresponds to an "observer-reported outcome not involving judgement," for which non-blinding is generally not a concern.
+
+Given appropriate, consistent, objective measurement and successful blinding: **Low risk of bias**.
+
+---
+
+## 5. Selective Reporting
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- No prospectively registered trial protocol or statistical analysis plan is referenced in the article, and given the trial was conducted from March 2003 to June 2004 (published prior to widespread mandatory prospective trial registration, which became standard practice from 2005 onward with ICMJE policy), it is unlikely that a pre-specified, date-stamped analysis plan is available for comparison. The referenced trial registration record does not appear to provide additional detail confirming a pre-specified primary outcome definition, analysis method, or timing for the weight outcome that could be cross-checked against the published report.
+- That said, weight was clearly identified as a primary outcome ("Primary outcome measures were weight checks and self-reported changes on the scales…"), was measured using a single, unambiguous method (direct weighing) at defined intervals, and was analyzed using one pre-specified statistical test (Mann-Whitney U) consistently applied — there is no evidence of selection from multiple alternative outcome measurements (e.g., different weight-related metrics such as BMI, waist circumference) or multiple competing analytic approaches (e.g., adjusted vs. unadjusted, completer vs. imputed) for this specific outcome.
+- However, in the absence of a verifiable pre-specified protocol/SAP finalized before unblinding, it is not possible to fully rule out selective analytic choices (e.g., choice of the completers-only sample rather than a sensitivity/imputed analysis, especially given the imbalanced dropout noted above).
+
+Given the plausibility that the reported single analysis reflects the only measurement/analysis undertaken, but lack of independent verification via a registered protocol: **Some concerns**.
+
+---
+
+# Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Low risk of bias |
+| 2. Deviations from intended intervention | Low risk of bias |
+| 3. Missing outcome data | **High risk of bias** |
+| 4. Measurement of the outcome | Low risk of bias |
+| 5. Selective reporting | Some concerns |
+| **Overall risk of bias (weight outcome)** | **High risk of bias** (driven by Domain 3) |
+
+**Overall justification:** Per RoB 2.0 guidance, a "High" risk-of-bias judgement in any single domain drives the overall judgement to "High risk of bias" for this result, regardless of favorable judgements in other domains. The domain of missing outcome data is of greatest concern here because all six dropouts occurred exclusively in the placebo group (25% attrition vs. 0% in the topiramate group), with no reasons provided that clearly rule out a relationship to the true outcome (weight change), and no sensitivity or imputation analyses were conducted to test the robustness of the reported treatment effect to this differential and substantial attrition.

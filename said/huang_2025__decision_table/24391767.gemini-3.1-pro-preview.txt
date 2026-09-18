@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 24391767
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Enders, 2013
+**Outcome Name**: image quality parameters
+**registration number**: NCT00715806
+
+Domain 1
+1.1 : Y (100%)
+The article explicitly states that "Eligible patients were randomly assigned (computer-generated sequence)".
+1.2 : Y (100%)
+The article clearly states that "allocation was concealed (using sealed envelopes)."
+1.3 : N (100%)
+Table 1 demonstrates that the baseline characteristics of the patients included were well matched between the two groups, with no significant differences reported (P > 0.05).
+Result of the domain (100%)
+Low risk
+The answer to question 1.2 is "Y", the answer to question 1.1 is "Y", and the answer to question 1.3 is "N".
+
+Domain 2
+2.1 : Y (100%)
+The article notes that "Patients could not be blinded to the assigned study group due to the MR imaging setting."
+2.2 : Y (100%)
+Due to the nature of the interventions (different types of MRI scanners), the personnel delivering the interventions were aware of the assigned groups.
+2.3 : Y (80%)
+There is no indication of significant unbalanced non-protocol interventions that are prognostic for the outcome.
+2.4 : N (95%)
+Only one patient aborted MR imaging on the scanner after one sequence. Other non-adherent patients rejected imaging before it started, meaning failure during implementation of the scan was extremely low (< 10%).
+2.5 : Y (100%)
+The article states that 25 out of the 93 examinations were performed after cross-referral to the other scanner. This represents more than 10% of the participants exhibiting non-adherence to the assigned intervention.
+2.6 : N (95%)
+The article states that "Examinations performed after cross-referral, with or without sedation, were included in the primary analysis", which represents an Intention-to-Treat (ITT) approach, which is considered inappropriate for estimating the true effect of adhering to the intervention according to the evaluation criteria.
+Result of the domain (95%)
+High risk
+The answer to questions 2.1 and 2.2 is "Y", the answer to question 2.3 is "Y", the answer to question 2.5 is "Y", and the answer to question 2.6 is "N".
+
+Domain 3
+3.1 : N (100%)
+Out of 106 eligible patients randomized with an indication for spinal MRI, 93 underwent MR imaging and were included in the analysis. This yields an availability rate of 87.7%, which is less than 90%.
+3.2 : N (95%)
+The article does not explicitly provide evidence from sensitivity analyses or methods like inverse probability weighting to correct for bias due to the 13 missing patients.
+3.3 : N (90%)
+Missingness was due to claustrophobic events (inability to undergo the scan), which is unrelated to the true value of the outcome (image quality of the scan).
+3.4 : N (90%)
+Missingness was related to claustrophobia, not to the image quality parameters themselves.
+Result of the domain (90%)
+Low risk
+The answer to question 3.1 is "N", the answer to question 3.2 is "N", and the answer to question 3.3 is "N".
+
+Domain 4
+4.1 : N (100%)
+The outcome measures (SNR, CNR, contour sharpness, and qualitative visual grading) were predefined, appropriate, and reliably measured.
+4.2 : N (100%)
+Measurements were performed in a comparable way for both groups using the same predefined parameters and regions of interest.
+4.3 : N (100%)
+The article explicitly states that "At the time of the analysis the examiners were blinded to the imaging technique and patient identity."
+4.4 : N (95%)
+The outcome included both objective and subjective measures, but since the outcome assessors were blinded to the intervention, the assessment was not influenced by knowledge of the intervention received.
+4.5 : N (95%)
+There is no evidence that the assessment of the outcome was influenced by knowledge of the intervention received, as the assessors were blinded.
+Result of the domain (95%)
+Low risk
+The answer to question 4.1 is "N", the answer to question 4.2 is "N", and the answer to question 4.3 is "N".
+
+Domain 5
+5.1 : Y (100%)
+The outcomes and analysis methods detailed in the Methods section match those presented in the Results section.
+5.2 : N (100%)
+There is no evidence that the reported numerical results were selected from multiple eligible measurements; all planned qualitative and quantitative metrics were reported.
+5.3 : N (100%)
+There is no evidence that the results were selected from multiple eligible analyses of the data; all intended analyses correspond to the reported results.
+Result of the domain (100%)
+Low Risk
+The answer to question 5.2 is "N", the answer to question 5.3 is "N", and the answer to question 5.1 is "Y".
+
+Overall Bias Risk for the Article (95%)
+High Risk
+One domain (Domain 2) was assessed as "High Risk", rendering the overall assessment result for the article "High Risk".

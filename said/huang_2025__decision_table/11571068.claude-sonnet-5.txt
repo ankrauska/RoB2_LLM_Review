@@ -1,0 +1,117 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 11571068
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Halford, 2001 (Halford et al., "Helping the female partners of men abusing alcohol: a comparison of three treatments")
+**Outcome Name**: Women's burden and distress (RSS and GHQ)
+**Registration number**: Not reported/Not registered
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+Reason: The article explicitly states "Participants were assigned randomly via random number tables to one of three treatment conditions." This is a clearly described adequate randomization method.
+
+**1.2**: NI (90%)
+Reason: The article does not mention any allocation concealment method (no central allocation, sealed envelopes, or numbered containers described). No information is provided about whether the sequence was concealed prior to assignment.
+
+**1.3**: N (95%)
+Reason: The article explicitly reports "One-way ANOVAs showed that at pre-treatment the women's GHQ, RSS... did not differ significantly across conditions," and demographic variables (age, years married, number of children) also did not differ. No baseline imbalance is evident.
+
+**Result of Domain 1**: Some concerns (90%)
+Reason: Since 1.2 is "NI" and 1.3 is "N," per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Bias due to deviations from intended interventions
+
+**2.1**: Y (95%)
+Reason: This is a psychotherapy trial (supportive counselling, stress management, AFCT) with no placebo/sham condition or blinding described; participants necessarily knew which counselling/therapy type they received.
+
+**2.2**: Y (95%)
+Reason: Therapists delivered distinct, manualized therapy protocols (counselling vs. stress management vs. AFCT) and therefore were fully aware of participants' assigned condition.
+
+**2.3**: NI (80%)
+Reason: No information provided regarding non-protocol interventions occurring outside the assigned therapy conditions.
+
+**2.4**: Y (95%)
+Reason: 61 participants randomized; only 47 completed treatment (22% attrition), exceeding the 10% threshold for implementation failure.
+
+**2.5**: Y (80%)
+Reason: Only 6 of 21 husbands assigned to AFCT engaged in the couple sessions (women in this condition instead received stress management), and the authors note anecdotal resistance/non-adherence to therapeutic suggestions, indicating non-adherence affecting more than 10% of participants.
+
+**2.6**: N (80%)
+Reason: The analysis used repeated-measures ANOVAs on available case data (not an appropriate method such as instrumental variable analysis or inverse probability weighting to account for non-adherence).
+
+**Result of Domain 2**: High risk (85%)
+Reason: 2.1/2.2 = Y; 2.3 = NI; 2.6 = N. Per the algorithm, when one of 2.1/2.2 is Y/PY/NI, 2.3 is NI/N/PN, and 2.6 is NI/N/PN, the result is "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: N (90%)
+Reason: 61 participants were randomized; only 44 provided assessed data at 6-month follow-up (~72%), below the 90% threshold for continuous outcomes.
+
+**3.2**: N (90%)
+Reason: No sensitivity analysis, inverse probability weighting, or other bias-correction method was used to address missing data; analyses used available cases only.
+
+**3.3**: Y (75%)
+Reason: The article states that "most of these women reported they had left their partners soon after beginning the programme" and that leaving assisted them to escape an unhappy relationship—suggesting that dropout is linked to changes in their psychological state/burden (the outcome itself).
+
+**3.4**: Y (70%)
+Reason: The stated reasons for dropout (leaving the relationship, associated with psychological relief/distress) suggest a plausible relationship between missingness and the true value of the burden/distress outcome; this was not formally examined or ruled out.
+
+**Result of Domain 3**: High risk (85%)
+Reason: 3.1 = N, 3.2 = N, 3.3 = Y, 3.4 = Y → per algorithm this combination yields "High risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95%)
+Reason: RSS (test–retest r=0.85) and GHQ (Cronbach's alpha=0.93) are validated, reliable, appropriate instruments for measuring burden/distress.
+
+**4.2**: N (90%)
+Reason: All measures were administered identically (same instruments, same time points: pre-, post-treatment, 6-month follow-up) across all three conditions.
+
+**4.3**: Y (95%)
+Reason: RSS and GHQ are patient-reported outcomes, and participants were fully aware of their treatment assignment (no blinding was employed).
+
+**4.4**: Y (95%)
+Reason: The outcome is a subjective, patient-reported measure of psychological burden/distress.
+
+**4.5**: Y (75%)
+Reason: In an unblinded psychotherapy trial, self-reported distress/burden could plausibly be influenced by participants' awareness of and expectations related to their assigned treatment condition (e.g., demand characteristics differing between supportive counselling vs. active behavioral treatments).
+
+**Result of Domain 4**: High risk (85%)
+Reason: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, 4.5 = Y → per algorithm this combination yields "High risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (90%)
+Reason: No trial registration or pre-specified analysis plan is mentioned in the article.
+
+**5.2**: N (80%)
+Reason: Both intended outcome measures for burden/distress (RSS and GHQ) were fully reported in the Results, consistent with the Methods section; no evidence of selective reporting among multiple eligible measures.
+
+**5.3**: N (80%)
+Reason: The repeated-measures ANOVA approach described in the Methods for RSS/GHQ matches the analysis reported in the Results; no evidence of selection among multiple eligible analyses for this outcome.
+
+**Result of Domain 5**: Some concerns (85%)
+Reason: 5.2 = N, 5.3 = N, and 5.1 = NI → per algorithm this combination yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (90%)
+
+Reason: Domain 1 = Some concerns; Domain 2 = High risk; Domain 3 = High risk; Domain 4 = High risk; Domain 5 = Some concerns. Since at least one domain (in fact three domains: 2, 3, and 4) was rated "High risk," the overall risk-of-bias assessment for the outcome of women's burden and distress is **High Risk**.

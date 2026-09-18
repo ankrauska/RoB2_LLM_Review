@@ -1,0 +1,86 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 17377048
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0 Tool
+## Outcome: Agatston Score
+
+**Preliminary note:** This trial randomizes patients to detector collimation protocols (Group A: 64×0.6mm vs Group B: 20×1.2mm) — a technical/imaging parameter comparison, not a clinical intervention. The "intervention" is a scanning protocol applied at a single time point; there is no scope for post-randomization deviation, non-adherence, or differential missing data in the way these are typically understood for clinical trials. This substantially affects several domain assessments below.
+
+---
+
+### 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** The article states "patients were assigned to two groups at random with 20 patients each." No details are provided about the method of sequence generation (e.g., computer-generated randomization, random number table) or about allocation concealment. There is no description of who enrolled patients or whether allocation was concealed from the enrolling investigator. The only reported baseline comparison is age ("The age between both groups was not significantly different (Mann-Whitney U test, p > 0.05)"), and no other baseline characteristics (e.g., sex distribution, extent of underlying calcification, heart rate) are compared to assess for randomization failure. Given:
+- No information on sequence generation (signalling question 1.1: No information)
+- No information on allocation concealment (signalling question 1.2: No information)
+- No evidence of substantial baseline imbalance based on the limited data reported (signalling question 1.3: Probably No)
+
+This combination (No information on both sequence generation and concealment) maps to "Some concerns" per the RoB2 algorithm (Table 4: NI sequence + NI concealment + no imbalance evidence → Some concerns).
+
+---
+
+### 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** This domain is assessed for the effect of assignment to intervention. In this study, the "intervention" (collimation setting: 64×0.6mm vs 20×1.2mm) is a technical scanning parameter applied entirely at the time of image acquisition, under full control of the CT technologist/radiologist, with no possibility of participant awareness influencing outcome, no possibility of non-adherence, no carer-driven co-intervention, and no scope for the trial context to alter delivery of the assigned scanning protocol.
+
+- **Signalling Q2.1 (participants aware):** Not applicable/No — patients have no active role in the scanning parameter and cannot influence it.
+- **Signalling Q2.2 (personnel aware):** By necessity, the technologist is aware of the assigned collimation (it cannot be blinded, as it is a physical scanner setting), but this awareness cannot lead to deviations from the trial protocol because delivery of the assigned collimation is not subject to discretion — "The patients were assigned to two groups at random with 20 patients each: in group A, collimation was 64 × 0.6 mm; in group B, it was 20 × 1.2 mm" — this is a fixed technical setting, not a behaviorally modifiable intervention.
+- **Signalling Q2.3 (deviations arising from trial context):** No evidence of any deviation — all patients appear to have been scanned according to their assigned collimation protocol, with no crossovers reported.
+- **Signalling Q2.6 (appropriate analysis):** All 40 randomized patients were analyzed according to their assigned group (with 4 excluded post-randomization for a pre-specified, non-informative reason applicable to both groups — see missing data domain — but this exclusion was based on an eligibility-type criterion applied symmetrically, not related to lack of adherence to assigned intervention).
+
+Given the fixed, non-modifiable nature of the assigned intervention (a scanner acquisition parameter), there is essentially no opportunity for deviation from intended intervention that could bias the assignment effect.
+
+---
+
+### 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** Of the 40 randomized patients, 4 were excluded from all analyses: "Four patients had to be excluded from the study because no coronary calcium was detected on any of the reconstructions." This represents 10% of the randomized sample with data unavailable for the Agatston score analysis as presented (post-exclusion group sizes were n=18 in Group A and n=18 in Group B, down from 20 each).
+
+- **Signalling Q3.1 (data available for all/nearly all):** No — 10% of participants were excluded.
+- **Signalling Q3.2 (evidence result not biased by missing data):** The reason for exclusion (zero calcium detected on all reconstructions, i.e., Agatston score = 0 uniformly) is directly tied to the true value of the outcome — these patients did not have "missing" data in the conventional sense, but were excluded because their true outcome (score=0) was measured consistently but excluded from analysis of score variability/means. This exclusion could plausibly affect the mean/SD Agatston scores reported and the coefficient of variation calculations, since exclusion of true-zero patients will tend to inflate the mean score and could affect variance estimates.
+- **Signalling Q3.3/3.4:** The reason for exclusion is related to the true value of the outcome (absence of detectable calcium), which is a data-dependent exclusion rather than data missing at random. However, since this exclusion was applied post-randomization but for a reason unrelated to the intervention comparison itself (detector collimation) — that is, whether a patient has zero calcium is a patient-level biological characteristic unrelated to which collimation protocol they were randomized to — it is unlikely to differentially bias the *comparison* between Group A and Group B, though it does affect the calculation of variability statistics (coefficient of variation) which is central to the study's conclusions.
+
+No sensitivity analysis was performed to determine whether inclusion of the zero-calcium patients would alter conclusions about reconstruction-interval-dependent variability.
+
+---
+
+### 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Signalling Q4.1 (method inappropriate):** No — the Agatston score methodology using standard thresholds (>130 HU, contiguous pixels) via a validated commercial workstation (Syngo CaScoring Wizard) is an appropriate, standard, objective method.
+- **Signalling Q4.2 (measurement differ between groups):** This is central to the study's purpose — reconstruction increment and interval do lead to differences in measured values, but this is the exposure being studied (an anticipated, expected technical difference), not a bias-inducing artifact of unequal ascertainment procedures between groups. However, of concern is that the readers were not blinded to the group assignment in the sense that:
+- **Signalling Q4.3 (outcome assessors aware of intervention):** The article states: "a radiologist with 4 years of experience... and a cardiologist with 11 years of experience... differentiated between calcium and noise by placing regions of interest around the CAC." No statement is made about whether these assessors were blinded to which collimation group (A or B) or which reconstruction interval/increment they were scoring. Given the workstation output and DICOM headers typically display acquisition parameters, it is likely the assessors were aware of the collimation and reconstruction settings during manual region-of-interest placement.
+- **Signalling Q4.4/4.5 (could/did this influence assessment):** This is an observer-reported outcome involving some judgement (manual differentiation of calcium from noise/artifact), and awareness of which reconstruction (e.g., a reconstruction known a priori to be prone to blurring at 70%) could plausibly influence the manual adjudication of borderline lesions as calcium vs. noise, introducing potential for subconscious bias in scoring, especially for the small-lesion detection findings ("in two cases, very small calcified lesions... were only detected using a reconstruction increment of 1.5 mm").
+
+No mention of blinded, independent, or adjudicated reading is reported.
+
+---
+
+### 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** No trial registration record was identified/available for this study (doc_id referenced trial registration returned no matching information for this specific imaging methodology study; such single-center imaging comparative studies were not typically prospectively registered in trial registries in this era). Without a pre-specified, date-stamped analysis plan or protocol:
+
+- **Signalling Q5.1 (analyzed per pre-specified plan):** No information — there is no evidence of a publicly available prospective protocol or statistical analysis plan finalized prior to unblinded data analysis.
+- **Signalling Q5.2 (selection among multiple outcome measurements):** The study reports both Agatston and volumetric scores, and both are fully reported with consistent methodology across both metrics and both groups — no evidence of selective omission of a measured outcome.
+- **Signalling Q5.3 (selection among multiple analyses):** All five reconstruction intervals (50–70%) and both reconstruction increments (1.5mm and 3.0mm) appear to be systematically and completely reported for both groups, including full descriptive statistics (Table 1) and coefficients of variation, with no evidence of cherry-picked comparisons.
+
+While the completeness of reporting across all pre-specified reconstruction combinations is reassuring and argues against high risk of bias, the absence of a verifiable prospective protocol/registration means selective reporting cannot be fully excluded, warranting "Some concerns" rather than "Low risk."
+
+---
+
+## Overall Risk of Bias Judgement: **Some concerns**
+
+Per RoB 2.0 guidance (Table 1), since multiple domains (randomization process, missing outcome data, measurement of outcome, and selective reporting) are judged as "Some concerns," with no domain rated as "High risk of bias," but concerns span multiple domains, the overall judgement is **Some concerns**, bordering on **High risk of bias** given the combination of concerns across four of five domains, particularly regarding unblinded outcome assessment and the exclusion of 10% of randomized patients based on outcome-related criteria. Reviewers may reasonably elevate this to "High risk of bias" if they judge the combination of concerns to substantially lower confidence in the result.

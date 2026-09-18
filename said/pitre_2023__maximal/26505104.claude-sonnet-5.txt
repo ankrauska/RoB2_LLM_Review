@@ -1,0 +1,56 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 26505104
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## Risk of Bias Assessment (RoB 2.0)
+**Outcome assessed:** Delayed diagnostic performance (diagnostic test score at 1-week delay)
+**Effect of interest:** Effect of assignment to intervention (baseline randomization effect, not per-protocol/adherence effect)
+
+---
+
+### 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** The article states, "Participants were randomly allocated to one of four study conditions," but provides no description of the method used to generate the allocation sequence (e.g., computer randomization, random number table) and no description of allocation concealment procedures (e.g., whether assignment was concealed from those enrolling participants). Signalling question 1.1 (sequence random?) and 1.2 (allocation concealed?) cannot be answered better than "No information." With respect to baseline balance, group sizes were similar (25, 21, 24, 25) and the distribution of professional groups (nursing/PA students) across arms appears roughly comparable ("2 physician assistants per group, 3 nursing students in the SC and CB groups, and 2 nursing students in the FL and BC groups"), suggesting no gross imbalance indicative of a randomization failure. Because allocation concealment is not described and there is no information about the randomization method, but there is no evidence of baseline imbalance suggesting a corrupted process, this meets the "some concerns" criteria (no information on concealment/sequence generation, but baseline data compatible with chance).
+
+---
+
+### 2. Deviations from the intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** This is a single-session, computer-administered educational experiment in which participants individually viewed one set of written materials corresponding to their assigned condition ("Participants completed this study individually using a custom-designed computer program"). Because participants had no contact with each other or with study personnel who could differentially alter delivery, there is minimal risk of contamination, co-intervention, or trial-context-driven deviations affecting the intervention as assigned. Participants were, by necessity, aware of the content they received (they read it), but this awareness is intrinsic to the intervention itself rather than a deviation from intended intervention, and there is no indication that recruitment/engagement effects related to trial context influenced delivery of materials. There is no evidence that non-protocol interventions, implementation failures, or contamination occurred, and the analysis appears to include participants as assigned (aside from missing outcome data, addressed separately). No naïve per-protocol or as-treated analysis was used for the primary comparison. Therefore, deviations from intended intervention were unlikely to bias the effect of assignment to intervention.
+
+---
+
+### 3. Bias due to missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** Of 99 enrolled participants, 5 did not complete the delayed session and were excluded ("Five enrolled participants failed to complete the delayed session of the study (3 from the CB group and 2 from BC)... and were excluded from the analysis"). This represents a small amount of missing data (~5%), differentially distributed toward the CB and BC arms (no dropouts noted in SC or FL), which raises some concern that missingness may not be entirely unrelated to condition, though the reasons given were not clearly tied to poor performance. More concerning, two additional participants (one BC, one CB) were excluded post hoc because they "spent less than five minutes on the delayed diagnostic test" and had performance "three standard deviations below the mean" — this is an exclusion based on characteristics of the outcome itself (performance), which raises the possibility that missingness/exclusion could be related to the true value of the outcome. However, the numbers involved are very small (2/99), unevenly distributed but unlikely to be large enough to have "made an important difference" to the overall interaction effect. Given the small number of exclusions, the plausible (though not certain) relationship between exclusion and outcome value, and no formal sensitivity analysis was reported to confirm robustness to these exclusions, this is judged as "Some concerns" rather than high risk.
+
+---
+
+### 4. Bias in measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** The diagnostic outcome was measured using a standardized, structured 12-case multiple-choice diagnostic vignette test, identical in format and difficulty across groups ("Two versions were also created for a total of 24 cases with counterbalanced administration at immediate and delayed testing... Analysis of test items showed both tests to be of similar difficulty"). This is an observer-reported outcome not involving judgement (correct/incorrect selection from a fixed list of diagnoses), scored objectively/automatically via computer program rather than by a human rater aware of group assignment. There is no indication that measurement or ascertainment methods differed between groups, and because the test is objectively scored (multiple choice), the risk that knowledge of intervention assignment influenced outcome assessment is minimal — participants' knowledge of their own condition does not affect the objective, pre-specified scoring of a fixed-answer diagnostic test in the same way it might affect a subjective/participant-reported outcome. Thus, the method was appropriate, comparable across groups, and unlikely to be influenced by awareness of allocation.
+
+---
+
+### 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:** No trial registry entry, prospectively published protocol, or statistical analysis plan is referenced or cited in the manuscript to confirm that the diagnostic-performance outcome, its analysis (mixed ANCOVA with group × time interaction), and covariates were specified prior to unblinded data analysis. The methods note that "Appropriate covariates chosen were based on the correlations between performances on the diagnostic and memory test as well as between performance and time per vignette" — this indicates that covariate selection for the ANCOVA was informed by post hoc examination of the data/correlations rather than a pre-specified plan, raising concern that the specific reported model (which covariates were included, i.e. time per vignette correlations reported selectively for significant associations) may have been influenced by the pattern of results. There is no evidence of multiple competing outcome measures or analyses being selectively suppressed, and the diagnostic test appears to be the a priori primary outcome, but in the absence of a registered protocol/SAP, it cannot be confirmed that the reported delayed-testing interaction analysis was locked in before results were seen. This supports a judgement of "Some concerns" rather than "Low risk."
+
+---
+
+## Summary/Overall Judgement (for this outcome)
+Given "Some concerns" in Domains 1 (randomization), 3 (missing data), and 5 (selective reporting), and "Low risk" in Domains 2 and 4, the overall risk-of-bias judgement for **delayed diagnostic performance** is:
+
+**Overall: Some concerns** (multiple domains rated "some concerns," but none rated "high risk," and the concerns are not judged to substantially undermine confidence in the result to the level of "high risk").

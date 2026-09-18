@@ -1,0 +1,227 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 19723701
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences:
+"The patients were randomly assigned in a 3:2 ratio to receive either CRT with an ICD (CRT–ICD group) or only an ICD (ICD-only group) and were stratified according to clinical center and ischemic status with the use of an algorithm that ensured near balance in each stratum."
+
+Analysis: The article states patients were "randomly assigned" and describes stratification by clinical center and ischemic status using "an algorithm that ensured near balance in each stratum." This suggests a stratified randomization scheme, likely with a random element (e.g., permuted blocks or minimization within strata), consistent with standard practice for large multicenter industry-sponsored trials with rigorous coordination and data centers. However, no explicit description of the specific method used to generate the random sequence (e.g., computer-generated random numbers, random number table) is provided. Given this is a large, well-organized multicenter trial with an experienced coordinating/data center (University of Rochester) and biostatistics core, and the term "randomly assigned" combined with a stratification algorithm implies an underlying random process, it is reasonable to judge that a random component was probably used, despite the lack of explicit detail on the exact randomization technique.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences:
+"The patients were randomly assigned in a 3:2 ratio to receive either CRT with an ICD (CRT–ICD group) or only an ICD (ICD-only group) and were stratified according to clinical center and ischemic status with the use of an algorithm that ensured near balance in each stratum."
+No further details are provided regarding the specific allocation concealment mechanism (e.g., central randomization system, sealed envelopes, or telephone/web-based randomization).
+
+Analysis:
+The article describes stratified randomization ("algorithm that ensured near balance in each stratum") but does not specify the actual mechanism used to conceal allocation from enrolling investigators until assignment (e.g., central computerized system, sealed opaque envelopes, or independent randomization service). Given the multicenter nature of large trials like this one (110 centers), it is plausible that a centralized/stratified randomization system was used, which is common practice and typically implies concealment, but this is not explicitly stated in the text. Since there is no explicit description of the concealment method, but the structured, stratified randomization design suggests a systematic and likely centrally administered process typical of large multicenter trials, a judgment of "Probably yes" is reasonable rather than outright "No information," as such stratified multicenter randomization is rarely done without concealment mechanisms in place.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"Baseline characteristics and the use of various cardiac medications at enrollment were similar in the two groups." (Results, Study Population)
+
+Table 1: Baseline demographic and clinical characteristics show closely comparable values between CRT-ICD and ICD-only groups (e.g., age 65±11 vs 64±11, ejection fraction 0.24±0.05 in both groups, similar QRS duration, NYHA class distribution, and medication use), with no indication of statistically significant imbalances.
+
+Randomization was stratified by clinical center and ischemic status, using an algorithm ensuring near balance in each stratum, and the intended 3:2 allocation ratio was closely achieved (1089 vs 731).
+
+Analysis:
+The trial used a pre-specified 3:2 randomization ratio, and the achieved group sizes (1089 and 731) match this ratio closely, indicating no substantial deviation in allocation. The baseline characteristics table shows all variables — demographic, clinical, echocardiographic, and medication use — are very similar between groups, with no notable or clinically meaningful imbalances reported. The authors explicitly state that baseline characteristics were similar between groups. There is no evidence of a key prognostic imbalance (e.g., ejection fraction, QRS duration, NYHA class) that would bias the effect estimate, nor evidence of excessive similarity suggesting problems with randomization. Therefore, the observed baseline distribution is consistent with chance variation expected from proper randomization.
+
+Correct answer: No
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences: "The treating physicians were aware of study-group assignments." "Masking: NONE" (design module). Also, all patients received an implanted device (either CRT-ICD or ICD-only), and patients could feel/detect biventricular pacing versus single-chamber pacing, and device programming differed between groups (DDD vs. VVI/DDI), which would be perceptible to patients.
+
+Analysis: This trial had an open-label (unmasked) design, with no sham/placebo procedure to conceal group assignment from participants. Patients assigned to CRT-ICD received biventricular pacing (DDD mode), while those assigned to ICD-only received single-chamber or dual-chamber backup pacing (VVI/DDI) without resynchronization pacing. These differences in device programming and pacing sensations, along with the absence of any blinding procedure for participants, make it highly likely that participants were aware of their treatment assignment. There is no mention of any placebo pacing or sham programming to conceal allocation from patients. Therefore, participants were not blinded to their intervention status.
+
+Correct answer: Yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+- "The treating physicians were aware of study-group assignments."
+- "Heart-failure events were diagnosed by physicians who were aware of the treatment assignments..."
+- "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments..."
+- Protocol: "maskingInfo": {"masking": "NONE"} — an open-label trial with no blinding of participants, care providers, or investigators.
+- "Members of the heart-failure adjudication committee were unaware of study-group assignments, but the investigators who decided on therapy or hospital admission for patients with heart failure were aware of such assignments."
+
+Analysis: This trial was explicitly open-label (masking = NONE), with device implantation making blinding of care providers essentially impossible (CRT-ICD vs ICD-only devices are physically and functionally distinguishable, and treating physicians actively programmed and managed these devices). The article explicitly states that treating/attending physicians and those diagnosing heart failure events were aware of study-group assignments throughout the trial. This directly confirms that carers/people delivering the intervention were aware of the assigned intervention, which the authors themselves acknowledge as a potential source of bias in the diagnosis and management of heart-failure events. This clearly indicates lack of blinding of carers and intervention deliverers.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+- "The treating physicians were aware of study-group assignments."
+- "A total of 173 crossovers occurred: 91 patients who were assigned to the ICD-only group received a CRT–ICD device (12.4%) during the trial, 30 at the physician's discretion before reaching an end point and 61 after a heart-failure event; 82 patients who were assigned to the CRT–ICD group (7.5%) received an ICD-only device during the trial because of technical difficulties in positioning the CRT pacing lead in the coronary vein."
+- "Members of the heart-failure adjudication committee were unaware of study-group assignments, but the investigators who decided on therapy or hospital admission for patients with heart failure were aware of such assignments. It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group."
+- Trial design was open-label (masking: NONE), with treating physicians and patients aware of assignment throughout follow-up.
+
+Analysis:
+This was an unblinded (open-label) trial in which both patients and treating physicians were fully aware of treatment assignment throughout the 2.4-year follow-up. This creates a clear trial-context risk: knowledge of assignment could influence physician decisions to deviate from the protocol. Indeed, 30 patients assigned to ICD-only crossed over to receive a CRT-ICD device "at the physician's discretion before reaching an end point" — i.e., not because of a protocol-specified indication (such as a heart-failure event, which accounted for the other 61 crossovers), but apparently because the physician (aware of the patient's "disadvantaged" ICD-only assignment) chose to give them the additional therapy. This type of non-protocol crossover, driven by awareness of assignment in an open-label trial, is precisely the kind of deviation attributable to trial context described in the guidance (participants/clinicicians seeking or providing the "better" intervention because they know the assignment). This is different from the 82 crossovers in the CRT-ICD group due to technical implantation difficulties, which are procedural/technical failures unrelated to trial context, and the 61 crossovers after a heart-failure event, which reflect clinically driven, protocol-consistent decisions. The authors themselves acknowledge this potential bias, stating that physician awareness of assignment "contributed in some way" to outcome ascertainment, and that this is a "potential bias." This provides reasonably strong evidence that trial context (lack of blinding, physician awareness of assignment) led to at least some deviations (32 discretionary crossovers) inconsistent with protocol.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+"A total of 173 crossovers occurred: 91 patients who were assigned to the ICD-only group received a CRT–ICD device (12.4%) during the trial, 30 at the physician's discretion before reaching an end point and 61 after a heart-failure event; 82 patients who were assigned to the CRT–ICD group (7.5%) received an ICD-only device during the trial because of technical difficulties in positioning the CRT pacing lead in the coronary vein."
+"The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments..."
+"It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group."
+"Another potential bias is that 201 patients in the CRT–ICD group underwent the 1-year echocardiographic evaluation with the CRT device turned off, and these patients were not included in the paired volume and ejection-fraction studies."
+
+Analysis: There were substantial deviations from assigned intervention, notably 173 crossovers (91 ICD-only patients crossing to CRT-ICD, largely after a heart-failure event, and 82 CRT-ICD patients failing to receive CRT due to technical difficulties). Critically, 30 of the ICD-only-to-CRT-ICD crossovers occurred at physician discretion before reaching an endpoint, which is a nonadherence to protocol arising from clinical management decisions rather than random chance, and could plausibly affect the composite outcome (death or heart-failure event) since these patients then received the more effective therapy before an event was recorded. Additionally, the diagnosis of heart failure was made by unblinded treating physicians, and the authors themselves acknowledge that this awareness could have influenced the lower frequency of heart-failure diagnoses in the CRT-ICD group—directly linking deviations/lack of blinding in intervention delivery/outcome ascertainment to the outcome. These factors indicate that the deviations were not simply innocuous but had plausible potential to influence the observed treatment effect on the primary outcome.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+"A total of 173 crossovers occurred: 91 patients who were assigned to the ICD-only group received a CRT–ICD device (12.4%) during the trial... 82 patients who were assigned to the CRT–ICD group (7.5%) received an ICD-only device during the trial because of technical difficulties in positioning the CRT pacing lead in the coronary vein." "Devices were removed during the trial for a variety of reasons in 14 patients in the CRT–ICD group (1.3%) and in 5 patients in the ICD-only group (0.7%)." "A total of 44 patients in the CRT–ICD group (4.0%) and 55 in the ICD-only group (7.5%) declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up." "Of the 1089 patients who were assigned to the CRT–ICD group, 11 (1.0%) did not receive a device; of 731 patients who were assigned to the ICD-only group, 19 (2.6%) did not receive a device." "The treating physicians were aware of study-group assignments." "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments..."
+
+Analysis: Several deviations from intended intervention occurred, and their frequencies differed notably between groups. Crossovers were asymmetric (12.4% of ICD-only patients received CRT-ICD vs 7.5% of CRT-ICD patients receiving ICD-only, for different reasons—physician discretion/heart-failure events vs technical implant failure). Non-receipt of assigned device also differed (1.0% vs 2.6%), as did withdrawal/loss to follow-up (4.0% vs 7.5%) and device removal (1.3% vs 0.7%). Additionally, because the primary outcome (heart-failure diagnosis) was made by unblinded treating physicians, and CRT-ICD crossover into ICD-only group occurred specifically after a heart-failure event (61 of 91), this could differentially affect ascertainment and management between groups. These differences in magnitude, reasons, and timing of deviations suggest they were not well balanced between the two arms, and the direction of some deviations (e.g., ICD-only patients crossing over to CRT-ICD after heart failure events) could bias toward reducing the observed treatment effect difference, while unblinded outcome assessment could exaggerate it. Thus, deviations were present and differed in pattern/magnitude between groups rather than being balanced.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences: "Data analysis was performed according to the intention-to-treat principle." Also: "Data from all patients enrolled were analyzed on an intention-to-treat basis." Additionally, despite 173 crossovers between groups (91 ICD-only→CRT-ICD, 82 CRT-ICD→ICD-only) and non-implantation in some patients, analyses were reported by original group assignment (ITT), with hazard ratios based on the full randomized population (1089 vs 731).
+
+Analysis: The statistical methods section explicitly states that the primary analysis was intention-to-treat, and the protocol/results confirm all randomized patients were analyzed according to original assignment despite crossovers and device non-implantation. This is consistent with an appropriate analysis of the effect of assignment to intervention, as ITT analyses (even with some non-adherence/crossover) are considered appropriate per the guidance. There is no indication of per-protocol or as-treated analysis, nor of post-randomization exclusion of eligible participants.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences: "Data analysis was performed according to the intention-to-treat principle." "A total of 173 crossovers occurred: 91 patients who were assigned to the ICD-only group received a CRT–ICD device (12.4%)... 82 patients who were assigned to the CRT–ICD group (7.5%) received an ICD-only device during the trial because of technical difficulties in positioning the CRT pacing lead in the coronary vein." "A total of 44 patients in the CRT–ICD group (4.0%) and 55 in the ICD-only group (7.5%) declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up."
+
+Analysis: The analysis was explicitly performed according to the intention-to-treat principle, meaning all randomized participants were analyzed in the group to which they were assigned, regardless of crossovers (device switches) or subsequent discontinuation. Although there were substantial crossovers (91 ICD-only patients received CRT-ICD, and 82 CRT-ICD patients received ICD-only devices) and some loss to follow-up, these participants were retained in their originally randomized groups for the primary analysis, consistent with ITT principles. There is no indication that participants were analyzed in the wrong group or excluded from the analysis based on treatment received. Therefore, the potential for bias due to failure to analyze participants in their randomized group is minimal, as the primary intention-to-treat analysis included essentially all randomized participants in their assigned groups.
+
+Correct answer: No
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"The primary end point occurred in 372 patients: 187 of 1089 patients in the CRT–ICD group (17.2%) and 185 of 731 patients in the ICD-only group (25.3%)."
+"Data analysis was performed according to the intention-to-treat principle."
+"A total of 44 patients in the CRT–ICD group (4.0%) and 55 in the ICD-only group (7.5%) declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up."
+Participant flow module: STARTED = 1089/731, COMPLETED = 1089/731, NOT COMPLETED = 0/0.
+
+Analysis:
+The trial was analyzed on an intention-to-treat basis, and the primary end point (death or first heart-failure event, whichever came first) was reported for all randomized participants (1089 CRT-ICD and 731 ICD-only), with no participants excluded from the primary end-point analysis. Although some patients withdrew, were lost to follow-up, or declined participation during the study (4.0% and 7.5%, respectively), this pertains to overall follow-up rather than to the primary time-to-event outcome, which incorporates events up to the time of dropout/censoring and was available for the full randomized cohort. The clinicaltrials.gov results confirm 1089 and 731 participants were included in the outcome analysis (188 and 188 events, respectively), corresponding to the full randomized sample with only 1 participant discrepancy due to reporting nuances, which is negligible. Therefore, data for the primary outcome were available for essentially all randomized participants, and missing outcome data would not have made an important difference to the estimated effect.
+
+Correct answer: Yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+"Data analysis was performed according to the intention-to-treat principle."
+"A total of 44 patients in the CRT–ICD group (4.0%) and 55 in the ICD-only group (7.5%) declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up."
+"Both of these analyses were adjusted for the group-sequential stopping rule and incorporated late reported events that occurred before trial termination."
+
+Analysis: The trial used an intention-to-treat analysis with a time-to-event (survival) framework using Cox proportional-hazards regression and the log-rank test, which appropriately handles censoring due to missing/incomplete follow-up (i.e., patients who withdrew or were lost to follow-up are censored at their last known event-free time rather than excluded or imputed). The proportion of missing outcome data was low and reasonably balanced between groups (4.0% vs. 7.5%), and this modest imbalance is unlikely to have biased the substantial treatment effect (HR 0.66, 95% CI 0.52–0.84). While no formal sensitivity analysis under different missingness assumptions was reported, the survival analysis method itself is a recognized method that appropriately handles missing outcome data through censoring, and the low, balanced attrition suggests minimal risk of bias from missing outcome data.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences: "A total of 44 patients in the CRT–ICD group (4.0%) and 55 in the ICD-only group (7.5%) declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up." Also: "This analysis was performed according to the intention-to-treat principle" and details on 173 crossovers, device non-implantation, and withdrawals. No explicit reasons are given for these dropouts/withdrawals/losses to follow-up, and the overall analysis was a time-to-event (Kaplan-Meier/Cox) analysis, meaning censored patients (withdrawals, losses to follow-up) are treated as missing outcome data. The proportion of missing/withdrawn patients differed between groups (4.0% vs 7.5%), and no documented unrelated reasons (e.g., equipment failure) were provided for these losses.
+
+Analysis: The trial's primary endpoint was a composite time-to-event outcome (death or heart-failure event), analyzed via Kaplan-Meier and Cox proportional-hazards methods, meaning patients lost to follow-up or withdrawn are effectively censored/missing. The article documents that 4.0% of the CRT-ICD group and 7.5% of the ICD-only group "declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up," with no specific unrelated reasons (e.g., administrative loss, unrelated equipment failure) provided to rule out that missingness was linked to health status. Given that heart failure status/health deterioration could plausibly influence a patient's decision to withdraw or be lost to follow-up (e.g., worsening health leading to withdrawal, or death outside the trial not captured), it is plausible that missingness could be related to the outcome. Because the reasons for withdrawal/loss are not fully specified as unrelated to outcome status, and given the different rates between arms, there is a real possibility that missingness depends on the outcome.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+- "A total of 44 patients in the CRT–ICD group (4.0%) and 55 in the ICD-only group (7.5%) declined to continue participating in the study, were withdrawn by a physician, or were lost to follow-up."
+- "The primary end point occurred in 187 of 1089 patients in the CRT–ICD group (17.2%) and 185 of 731 patients in the ICD-only group (25.3%)."
+- Analysis was intention-to-treat, primary end point ascertainment based on adjudicated events with late reporting incorporated; missing outcome data (loss to follow-up/withdrawal) was relatively low (4.0% vs 7.5%) and no specific reasons were reported suggesting association with true outcome status.
+
+Analysis: The proportion of missing outcome data differs somewhat between groups (4.0% CRT-ICD vs 7.5% ICD-only), which could raise some concern of an association between missingness and outcome. However, this difference is modest in absolute numbers, no specific reasons were given that link missingness to the true outcome value (e.g., due to worsening heart failure specifically), and the trial's overall event ascertainment was based on adjudicated primary end points (death or heart-failure event) not directly reliant on data collected only from patients remaining in follow-up (deaths are typically captured even after dropout via vital status tracking, per NEJM standard reporting for this trial type). There is no explicit evidence in the text that reasons for dropout (e.g., withdrawal, physician discretion) were related to the patients' true heart-failure status, nor is it stated that the analysis failed to account for such reasons. Thus, this does not meet the threshold for "High risk" (Yes) but raises legitimate concern, i.e., "Some concerns" level reasoning, corresponding to "Probably no" for the specific question of whether missingness likely depended on the true value.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences: "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments, required signs and symptoms consistent with congestive heart failure that was responsive to intravenous decongestive therapy on an outpatient basis or an augmented decongestive regimen with oral or parenteral medications during an in-hospital stay." "Heart-failure events were diagnosed by physicians who were aware of the treatment assignments, but they were adjudicated by a committee that was unaware of assignments." "The use of a composite end point of death from any cause or nonfatal heart-failure events (whichever came first) is appropriate and widely used in heart-failure trials."
+
+Analysis: The primary outcome (death or nonfatal heart-failure event) is measured using clinically standard, well-established criteria (signs/symptoms of congestive heart failure requiring decongestive therapy), a method that is widely used and validated in heart-failure trials. Mortality is an objective outcome with unambiguous measurement. There is no indication that the measurement instrument/method itself is insensitive to plausible intervention effects or has demonstrated poor validity — the trial in fact detected a significant, clinically meaningful treatment effect using this method, and the diagnosis was subsequently confirmed by an independent adjudication committee blinded to group assignment, supporting the appropriateness of the measurement approach. The only concern raised is about lack of blinding of the diagnosing physicians (a detection bias/blinding issue), which is a different domain-level concern, not about whether the method itself is inappropriate for capturing the outcome. Thus, there is no evidence that the method of measurement was inherently unsuitable for assessing the outcome.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"The treating physicians were aware of study-group assignments." "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments, required signs and symptoms consistent with congestive heart failure..." "Adjudication of the end points was carried out by an independent mortality committee and by a heart-failure committee that was unaware of study-group assignments, according to prespecified criteria." "It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group."
+
+Analysis: Outcome ascertainment for heart-failure events (a component of the primary composite endpoint) was initially made by unblinded treating physicians who were aware of treatment assignment, which could introduce diagnostic detection bias (physicians may have different thresholds for diagnosing/treating heart failure depending on knowledge of device type, especially given additional clinical visits and device interrogation for CRT patients). Although a heart-failure adjudication committee was blinded and applied prespecified criteria, the initial detection/referral for evaluation depended on unblinded assessment, and the authors themselves acknowledge this as a potential source of bias ("It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group"). This indicates a real possibility that measurement/ascertainment of the outcome differed between groups due to lack of blinding at the initial detection stage, despite blinded adjudication.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences: "Heart-failure events were diagnosed by physicians who were aware of the treatment assignments, but they were adjudicated by a committee that was unaware of assignments." Also: "The treating physicians were aware of study-group assignments." And: "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments..." "Adjudication of the end points was carried out by an independent mortality committee and by a heart-failure committee that was unaware of study-group assignments." "Members of the heart-failure adjudication committee were unaware of study-group assignments, but the investigators who decided on therapy or hospital admission for patients with heart failure were aware of such assignments."
+
+Analysis: The primary outcome (death or nonfatal heart-failure event) required an initial diagnosis of heart failure made by treating physicians, who were explicitly unblinded and aware of study-group assignment. Although a separate adjudication committee was blinded, the initial outcome assessment/diagnosis (which determines whether a heart-failure event is captured at all) was performed by assessors who knew the intervention status. The trial itself was open-label (no masking), and the article explicitly acknowledges this as a potential source of bias ("It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group"). Death, the other component, is an objective outcome not subject to assessor bias, but the heart-failure component (the predominant driver of the composite outcome) was assessed by unblinded physicians. Therefore, outcome assessors (treating/diagnosing physicians) were aware of intervention status.
+
+Correct answer: Yes
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences:
+"Heart-failure events were diagnosed by physicians who were aware of the treatment assignments, but they were adjudicated by a committee that was unaware of assignments."
+"The treating physicians were aware of study-group assignments."
+"The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments, required signs and symptoms consistent with congestive heart failure..."
+"It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group."
+
+Analysis: The primary outcome (death or nonfatal heart-failure event) is a composite that includes heart-failure events, which require clinical judgment (signs/symptoms, response to decongestive therapy) by treating physicians who were explicitly aware of study-group assignments (unblinded trial, masking: NONE). Although final adjudication was performed by a blinded committee, the initial diagnosis/decision to treat as a heart-failure event was made by unblinded physicians, introducing a judgment-based step susceptible to detection bias. The authors themselves acknowledge this as a potential source of bias. Since heart-failure event diagnosis involves subjective clinical judgment (unlike all-cause mortality, which is objective), knowledge of the assigned intervention could plausibly have influenced outcome assessment.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences:
+"Heart-failure events were diagnosed by physicians who were aware of the treatment assignments, but they were adjudicated by a committee that was unaware of assignments." "The treating physicians were aware of study-group assignments." "The diagnosis of heart failure, which was made by physicians who were aware of study-group assignments, required signs and symptoms consistent with congestive heart failure..." "Members of the heart-failure adjudication committee were unaware of study-group assignments, but the investigators who decided on therapy or hospital admission for patients with heart failure were aware of such assignments. It is possible that the investigators' knowledge of study-group assignment contributed in some way to the lower frequency of heart failure in the CRT–ICD group."
+
+Analysis: The primary outcome (death or heart-failure event) relies partly on subjective clinical judgment—diagnosis of heart failure requiring signs/symptoms and decisions about administering decongestive therapy or hospital admission—made by unblinded treating physicians who knew the intervention assignment. The authors themselves explicitly acknowledge that this awareness "is possible" to have "contributed... to the lower frequency of heart failure in the CRT–ICD group," indicating a recognized potential for assessment bias favoring the intervention believed to be beneficial. Although final adjudication was performed by a blinded committee, the initial diagnosis/threshold for treatment (which triggered classification as an "event") was determined by unblinded assessors, and there is a plausible mechanism (belief in CRT benefit) that could influence subjective heart failure diagnosis/management decisions. This constitutes a real, acknowledged risk that knowledge of intervention influenced outcome assessment, rather than merely a theoretical possibility.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+- "The trial involved prespecified event monitoring by an independent data and safety monitoring board at up to 20 successive multiples of approximately 35 adjudicated events... with stopping boundaries specified for termination of the trial in favor of CRT–ICD therapy, in favor of ICD-only therapy, or for no significant difference (Fig. 1)."
+- "The analysis of the primary end point, which was based on the statistical log-rank test stratified according to study center and ischemia status, was used to evaluate statistical significance for the trial. A similarly stratified Cox proportional-hazards regression model was used to estimate hazard ratios."
+- "Additional primary analyses included Cox proportional-hazards regression for heart failure alone and for death at any time and evaluation of 10 prespecified categorical subgroups and treatment interactions."
+- "The executive committee stopped the trial on June 22, 2009... Study-group assignments were then unblinded, and all analyses were limited to events occurring before trial termination. In addition to the prespecified primary analyses, we outlined a plan for secondary analyses related to recurring heart-failure events and a number of tertiary analyses."
+- A detailed prior design/protocol publication (ref. 9, MADIT-CRT design paper) is cited as describing the pre-specified statistical analysis plan.
+
+Analysis: The statistical analysis plan, including the primary end point definition, stratification variables, Cox regression, group-sequential stopping rule, and prespecified subgroup analyses, was clearly established prior to trial initiation and described in a separate design publication (ref. 9) published before unblinding. The trial's group-sequential design with prespecified stopping boundaries and analysis methods indicates the plan was finalized in advance. Unblinding occurred only after the DSMB recommended stopping based on the prespecified efficacy boundary, consistent with the analysis plan being locked before outcome data were unblinded to investigators. Secondary and tertiary analyses (recurrent heart failure events, echocardiographic changes) were outlined separately, but these were described as being planned in advance of unblinding as well, with only tertiary/exploratory analyses (echocardiographic, sex-specific exploratory results) added afterward, which are appropriately labeled as exploratory rather than confirmatory. This overall structure supports that the primary result was analyzed according to a pre-specified plan finalized before unblinding.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+"The primary end point was death from any cause or a nonfatal heart-failure event (whichever came first)." "MADIT-CRT was an event-driven trial in which patients were monitored for all-cause mortality and HF events. An HF event was defined as..." (protocol registry, matching the published primary outcome definition, timeframe, and analysis plan exactly matching the published results, including the same hazard ratio 0.66, 95% CI 0.52-0.84, P=0.001).
+
+Analysis: The primary outcome (death from any cause or first nonfatal heart-failure event) is a composite, single well-defined outcome domain with a single measurement definition (time-to-first-event), not multiple competing scales, definitions, or time points. The registered protocol (ClinicalTrials.gov) prospectively defines this identical outcome, with matching definitions of heart-failure events (intravenous decongestive therapy or augmented regimen), matching timeframe (average follow-up 2.4 years), and matching statistical analysis plan (Wang-Tsiatis group-sequential design, Cox proportional hazards, stratified log-rank test). The reported result (HR 0.66, 95% CI 0.52–0.84, P=0.001) corresponds exactly to the prespecified primary analysis in the protocol/registry, with no evidence of alternative eligible measures (e.g., different scales or time points) being available and selectively omitted. There is no indication of multiple eligible ways to measure this domain that could allow for result-based selection.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences: "The primary hypothesis was that CRT–ICD therapy would be associated with a reduced risk of death or nonfatal heart-failure events (whichever came first), as compared with ICD-only treatment... A similarly stratified Cox proportional-hazards regression model was used to estimate hazard ratios. Both of these analyses were adjusted for the group-sequential stopping rule..." The protocol's registered primary outcome measure ("Mortality From Any Cause or First Heart Failure Event," analyzed by log-rank test/Cox regression stratified by center and ischemic status) matches exactly what is reported in the results (HR 0.66, 95% CI 0.52–0.84, P=0.001).
+
+Analysis: The trial's pre-specified statistical analysis plan (Wang-Tsiatis group-sequential design, stratified log-rank test, and Cox proportional-hazards model stratified by center and ischemic status) is clearly described in the Methods section and matches the registered ClinicalTrials.gov protocol/results entry. The primary end point analysis reported in the manuscript (HR 0.66, 95% CI 0.52–0.84, P=0.001) corresponds exactly to the single prespecified primary analysis method registered in the protocol, with no evidence of multiple alternative analytic approaches (e.g., unadjusted vs. adjusted, different covariate sets, different missing-data strategies) being tried and only the favorable one reported. The stopping rule adjustment was pre-specified and consistently applied. Thus, there is clear correspondence between the intended (pre-specified) analysis and the fully reported result, with no indication of selective reporting from multiple eligible analyses.
+
+Correct answer: No

@@ -1,0 +1,44 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 26156151
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Cardiac Death Endpoint
+## CTO-IVUS Study (Circ Cardiovasc Interv. 2015;8:e002592)
+
+---
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+
+Justification: Randomization was performed via an interactive web-based response system stratified by center, which is an adequate concealment mechanism and supports genuine randomization. Baseline characteristics (Table 1) are well balanced across groups, supporting successful randomization. However, this was an open-label study by design — the protocol registration explicitly states masking was "SINGLE" with only the investigator/outcome-assessor masked, meaning patients and treating physicians were aware of group assignment (IVUS vs angiography guidance is not feasible to blind given the physical use of the IVUS catheter). While allocation concealment prior to randomization appears adequate, the inherent lack of blinding of participants/operators introduces a structural vulnerability that interacts with other domains (deviations, outcome measurement). I rate the pure randomization/allocation-concealment mechanism itself as adequate, but flag it as "some concerns" because there is no explicit description of allocation concealment safeguards (e.g., could site investigators anticipate assignment despite IWRS) and the sequence generation method is not described in detail in the manuscript.
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: Some concerns**
+
+Justification: This was an open-label (unblinded) trial with respect to participants and treating physicians — an inevitable consequence of comparing IVUS-guided vs angiography-guided procedures. This creates potential for performance bias: operators aware of IVUS-guided assignment behaved differently (e.g., "high-pressure poststent balloon dilation was more frequently performed... in the IVUS-guided group than the angiography-guided group [51.2% vs 41.3%; P=0.045]" and larger postprocedural MLD in the IVUS group). The authors themselves acknowledge in the Discussion that these procedural differences (more aggressive post-dilation) may be a co-intervention that confounds the causal attribution of outcome differences to "IVUS guidance" per se rather than to downstream techniques it prompted. While this is an expected and analyzed part of the intervention pathway (IVUS naturally informs additional treatment decisions), the lack of a standardized protocol for IVUS-based interventions ("no standardized methods for IVUS evaluation or management guideline," acknowledged as a limitation by the authors) means there was substantial variability in how operators deviated from a fixed protocol based on unblinded knowledge of assignment. This does not appear to bias the specific "cardiac death" endpoint heavily (hard, objective outcome) but is a documented deviation issue for the trial as a whole.
+
+---
+
+**3. Risk of bias due to missing outcome data: Low risk**
+
+Justification: Follow-up was essentially complete: 200/201 (99.5%) in the IVUS-guided group and 201/201 (100%) in the angiography-guided group completed 12-month follow-up. This is a hard, unambiguous, objective endpoint (death, adjudicated as cardiac vs non-cardiac), and with only a single patient lost to follow-up in the whole trial, missingness cannot plausibly bias the result. Intention-to-treat analysis was used as stated in the Methods.
+
+---
+
+**4. Risk of bias in measurement of the outcome — "occurrence of cardiac death": Low risk**
+
+Justification: Cardiac death is an objective, hard endpoint not subject to reporting bias from unblinded patients (unlike patient-reported outcomes such as pain or quality of life, where lack of blinding is highly problematic). Death ascertainment does not depend on patient self-report. Additionally, the manuscript specifies "All clinical events were independently monitored and assessed by a clinical event committee blinded to randomization," and a prespecified definition was applied ("All deaths were considered cardiac death unless an unequivocal noncardiac cause could be established"), reducing the possibility of differential outcome assessment despite the open-label design of the trial itself. Given blinded adjudication of an objective endpoint, risk of measurement bias for this specific outcome is low, even though other secondary/composite outcomes (e.g., MACE, which incorporates ischemia-driven revascularization — a somewhat more subjective trigger) would carry higher risk due to the unblinded operators/patients potentially influencing decisions to revascularize.
+
+---
+
+**5. Risk of bias in selection of the reported result: Low risk**
+
+Justification: Cardiac death is listed as the prespecified primary endpoint both in the published methods and in the trial registration (NCT01563952: "event rate of cardiac death within 12 months"). The result (0% vs 1.0%, P=0.16) is reported fully and transparently in the abstract, results, and Table 3, with no evidence of selective suppression despite being a non-significant/null result — indeed the authors' overall conclusion is appropriately tempered ("did not significantly reduce cardiac mortality"). There is no indication of switched, dropped, or newly introduced endpoints, and reporting is consistent between the registry, methods, and results for this specific outcome.
+
+---
+
+## 6. Overall Rating for the "Occurrence of Cardiac Death" Outcome: **Some concerns**
+
+**Justification for overall rating:** While the specific outcome of cardiac death is objectively measured, blindly adjudicated, and completely reported with minimal missing data and no evidence of selective reporting (domains 3, 4, 5 = low risk), the trial's fundamental open-label design (domain 1) combined with documented differential co-interventions between arms (domain 2, e.g., differential post-dilation practices driven by unblinded knowledge of IVUS findings) introduce structural vulnerabilities affecting the trial as a whole. Per the specified rule, at least one domain with "some concerns" (here, two domains: randomization/blinding and deviations) triggers an overall "some concerns" rating. I do not escalate to "high risk" because for this particular hard, objectively-adjudicated, blindly-assessed outcome (cardiac death) with essentially complete follow-up and only 2 total events, the practical impact of the unblinding on this specific outcome's validity is limited — my main residual concern is confounding of the "IVUS effect" by unstandardized post-IVUS operator behavior, which is more relevant to interpreting the composite MACE result than mortality itself. Note also that the trial is underpowered for cardiac death (event rate far lower than assumed in the power calculation), which although not a "bias" criterion per se, should temper clinical interpretation of the null finding.

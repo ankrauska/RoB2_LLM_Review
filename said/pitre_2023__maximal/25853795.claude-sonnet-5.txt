@@ -1,0 +1,88 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 25853795
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Total Duration of Treatment
+
+**Study:** Multi-center RCT comparing SmartClip self-ligating brackets vs Victory conventional brackets (UK)
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+**Outcome assessed:** Total duration of treatment (months), from fixed appliance placement to debond
+
+---
+
+## 1. Bias arising from the randomization process: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Sequence generation:** "computer-generated random number table, with stratification for operator and center" — this satisfies the criterion for a random sequence (Signalling Q1.1 = Yes).
+- **Allocation concealment:** "The appliance type was placed in a sealed, opaque, sequentially numbered envelope that was opened after the patient was accepted onto the trial. The generator of the randomization did not participate in patient allocation." This meets minimal/extended criteria for adequate concealment (Q1.2 = Yes).
+- **Baseline imbalance:** Some differences exist in baseline characteristics (e.g., malocclusion distribution: Class I 12 vs 23; Class II div 2, 9 vs 4; mean age SD differs slightly between groups), but these are of a magnitude and pattern compatible with chance in a trial of this size (n=138), and there is no statistical or substantive evidence (e.g., extreme P values, implausible group-size disparities) suggesting a failure of the randomization process (Q1.3 = No/Probably no).
+- Per Table 4 of the RoB2 algorithm: Sequence random (Yes) + Allocation concealed (Yes) + No imbalance problem → **Low risk**.
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Awareness of assignment (Q2.1/2.2):** "it was not possible to blind the clinician or patient to the type of bracket system being used" — participants and personnel (operators) were aware of intervention assignment (Yes).
+- **Deviations arising from trial context (Q2.3):** Because awareness could not be avoided, this question needed to be answered. There is no evidence that awareness of allocation led to non-protocol interventions or changes in care that were inconsistent with the trial protocol and driven by the "trial context" (e.g., no evidence participants sought alternative treatment, no cross-over of appliance type, no evidence operators altered archwire sequence based on group beyond documented exceptions). The intervention here is a mechanical/technical bracket system rather than a behavior-dependent intervention (e.g., drug adherence), and the archwire sequence was standardized and pre-specified for both groups (Figure 1), limiting the scope for trial-context–driven deviations. Thus answer is No/Probably no.
+- **Analysis approach (Q2.6):** "Due to the low number of dropouts, analysis was undertaken on a per protocol basis" — however, with only 3/138 (2.2%) participants excluded (1 refused treatment, 2 failed to complete), this is functionally equivalent to a modified ITT analysis (exclusion only for missing outcome data), which RoB2 treats as an acceptable analysis for the effect of assignment to intervention (Q2.6 = Yes/Probably yes).
+- Combining Part 1 (no deviations arising from trial context) and Part 2 (appropriate/near-ITT analysis) → **Low risk of bias**.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- "One hundred thirty-eight subjects were recruited... Overall, 135 subjects (97.8%) completed the study; one subject who refused fixed appliance treatment following allocation and two subjects who failed to complete treatment were omitted from the analysis." Outcome data (treatment duration) are available for 97.8% of randomized participants (Q3.1 = Yes/Probably yes).
+- This is such a small proportion of missing data (3/138) that it is very unlikely to have made an important difference to the estimated effect of intervention on treatment duration, regardless of the reasons for dropout, satisfying the "nearly all" criterion.
+- → **Low risk of bias** (no further signalling questions required).
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Appropriateness of method (Q4.1):** Treatment duration was measured as calendar time from "fixed appliance placement to debond," an objective and appropriate method (No/Probably no to inappropriateness).
+- **Comparability of measurement (Q4.2):** The method of measuring the outcome (recording of dates) did not differ between arms (No/Probably no).
+- **Awareness of outcome assessors (Q4.3):** The paper states, "data analysis was carried out at the end of the study with examiner blinding," and notes that "the appliance type was not recorded on the data collection sheets in an attempt to minimize bias during data entry and analysis." However, the *decision* of when to debond (i.e., when treatment goals were achieved) was made by the treating clinicians (operators), who were not blinded to intervention assignment. This outcome therefore falls into the category of an "outcome that reflects a decision made by the intervention provider" (Q4.3 = Yes, operators were aware).
+- **Could this awareness influence assessment (Q4.4):** Yes — the timing of debonding is a clinical judgement that could, in principle, be influenced by expectations about a bracket system's performance (particularly as SmartClip was a novel appliance and operators underwent manufacturer-led training, potentially generating expectations of efficiency).
+- **Likely influenced (Q4.5):** There is no direct evidence (e.g., differential debonding criteria, or documented differing clinical thresholds) that assessment of treatment duration was *actually* influenced by knowledge of bracket type, and the treatment endpoint (achieving orthodontic treatment goals) is a relatively standardized clinical decision governed by occlusal outcome criteria rather than subjective preference. This supports "unlikely" rather than "likely" influence.
+- Per the algorithm: awareness present, could be influenced, but unlikely to be influenced → **Some concerns** (not "Low," because outcome assessors were not blinded and the outcome involves clinical judgement susceptible in principle to influence; not "High," because there is no direct evidence of actual influence).
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The methods section pre-specifies the outcomes to be measured: "total duration of treatment (months) from fixed appliance placement to debond; total number of appointments...; and number of bracket bond failures." These are the same outcomes fully reported in the Results (Table 3), with a single, clearly defined analysis (Welch two-sample t-test, with 95% CI) for treatment duration.
+- There is no evidence of multiple alternative outcome measurements (e.g., multiple time-points or alternative definitions of "duration of treatment") or multiple competing analytic approaches (e.g., adjusted vs. unadjusted models) from which a favorable result appears to have been selectively chosen. The a priori sample size calculation was based specifically on "time taken to complete treatment," consistent with the outcome as reported.
+- Cross-checking against the trial registration record did not reveal discrepancies in the definition or analysis of this outcome relative to what is reported in the publication.
+- → **Low risk of bias.**
+
+---
+
+# Overall Risk-of-Bias Judgement for "Total Duration of Treatment"
+
+| Domain | Judgement |
+|---|---|
+| 1. Randomization process | Low risk |
+| 2. Deviations from intended intervention | Low risk |
+| 3. Missing outcome data | Low risk |
+| 4. Measurement of the outcome | Some concerns |
+| 5. Selective reporting | Low risk |
+
+**Overall judgement: Some concerns**
+
+Per RoB 2.0 guidance (Table 1), a study is judged to have an overall risk of "Some concerns" when it raises some concerns in at least one domain but is not rated "High risk" in any domain. Here, only the "Measurement of the outcome" domain raises concerns (due to unblinded, non-independent clinical judgement determining the treatment endpoint), while all other domains are at low risk. Therefore, the overall risk of bias for the outcome "total duration of treatment" is **Some concerns**.

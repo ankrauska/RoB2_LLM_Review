@@ -1,0 +1,87 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 22715910
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0 for Outcome "Inhaler Use Technique"
+
+**Study:** Poureslami et al. Effectiveness of Educational Interventions on Asthma Self-Management in Punjabi and Chinese Asthma Patients: A Randomized Controlled Trial
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Sequence generation:** The article states subjects were "randomly assigned" and "assigned at random" to the four groups, but no details are provided about the method used to generate the allocation sequence (e.g., computer-generated randomization, random number table). This warrants a "Probably yes" response given the description of the study as randomized, but with no further detail, "No information" is more accurate for the specific mechanism (signalling question 1.1).
+- **Allocation concealment:** No information is provided in either the article or the protocol about whether the allocation sequence was concealed from those enrolling participants. There is no mention of central randomization, sealed envelopes, or any other concealment mechanism. This is a "No information" response to signalling question 1.2.
+- **Baseline imbalance:** The article explicitly states: "The initial pretest analyses showed no statistically significant differences among the four study groups and also between gender and ethnic groups in relation to the outcomes of interest." This suggests no evidence of a problem with randomization based on baseline balance (signalling question 1.3 = No).
+- Because there is no information on concealment (signalling question 1.2 = NI) combined with no evidence of baseline imbalance problems (signalling question 1.3 = No), per the RoB2 algorithm (Table 4), this combination maps to "Some concerns."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Awareness of participants/personnel:** Participants were not blinded to which intervention group they were in — they knew whether they watched a video (and which type) or read a pamphlet. This is inherent to the nature of the intervention (educational video vs. pamphlet), and the study is described as having only single-masking (of participants is not indicated; per the protocol, "whoMasked": "PARTICIPANT" is listed, but this is questionable given the nature of an educational intervention that participants would obviously be aware of). In practice, participants and interventionists were aware of assigned intervention (signalling questions 2.1/2.2 = Yes).
+- **Deviations arising from trial context:** There is no clear evidence that non-protocol interventions or deviations occurred because of participant awareness of group assignment that would differentially affect the outcome of inhaler use technique. The intervention (viewing video/pamphlet) is a one-time, discrete exposure with low risk of contamination between arms, since participants were interviewed individually and the interventions were delivered in a controlled setting (home or clinic). No text describes cross-contamination or non-protocol co-interventions.
+- **Balance of any deviations:** No information is provided about whether any deviations occurred, and if they did, whether they were balanced across groups.
+- **Analysis:** The reported analyses (ANOVA/ANCOVA across four groups from pretest to follow-up) do not clearly describe an intention-to-treat approach; of the 92 randomized, only 85 completed and were included in outcome tables (Table 2 report df consistent with ~76-80 participants, e.g., "1,76" and "1,72"), suggesting exclusion of participants without imputation or ITT correction. This indicates an analysis that may not strictly follow ITT principles (post-randomization exclusions of those who did not complete outcome assessments), which is addressed more directly under missing data domain, but which also raises "some concern" for appropriate analysis under this domain (signalling question 2.6).
+- Overall, because participants/personnel were aware of the intervention but there is no clear evidence of deviations arising from trial context that were unbalanced and affected the outcome, and analysis approach is unclear regarding full ITT inclusion, this results in a "Some concerns" judgement rather than "Low" or "High."
+
+---
+
+## 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- Of 92 enrolled participants in the intervention component, only 85 completed the study (Figure 1 notes "3 were excluded and 4 discontinued intervention from the educational intervention group"), representing ~7.6% loss to follow-up.
+- The degrees of freedom reported in Table 2 for the inhaler use technique outcome (e.g., "1,71" for time and gender effects, "1,76" for ethnicity) suggest analyses were run on fewer than the full 92 (or even 85) randomized/completing participants — closer to 73-78 participants — indicating some additional data loss or exclusion beyond that reported in Figure 1, without clear explanation.
+- There is no explicit statement addressing whether missingness in the inhaler use technique outcome specifically was related to its true value (e.g., whether participants who dropped out had worse or better inhaler technique). No sensitivity analyses are reported to assess robustness to missing data assumptions.
+- The reasons for the 3 exclusions and 4 discontinuations are not detailed in the text, making it impossible to rule out that missingness could depend on the true value of the outcome (e.g., participants struggling with inhaler technique may be more likely to disengage from the study).
+- Given the relatively small proportion of missing data (<10%), but lack of clarity on reasons and lack of sensitivity analysis, this is judged as "Some concerns" rather than "Low" or "High" risk.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Appropriateness of method:** The outcome (inhaler use technique) was assessed using "a standardized nine-step observational checklist" with established scoring (0–9), which is an appropriate method commonly used in the literature (citations 52, 53). This is not an inappropriate method (signalling question 4.1 = No).
+- **Differential measurement:** The measurement method (observational checklist) appears to have been applied identically across all four groups. However, the outcome assessors were the same interview facilitators who conducted the educational intervention session (they were "bilingual and bicultural experienced moderators" and it states "the assessment of the inhaler techniques during the face-to-face interviews was judged by two observers (the interviewer and the research coordinator)"). Because the same individuals delivered/observed the intervention and then immediately assessed the outcome, there is potential that the assessors were aware of which intervention condition (video vs. pamphlet, or which video) each participant received.
+- **Blinding of outcome assessors:** The text states facilitators "were not aware of the study hypothesis," but this does not equate to being unaware of which materials the patient viewed/read, since they facilitated the same visit. This is an observer-reported outcome involving some judgement (assessing correct performance of steps), which could be influenced by expectation bias if the assessor knows which group (e.g., "both videos" group) is expected to perform best.
+- **Likelihood of influence:** While there is no explicit evidence that assessors let their expectations bias scoring, the lack of blinding of assessors to intervention group combined with the subjective judgment involved in observing inhaler technique introduces the potential for bias. This leads to a judgement of "Some concerns" (not "High," as there is no direct evidence that assessment was actually influenced).
+
+---
+
+## 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- The trial registry (NCT01474928) primary outcome is listed as "medication adherence," and the outcome "Inhaler Use Technique" is not listed as a primary or secondary outcome in the registered protocol (only "Patients' beliefs, perceptions, and attitudes" and "Educational materials development" are listed as secondary outcomes). This discrepancy between the registered outcomes and the outcome reported in the publication (inhaler use technique as a major highlighted result) raises concern that the outcome and/or analysis may have been selected post hoc based on results.
+- There is no statistical analysis plan (SAP) available, and no clear evidence that the specific outcome measurement (9-step checklist score) and analysis approach (ANOVA followed by ANCOVA with multiple covariates and interaction terms) were pre-specified before unblinded data were available.
+- The study reports multiple subgroup/covariate analyses (age, gender, ethnicity, education) with interaction terms explored post hoc ("Then interaction terms were added to see if the effect of the interventions differed across time..."), suggesting an exploratory, potentially data-driven analytic approach rather than one following a prespecified plan.
+- Because there is no information confirming a pre-specified analysis plan finalized before unblinded data were available, and because there is ambiguity about whether the outcome/analysis presented was selected from multiple possible analyses (e.g., the described covariate/interaction exploration), but no definitive evidence of selection based on statistical significance, this is judged as "Some concerns" rather than "High" risk.
+
+---
+
+## Overall Risk of Bias Summary
+
+| Domain | Judgement |
+|--------|-----------|
+| 1. Randomization | Some concerns |
+| 2. Deviations from intended intervention | Some concerns |
+| 3. Missing outcome data | Some concerns |
+| 4. Measurement of outcome | Some concerns |
+| 5. Selective reporting | Some concerns |
+
+**Overall judgement: High risk of bias** (per RoB2 guidance, "Some concerns" in multiple domains may lead to an overall judgement of "High" risk of bias when this substantially lowers confidence in the result, given the cumulative concerns across all five domains for this specific outcome).

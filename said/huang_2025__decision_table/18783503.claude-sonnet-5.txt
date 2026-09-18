@@ -1,0 +1,121 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 18783503
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Salehi, 2011
+**Outcome Name**: Severity of subjective withdrawal symptoms using the Subjective Opiate Withdrawal Scale (SOWS)
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: **Y** (Moderate Certainty, 80%)
+*Reason*: The article states "Subjects were assigned randomly to receive adjunctive treatment with either gabapentin or placebo under double-blind conditions, using a randomization automated system on a one-to-one basis." This describes a computer-generated random sequence.
+
+**1.2**: **Y** (Moderate Certainty, 80%)
+*Reason*: "During the study, the randomization list was held securely, and released only after study completion. Gabapentin and placebo were dispensed in identical appearing capsules." This indicates central allocation with concealment safeguards, and participants would not be aware of assignment due to identical-appearing capsules.
+
+**1.3**: **N** (High Certainty, 95%)
+*Reason*: "There were no significant differences in mean age or dosage of methadone and other drugs doses such as clonidine, oxazepam or trazodone used for symptomatic treatment between the treatment and controls groups at baseline."
+
+**Domain 1 Result: Low Risk** (High Certainty, 85%)
+*Reason*: 1.2=Y, 1.1=Y, 1.3=N meets criteria for Low risk.
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: **N** (High Certainty, 90%)
+*Reason*: Double-blind design with identical-appearing capsules for both gabapentin and placebo groups; no indication participants became aware of allocation.
+
+**2.2**: **N** (Moderate Certainty, 85%)
+*Reason*: Double-blind conditions maintained with identical capsules; no indication that carers/providers were aware of allocation.
+
+**2.3**: **Y** (Moderate Certainty, 90%)
+*Reason*: "There were no statistically significant differences between the mean dose of methadone or other drugs such as clonidine, oxazepam or trazodone used for symptomatic medication in either group." Non-protocol co-interventions were balanced.
+
+**2.4**: **N** (Moderate Certainty, 75%)
+*Reason*: 3 out of 40 participants (7.5%) were excluded due to implementation failure (non-compliance/self-medication), which is below the 10% threshold.
+
+**2.5**: **N** (Moderate Certainty, 75%)
+*Reason*: Same 3/40 (7.5%) participants had non-adherence issues (self-medication with illicit/OTC drugs), below the 10% threshold.
+
+**Domain 2 Result: Low Risk** (Moderate Certainty, 80%)
+*Reason*: 2.1=N, 2.2=N, 2.4=N, 2.5=N meets first Low risk criteria.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: **PN** (Moderate Certainty, 80%)
+*Reason*: Continuous outcome. At final follow-up (Day 18), n=37/40 (92.5%) had complete data, falling in the 90-95% range.
+
+**3.2**: **N** (High Certainty, 90%)
+*Reason*: No sensitivity analysis or bias-correction method (e.g., inverse probability weighting) was reported to address missing data.
+
+**3.3**: **Y** (Moderate Certainty, 80%)
+*Reason*: The authors explicitly state: "The non-compliance and self-medication in the placebo group may be due to the greater severity of withdrawal symptoms," directly linking missingness to the outcome (withdrawal severity).
+
+**3.4**: **Y** (High Certainty, 85%)
+*Reason*: All missing data occurred in the placebo group only (none in gabapentin group), creating an imbalance directly attributed by the authors to symptom severity — the outcome itself.
+
+**Domain 3 Result: High Risk** (Moderate Certainty, 82%)
+*Reason*: 3.1=PN, 3.2=N, 3.3=Y, 3.4=Y meets criteria for High risk.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: **N** (High Certainty, 90%)
+*Reason*: SOWS is a "valid and reliable indicator of the severity of the opiate withdrawal syndrome," a predefined, validated instrument.
+
+**4.2**: **N** (Moderate Certainty, 85%)
+*Reason*: Both groups were assessed using the same SOWS scale at identical time points (days 0, 4, 7, 10, 18, 21).
+
+**4.3**: **N** (Moderate Certainty, 80%)
+*Reason*: SOWS is patient-reported ("the patient rates on a scale of 0...to 4"), and participants remained blinded due to double-blind design with identical capsules.
+
+**4.4**: **Y** (High Certainty, 90%)
+*Reason*: The outcome is a subjective measure reported directly by patients (self-rated withdrawal symptom severity).
+
+**4.5**: **N** (Moderate Certainty, 80%)
+*Reason*: No clear evidence that knowledge of intervention influenced assessment, given the double-blind design with identical-appearing capsules.
+
+**Domain 4 Result: Low Risk** (Moderate Certainty, 82%)
+*Reason*: 4.1=N, 4.2=N, 4.3=N meets first Low risk criteria.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: **NI** (Moderate Certainty, 80%)
+*Reason*: No trial registration number or pre-specified analysis plan is mentioned in the article.
+
+**5.2**: **N** (Moderate Certainty, 80%)
+*Reason*: Only one outcome measurement tool (SOWS) was used and reported consistently; no evidence of selective reporting among multiple outcome measures.
+
+**5.3**: **N** (Moderate Certainty, 75%)
+*Reason*: The analysis methods described in Methods (t-test, repeated-measures ANOVA, Mann-Whitney U-test) match those reported in Results without evidence of selective reporting from multiple analyses.
+
+**Domain 5 Result: Some Concerns** (Moderate Certainty, 78%)
+*Reason*: 5.2=N, 5.3=N, 5.1=NI meets criteria for "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result: High Risk** (Moderate Certainty, 82%)
+
+*Reason*: Domain summary:
+- Domain 1: Low Risk
+- Domain 2: Low Risk
+- Domain 3: **High Risk**
+- Domain 4: Low Risk
+- Domain 5: Some Concerns
+
+Since Domain 3 (missing outcome data) is rated as **High Risk**, per the overall assessment rule, the overall risk of bias for this outcome is **High Risk**. This is primarily driven by the differential dropout pattern (all 3 dropouts occurred in the placebo group) with reasons explicitly linked by the authors to greater withdrawal symptom severity — the outcome being measured.

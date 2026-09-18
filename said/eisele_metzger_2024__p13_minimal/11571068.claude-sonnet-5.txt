@@ -1,0 +1,33 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 11571068
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Women's Burden and Distress Outcome
+
+**Study:** Halford et al. - "Helping the female partners of men abusing alcohol: a comparison of three treatments"
+**Outcome assessed:** Women's burden and distress (measured via Relative Stress Scale [RSS] and General Health Questionnaire [GHQ])
+
+---
+
+## 1. Risk of bias arising from the randomization process
+**Some concerns.** The manuscript states participants were "assigned randomly via random number tables," which is an adequate random sequence generation method. However, there is no description of allocation concealment procedures — no mention of sequentially numbered, sealed envelopes or independent randomization implementation. Given that this is a psychotherapy trial, blinding of participants and therapists to allocation is impossible by nature of the intervention, but concealment of allocation *prior to* enrollment is a separate and unaddressed issue. Baseline comparability across groups (age, marital duration, GHQ, RSS, DAS) was demonstrated via ANOVAs showing no significant differences, which is reassuring and suggests randomization was not obviously subverted. Absent explicit allocation concealment details, I rate this "some concerns" rather than "low risk."
+
+## 2. Risk of bias due to deviations from the intended interventions
+**High risk.** This is a major weakness. In the AFCT condition, only 6 of 21 (29%) husbands actually engaged in couple therapy; the remaining women assigned to AFCT received the stress management protocol instead — a substantial and non-random deviation from allocated intervention that was not analyzed on an intention-to-treat basis in a manner that preserves the causal inference of the original randomization. This effectively contaminates the AFCT arm with stress management content in the majority of cases, diluting any distinct effect of AFCT and biasing the comparison between arms. Additionally, the trial was unblinded (inherent to psychotherapy), so both therapists and participants were aware of allocation, raising the risk of differential engagement, expectation effects, or performance bias affecting delivery of supportive counselling (the "control" condition) versus the active behavioral treatments. There is no evidence of appropriate statistical adjustment (e.g., per-protocol vs ITT sensitivity analyses) to correct for this substantial deviation.
+
+## 3. Risk of bias due to missing outcome data
+**Some concerns.** Overall attrition was 22% (47/61 completed treatment, 44/61 provided 6-month follow-up data). Critically, women who dropped out (mostly those who left their partners) were not further assessed at all — "all the women who dropped out from treatment declined further assessment." This is not missing at random: dropout was systematically related to a specific outcome-relevant event (relationship dissolution), which plausibly correlates with both burden/distress trajectories and treatment condition. Although a chi-square test showed no significant association between treatment condition and dropout, the authors themselves acknowledge this test had low power. No sensitivity analyses (e.g., multiple imputation, worst-case scenario) were reported to assess the robustness of RSS/GHQ findings to this missingness.
+
+## 4. Risk of bias in measurement of the outcome (Women's burden and distress — RSS and GHQ)
+**High risk.** Both the RSS and GHQ are entirely participant-self-reported subjective measures of psychological burden and distress. Given the study design, women could not be blinded to which treatment they received (they experienced markedly different session content — non-directive counselling vs. structured cognitive/behavioral techniques vs. couple-based intervention). Outcome assessors were not independent — the outcome was self-report by unblinded participants who had clear expectations about the study's behavioral treatments (participants may have surmised that the more structured behavioral interventions were "the real treatments," creating response bias/demand characteristics favoring stress management and AFCT over supportive counselling). This is a textbook case of high risk of bias for subjective self-reported outcomes in an unblinded psychotherapy trial.
+
+## 5. Risk of bias in selection of the reported result
+**Some concerns.** No trial registration or published protocol is referenced or available for comparison, making it impossible to verify a priori specification of outcome measures, analysis plans, or timing of assessments. The paper reports multiple outcome measures and multiple statistical approaches (ANOVA main/interaction effects, ANCOVA, Jacobson & Truax reliable change index, "large effect" thresholds) without a clear a priori statement of which was the primary analytic approach for the burden/distress outcome. The presentation of trend-level results (e.g., "trend for time × condition interaction, p = 0.09" and "p = 0.08") as noteworthy findings, combined with post hoc introduction of clinical significance thresholds (Table 2) not clearly pre-specified, raises concern about selective emphasis of favorable-looking results. That said, the authors are commendably transparent about null/mixed findings for other outcomes (drinking, relationship satisfaction), which somewhat mitigates concern but does not eliminate it given the absence of a protocol.
+
+---
+
+## 6. Overall rating: **High risk of bias**
+
+**Justification:** The outcome of women's burden and distress is compromised by high risk of bias in two independent domains — deviations from intended intervention (substantial cross-over in the AFCT arm coupled with unblinded delivery) and measurement of the outcome (unblinded self-report of a subjective outcome in a trial where blinding was not possible and expectancy effects are highly plausible). Combined with "some concerns" in randomization concealment, missing data handling, and selective reporting, confidence in the reported effect sizes and trends favoring stress management/AFCT over supportive counselling for burden and distress is substantially undermined.

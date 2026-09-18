@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 24841975
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Jacobson, 2015
+**Outcome Name**: overall survival
+**registration number**: NCT01147939
+
+Domain 1
+1.1 : Y (100%)
+The article explicitly states that block randomization was used ("A block size of four patients was used within each stratum"), which is an adequate method for generating the allocation sequence.
+1.2 : Y (100%)
+The study utilized a centralized Interactive Web Response System for random assignment, which constitutes central allocation and adequately conceals the sequence until enrollment.
+1.3 : Y (95%)
+There was a statistically significant difference in baseline characteristics between the two groups, specifically an imbalance in the age distribution with significantly more patients older than 70 years in the elacytarabine arm (P = .007).
+Result of the domain (100%)
+Some concerns
+The answer to 1.2 is Y, 1.1 is Y, but the answer to 1.3 is Y. According to the criteria, this results in "some concerns" for Domain 1.
+
+Domain 2
+2.1 : N (100%)
+The article explicitly states that the study was an open-label experiment. According to the guidelines, if the trial is open-label, the answer to this question is N.
+2.2 : Y (100%)
+Because this was an open-label study and the control arm involved the investigator's choice of treatments, the intervention providers (investigators) were aware of the participants' assigned intervention.
+2.3 : Y (80%)
+The article does not describe significant non-protocol interventions that were imbalanced between groups and prognostic for the outcome.
+2.4 : N (95%)
+Of the 381 randomized patients, 367 (96.3%) received at least one dose of the study drug, meaning failures in implementing the intervention occurred in less than 10% of participants.
+2.5 : N (85%)
+The article reports that 95% of patients treated with one course of treatment received at least 80% of the assigned dose(s), indicating that non-adherence did not exceed 10% for the initial treatment phase.
+2.6 : NI (100%)
+The article does not provide information on using instrumental variable analyses or inverse probability weighting to estimate the effect of adhering to the intervention.
+Result of the domain (100%)
+High risk
+The answer to 2.2 is Y, 2.3 is Y, 2.4 is N, 2.5 is N, and 2.6 is NI. According to the provided criteria, if 2.1 or 2.2 is Y, 2.3 is Y, 2.4/2.5 is N, and 2.6 is NI, the result is "High risk".
+
+Domain 3
+3.1 : Y (100%)
+Overall survival data were available for nearly all randomized participants. Only 1 patient in the elacytarabine arm and 4 patients in the control arm were lost to follow-up or withdrawn, meaning missing outcome data was well below 5%.
+3.2 : NI (100%)
+The answer to 3.1 is Y, making this question not strictly applicable, but no specific bias correction methods for missing data were detailed. (Note: Although the guidelines say 3.2 cannot be NI, since 3.1 is Y, the domain result relies primarily on 3.1).
+3.3 : N (90%)
+There is no information to suggest that the very few patients who were lost to follow-up dropped out due to health issues related to the outcome variable. 
+3.4 : N (90%)
+The proportion of missing outcome data is extremely low and there is no evidence to suggest that missingness depended on the true value of the outcome.
+Result of the domain (100%)
+Low risk
+Because the answer to question 3.1 is Y, the assessment result for Domain 3 is "Low risk".
+
+Domain 4
+4.1 : N (100%)
+The outcome is overall survival, which is an objective and highly reliable measurement predefined in the protocol.
+4.2 : N (100%)
+Overall survival was measured comparably in both groups, as it simply relies on the date of death.
+4.3 : Y (100%)
+The outcome measurement is not based on patient-reported results, but the trial was open-label, meaning outcome assessors were aware of the participants' group assignments.
+4.4 : N (100%)
+The outcome of overall survival (all-cause mortality) is an objective measure, so its assessment could not have been influenced by knowledge of the intervention received.
+4.5 : N (100%)
+There is no clear evidence to suggest that knowledge of the intervention status was likely to influence the objective assessment of mortality.
+Result of the domain (100%)
+Low risk
+The answer to 4.1 is N, 4.2 is N, 4.3 is Y, and 4.4 is N. According to the criteria, the assessment result for Domain 4 is "Low risk".
+
+Domain 5
+5.1 : Y (95%)
+The trial was registered (NCT01147939) and the results (overall survival) were analyzed in accordance with a pre-specified analysis plan outlined in the methods section.
+5.2 : N (100%)
+There is only one possible way in which overall survival can be measured (time to death), so there is no opportunity to select from multiple measures.
+5.3 : N (100%)
+The analysis methods for overall survival (Kaplan-Meier, log-rank test, Cox proportional hazards) were pre-specified and there is no evidence of selection from multiple analyses.
+Result of the domain (100%)
+Low Risk
+The answer to 5.2 is N, 5.3 is N, and 5.1 is Y, which makes the assessment result for Domain 5 "Low Risk".
+
+Overall Bias Risk for the Article (100%)
+High Risk
+Since Domain 2 was assessed as "High Risk", the overall assessment result for the article is "High Risk".

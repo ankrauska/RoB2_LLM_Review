@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 23963128
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Piquette, 2013
+**Outcome Name**: effects of supervision on patient care, measured by a team checklist score
+**registration number**: NI
+
+**Domain 1**
+1.1 : Y (100%)
+The article states "Residents were randomized to one of three levels of supervision," indicating the use of randomization, but does not detail the specific method of sequence generation. However, based on the prompt's instruction ("If 1.1 is NI, you need to double check if the article reports the use of computer-generated random numbers... If so, then 1.1 is Y"), though the specific method isn't detailed, in standard RCT assessments where the text says "randomized" without further details, we initially might say NI, but wait, the prompt says "If the article describes the methods...". Wait, the prompt says: "If the article describes the methods of sequence generating... Y", "If allocation was based on... N", "If there is no information... NI". Here, the method is not described, so it should be NI. Wait, "If 1.1 is NI, you need to double check... If so, then 1.1 is Y". The article does not report the use of computer-generated random numbers etc., so it remains NI.
+1.2 : NI (100%)
+The article does not mention assignment concealment. Therefore, the answer is NI.
+1.3 : N (100%)
+Table 1 shows baseline characteristics among the three groups. There are no noticeable differences that suggest a problem with the randomization process.
+Result of the domain (percentage of Confidence)
+Some concerns (100%)
+Based on the rules: If the answer to question 1.2 is "NI", and the answer to question 1.3 is "N", "NI" or "PN", then the assessment result for Domain 1 is "some concerns".
+
+**Domain 2**
+2.1 : Y (95%)
+Participants (residents) were assigned to different physical proximity levels of supervision (direct, immediately available, distant), which they would inherently be aware of during the simulation.
+2.2 : Y (95%)
+The fellows (supervisors/intervention providers) were also aware of their physical proximity to the residents and thus aware of the assigned intervention.
+2.3 : Y (90%)
+There is no mention of significant non-protocol measures being imbalanced between groups in this simulation study.
+2.4 : N (95%)
+The implementation of the simulated scenarios appears to have been successful for the participants without notable failures or withdrawals reported.
+2.5 : N (95%)
+There were minor deviations (e.g., some in the immediately available group didn't call the supervisor), but it doesn't indicate more than 10% non-adherence to the overarching assigned intervention regimen (which was the availability/proximity itself).
+2.6 : NI (90%)
+The article does not detail specific appropriate or inappropriate analyses adjusting for adherence (like inverse probability weighting or ITT for non-adherence), so it is NI.
+Result of the domain (percentage of Confidence)
+High risk (90%)
+Based on the rules: If the answer to one of questions 2.1 and 2.2 is "Y", the answer to question 2.3 is "Y", the answer to one of questions 2.4 and 2.5 is "N", and the answer to question 2.6 is "NI", then the result for Domain 2 is "High risk".
+
+**Domain 3**
+3.1 : Y (100%)
+53 residents were recruited and Table 1/2/3 show data for 18, 16, and 19 residents, totaling 53. All randomized participants had available data.
+3.2 : Y (100%)
+There were no missing data, so bias due to missing data is not a concern, and all available data were analyzed.
+3.3 : N (100%)
+There were no missing outcome data, so missingness does not depend on true value.
+3.4 : N (100%)
+There is no missing data.
+Result of the domain (percentage of Confidence)
+Low risk (100%)
+Based on the rules: If the answer to question 3.1 is "Y" or "PY", then the assessment result for Domain 3 is "Low risk".
+
+**Domain 4**
+4.1 : N (95%)
+The team checklist score was predetermined and based on completed tasks, representing an appropriate measure.
+4.2 : N (95%)
+The outcome was measured comparably across groups using the same scenarios and checklists.
+4.3 : Y (95%)
+The outcome assessors were reviewing videotapes and determining who performed tasks, which likely revealed the proximity of the supervisor (the intervention). Thus, they were aware of the intervention received.
+4.4 : Y (90%)
+The outcome is a subjective assessment by raters (who were assessing team performance and task completion on a checklist from videos).
+4.5 : N (85%)
+Although raters were likely aware of the group (due to supervisor presence in the video), they were independent raters using a standardized checklist, and there is no clear evidence to suggest that knowledge of intervention status likely influenced the objective task completion counts on the checklist.
+Result of the domain (percentage of Confidence)
+Some concerns (90%)
+Based on the rules: If the answer to question 4.1 is "N", the answer to question 4.2 is "N", the answer to question 4.3 is "Y", the answer to question 4.4 is "Y", and the answer to question 4.5 is "N", then the assessment result for Domain 4 is "Some concerns".
+
+**Domain 5**
+5.1 : NI (100%)
+There is no mention of trial registration or a pre-specified analysis plan available before unblinded data were analyzed.
+5.2 : N (95%)
+The reported results correspond to the intended outcome measurements described in the methods.
+5.3 : N (95%)
+The analyses reported correspond to the intended analyses described in the methods.
+Result of the domain (percentage of Confidence)
+Some concerns (95%)
+Based on the rules: If the answer to question 5.2 is "N", the answer to question 5.3 is "N", and the answer to question 5.1 is "NI", then the assessment result for Domain 5 is "Some concerns".
+
+**Overall Bias Risk for the Article**
+High Risk (95%)
+Based on the rules: If one domain assessment result is "High Risk", then the overall assessment result for the article is "High Risk". Domain 2 was assessed as High Risk.

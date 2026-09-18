@@ -1,0 +1,124 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 25439614
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Elman, 2015 (DRCR.net Protocol I, 5-year results)
+**Outcome Name**: Visual acuity
+**Registration number**: Not explicitly stated in article (referenced as DRCR.net protocol; ClinicalTrials.gov NCT00444600, not stated in text)
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+The article states "Random assignment to ranibizumab every 4 weeks... and either prompt or deferred (≥24 weeks) focal/grid laser treatment," but no specific method of sequence generation (e.g., computer-generated numbers, block randomization) is described in this article.
+
+**1.2**: NI (90%)
+No mention of allocation concealment mechanisms (central allocation, sequentially numbered containers, opaque envelopes) is provided in this article.
+
+**1.3**: NI (85%)
+No baseline comparison between the originally randomized prompt vs. deferred groups is presented in this article; only completers vs. non-completers within each group are compared (Table 1).
+
+**Result of Domain 1**: Some concerns (85%)
+Rationale: 1.2 = NI and 1.3 = NI (i.e., N/PN/NI) → per algorithm, this combination yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (80%)
+Laser treatment is a visible, in-office procedure; participants in the prompt-laser group would know they received laser, whereas most deferred-group participants would know they did not (56% never received laser). This is not a blinded intervention for participants.
+
+**2.2**: Y (85%)
+Treating physicians/care providers necessarily knew whether laser was administered, as this was an active procedural decision at each visit.
+
+**2.3**: N (80%)
+Nonprotocol treatment for DME (bevacizumab, triamcinolone, vitrectomy) was received by 7% of completers in the prompt group and 0% in the deferred group — an imbalance in nonprotocol intervention that is prognostic for the VA outcome.
+
+**2.4**: Y (90%)
+Excluding deaths, only 76% (prompt) and 74% (deferred) of originally randomized participants completed 5 years — more than 10% failure/withdrawal in both groups.
+
+**2.5**: N (70%)
+Cessation/reduction of injections (e.g., no injections in >50% of eyes by year 5) was per protocol-specified retreatment criteria (based on OCT/VA response), not non-adherence to assigned regimen.
+
+**2.6**: N (75%)
+The longitudinal analysis used "all available visit data" across all randomized eyes with adjustment for confounders — functionally an ITT-type approach rather than an instrumental variable or inverse-probability-weighted analysis of adherence.
+
+**Result of Domain 2**: High risk (80%)
+Rationale: One of 2.1/2.2 = Y; 2.3 = N; and 2.6 = N → per algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: N (90%)
+Continuous outcome (VA letter score); only 76% (prompt) and 74% (deferred) of originally randomized (excluding deaths) participants had 5-year data — below the 90% threshold.
+
+**3.2**: Y (75%)
+The authors performed a longitudinal mixed-model analysis using all available data and a sensitivity analysis restricted to 5-year completers (Figure 2), explicitly stating "Results appeared similar," providing evidence that results were not substantially biased by missing data.
+
+**3.3**: N (70%)
+Reasons for missingness were largely due to participants declining to consent to the extension phase, not directly tied to visual acuity status; some baseline imbalances (age, PRP, lens status, DR severity) were noted but not clearly outcome-dependent.
+
+**3.4**: N (70%)
+Not applicable/not needed since 3.2 = Y drives the domain result, but based on similar sensitivity analysis results, no strong signal of differential dependency was found.
+
+**Result of Domain 3**: Low risk (80%)
+Rationale: 3.1 = N, but 3.2 = Y → per algorithm, "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+Best-corrected visual acuity was measured using the standardized E-ETDRS protocol, a validated and reliable method.
+
+**4.2**: N (85%)
+Both groups followed the same visit schedule and measurement protocol (visits every 4 weeks through year 1, then 4–16 weeks based on identical protocol-defined criteria).
+
+**4.3**: N (85%)
+The article states "masking of the visual acuity examiners," and VA is examiner-assessed (not patient-reported); thus assessors were unaware of group assignment.
+
+**4.4**: Y (70%)
+Visual acuity, although examiner-assessed under standardized protocol, retains a subjective/performance-based component; per criteria, subjective measures assessed by an assessor default to Y.
+
+**4.5**: N (85%)
+No evidence suggests assessment was influenced by knowledge of intervention, especially given explicit masking of VA examiners.
+
+**Result of Domain 4**: Low risk (85%)
+Rationale: 4.1 = N, 4.2 = N, 4.3 = N → per algorithm, "Low risk" (first rule satisfied).
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (80%)
+The protocol was pre-specified and publicly available (www.drcr.net); measurement and analysis methods described in Methods (longitudinal model, binary outcome models) match those reported in Results.
+
+**5.2**: N (85%)
+Visual acuity was measured by a single standardized protocol (E-ETDRS) at all pre-specified visits; no evidence of selective reporting among multiple outcome measures.
+
+**5.3**: N (80%)
+Both the longitudinal analysis and cross-sectional 5-year analysis were pre-specified and both fully reported, with consistent results; no evidence of selective reporting of analyses.
+
+**Result of Domain 5**: Low risk (85%)
+Rationale: 5.2 = N, 5.3 = N, 5.1 = Y → "Low risk."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Domain Summary**:
+- Domain 1: Some concerns
+- Domain 2: High risk
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Low risk
+
+**Overall Bias Risk for the Article**: **High risk (85%)**
+
+Rationale: Per the algorithm, if any single domain is rated "High risk," the overall assessment is "High risk." Domain 2 (deviations from intended interventions) was rated High risk primarily due to lack of blinding of participants/care providers regarding laser treatment, imbalance in nonprotocol DME treatments, and an analytic approach (ITT-like longitudinal model) not specifically designed to estimate the effect of adherence to the assigned intervention.

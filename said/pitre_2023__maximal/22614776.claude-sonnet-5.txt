@@ -1,0 +1,54 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 22614776
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Peer Aggression at 12 Months
+## SafERteens Trial (Therapist-delivered Brief Intervention vs. Control)
+
+---
+
+## 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns due to lack of reported information on allocation sequence generation and concealment methods, despite no evidence of baseline imbalance problems.
+
+**b. Rationale:** The article states participants "were randomly selected...and assigned to 1 of the 3 study conditions (TBI, CBI, control)" but provides no details on the method of sequence generation (e.g., computer-generated random numbers) or allocation concealment procedures (e.g., sealed envelopes, central randomization). No information is given about who performed the randomization or whether assignment could be foreseen. The protocol registration also does not clarify these methodological details. There is no evidence of baseline imbalance suggesting problems with randomization — Table 1 shows generally similar baseline percentages for severe peer aggression across therapist (82.7%), computer (75.5%), and control (77.9%) groups, and the article states "There were no significant differences between conditions on age, race, gender." However, absence of information on sequence generation and concealment, combined with the inability to confirm allocation concealment, precludes a "Low risk" judgement. Per the algorithm, when there is no information on concealment (signalling question 1.2) and no evidence of imbalance, the default judgement is "Some concerns."
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **High risk of bias**
+
+**a. Judgement:** High risk of bias because participants and personnel were not blinded, and the trial context (therapist-delivered, non-blinded intervention) likely led to deviations that could affect the outcome, particularly given imbalance in intervention delivery components between groups (therapist interaction vs. control brochure).
+
+**b. Rationale:** Participants and personnel were clearly aware of intervention assignment: the TBI involved a therapist directly delivering "adapted motivational enhancement therapy and skills training" during a 37-minute session, while the control group "received a trifold brochure with community resources." This lack of blinding is inherent to the design (signalling questions 2.1/2.2 = Yes). Because participants/personnel were aware, the question of whether deviations arose because of trial context becomes central. The trial context here (an engaged therapist providing motivational interviewing, tailored feedback, and community resource referrals) plausibly influenced participant behavior differentially—the article itself speculates that "other risk or promotive influences (e.g., increased involvement with community resources because of referrals made...) may have been affected by the TBI." Such recruitment/engagement effects are a core feature of the intervention being tested and are unlikely to be balanced between the therapist arm and control arm, since the “dose” of human interaction and tailored engagement differed substantially. This satisfies criteria for concern regarding deviations affecting the outcome due to trial context, and because they are inherently unbalanced (control had minimal contact vs. therapist-delivered intervention), this raises risk of bias to "High" for the assignment-effect question. On the positive side, the analysis was appropriate: "An intent-to-treat approach was used. All randomly assigned participants were included whether the intervention was received or not (>95% received their assigned intervention during the ED visit)" — satisfying signalling question 2.6 as low risk for that component. However, per the algorithm (Table 6), when participants/personnel are aware, deviations arose from trial context, deviations were likely to affect the outcome (a behavioral outcome highly susceptible to engagement effects), and deviations are unbalanced between groups (unequal “dose” of interaction), the default judgement is High risk of bias for Part 1, which drives an overall High risk of bias for this domain regardless of Part 2 being low.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias given high follow-up rate and use of intent-to-treat/GEE approach that includes participants with missing data.
+
+**b. Rationale:** The 12-month follow-up rate was 83.6% (n=607/726), with the article noting "attrition was low (14%)." While this is not "nearly all" participants strictly, the analysis used GEE, which the authors state: "GEE analyses use all data available for participants, including those lost to attrition, and allow for observed variable distributions." This modeling approach (a form of likelihood-based/weighted method) is one of the appropriate methods listed in the RoB2 guidance for handling missing outcome data without requiring a complete dataset (section 6.1.6, approach 4). No large differences in dropout rates are reported between intervention and control groups, and no reasons for missingness (e.g., differential dropout related to failure or success in reducing aggression) are highlighted as concerning. The authors do not report evidence of dropout being associated with outcome status (e.g., higher dropout among those with continued violence), and there is no indication that missingness depended on the true value of peer aggression in a manner that differed by group. Given the relatively high retention (>80%), appropriate statistical handling via GEE, and no evidence of differential or outcome-dependent missingness, this domain is judged as low risk of bias.
+
+---
+
+## 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** Some concerns because peer aggression is a self-reported outcome, and while outcome assessors were blinded, self-report of a behavioral/psychosocial outcome by non-blinded participants could plausibly be influenced by knowledge of intervention received.
+
+**b. Rationale:** The outcome (severe peer aggression) was measured via self-report using "items from the conflict tactic scale" administered through "self-administered computer survey." The trial's masking information indicates "whoMasked: OUTCOMES_ASSESSOR" — suggesting that outcome assessors (distinct from participants) were blinded. However, for participant-reported outcomes, the RoB2 guidance is explicit: "the outcome assessor here is the participant, even if a blinded interviewer is questioning the participant." Since participants themselves were the outcome assessors and were necessarily unblinded to their own intervention assignment (control brochure vs. therapist session), the assessment of the outcome could have been influenced by knowledge of intervention received (signalling question 4.4 = Yes/Probably yes). The authors took some measures to reduce this risk: "recent reviews suggest that the reliability and validity of self-report data are increased when privacy/confidentiality is assured, when staff are blind to condition assignment, and when participants self-administer sensitive information on computers" — and this trial used computerized self-administration, likely reducing (but not eliminating) social desirability or demand-characteristic bias. There is no strong a priori reason to believe participants who received the more intensive therapist intervention would systematically underreport aggression to a greater degree than controls (unlike outcomes with strong placebo-expectation effects, e.g., pain), and the measure was concrete and behaviorally anchored (e.g., "hit or punched," "used a knife/gun") rather than a vague subjective impression. Therefore, it is not clearly "likely" that assessment was influenced by knowledge of intervention, but the potential cannot be ruled out. This corresponds to "Some concerns" rather than "High risk."
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias; the outcome and analysis reported for peer aggression at 12 months matches the trial registration's pre-specified outcome domain and there is a single primary analytic approach reported without evidence of selection among multiple alternative outcome definitions or analyses.
+
+**b. Rationale:** The trial registry (NCT00251212) pre-specifies "Primary outcome variables include alcohol misuse and violent behaviors" measured at "12-months," consistent with the peer aggression outcome examined in this article. The measure of severe peer aggression is clearly and consistently defined across the linked publications (using the Conflict Tactic Scale, computed as a binary variable based on 4 items), and the same definition was used in the earlier 3- and 6-month follow-up papers (Cunningham 2009; Walton 2010), indicating consistency rather than post hoc selection of a favorable definition. The GEE model is reported with the pre-specified dichotomous approach, and the authors explicitly state, "The analyses focused on evaluating if effects noted at 6 months were sustained at 12 months; therefore, only dichotomous outcomes were examined" — a plausible, non-results-based justification for restricting to dichotomous outcomes (continuous versions apparently not being sensitive at earlier time points), rather than evidence of cherry-picking based on 12-month results. There is no indication of multiple alternative analyses (e.g., multiple adjustment models, multiple cut-points) being tried and only the favorable one reported. Given consistency across time points/publications and a registered outcome domain matching what is reported, this domain is judged as low risk of bias.
+
+---
+
+# Overall Risk of Bias for Peer Aggression at 12 Months: **High risk of bias**
+
+**Rationale:** Per RoB2 guidance, a judgement of "High risk of bias" in any single domain results in an overall "High risk of bias" for the outcome. The domain "Deviations from intended intervention" was judged High risk because participants/personnel were unblinded (inherent to a therapist- vs. brochure-delivered intervention), and the differential "dose" of human engagement between arms constitutes an unbalanced deviation from a placebo-equivalent context that plausibly influenced the behavioral outcome of peer aggression. This overall judgement stands despite low risk of bias for missing data and selective reporting, and only "some concerns" for randomization and outcome measurement.

@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 18783503
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Kheirabadi, 2008
+**Outcome Name**: severity of subjective withdrawal symptoms using the Subjective Opiate Withdrawal
+**registration number**: None
+
+Domain 1
+1.1 : Y (100%)
+The article states that participants were assigned to interventions "using a randomization automated system on a one-to-one basis," indicating adequate sequence generation.
+1.2 : Y (100%)
+The article mentions, "During the study, the randomization list was held securely, and released only after study completion. Gabapentin and placebo were dispensed in identical appearing capsules," confirming adequate allocation concealment.
+1.3 : N (100%)
+The text reports, "There were no significant differences in mean age or dosage of methadone and other drugs doses... between the treatment and controls groups at baseline," suggesting no baseline differences indicating a problem with randomization.
+Result of the domain (100%)
+Low risk
+The answer to question 1.2 is "Y", the answer to question 1.1 is "Y", and the answer to question 1.3 is "N".
+
+Domain 2
+2.1 : N (100%)
+The study was described as "double-blind," and "Gabapentin and placebo were dispensed in identical appearing capsules," keeping participants unaware of their allocation.
+2.2 : N (100%)
+The study was conducted under "double-blind conditions," meaning carers and those delivering the interventions were unaware of the assigned intervention.
+2.3 : Y (100%)
+Symptomatic medications such as clonidine, oxazepam, or trazodone were provided if required, and there were no significant differences in their use between groups.
+2.4 : N (100%)
+Only 3 out of 40 participants (7.5%, which is less than 10%) dropped out of the study, meaning implementation of the intervention was successful for most participants.
+2.5 : N (100%)
+Non-adherence affected only 3 out of 40 participants (7.5%), which falls below the 10% threshold for this item.
+2.6 : NI (100%)
+The article does not provide specific information about using specialized analysis methods like inverse probability weighting to estimate the effect of adhering to the intervention.
+Result of the domain (100%)
+Low risk
+The answers to questions 2.1, 2.2, 2.4, and 2.5 are all "N".
+
+Domain 3
+3.1 : PN (100%)
+A total of 37 out of 40 participants (92.5%) completed the trial and had complete outcome data. Since the outcome is continuous and the proportion is between 90% and 95%, the answer is "PN".
+3.2 : N (100%)
+The article uses repeated-measures analysis of variance and does not report using analysis methods that correct for bias due to missing data (such as inverse probability weighting) or provide sensitivity analyses.
+3.3 : Y (100%)
+The authors state, "The non-compliance and self-medication in the placebo group may be due to the greater severity of withdrawal symptoms," implying that dropouts were related to the outcome variable.
+3.4 : Y (100%)
+The missingness was uneven (3 in the placebo group vs. 0 in the gabapentin group), and the authors explicitly hypothesized that the dropouts in the placebo group were related to the severity of withdrawal symptoms (the outcome itself).
+Result of the domain (100%)
+High risk
+The answer to 3.1 is "PN", 3.2 is "N", 3.3 is "Y", and 3.4 is "Y".
+
+Domain 4
+4.1 : N (100%)
+The Subjective Opiate Withdrawal Scale (SOWS) was used, which is a pre-defined, valid, and reliable indicator for the outcome.
+4.2 : N (100%)
+Both groups were evaluated using the same outcome measurement tool (SOWS) at the same six time-points.
+4.3 : N (100%)
+The outcome is a patient-reported measure, and the participants were effectively blinded by the use of identical-appearing capsules and a double-blind design.
+4.4 : Y (100%)
+The outcome is a subjective measure reported by the patient (Severity of subjective withdrawal symptoms).
+4.5 : N (100%)
+Because a robust double-blind methodology with identical capsules was utilized, there is no clear evidence to suggest that outcome assessment was likely to be influenced by knowledge of the intervention received.
+Result of the domain (100%)
+Low risk
+The answer to 4.1 is "N", 4.2 is "N", and 4.3 is "N".
+
+Domain 5
+5.1 : NI (100%)
+The article does not mention trial registration or a pre-specified analysis plan that was finalized before unblinded outcome data were available.
+5.2 : N (100%)
+All eligible reported results correspond to the intended outcome measurements at the specified time-points without evidence of selective reporting from multiple scales.
+5.3 : N (100%)
+The data were analyzed using repeated-measures ANOVA as intended, with no evidence of selection from multiple eligible analyses.
+Result of the domain (100%)
+Some concerns
+The answer to 5.2 is "N", 5.3 is "N", and 5.1 is "NI".
+
+Overall Bias Risk for the Article (100%)
+High risk
+The overall assessment is "High risk" because Domain 3 was evaluated as "High risk".

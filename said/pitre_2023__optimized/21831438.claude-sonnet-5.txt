@@ -1,0 +1,89 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 21831438
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment (RoB 2.0)
+## Trial: CAESAR Study – Candesartan-HCT Combination vs. Candesartan Monotherapy
+## Outcome: Change in mean sitting DBP from baseline after 4 weeks of therapy
+## Effect of Interest: Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+### 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Sequence generation (signalling question 1.1 – Probably Yes):** The article states "Study patients were randomized in a 1:1 ratio by using the mixed block randomization (4 and 6 blocks) method." This confirms a random component was used.
+- **Allocation concealment (signalling question 1.2 – No information):** No information is provided in the article, protocol, or registry about how the allocation sequence was concealed from investigators enrolling patients. There is no mention of central randomization, sealed envelopes, or any other concealment mechanism. Given this is an open-label study with no blinding of any kind ("maskingInfo": "NONE" per registry), the lack of description of concealment raises concern that recruiters could have anticipated assignments (particularly with block randomization, where the last allocation in a block is potentially predictable).
+- **Baseline imbalance (signalling question 1.3 – Probably No, i.e., compatible with chance):** The mean age differed significantly between groups (51.0 [10.2] years in combination group vs. 47.8 [10.7] years in monotherapy group; P = 0.02), which the authors themselves note as unexpected "despite random allocation." However, this is only one significant difference among many baseline characteristics examined (sex, weight, height, BMI, prior treatment, comorbidities), all of which were well balanced. A single significant difference at P = 0.02 (not extremely small) among multiple comparisons is compatible with chance and does not strongly suggest a problem with the randomization process itself, though it cannot be entirely dismissed given the absence of information on allocation concealment.
+
+Combining "No information" on concealment with baseline differences compatible with chance leads to a judgement of **Some concerns** per the RoB2 algorithm (Table 4: NI on concealment + baseline imbalance not clearly indicating a problem → Some concerns).
+
+---
+
+### 2. Deviations from the intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Awareness of assigned intervention (signalling questions 2.1/2.2 – Yes):** This was an explicitly open-label trial: "Open-label, Randomised, 2-Arm Parallel Group, Multicentre... Study" (per registry) with "maskingInfo": "NONE." Both participants and treating physicians/personnel were aware of the assigned intervention (candesartan alone vs. candesartan+HCT).
+- **Deviations arising from trial context (signalling question 2.3 – Probably No):** There is no clear evidence that the lack of blinding led to non-protocol interventions or failures to implement the protocol interventions inconsistent with the trial design. The comparison is between two active regimens (not placebo vs. active), so participants' behavioral response to "feeling unlucky" about their allocation is less likely than in placebo-controlled designs. Compliance was documented as high and comparable between groups (98.6% for combination vs. 97.8% for monotherapy), suggesting no substantial differential non-adherence driven by trial context awareness.
+- **Appropriate analysis (signalling question 2.6 – Yes):** "Efficacy data were evaluated in the intent-to-treat (ITT) population. The ITT population consisted of patients who had baseline BP values and ≥1 postrandomization BP values and who had taken ≥1 dose of the study drug." This is consistent with an appropriate ITT/modified-ITT approach for estimating the effect of assignment to intervention (missing outcome data issues are addressed separately in Domain 3).
+
+Despite this, because the study was unblinded and DBP measurement, while largely objective (automated device), could theoretically be influenced by observer/participant expectations regarding an "add-on" therapy, and because there is no explicit statement ruling out any contextual effects on non-protocol intervention or co-intervention use, a residual concern remains. This leads to a judgement of **Some concerns** rather than "Low risk," per Table 6 (awareness = Yes, no clear affirmative evidence that deviations arose or did not arise because of trial context → Some concerns default).
+
+---
+
+### 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- Of 117 patients randomized to combination therapy, only 111 were included in the ITT analysis for the primary DBP outcome at 4 weeks; of 116 randomized to monotherapy, 113 were included (Table II, "Intention-to-treat analysis (n=111)" and "(n=113)"). This represents missing outcome data for 6/117 (~5.1%) and 3/116 (~2.6%) of randomized patients, respectively — a modest but real difference in the proportion of missing data between groups.
+- Overall study discontinuation was higher in the combination group: "Discontinued: FG000 (combination) = 20; FG001 (monotherapy) = 15" (registry), with dropouts attributed to adverse events, loss to follow-up, and withdrawal of consent — reasons that could plausibly be related to the true value of the BP outcome (e.g., AEs such as dizziness potentially related to greater BP lowering, or withdrawal due to poor BP control).
+- No sensitivity analyses addressing the potential impact of missing data were reported.
+- However, the amount of missing data is relatively small (both under 20%), and reasons for missingness (AEs, lost to follow-up, withdrawal of consent) were reported and do not overwhelmingly suggest that missingness was strongly related to the outcome in a way that would bias the specific 4-week DBP result substantially.
+
+Given that missingness could plausibly depend on the true DBP value, and the proportions/reasons for missing data differed somewhat between groups, but it is not clearly *likely* that missingness depended on true outcome value in a way to bias this specific result, the appropriate judgement is **Some concerns**.
+
+---
+
+### 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Appropriateness of measurement method (signalling question 4.1 – No):** DBP was measured using a standardized, objective protocol: "BPs were measured in each patient's arm by the same investigator at each center with a fully automated device produced by Omron... Three consecutive BPs were measured at 1-minute intervals in a sitting position... The 2 extreme values out of the 5 measurements... were discarded, and the remaining 3 were averaged." This is an appropriate, validated method.
+- **Comparability of measurement across groups (signalling question 4.2 – No):** The same measurement protocol, timing (trough, before dosing), and equipment were used identically in both intervention groups; there is no indication that ascertainment methods differed between arms.
+- **Awareness of outcome assessors (signalling question 4.3 – Yes):** Given the open-label design, both the assessor (investigator) and participant were aware of intervention assignment.
+- **Could this awareness have influenced the DBP measurement (signalling question 4.4)?** DBP measured by automated device is an objective, observer-reported outcome not involving significant subjective judgement, in contrast to participant-reported outcomes like pain or subjective symptom scales. While a human operator applies the cuff and initiates the reading, the automated oscillometric device itself generates the numerical value without observer interpretation, substantially limiting opportunity for conscious or unconscious bias in the recorded value.
+- Given the low likelihood that knowledge of assignment influenced the automated, objective DBP readings, this domain is judged as **Low risk of bias**, consistent with RoB2 guidance that observer-reported outcomes not involving judgement are unlikely to be influenced by lack of blinding.
+
+---
+
+### 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial registry (NCT00621153) prospectively specifies the primary outcome as "Changes in Mean Sitting DBP From Baseline After 4 Weeks of Therapy," described identically to how it is presented in the publication: "The primary objective of this study was to compare the changes in the mean sitting DBP from the baseline after 4 weeks of therapy between the candesartan-HCT combination and candesartan monotherapy."
+- The registry results section reports numerical results for this exact outcome ("-17.0 (0.89)" for combination and "-14.1 (0.88)" for monotherapy, LS mean ± SE), which are consistent in direction and magnitude with the published article's reported values (-17.8 [10.2] and -14.1 [10.1] mm Hg, respectively, for the same comparison, with minor differences attributable to LS-mean/ANCOVA-adjusted vs. unadjusted values) — there is no evidence of discrepant reporting between the pre-registered outcome definition and the published result.
+- There is no indication that multiple alternative measurements (e.g., different time points, different DBP scales) or multiple alternative analytic approaches were available and that the published result was selectively chosen from among these based on the significance/direction of results. The analysis method (ANCOVA with baseline BP as covariate) is pre-specified and consistently applied ("The mean change between the combination and the monotherapy groups was compared using the ANCOVA model with the treatment as a factor and the BP at randomization as a covariate").
+- Therefore, for this specific outcome/result, there is no evidence of selective reporting, supporting a judgement of **Low risk of bias**.
+
+---
+
+## Overall Risk of Bias Summary Table
+
+| Domain | Judgement |
+|---|---|
+| 1. Bias arising from the randomization process | Some concerns |
+| 2. Bias due to deviations from intended interventions | Some concerns |
+| 3. Bias due to missing outcome data | Some concerns |
+| 4. Bias in measurement of the outcome | Low risk |
+| 5. Bias in selection of the reported result | Low risk |
+
+**Overall risk of bias for this outcome: High risk of bias** (because "Some concerns" was identified in multiple domains [1, 2, and 3], which, per RoB2 guidance Table 1, "may lead the review authors to decide on an overall judgement of 'High' risk of bias for that outcome" given that the accumulation of concerns across the randomization, deviation, and missing-data domains substantially lowers overall confidence in the reported effect estimate for this outcome).

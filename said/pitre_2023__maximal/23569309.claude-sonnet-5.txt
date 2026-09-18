@@ -1,0 +1,83 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 23569309
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: KCSG-BR07-02 (Maintenance PG Chemotherapy vs Observation in MBC)
+**Outcome assessed: Progression-Free Survival (PFS)**
+**Effect of interest: Effect of assignment to intervention (intention-to-treat effect)**
+
+---
+
+## 1. Bias arising from the randomization process: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- **Sequence generation (random):** "The random permutation method was used for random assignment," with stratification by visceral disease, prior adjuvant taxane, response to induction PG, and HR status. This constitutes an adequate random component (signalling question 1.1 = Yes).
+- **Allocation concealment:** "Registration and random assignment were coordinated centrally at the KCSG data center." Central randomization by an independent data center is a robust concealment mechanism, preventing foreknowledge of assignment by enrolling investigators (signalling question 1.2 = Yes).
+- **Baseline imbalance:** Table 1 shows baseline characteristics were well balanced between arms (age, ECOG PS, menopausal status, HR status, HER2 status, number/site of metastases, prior adjuvant therapy), with all P values >0.05 except one subcategory ("Lung, hematogenous" metastases, P = 0.029). A single statistically significant difference among many comparisons is compatible with chance and does not suggest a randomization failure (signalling question 1.3 = No).
+
+All three components support a low risk of bias judgement (adequate concealment + random sequence + no meaningful baseline imbalance).
+
+---
+
+## 2. Deviations from the intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- **Awareness of assignment:** The trial was open-label ("masking: NONE" in the registry). Both participants and treating personnel/investigators were necessarily aware of whether a patient was receiving continued chemotherapy or being observed (signalling questions 2.1 and 2.2 = Yes), since the interventions are entirely dissimilar (active infusional chemotherapy vs. no treatment).
+- **Deviations arising from trial context:** In the maintenance arm, "33 patients whose disease had not progressed stopped further chemotherapy at the physician's discretion" — a substantial deviation (33/116, ~28%) from the protocol-specified continuation "until disease progression, development of unacceptable toxicity, or withdrawal of consent." Because assignment was unblinded, it is plausible that physician/patient decisions to stop treatment early (in the absence of progression or major protocol-defined toxicity) were influenced by the trial context (i.e., known burden of ongoing chemotherapy), constituting a deviation inconsistent with protocol intent.
+- **Balance and effect on outcome:** This type of deviation (early discontinuation without progression) is essentially only possible in the maintenance arm (the observation arm has no active treatment to discontinue), so by definition it is not "balanced" in the classic sense; however, patients who stopped drug remained under observation/follow-up for the primary outcome and were retained in the ITT population. Importantly, hormonal therapy (a potential confounding co-intervention) was explicitly prohibited in both arms until progression — a design strength reducing the likelihood of unbalanced non-protocol interventions: "in our study, patients with HR-positive disease were not allowed to receive hormonal therapy until disease progression."
+- **Analysis approach:** "All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle" — an appropriate ITT analysis was used to estimate the effect of assignment to intervention (signalling question 2.6 = Yes).
+
+Because participants/personnel were aware of allocation, and there is evidence of protocol deviations (early discontinuation in the maintenance arm) that plausibly arose from trial context and could affect the PFS outcome (by shortening effective exposure to the active intervention in a knowledge-driven manner), but an appropriate ITT analysis was used and no important non-protocol co-interventions were introduced (hormonal therapy banned symmetrically), the overall judgement is "Some concerns" rather than "High risk."
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- All 231 randomized patients were included in the intent-to-treat efficacy analysis; the CONSORT flow diagram (Fig 1B) accounts for all randomized patients in each arm (116 maintenance, 115 observation).
+- PFS events/censoring are documented systematically: "Observations were censored at the last clinical contact if patients were lost to follow-up or at the cutoff date for the analysis (October 31, 2011)," and reasons for discontinuation are explicitly tabulated (Table 2) for both arms, including disease progression, withdrawal, adverse events, and physician's discretion.
+- Radiographic assessments were scheduled identically for both arms ("radiographic studies were performed every 6 weeks"), reducing the likelihood that missingness/censoring in PFS assessment differed systematically or informatively between arms.
+- There is no indication of substantial differential loss to follow-up between arms that would bias the PFS estimate; the overall reporting is complete and consistent with a low risk of bias due to missing outcome data.
+
+---
+
+## 4. Measurement of the outcome: **High risk of bias**
+
+**a. Judgement:** High risk of bias.
+
+**b. Rationale:**
+- **Appropriateness of method:** PFS was assessed using RECIST version 1.0, an appropriate and standard method (signalling question 4.1 = No, i.e., not inappropriate).
+- **Comparability of measurement between groups:** Radiographic assessments were performed on the same schedule in both arms ("Radiographic studies were performed every 6 weeks"), which mitigates concern about differential surveillance intensity (signalling question 4.2 = No).
+- **Awareness of outcome assessors:** Critically, the trial explicitly states: "PFS and the duration of response were assessed by investigators." There was no blinded independent central review of imaging/progression status, and the trial was open-label, meaning that the investigators determining "progression" under RECIST (which requires subjective judgment regarding target/non-target lesion assessment and timing of progression, particularly in cases of stable or indeterminate scans) were fully aware of each patient's treatment assignment (signalling question 4.3 = Yes).
+- **Potential for influence:** PFS/RECIST assessment is not a purely objective endpoint like all-cause mortality; it involves clinical/radiological judgment, especially regarding borderline progression calls, timing of scans relative to symptoms, and decisions to pursue further imaging (signalling question 4.4 = Yes, could be influenced).
+- **Likelihood of influence:** Given (1) the substantial difference in expected outcomes between arms (a strong prior expectation that continued therapy would delay progression), (2) the open-label design, and (3) lack of any independent/blinded adjudication committee for progression events, it is likely that unblinded investigator assessment of progression could have been influenced by knowledge of treatment assignment (signalling question 4.5 = likely Yes). This is a well-recognized empirical source of bias in oncology trials with subjective/semi-subjective time-to-event endpoints assessed by unblinded investigators.
+
+Because participants/personnel (here, outcome assessors = treating investigators) were aware of the intervention, the assessment could be influenced by this knowledge, and there is no blinded/independent adjudication to mitigate this, the domain is judged as **High risk of bias**.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- The trial registry (NCT00561119) prospectively specifies PFS as the primary outcome ("Progression free survival," timeframe "approximately 4 years") and specifies secondary outcomes as "overall survival, quality of life, toxicity of GP chemotherapy, duration of response" — all of which are reported in the publication (PFS, OS, toxicity, and response duration are presented in full; QoL results are noted as "data not shown," with the authors stating "additional data will be reported in a separate article," which is a pre-specified secondary outcome deferred to a separate report rather than suppressed).
+- The publication's stated primary endpoint ("The primary endpoint was PFS after random assignment") matches the registered primary outcome measure, and statistical methods (Kaplan-Meier, log-rank test, Cox model with pre-specified covariates for stratification) are consistent with what would be expected from a pre-specified analysis plan.
+- There is no evidence that the reported PFS result was selected from multiple candidate analyses, definitions, or time points (e.g., no evidence of alternative PFS definitions or discrepant hazard ratios reported elsewhere), nor any indication that outcome measures were altered post hoc based on results.
+- The sample size calculation and statistical analysis plan (90% power, 5% one-sided type I error, need for 244/326 patients) are reported and are consistent with pre-specified design in the registry.
+
+Given close correspondence between the trial registration, protocol description, and the reported PFS analysis, with no evidence of selection among multiple outcome measurements or analyses, this domain is judged as **Low risk of bias**.
+
+---
+
+# Overall Risk of Bias Judgement for PFS: **High risk of bias**
+
+**Rationale:** Although randomization, missing data handling, and selective reporting domains are at low risk, and deviations from intended intervention raise only "some concerns," the domain "measurement of the outcome" is judged at **high risk of bias** because PFS — a semi-subjective, judgment-dependent endpoint — was assessed by unblinded investigators in an open-label trial without independent/blinded adjudication. Per RoB 2 guidance, a "High" risk judgement in any single domain results in an overall "High risk of bias" judgement for this result.

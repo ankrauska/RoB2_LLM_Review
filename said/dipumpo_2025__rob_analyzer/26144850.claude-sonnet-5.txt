@@ -1,0 +1,78 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 26144850
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2 Assessment Report
+## Randomized Controlled Trial: PB-MDT vs. ROM-6 in Paucibacillary Leprosy (Agra District, India)
+
+**Result assessed:** Cure rate and relapse rate over follow-up (up to 8 years) comparing WHO PB-MDT (6 months) vs monthly ROM for 6 months (ROM-6), analysed as reported by trial authors (based on those completing treatment/followed-up, not a strict ITT analysis).
+
+---
+
+### 1. Bias arising from the randomization process — **HIGH RISK**
+
+**Signalling questions:**
+- *Was the allocation sequence random?* **Yes.** The authors state "268 three-digit random numbers from the table were written in the patient registers in advance," and allocation was determined by odd/even parity of these numbers — a valid random-component method.
+- *Was the allocation sequence concealed until participants were enrolled?* **No/Probably No.** The random numbers were "written in the patient registers in advance," implying the sequence (and therefore the forthcoming allocation) was recorded and potentially visible to the paramedical workers and recruiting clinicians *before* enrollment. There is no description of any centralized, opaque, or sequentially-concealed allocation mechanism (e.g., sealed envelopes, third-party allocation). This creates a real risk that recruiters could anticipate or influence enrollment/allocation, especially given odd/even parity is easily deduced in advance.
+- *Did baseline differences suggest a problem with randomization?* Age differed at borderline significance (36.4 vs 40.2 years, P=0.059) and duration of disease/short-duration cases differed numerically (31.3% vs 40.6%), though not formally tested as significant. These are not decisive, but combined with the concealment problem raise further concern.
+
+**Motivation:** Because the allocation sequence was not demonstrated to be adequately concealed (pre-listed random numbers in registers, accessible to non-blinded recruiting staff), and no independent/centralized concealment mechanism was described, this domain is judged **High risk**, per RoB 2 Table 3 criterion: "The allocation sequence was not adequately concealed."
+
+---
+
+### 2. Bias due to deviations from intended interventions — **HIGH RISK**
+*(Effect of interest here is closest to an intention-to-treat estimate of assignment effect, since no formal per-protocol adjustment methods were used.)*
+
+**Signalling questions:**
+- *Were participants aware of assigned intervention?* **Yes.** "Blinding to treatment was not undertaken." Participants clearly knew whether they received daily self-administered dapsone/rifampicin (PB-MDT) vs monthly supervised ROM.
+- *Were carers/personnel aware?* **Yes.** Same statement applies; paramedical workers/doctors administering treatment were unblinded.
+- *Did deviations from intended intervention arise due to trial context and affect outcomes?* **Yes/Probably Yes.** Default rates differed substantially between arms (20.1% in PB-MDT vs 14.2% in ROM-6), and reasons for default (weakness, swelling, perceived cure, stigma) differed by arm (Table 3), consistent with differential engagement/adherence linked to awareness of assigned regimen (daily unsupervised dapsone in MDT vs monthly supervised regimen in ROM).
+- *Was an appropriate analysis (ITT) used?* **No.** Cure and relapse rates were calculated only among those who completed treatment and/or were successfully followed up (e.g., Table 5 restricts to N=107 and N=115 "completed treatment," and long-term relapse rates are based on only those retained at each successive follow-up visit — 67/134 and 73/134 at 8 years). This is a de facto per-protocol/completer analysis, not an ITT analysis of all randomized participants.
+- *Potential for substantial impact?* **Yes.** Given ~50% attrition by 8 years and differential default rates/reasons between arms, the exclusion of these participants could materially affect the estimated relative cure/relapse rates.
+
+**Motivation:** Lack of blinding combined with unbalanced/differential dropout patterns linked to trial context, and use of a completer-based (not ITT) analysis without correction, meets the criteria for **High risk of bias** in this domain.
+
+---
+
+### 3. Bias due to missing outcome data — **HIGH RISK**
+
+**Signalling questions:**
+- *Were outcome data available for all/nearly all randomized participants?* **No.** Substantial attrition occurred over the (very long, up to 10-year) follow-up: at 2 years, 100/134 (PB-MDT) and 103/134 (ROM-6) were followed; at 5 years, 88/134 and 90/134; at 8 years, only 67/134 (50%) and 73/134 (54%) remained. The authors explicitly acknowledge in their own stated limitation: *"A number of patients were lost to follow up after release from treatment and thus actual number of relapses in the study could not be assessed."*
+- *Is there evidence the result was not biased by missing data (e.g., sensitivity analyses)?* **No.** No imputation or sensitivity analyses addressing the potential impact of missing outcome data on relapse/cure estimates were performed or reported (only a Cox regression for confounders of cure, not for missingness itself).
+- *Could missingness depend on the true outcome value?* **Yes.** Reported reasons for default/loss include "felt cured" (suggesting good outcome led to dropout) as well as "active disease"/side effects among traced defaulters, and reasons differed between arms (Table 3). Attempts to trace defaulters found differing cure status among those traced (88.8% cured among traced ROM defaulters vs 82.6% among traced PB-MDT defaulters), directly demonstrating outcome-dependent missingness.
+- *Is it likely that missingness depended on true outcome value?* **Yes.** The differing default/dropout reasons between arms, and different post-hoc cure rates found among traced defaulters, provide direct evidence that missingness was related to the true outcome and differed between groups.
+
+**Motivation:** Given the very high proportion of missing outcome data (up to 50% by year 8), explicit trialist-acknowledged uncertainty about "actual relapses," and demonstrable relationship between missingness and outcome/differential reasons by arm, this domain is judged **High risk of bias**.
+
+---
+
+### 4. Bias in measurement of the outcome — **HIGH RISK**
+
+**Signalling questions:**
+- *Was the method of measuring the outcome inappropriate?* **No.** Clinical criteria for cure/relapse were prespecified and consistent with prior literature, though reliant on clinical judgment alone (no histology, acknowledged as a limitation).
+- *Could measurement/ascertainment differ between groups?* **Probably No** direct evidence of differential ascertainment procedures, though the differing schedules of contact (daily supervised dose vs monthly visits) could subtly influence detection opportunities.
+- *Were outcome assessors aware of intervention received?* **Yes.** No blinding was implemented at any level ("Blinding to treatment was not undertaken"), and the same paramedical workers/doctor who administered treatment also assessed clinical cure/relapse status.
+- *Could assessment have been influenced by knowledge of intervention?* **Yes.** Cure and relapse were determined by subjective clinical assessment ("complete resolution," "definite increase in size," judgement calls on reactions vs relapse) — an observer-reported outcome involving considerable judgement.
+- *Is it likely that assessment was influenced by knowledge of intervention received?* **Probably Yes.** Given the trial's explicit aim to demonstrate that a novel, more convenient regimen (ROM-6) was non-inferior to standard therapy, and given unblinded assessors administering and evaluating the regimen they knew the patient was on, there is a plausible risk of differential judgement (e.g., in distinguishing "partial cure" from "no improvement," or reaction from early relapse).
+
+**Motivation:** The combination of an unblinded, judgement-based clinical outcome with assessors likely motivated toward a particular finding (equivalence of the newer regimen) results in a judgement of **High risk of bias** for this domain.
+
+---
+
+### 5. Bias in selection of the reported result — **SOME CONCERNS**
+
+**Signalling questions:**
+- *Was the analysis pre-specified before unblinded data were available?* **No information.** The trial was conducted from 2001–2010 but was registered on the Clinical Trials Registry of India only in 2013 (REF/2013/11/005995), i.e., retrospectively and years after data collection/analysis. No prospective protocol or statistical analysis plan is referenced or available.
+- *Was the reported result likely selected from multiple eligible outcome measurements/analyses?* **No information/Unclear.** Multiple follow-up time points (RFT, 6, 12, 18, 24, 36, 48, 60, 61–96, >96 months) and multiple outcome definitions (cure, partial cure, no improvement, reaction, relapse) are reported comprehensively in Table 5, which suggests reasonably complete reporting across time points rather than cherry-picking of a single favorable time point. However, the retrospective registration and absence of any prospective plan mean selective analytic choices (e.g., choice of relapse definition, statistical test, or which subgroup denominators to use for cure/relapse rate calculations) cannot be excluded.
+
+**Motivation:** Because no pre-specified protocol/SAP predating unblinded data is available (trial registered retrospectively, long after study completion), but there is no overt/direct evidence of selective outcome or analysis reporting (multiple time points and outcomes are reported transparently), this domain is judged as **Some concerns** rather than High risk.
+
+---
+
+## 6. Overall Risk-of-Bias Judgement: **HIGH RISK OF BIAS**
+
+**Justification:** According to RoB 2 rules, an overall judgement of "High risk of bias" is warranted if the study is at high risk of bias in *at least one* domain. In this study, **four of the five domains** (randomization process, deviations from intended interventions, missing outcome data, and measurement of the outcome) were judged to be at **High risk of bias**, with the fifth domain (selection of the reported result) rated as "Some concerns." This multiplicity of high-risk domains — driven by inadequate allocation concealment, complete absence of blinding combined with differential attrition/adherence, very substantial and outcome-related missing data over a long follow-up (up to 50% loss by 8 years), and subjective, non-blinded outcome assessment — substantially undermines confidence in the reported cure and relapse rate comparisons between PB-MDT and ROM-6.
+
+**Reported limitation (as stated by the study authors, retained per instruction to report ambiguity/limitations as documented):** *"A number of patients were lost to follow up after release from treatment and thus actual number of relapses in the study could not be assessed. Additionally, diagnosis was purely clinical and histology could not be done for reasons related to functional difficulties in the field."* This author-acknowledged limitation directly corroborates the independent RoB 2 judgement of high risk of bias due to missing outcome data and outcome measurement concerns identified above.

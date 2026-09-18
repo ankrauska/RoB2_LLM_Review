@@ -1,0 +1,117 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 22715910
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Poureslami, 2012
+**Outcome Name**: Inhaler Use Technique
+**Registration Number**: NCT01474928
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85% Moderate-High Certainty)
+Reason: The article states participants were "assigned at random" and "randomly assigned," but no specific method of sequence generation (e.g., computer-generated numbers, block randomization, coin tossing) is described anywhere in the methods.
+
+**1.2**: NI (90% Moderate-High Certainty)
+Reason: No mention of allocation concealment procedures (e.g., central allocation, sequentially numbered opaque containers/envelopes) is provided in the article.
+
+**1.3**: N (85% Moderate-High Certainty)
+Reason: The article explicitly states: "The initial pretest analyses showed no statistically significant differences among the four study groups and also between gender and ethnic groups in relation to the outcomes of interest."
+
+**Result of Domain 1**: Some concerns (85% Moderate Certainty)
+Reason: Since 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Bias due to deviations from intended interventions
+
+**2.1**: Y (80% Moderate Certainty)
+Reason: This is a behavioral intervention (video vs. pamphlet); participants inherently knew which material (video type or pamphlet) they received/read. No sham or placebo intervention was used to mask this.
+
+**2.2**: Y (85% Moderate Certainty)
+Reason: Facilitators/interviewers delivered the specific intervention materials (video or pamphlet) to participants and thus necessarily knew group assignment, despite being "not aware of the study hypothesis."
+
+**2.3**: NI (70% Low-Moderate Certainty)
+Reason: No information is provided regarding non-protocol interventions (e.g., co-interventions, additional asthma education) received by participants during the 9-month study period.
+
+**2.4**: N (85% Moderate Certainty)
+Reason: Of 92 enrolled, 85 completed the study (7 discontinued/excluded = ~7.6%), which is below the 10% threshold for implementation failure.
+
+**2.5**: NI (80% Moderate Certainty)
+Reason: The article provides no explicit data on participant non-adherence to the assigned intervention (e.g., partial viewing of videos, not reading pamphlet fully).
+
+**2.6**: NI (75% Moderate Certainty)
+Reason: The article describes ANOVA/ANCOVA analyses but does not report any adherence-adjusted analysis (e.g., ITT, per-protocol) explicitly for this outcome.
+
+**Result of Domain 2**: High risk (80% Moderate Certainty)
+Reason: Since one of 2.1/2.2 = Y, 2.3 = NI (falls into N/PN/NI category), and 2.6 = NI, per the algorithm this yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: PN (85% Moderate Certainty)
+Reason: 92 participants were randomized; 85 completed the study (92.4% retention), which falls within the 90–95% range for continuous outcome data.
+
+**3.2**: N (90% Moderate-High Certainty)
+Reason: No mention of inverse probability weighting, sensitivity analysis, or other bias-correction methods for missing data.
+
+**3.3**: NI (70% Low-Moderate Certainty)
+Reason: The article does not specify reasons for the 7 participants (3 excluded, 4 discontinued) who did not complete the study, so no inference can be made regarding relation to the outcome (inhaler technique).
+
+**3.4**: NI (70% Low-Moderate Certainty)
+Reason: No information is provided about whether missingness differed between intervention groups or whether dropout reasons relate to the outcome.
+
+**Result of Domain 3**: High risk (80% Moderate Certainty)
+Reason: Since 3.1 = PN, 3.2 = N, 3.3 = NI, and 3.4 = NI, per the algorithm this yields "High risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (85% Moderate Certainty)
+Reason: The outcome was measured using a "standardized nine-step observational checklist" (validated reference tools cited, refs 52-53), a reliable and predefined tool for inhaler technique assessment.
+
+**4.2**: N (85% Moderate Certainty)
+Reason: "Identical assessment tools were used in the three different interviews (pretest, immediate post-test, follow-up post-test)" across all four groups, ensuring comparable measurement.
+
+**4.3**: Y (80% Moderate Certainty)
+Reason: This outcome is not patient-reported; it is assessed via observation by facilitators/interviewers who also delivered the intervention and therefore were aware of participants' group assignment.
+
+**4.4**: Y (70% Moderate Certainty)
+Reason: The inhaler technique checklist, while structured, requires observer judgment when scoring correct/incorrect steps, making it a subjective measure assessed by an outcome assessor.
+
+**4.5**: N (65% Low-Moderate Certainty)
+Reason: There is no clear evidence in the article suggesting that assessor knowledge of group allocation influenced the checklist-based scoring of inhaler technique.
+
+**Result of Domain 4**: Some concerns (75% Moderate Certainty)
+Reason: Since 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = Y, and 4.5 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: N (65% Low-Moderate Certainty)
+Reason: The registered protocol (NCT01474928) lists "medication adherence" as the primary outcome and does not explicitly pre-specify "Inhaler Use Technique" as a named outcome domain matching the article's reported measure, though it is thematically related. It cannot be clearly established that this discrepancy is unrelated to the results.
+
+**5.2**: N (80% Moderate Certainty)
+Reason: The same nine-step observational checklist measurement is used consistently in both Methods and Results sections; there is no evidence of multiple eligible measurement tools being selectively reported.
+
+**5.3**: N (75% Moderate Certainty)
+Reason: The analysis methods described in Methods (ANOVA followed by ANCOVA with covariates) match those reported in the Results section without evidence of selective reporting from multiple analyses.
+
+**Result of Domain 5**: Some concerns (75% Moderate Certainty)
+Reason: Since 5.2 = N, 5.3 = N, and 5.1 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (80% Moderate Certainty)
+
+Reason: Per the algorithm, since at least one domain (Domain 2: Deviations from Intended Interventions, and Domain 3: Missing Outcome Data) was rated "High Risk," the overall risk of bias for the Inhaler Use Technique outcome is "High Risk."

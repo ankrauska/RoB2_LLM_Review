@@ -1,0 +1,79 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 21216670
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Chollet, 2011
+**Outcome Name**: Progression in the Fugl-Meyer Motor Scale
+**registration number**: NCT00657163
+
+Domain 1
+1.1 : Y (100%)
+Reason you summarized: The article states, "Randomisation was balanced by centre, with an allocation sequence based on a block size of four, generated with a computer random-number generator by the pharmacist at the coordinating centre".
+1.2 : Y (100%)
+Reason you summarized: The article states, "Allocation was concealed by use of sequentially numbered opaque envelopes."
+1.3 : Y (95%)
+Reason you summarized: The article states, "FMMS score at inclusion was higher in the fluoxetine group than in the placebo group (table 2)." This indicates a significant baseline difference in the outcome variable.
+
+Result of the domain 1 (95%) 
+Reason you summarized: The answer to 1.2 is "Y", the answer to 1.1 is "Y", and the answer to 1.3 is "Y", so the assessment result for Domain 1 is "Some concerns".
+
+Domain 2
+2.1 : N (95%)
+Reason you summarized: The article states, "Patients, carers, all site study staff, and investigators were masked to treatment assignment" and "The placebo was identical to the active drug in appearance and packaging." There is no evidence that participants became aware of their intervention.
+2.2 : N (95%)
+Reason you summarized: The article states, "Patients, carers, all site study staff, and investigators were masked to treatment assignment." Carers and intervention providers were unaware.
+2.3 : Y (95%)
+Reason you summarized: The article states, "Physiotherapists were instructed not to design a specific rehabilitation programme but to use the normal protocol for their centre. All participants received standard care, delivered by an organised inpatient stroke care team." Standard care and physiotherapy were balanced across groups.
+2.4 : N (95%)
+Reason you summarized: Implementation of the intervention was successful for most participants. Out of 118 patients randomly assigned, 113 were included in the full-set analysis. Two patients died and three withdrew. Less than 10% failed implementation.
+2.5 : N (95%)
+Reason you summarized: The article states, "Treatment compliance was similar in the two groups... The mean relative dose intensity was 94.8% (12.6) in the fluoxetine group and 94.0% (13.0) in the placebo group." There was no significant non-adherence.
+2.6 : NA (100%)
+Reason you summarized: The answer to 2.5 is N, so 2.6 is not applicable. (Note: Analysis was a full-analysis set/modified ITT, but adherence was high).
+
+Result of the domain 2 (95%) 
+Reason you summarized: The answer to 2.1 is "N", 2.2 is "N", 2.4 is "N", and 2.5 is "N", so the result for Domain 2 is "Low risk".
+
+Domain 3
+3.1 : Y (100%)
+Reason you summarized: 118 patients were randomized, and 113 were included in the analysis (57 fluoxetine, 56 placebo). This is 95.7% (>= 95%) of randomized participants having complete outcome data for the continuous variable FMMS.
+3.2 : Y (100%)
+Reason you summarized: The proportion of missing data is very low (5/118 = 4.2%), and analysis was adjusted for multiple covariates. Inverse probability weighting or imputation are not extensively detailed, but with >95% data available, 3.1 is Y.
+3.3 : N (95%)
+Reason you summarized: Missing data were due to death (septic shock, respiratory distress) or withdrawal (severe hypoxia, kidney tumour, pulmonary embolism), which are not directly dependent on the true value of the motor recovery outcome itself.
+3.4 : N (95%)
+Reason you summarized: The reasons for missingness (unrelated severe adverse events) are explained and do not suggest dependence on the true outcome value.
+
+Result of the domain 3 (100%) 
+Reason you summarized: The answer to 3.1 is "Y", so the assessment result for Domain 3 is "Low risk".
+
+Domain 4
+4.1 : N (100%)
+Reason you summarized: The outcome is measured by the Fugl-Meyer Motor Scale (FMMS), which is predefined and a widely used, reliable index for assessing motor recovery.
+4.2 : N (100%)
+Reason you summarized: The article states, "All motor assessments were made by a physiotherapist at day 0 (baseline) and then 30 days and 90 days after enrolment" for both groups.
+4.3 : N (100%)
+Reason you summarized: The article states, "Patients, carers, all site study staff, and investigators were masked to treatment assignment." The outcome assessors (physiotherapists) were masked.
+4.4 : PY (95%)
+Reason you summarized: FMMS is a somewhat subjective measure assessed by the outcome assessor (physiotherapist).
+4.5 : N (95%)
+Reason you summarized: The assessors were successfully blinded, and there is no clear evidence to suggest that knowledge of intervention status influenced outcome assessment because they did not have this knowledge.
+
+Result of the domain 4 (100%) 
+Reason you summarized: The answer to 4.1 is "N", 4.2 is "N", 4.3 is "N", so the assessment result for Domain 4 is "Low risk".
+
+Domain 5
+5.1 : Y (100%)
+Reason you summarized: The trial was registered (NCT00657163). The primary outcome reported in the results (change in FMMS at day 90) matches the outcome specified in the methods and the clinical trial registration.
+5.2 : N (100%)
+Reason you summarized: The primary outcome measurement reported (FMMS total, upper limb, lower limb scores) corresponds to the intended measurement without selective reporting.
+5.3 : N (100%)
+Reason you summarized: The multiple linear regression analysis used matches the planned statistical methods, with adjustments for prespecified covariates.
+
+Result of the domain 5 (100%) 
+Reason you summarized: The answer to 5.2 is "N", 5.3 is "N", and 5.1 is "Y", so the assessment result for Domain 5 is "Low Risk".
+
+Overall Bias Risk for the Article (95%)
+Reason you summarized: Domain 1 is "Some concerns", while Domains 2, 3, 4, and 5 are "Low risk". Therefore, the overall assessment result for the article is "Some concerns".

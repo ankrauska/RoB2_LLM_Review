@@ -1,0 +1,45 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 24391767
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Sir Ian Chalmers' Risk of Bias Assessment
+## Enders et al., "High-Field Open versus Short-Bore MRI of the Spine" (PLoS ONE 2013)
+### Outcome assessed: Image Quality Parameters (qualitative scores, SNR, CNR, contour sharpness)
+
+---
+
+**1. Risk of bias arising from the randomization process: SOME CONCERNS**
+
+Justification: The randomization sequence was computer-generated and allocation was concealed using sealed envelopes, which is reassuring. Randomization was not stratified, though baseline characteristics (Table 1) appear well balanced between the two groups for this spine subgroup (n=93), reducing concern about chance imbalance. However, I have two concerns: (a) this is a *post-hoc subgroup* of a larger trial (n=174) whose original randomization was not stratified by anatomical region, so the "spine" subgroup analysed here is a secondary carve-out of the parent trial rather than an independently randomised comparison; (b) the cross-referral protocol allowed patients who failed on their allocated scanner to be imaged on the *other* scanner and these examinations were included in the *primary* analysis. This effectively breaks the original random allocation for 25/93 (27%) of examinations, with the redirected patients being a systematically different (more claustrophobic/anxious) subset. Although subgroup analyses excluding cross-referred patients gave similar results, the primary analysis itself already deviates from the "as-randomised" comparison. This is a meaningful concern for internal validity of the randomised comparison as presented.
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: SOME CONCERNS**
+
+Justification: Patients could not be blinded to scanner allocation (unavoidable given the equipment), which is disclosed appropriately by the authors. There were substantial post-randomization deviations: 25/93 (27%) of examinations were performed after cross-referral to the non-allocated scanner, and 16 of these required conscious sedation. These per-protocol switches were included in the primary analysis (an intention-to-treat violation, effectively a modified "as-treated" analysis for over a quarter of the cohort). While the authors performed sensitivity analyses excluding cross-referred/sedated patients (reported as showing "equally distributed results", data not shown), the lack of transparent presentation of these sensitivity data undermines confidence that the deviations did not influence the magnitude of the observed difference in image quality, particularly given that sedation itself could reduce motion artifact and thus improve apparent image quality on the second (often short-bore) scanner in a differential way.
+
+---
+
+**3. Risk of bias due to missing outcome data: SOME CONCERNS**
+
+Justification: Of 106 eligible patients, 93 (88%) contributed image-quality data; 13 were unable to complete imaging on either scanner due to claustrophobia and were excluded from the image-quality analysis entirely (one further patient aborted after a single sequence and was excluded). The reason for missingness (inability to tolerate the MR environment) is plausibly related to the true value of the outcome under study — i.e., patients who cannot tolerate either scanner might disproportionately be those in whom image quality/motion artifact would have been worst. This creates a risk that missing data are not missing at random with respect to the outcome, although the proportion missing (12%) is moderate rather than large, and the reasons appear balanced across arms as per Figure 1.
+
+---
+
+**4. Risk of bias in measurement of the outcome — "Image Quality Parameters": LOW RISK**
+
+Justification: This is the domain where the trial performs comparatively well. The qualitative image-quality assessment was carried out by two examiners in consensus, and the quantitative assessment (SNR, CNR, contour sharpness) by a third examiner, all of whom were explicitly stated to be "blinded to the imaging technique and patient identity" at the time of analysis. Because image quality is an objectively verifiable, assessor-rated (not patient-reported) outcome, and the assessors were blinded, the risk of differential/informative measurement bias is reduced substantially compared with subjective patient-reported outcomes (e.g., pain, anxiety, noise perception, which are reported elsewhere in this paper and are NOT the outcome under review here). I note a residual, unavoidable concern: images obtained on open vs. short-bore scanners may have subtle but recognisable differences in field-of-view, coil geometry, or noise texture that could unblind an experienced examiner despite intent-to-blind; the authors do not report any formal check of blinding success (e.g., asking examiners to guess scanner type). This keeps the domain from being "definitely low risk" in the strictest sense, but overall the methodology (objective quantitative measures such as SNR/CNR/contour sharpness calculated from ROI signal intensities, congruent with blinded qualitative scores) supports a low risk of bias judgement for this specific outcome.
+
+---
+
+**5. Risk of bias in selection of the reported result: SOME CONCERNS**
+
+Justification: The registered trial (NCT00715806, "CLAUSTRO") lists only claustrophobia-reduction as the primary outcome and "impact of MR imaging results on subsequent measurement" as the secondary outcome; "image quality" is not listed as a pre-specified outcome in the ClinicalTrials.gov registration. The authors do cite a separate published protocol (Enders et al., BMC Med Imaging 2011) that reportedly pre-specifies the qualitative/quantitative image-quality methodology in detail, which is reassuring and suggests the analysis plan (grading scales, ROI placement, SNR/CNR formulas) was set a priori. However: (a) the present manuscript is explicitly a secondary/derived analysis of a "larger cohort," restricted post-hoc to the spine sub-indication (head and shoulder image-quality analyses are stated to be reserved for "future analyses"), raising the possibility that the spine subgroup was reported first because it yielded the clearest/most favourable (statistically significant) results for short-bore imaging; (b) several sub-group and sensitivity analyses (cross-referral exclusion, sedation-only analysis) are referenced as "data not shown," preventing independent verification that these did not selectively support the main conclusion; (c) multiple secondary/exploratory quantitative comparisons (multiple CNR interfaces, multiple sequences) are reported with no correction for multiplicity and are emphasized selectively in the abstract/discussion when significant. This pattern — selective emphasis, undisclosed sensitivity data, and outcome reporting not matching the trial registry — raises real concern about selective reporting, even though the core methodology was likely pre-specified in the separate protocol paper.
+
+---
+
+## 6. Overall Rating: **HIGH RISK**
+
+**Justification:** Although the specific outcome-measurement domain (image quality, blinded assessment) is judged low risk, there are "some concerns" simultaneously across three other domains — randomization/allocation integrity (cross-referral undermining the as-randomised comparison), deviations from intended intervention (27% of examinations not analysed as originally allocated, with data on sensitivity analyses withheld), and selection of the reported result (post-hoc subgroup reporting, unregistered outcome, "data not shown" sensitivity analyses). Per the specified rules, having concerns across multiple domains in a way that could jointly and substantially lower confidence in the finding that short-bore MRI has superior image quality justifies an overall rating of **high risk of bias**, notwithstanding the well-conducted blinded outcome assessment itself.

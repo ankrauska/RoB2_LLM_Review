@@ -1,0 +1,103 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 11483268
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Kitchin, 2001
+**Outcome Name**: anti-HAV antibody geometric mean titre (GMT) 1 month post-vaccination
+**registration number**: Not reported / Not registered
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (90% Confidence)
+The article states subjects "were randomised to receive either Vaqta™ or Avaxim™" but does not describe the specific method of sequence generation (e.g., computer-generated, block randomization, random number tables). No further detail is given anywhere in the methods.
+
+**1.2**: NI (90% Confidence)
+The study is described as an "open study" with randomisation, but no information is provided regarding allocation concealment mechanisms (e.g., central allocation, sequentially numbered sealed containers, opaque envelopes).
+
+**1.3**: N (90% Confidence)
+Table 1 shows very similar demographic characteristics (age, sex, weight, height) between groups, and the text explicitly states "The two groups were similar with respect to age, sex, height and weight." The pre-booster GMT difference (496 vs. 325, p=0.171) was not statistically significant and is attributable to chance.
+
+**Result of Domain 1**: Some concerns (90% Confidence)
+Because 1.2 = NI and 1.3 = N, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (95% Confidence)
+The study is explicitly described as an "open study," meaning participants were aware of their assigned intervention.
+
+**2.2**: Y (95% Confidence)
+As an open-label study, care providers/nurses administering vaccines were also aware of assignment.
+
+**2.3**: NI (85% Confidence)
+No information is provided regarding non-protocol interventions occurring during the trial.
+
+**2.4**: N (90% Confidence)
+Of 127 randomized, only 6 subjects (4.7%) were excluded from the per-protocol immunogenicity analysis (previous booster, travel to endemic area, missing serology) — well below the 10% threshold.
+
+**2.5**: N (85% Confidence)
+No evidence of crossover, switching, or non-adherence to assigned vaccine regimen is reported; exclusions were due to protocol violations/missing data, not non-adherence.
+
+**2.6**: N (95% Confidence)
+The article states: "Intention-to-treat and per-protocol analyses were performed... only the per-protocol results to be reported." Per-protocol analysis is considered an inappropriate method for estimating the effect of adhering to intervention per the guidance.
+
+**Result of Domain 2**: High risk (90% Confidence)
+Since 2.1/2.2 = Y, 2.3 = NI, and 2.6 = N, this combination maps to "High risk" per the algorithm.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (75% Confidence)
+121 of 127 randomized subjects (95.3%) had complete outcome data for the per-protocol GMT analysis (59/64 Vaqta booster; 62/63 Avaxim booster), meeting the ≥95% threshold for continuous outcomes, though this is borderline.
+
+**Result of Domain 3**: Low risk (75% Confidence)
+Since 3.1 = Y, Domain 3 is rated "Low risk" per the algorithm.
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% Confidence)
+The outcome was measured using a validated, quantitative modified HAVAB™ assay with a standard curve calibrated against WHO reference serum — a reliable and appropriate method for measuring anti-HAV GMT.
+
+**4.2**: N (90% Confidence)
+Both groups had blood samples taken at the same time points (pre-vaccination and 1 month post-vaccination) using identical methodology.
+
+**4.3**: NI (75% Confidence)
+Serological evaluations were performed by an external laboratory (Merck Research Laboratories). It is not stated whether laboratory personnel were aware of group assignment.
+
+**4.4**: N (90% Confidence)
+This is an objective, laboratory-based quantitative antibody titre measurement, not subject to subjective interpretation by patients or outcome assessors.
+
+**Result of Domain 4**: Low risk (85% Confidence)
+Since 4.1 = N, 4.2 = N, 4.3 = NI, and 4.4 = N, this maps to "Low risk" per the algorithm.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85% Confidence)
+There is no mention of trial registration or a pre-specified, publicly available analysis plan finalized before unblinding.
+
+**5.2**: N (85% Confidence)
+GMT of anti-HAV antibody at 1 month post-vaccination was the single pre-defined primary evaluation criterion; there is no evidence of multiple eligible outcome measurements from which one was selectively reported.
+
+**5.3**: Y (80% Confidence)
+The article explicitly states both intention-to-treat and per-protocol analyses were performed, but "The results of both analyses were close enough to allow only the per-protocol results to be reported." This demonstrates that multiple analyses were conducted, but only one (per-protocol) was fully reported in the results — meeting the criteria for likely selective reporting from multiple eligible analyses.
+
+**Result of Domain 5**: High Risk (85% Confidence)
+Since 5.3 = Y, this maps to "High Risk" per the algorithm, regardless of other answers.
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Risk of Bias: High Risk** (90% Confidence)
+
+Rationale: Domain 2 (deviations from intended interventions) and Domain 5 (selective reporting) were both rated "High risk." Per the algorithm, if one or more domains are rated "High risk," the overall assessment is "High Risk."

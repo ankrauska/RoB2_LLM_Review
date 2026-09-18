@@ -1,0 +1,55 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 27807198
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Doxycycline in Early CJD (Randomised Phase II Component)
+## Outcome: Survival time
+
+---
+
+**1. Risk of bias arising from the randomization process: SOME CONCERNS**
+
+Justification: The manuscript states patients were "randomly assigned (ratio 1:1)" with the randomisation list and study medication administered externally by Charité, Berlin, which is reassuring for allocation concealment. However, several concerns remain:
+- No description of the randomization method (block size, stratification factors, computer-generation) is provided in the manuscript or protocol.
+- Baseline imbalances are notable and raise suspicion of chance or randomization failure given the very small sample: MMSE was substantially different between groups (21 vs 16), and critically, codon 129 genotype distribution was starkly imbalanced (0% MM in treatment vs 20% MM in placebo) — genotype is explicitly stated by the authors themselves to be a major prognostic determinant of survival. Age at onset also differed (58 vs 72 years, median).
+- With n=13 (12 analysed), such imbalances substantially threaten the validity of between group comparisons despite proper randomization procedure.
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: SOME CONCERNS**
+
+Justification: This was a double-blind trial with placebo control, appropriate for blinding of participants/caregivers and outcome assessors regarding the intervention. However:
+- 4 of 7 patients in the doxycycline arm "discontinued" per the flow diagram (Figure 1), a very high discontinuation rate (57%) versus 1 dropout in placebo (17%).
+- No intention-to-treat analysis is explicitly confirmed; it is unclear whether the survival analysis included these discontinued patients on an ITT basis or per-protocol, which is critical given such high attrition in an unblinded manner (or potentially due to adverse events/tolerability differences, as AE rate was higher in the doxycycline arm — 70% vs 60%).
+- No explanation is given for why the 4 patients discontinued doxycycline (disease progression, AEs, family choice), leaving open the possibility that deviations were related to the outcome (survival) itself, e.g., caregivers/physicians stopping drug in rapidly deteriorating patients.
+
+---
+
+**3. Risk of bias due to missing outcome data: LOW RISK**
+
+Justification: For the primary outcome of survival, data appear essentially complete. One placebo patient dropped out before contributing follow-up and was excluded from analysis (12/13 analysed), but survival status (death or study end) for the remaining patients is a "hard" endpoint unlikely to be missing selectively for those who continued to be followed. There is no strong evidence that survival ascertainment itself was compromised, as death is objectively verifiable and was likely a nationwide surveillance-linked outcome (given the National Reference Center's role).
+
+---
+
+**4. Risk of bias in measurement of the outcome (Survival time): LOW RISK**
+
+Justification: Survival time is an objective, hard endpoint (death), not subject to interpretation or subjectivity by participants, caregivers, or assessors. Blinding status of outcome assessors is therefore of minimal consequence for this specific endpoint, as date of death cannot be influenced by knowledge of allocation. The date of disease onset (used to define survival duration in the observational study) was determined by an investigator "blinded to treatment," which further reduces risk of differential measurement/misclassification. This is one of the few outcomes in this trial design where blinding failure/knowledge of allocation is unlikely to materially bias the objective ascertainment of the endpoint itself.
+
+---
+
+**5. Risk of bias in selection of the reported result: HIGH RISK**
+
+Justification: Multiple red flags support high risk in this domain:
+- The registered protocol (EudraCT 2006-003934-14) specifies the primary endpoint as "survival time from symptom onset" ("Überlebenszeit der Patienten von Symptombeginn an"), but the manuscript explicitly redefines follow-up for survival in the randomised trial to begin from randomisation/first drug dose, not symptom onset as per protocol. This is a clear deviation from the pre-specified analysis definition, undisclosed as a change with justification beyond a post-hoc rationale in the methods.
+- The planned sample size in the protocol was 28 subjects; the trial recruited only 13 (46% of target), yet no formal early stopping or sample-size re-estimation process is reported — this raises concern that analysis and reporting proceeded despite an admittedly underpowered dataset, and results are still emphasized as supportive of efficacy.
+- The overall study combines the underpowered, non-significant RCT (HR 0.841, 95% CI 0.238–2.966, NOT significant) with a separate observational/compassionate-use cohort via post-hoc meta-analysis to achieve a "significant" combined p=0.049. This combination approach was not specified in the original registered protocol and appears to be a post-hoc analytical strategy potentially selected because the RCT alone was non-significant.
+- Secondary outcomes (time to sphincter/feeding deficits, akinetic mutism) show no significant differences (p~0.9), but this is somewhat downplayed in the discussion, which instead emphasizes "assume an overall delay in disease progression" despite non-significant results — suggestive of selective emphasis/optimistic spin favoring the treatment.
+- Subgroup analyses by codon 129 genotype (MM/MV/VV) were not pre-specified as primary comparisons in the protocol and are presented with dramatic effect sizes in the smallest subgroup (MM, extremely small n) without corrected p-values, explicitly flagged by the authors as "exploratory," yet featured prominently in the abstract/discussion/conclusions.
+
+---
+
+## 6. Overall Rating: **HIGH RISK**
+
+**Justification:** While the measurement of survival time itself is objective and at low risk of bias, and missing data are minimal, the combination of (a) unexplained baseline imbalances in key prognostic factors (codon 129 genotype, MMSE, age) raising concern about the randomization process, (b) high and asymmetric discontinuation rates between arms without clear explanation (deviations from intended intervention), and critically (c) a **high risk of bias in selection of the reported result** — including a documented change in the primary outcome's follow-up definition compared to the registered protocol, an underpowered trial analyzed and published despite falling far short of its recruitment target, and a post-hoc combination with a non-randomized observational cohort to achieve statistical significance — collectively and substantially undermine confidence in the reported treatment effect on survival. Per the rating rules, the presence of a "high risk" judgment in domain 5, compounded by "some concerns" in domains 1 and 2, warrants an overall rating of **high risk**.

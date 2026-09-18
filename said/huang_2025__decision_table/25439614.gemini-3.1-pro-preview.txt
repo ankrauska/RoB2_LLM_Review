@@ -1,0 +1,80 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 25439614
+MODEL  gemini-3.1-pro-preview
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Elman, 2015
+**Outcome Name**: visual acuity
+**registration number**: None reported in the text
+
+**Domain 1**
+**1.1 : NI (100%)**
+The article states that participants were "assigned randomly," but it does not report the specific method used to generate the allocation sequence (e.g., computer-generated random numbers, block randomization).
+**1.2 : NI (100%)**
+The article does not mention whether the allocation sequence was concealed until participants were enrolled and assigned to interventions, nor does it mention central allocation, opaque envelopes, or other concealment methods.
+**1.3 : N (95%)**
+Based on Table 1, baseline characteristics between the intervention groups (prompt laser vs. deferred laser) were balanced, and there is no indication that any baseline differences suggest a problem with the randomization process.
+**Result of the domain (100%)**
+Some concerns
+Reason you summarized: The answer to 1.2 is "NI", and the answer to 1.3 is "N", which leads to a domain assessment of "Some concerns".
+
+**Domain 2**
+**2.1 : Y (95%)**
+Participants were assigned to receive either prompt or deferred laser treatment, which involves noticeable differences in procedural interventions without a reported sham laser for the deferred group. Participants were likely aware of their assigned intervention.
+**2.2 : Y (95%)**
+The intervention providers (carers delivering the laser treatment and injections) would inherently be aware of whether they were administering prompt or deferred laser treatment.
+**2.3 : Y (90%)**
+Important nonprotocol interventions appear to be reasonably balanced, and where differences existed (e.g., other treatments for DME in 7% of the prompt group), they were mostly administered per protocol criteria for futility or failure.
+**2.4 : Y (100%)**
+The article reports that the 5-year completion rate was 76% in the prompt laser group and 74% in the deferred laser group (excluding deaths). Because more than 10% of participants withdrew or chose not to continue in the extension study, there were failures in implementing the intervention for a significant proportion.
+**2.5 : NI (100%)**
+No specific information is reported regarding participant non-adherence (e.g., imperfect compliance with the sustained injection protocol) in the article.
+**2.6 : NI (90%)**
+The article used longitudinal continuous time models to adjust for available visit data but does not report using specialized analytical methods (like inverse probability weighting or instrumental variable analyses) specifically to estimate the effect of adhering to the intervention.
+**Result of the domain (100%)**
+High risk
+Reason you summarized: The answer to questions 2.1 and 2.2 is "Y", the answer to 2.3 is "Y", the answer to 2.4 is "Y", and the answer to 2.6 is "NI", which leads to a domain assessment of "High risk".
+
+**Domain 3**
+**3.1 : N (100%)**
+The proportion of randomized participants who completed the 5-year visit was 76% and 74% in the respective groups, which is less than the 90% threshold for complete outcome data.
+**3.2 : N (90%)**
+The article used longitudinal models to adjust for missing data confounders but did not explicitly report using inverse probability weighting or formal sensitivity analyses to prove that outcomes were not biased due to missing data.
+**3.3 : PY (95%)**
+Participants dropped out mostly because they chose not to consent to the extension study, and the article notes imbalances between completers and non-completers in factors like age, prior PRP, and DR severity, suggesting dropout may be related to health status.
+**3.4 : N (90%)**
+The longitudinal analysis specifically included and adjusted for the observed differences (baseline characteristics and potential confounders) between participants who completed the study and those who did not, explaining the characteristics that may relate missing data to the outcome variable.
+**Result of the domain (100%)**
+Some concerns
+Reason you summarized: The answer to 3.1 is "N", 3.2 is "N", 3.3 is "PY", and 3.4 is "N", which leads to a domain assessment of "Some concerns".
+
+**Domain 4**
+**4.1 : N (100%)**
+The outcome (visual acuity) was measured using a predefined, standard, and reliable tool (E-ETDRS visual acuity letter score).
+**4.2 : N (100%)**
+Measurements were conducted at comparable time points and using the same methods across both intervention groups.
+**4.3 : N (100%)**
+The article explicitly states that there was "masking of the visual acuity examiners and OCT technicians," meaning outcome assessors were not aware of the interventions received.
+**4.4 : N (100%)**
+Because the outcome assessors were masked to the intervention assignment, their assessment of visual acuity could not have been influenced by knowledge of the intervention received.
+**4.5 : N (100%)**
+There is no clear evidence to suggest that knowledge of intervention status was likely to influence the outcome assessment, especially given the masking of examiners.
+**Result of the domain (100%)**
+Low risk
+Reason you summarized: The answers to 4.1, 4.2, 4.3, 4.4, and 4.5 are all "N", which leads to a domain assessment of "Low risk".
+
+**Domain 5**
+**5.1 : Y (95%)**
+The methods and analyses for the 5-year extension outcomes correspond to those described in the methods section and the trial protocol available on the DRCR.net website.
+**5.2 : N (100%)**
+All eligible reported results for the outcome domain of visual acuity correspond to the intended outcome measurements described in the methods section.
+**5.3 : N (100%)**
+There is no clear evidence that the reported numerical results were selected from multiple eligible analyses of the data based on favorable results.
+**Result of the domain (100%)**
+Low Risk
+Reason you summarized: The answer to 5.2 is "N", 5.3 is "N", and 5.1 is "Y", which leads to a domain assessment of "Low Risk".
+
+**Overall Bias Risk for the Article (100%)**
+High Risk
+Reason you summarized: Because Domain 2 is assessed as "High risk", the overall assessment result for the article is "High Risk".

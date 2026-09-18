@@ -1,0 +1,72 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 23283838
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Between-Session Habituation Outcome
+
+**Effect of Interest:** Effect of assignment to intervention (intention-to-treat effect), per instructions.
+
+---
+
+## 1. Bias due to Randomization: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:** 
+- *Sequence generation:* The article states participants were "randomly assigned to 250mg of DCS or placebo." While the specific method of sequence generation is not detailed, this is a small, well-resourced NIMH-funded academic trial, and there is no indication of a systematic (non-random) method. This supports a "Probably Yes" judgement for randomness.
+- *Allocation concealment:* "Participants were randomly assigned...by a data manager who had no interaction with participants." This describes an independent, centrally-administered allocation process consistent with adequate concealment. Furthermore, blinding integrity was formally tested: "neither participants nor experimenters were able to discern assignment (ps > .15)," which is strong indirect evidence that allocation was successfully concealed through the point of intervention delivery.
+- *Baseline imbalance:* Groups were similar on nearly all baseline variables (gender, ethnicity, medication use, LSAS, baseline SUDS, Social Phobia Scale; all ps > .16). One variable—age—differed significantly (p = .019), with the DCS group being older on average. This is a single significant difference among many comparisons and is compatible with chance (approximately consistent with the ~1/20 expected false positive rate). Critically, age was examined as a potential confound/moderator and "could not" explain the treatment effect. This isolated, plausible-by-chance imbalance does not raise serious concern about the randomization process itself.
+
+---
+
+## 2. Deviations from Intended Intervention (Effect of Assignment to Intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- *Awareness of assignment:* Both participants and experimenters were blinded to treatment assignment, and this blinding was empirically verified as successful ("neither participants nor experimenters were able to discern assignment," ps > .15). Because both groups were successfully blinded, deviations arising from the trial context (differential engagement, co-interventions, etc.) are unlikely.
+- *Deviations from trial context:* No non-protocol interventions, additional co-interventions, or contamination between arms are reported. The single-dose, single-visit exposure design minimizes opportunity for context-driven deviations.
+- *Analysis approach:* The authors state: "Only those participants completing Visit 2 are analyzed because the intent is to assess the sensitivity of the clinical assay." This constitutes a modified intention-to-treat (mITT) analysis (excluding only those with missing outcome data, not those who deviated from the protocol otherwise). Per RoB 2 guidance, such an approach is considered appropriate for assessing the effect of assignment to intervention (potential bias from the exclusions is addressed in the missing-data domain, not here).
+
+---
+
+## 3. Missing Outcome Data: **Some concerns**
+
+**a. Judgement:** Some concerns.
+
+**b. Rationale:**
+- Outcome data were unavailable for 4 of 34 randomized participants (11.8%)—2 from the DCS group and 2 from placebo—who did not complete Visit 2 ("Four participants (2 DCS, 2 placebo) did not return for Visit 2 and were not included in any analyses"). This proportion is not so small that it could not have plausibly affected the primary categorical outcome (between-session habituation), especially given the modest overall sample size (N=30 analyzed).
+- Reasons for dropout are reported: "Two participants became unreachable (change in or loss of phone number: 1 DCS, 1 placebo), and two stated that they preferred not to continue in the study (1 DCS, 1 placebo)." These numbers are balanced across arms, and the stated reasons (loss of contact, general preference to discontinue) are not clearly and directly tied to the true value of the habituation outcome. However, the possibility cannot be excluded that discontinuation ("preferred not to continue") was related to higher distress/poorer response to the intervention.
+- No sensitivity analyses were performed to demonstrate the result is robust to plausible assumptions about the missing data, and no formal statistical method (e.g., multiple imputation, inverse probability weighting) was used to account for missingness.
+- Because missingness is balanced across arms and reasons given do not obviously suggest a relationship to the true outcome value, this does not reach the threshold for "High risk," but the absence of sensitivity analyses and the non-trivial proportion of missing data preclude a "Low risk" judgement.
+
+---
+
+## 4. Measurement of the Outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- *Appropriateness of method:* The SUDS is described as "a standard scale in behavioral research" with excellent internal consistency in this sample (Cronbach's αs > .85), and is a well-validated method for assessing habituation of anxiety across exposure sessions.
+- *Comparability across groups:* The measurement method (SUDS ratings at fixed intervals) was identical for both intervention groups and both visits; there is no indication that outcome ascertainment differed by group.
+- *Assessor awareness:* Between-session habituation is a participant-reported outcome (SUDS), and although participant-reported outcomes are typically assumed to carry inherent risk if unblinded, blinding was formally tested and found successful here: "neither participants nor experimenters were able to discern assignment (ps > .15)." Because participants remained unaware of their assignment when reporting subjective distress, knowledge of intervention receipt could not plausibly have influenced their SUDS ratings.
+
+---
+
+## 5. Selective Reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias.
+
+**b. Rationale:**
+- Between-session habituation is explicitly identified in the abstract and methods as the a priori primary outcome: "Our primary measure of DCS's exposure-facilitating effect was between-session habituation: whether or not the participants showed less distress during the second speech compared to the first." The operational definition (≥5-point SUDS decrease) is specified clearly and a single, pre-specified analytic method (chi-square test) is used and reported.
+- There is no evidence of multiple competing operationalizations of "habituation" being tested and selectively reported; the categorical definition is reported straightforwardly alongside (not instead of) the continuous SUDS/Social Phobia Scale MANCOVA, which is presented as a secondary/complementary analysis rather than a substitute.
+- No indication of selective outcome-measurement reporting (e.g., alternative time points, alternative thresholds for "response") or selective analytic-method reporting (e.g., multiple adjusted vs. unadjusted models) for this specific outcome.
+- Based on the information available (including the trial registration record), the reported result for this outcome corresponds to the analysis that would have been expected a priori, without evidence of results-dependent selection.
+
+---
+
+## Overall Risk of Bias for "Between-Session Habituation": **Some Concerns**
+
+**Rationale:** All domains were judged as low risk of bias except missing outcome data, which raised "some concerns" due to the non-trivial (11.8%) rate of missing outcome data, the absence of sensitivity analyses, and the theoretical possibility that discontinuation ("preferred not to continue") could be related to poor exposure response, even though dropout was balanced across arms and stated reasons do not strongly suggest outcome-dependent missingness. Per RoB 2 guidance (Table 1), a single domain rated "Some concerns" (with no domain rated "High risk") yields an overall judgement of **Some concerns**.

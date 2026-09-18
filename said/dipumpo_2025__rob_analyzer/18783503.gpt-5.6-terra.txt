@@ -1,0 +1,140 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 18783503
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+## Scope of this RoB 2 assessment
+
+- **Design:** Individually randomized, parallel-group, double-blind, placebo-controlled trial.
+- **Comparison:** Add-on gabapentin 900 mg/day plus methadone-assisted detoxification versus matching placebo plus methadone-assisted detoxification.
+- **Outcome/result assessed:** Severity of opioid-withdrawal symptoms measured by the **Subjective Opiate Withdrawal Scale (SOWS)** across the six reported assessment stages. The numerical result assessed is the adjusted repeated-measures analysis for intervention group: **F(1,33) = 0.83, P = 0.37** (Table 2).
+- **Effect of interest:** Effect of **assignment** to gabapentin versus placebo (intention-to-treat effect).
+
+---
+
+### 1. Bias arising from the randomization process  
+**Judgement: Low risk of bias**
+
+**Signalling-question assessment**
+
+- **1.1 Was the allocation sequence random? — Yes.**  
+  The report states that participants were assigned using “**a randomization automated system on a one-to-one basis**.” This describes a random allocation process.
+
+- **1.2 Was the allocation sequence concealed until participants were enrolled and assigned to interventions? — Probably yes.**  
+  The report states that “**the randomization list was held securely, and released only after study completion**.” This supports concealment of the allocation schedule during recruitment and treatment, although the report does not specify who administered randomization or the exact procedures by which allocation was inaccessible to enrolling personnel.
+
+- **1.3 Did baseline differences between intervention groups suggest a problem with the randomization process? — No.**  
+  There were 20 participants assigned to each group. The report states that there were no significant baseline differences in age, methadone dose, or doses of symptomatic medications. Baseline SOWS scores were 12.6 in the gabapentin group and 14.9 in the placebo group; the article gives no indication that this difference was statistically unlikely to arise by chance or that there were important imbalances in key prognostic factors.
+
+**Motivation**
+
+The reported automated 1:1 randomization and secure retention of the allocation list support an adequately randomized and concealed process. The reported baseline data do not identify imbalances suggesting failure or manipulation of randomization. The precise operational details of allocation concealment are not reported, but the available information supports a low-risk judgement under RoB 2.
+
+---
+
+### 2. Bias due to deviations from intended interventions  
+**Judgement: High risk of bias**
+
+**Signalling-question assessment**
+
+- **2.1 Were participants aware of their assigned intervention during the trial? — Probably no.**  
+  The study is described as double-blind. Gabapentin and placebo were dispensed in “**identical appearing capsules**,” and placebo recipients took the same number of capsules as gabapentin recipients.
+
+- **2.2 Were carers and people delivering the interventions aware of participants’ assigned intervention during the trial? — Probably no.**  
+  The trial is explicitly described as double-blind, and the identical capsules support concealment of treatment allocation during follow-up.
+
+- **2.3 Were there deviations from intended intervention that arose because of the trial context? — Not applicable.**  
+  For the effect of assignment, no such trial-context deviations are identified, and participants and personnel were reportedly blinded.
+
+- **2.6 Was an appropriate analysis used to estimate the effect of assignment to intervention? — No.**  
+  The report states that all 20 participants assigned to gabapentin completed detoxification, but that one placebo participant was excluded on day 14 and two placebo participants were excluded on day 17 because of non-compliance and illicit and/or over-the-counter drug self-medication. Thus, three randomized placebo participants were excluded after randomization.
+
+  The reported repeated-measures analysis has residual degrees of freedom of 33, which is consistent with analysis of 37 rather than all 40 randomized participants after accounting for intervention group, age, and methadone dose. The analysis therefore did not include all randomized participants as required for an intention-to-treat effect.
+
+- **2.7 Was there potential for a substantial impact of failure to analyse participants in the groups to which they were randomized? — Probably yes.**  
+  The exclusions represented **3/20 (15%)** of the placebo group and **0/20** of the gabapentin group. They were unbalanced and occurred for reasons plausibly related to withdrawal severity and treatment response. The authors themselves state that non-compliance and self-medication in placebo recipients “**may be due to the greater severity of withdrawal symptoms**.”
+
+**Motivation**
+
+Although the report supports blinding and does not identify trial-context deviations in treatment delivery, the analysis excluded three placebo-group participants after randomization. These exclusions were both unbalanced and plausibly related to the outcome, because the authors linked them to possibly greater withdrawal severity. Exclusion of 15% of the placebo group is sufficient to have a substantial impact on the estimate of the effect of assignment to gabapentin. The analysis is therefore not an appropriate intention-to-treat analysis, resulting in high risk of bias in this domain.
+
+---
+
+### 3. Bias due to missing outcome data  
+**Judgement: High risk of bias**
+
+**Signalling-question assessment**
+
+- **3.1 Were data for this outcome available for all, or nearly all, participants randomized? — No.**  
+  Outcome data at the final reported assessment stage were available for 20/20 gabapentin participants but only 17/20 placebo participants. Therefore, SOWS data were missing for 3/40 randomized participants overall and for 15% of placebo participants. The data were not available for all participants, and the missingness was entirely confined to one intervention group.
+
+- **3.2 Is there evidence that the result was not biased by missing outcome data? — No.**  
+  The report presents no sensitivity analysis, imputation approach, or other analysis demonstrating that the result was robust to the missing outcome data.
+
+- **3.3 Could missingness in the outcome depend on its true value? — Yes.**  
+  The missing outcome data resulted from exclusion for non-compliance with the scheduled treatment programme and self-medication with illicit and/or over-the-counter drugs. Such reasons could be associated with the severity of opioid-withdrawal symptoms, the outcome assessed by SOWS.
+
+- **3.4 Is it likely that missingness in the outcome depended on its true value? — Yes.**  
+  The authors explicitly state that the placebo-group non-compliance and self-medication “**may be due to the greater severity of withdrawal symptoms**.” This directly links the reasons for missing data to the likely unobserved outcome values. Missingness was also differential between groups: 0% in the gabapentin group and 15% in the placebo group.
+
+**Motivation**
+
+The three missing outcome records occurred only among placebo-assigned participants, creating a substantial imbalance in missingness. The reported reasons for exclusion are plausibly related to withdrawal severity, and the authors explicitly suggest that they may reflect more severe withdrawal symptoms in placebo recipients. No analysis was undertaken to establish that the reported result was robust to these missing data. Therefore, the missing outcome data are likely to have biased the treatment comparison.
+
+---
+
+### 4. Bias in measurement of the outcome  
+**Judgement: Low risk of bias**
+
+**Signalling-question assessment**
+
+- **4.1 Was the method of measuring the outcome inappropriate? — No.**  
+  Withdrawal symptoms were measured with the Subjective Opiate Withdrawal Scale, described as containing 16 symptoms rated from 0 to 4. The report states that the scale “**has been shown to be a valid and reliable indicator of the severity of the opiate withdrawal syndrome**.”
+
+- **4.2 Could measurement or ascertainment of the outcome have differed between intervention groups? — No.**  
+  The same SOWS instrument and planned assessment schedule were used for both groups. No differential outcome-assessment procedure between intervention groups is described.
+
+- **4.3 Were outcome assessors aware of the intervention received? — Probably no.**  
+  For this subjective, participant-reported outcome, participants are the outcome assessors. The trial is reported as double-blind, and matching capsules were used.
+
+**Motivation**
+
+The SOWS is a participant-reported outcome and would be vulnerable to bias if participants knew whether they received gabapentin or placebo. However, the report describes double-blinding and use of identical placebo capsules, with no evidence that blinding was broken. The same validated scale was used in both groups. Therefore, there is no identified material risk of bias in outcome measurement.
+
+A reporting ambiguity exists: the Methods section specifies assessments on days 0, 4, 7, 10, 18, and 21, whereas Table 1 and Figure 1 report baseline and days 3, 7, 10, 14, and 18. This inconsistency limits certainty about the exact assessment schedule, but it does not establish that outcome measurement differed between intervention groups.
+
+---
+
+### 5. Bias in selection of the reported result  
+**Judgement: Some concerns**
+
+**Signalling-question assessment**
+
+- **5.1 Were the data analysed in accordance with a pre-specified analysis plan finalized before unblinded outcome data were available? — No information.**  
+  No trial protocol, statistical analysis plan, trial registry record, or date-stamped pre-specified analysis plan is provided in the report.
+
+- **5.2 Is the reported result likely to have been selected from multiple eligible outcome measurements within the outcome domain? — No information.**  
+  Withdrawal severity was measured at multiple time points. The report also contains inconsistent descriptions of the assessment times: the Methods section describes days 0, 4, 7, 10, 18, and 21, while Table 1 reports baseline and days 3, 7, 10, 14, and 18. Without a pre-specified protocol or analysis plan, it cannot be determined whether the reported set of time points and the reported repeated-measures result were selected from multiple eligible measurements on the basis of the findings.
+
+- **5.3 Is the reported result likely to have been selected from multiple eligible analyses of the data? — No information.**  
+  The paper reports repeated-measures analysis of variance adjusted for age and methadone dose, and also reports Mann–Whitney U-tests for total symptom scores. It reports analyses of the overall SOWS score and of each of the 16 individual withdrawal symptoms. In the absence of a pre-specified analysis plan, it cannot be established whether the reported numerical result was selected from multiple possible analyses on the basis of the results.
+
+**Motivation**
+
+No prospectively finalized analysis plan is available. The outcome was assessed repeatedly, and several analyses and symptom-specific results were reported. The inconsistency between planned and tabulated assessment time points adds uncertainty about which measurements were intended for the main analysis. There is no direct evidence that the reported result was selected because of its statistical significance or direction; therefore, this domain is judged as raising some concerns rather than high risk of bias.
+
+---
+
+### 6. Overall risk-of-bias judgement  
+**Judgement: High risk of bias**
+
+**Motivation**
+
+The result is at **high risk of bias** because:
+
+1. **Bias due to deviations from intended interventions** is judged **high risk**, because three placebo-assigned participants were excluded after randomization and the reported analysis did not retain all randomized participants in their assigned groups. These exclusions were unbalanced and plausibly related to withdrawal severity.
+
+2. **Bias due to missing outcome data** is judged **high risk**, because outcome data were missing for 15% of placebo participants and none of the gabapentin participants; the stated reasons for missingness may reflect more severe withdrawal symptoms, and no sensitivity analysis addressed the potential impact.
+
+The randomization process and outcome measurement are judged at low risk of bias, while selection of the reported result raises some concerns because no pre-specified analysis plan was available and the reporting of assessment time points was inconsistent. Under RoB 2, high risk in at least one domain requires an overall judgement of **high risk of bias**.

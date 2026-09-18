@@ -1,0 +1,55 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 26945216
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Pain Intensity Outcome
+
+**Study:** Comparison of TENS and Interferential Therapy on Upper Trapezius Myofascial Pain Syndrome
+
+---
+
+## 1. Risk of bias arising from the randomization process
+
+**Some concerns**
+
+Justification: The study reports "computerized block randomization and allocation group concealed in envelops" — this suggests adequate allocation concealment prior to assignment. However, block randomization details (block size disclosure) are not provided, which could theoretically allow prediction of allocation patterns, though this is a minor concern. More critically, baseline imbalance is evident: the "affected side" distribution differed significantly between groups (χ2 = 5.952, P = 0.015), raising the possibility that randomization was not fully successful in balancing prognostic factors. While pain intensity baseline scores did not significantly differ (P = 0.06, borderline), this borderline result combined with the significant imbalance in affected side is a signal worth flagging. No information is given about who generated the allocation sequence or who enrolled participants versus who assigned them — this lack of detail on separation of duties in the randomization process prevents full confidence.
+
+---
+
+## 2. Risk of bias due to deviations from the intended interventions
+
+**High risk**
+
+Justification: This is an unblinded trial with respect to participants and the treatment provider — patients could clearly distinguish between receiving standard care alone, TENS, or IFT (different sensations, equipment, electrode placement visible to patient). Critically, **the same single individual (the principal investigator) delivered all interventions, administered standard care, and also served as the outcome assessor**. There was no separate, blinded therapist. This creates substantial risk of performance bias — the therapist, aware of group allocation and hypothesis (that TENS would outperform IFT, consistent with prior literature the authors cite), could differentially interact with participants, provide differential encouragement, or influence patient expectations. There was no placebo/sham control for TENS or IFT (a limitation acknowledged by the authors themselves), meaning the "standard care" control group was inherently un-blinded and likely experienced different expectations. This is a fundamental design flaw affecting fidelity and equipoise of intervention delivery.
+
+---
+
+## 3. Risk of bias due to missing outcome data
+
+**Low risk**
+
+Justification: The CONSORT flow diagram indicates 105 participants were randomized and all 105 completed the study and were included in analysis (0% attrition). There is no missing outcome data for pain intensity at any of the four measurement time points (baseline, immediately after first treatment, before eighth treatment, 1 week after eighth treatment).
+
+---
+
+## 4. Risk of bias in measurement of the outcome — Pain Intensity
+
+**High risk**
+
+Justification: Pain intensity was measured using a subjective, participant-reported 100-mm visual analog scale (VAS). This is inherently susceptible to bias when participants are not blinded to treatment allocation — and in this trial, participants clearly knew which intervention they received (no pain, TENS sensation, or IFT sensation are physically distinguishable). Patients' expectations regarding electrical stimulation therapies (versus standard care alone) could plausibly inflate perceived pain relief in the TENS/IFT arms, and expectation of TENS being modern/targeted could bias reporting toward more favorable results in that arm specifically. Furthermore, **the outcome assessor (who recorded the VAS scores) was the same person who delivered the intervention** — this is a critical additional layer of bias, as the assessor was not blinded and could consciously or unconsciously influence how the VAS was administered or interpreted, or could subtly cue patients. The study is labeled "single-blind," referring only to blinding of participants to random allocation at the point of randomization — but this blinding is meaningless once treatment commences, since participants can distinguish between the modalities by sensation. This is a serious source of bias for a subjective, self-reported pain outcome.
+
+---
+
+## 5. Risk of bias in selection of the reported result
+
+**Some concerns**
+
+Justification: The study was registered with the Sri Lanka Clinical Trial Registry, which is commendable; however, the manuscript does not present the registry number, nor does it provide sufficient detail comparing the pre-specified outcomes/analysis plan against what is reported, precluding a full check for selective reporting. The results reported (pain intensity and cervical ROM at 4 time points) appear consistent with the stated aims and methods section. However, all four pain intensity comparisons (PI2, PI3, PI4 minus baseline) are reported with consistent significance, and no non-significant or unfavorable outcome appears to have been dropped based on the text — but without access to the registered protocol to verify pre-specification of analysis methods (e.g., choice of ANOVA/Tukey, exact timing of outcome assessment), we cannot fully rule out selective analytical choices. The absence of the registry ID/protocol details in the manuscript for cross-verification is a moderate concern.
+
+---
+
+## 6. Overall Rating: **HIGH RISK**
+
+**Justification for overall rating:** The domain of "deviations from intended interventions" is rated high risk (single unblinded therapist delivering all interventions with no sham/placebo control), and critically, the domain of "measurement of the outcome" for pain intensity is also rated high risk, given this is a subjective, self-reported outcome collected in an unblinded fashion by the same individual who delivered treatment. These two high-risk domains compound one another (the same person administering treatment, encouraging patients, and then recording their subjective pain scores) and substantially undermine confidence in the reported pain intensity results, particularly the superiority claim for TENS over IFT. Per the stated rules, one domain rated "high risk" is sufficient to categorize the overall outcome-level risk of bias as **high risk**.

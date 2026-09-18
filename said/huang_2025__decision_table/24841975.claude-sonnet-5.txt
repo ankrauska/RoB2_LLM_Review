@@ -1,0 +1,115 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 24841975
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Roboz, 2014 (CLAVELA Study)
+**Outcome Name**: Overall survival
+**Registration number**: NCT01147939
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95% Certainty)
+The article explicitly states: "patients were randomly assigned in a 1:1 ratio via a centralized Interactive Web Response System" and "A block size of four patients was used within each stratum." This describes block randomization, a valid method of sequence generation.
+
+**1.2**: Y (95% Certainty)
+The randomization was conducted through a "centralized Interactive Web Response System," which constitutes central allocation, an appropriate concealment method described explicitly in the article.
+
+**1.3**: Y (90% Certainty)
+Table 1 shows a statistically significant difference in age distribution between arms: patients ≥70 years old were significantly more common in the elacytarabine arm (30% vs 18%, P=.007). This is explicitly acknowledged in the text: "with the exception of an imbalance in the age distribution including significantly more patients older than 70 years in the elacytarabine arm." Age is a known prognostic factor for OS in AML, and this imbalance is not attributed to random error in the text.
+
+**Result of Domain 1**: Some concerns (90% Certainty)
+Since 1.2 = Y, 1.1 = Y, and 1.3 = Y, per the algorithm this yields "Some concerns."
+
+---
+
+## Domain 2: Bias due to deviations from intended interventions
+
+**2.1**: Y (98% Certainty)
+The study is explicitly described as "open-label" ("The study was an open-label, randomized phase III study"). Participants were aware of their treatment allocation.
+
+**2.2**: Y (98% Certainty)
+As an open-label study, care providers/investigators (who selected the specific control regimen) were also aware of the intervention assignment.
+
+**2.3**: Y (90% Certainty)
+Only 6 of 190 control-arm patients (3.2%) received treatment deviating from the prespecified investigator's choice; this is minor and appears balanced/non-significant, not affecting the overall analysis meaningfully.
+
+**2.4**: N (90% Certainty)
+Only 6/191 (3.1%) elacytarabine patients and 16/190 (8.4%) control patients were randomized but not treated — both below the 10% threshold for implementation failure.
+
+**2.5**: N (75% Certainty)
+"Ninety-five percent of the patients treated with one course of treatment... received at least 80% of the assigned dose(s)." This indicates good adherence in the majority of patients (>90%), below the 10% threshold defining significant non-adherence.
+
+**2.6**: N (95% Certainty)
+The primary analysis used the intention-to-treat (ITT) population with standard Kaplan-Meier/log-rank/Cox methods — this is standard ITT analysis, not an appropriate method to estimate effects of adherence (e.g., no IPW or instrumental variable analysis reported).
+
+**Result of Domain 2**: Low risk (90% Certainty)
+2.1/2.2 = Y, 2.3 = Y, 2.4 = N, 2.5 = N → matches the "Low risk" criterion (deviations from intervention did not meaningfully bias the OS estimate, given ITT analysis is appropriate for this pragmatic open-label design where OS is an objective, hard endpoint).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (98% Certainty)
+Of 381 randomized patients, 302 events (deaths) occurred (148 in elacytarabine arm + 154 in control arm), with only 5 patients lost to follow-up (1 + 4). The number of observed events (302/381 = 79%) vastly exceeds the number of missing patients (5/381 = 1.3%).
+
+**Result of Domain 3**: Low risk (98% Certainty)
+Since 3.1 = Y, Domain 3 is automatically "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95% Certainty)
+OS was measured using Kaplan-Meier methodology with censoring dates clearly defined, calculated from a prespecified cutoff (300th event) — a standard, reliable, and appropriate method for measuring this outcome.
+
+**4.2**: N (90% Certainty)
+Both groups had OS ascertained in the same manner (from date of randomization to date of death or last known alive), with the same censoring rules applied equally to both arms.
+
+**4.3**: Y (85% Certainty)
+Since this is an open-label trial, outcome assessors (investigators) were aware of the participants' allocation, though OS itself is not a patient-reported outcome; assessors' knowledge of assignment is confirmed by the open-label design.
+
+**4.4**: N (98% Certainty)
+Overall survival (all-cause mortality) is a purely objective outcome, unaffected by subjective assessment or knowledge of intervention.
+
+**4.5**: N (90% Certainty)
+There is no evidence suggesting that knowledge of the intervention influenced the assessment of survival status, as death is an objective, unambiguous endpoint that cannot be influenced by assessor bias.
+
+**Result of Domain 4**: Low risk (90% Certainty)
+4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = N → matches "Low risk" criterion (since OS is an objective outcome, open-label status does not introduce bias in ascertainment).
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: Y (90% Certainty)
+The trial was prospectively registered (NCT01147939), and OS was clearly predefined as the primary endpoint in the Methods section with a prespecified statistical analysis plan (Kaplan-Meier, log-rank test, Cox regression, 300-event threshold). The Results section reports OS using these exact prespecified methods.
+
+**5.2**: N (90% Certainty)
+There is only one outcome measure for OS (time from randomization to death), consistently reported using Kaplan-Meier methodology and reported at the prespecified analysis time point (300th event cutoff). No evidence of selective reporting among multiple possible OS measurements.
+
+**5.3**: N (90% Certainty)
+The analysis methods (log-rank test, Cox proportional hazards regression) were prespecified in the Methods section and match exactly with the methods used to generate results reported in the Results section. No evidence of multiple analyses with selective reporting.
+
+**Result of Domain 5**: Low risk (90% Certainty)
+5.2 = N, 5.3 = N, 5.1 = Y → matches "Low risk" criterion.
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Domain Summary**:
+- Domain 1: Some concerns
+- Domain 2: Low risk
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Low risk
+
+**Overall Bias Risk for the Article**: **Some concerns** (90% Certainty)
+
+**Rationale**: Only one domain (Domain 1) was rated as "Some concerns," due to a statistically significant baseline imbalance in age (patients ≥70 years) between treatment arms, which is a known prognostic factor for OS in relapsed/refractory AML. No domain was rated "High risk." All other domains (2-5) were rated "Low risk," including at least two low-risk domains as required. Per the overall assessment algorithm, this pattern (one "Some concerns," no "High risk," at least two "Low risk") corresponds to an overall "Some concerns" rating for the article regarding the overall survival outcome.

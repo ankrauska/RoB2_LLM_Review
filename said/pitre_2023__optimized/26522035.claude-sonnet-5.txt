@@ -1,0 +1,82 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 26522035
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# RoB 2.0 Assessment: Patient Acceptance of the Appliance
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat effect)
+
+---
+
+## 1. Bias arising from the randomization process
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- Sequence generation: "Random sequence generation was done with a computer-generated list of random numbers obtained from an Excel spreadsheet... using the '=RAND()' function... blocked randomization was performed (random permuted blocks with randomized order of block sizes) with block sizes of 6 and 4." → Signalling Q1.1 = Yes.
+- Allocation concealment: "Allocation concealment was achieved with sequentially numbered and sealed opaque envelopes that were concealed from the researchers and the assessors." Randomization was performed by "a person who was not involved in the trial." → Signalling Q1.2 = Yes.
+- Baseline balance: Table I shows similar baseline age, cephalometric measurements, overjet, and crowding between groups, with the article stating "The baseline characteristics were similar in both groups." No indication of imbalance suggestive of a problem with randomization → Signalling Q1.3 = No.
+- All three criteria for "Low risk of bias" are met (adequate concealment, random sequence, no concerning baseline imbalance).
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention)
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- Blinding of participants and personnel was not possible: "Blinding of the clinicians and patients to the interventions in each group was impossible." → Signalling Q2.1 and Q2.2 = Yes (participants and personnel aware of intervention).
+- Because participants/personnel were unblinded, the domain requires consideration of whether trial-context-driven deviations from intended intervention occurred and affected the outcome. The outcome here (patient acceptance/satisfaction) is a participant-reported outcome, and awareness of group assignment (e.g., presence/absence of mini-implants) could plausibly influence a participant's self-reported acceptance, expectations, or satisfaction responses (an engagement/trial-context effect) — however, there is no explicit evidence in the article that non-protocol interventions or trial-context deviations (e.g., differential co-interventions, extra reassurance, altered care patterns) occurred that were inconsistent with the protocol and likely affected the acceptance outcome. The article does not report any such deviations.
+- Signalling Q2.3 (deviations from intended intervention arising from trial context) = No information — the study does not discuss whether awareness influenced non-protocol behaviors that could bias the acceptance outcome, though it is plausible given the subjective, patient-reported nature of the outcome.
+- Analysis: "The primary analysis was planned to be an intention-to-treat analysis... since there were no dropouts... all patients were included in the analysis." → Signalling Q2.6 = Yes (appropriate ITT-consistent analysis, no post-randomization exclusions).
+- Because participants were unblinded and the outcome is inherently subjective/participant-reported (susceptible to influence by knowledge of group assignment, e.g., mini-implants being a novel/invasive addition that could color satisfaction ratings), but there is no clear evidence that this materially biased results, the default judgement per the algorithm (aware=Yes, no information on trial-context deviations) is "Some concerns."
+
+---
+
+## 3. Missing outcome data
+
+**Judgement: Low risk of bias**
+
+**Rationale:**
+- "No patients dropped out during the trial." "The 32 surveys were retrieved from the patients; there were no dropouts." The CONSORT flow diagram (Figure 4) confirms all 32 randomized patients were analyzed (16 per group), with none lost to follow-up or excluded.
+- Signalling Q3.1 = Yes (data available for all participants randomized).
+- Since outcome data were available for all randomized participants, no further signalling questions are required, and risk of bias is Low.
+
+---
+
+## 4. Measurement of the outcome
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- Method of measurement: The questionnaire was purpose-built/modified from a validated prior study ("modified from that of Bowman et al") and used a 5-point Likert scale; this appears to be an appropriate (not obviously inappropriate) method → Signalling Q4.1 = No.
+- Measurement did not differ between groups: the same questionnaire was administered identically to both groups on the day of FFRD removal → Signalling Q4.2 = No.
+- Outcome assessor: The outcome (patient acceptance/satisfaction) is a **participant-reported outcome**, meaning the outcome assessor is the participant. Participants were not blinded to their intervention assignment (impossible to blind, as stated: "Blinding of the clinicians and patients to the interventions in each group was impossible") → Signalling Q4.3 = Yes (aware).
+- Signalling Q4.4: Could assessment of the outcome have been influenced by knowledge of intervention received? For participant-reported outcomes, this is answered Yes by default per the guidance, since patients' perceptions of satisfaction/acceptance could plausibly be influenced by their awareness of which appliance (with or without mini-implants, an additional invasive procedure) they received.
+- Signalling Q4.5: Is it likely that assessment was actually influenced? There is no strong evidence of differential expectations (e.g., no indication that one group was told the mini-implant approach was "better" or experimental in a way likely to bias reporting), and the authors took steps to blind outcome assessment/extraction and the statistician ("Blinding was done for outcomes assessment, and data were extracted by an uninvolved person... blinding of the outcomes assessment was maintained throughout the study"). However, this blinding applies to data handlers, not to the actual outcome assessors (the patients themselves), who could not be blinded. Given the subjective nature of the outcome and unblinded participants, but no clear evidence of strong differential influence, this corresponds to "Some concerns" rather than "High risk."
+
+---
+
+## 5. Selective reporting
+
+**Judgement: Some concerns**
+
+**Rationale:**
+- The trial was not registered ("Registration: This trial was not registered") and the protocol was not published before trial commencement ("Protocol: The protocol was not published before trial commencement"). This means there is no pre-specified, date-stamped analysis plan against which the reported results can be verified → Signalling Q5.1 = No information/No (no verifiable pre-specified plan finalized before unblinded data were available).
+- The article states outcomes were pre-specified in the methods (primary outcome = patient acceptance/interference with function; secondary outcomes = satisfaction, noticeability, pain, swelling, gum problems, breakage) and states "There were no outcome changes after commencement of the trial." All pre-specified outcomes (11 Likert questions + 3 yes/no questions) appear to be fully reported in Tables III-VII, with a single ridit analysis method applied consistently and no indication of multiple alternative analyses being selectively reported → Signalling Q5.2 and Q5.3 = probably No (no evidence of selection among multiple outcome measures or analyses).
+- However, because there is no independently registered protocol or trial registry record available to confirm this a priori (absence of registration is confirmed explicitly), and no statistical analysis plan is available for independent verification, we cannot be fully confident that the reported result for patient acceptance was not selected from among multiple possible measurements or analyses. This corresponds to "No information" on Q5.1, leading to a default judgement of "Some concerns" per the algorithm (Table 14), since all consistency is based on self-report by trial authors within the single article rather than independent verification.
+
+---
+
+## Overall Risk-of-Bias Judgement for Patient Acceptance Outcome
+
+Combining the domain-level judgements:
+- Randomization: Low
+- Deviations from intended intervention: Some concerns
+- Missing outcome data: Low
+- Measurement of outcome: Some concerns
+- Selective reporting: Some concerns
+
+**Overall judgement: Some concerns** — the trial raises some concerns in multiple domains (deviations from intended intervention, measurement of the outcome, and selective reporting), but is not judged to be at high risk of bias in any single domain. Per RoB 2.0 guidance, "Some concerns" in multiple domains could lead to an overall "High risk of bias" judgement if the concerns substantially lower confidence in the result; however, in this case, the concerns are related mainly to the inherent limitations of assessing a subjective, patient-reported outcome in an inherently unblindable trial (appliance type is physically apparent) rather than to poor trial conduct, so **"Some concerns"** is the appropriate overall judgement rather than "High risk."

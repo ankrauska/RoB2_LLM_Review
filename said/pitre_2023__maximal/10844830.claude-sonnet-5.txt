@@ -1,0 +1,71 @@
+PROMPT pitre_2023::maximal
+PAPER  PMID 10844830
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: Venous Endothelin-1 (ET-1) Concentrations
+
+## 1. Bias arising from the randomization process: **High risk of bias**
+
+**a. Judgement:** High risk of bias is judged because although a random component was used for sequence generation, there is insufficient detail about allocation concealment, and there is evidence of baseline imbalance in a key prognostic variable directly related to the pulmonary/endothelial physiology under study.
+
+**b. Rationale:**
+- *Sequence generation:* "Sealed envelopes were used to allocate at random 20 consecutive adults undergoing cardiac surgery with CPB to group 1... or group 2." This supports a "Probably yes" for random sequence generation.
+- *Allocation concealment:* The report states only that "sealed envelopes" were used, with no further detail (e.g., opaque, sequentially numbered, tamper-proof, opened only after irreversible assignment). Per RoB2 guidance, envelope-based methods are "more susceptible to manipulation" unless these additional safeguards are described. This is judged as "No information"/"Probably no" for adequate concealment.
+- *Baseline imbalance:* The authors explicitly report a statistically significant baseline difference in mean pulmonary artery pressure between groups (25±5 mmHg in group 1 vs 19±4 mmHg in group 2, "Pre-bypass values of pulmonary artery pressures were significantly greater in group 1... indicating the difficulty of getting a good match in this kind of a study"). Because ET-1 is a marker directly implicated in pulmonary vascular tone/pressure ("Arterial plasma ET-1 concentration has a small but significant correlation with pulmonary arterial pressure"), this imbalance is in a key prognostic factor for the outcome being assessed, and is unlikely purely due to chance given the very small sample (n=10 per group). There is also a marked (non-tested) imbalance in sex distribution (9M/1F vs 5M/5F). These imbalances raise concern that the randomization process was compromised, e.g., through inadequately concealed allocation combined with a small sample.
+
+Combining lack of clear evidence of adequate concealment with baseline imbalance in a prognostically important variable directly linked to the outcome leads to an overall judgement of **High risk of bias** for this domain.
+
+---
+
+## 2. Bias due to deviations from the intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. Although blinding of clinicians/personnel was not feasible or reported (the FIO2 setting is directly visible/controlled by the treating team), there is no evidence that any deviations from the intended intervention occurred because of the trial context, and an appropriate (intention-to-treat-consistent) analysis was used.
+
+**b. Rationale:**
+- Participants were anaesthetized and not aware of intervention; carers/personnel setting the ventilator were inherently aware of the FIO2 assigned (open-label by necessity), but: "Except for the FIO2, the ventilatory mode did not differ from the pre-bypass settings in order to preserve equal ventilatory conditions between the groups." This indicates no other deviations in management between groups.
+- There is no report of non-protocol interventions, co-interventions, or crossover between FIO2 assignments; all patients received their assigned FIO2 per the study protocol/timetable in Table 1.
+- All randomized patients (10 per group) appear to have been analysed according to their assigned group, consistent with an intention-to-treat approach appropriate for estimating the effect of assignment to intervention.
+
+Because there is no evidence that deviations arose because of the trial context and likely affected the ET-1 outcome differentially between groups, and an appropriate analysis strategy was used, this domain is judged as **Low risk of bias**.
+
+---
+
+## 3. Bias due to missing outcome data: **Some concerns**
+
+**a. Judgement:** Some concerns, due to a post-hoc, results-based exclusion of outcome data from one participant, raising uncertainty as to whether missingness could depend on the true value of the outcome, even though this exclusion is reported as applying specifically to arterial (not venous) ET-1.
+
+**b. Rationale:**
+- The figure legend states: "Group 2 had an outlier with high arterial ET-1 values (range 3.6–4.7 fmol litre⁻¹) throughout the study. Comparisons with the patient's data revealed no explanation for this finding. These data were excluded from the statistical analysis in order to simplify statistical interpretation."
+- This exclusion was not pre-specified but was made because the data were considered atypical/outlying — i.e., it was a results-based post-randomization exclusion, which is generally considered an inappropriate approach that can introduce bias, per RoB2 guidance on missing/excluded data.
+- It is unclear whether this same participant's *venous* ET-1 data were also excluded, or only the arterial values; this ambiguity itself contributes uncertainty about the completeness of the venous ET-1 outcome dataset.
+- Aside from this issue, data appear to have been collected and reported for all/nearly all randomized participants (n=10 per group) at each time point, and there is no indication that missingness (beyond the excluded outlier) was related to the true outcome value.
+
+Given the uncertain but plausible impact of this results-driven exclusion on completeness of the venous ET-1 data, and the absence of sensitivity analyses addressing this, the domain is judged as **Some concerns** rather than low risk.
+
+---
+
+## 4. Bias in measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias. The outcome (venous ET-1) was measured using a standardized, objective enzyme immunoassay applied identically to both groups, and is unlikely to be influenced by knowledge of intervention allocation.
+
+**b. Rationale:**
+- Measurement method: "For ET-1 and Big ET-1 analyses, a sandwich-type enzyme immunoassay (Biomedica, Vienna, Austria) was used. Direct measurements of the peptides were performed in duplicate according to the manufacturer's instructions... quantified by an enzyme-catalysed colour change detectable using a standard ELISA reader." This is an appropriate, validated laboratory method for the outcome domain, with defined detection limits and coefficients of variation reported, supporting appropriateness of the measurement method.
+- Method comparability: The same assay procedure and blood sampling protocol (Table 1) was applied identically to both intervention groups at each time point, so there is no indication that measurement or ascertainment differed by group.
+- Outcome assessor awareness/influence: ET-1 assessment is an "observer-reported outcome not involving judgement" (an automated biochemical/colorimetric assay read by machine), a category of outcome that is not susceptible to influence by knowledge of the intervention received, regardless of whether laboratory personnel were aware of group allocation. There is no plausible mechanism by which knowledge of FIO2 assignment could influence the ELISA-based quantification of plasma ET-1.
+
+This domain is therefore judged as **Low risk of bias**.
+
+---
+
+## 5. Bias in selection of the reported result: **Some concerns**
+
+**a. Judgement:** Some concerns, because there is no available information confirming that the reported venous ET-1 analyses corresponded to a prespecified statistical analysis plan finalized before unblinded outcome data were available, although there is no strong evidence of selective reporting either.
+
+**b. Rationale:**
+- The publication does not reference, nor is there available documentation of, a pre-specified/pre-registered detailed analysis plan (e.g., specific pre-specified time points, transformations, or statistical tests) that was finalized before outcome data were unblinded. This is consistent with the era/style of many single-center physiology trials of this type, and no trial registry entry with a detailed a priori analysis plan is cited.
+- However, ET-1 and Big ET-1 were reported comprehensively at all four pre-specified time points (Table 1) for both arterial and venous samples, and results for venous ET-1 are reported explicitly (e.g., "In contrast, ET-1 concentrations in the two groups were not significantly different") even though this was a *null* finding — arguing against selective suppression of unfavourable venous ET-1 results.
+- There is no indication of multiple alternative venous ET-1 analyses (e.g., alternative statistical models, subgroups, or cut-points) being tested and only a subset selectively reported.
+
+Given the absence of a documented pre-specified analysis plan, but no direct evidence of results-based selective reporting for the venous ET-1 outcome specifically, this domain is judged as **Some concerns**.

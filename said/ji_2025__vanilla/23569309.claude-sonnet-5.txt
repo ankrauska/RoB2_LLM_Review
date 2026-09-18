@@ -1,0 +1,217 @@
+PROMPT ji_2025::vanilla
+PAPER  PMID 23569309
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 22  label=RP1
+==============================================================================
+Relevant sentences: "The random permutation method was used for random assignment. The stratification factors for random assignment were the presence or absence of visceral disease, prior adjuvant taxane therapy, response (CR/PR v stable disease) to the initial six cycles of PG chemotherapy, and HR status (positive v negative)."
+
+Analysis: The article explicitly states that a "random permutation method" was used to generate the allocation sequence, with stratification by several clinical factors. This is a specific description of a random component used in the sequence generation process, consistent with acceptable randomization methods (e.g., computer-generated random sequences using permuted block designs). This clearly satisfies the criteria for a "Yes" judgment, as it explicitly describes the random method used (permuted block randomization, stratified), rather than merely stating "the study was randomized" without further detail.
+
+Correct answer: Yes
+==============================================================================
+REPLY 2 OF 22  label=RP2
+==============================================================================
+Relevant sentences: "Registration and random assignment were coordinated centrally at the KCSG data center. The random permutation method was used for random assignment. The stratification factors for random assignment were the presence or absence of visceral disease, prior adjuvant taxane therapy, response (CR/PR v stable disease) to the initial six cycles of PG chemotherapy, and HR status (positive v negative; Fig 1A)."
+
+Analysis: The trial explicitly states that registration and random assignment were coordinated centrally at the KCSG data center, which is an independent central unit separate from the enrolling investigators at the 10 participating institutions. This centralized randomization process, using a random permutation method with stratification factors, indicates that allocation was performed by an external body rather than by the enrolling site personnel. This is consistent with the type of mechanism the explanation identifies as sufficient for a "Yes" judgment (e.g., centrally administered randomization service). There is no indication that the enrolling investigators had access to or could predict the allocation sequence before random assignment, supporting adequate concealment.
+
+Correct answer: Yes
+==============================================================================
+REPLY 3 OF 22  label=RP3
+==============================================================================
+Relevant sentences:
+"The baseline characteristics of the patients were similar between the two groups (Table 1)." Table 1 shows all baseline characteristics with P-values >0.05 except "Lung, hematogenous" metastasis (P=0.029), which is a single significant difference among many comparisons and is consistent with chance. No substantial differences in group sizes (116 vs 115) from intended 1:1 ratio, and no key prognostic factor imbalance large enough to bias results.
+
+Analysis: The randomization allocated patients in a 1:1 ratio as intended (116 vs 115), consistent with the planned allocation. Table 1 demonstrates that baseline characteristics (age, ECOG PS, menopausal status, HR status, HER2 status, number of metastatic sites, visceral disease, prior adjuvant therapy) were balanced between groups, with only one statistically significant difference (lung hematogenous metastasis, P=0.029) out of many comparisons — this isolated finding is compatible with chance given multiple comparisons were made. There is no evidence of imbalance in key prognostic factors that would be large enough to bias the intervention effect estimate, nor is there excessive similarity suggesting problems. This supports a low risk of bias regarding baseline imbalances.
+
+Correct answer: No
+==============================================================================
+REPLY 4 OF 22  label=DII1
+==============================================================================
+Relevant sentences:
+- "The patients randomly assigned to observation were observed without any treatment until disease progression or withdrawal of consent."
+- "This study is a multicenter, phase III study of the Korean Cancer Study Group (KCSG; KCSG-BR07-02) with a randomized discontinuation design."
+- Protocol: "maskingInfo": {"masking": "NONE"}
+- Table 4 shows markedly higher rates of grade 3/4 hematologic toxicities (neutropenia 61% vs 0.9%, thrombocytopenia, anemia, ALT elevation) after randomization in the maintenance group compared to observation.
+
+Analysis: There was no placebo or sham intervention used; the observation arm received no treatment at all, while the maintenance arm continued active chemotherapy (PG). This is an open-label design (masking: NONE), explicitly described as a "randomized discontinuation design" without blinding. Furthermore, the maintenance group experienced substantially higher rates of hematologic toxicities (e.g., grade 3+ neutropenia 61% vs 0.9%, alopecia-related effects, neuropathy, ALT elevation) that would have been clinically apparent to patients, making it obvious which treatment arm they were in. Patients in the observation arm would also be aware they were not receiving chemotherapy (no infusions, no associated toxicities). Therefore, participants were certainly aware of their assigned intervention.
+
+Correct answer: Yes
+==============================================================================
+REPLY 5 OF 22  label=DII2
+==============================================================================
+Relevant sentences:
+- "designInfo": {"masking": "NONE"} (protocol registration)
+- One arm was "NO_INTERVENTION" (observation) while the other received active maintenance chemotherapy administered by clinicians.
+- "Chemotherapy was started within 14 days after random assignment. Treatment comprised paclitaxel 175 mg/m2... and gemcitabine..." administered to maintenance arm only, with observation arm receiving no treatment.
+- No description of blinding of care providers/personnel administering treatment in the article methods.
+
+Analysis: The trial explicitly registered as having no masking ("masking": "NONE"). The design itself (active maintenance chemotherapy vs. observation/no treatment) makes blinding of the treating personnel essentially impossible — clinicians administering IV chemotherapy would necessarily know which patients were receiving the drug and which were simply being observed. There is no mention of any blinding procedures for treating personnel or carers in the article. Given the open-label nature of the trial (confirmed by the registry entry of "masking: NONE") and the structurally unblindable intervention (drug infusion vs. no treatment), carers and those delivering the intervention were certainly aware of the assigned intervention.
+
+Correct answer: Yes
+==============================================================================
+REPLY 6 OF 22  label=DII3
+==============================================================================
+Relevant sentences:
+- "This study is a multicenter, phase III study... with a randomized discontinuation design" and "masking: NONE" (open-label design).
+- "The patients randomly assigned to the maintenance arm continued with PG chemotherapy until disease progression, development of unacceptable toxicity, or withdrawal of consent."
+- "In the maintenance group, 33 patients whose disease had not progressed stopped further chemotherapy at the physician's discretion. The median number of chemotherapy cycles for these patients after random assignment was 12 (range, nine to 26 cycles)."
+- Table 2: "Physician's discretion — Maintenance Arm 33; Observation Arm 6" and "Physician/patient's shared decision 33*"
+- "Patients who stopped the study drugs at the physician's discretion did not receive further anticancer treatment... until disease progression was documented."
+
+Analysis:
+This is an open-label (unblinded) trial with a randomized discontinuation design. While the protocol specified only three allowed reasons for discontinuing maintenance chemotherapy (progression, unacceptable toxicity, or withdrawal of consent), a substantial subgroup (33 of 116, ~28%) of maintenance-arm patients discontinued chemotherapy at the treating physician's discretion despite no documented disease progression or reported unacceptable toxicity. This represents a deviation from the protocol-specified intervention delivery that was not driven by toxicity or progression but by clinical judgment/preference, which is plausible only in the context of an open-label trial where physicians and patients could see ongoing toxicity, treatment burden, or achieved response and decide to stop treatment outside the prespecified stopping rules. This kind of discretionary early cessation, inconsistent with the trial protocol's defined discontinuation criteria, is characteristic of a deviation arising from the trial context (unblinded management decisions by trial personnel) rather than usual clinical practice outside a trial with strict protocol-driven treatment duration. This did not occur in the observation arm (only 6 patients had physician's discretion changes), reinforcing that this deviation was specific to protocol implementation in the treatment arm. No detailed explanation is given as to why physicians made these decisions, but the scale (33/116) and its asymmetry between arms suggest that trial-context-related deviations from the intended intervention did occur.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 7 OF 22  label=DII4
+==============================================================================
+Relevant sentences:
+"In the maintenance group, 33 patients whose disease had not progressed stopped further chemotherapy at the physician's discretion. The median number of chemotherapy cycles for these patients after random assignment was 12 (range, nine to 26 cycles)."
+"Patients who stopped the study drugs at the physician's discretion did not receive further anticancer treatment, including endocrine therapy, until disease progression was documented."
+"PG combination chemotherapy was not given to any patient in the observation group after progression, which means that there was no crossover."
+"The rate of grade 3 or higher neutropenia after random assignment was higher in the maintenance group than in the observation group (61% v 0.9%, respectively; P<.001)."
+
+Analysis: There were deviations from the intended intervention in the maintenance arm—33 patients (28.4%) discontinued maintenance chemotherapy at the physician's discretion despite no documented disease progression, receiving only a median of 12 cycles rather than continuing until progression as per protocol. This represents a substantial proportion of the maintenance arm deviating from the assigned intervention. Given that the primary outcome (PFS) is directly related to duration of active treatment and disease progression, and that maintenance chemotherapy exposure appears linked to the treatment effect (via prevention/delay of progression), such early discontinuation without progression could plausibly have shortened the treatment exposure and thus attenuated the observed treatment benefit, potentially biasing the estimate of intervention effect. However, since the analysis was intention-to-treat and these discontinuations happened without progression (i.e., were not driven by lack of efficacy or adverse outcomes affecting the endpoint measurement itself), and no crossover occurred (observation patients never received the experimental maintenance regimen), the deviations are unlikely to have introduced a substantial bias affecting the interpretation of the estimated effect—if anything, they would bias toward the null (underestimating benefit of maintenance), not inflate it. This makes it plausible but uncertain whether these deviations affected the outcome estimate in a meaningful way.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 8 OF 22  label=DII5
+==============================================================================
+Relevant sentences:
+"The reasons for nonadherence to randomly assigned treatment in the absence of progression differed between the two groups (Table 2). Eighty (69.6%) of 115 patients in the observation arm and 40 (34.5%) of 116 patients in the maintenance arm experienced disease progression. In the maintenance group, 33 patients whose disease had not progressed stopped further chemotherapy at the physician's discretion." Also Table 2 shows: Adverse events led to discontinuation in 13 (maintenance) vs 0 (observation); Physician's discretion 33 (maintenance) vs 6 (observation).
+
+Analysis: The trial had an open-label design (no masking), and this is a randomized discontinuation design where the maintenance arm continued active chemotherapy while the observation arm received no treatment. As explicitly stated, "the reasons for nonadherence to randomly assigned treatment... differed between the two groups." Table 2 confirms substantial imbalance: adverse events causing discontinuation occurred only in the maintenance arm (13 vs 0), and discontinuation at physician's discretion was much more frequent in the maintenance arm (33 vs 6) compared to observation. These deviations (early discontinuation due to toxicity, physician discretion) are inherently linked to the nature of the interventions themselves (active chemotherapy vs. no treatment) and are clearly unbalanced between groups, both in frequency and type. This imbalance in deviations from intended intervention (continuing therapy until progression) is substantial and clearly documented.
+
+Correct answer: No
+==============================================================================
+REPLY 9 OF 22  label=DII6
+==============================================================================
+Relevant sentences: "All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle, and patients who received at least one dose of study medication were evaluated for safety." "Of these, 231 patients who achieved disease control with an initial six cycles of PG chemotherapy were randomly assigned to either maintenance PG chemotherapy (n=116) or observation (n=115)." "In the maintenance group, 33 patients whose disease had not progressed stopped further chemotherapy at the physician's discretion" but were still analyzed per Fig 1B footnote (*Patients included in the final analyses of survival and secondary efficacy variables with intent-to-treat principle).
+
+Analysis: The efficacy analysis (including the primary outcome PFS) was explicitly stated to follow the intention-to-treat principle, including all randomly assigned patients (116 vs 115) regardless of subsequent adherence to protocol (e.g., 33 patients who discontinued maintenance therapy early at physician's discretion were still analyzed in their assigned group). This is consistent with an appropriate ITT analysis as described in the explanation. There is no indication of post-randomization exclusion of eligible participants from the efficacy analysis, nor evidence of per-protocol or as-treated analysis for the primary/secondary efficacy endpoints. The safety analysis used a modified population (those who received ≥1 dose), which is a separate and appropriate practice for toxicity outcomes, not affecting the ITT status of the effect estimate for the primary intervention effect.
+
+Correct answer: Yes
+==============================================================================
+REPLY 10 OF 22  label=DII7
+==============================================================================
+Relevant sentences:
+"All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle" and "231 patients who achieved disease control with an initial six cycles of PG chemotherapy were randomly assigned to either maintenance PG chemotherapy (n=116) or observation (n=115)" — with no reported crossover or analysis in wrong group ("PG combination chemotherapy was not given to any patient in the observation group after progression, which means that there was no crossover").
+
+Analysis: The study explicitly states that all randomly assigned patients were analyzed according to the intent-to-treat principle, with 116 in maintenance and 115 in observation exactly as randomized. There is no indication that any participants were analyzed in the wrong group. The CONSORT diagram and reported discontinuation reasons (Table 2) show patients discontinuing treatment but remaining in their assigned analysis groups per ITT. Since analysis followed the group to which participants were randomized, there is no potential for substantial impact from analyzing participants in the wrong group.
+
+Correct answer: No
+==============================================================================
+REPLY 11 OF 22  label=MOD1
+==============================================================================
+Relevant sentences:
+"All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle" — "231 patients... were randomly assigned to maintenance chemotherapy (n=116) or observation (n=115)." PFS and OS Kaplan-Meier curves (Fig 2A, 2B) appear based on the full randomized cohort, with "Observations were censored at the last clinical contact if patients were lost to follow-up or at the cutoff date for the analysis." Table 2 shows reasons for discontinuation (progression, withdrawal, adverse events, physician's discretion), totaling 116 in maintenance arm and 115 in observation arm, indicating all randomized patients were accounted for in follow-up/analysis, with censoring used rather than exclusion for those lost to follow-up.
+
+Analysis:
+The primary outcome (PFS) and secondary outcome (OS) were analyzed using the intention-to-treat principle, including all 231 randomized patients (116 maintenance, 115 observation). Kaplan-Meier method with censoring at last contact was used for those lost to follow-up, meaning no patients were excluded from the survival analyses — they were censored, not omitted. Table 2 accounts for all 116 and 115 patients in each arm with documented reasons for discontinuation of treatment (not for missing outcome data), demonstrating that outcome status (progression/death or censoring) was known for essentially all randomized participants. There is no indication of any participants with truly unaccounted-for missing outcome data for PFS or OS. This supports that data were available for nearly all participants randomized.
+
+Correct answer: Yes
+==============================================================================
+REPLY 12 OF 22  label=MOD2
+==============================================================================
+Relevant sentences:
+- "All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle... Observations were censored at the last clinical contact if patients were lost to follow-up or at the cutoff date for the analysis."
+- "PFS and OS were estimated using the Kaplan-Meier method and were compared using the log-rank test. Analyses of treatment effects were adjusted for covariates selected before the analysis using a multivariate Cox proportional hazards model..."
+- Table 2 shows reasons for discontinuation (progression, withdrawal, adverse events, physician discretion) were reported for both arms, with minimal apparent differential loss to follow-up, and CONSORT diagram (Fig 1B) accounts for all patients.
+- Median follow-up was 33 months, and all 231 randomized patients appear to be accounted for in the ITT analysis.
+
+Analysis: The trial used an intention-to-treat analysis including all randomly assigned patients, with time-to-event outcomes (PFS, OS) analyzed via Kaplan-Meier and Cox regression methods, which appropriately handle censoring due to loss to follow-up (a form of missing data) using standard survival analysis techniques. The CONSORT diagram and Table 2 show that reasons for discontinuation/study withdrawal were documented and balanced between arms (14 vs 13 withdrawals), with no evidence of substantial differential missingness that could bias the primary outcome. However, there is no explicit sensitivity analysis exploring different assumptions about missing data, and no specific method (e.g., multiple imputation) was used beyond standard censoring in survival analysis. Given the time-to-event nature of the primary outcomes, standard survival methods with censoring are generally considered acceptable and appropriate, and the amount of missing/incomplete outcome data appears balanced and non-informative between groups, suggesting low risk of bias from missing data, though this is not explicitly demonstrated via formal sensitivity analysis.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 13 OF 22  label=MOD3
+==============================================================================
+Relevant sentences:
+- "Allrandomlyassignedpatientswereincludedintheefficacyanalysisaccordingtotheintent-to-treat principle... Observations were censored at the last clinical control if patients were lost to follow-up or at the cutoff date for the analysis."
+- Table 2 reasons for discontinuation: "Patient withdrawal" 14 (maintenance) and 13 (observation); "Comorbidity" 5 and 2; "Second primary malignancy" 2.
+- "Adverse events" led to discontinuation in 13 patients in the maintenance arm (neutropenia, neuropathy, hepatotoxicity), which are documented, treatment-related reasons.
+- PFS/OS analyses used Kaplan-Meier with censoring for lost-to-follow-up or those withdrawing consent.
+
+Analysis: The trial provided a detailed accounting of reasons for study discontinuation and missing outcome data (Table 2), including disease progression, adverse events, physician's discretion, patient withdrawal, comorbidity, and second primary malignancy. Most missingness appears well documented and largely tied to objective, protocol-specified reasons (progression, toxicity, physician discretion) rather than an unmeasured/unreported outcome status. However, "patient withdrawal" (14 vs. 13 patients) and "comorbidity" (5 vs. 2) are documented but the underlying reasons are not further detailed — patient withdrawal could plausibly be related to worsening health status or disease-related symptoms (i.e., the true outcome/value), which cannot be ruled out. Additionally, censoring for lost-to-follow-up in the survival analysis is a standard concern for informative censoring, since patients who feel worse or are progressing may be more likely to drop out or be lost, even though the majority of the missingness reasons are documented and seem unrelated to the true outcome (e.g., progression is captured as an event, not missing data, and adverse-event withdrawals are documented and related to toxicity, not directly to PFS/OS status). Since not all withdrawal reasons are fully elaborated and could plausibly relate to the patient's true health/outcome status, there remains some possibility, though the majority of missing data reasons documented appear largely unrelated to the true value of the outcome.
+
+Correct answer: Probably no
+==============================================================================
+REPLY 14 OF 22  label=MOD4
+==============================================================================
+Relevant sentences:
+"Observations were censored at the last clinical contact if patients were lost to follow-up or at the cutoff date for the analysis"; "All randomly assigned patients were included in the efficacy analysis according to the intent-to-treat principle"; Table 2 reasons for discontinuation showing disease progression (the event of interest for PFS) as the primary reason for censoring/discontinuation, with different rates between arms (40 vs 80), and other non-informative reasons (withdrawal, adverse events, physician discretion) being relatively balanced or explainable by treatment-related toxicity rather than by the outcome's true value itself.
+
+Analysis: The primary outcome is PFS, a time-to-event outcome, analyzed via intention-to-treat with Kaplan-Meier/log-rank methods. Missing data mainly arise from censoring at last contact for patients lost to follow-up, not from differential dropout related to the true (unobserved) event status. The reasons for discontinuation without progression (patient withdrawal, adverse events, physician's discretion) are documented and do not inherently suggest that censoring was related to the patients' undocumented disease status - progression was radiologically assessed every 6 weeks regardless of treatment continuation, minimizing informative censoring. The difference in "physician's discretion" discontinuation (33 vs 6) reflects toxicity/logistics of continued chemothery in the maintenance arm rather than the outcome's true value. There is no clear evidence that missingness (loss to follow-up/censoring before event) was related to the true PFS/OS status of patients in a way that would bias the treatment effect. Amount of missing data appears very low given the ITT design and scheduled radiologic assessments, and reasons for censoring do not appear to differ in a manner suggesting dependence on the true outcome value.
+
+Correct answer: No
+==============================================================================
+REPLY 15 OF 22  label=MO1
+==============================================================================
+Relevant sentences: "PFS was calculated from the date of random assignment to the documented date of disease progression or the last visit date. Disease response was assessed according to RECIST (version 1.0). PFS and the duration of response were assessed by investigators." "OS was measured from the date of random assignment to the date of death from any cause, with censoring of the last visit date." "Radiographic studies were performed every 6 weeks."
+
+Analysis: The primary outcome (PFS) and secondary outcome (OS) were measured using standard, validated, and objective methods appropriate to the clinical question: OS via date of death (an objective, unambiguous measure), and PFS via RECIST-based radiographic assessment performed at regular intervals (every 6 weeks), which is a well-established and appropriate method for detecting disease progression in oncology trials. RECIST is a validated and widely accepted response evaluation criterion. There is no indication that the measurement method would be insensitive to plausible intervention effects or that it has demonstrated poor validity. Therefore, the method of measuring the outcomes was appropriate.
+
+Correct answer: No
+==============================================================================
+REPLY 16 OF 22  label=MO2
+==============================================================================
+Relevant sentences:
+"PFS and the duration of response were assessed by investigators." "Radiographic studies were performed every 6 weeks." "Toxicity was assessed at the end of each cycle." Masking: "masking": "NONE" — this was an open-label trial with no blinding. Patients in the maintenance arm continued to visit for chemotherapy administration, while those in observation had no active treatment visits, though radiographic assessments for PFS were scheduled at fixed intervals (every 6 weeks) for both groups regardless of arm. PFS/response was investigator-assessed rather than by a blinded independent review committee.
+
+Analysis: Since the study was open-label (no masking) and outcome assessment (PFS, disease progression) was determined by investigators rather than through an independent, blinded review, there is a plausible risk that knowledge of treatment allocation could have influenced the timing or interpretation of disease progression assessments (diagnostic detection bias), even though imaging was scheduled at fixed intervals for both arms. The lack of blinded outcome assessors means measurement/ascertainment of the outcome could differ by group due to awareness of intervention status, particularly for a somewhat subjective endpoint like PFS based on RECIST reading by non-blinded investigators. This meets the concern of the signaling question despite scheduled radiographic assessments being standardized across arms.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 17 OF 22  label=MO3
+==============================================================================
+Relevant sentences: "PFS and the duration of response were assessed by investigators." "Radiographic studies were performed every 6 weeks." "maskingInfo": {"masking": "NONE"}. No mention of blinding of outcome assessors/investigators to treatment allocation; PFS/OS are objective, radiographically/clinically confirmed endpoints assessed by investigators who were aware of treatment assignment given the open-label design.
+
+Analysis: The trial was an open-label study with no blinding (masking: NONE) of participants, treating physicians, or outcome assessors. PFS and response duration were assessed by investigators who were also managing treatment, and since patients in the maintenance arm continued visible chemotherapy while the observation arm received none, assessors were inevitably aware of treatment allocation when evaluating disease progression. There is no description of an independent, blinded outcome assessment committee. Therefore, outcome assessors were aware of the intervention received.
+
+Correct answer: No information
+==============================================================================
+REPLY 18 OF 22  label=MO4
+==============================================================================
+Relevant sentences: "PFS and the duration of response were assessed by investigators." "The study was a prospective, randomized, multicenter, phase III trial... maintenance chemotherapy or observation." "maskingInfo": {"masking": "NONE"}. PFS was calculated from the date of random assignment to the documented date of disease progression, assessed according to RECIST by investigators, with radiographic studies performed every 6 weeks. Disease progression was one arm receiving continuous chemotherapy and the other observation only, with no blinding described.
+
+Analysis: This trial had no masking (open-label design), as confirmed in the protocol ("masking": "NONE") and the treatment arms (maintenance chemotherapy vs. observation) are inherently distinguishable to both patients and investigators. The primary outcome, PFS, was assessed by investigators based on radiographic imaging and RECIST criteria, which involves clinical judgment regarding disease progression status. Since investigators knew which treatment arm patients were assigned to (active chemotherapy vs. no treatment), this knowledge could plausibly influence the timing, interpretation, or threshold used to determine progression, especially in borderline cases. This is not an objective, judgment-free outcome like all-cause mortality; it requires radiological interpretation and clinical judgment, making it susceptible to detection bias from knowledge of allocation.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 19 OF 22  label=MO5
+==============================================================================
+Relevant sentences: "PFS and the duration of response were assessed by investigators." "Disease response was assessed according to RECIST (version 1.0)." "masking": "NONE" (open-label trial, no blinding of participants, personnel, or outcome assessors). Toxicity was significantly different between groups (grade 3+ neutropenia 61% vs 0.9%), and PFS/disease progression was assessed by treating investigators who were aware of treatment allocation.
+
+Analysis: This was an open-label study with no masking of outcome assessors. The primary outcome, PFS, relies on radiologic assessment of disease progression by investigators (RECIST), which is a relatively objective outcome, but investigators who were unblinded also administered treatment and would have known about the substantial toxicity differences between arms (e.g., 61% vs 0.9% grade 3+ neutropenia), and clinical judgment/timing of scans or determination of progression could be subtly influenced by expectation of benefit from continued chemotherapy. Since the outcome assessors (investigators) were aware of treatment assignment and had a strong prior expectation of benefit from maintenance chemotherapy (as stated in the study rationale/hypothesis), and RECIST-based response assessment still involves some subjective interpretation and timing of imaging, there is a reasonable likelihood that knowledge of intervention could have influenced the assessment, though not necessarily proven definitively affected outcome measurement. This corresponds to "Probably yes" rather than definitive "Yes," since the assessment method (RECIST) is fairly objective but still assessor-dependent with unblinded investigators strongly believing in benefit of the intervention.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 20 OF 22  label=SRR1
+==============================================================================
+Relevant sentences:
+"The primary endpoint was PFS after random assignment. Secondary end points included OS, QoL, toxicity, and response duration... Analyses of treatment effects were adjusted for covariates selected before the analysis using a multivariate Cox proportional hazards model with stratification according to the visceral disease, age, menopausal status, performance status, number of metastatic sites, prior adjuvant taxane therapy, disease response, and HR status." The registered protocol (NCT00561119) lists primary outcome as PFS and secondary outcomes as OS, QoL, toxicity, and duration of response, consistent with the published report. However, no separate statistical analysis plan (SAP) document is available/referenced, and no explicit statement confirms the analysis plan was finalized prior to unblinding of outcome data (the trial was open-label, unmasked, per design module "masking: NONE"). There is no mention of a trial registry-based SAP or protocol amendment history that would allow verification that the analysis approach (e.g., covariate adjustment, stratification variables) was pre-specified before data unblinding.
+
+Analysis: The primary and secondary outcomes reported match those pre-registered in the trial registry, suggesting general consistency with a pre-specified plan. However, since the study was open-label (no masking), "unblinded outcome data" essentially were available throughout, and there is no explicit documentation of a finalized SAP prior to data availability/analysis, nor any protocol version history showing analysis intentions were locked before outcome data access. This makes it impossible to fully confirm whether the analysis (particularly covariate selection and subgroup analyses) was finalized before outcome data were seen by investigators. The information available is insufficient to make a definitive judgment, but partial matching between registered and reported outcomes suggests probable, though unconfirmed, adherence.
+
+Correct answer: Probably yes
+==============================================================================
+REPLY 21 OF 22  label=SRR2
+==============================================================================
+Relevant sentences:
+- Protocol primary outcome: "Progression free survival" (timeFrame: approximately 4 years), with no specification of multiple scales or measurement tools.
+- Article: "The median PFS time after random assignment was longer in the maintenance group than in the observation group (7.5 v 3.8 months, respectively; P=.026)."
+- Article: "PFS was calculated from the date of random assignment to the documented date of disease progression or the last visit date. Disease response was assessed according to RECIST (version 1.0)."
+- Statistical Methods: "The primary endpoint was PFS after random assignment."
+
+Analysis: The outcome domain PFS is defined in both the protocol and the article using a single, consistent definition (RECIST-based progression or death), assessed at one primary analysis time point (after random assignment). There is no indication that PFS was measured using multiple scales, definitions, or multiple time points from which a selective result could have been chosen. The registered outcome matches the reported outcome measure and definition. There is no evidence of multiple eligible ways of measuring this domain (e.g., alternative definitions of progression, multiple assessment tools, or multiple time-point analyses eligible for selection) — only one method (RECIST-based PFS from randomization) was used and reported consistently in both protocol and publication.
+
+Correct answer: No
+==============================================================================
+REPLY 22 OF 22  label=SRR3
+==============================================================================
+Relevant sentences: "Analyses of treatment effects were adjusted for covariates selected before the analysis using a multivariate Cox proportional hazards model with stratification according to the visceral disease, age, menopausal status, performance status, number of metastatic sites, prior adjuvant taxane therapy, disease response, and HR status." The primary endpoint was PFS after random assignment, and results were reported as median PFS (7.5 v 3.8 months, HR 0.73, P=.026) and 6-month PFS rate (59.7% vs 36.0%, P<.001) — both are presented and consistent with pre-specified analysis. The registered protocol (NCT00561119) lists "Progression free survival" as the primary outcome with no indication of multiple competing analytic methods being selectively reported. The statistical methods section clearly pre-specifies the Kaplan-Meier/log-rank approach and the adjusted Cox model with covariates "selected before the analysis," indicating pre-specification rather than post hoc selection.
+
+Analysis: The trial protocol and statistical methods section specify the primary outcome (PFS) and the analytic approach (Kaplan-Meier estimation, log-rank test, and Cox model with pre-selected covariates) in advance of viewing results. The reported results (median PFS, 6-month PFs rate, OS) align with these pre-specified methods, and there is no evidence of multiple competing analyses (e.g., alternative cut-points, adjusted vs. unadjusted only reported selectively) where only favorable results were chosen. The covariates for the adjusted model were said to be "selected before the analysis," reducing concern for outcome-dependent selection. While subgroup analyses were also reported, the primary PFS and OS results themselves appear to correspond to the pre-specified primary/secondary analysis plan without indication of selective reporting from multiple eligible analyses.
+
+Correct answer: Probably no

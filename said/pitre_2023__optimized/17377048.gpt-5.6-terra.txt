@@ -1,0 +1,43 @@
+PROMPT pitre_2023::optimized
+PAPER  PMID 17377048
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: some concerns**
+
+   a. **Judgement:** Some concerns, because the report states that patients were randomized but does not describe either generation of the random allocation sequence or concealment of allocation.
+
+   b. **Rationale:** The article states: “*The patients were assigned to two groups at random, each with 20 patients*.” However, it does not state how the sequence was generated (e.g., computer-generated random numbers) or how allocation was concealed before enrolment/assignment. The only reported baseline comparison is age (“*The age between both groups was not significantly different*”), which does not identify a clear imbalance, but is insufficient to provide assurance that randomization was adequately implemented. Under RoB 2, absence of information on allocation concealment leads to some concerns when baseline data do not themselves suggest a problem.
+
+2. **Deviations from intended intervention: high risk of bias**
+
+   a. **Judgement:** High risk of bias for the effect of assignment to the randomized scanning protocol at baseline, principally because randomized participants were excluded from the analysis on the basis of their observed outcome status.
+
+   b. **Rationale:** The trial assigned 20 participants to each collimation group, but the reported analyses included only 18 per group: “*Four patients had to be excluded from the study because no coronary calcium was detected on any of the reconstructions.*” Absence of coronary calcium is a valid Agatston-score outcome (zero), not an indication that outcome data were unavailable or that a participant was ineligible. Thus, this represents a post-randomization exclusion of eligible participants based on the outcome.
+
+   The resulting analysis was therefore not a full intention-to-treat analysis of all randomized participants. Excluding 4/40 (10%) participants could have a substantial effect on estimates of mean Agatston score and on the comparison of reconstruction strategies, particularly because these excluded participants had the lowest possible score. The report does not provide an analysis including all randomized participants or justify the exclusions as pre-specified. Although there is no reported evidence of deviations in scan delivery arising from lack of blinding or the trial context, the inappropriate post-randomization exclusions are sufficient for a high-risk judgement in this domain.
+
+3. **Missing outcome data: low risk of bias**
+
+   a. **Judgement:** Low risk of bias due to missing outcome data.
+
+   b. **Rationale:** The report does not indicate that Agatston-score data were missing because of loss to follow-up, technical failure, withdrawal, or unavailable scans. Each included participant underwent the planned CT acquisition and had five diastolic reconstructions with both reconstruction increments: “*for each patient, five data sets were created throughout diastole*” and “*for each reconstruction, two data sets were calculated with a reconstruction increment of 3.0 and 1.5 mm*.”
+
+   The four participants with no detected coronary calcium were excluded despite apparently having observed outcome data. This is an analysis/exclusion problem addressed under deviations from intended intervention, rather than missing outcome data. For the analysed participants, there is no evidence that outcome measurements were missing or that missingness was related to true Agatston scores.
+
+4. **Measurement of the outcome: some concerns**
+
+   a. **Judgement:** Some concerns, because the outcome assessment included subjective human input and there is no information that the assessors were blinded to reconstruction increment or randomized scanning group.
+
+   b. **Rationale:** Agatston scoring used a partly automated threshold-based process: “*CAC was defined as the presence of more than two contiguous pixels with Hounsfield units greater than 130. These lesions were automatically identified and marked in color by the workstation.*” This is a generally appropriate method for measuring coronary calcium and was used consistently across reconstructions.
+
+   However, the final distinction between calcium and noise required assessor judgement: “*a radiologist with 4 years of experience … and a cardiologist with 11 years of experience … differentiated between calcium and noise by placing regions of interest around the CAC.*” The report does not state that these assessors were blinded to the reconstruction increment, collimation group, or reconstruction interval. Blinding may have been difficult because image characteristics can reveal the reconstruction approach. Since manual placement of regions of interest and differentiation of calcium from noise can involve judgement—particularly for small lesions—knowledge of reconstruction characteristics could potentially influence assessment. There is no direct evidence that such influence occurred; therefore, some concerns rather than high risk is appropriate.
+
+5. **Selective reporting: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** No pre-specified statistical analysis plan is reported in the article, and the supplied material does not provide sufficient dated registration information to verify that the exact Agatston-score analysis was finalized before unblinded data were available. The study generated numerous potentially eligible results, including five reconstruction intervals (50%, 55%, 60%, 65%, and 70% of the R–R interval), two reconstruction increments, two collimation groups, Agatston and volumetric scores, coefficients of variation, maximum values, and percentile-based risk classifications.
+
+   The publication reports results for the stated reconstruction intervals and increments, and there is no clear evidence that a specific Agatston result was selected because it was statistically significant or favourable. Nevertheless, in the absence of a prospectively finalized analysis plan or sufficiently detailed registration record, it is not possible to exclude selection among multiple time points, outcome metrics, or analytic approaches. This warrants some concerns under RoB 2.

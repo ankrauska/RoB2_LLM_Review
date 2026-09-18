@@ -1,0 +1,103 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 24840638
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+**Article ID**: Romanowich & Lamb, 2015 (implied author/year based on content - "The Effects of Percentile versus Fixed Criterion Schedules on Smoking with Equal Incentive Magnitude for Initial Abstinence")
+**Outcome Name**: smoking abstinence by breath CO sample < 3 ppm
+**Registration number**: Not reported in the article
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (90% Confidence)
+Reason: The article explicitly describes a block randomization method: "Random assignment to one of the three groups was accomplished by randomly assigning 2 participants to the percentile group, 2 to the fixed criterion group and 1 to the random incentives group from each group of 5 participants completing intake." This is a clear description of block randomization.
+
+**1.2**: NI (95% Confidence)
+Reason: The article provides no information about allocation concealment (e.g., no mention of central allocation, sequentially numbered containers, or opaque envelopes). No safeguards against foreknowledge of assignment are described.
+
+**1.3**: Y (90% Confidence)
+Reason: The article states groups were similar on all intake measures "except for the proportion of participants attending Vocational/Technical School/Community College. A higher proportion of percentile incentive participants achieved this level of education, relative to fixed criterion participants (χ2 = 8.46, p < 0.01)." This is a statistically significant baseline difference.
+
+**Result of Domain 1**: High risk (90% Confidence)
+Reason: Per the algorithm, when 1.2 = NI and 1.3 = Y, the result is "High risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (90% Confidence)
+Reason: "Immediately after randomization all participants were given a brief description of the incentive contingency that they were randomized into." Participants clearly knew their intervention assignment (percentile, fixed, or random schedule descriptions were explicitly explained to them).
+
+**2.2**: Y (90% Confidence)
+Reason: Study staff administering incentives necessarily knew participant group assignment, as the incentive-delivery algorithm differed by group and required staff application in real time.
+
+**2.3**: NI (70% Confidence)
+Reason: No information is provided regarding non-protocol interventions (e.g., concurrent pharmacotherapy, other cessation aids) and whether these were balanced across groups.
+
+**2.4**: Y (85% Confidence)
+Reason: Average number of delivered breath CO samples out of 60 possible was 42 (30% missed), 40 (33% missed), and 52 (13% missed) for percentile, fixed criterion, and random groups respectively—well over 10% non-implementation/missed visits in at least two of the three groups.
+
+**2.5**: Y (75% Confidence)
+Reason: Given the high proportion of missed visits (up to 33% in the fixed criterion group), a substantial proportion of participants did not adhere fully to the assigned visit/intervention schedule.
+
+**2.6**: N (80% Confidence)
+Reason: The analysis included all randomized participants in the primary comparison (proportion delivering ≥1 abstinent sample, based on full randomized samples: 36, 40, 18 = 94), consistent with an intention-to-treat-type analysis rather than methods designed to estimate adherence-specific effects (e.g., instrumental variable or inverse probability weighting).
+
+**Result of Domain 2**: High risk (85% Confidence)
+Reason: 2.1/2.2 = Y, 2.3 = NI, 2.6 = N → per the algorithm, this combination yields "High risk."
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (90% Confidence)
+Reason: This is a binary outcome (proportion achieving at least one abstinent breath CO sample). All 94 randomized participants (36 percentile, 40 fixed criterion, 18 random) were included in this primary outcome analysis, as reported in the Results section ("64% (23 of 36) and 63% (25 of 40)... Forty-four percent (8 of 18)"). No participants were excluded from this specific analysis.
+
+**Result of Domain 3**: Low risk (90% Confidence)
+Reason: Since 3.1 = Y, per the algorithm, Domain 3 is rated "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90% Confidence)
+Reason: Breath CO measurement via Vitalograph CO monitors is a well-validated, objective, and reliable method for detecting smoking abstinence, consistent with prior literature (Javors et al., 2005).
+
+**4.2**: N (90% Confidence)
+Reason: All groups used identical measurement procedures, same CO monitor, same threshold (<3 ppm), and same visit schedule (Monday–Friday) — no differential ascertainment methods between groups.
+
+**4.3**: Y (85% Confidence)
+Reason: This outcome is not patient-reported; it is objectively measured by staff/technicians who administered the breath test. Since staff were unblinded (aware of group assignment, as they administered group-specific incentive procedures based on the reading), outcome assessors were aware of participants' assigned intervention.
+
+**4.4**: N (90% Confidence)
+Reason: Breath CO level is an objective biochemical measure, not subject to interpretation bias by the assessor or participant self-report bias.
+
+**Result of Domain 4**: Low risk (88% Confidence)
+Reason: 4.1 = N, 4.2 = N, 4.3 = Y, 4.4 = N → per the algorithm ("4.1 = N/PN/NI, 4.2 = N/PN, 4.3 = Y/PY/NI, 4.4 = N/PN → Low risk"), Domain 4 is "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85% Confidence)
+Reason: No trial registration number or pre-specified analysis plan is mentioned in the article; per the instructions, absence of registration/protocol information defaults to NI.
+
+**5.2**: N (80% Confidence)
+Reason: The outcome (breath CO < 3 ppm abstinence) was consistently and singularly defined throughout the Methods and Results sections; there is no evidence of multiple competing outcome definitions or thresholds being tested and selectively reported.
+
+**5.3**: N (75% Confidence)
+Reason: The statistical analyses described in the Methods (Kruskal-Wallis, Mann-Whitney, chi-square) match those reported in Results; there is no clear evidence of multiple eligible analyses with selective reporting.
+
+**Result of Domain 5**: Some concerns (80% Confidence)
+Reason: Per the algorithm, when 5.2 = N, 5.3 = N, and 5.1 = NI, the result is "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment Result for the Article
+
+**Overall Result**: **High Risk** (90% Confidence)
+
+Reason: Per the algorithm, since at least one domain (Domain 1 and Domain 2) is rated "High risk," the overall risk of bias for this outcome is "High Risk," regardless of the ratings in other domains.

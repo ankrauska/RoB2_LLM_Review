@@ -1,0 +1,58 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 11571068
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Risk of bias arising from the randomization process: some concerns**  
+   - The report states that 61 women were assigned using *random-number tables*. This is an acceptable method for generating an unpredictable random sequence.  
+   - However, there is no description of **allocation concealment**: who held the random-number table, whether treatment assignment was obtained only after enrolment and baseline assessment, or whether recruiters/therapists could foresee the next allocation.  
+   - Baseline demographic and outcome comparisons showed no statistically significant differences between groups. This is mildly reassuring, but with approximately 20 participants per group these tests have little ability to detect important imbalances. Notably, baseline GHQ scores differed numerically (supportive counselling 26.6; stress management 34.8; AFCT 25.3), and baseline mean drinking also varied greatly across groups.  
+   - Neither participants nor therapists could realistically have been blinded to treatment assignment. Lack of blinding itself is not necessarily a defect in sequence generation, but it makes concealment at allocation particularly important and the report supplies no evidence of it.  
+   - **Judgement:** some concerns, because random sequence generation is adequately described but allocation concealment is not.
+
+2. **Risk of bias due to deviations from the intended interventions: high risk**  
+   - The intended comparison was between supportive counselling, stress management, and alcohol-focused couples therapy (AFCT). However, AFCT was not delivered as assigned for most women allocated to it. Only **6 of the 21 women assigned to AFCT had husbands who engaged in treatment**.  
+   - Critically, where the husband declined participation, “the woman received the stress management treatment.” Thus, approximately 15/21 participants allocated to AFCT appear to have received stress management rather than the distinctive couples-based intervention to which they were randomized. This is not a minor adherence problem; it materially changes the intervention contrast.  
+   - The study therefore primarily estimates the consequence of being *offered* AFCT, conditional on husband engagement, rather than the effect of actually receiving AFCT versus the other treatments. The manuscript does not clearly specify this estimand.  
+   - There is no evidence that analyses appropriately addressed these substantial deviations—for example, through a clearly specified intention-to-treat analysis of assignment to treatment offer, with all randomized participants included, or a defensible analysis of treatment received. The repeated-measures analyses appear to use only participants with available data.  
+   - The intervention required active behavioural changes by the women, including changing antecedents and consequences of the partner’s drinking. The authors explicitly acknowledge that adherence to these recommendations was **not formally assessed**. Therefore, fidelity of participant implementation, particularly in stress management and de facto stress management within AFCT, is unknown.  
+   - Although treatment sessions were videotaped and supervised, which supports therapist adherence to manuals, this does not remedy the major departure from assigned AFCT or unmeasured adherence to behavioural components.  
+   - **Judgement:** high risk, because the AFCT arm was substantially contaminated by stress management, engagement depended on a husband’s post-randomization decision, and the analyses do not adequately deal with these deviations.
+
+3. **Risk of bias due to missing outcome data: high risk**  
+   - Of 61 randomized women, only 47 completed treatment and 44 completers provided 6-month follow-up data. This represents attrition of approximately **22% during treatment**, with further incompleteness for individual measures and analyses.  
+   - The report states that participant numbers varied across analyses because not all participants provided all measures at each assessment. The final repeated-measures analyses for the women’s burden/distress outcomes evidently involved substantially fewer than 61 participants: the RSS analysis reports degrees of freedom consistent with roughly 42 analysed participants, and the GHQ analysis with roughly 40.  
+   - Missingness is highly plausibly related to outcome. Most women who withdrew reportedly had **left their partners** soon after entering the programme. Separation may be associated with markedly different subsequent burden and psychological distress—either improvement following escape from an abusive/distressing relationship or acute worsening during separation. Thus, missingness is not plausibly unrelated to the unobserved endpoint.  
+   - All women who withdrew declined further assessment. Consequently, the investigators had no outcome information with which to evaluate or mitigate the likely informative nature of the missing data.  
+   - The authors acknowledge that ending the relationship may have constituted success for some women, yet their analysis effectively treats withdrawal and absence of data as loss from analysis. This could distort both overall treatment effects and between-group comparisons.  
+   - No imputation, sensitivity analysis, inverse-probability method, or other analysis addressing missing-not-at-random outcome data is reported. The statement that dropout numbers did not differ significantly by treatment group is inadequate, particularly given low power and because equal attrition does not establish unbiased estimation.  
+   - **Judgement:** high risk, because missing outcome data are substantial, plausibly outcome-related, and not adequately addressed.
+
+4. **Risk of bias in measurement of the outcome: high risk for each women’s burden/distress outcome**
+
+   **4a. Relative Stress Scale (RSS; women’s burden): high risk**  
+   - The RSS is a self-administered 15-item measure of personal distress, life upset, and negative feelings toward the partner. It is directly relevant to the endpoint of women’s burden and distress.  
+   - The measure has reported test–retest reliability, but reliability does not protect against bias arising from knowledge of treatment allocation.  
+   - Women knew which intervention they were receiving. The treatments were conspicuously different: supportive non-directive counselling versus structured stress management/cognitive restructuring versus attempted couples therapy.  
+   - The RSS measures subjective perceptions and feelings. Such outcomes are especially susceptible to expectancy effects, demand characteristics, therapeutic allegiance, and reporting changes induced by cognitive restructuring. In particular, stress management explicitly aimed to alter women’s appraisals, self-blame, and emotional responses; these may change RSS responses independently of—or inseparably from—changes in underlying burden.  
+   - No blinded outcome assessor, independent interviewer, or objective corroborating measure of women’s burden was used.  
+   - **Judgement:** high risk, because an unblinded participant-reported subjective outcome was measured after interventions designed specifically to modify perceptions and distress.
+
+   **4b. General Health Questionnaire (GHQ; women’s psychological distress): high risk**  
+   - The GHQ is a 28-item self-report screening measure of psychological symptoms/distress. It is a relevant component of the endpoint. Its established reliability and validity do not remove the risk of bias from unblinded self-report.  
+   - Participants necessarily knew their treatment condition, and therapists were also unblinded. No independent blinded assessment of psychological state was reported.  
+   - The intervention content—especially cognitive restructuring, supportive therapy, and encouragement of pleasurable activities—was designed to influence mood, symptom interpretation, and reporting of psychological distress. This makes differential reporting bias particularly plausible.  
+   - The GHQ is not an objective clinical outcome adjudicated independently of treatment knowledge; it depends on participants’ subjective reports over the assessment period.  
+   - **Judgement:** high risk, because this is an unblinded participant-reported subjective outcome and the interventions could directly influence symptom appraisal and reporting.
+
+5. **Risk of bias in selection of the reported result: some concerns**  
+   - No trial registration, protocol, statistical analysis plan, or prospectively dated specification of primary outcome, primary time point, and analytic method is provided. The manuscript therefore cannot establish that the reported RSS and GHQ analyses were selected before examination of the data.  
+   - The article identifies women’s burden/distress, male drinking, and relationship functioning as “primary measures,” and it names RSS and GHQ as measures of burden/distress. This provides some reassurance that these outcomes were not introduced post hoc.  
+   - Nevertheless, there were multiple outcomes, multiple time points (pre-treatment, post-treatment, and 6-month follow-up), several treatment contrasts, omnibus effects, interactions, ANCOVA for at least one outcome, and post hoc “reliable change”/one-standard-deviation responder analyses. This multiplicity permits selective emphasis.  
+   - The manuscript places interpretive weight on trends and selected subgroup-style statements—for example, the claim that 74% of women completing behavioural treatments had reliable RSS reductions at follow-up—despite the absence of clearly prespecified responder analyses and despite exclusion of women with missing follow-up data.  
+   - The reported analyses also appear to be complete-case repeated-measures ANOVAs, while participant numbers differ between outcomes and time points. It is unclear whether this analytic approach was prespecified or selected after seeing the pattern of missing data and results.  
+   - **Judgement:** some concerns, because the outcomes were described in the methods but no protocol/registration is available and the extensive multiplicity and post hoc emphasis leave scope for selective reporting.
+
+6. **Overall rating: high risk of bias**  
+   The overall rating is **high risk of bias**. The principal reasons are: (1) major deviations from the assigned AFCT intervention, because most women allocated to AFCT did not receive couples therapy and instead received stress management; (2) substantial, likely informative missing outcome data, especially among women who separated from their partners; and (3) high risk of bias in measurement of both women’s burden (RSS) and psychological distress (GHQ), which were unblinded participant-reported subjective outcomes. These problems substantially lower confidence in estimates of the effect of the randomized treatment strategies on women’s burden and distress.

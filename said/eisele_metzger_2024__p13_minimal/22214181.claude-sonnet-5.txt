@@ -1,0 +1,44 @@
+PROMPT eisele_metzger_2024::p13_minimal
+PAPER  PMID 22214181
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: List of Attributions Task (LAT)
+## Harris & Carney - "Can We Modify Maladaptive Attributions for Fatigue?"
+
+---
+
+**1. Risk of bias arising from the randomization process: Some concerns**
+
+Justification: Randomization was performed using a Microsoft Excel random number generator, which is an acceptable method for generating a random sequence. Baseline comparisons showed no significant differences between groups on demographics, insomnia, fatigue, depression, or baseline LAT scores, which is reassuring. However, no information is provided regarding allocation concealment — it is unclear whether the sequence was concealed from the investigator prior to each participant's arrival, and the same investigator who generated the randomization list also personally delivered the intervention to participants. Additionally, 5 participants were excluded from analysis after enrollment (2 for age, 1 for incomplete demographics, 2 for unscorable outcome measures) — it is not entirely clear at what point exclusion occurred relative to randomization, raising a small possibility that this affected group balance. Given the absence of concealment details, I rate this "some concerns" rather than "low risk."
+
+---
+
+**2. Risk of bias due to deviations from the intended interventions: Some concerns**
+
+Justification: This was an unblinded study by design — participants and the investigator delivering the intervention were necessarily aware of group assignment, since the content of the FI and control information sheets was, by definition, different and read aloud/alongside participants by the same investigator. There is no mention of a standardized script, fidelity checks, or independent verification that the intervention was delivered consistently across conditions and participants. The personal, face-to-face delivery by an unblinded investigator introduces risk of subtle differential engagement, tone, or emphasis between conditions that could affect the outcome. There is no evidence of non-adherence or contamination, but the lack of fidelity safeguards and the unblinded delivery constitute a moderate concern.
+
+---
+
+**3. Risk of bias due to missing outcome data: Some concerns**
+
+Justification: Of the participants who were tested, 5 were excluded from the final analytic sample. Notably, 2 participants were excluded because they "did not complete the outcome measures in a way that would allow us to obtain a total score" — this is missing data directly on the primary outcome (LAT) of interest. Although this represents a small proportion of the sample, no information is given as to whether these exclusions were balanced across groups, nor is there any sensitivity analysis (e.g., intention-to-treat) reported. This lack of transparency about the pattern of missingness relative to group assignment introduces some risk of bias.
+
+---
+
+**4. Risk of bias in measurement of the outcome — List of Attributions Task (LAT): High risk**
+
+Justification: The LAT is a participant-generated, self-report cognitive outcome (participants freely list, rank, and rate their own attributions for fatigue). This is inherently a subjective outcome. Critically, participants were NOT blinded to their intervention condition — the FI group had just been explicitly presented with a list of non-sleep-related causes of fatigue immediately prior to completing the post-intervention LAT, while the control group received unrelated sleep-stage information. This creates a substantial and obvious risk of demand characteristics and priming effects directly shaping the primary outcome, a limitation the authors themselves acknowledge in the discussion. While the *coding* of open-ended responses into sleep-related/non-sleep-related categories was performed by a blinded rater (mitigating rater/classification bias), this does not address the more fundamental problem: the content that participants chose to generate was highly susceptible to influence by the immediately preceding, unblinded information session. This is a clear case of an unblinded, participant-driven subjective outcome assessed shortly after an unblinded intervention explicitly priming the expected response direction. This justifies a "high risk" rating for this outcome domain specifically.
+
+---
+
+**5. Risk of bias in selection of the reported result: Some concerns**
+
+Justification: No trial registration, public protocol, or pre-registered analysis plan is referenced anywhere in the manuscript. The three LAT-derived scores (NumberAttributionScore, FrequencyScore, ImportanceScore) are described in the Methods as pre-specified outcome variables tied to explicit a priori hypotheses, and all three are reported in the Results with consistent, positive findings — there is no evidence of selective outcome reporting among these three measures. However, in the absence of a registered protocol, it cannot be verified whether other outcome variables, analyses, or definitions were tried and not reported, nor whether the specific scoring algorithms (e.g., rank-to-score conversion) were decided a priori or post hoc based on the data. This lack of independent verifiability warrants "some concerns" rather than "low risk."
+
+---
+
+## 6. Overall Rating: **High risk**
+
+**Justification:** While randomization, missing data, and reporting selection each raise only "some concerns," the measurement of the primary LAT outcome is rated "high risk" due to the combination of an unblinded, participant-generated subjective outcome measured immediately following an unblinded psychoeducational manipulation explicitly designed to shift the very construct being measured. This represents a substantial and specific mechanism for bias (demand characteristics/priming) that directly threatens the internal validity of the primary results, which — combined with the additional "some concerns" ratings in three other domains — is sufficient to lower overall confidence in the reported effect to "high risk of bias."

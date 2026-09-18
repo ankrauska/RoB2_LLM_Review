@@ -1,0 +1,54 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 22715910
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Outcome: Inhaler Use Technique
+
+---
+
+### 1. Bias arising from the randomization process: **Some concerns**
+
+**a. Judgement:** The trial is described as randomized, but no details are provided about the method of sequence generation or allocation concealment. Additionally, baseline analyses were reported to show no significant differences between groups, but this does not fully offset the lack of methodological detail.
+
+**b. Rationale:** The article states: "Eligible subjects were randomly assigned to one of the three experimental groups... and one comparison group." No further information is given regarding how the randomization sequence was generated (e.g., computer-generated, random number tables) or how allocation was concealed from those enrolling participants. The paper does state: "The initial pretest analyses showed no statistically significant differences among the four study groups and also between gender and ethnic groups in relation to the outcomes of interest," which is reassuring regarding baseline balance. However, since sequence generation (signalling question 1.1) and allocation concealment (signalling question 1.2) both yield "No information," and there is no evidence of baseline imbalance, this maps to a judgement of **Some concerns** per the RoB2 algorithm (No information on both randomization and concealment defaults to "Some concerns").
+
+---
+
+### 2. Deviations from intended intervention (effect of assignment to intervention): **Some concerns**
+
+**a. Judgement:** Participants were aware of their group assignment (single-blind, participant-level masking noted in the registry), which raises the potential for trial-context-driven deviations. However, there is no clear evidence that deviations occurred that differentially affected the inhaler-technique outcome, and the analysis appears to follow ITT-like principles despite some attrition.
+
+**b. Rationale:** The protocol registry states masking as "SINGLE" with "whoMasked: PARTICIPANT," though for this type of behavioral/educational intervention true blinding of participants was not really feasible—patients necessarily knew whether they watched a video or read a pamphlet. The article does not report any evidence of non-protocol interventions, contamination between groups, or trial-context effects influencing inhaler technique specifically. However, of the 92 enrolled, only 85 completed the study (Figure 1 notes "3 were excluded and 4 discontinued"), and there is no explicit statement that all randomized participants were included in the reported inhaler-technique analysis using ITT principles — this is somewhat unclear ("Analyses were completed using SAS..." with df consistent with ~75-79 participants rather than 92). Because participants could not be blinded (inherent to the intervention type) but there is no indication of trial-context-driven deviations affecting this specific outcome, and analysis approach is not entirely clear, this domain is judged as **Some concerns**.
+
+---
+
+### 3. Missing outcome data: **Some concerns**
+
+**a. Judgement:** Of 92 enrolled participants, only 85 completed the study, representing missingness of ~7.6%, with an additional discrepancy where analyses report degrees of freedom (df=1,71 or 1,76) suggesting further reduced samples (as few as 73-78 participants) for the inhaler-technique outcome, without full explanation of the reasons for these additional exclusions.
+
+**b. Rationale:** The article states: "For the intervention, we enrolled 92 adult asthma patients... of whom 85 completed the study." Figure 1 further notes "3 were excluded and 4 discontinued intervention from the educational intervention group" but does not report reasons for these exclusions/discontinuations or whether missingness differed by study arm. Analyses for inhaler use technique report varying degrees of freedom (e.g., "df = 1 and 71" and "df = 1 and 76"), which suggests that between 73-78 of the 85 (or 92) participants contributed data for the different subgroup comparisons — this discrepancy is not explained. There is no discussion of whether missingness was related to the true value of the outcome, nor sensitivity analyses to address this. Given the lack of clarity on reasons for missing data and the inconsistent sample sizes in different analyses without explanation, this raises "Some concerns" rather than "Low risk," as it is not possible to confirm that missingness could not have depended on the true value of the outcome.
+
+---
+
+### 4. Measurement of the outcome: **Some concerns**
+
+**a. Judgement:** The outcome assessors (interviewers/facilitators) were reported to be unaware of the study hypothesis, but they were not blinded to which intervention/study arm the participant had received (since they conducted the interview immediately after the participant viewed the video or read the pamphlet). Since inhaler technique assessment involves some judgement (a 9-step observational checklist), and assessors could plausibly have been aware of the participant's group assignment, this creates some risk of bias.
+
+**b. Rationale:** The article states: "The interviews were facilitated by bilingual and bicultural experienced moderators from the same community who were not aware of the study hypothesis." However, this indicates the moderators were unaware of the *study hypothesis*, not necessarily unaware of *which intervention* the participant received, since they were present or aware that the participant had just watched a specific video or received a pamphlet. Additionally, it states: "The assessment of the inhaler techniques during the face-to-face interviews was judged by two observers (the interviewer and the research coordinator)," but no blinding of these two observers to intervention assignment is described. Because inhaler-technique assessment involves observer judgement (a 9-point checklist), and the outcome assessors were plausibly aware of intervention status, but there is no clear evidence that this awareness *actually influenced* the assessment (e.g., no differential measurement methods were used, and the checklist is objective/standardized), this is judged as **Some concerns** rather than "High risk."
+
+---
+
+### 5. Selective reporting: **Some concerns**
+
+**a. Judgement:** The trial registry (NCT01474928) lists the primary outcome as "medication adherence" and does not explicitly pre-specify "inhaler use technique" as a primary or secondary outcome in the outcomes module. Additionally, the registered primary outcome time frame is listed as "one year," while the published article reports results at 3-month follow-up, indicating a discrepancy between the pre-specified analysis plan and the reported result.
+
+**b. Rationale:** The ClinicalTrials.gov protocol record specifies the primary outcome as: "medication adherence... Patients' understanding of physicians' instructions on how to follow their treatment regimen and regular use of inhalers were measured," with a "timeFrame: on[e] year." However, the published article reports the primary results based on "pretest and 3-month post-intervention follow-up data," and inhaler use technique (a distinct outcome from patient-reported medication adherence) is presented as a headline result without being explicitly named in the registered primary or secondary outcomes. The registry's secondary outcomes ("Patients' beliefs, perceptions, and attitudes," "Educational materials development") also do not correspond precisely to "inhaler use technique" as reported. Furthermore, the study registration was submitted in November 2011, and results were published (2012), raising the possibility that the registry entry does not represent a plan finalized *before* unblinded outcome data were available, since registration occurred years after study initiation (2009-08). There is no accessible detailed pre-specified statistical analysis plan for how the inhaler-technique outcome (a checklist score) would be analyzed (e.g., as a summary score vs. individual steps), and the reported analyses of subgroups (age, gender, ethnicity, education) do not appear to be pre-specified. Given the mismatch between registered outcomes/timeframes and reported outcomes/timeframes, and lack of clarity on pre-specification of subgroup and covariate-adjusted analyses, this domain is judged as **Some concerns**.
+
+---
+
+## Overall Risk of Bias Judgement: **High risk of bias**
+
+**Rationale:** Although no single domain was judged as "High risk," "Some concerns" were identified in **all five domains** (randomization process, deviations from intended intervention, missing outcome data, measurement of the outcome, and selective reporting). Per RoB 2.0 guidance (Table 1), "'Some concerns' in multiple domains may lead the review authors to decide on an overall judgement of 'High' risk of bias for that outcome," particularly because the accumulation of concerns across randomization, missing data (with unexplained sample size discrepancies), outcome measurement (lack of clear blinding of assessors to intervention status for a judgement-based outcome), and selective reporting (discrepancy with trial registration) collectively and substantially lower confidence in the reported result for Inhaler Use Technique.

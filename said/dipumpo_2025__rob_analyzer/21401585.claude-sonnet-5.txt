@@ -1,0 +1,74 @@
+PROMPT dipumpo_2025::rob_analyzer
+PAPER  PMID 21401585
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# ROB 2 Assessment Report
+
+**Study:** Sakzewski et al. (2011) — Randomized trial of CIMT vs bimanual training (BIM) on activity outcomes for children with congenital hemiplegia (INCITE trial)
+
+**Effect of interest:** Effect of assignment to intervention (intention-to-treat)
+**Outcomes assessed:** Primary activity outcomes — MUUL (unimanual capacity) and AHA (bimanual performance) at 26 weeks
+
+---
+
+## 1. Bias arising from the randomization process
+
+**Judgment: Low risk of bias**
+
+**Motivation:** Sequence generation was adequately random: "children were randomized to pairs using a computer generated list of random numbers." Allocation concealment was adequate: "concealed envelopes opened by non-study personnel." Furthermore, the trial employed a matched-pairs design (matching on age, sex, side of hemiplegia, and MUUL baseline scores within 10%), which further reduces the risk of confounding from baseline imbalance. Table I confirms no meaningful baseline differences between groups across demographic, classification, and outcome measures (small imbalance in side of hemiplegia only, attributable to matching constraints, and not indicative of a randomization failure). All three criteria for low risk (adequate concealment, random sequence, no concerning baseline imbalance) are satisfied.
+
+---
+
+## 2. Bias due to deviations from intended interventions (effect of assignment to intervention)
+
+**Judgment: Some concerns**
+
+**Motivation:**
+- Participants, carers, and people delivering the intervention (therapists) were **not blinded** — this is explicitly required by the nature of CIMT (glove/constraint) versus BIM training, and is unavoidable given the intervention type. The four therapists who delivered outcome assessment sessions were also stated to be "aware of group allocation" (though a separate masked set of raters scored the videos — this is addressed in Domain 4).
+- Because participants/personnel were aware of allocation, deviations from intended intervention arising from trial context must be considered. There is no explicit evidence reported of trial-context deviations (e.g., contamination, non-protocol co-interventions) that differentially affected outcomes. The authors report "no changes to pre-existing therapy" during follow-up except one BoNT-A injection in a single CIMT participant between 3 and 26 weeks, which appears balanced/negligible and unlikely to have substantially biased results.
+- Analysis was conducted on an intention-to-treat basis per CONSORT guidelines, using all randomized participants with GEE modelling — this is an appropriate analytic approach for estimating the effect of assignment to intervention.
+- However, because lack of blinding of participants/personnel is inherent to this comparison and there is limited explicit reporting/exploration of whether unblinding influenced delivery of intervention or ancillary behaviours (e.g., therapist enthusiasm, motivation effects), some uncertainty remains about whether deviations related to the trial context occurred and affected the outcome. This is not sufficient to raise the judgment to "high," since there is no concrete evidence of impactful, unbalanced deviations, but the lack of detailed reporting warrants "Some concerns" rather than "Low."
+
+**Limitation noted:** The article does not explicitly discuss whether unblinding of therapists/participants led to differential non-protocol behaviors; this ambiguity is treated conservatively as "Some concerns."
+
+---
+
+## 3. Bias due to missing outcome data
+
+**Judgment: Low risk of bias**
+
+**Motivation:** Of 64 randomized children, 62 received their allocated intervention, and only one dropout occurred (BIM group, day 2, due to pre-existing emotional/behavioural difficulties unrelated to the outcome or intervention effects). The CONSORT flow diagram (Figure 1) documents recruitment, allocation and follow-up at 3 and 26 weeks. Compliance was reported as 100% for CIMT and 97% for BIM. The proportion of missing data is very small and the reported reason for the single dropout is clearly unrelated to the outcome's true value (pre-existing behavioural issue, not related to treatment response). Therefore, missing outcome data are very unlikely to have introduced bias into the effect estimates for either primary outcome (MUUL, AHA).
+
+---
+
+## 4. Bias in measurement of the outcome
+
+**Judgment: Low risk of bias**
+
+**Motivation:**
+- The outcome measurement methods (MUUL, AHA) are appropriate, validated tools for the population, and the authors report acceptable intra-rater reliability data for the MUUL (ICC 0.93).
+- Measurement/ascertainment methods were identical and comparable between groups (same videotaped assessment protocol, same timepoints, same instruments for both arms).
+- Critically, although the therapists administering outcomes were aware of group allocation, "the primary outcome measures were videotaped and scored in random order by trained occupational therapists masked to group allocation." This effectively blinds the actual outcome assessors (raters) who generated the scores used in the analysis.
+- Both MUUL and AHA are observer-reported outcomes involving some judgement (based on video-scored task performance), but since assessors were blinded and scoring was randomized, the risk that assessment was influenced by knowledge of intervention received is low.
+
+---
+
+## 5. Bias in selection of the reported result
+
+**Judgment: Low risk of bias**
+
+**Motivation:** The trial was prospectively registered/protocol-published prior to reporting of results (reference is made to an a priori published trial protocol: Boyd et al., BMC Neurol 2010, "INCITE: a randomised trial comparing constraint induced movement therapy and bimanual training in children with congenital hemiplegia"). The primary outcomes (MUUL and AHA) specified in the Methods correspond exactly to the outcomes reported in the Results, with pre-specified analysis time points (baseline, 3, 26 weeks) and a pre-specified statistical approach (GEE modelling with covariates). There is no evidence of selective reporting among multiple candidate scales, definitions, or analysis methods — a single clearly defined analysis approach was applied consistently and fully reported (including non-significant results, e.g., secondary outcomes such as JTTHF, grip strength, sensory measures), which further supports the absence of selective outcome/analysis reporting.
+
+---
+
+## 6. Overall Risk-of-Bias Judgement
+
+**Overall Judgment: Some concerns**
+
+**Rationale:** Per the RoB 2 algorithm, four of the five domains (Randomization process, Missing outcome data, Measurement of the outcome, Selection of the reported result) were judged at **low risk of bias**. However, Domain 2 (Deviations from intended interventions) was judged as **"Some concerns"** due to the unavoidable and inherent lack of blinding of participants and treatment-delivering personnel in this comparison of two active, distinguishable physical interventions (CIMT glove vs. BIM training), combined with limited explicit reporting on whether this lack of blinding led to trial-context-related deviations that could have differentially influenced outcomes.
+
+Per RoB 2 rules: since the study raises "some concerns" in at least one domain, but is not judged to be at high risk of bias in any domain, the overall judgement for the primary result (MUUL and AHA at 26 weeks) is **"Some concerns."**
+
+**Noted limitation/ambiguity for transparency:** The precise impact of unblinded personnel/participants on delivery fidelity and behavioural engagement (e.g., differential motivation effects between CIMT and BIM groups, as hinted at qualitatively in the Discussion — "Motivation to maintain continual bimanual use was more challenging in the BIM training group") is not quantitatively assessed in the paper, and this ambiguity is reported here as a limitation of the assessment rather than assumed to bias the result in either direction.

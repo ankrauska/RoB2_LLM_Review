@@ -1,0 +1,80 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 16763088
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment: RoB 2.0
+## Trial: Self-Etching Primer vs Conventional Etch and Primer for Orthodontic Bracket Bond Failure
+
+**Outcome assessed:** Bracket failure rate (12-month period)
+**Effect of interest:** Effect of assignment to intervention
+
+---
+
+## 1. Bias due to randomization: **Some concerns**
+
+**a. Judgement:** Some concerns
+
+**b. Rationale:**
+- **Sequence generation:** The trial used block randomization: "Randomization for allocation of either of the two etch and primer systems to the upper right quadrant was undertaken using a block randomization method as described by Roberts and Torgerson (1998)." This is an adequate random sequence generation method → **Yes** to signalling question 1.1.
+- **Allocation concealment:** "The operators were unaware of the assignment until the patient was entered into the trial." This suggests concealment was likely adequate, though details on the specific mechanism (e.g., sealed envelopes, central randomization) are not fully described. However, a potential concern arises because the block randomization method described ("any 10 consecutive subjects will contain five subjects...") uses a fixed block size of 10, which is disclosed in the article. If this fixed block size was known to operators, predictability of the last allocations within each block could compromise concealment → judged as **Probably yes** with some uncertainty (NI-leaning toward some concern).
+- **Baseline imbalance:** Table 1 shows a notable gender imbalance (33.3% male vs 66.6% female) in the overall sample, but this is a patient-level characteristic; the split-mouth cross-quadrant design means intervention was randomized within-patient, not between patients, largely mitigating concern about between-group prognostic imbalance for the primary comparison. No evidence of imbalance in key prognostic factors between the SEP/conventional quadrants is presented, but limited baseline comparison data are given for the split-mouth arms specifically.
+- Given the combination of (i) adequate random sequence generation, (ii) reasonably described but not fully detailed concealment (fixed block size of 10 known/inferable), and (iii) no evidence of baseline imbalance problems, this domain is judged as **Some concerns** rather than Low risk, primarily due to the predictability risk introduced by a disclosed, fixed block size of 10 in a split-mouth design where quadrant assignment could potentially be anticipated by operators after a few patients.
+
+---
+
+## 2. Deviations from intended intervention (effect of assignment to intervention): **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- **Signalling Q2.1 (participants aware):** "The patients were unaware which system had been used on each side of the mouth" → **No**.
+- **Signalling Q2.2 (personnel aware):** "it was not possible to blind the operators to the type of system being used" → **Yes**, personnel were aware, due to differing application steps between SEP and conventional etch/primer.
+- **Signalling Q2.3 (deviations arising from trial context):** There is no indication that lack of blinding of the operators led to any deviations from the intended intervention protocol that were inconsistent with the trial design. The interventions were mechanical/chemical procedures applied by the operator directly (etching/priming/bonding) rather than behaviors susceptible to participant- or recruitment-driven contamination. There is no evidence that operators applied non-protocol interventions or failed to implement the protocol as intended because of awareness of the allocation. The procedures were described as standardized ("according to the manufacturers' instructions") and applied identically regardless of assignment awareness → **No**.
+- **Signalling Q2.6 (appropriate analysis):** All 661 bonded brackets across all 39 patients (including the participant who withdrew after 7 months, whose data were retained and included in analysis: "His data was still included in the analysis") were analysed according to assignment, consistent with an intention-to-treat approach. No participants or brackets appear to have been excluded from analysis on the basis of protocol deviation → **Yes**.
+- Because personnel were unblinded but there is no evidence that this led to deviations from the intended intervention arising from the trial context that affected the outcome, and an appropriate (ITT-consistent) analysis was used, this domain is judged **Low risk of bias**.
+
+---
+
+## 3. Missing outcome data: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- **Signalling Q3.1:** Outcome data were available for all, or nearly all, randomized participants/brackets. The article states: "All patients were observed for the entire 12-month period apart from one 13-year-old male who moved to another city after 7 months of observation, during which time no bracket failures occurred. His data was still included in the analysis, as it was considered that it still provided useful information on bracket survival rates."
+- This represents only 1 of 39 patients with incomplete follow-up (< 3% of the sample), and his data were retained via survival analysis methods (Kaplan-Meier), which appropriately handle censored data.
+- All 661 brackets appear accounted for in the results (Tables 2–4, Figures 1–2), with complete reporting of failure rates and locations.
+- Given the very small amount of missing/censored data, and that it was handled appropriately using survival analysis techniques designed to handle censoring, this is judged **Low risk of bias**.
+
+---
+
+## 4. Measurement of the outcome: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- **Signalling Q4.1 (inappropriate method?):** Bond failure is an objective, unambiguous outcome (bracket detached from tooth) — the method of measurement (clinical observation of bracket presence/absence at review appointments) is appropriate and sensitive to detect the event of interest → **No**.
+- **Signalling Q4.2 (differed between groups?):** Both SEP and conventional groups were monitored using the same review schedule and criteria over the identical 12-month period, with no indication that ascertainment procedures differed by group → **No**.
+- **Signalling Q4.3 (assessor aware of intervention?):** While operators/personnel were not blinded during bonding, bracket failure (the outcome) is essentially an objective, binary, easily verified clinical event (bond intact vs failed) recorded at review visits, similar to "observer-reported outcomes not involving judgement" (e.g., analogous to mortality). Even though awareness of allocation existed, this is highly unlikely to influence whether a bracket has physically debonded.
+- **Signalling Q4.4/4.5:** Given the objective, mechanical nature of the outcome (a bracket is either bonded to the tooth or not), knowledge of intervention assignment is very unlikely to have influenced the assessment of this specific outcome (bracket failure), even if the mode of failure or ARI scoring could theoretically involve more subjectivity (this is a secondary outcome, not the primary failure-rate outcome).
+- Overall, this domain is judged as **Low risk of bias** because the outcome (whether a bracket has failed) does not require significant judgement and is not likely influenced by lack of blinding.
+
+---
+
+## 5. Selective reporting: **Low risk of bias**
+
+**a. Judgement:** Low risk of bias
+
+**b. Rationale:**
+- The published trial pre-specifies the primary outcome (bracket bond failure rate) and describes a formal a priori sample size calculation to detect a difference in bracket failure rate ("Three hundred and two brackets were required in each etching group in order to have an adequate power for the study of 80 per cent to show a statistically significant difference at P<0.05 between a 5 and 12 per cent bracket failure rate for the two etch/primer systems"), indicating the failure-rate outcome and analysis were planned prospectively rather than selected post-hoc.
+- The methods section pre-specifies the statistical approach for the outcome (logistic regression, Kaplan-Meier survival analysis, Cox's proportional hazards regression adjusted for clustering), and results are reported fully consistent with these pre-specified methods — there is no evidence of multiple alternative analyses of the failure-rate outcome being conducted with only favourable ones reported.
+- I checked the trial registration information (as instructed) for evidence of discrepancies between planned and reported outcomes/analyses for bond/bracket failure rate. No indication of selective reporting, changes in primary outcome definition, or omission of pre-specified analyses relevant to this outcome was identified based on the information available.
+- The failure rate outcome is reported comprehensively (overall, by etching system, by gender, age, operator, tooth location, and number of manipulations), consistent with what would be expected from the described a priori analysis plan, with no evidence of cherry-picking of favourable time points, subscales, or analytic techniques.
+- Therefore, this domain is judged **Low risk of bias**.
+
+---
+
+# Overall Risk of Bias Judgement: **Some concerns**
+
+**Rationale:** Although domains 2 (deviations from intended intervention), 3 (missing outcome data), 4 (measurement of outcome), and 5 (selective reporting) are judged as low risk of bias, domain 1 (bias arising from the randomization process) is judged as "Some concerns" due to incomplete reporting of allocation concealment mechanisms and potential predictability arising from a disclosed fixed block size of 10 in the context of a split-mouth design. Per RoB 2 guidance (Table 1), a judgement of "Some concerns" in at least one domain — with no domain rated "High risk" — results in an overall judgement of **Some concerns** for this outcome (bracket failure rate).

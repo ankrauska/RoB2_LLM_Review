@@ -1,0 +1,105 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 26099838
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Li, 2017 (Three-dimensional printing models improve understanding of spinal fracture—A randomized controlled study in China)
+**Outcome Name**: Performance (correct answers/time to complete test)
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: Y (95%)
+*Reason*: The article explicitly states "Students were randomized into three groups using a computer program," which is an adequate method of sequence generation.
+
+**1.2**: NI (95%)
+*Reason*: No mention of any allocation concealment method (central allocation, sequentially numbered containers, opaque envelopes) is provided in the article.
+
+**1.3**: N (90%)
+*Reason*: Table 2 shows no statistically significant differences in age, sex distribution, or school age between the three groups (CT, 3D, 3Dp).
+
+**Result of Domain 1**: Some concerns (85%)
+*Reason*: Since 1.2 = NI and 1.3 = N, per the decision rules this classifies as "some concerns."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: Y (95%)
+*Reason*: Participants were obviously aware of their assigned teaching module (CT images vs. 3D images vs. 3D printed physical model), as these are physically distinct and non-blindable interventions.
+
+**2.2**: Y (95%)
+*Reason*: "A teacher provided a detailed interpretation of the fracture in each group," indicating teachers/carers knew which module (and thus allocation) each subgroup received.
+
+**2.3**: NI (70%)
+*Reason*: No information provided regarding non-protocol interventions.
+
+**2.4**: N (95%)
+*Reason*: The article states "a total of 120 medical students...participated, and no one dropped out."
+
+**2.5**: N (85%)
+*Reason*: This was a single-session educational intervention with no indication of non-adherence; all students completed the assigned module in one class.
+
+**2.6**: NI (80%)
+*Reason*: No explicit analytical method to account for adherence is reported; given the single-session nature and no dropout, no specific estimand analysis method is described.
+
+**Result of Domain 2**: High risk (85%)
+*Reason*: Since 2.1/2.2 = Y, 2.3 = NI, and 2.6 = NI, this combination maps to "High risk" per the domain rules (one of 2.1/2.2 = Y/PY/NI, 2.3 = NI/N/PN, and 2.6 = NI/N/PN → High risk).
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: Y (98%)
+*Reason*: All 120 randomized students completed the study with no dropouts ("no one dropped out"); 100% of participants have complete outcome data.
+
+**Result of Domain 3**: Low risk (98%)
+*Reason*: Since 3.1 = Y, the domain result is automatically "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (90%)
+*Reason*: The outcome (correct/incorrect answers to a predefined 10-question test) was a predefined, purpose-built measurement tool assessed by two senior professors for validity; considered reliable.
+
+**4.2**: N (90%)
+*Reason*: All groups completed the same standardized 10-question examination under comparable conditions (same setting, same timing, same invigilation procedure).
+
+**4.3**: Y (75%)
+*Reason*: The outcome is not patient-reported (it is an objectively scored test of correct/incorrect answers); however, invigilators/teachers were present in group-specific settings and were aware of group assignment (each group had distinct materials/rooms), so outcome assessors were not blinded to allocation.
+
+**4.4**: N (85%)
+*Reason*: The outcome is objective (multiple-choice/binary correct-incorrect answers with a predefined answer key), not subject to interpretation bias by assessors.
+
+**Result of Domain 4**: Low risk (85%)
+*Reason*: Since 4.1 = N, 4.2 = N, 4.3 = Y, and 4.4 = N, this maps to "Low risk" per domain rules.
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (90%)
+*Reason*: No trial registration number or pre-specified analysis plan is mentioned anywhere in the article.
+
+**5.2**: N (80%)
+*Reason*: All 10 anatomical questions and 4 evaluative questions described in the Methods are fully reported in the Results with consistent measurement methods; no evidence of selective outcome reporting from multiple measures.
+
+**5.3**: N (80%)
+*Reason*: The statistical analysis methods described in Methods (two-way ANOVA, Tukey's/Sidak's post hoc tests, chi-square tests) are consistently applied and reported in the Results; no evidence of multiple analyses being conducted with selective reporting.
+
+**Result of Domain 5**: Some concerns (85%)
+*Reason*: Since 5.2 = N, 5.3 = N, and 5.1 = NI, this combination maps to "Some concerns" per the domain rules.
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Overall Result**: **High Risk** (90%)
+
+*Reason*: Domain 2 was assessed as "High risk." According to the overall assessment rules, if any one domain assessment result is "High Risk," the overall assessment result for the article is "High Risk," regardless of the other domain findings (Domain 1 = Some concerns, Domain 2 = High risk, Domain 3 = Low risk, Domain 4 = Low risk, Domain 5 = Some concerns).

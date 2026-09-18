@@ -1,0 +1,69 @@
+PROMPT pitre_2023::minimal
+PAPER  PMID 20488825
+MODEL  gpt-5.6-terra
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+1. **Bias due to randomization: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The allocation sequence was adequately generated: “A computer-based blocking method (four blocks) was used for the randomization and no stratification was made.” This supports a random sequence.
+
+   However, allocation concealment was not described sufficiently. The report states that “separate physicians were assigned to randomly allocate patients,” but does not specify whether those physicians were independent of recruitment, whether allocation was centrally controlled, or whether procedures prevented foreknowledge of the upcoming assignment. Similar medication packages and participant blinding do not by themselves establish allocation concealment.
+
+   Baseline characteristics reported in Table 1 were broadly balanced (e.g., baseline EDSS, previous relapses, and MRI lesions), with no statistically significant differences. However, the table appears to include 38 placebo and 42 simvastatin participants rather than all 42 and 43 randomized participants. Thus, it is not fully clear whether baseline balance was assessed in the complete randomized population. In accordance with RoB 2, random sequence generation plus unclear allocation concealment leads to **some concerns**.
+
+2. **Deviations from intended intervention: high risk of bias**
+
+   a. **Judgement:** High risk of bias for the effect of assignment to interventions at baseline.
+
+   b. **Rationale:** Blinding was apparently adequate. The article describes a “double-blind randomized controlled trial”; patients “were unaware of their group assignment”; drugs were supplied “in similar packages”; and follow-up neurologists were “blinded to the patients’ assignment to treatment group.” The registration record also describes quadruple masking, including participants, care providers, investigators, and outcome assessors. There is therefore no clear evidence that trial-context deviations from treatment occurred because participants or personnel knew allocation.
+
+   Nevertheless, the analysis used for the reported attack-number result was not a full intention-to-treat analysis. Although the authors state that “analyses were performed according to intention-to-treat methods,” the primary reported Mann–Whitney comparison included only 40 simvastatin and 36 placebo participants, whereas 43 and 42 participants, respectively, were randomized. The article also states:
+
+   > “Given that simvastatin would need 6 months to show its assumed effect… those of our dropout cases who did use simvastatin or placebo for 6 months (nine patients) were included in the final analysis.”
+
+   This indicates post-randomization exclusion based on duration of treatment/follow-up. In addition, the authors explicitly performed a separate “per protocol analysis” restricted to participants who completed the study. Such exclusions are inappropriate for estimating the effect of assignment at baseline, because all randomized eligible participants should be analysed in their randomized groups regardless of whether they received treatment for 6 months, withdrew, or deviated from treatment.
+
+   Approximately 9 of 85 randomized participants were absent from the principal attack-number comparison, a sufficient proportion to have a potentially substantial effect, especially in this small trial and given that some withdrawals were related to recurrent attacks. Therefore, this domain is at **high risk of bias**.
+
+3. **Missing outcome data: high risk of bias**
+
+   a. **Judgement:** High risk of bias.
+
+   b. **Rationale:** Attack-number data were not available for all randomized participants in the reported primary comparison. The study randomized 85 patients (43 simvastatin and 42 placebo), but the principal analysis of total relapses included only 40 and 36 participants, respectively—76 of 85 randomized participants.
+
+   The reporting of participant flow is also inconsistent. The figure indicates that 42 simvastatin and 38 placebo participants were analysed, whereas the attack-number analysis reports 40 and 36 participants. This prevents a clear accounting of who contributed outcome data and why others did not.
+
+   Fourteen participants withdrew. Reasons included refusal to cooperate, personal reasons, chronic exacerbation, and having two relapses during the trial. In particular:
+
+   > “Six had two relapses (two from the simvastatin and four from the placebo group), [and] one patient who was receiving placebo experienced chronic exacerbation.”
+
+   Withdrawal or exclusion related to relapses or exacerbation is plausibly related to the true value of the outcome—attack number. Furthermore, withdrawals for exacerbation/two attacks occurred more often in the placebo group. The decision to include only withdrawals who had received treatment for at least 6 months further compounds concern, because outcome availability depended on post-randomization events and treatment duration.
+
+   No adequate sensitivity analysis was presented to show that the effect estimate was robust to the missing/excluded attack data. Therefore, missingness was likely related to the outcome and could have biased the result, leading to **high risk of bias**.
+
+4. **Measurement of the outcome: low risk of bias**
+
+   a. **Judgement:** Low risk of bias.
+
+   b. **Rationale:** Attack/relapse was prospectively defined using clinical criteria:
+
+   > “Any new or worsening neurological deficit in the absence of high body temperature that lasted for more than 24 h after 1-month stability was considered a relapse.”
+
+   Participants were evaluated every 3 months by a neurologist for “possible complications, relapses, disease activity [and] neurological status.” The report states that four neurologists conducting eligibility assessments and follow-up examinations were blinded to treatment assignment. The trial registration also identifies outcome-assessor masking.
+
+   The same relapse definition and scheduled assessment procedures appear to have been applied in both groups. Although relapse identification requires clinical judgement, blinded neurologist assessment substantially limits the possibility that knowledge of simvastatin versus placebo influenced outcome ascertainment. There is no evidence that attack ascertainment differed systematically between groups or that the measurement method was inappropriate. Thus, risk of bias in outcome measurement is **low**.
+
+5. **Selective reporting: some concerns**
+
+   a. **Judgement:** Some concerns.
+
+   b. **Rationale:** The registry identifies “attack number” at “1 year” as the primary outcome, which is consistent with the published primary outcome, “the number of the relapses during the 1-year follow-up.” Thus, there is no direct evidence that a different outcome domain or time frame was selected for reporting.
+
+   However, the registry was first submitted and posted in April 2008, after the stated actual primary completion date of March 2008. Consequently, it does not provide evidence of a prospectively finalized analysis plan before outcome data were available. It also specifies neither the statistical analysis nor the handling of withdrawals/missing data.
+
+   The publication reports several analyses for attack number: the principal analysis described as intention-to-treat, a per-protocol analysis, and a last-observation-carried-forward analysis of attacks per 3 months. The principal reported analysis includes fewer participants than randomized, despite the stated intention-to-treat approach. Without a prospectively finalized statistical analysis plan, it cannot be determined whether the reported numerical result was selected from multiple possible analyses on the basis of its results.
+
+   There is insufficient direct evidence that the selected result was chosen because it was favourable, so a high-risk judgement is not warranted. Nonetheless, the retrospective/inadequate registration and unspecified analysis plan raise **some concerns** about selective reporting.

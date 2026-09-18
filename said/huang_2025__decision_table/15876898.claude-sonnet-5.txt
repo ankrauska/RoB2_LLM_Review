@@ -1,0 +1,121 @@
+PROMPT huang_2025::decision_table
+PAPER  PMID 15876898
+MODEL  claude-sonnet-5
+==============================================================================
+REPLY 1 OF 1  label=all_domains
+==============================================================================
+# Risk of Bias Assessment
+
+**Article ID**: Nickel, 2005
+**Outcome Name**: Weight
+**Registration number**: Not reported
+
+---
+
+## Domain 1: Risk of bias arising from the randomization process
+
+**1.1**: NI (85%)
+The article states "randomization was carried out confidentially by the clinic administration" but does not describe the specific method used (e.g., computer-generated numbers, block randomization, random number tables). No further detail is provided to upgrade this to "Y".
+
+**1.2**: Y (85%)
+The article states randomization was "carried out confidentially by the clinic administration" and that "tablets were supplied in numbered boxes," indicating sequentially numbered, identical-appearing containers — a recognized allocation concealment method.
+
+**1.3**: N (90%)
+Table 1 shows comparable baseline characteristics (age, height, initial weight, weight gain, olanzapine dose/duration, diagnosis) between groups. The discussion explicitly states "no essential topiramate group versus placebo group differences were found."
+
+**Result of Domain 1**: Low risk (85%)
+Since 1.2 = Y, 1.1 = NI, and 1.3 = N, this meets the criteria for "Low risk."
+
+---
+
+## Domain 2: Risk of bias due to deviations from intended interventions
+
+**2.1**: N (90%)
+Study is double-blind with matching placebo tablets; "both subjects and clinicians were blinded."
+
+**2.2**: N (90%)
+"Both subjects and clinicians were blinded regarding topiramate/placebo assignment."
+
+**2.3**: Y (75%)
+Concomitant medications are listed for both groups and are described as remaining constant during the study, with similar classes of drugs used in both arms; no evidence of significant imbalance.
+
+**2.4**: Y (85%)
+Six of 49 randomized subjects (12.2%) dropped out ("failed to appear for more than one evaluation"), exceeding the 10% threshold, and this attrition was entirely from the placebo group.
+
+**2.5**: N (60%)
+No explicit report of non-adherence to the medication regimen itself (separate from dropout); the trial was reported "concluded according to protocol" for the remaining subjects.
+
+**2.6**: N (80%)
+Data from dropouts were excluded entirely and not analyzed ("their data were not further analyzed"), representing a complete-case/per-protocol style analysis rather than an appropriate method (e.g., inverse probability weighting) to account for non-adherence/attrition.
+
+**Result of Domain 2**: High risk (75%)
+Blinding was intact (2.1=N, 2.2=N), but implementation failure occurred (2.4=Y, >10% attrition, imbalanced between arms) and was not addressed with an appropriate analytic method (2.6=N), indicating the effect estimate may be biased by this unaddressed deviation.
+
+---
+
+## Domain 3: Risk of bias due to missing outcome data
+
+**3.1**: N (90%)
+49 participants randomized (25 TG, 24 PG); 43 analyzed (25 TG, 18 PG) = 87.8% — below the 90% threshold for continuous outcomes.
+
+**3.2**: N (95%)
+No sensitivity analysis or bias-correction method (e.g., inverse probability weighting) was reported; simple exclusion of dropouts was used.
+
+**3.3**: N (65%)
+Dropout reason given was "failed to appear for more than one evaluation," a procedural/non-health-specific reason, with no indication that missingness was related to weight (the outcome) itself.
+
+**Result of Domain 3**: Low risk (75%)
+3.1=N, 3.2=N, 3.3=N meets the criteria for "Low risk."
+
+---
+
+## Domain 4: Risk of bias in measurement of the outcome
+
+**4.1**: N (95%)
+Weight was measured by standard physical examination/weighing, a reliable and appropriate objective method.
+
+**4.2**: N (90%)
+Both groups were weighed on the same schedule ("every 2 weeks, subjects were seen, weighed...") — no differential measurement frequency or method.
+
+**4.3**: N (85%)
+Weight is an objective outcome (not patient-reported), and outcome assessors/clinicians were blinded to allocation ("both subjects and clinicians were blinded").
+
+**4.4**: N (90%)
+Weight is an objective outcome measure, unlikely to be influenced by knowledge of intervention assignment.
+
+**4.5**: N (90%)
+No evidence suggesting that assessment of this objective outcome (weight) was influenced by knowledge of the intervention.
+
+**Result of Domain 4**: Low risk (90%)
+4.1=N, 4.2=N, 4.3=N meets the criteria for "Low risk."
+
+---
+
+## Domain 5: Risk of bias in selection of the reported result
+
+**5.1**: NI (85%)
+No trial registration number or pre-specified/published analysis plan is mentioned in the article.
+
+**5.2**: N (85%)
+Weight is a single, straightforward outcome measurement (body weight in kg) with only one measurement approach used; results reported consistently with methods described.
+
+**5.3**: N (85%)
+Only one analytical method (Mann-Whitney U test with 95% CI) is described in the Methods and used consistently in Results for the weight outcome; no evidence of multiple analyses being tried and selectively reported.
+
+**Result of Domain 5**: Some concerns (80%)
+Since 5.2=N, 5.3=N, and 5.1=NI, this meets the criteria for "Some concerns."
+
+---
+
+## Overall Bias Risk Assessment for the Article
+
+**Domain summary**:
+- Domain 1: Low risk
+- Domain 2: High risk
+- Domain 3: Low risk
+- Domain 4: Low risk
+- Domain 5: Some concerns
+
+**Overall Bias Risk for the Article**: **High Risk** (80%)
+
+Because Domain 2 was rated "High risk" (due to substantial attrition disproportionately affecting the placebo group combined with an inappropriate analytic approach that did not address this deviation), the overall risk of bias for the weight outcome is **High Risk**, per the rule that any single domain rated "High risk" results in an overall "High risk" classification.
